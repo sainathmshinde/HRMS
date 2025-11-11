@@ -1195,24 +1195,42 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Basic Tables</h3>
-              <nav aria-label="breadcrumb">
+              <h3 class="page-title">Employee Type</h3>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <!-- <label for="title">Title</label> -->
+                  <span class="text-danger"></span>
+                  <select class="form-select" id="title" required>
+                    <option value="mr">On Contract</option>
+                    <option value="mr">On Deputation</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <a
+                  href="./CreateLeave.html"
+                  class="btn btn-gradient-primary me-2"
+                >
+                  Add New
+                </a>
+              </div>
+              <!-- <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Tables</a></li>
                   <li class="breadcrumb-item active" aria-current="page">
                     Basic tables
                   </li>
                 </ol>
-              </nav>
+              </nav> -->
             </div>
             <div class="row">
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Basic Table</h4>
+                    <!-- <h4 class="card-title">Employee Type</h4>
                     <p class="card-description">
                       Add class <code>.table</code>
-                    </p>
+                    </p> -->
                     <table class="table">
                       <thead>
                         <tr>
@@ -1220,6 +1238,7 @@
                           <th>Year Type</th>
                           <th>Annual Leave Quantity</th>
                           <th>Min Leave to be applied</th>
+                          <th>Max Leave to be applied</th>
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -1230,7 +1249,9 @@
                           <td>8</td>
                           <td>1</td>
                           <td>7</td>
-                          <td>More</td>
+                          <td>
+                            <a href="./editLeaveConfiguration.html"> More </a>
+                          </td>
                         </tr>
                         <tr>
                           <td>Earned Leave</td>
@@ -1238,7 +1259,9 @@
                           <td>20</td>
                           <td>3</td>
                           <td>10</td>
-                          <td>More</td>
+                          <td>
+                            <a href="./editLeaveConfiguration.html"> More </a>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -1292,6 +1315,115 @@
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".assignSchedule").click(function () {
+          $(".grid").hide();
+          $("#pendingForm").show();
+          $(".mounting-events-inner1").show();
+          $(".edit-img").hide();
+          $("form").find("input[type='text']").val(" ");
+          $(".edit-img").hide();
+
+          $("form").find("input").removeAttr("disabled");
+          $("form").find("select").removeAttr("disabled");
+          $("form").find(".carryForward").attr("disabled", "disabled");
+          $("form").find(".negativeCaption").attr("disabled", "disabled");
+          $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
+          $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
+          $("form").find("#accrual_dropdown").attr("disabled", "disabled");
+        });
+
+        $(".assignSchedule1").click(function () {
+          $("form")[0].reset();
+          $(".grid").hide();
+          $("#pendingForm").show();
+          $(".edit-img").show();
+
+          $("form").find("input[type='text']").prop("disabled", "disabled");
+          $("form").find("select").prop("disabled", "disabled");
+        });
+
+        $(".enabledForm").click(function () {
+          $("form").find("input").removeAttr("disabled");
+          $("form").find("select").removeAttr("disabled");
+          $("form").find(".carryForward").attr("disabled", "disabled");
+          $("form").find(".negativeCaption").attr("disabled", "disabled");
+          $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
+          $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
+          $("form").find("#accrual_dropdown").attr("disabled", "disabled");
+        });
+
+        $("#Carryforword_yes").click(function () {
+          $("form").find(".carryForward").removeAttr("disabled");
+        });
+
+        $("#Carryforword_no").click(function () {
+          $("form").find(".carryForward").attr("disabled", "disabled");
+        });
+
+        $(".grid").show();
+        $("#pendingForm").hide();
+
+        $("#Negative_yes").click(function () {
+          $("form").find(".negativeCaption").removeAttr("disabled");
+        });
+
+        $("#Negative_no").click(function () {
+          $("form").find(".negativeCaption").attr("disabled", "disabled");
+          $("form").find(".negativeCaption").prop("selectedIndex", 0);
+        });
+
+        $("#accrual_yes").click(function () {
+          $("form").find("#accrual_dropdown").removeAttr("disabled");
+        });
+        $("#accrual_no").click(function () {
+          $("form").find("#accrual_dropdown").attr("disabled", "disabled");
+          $("form").find("#accrual_dropdown").prop("selectedIndex", 0);
+        });
+
+        $("#Approval_yes").click(function () {
+          $("form").find("#ApprovalTop_yes").removeAttr("disabled");
+          $("form").find("#ApprovalTop_no").removeAttr("disabled");
+        });
+        $("#Approval_no").click(function () {
+          $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
+          $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
+        });
+      }); /*
+			$(".formView").click(function()
+			{
+				$(".grid").hide();
+				$("#pendingForm").show();
+				$("form").find("input").attr("disabled","disabled");
+				$("form").find("select").attr("disabled","disabled");
+			});*/
+      $(".disabledForm").click(function () {
+        $(".grid").show();
+        $("#pendingForm").hide();
+      });
+
+      $(".radio").click(function () {
+        if ($("#approved").is(":checked")) {
+          $("#forwardemployee").attr("disabled", "disabled");
+          $("#remark").attr("disabled", "disabled");
+        }
+        if ($("#declined").is(":checked")) {
+          $("#forwardemployee").attr("disabled", "disabled");
+          $("#remark").removeAttr("disabled");
+        }
+        if ($("#forwarded").is(":checked")) {
+          $("#forwardemployee").removeAttr("disabled");
+          $("#remark").attr("disabled", "disabled");
+        }
+      });
+    </script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script
+      src="js/multiDropdown.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
     <!-- End custom js for this page -->
   </body>
 </html>
