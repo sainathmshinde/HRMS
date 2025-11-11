@@ -1,0 +1,2212 @@
+<script type="text/javascript"> 
+  $(function()
+	{
+	  $(".formView").click(function()
+	  {
+		$(".formBlock").show();
+		$(".gridBlock").hide();
+		
+	  });
+	  $(".girdView").click(function()
+	  {
+		$(".formBlock").hide();
+		$(".gridBlock").show();
+		
+	  });
+/*	  $(".moveToDiary").click(function()
+	  {
+		var message = "You want move plan to diary?";
+		var returnValue = confirm(message);
+		if(returnValue)
+		{
+			$(".formBlock").hide();
+			$("#plantable").hide();
+		}
+		return returnValue;
+	  });
+*/	  
+	    $(".girdView").trigger("click");
+	   
+		$("#tourStartDate").datepicker({
+				changeMonth:true,
+				changeYear:true,
+				dateFormat : 'dd-M-yy',
+				yearRange: '-70 :c'
+		});
+		$("#tourEndDate").datepicker({
+			changeMonth:true,
+			changeYear:true,
+			dateFormat : 'dd-M-yy',
+			yearRange: '-70 :c'
+		});
+		
+	});
+	
+	function enableTourDetails()
+	{
+		$("#fromplace").removeAttr("disabled");
+		$("#toplace").removeAttr("disabled");
+		$("#Employee_TravelMode").removeAttr("disabled");
+		$("#Employee_bookingBy").removeAttr("disabled");
+		$("#visitpurpose").removeAttr("disabled");
+		$("#Employee_accommodation").removeAttr("disabled");
+	}
+	function disableTourDetails()
+	{
+		$("#fromplace").attr("disabled","disabled");
+		$("#toplace").attr("disabled","disabled");
+		$("#Employee_TravelMode").attr("disabled","disabled");
+		$("#Employee_bookingBy").attr("disabled","disabled");
+		$("#visitpurpose").attr("disabled","disabled");
+		$("#Employee_accommodation").attr("disabled","disabled");
+	}
+	
+	
+</script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="js/multiDropdown.js" type="text/javascript" charset="utf-8"></script>
+
+<div class="mainHeading">
+<div class="menuButtonIconBox" id="menuBox">
+	    <input class="dashboardMenuButton dashboardMenuButtonFont" type="button" value="&#9783;">
+		<div class="mainSubMenuDiv">
+		  
+		   <div class="mainMenuDiv">
+		       <table class="mainMenuDivTable">
+			      <tr><td class="favMenu menu">
+				         <label class="menuA favSpecial"><a>Favourities</a><span class="showNavigation">&#187;</span></label>
+				    <div class="favouritiesDivTable subs">
+					       <div class="commonFormDivTable">
+									<table class="mainMenuDivTable mainMenuDivTableForReports">
+									  <tr><td><a url="employeeInformation.htm">Create Employee</a></td></tr>
+									  <tr><td><a url="MonthlyAttendanceManagement.htm">Attendance Register</a></td></tr>
+									  <tr><td><a url="AdjustOpenCloseBal.htm">Leave Adjustment</a></td></tr>
+									  <tr><td><a url="monthlySalary.html">Monthly Salary</a></td></tr>
+									  <tr><td><a url="ApplyLeave.htm">Apply Leave</a></td></tr>
+									  <tr><td><a url="employeePerformanceStatus.htm">Performance Status</a></td></tr>
+									  <tr><td><a url="recruitmentDashboard.htm">Recruitment Dashboard</a></td></tr>
+									  <tr><td><a url="TrainingDashboard.htm">Training Dashboard</a></td></tr> 
+									  
+									</table>
+							   </div>
+							</div>
+					   </td>
+				  </tr>
+				  <tr><td class="menu">
+				         <label class="menuA"><a>Employee</a></label>  
+						   <div class="menuSubMenuDiv">
+							    <table class="menuSubMenu">
+								    <tr><td class="formListShow"> - Actions <span class="showNavigation">&#187;</span></td></tr>
+									<tr><td class="tableListShow"> - Reports <span class="showNavigation">&#187;</span></td></tr>
+								</table>
+							</div>
+						     <div class="commonDivTable subs">
+							   <div class="commonFormDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr><td><a url="edbDashboardV2.html">Dashboard</a></td></tr>
+								  <tr><td><a url="employeeInformation.htm">Create Employee</a></td></tr>
+								  <tr><td><a url="employmentdetail.htm">Employment Information</a></td></tr>
+								  <tr><td><a url="contactinformation.htm">Contact</a></td></tr>
+								  <tr><td><a url="qualificationskills.htm">Qualification</a></td></tr>
+								  <tr><td><a url="workexperience.htm">Work Experience</a></td></tr>
+								  <tr><td><a url="castcertificate.htm">Documents</a></td></tr>
+								  <tr><td><a url="healthDetails.htm">Health</a></td></tr> 
+								  <tr><td><a url="agreement.htm">Probation</a></td></tr>
+								   <tr><td><a url="salaryDetails.htm">Compensation And Benefits</a></td></tr>
+								  <tr><td><a url="accountdetails.htm">Account Information</a></td></tr>
+								  
+								  <tr><td><a url="assets.htm">Assets</a></td></tr> 
+								  <tr><td><a url="exit.htm">Employee Exit</a></td></tr>
+								   
+							   </table>
+							   </div>
+							   <div class="commonReportDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr>
+									   <td><a><u>Employment Details</u></a></td> 
+									  <td><a> <span class="bulletFontSizeValue">&#10148;</span>Birthday</a></td>
+									  
+									  
+									</tr>
+									<tr>
+									   	 <td><a url="employeeHeadcount.html"> <span class="bulletFontSizeValue">&#10148;</span> Total Headcount</a></td>
+										  <td><a><u>Contract</u></a></td>
+										  
+									   
+									   
+									</tr>
+									<tr>
+									    <td><a url="employmentType.html"> <span class="bulletFontSizeValue">&#10148;</span> Employment Type</a></td>
+										<td><a url="contractRenewal.html"> <span class="bulletFontSizeValue">&#10148;</span> Contract Renewal Pending</a></td>
+										 
+										
+										
+									</tr>
+									<tr>
+										<td><a url="employeeJoiningReport.html"> <span class="bulletFontSizeValue">&#10148;</span> Joining Date</a></td>
+										<td><a><span class="bulletFontSizeValue">&#10148;</span> Contract Exit</a></td>
+										
+										
+										
+									</tr>
+									<tr>
+									   <td><a url="employeeExitReport.html"> <span class="bulletFontSizeValue">&#10148;</span> Employee Exit</a></td>
+									   <td><a><u>Health</u></a></td>
+										
+									   
+									   
+									</tr>	
+									<tr>
+										<td><a url="employeeListByGender.html"> <span class="bulletFontSizeValue">&#10148;</span>Gender</a></td>
+										<td><a> <span class="bulletFontSizeValue">&#10148;</span> Insurance</a></td>
+									   
+									</tr>						 
+									<tr>
+									   <td><a> <span class="bulletFontSizeValue">&#10148;</span> Contact Information</a></td>
+									   <td><a> <span class="bulletFontSizeValue">&#10148;</span> Disability</a></td> 
+									   
+									   
+									  
+									   
+									</tr>
+									<tr>
+									   <td><a> <span class="bulletFontSizeValue">&#10148;</span> Hierarchy</a></td>
+									   <td><a> <span class="bulletFontSizeValue">&#10148;</span> Chronic Disease</a></td>
+									   
+									   
+									</tr>
+									<tr>
+									    <td><a><u>Profile</u></a></td>
+										 <td><a><u>Nomination</u></a></td>
+										 
+									   
+										
+									</tr>
+									<tr>
+									    <td><a url="profileCompletionStatus.html"> <span class="bulletFontSizeValue">&#10148;</span> Profile Completed</a></td>
+										<td><a> <span class="bulletFontSizeValue">&#10148;</span> Bank Information</a></td>
+										
+										
+										
+									</tr> 
+									<tr>
+										<td><a> <span class="bulletFontSizeValue">&#10148;</span> Asset Allocation</a></td>
+										<td><a> <span class="bulletFontSizeValue">&#10148;</span> Nominee / Dependents</a></td>
+										
+										
+									</tr>
+									<tr>
+									   <td><a> <span class="bulletFontSizeValue">&#10148;</span> Work Experience</a></td>
+									   <td><a><u>Exit</u></a></td>
+									    
+									</tr>
+									<tr>
+									   <td><a> <span class="bulletFontSizeValue">&#10148;</span> Missing Document</a></td> 
+									   <td><a> <span class="bulletFontSizeValue">&#10148;</span> Exit Plan</a></td>  
+									</tr>
+									<tr>
+									    <td><a> <span class="bulletFontSizeValue">&#10148;</span> Education</a></td>
+									   
+									   
+									</tr>
+                                     <tr>
+									     <td><a> <span class="bulletFontSizeValue">&#10148;</span> Skill</a></td>
+									 </tr>
+									 <tr>
+									     <td><a> <span class="bulletFontSizeValue">&#10148;</span> Language</a></td>
+									 </tr>
+								 </table>
+							   </div>
+							   
+						   </div>
+					   </td>
+				</tr>
+				  <tr><td class="menu">
+				     <label class="menuA"><a>Leave</a></label>  
+					 <div class="menuSubMenuDiv">
+							    <table class="menuSubMenu">
+								    <tr><td class="formListShow"> - Actions <span class="showNavigation">&#187;</span></td></tr>
+									<tr><td class="tableListShow"> - Reports <span class="showNavigation">&#187;</span></td></tr>
+								</table>
+							</div>
+						     <div class="commonDivTable subs">
+								<div class="commonFormDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr><td><a url="leaveDashboard.html">Dashboard</a></td></tr>
+								  <tr><td><a url="MyLeave.htm">Leave Account</a></td></tr>
+								  <tr><td><a url="ApplyLeave.htm">Apply Leave</a></td></tr>
+								  <tr><td><a url="AppliedLeave.htm">Applied Leave</a></td></tr>
+								  <tr><td><a url="LeaveApproval.htm">Approved / Forward Leave</a></td></tr>
+								  <tr><td><a url="TeamLeavePlan.htm">Subordinate Leave Plan</a></td></tr>
+								  <tr><td><a url="holidaylist.htm">Holiday List</a></td></tr>
+								  <tr><td><a url="LeaveConfiguration.htm">Leave Configuration</a></td></tr> 
+								  <tr><td><a url="AdjustOpenCloseBal.htm">Leave Adjustment</a></td></tr>
+								    <tr><td><a url="LeaveBalanceLedger.htm">Leave Balance Ledger</a></td></tr>
+								   
+							   </table>
+							   </div>
+							   <div class="commonReportDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr><td><a url="employeeOnLeaveReport.html">Employees On Leave</a></td></tr>
+								  <tr><td><a url="totalPlannedLeaves.html"> Total Planned Leaves</a></td></tr>
+								  <tr><td><a url="plannedvsActualReport.html">Planned vs Actual</a></td></tr>
+								  <tr><td><a url="holidayListReport.html">Holiday List</a></td></tr>
+								  <tr><td><a url="leaveConsumptionReport.html">Leave Consumption By Type</a></td></tr>
+								  <tr><td><a url="leaveConsumptionTrendYearly.html">Leave Consumption Trend</a></td></tr>
+								  <tr><td><a>Leave Balance</a></td></tr>
+								  <tr><td><a>Leave Summary For Year 15 - 16 </a></td></tr>
+								  <tr><td><a>Leave Reason</a></td></tr>
+								   <tr><td><a>Leave Type Count</a></td></tr>
+								  <tr><td><a>Availed Leave Type</a></td></tr>
+								  <tr><td><a>No Leaves Availed</a></td></tr>
+								  <tr><td><a>SLA</a></td></tr> 
+								   
+								 </table>
+							   </div>
+							   
+						   </div>
+					 </td>
+				  </tr>
+				  <tr><td class="menu">
+				       <label class="menuA"><a>Attendance</a></label> 
+					   <div class="menuSubMenuDiv">
+							    <table class="menuSubMenu">
+								    <tr><td class="formListShow"> - Actions <span class="showNavigation">&#187;</span></td></tr>
+									<tr><td class="tableListShow"> - Reports <span class="showNavigation">&#187;</span></td></tr>
+								</table>
+							</div>
+						     <div class="commonDivTable subs">
+								<div class="commonFormDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr><td><a url="attendanceDashboard.html">Dashboard</a></td></tr>
+								  <tr><td><a url="MarkAttendance.htm">Mark Attendance</a></td></tr>
+								  <tr><td><a url="attendanceManagement.htm">Attendance Authorization</a></td></tr>
+								  <tr><td><a url="MonthlyAttendanceManagement.htm">Attendance Register</a></td></tr>
+								  <tr><td><a url="attendanceCategory.htm">Attendance Configuration</a></td></tr>
+								   
+							   </table>
+							   </div>
+							   <div class="commonReportDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr><td><a url="attendanceReportPresent.html">Present Employees</a></td></tr>
+								  <tr><td><a url="attendanceReportAbsent.html">Absent Employees</a></td></tr>
+								  <tr><td><a url="attendanceMonthlyHoursReport.html">Monthly Hours</a></td></tr>
+								  <tr><td><a url="attendanceCustomeReport.html">Custom</a></td></tr>
+								  <tr><td><a url="attendanceUserReport.html">User</a></td></tr>
+								  <tr><td><a url="attendanceDailyReport.html">Daily Attendance</a></td></tr>
+								  <tr><td><a url="attendanceMonthlyStatusReport.html">Monthly Status</a></td></tr>
+								  <tr><td><a url="attendanceReportLateComing.html">Late Coming</a></td></tr> 
+								  <tr><td><a url="attendanceReportEarlyGoing.html">Early Going</a></td></tr> 
+								  <tr><td><a url="attendancePresentTrend.html">Present Trend</a></td></tr>
+								   <tr><td><a url="dailyAttendance.html">Daily Attendance</a></td></tr>
+								  
+								 </table>
+							   </div>
+							   
+						   </div>
+					  
+					  </td>
+				  </tr>
+				  <tr><td class="menu">
+				       <label class="menuA"><a>Payroll</a></label>  
+					   <div class="menuSubMenuDiv">
+							    <table class="menuSubMenu">
+								    <tr><td class="formListShow"> - Actions <span class="showNavigation">&#187;</span></td></tr>
+									<tr><td class="tableListShow"> - Reports <span class="showNavigation">&#187;</span></td></tr>
+								</table>
+						</div>
+						     <div class="commonDivTable subs">
+								<div class="commonFormDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr><td><a url="payrollDashboard.html">Dashboard</a></td></tr>
+								  <tr><td><a url="salaryTemplate.html">Salary Template</a></td></tr>
+								  <tr><td><a url="createSalary.html">Create Salary</a></td></tr>
+								  <tr><td><a url="salaryRule.html">Salary Rule</a></td></tr>
+								  <tr><td><a url="pfptRule.html">PF PT Rule</a></td></tr>
+								  <tr><td><a url="taxDeductionRule.html">Tax Deduction Rule</a></td></tr>
+								  <tr><td><a url="itrSlabs.html">ITR Slabs</a></td></tr>
+								  <tr><td><a url="monthlySalary.html">Monthly Salary</a></td></tr> 
+								  <tr><td><a url="investmentDeclaration.html">Investment Declaration</a></td></tr>
+								   <tr><td><a url="form16.html">Form 16</a></td></tr>
+								  <tr><td><a url="pfReturn.html">PF Return</a></td></tr>
+								  <tr><td><a url="ptReturn.html">PT Return</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr> 
+								  <tr><td><a>&nbsp;</a></td></tr>
+								   <tr><td><a>&nbsp;</a></td></tr>
+							   </table>
+							   </div>
+							   <div class="commonReportDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr><td><a>TBD</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr> 
+								  <tr><td><a>&nbsp;</a></td></tr>
+								   <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr> 
+								  <tr><td><a>&nbsp;</a></td></tr>
+								   <tr><td><a>&nbsp;</a></td></tr>
+								 </table>
+							   </div>
+							   
+						   </div>
+					  
+					  </td>
+				  </tr>
+				  <tr><td class="menu">
+				     <label class="menuA"> <a>Performance</a> </label>
+					  <div class="menuSubMenuDiv">
+							    <table class="menuSubMenu">
+								    <tr><td class="formListShow"> - Actions <span class="showNavigation">&#187;</span></td></tr>
+									<tr><td class="tableListShow"> - Reports <span class="showNavigation">&#187;</span></td></tr>
+								</table>
+						</div>
+						     <div class="commonDivTable subs">
+								<div class="commonFormDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr>
+								     <td ><a url="performanceDashboard.htm">Dashboard</a></td>
+								     <td ><a url="DisciplinaryAction.htm">Disciplinary Action</a></td>
+								  </tr>
+								  <tr>
+								     <td><a url="assessmentSchedule.htm">Assessment Schedule</a></td>
+								     <td ><a url="bandTemplate.htm">Band Template</a></td>
+								  </tr>
+								  <tr><td><a url="manageKra.htm">Manage KRA</a></td></tr>
+								  <tr><td><a url="eligibility.html">Eligibility</a></td></tr>
+								  <tr><td><a url="assignKra.htm">Assign KRA</a></td></tr>
+								  <tr><td><a url="myAssignedKra.htm">My Assigned KRA</a></td></tr>
+								  <tr><td><a url="manageTeamKra.htm">Manage Team KRA</a></td></tr>
+								  <tr><td><a url="selfAssessment.htm">Self Assessment</a></td></tr> 
+								  <tr><td><a url="subordinateAssessment.htm">Subordinate Assessment</a></td></tr>
+								   <tr><td><a url="reviewerAssessment.htm"> Reviewer Assessment </a></td></tr>
+								  <tr><td><a url="assignBand.htm">Assign Band</a></td></tr>
+								  <tr><td><a url="assessmentReport.html">Assessment Report</a></td></tr>
+								  <tr><td><a url="communicationLetter.html">Print Communication Letter</a></td></tr> 
+								  <tr><td><a url="reviewResultLetter.html">Print Review Result Letter</a></td></tr>
+								   <tr><td><a url="employeePerformanceStatus.htm">Employee Performance Status</a></td></tr>
+							   </table>
+							   </div>
+							   <div class="commonReportDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr><td><a url="EligibleEmployees.html">Eligible Employees</a></td></tr>
+								  <tr><td><a url="KRAAnalysis.html">Reviewer Assessment</a></td></tr>
+								  <tr><td><a url="pipPerformanceReport.html">PIP</a></td></tr>
+								  <tr><td><a url="pendingAssessmentReport.html">Total Pending Assessment</a></td></tr>
+								  <tr><td><a url="PerformanceTrend.html">Performance Trend</a></td></tr>
+								  <tr><td><a url="KRAnalysisPercent.html">KRA analysis</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr> 
+								  <tr><td><a>&nbsp;</a></td></tr>
+								   <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr>
+								   <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr> 
+								  <tr><td><a>&nbsp;</a></td></tr>
+								   <tr><td><a>&nbsp;</a></td></tr>
+								 </table>
+							   </div>
+							   
+						   </div>
+				      </td>
+				   </tr>
+				  <tr><td class="menu">
+					   <label class="menuA"><a>Training</a> </label>
+					    <div class="menuSubMenuDiv">
+							    <table class="menuSubMenu">
+								    <tr><td class="formListShow"> - Actions <span class="showNavigation">&#187;</span></td></tr>
+									<tr><td class="tableListShow"> - Reports <span class="showNavigation">&#187;</span></td></tr>
+								</table>
+						</div>
+						     <div class="commonDivTable subs">
+								<div class="commonFormDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr><td><a url="TrainingDashboard.htm">Dashboard</a></td></tr>
+								  <tr><td><a url="authorizeRequest.htm">Manage Request</a></td></tr>
+								  <tr><td><a url="ListOfCreatedTraining.htm">Manage Training</a></td></tr>
+								  <tr><td><a url="TrainingSchedule.htm">Enrollment</a></td></tr>
+								  <tr><td><a url="AddTrainer.htm">Trainer Master</a></td></tr>
+								  <tr><td><a url="TrainingAttendanceGrade.htm">Attendance And Grade</a></td></tr>
+								  <tr><td><a url="TrainingFeedback.htm">Feedback</a></td></tr>
+								  
+							   </table>
+							   </div>
+							   <div class="commonReportDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr><td><a url="trainingRequestReport.htm">Pending Training Request</a></td></tr>
+								  <tr><td><a url="trainersReport.htm">Trainers Across Organization</a></td></tr>
+								  <tr><td><a url="trainingTrend.html">Training Trend</a></td></tr>
+								  <tr><td><a url="enrollmentReport.htm">Total Scheduled Training</a></td></tr>
+								  <tr><td><a url="softvsTechnical.html">Soft Skill vs Technical</a></td></tr>
+								  <tr><td><a url="participantsReport.htm">Participants</a></td></tr> 
+								  <tr><td><a url="ratingReport.htm">Trainer's Rating</a></td></tr>
+								   
+								 </table>
+							   </div>
+							   
+						   </div>
+					  </td>
+				  </tr>
+				  <tr><td class="menu">
+				       <label class="menuA"><a>Tour Diary</a> </label>
+					    <div class="menuSubMenuDiv">
+							    <table class="menuSubMenu">
+								    <tr><td class="formListShow"> - Actions <span class="showNavigation">&#187;</span></td></tr>
+									<tr><td class="tableListShow"> - Reports <span class="showNavigation">&#187;</span></td></tr>
+								</table>
+						</div>
+						     <div class="commonDivTable subs">
+								<div class="commonFormDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr><td><a url="tourDiaryDashboard.html">Dashboard</a></td></tr>
+								  <tr><td><a url="TourAndDiaryMonthlyPlangGrid.htm">View Monthly Work Plan</a></td></tr>
+								  <tr><td><a url="TentativeTourPlan.htm">Create Tour Plan</a></td></tr>
+								  <tr><td><a url="approveTentativeTourPlan.htm">Approve Team Tour Plan</a></td></tr>
+								  <tr><td><a url="TourDiaryPlannedVsActual.htm">Monthly Diary</a></td></tr>
+								  <tr><td><a url="approveDiaryPlan.htm">Approve Monthly Diary</a></td></tr>
+								  <tr><td><a url="approveDiaryByAdmin.htm">Validate Expenses</a></td></tr>
+								 
+							   </table>
+							   </div>
+							   <div class="commonReportDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr><td><a url="ToursPlanned.html">Tours Planned</a></td></tr>
+								  <tr><td><a url="toursDiaryStatusReport.html">Tour Diary Status</a></td></tr>
+								  <tr><td><a url="TeamTourPlanned.html">Team Tour Planned</a></td></tr>
+								   <tr><td><a url="claimStatusReport.html">Claim Status</a></td></tr>
+								  <tr><td><a url="trendOfTourExpense.html">Trend Of Tour Expenses</a></td></tr>
+								  <tr><td><a url="trendOfVillageHaltAndFieldVisits.html">Trend Of Village Halt And Field Visit</a></td></tr>
+								 
+								 </table>
+							   </div>
+							   
+						   </div>
+				  
+				  
+				     </td>
+				  </tr> 
+				  <tr><td class="menu">
+				       <label class="menuA"><a>Recruitment</a></label>
+					    <div class="menuSubMenuDiv">
+							    <table class="menuSubMenu">
+								    <tr><td class="formListShow"> - Actions <span class="showNavigation">&#187;</span></td></tr>
+									<tr><td class="tableListShow"> - Reports <span class="showNavigation">&#187;</span></td></tr>
+								</table>
+						</div>
+						     <div class="commonDivTable subs">
+								<div class="commonFormDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								   <tr><td><a url="recruitmentDashboard.htm">Dashboard</a></td></tr>
+								  <tr><td><a url="srf.htm">SRF</a></td></tr>
+								  <tr><td><a url="selectionScreen.htm">Selection Steps</a></td></tr>
+								  <tr><td><a url="CandidateRegistration.html">Candidate Registration</a></td></tr>
+								  <tr><td><a url="resumeUpload.htm">Upload Candidate Information</a></td></tr>
+								  <tr><td><a url="shortlistCandidates.htm">Qualify Candidates</a></td></tr>
+								  <tr><td><a url="candidateMarks.htm">Candidate Marks</a></td></tr>
+								  <tr><td><a url="result.htm">Final Result</a></td></tr> 
+								  <tr><td><a url="verify.htm">Reference Check</a></td></tr>
+								   <tr><td><a url="projectResourceAllocation.html">Project Resource Allocation</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr>
+								  <tr><td><a>&nbsp;</a></td></tr> 
+								  <tr><td><a> &nbsp;</a></td></tr>
+								   <tr><td><a>&nbsp;</a></td></tr>
+							   </table>
+							   </div>
+							   <div class="commonReportDivTable">
+								<table class="mainMenuDivTableForReports">
+								  
+								  <tr><td><a url="openPositionReport.html">Open Positions </a></td></tr>
+								  <tr><td><a url="srfAbove90.html">SRF Above 90 Days</a></td></tr>
+								 
+								   <tr><td><a url="ageingOfOpenSRF.html">Ageing Of Open SRF</a></td></tr>
+								  <tr><td><a url="buwisePosition.html">BU wise Positions</a></td></tr>
+								  <tr><td><a url="ResumeAvailable.html">Resume Availabel</a></td></tr>
+								  <tr><td><a url="InterviewScheduled.html">Interview Scheduled</a></td></tr> 
+								   <tr><td><a url="projectResource.html">Project Resources</a></td></tr>
+								   <tr><td><a url="projectPositions.html">Project Positions</a></td></tr>
+								    <tr><td><a url="projectCost.html">Project Cost</a></td></tr>
+									 <tr><td><a url="resourceProjects.html">Resource Projects</a></td></tr> 
+								  
+								 </table>
+							   </div>
+							   
+						   </div>
+					  </td>
+				  </tr>
+			      <tr>
+				    <tr><td class="favMenu menu">
+				         <label class="menuA favSpecial"><a>Admin</a><span class="showNavigation">&#187;</span></label>
+				    <div class="favouritiesDivTable subs">
+					       <div class="commonFormDivTable">
+									<table class="mainMenuDivTable mainMenuDivTableForReports">
+									  <tr><td><a url="LeaveConfiguration.htm">Leave Configuration</a></td></tr>
+									  <tr><td><a url="attendanceCategory.htm">Attendance Configuration</a></td></tr>
+									  <tr><td><a url="manageKra.htm">Create KRA</a> </td></tr>
+									  <tr><td>  <a>All masters Screens</a>  </td></tr>
+									  
+									  
+									</table>
+							   </div>
+							</div>
+					   </td>
+				  </tr>
+				</tr>
+				 <!-- <tr><td><a>&nbsp;</a></td></tr>
+				  <tr><td><a>&nbsp;</a></td></tr>
+				  <tr><td><a>&nbsp;</a></td></tr> 
+ 
+				 <tr><td><a>&nbsp;</a></td></tr>
+
+				   <tr><td><a>&nbsp;</a></td></tr>
+				    <tr><td><a>&nbsp;</a></td></tr>-->
+				 
+			   </table>
+		   </div>
+		   
+		  
+		  </div>
+		 
+	 </div>
+	 <span class="formHeadingTitleSetting">
+	<span><a class="buttonLink breadCrumb" url="tourDiaryDashboard.html">Tour diary &#187 </a></span>
+	<small id="reportNameView">Validate expenses</small>
+</span>
+<hr class="lineStyleForTop">
+</div>
+
+
+
+
+
+
+<div id="maincontentMiddle">
+    <!--
+	<div class="maincontentMiddleHeading" >
+			<label>Validate Expenses</label>
+		</div>
+		-->
+		<div class="gridBlock">
+			
+			<div>
+				<form id="monthplan">
+					<table class="formTable">
+						<tr>
+						
+							<td class="odd-col">
+								<label>Employee</label>
+							</td>
+							<td class="even-col">
+								<select>
+									<option value="1" selected>Mithlesh Sadh</option>
+									<option value="2">Purva</option>
+								</select>
+
+							</td>
+							<td class="odd-col">
+								<label>Admin Diary Status</label>
+							</td>
+							<td class="even-col">
+								<label>Approved</label>
+							</td>
+						
+						</tr>
+						<tr>
+							<td class="odd-col">
+								<label>Month</label>
+							</td>
+							<td class="even-col">
+								<select>
+									<option value="1">January</option>
+									<option value="2">February</option>
+									<option value="3">March</option>
+									<option value="4">April</option>
+									<option value="5">May</option>
+									<option value="6">June</option>
+									<option value="7">July</option>
+									<option value="8" selected>August</option>
+									<option value="9">September</option>
+									<option value="10">October</option>
+									<option value="11">November</option>
+									<option value="12">December</option>
+							
+								</select>
+							</td>
+							<td class="odd-col">
+								<label>Year</label>
+							</td>
+							<td class="even-col">
+							<select>
+								<option value="1">2015</option>		
+								<option value="1">2016</option>		
+								<option value="1">2017</option>
+								<option value="1">2018</option>
+							</select>
+						</td>
+						
+					</tr>
+				</table>
+				<form>
+			
+			</div>
+			<div class="form-edit">
+			
+			</div>
+			
+			<div id="plantable" class="scroll">
+			<table class="grid">
+				<tr class="head" >
+					<th>
+						<label>Date</label>
+					</th>
+					<th>
+						<label>Work Mode</label>
+					</th>
+					<th>
+						<label>Travel From</label>
+					</th>
+					<th>
+						<label>Travel To</label>
+					</th>
+					<th>
+						<label>Work Done</label>
+					</th>
+				
+					<th>
+						<label>Travel Claimed Expenses</label>
+					</th>
+			
+					<th>
+						<label>Lodging Claimed Expenses</label>
+					</th>
+					<th>
+						<label>Boarding Claimed Expenses</label>
+					</th>
+					<th>
+						<label>Miscellanies Claimed Expenses</label>
+					</th>
+					<th>
+						<label>Total Claim Expenses</label>
+					</th>
+					<th>
+						<label>Total Approve Expenses</label>
+					</th>
+					<th>
+						<label>Expenses Status</label>
+					</th>
+					<th >
+						<label>Action</label>
+					</th>
+				</tr>
+				<tr class="odd">
+					<td>
+						<label>26/Jul/2015</label>
+					</td>
+					<td>
+						<label>Weekly Off</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					</td>
+				</tr>
+				<tr class="even">
+				<td>
+						<label>27/Jul/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					</td>
+				</tr>
+				<tr class="odd">					
+					<td>
+						<label>28/Jul/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+			
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						<label>29/Jul/2015</label>
+					</td>
+					<td>
+					<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						<label>30/Jul/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>			
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						<label>31/Jul/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>			
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					</td>
+				</tr>
+				<tr class="odd">
+ 
+					<td>
+						<label>01-Aug-2016</label>
+					</td>
+					<td>
+						<label>Tour</label>
+					</td>
+					<td>
+						<label>Pune</label>
+					</td>
+					<td>
+						<label>Belapur</label>
+					</td>
+					<td>
+						<label>Mission Work</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>300.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>00.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>00.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>300.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>600.00</label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label>600.00</label>
+					</td>
+					<td>
+						<label>Approved</label>
+					</td>
+					
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;<a href="javascript:void(0);" url="approveDiaryByAdmin.htm" class = "formView">Approve</a>
+					</td>
+				</tr>
+				<tr class="even">
+ 
+					<td>
+						<label>01-Aug-2016</label>
+					</td>
+					<td>
+						<label>Tour</label>
+					</td>
+					<td>
+						<label>Mumbai</label>
+					</td>
+					<td>
+						<label>Nagpur</label>
+					</td>
+					<td>
+						<label>Mission Work</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>300.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>300.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>300.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>300.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>1200.00</label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label>1200.00</label>
+					</td>
+					<td>
+						<label>Approved</label>
+					</td>
+					
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="odd">
+ 
+					<td>
+						<label>01-Aug-2016</label>
+					</td>
+					<td>
+						<label>Tour</label>
+					</td>
+					<td>
+						<label>Nagpur</label>
+					</td>
+					<td>
+						<label>Nashik</label>
+					</td>
+					<td>
+						<label>Mission Work</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>300.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>00.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>00.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>300.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>600.00</label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label>500.00</label>
+					</td>
+					<td>
+						<label>Approved</label>
+					</td>
+					
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;<a href="javascript:void(0);" url="approveDiaryByAdmin.htm" class = "formView">Approve</a>
+					</td>
+				</tr>
+				<tr class="even">
+ 
+					<td>
+						<label>02/Aug/2015</label>
+					</td>
+					<td>
+						<label>Tour</label>
+					</td>
+					<td>
+						<label>Kamothe</label>
+					</td>
+					<td>
+						<label>Kalyan</label>
+					</td>
+					<td>
+						<label>Mission Work</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>900.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>900.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>900.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>900.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>3600.00</label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label>3500.00</label>
+					</td>
+					<td>
+						<label>Approved</label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;<a href="javascript:void(0);" url="approveDiaryByAdmin.htm" class = "formView">Approve</a>
+					</td>
+				</tr>
+				
+				<tr class="odd">
+ 
+					<td>
+						<label>03/Aug/2015</label>
+					</td>
+					<td>
+						<label>Tour</label>
+					</td>
+					<td>
+						<label>Nagpur</label>
+					</td>
+					<td>
+						<label>Gondia</label>
+					</td>
+					<td>
+						<label>Mission Work</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>900.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>900.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>900.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>900.00</label>
+					</td>
+					<td class=" alignRightForAllNo" >
+						<label>3600.00</label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label>3500.00</label>
+					</td>
+					<td>
+						<label>Approved</label>
+					</td>
+					
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;<a href="javascript:void(0);" url="approveDiaryByAdmin.htm" class = "formView">Approve</a>
+						
+					</td>
+				</tr>
+					
+				<tr class="even">
+ 
+					<td>
+						<label>04/Aug/2015</label>
+					</td>
+					<td>
+						<label>Tour</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="odd">
+ 
+					<td>
+						<label>05/Aug/2015</label>
+					</td>
+					<td>
+						<label>Tour</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+		
+				<tr class="even">
+ 
+					<td>
+						<label>06/Aug/2015</label>
+					</td>
+					<td>
+						<label>Tour</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="odd">
+ 
+
+					<td>
+						<label>07/Aug/2015</label>
+					</td>
+					<td>
+						<label>Tour</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="even">
+ 	
+
+					<td>
+						<label>08/Aug/2015</label>
+					</td>
+					<td>
+						<label>Tour</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+		
+				<tr class="odd">
+ 
+
+					<td>
+						<label>09/Aug/2015</label>
+					</td>
+					<td>
+						<label>Tour</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+			
+				<tr class="even">
+ 
+	
+					<td>
+						<label>10/Aug/2015</label>
+					</td>
+					<td>
+						<label>Tour</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="odd">
+ 
+
+					<td>
+						<label>11/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="even">
+ 
+					
+					<td>
+						<label>12/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						<label>13/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+			
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="even">
+ 
+
+					<td>
+						<label>14/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="odd">
+ 
+
+					<td>
+						<label>15/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="even">
+ 
+		
+					<td>
+						<label>16/Aug/2015</label>
+					</td>
+					<td>
+					<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="odd">
+ 
+			
+					<td>
+						<label>17/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="even">
+ 
+
+					<td>
+						<label>18/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="odd">
+ 
+
+					<td>
+						<label>19/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="even">
+ 
+
+					<td>
+						<label>20/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="odd">
+ 
+
+					<td>
+						<label>21/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+		
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="even">
+ 
+					<td>
+						<label>22/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+				
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="odd">
+ 
+					<td>
+						<label>23/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="even">
+ 
+					<td>
+						<label>24/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				<tr class="odd">
+ 
+					<td>
+						<label>25/Aug/2015</label>
+					</td>
+					<td>
+						<label>In Office</label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td >
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td class=" alignRightForAllNo">
+						<label></label>
+					</td>
+					<td>
+						<label></label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" url="ApproveDiaryByAdminIndividual.htm" class = "formView view-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
+				
+
+				 <td class="odd" colspan = "2">
+		     		   <label><b>Total Expenses</b></label>	
+				   </td>
+				   
+				    <td class="odd">
+					
+				   </td>
+				    <td class="odd">
+					
+				   </td>
+				    <td class="odd">
+					
+				   </td>
+					<td class="odd alignRightForAllNo">
+					  <label>2700.00</label>
+				   </td>
+				   <td class="odd alignRightForAllNo">
+					   <label>2100.00</label>
+				   </td>
+				   <td class="odd alignRightForAllNo">
+					   <label>2100.00</label>
+				   </td>
+				   <td class="odd alignRightForAllNo">
+					   <label>2700.00</label>
+				   </td>
+				   <td class="odd alignRightForAllNo">
+					  <label>9600.00</label>
+				   </td>
+				   <td class="odd alignRightForAllNo">
+					  <label>9300.00</label>
+				   </td>
+		     </tr>
+				
+				<tr>
+		     	   <td class="odd" colspan = "12">
+		     		   <label class="fr"><b>Total Claimed Expenses</b></label>	
+				   </td>
+				  
+				   <td class="alignRightForAllNo"  colspan = "2">
+					 <label>9600.00</label>
+				   </td>
+				
+		     </tr>
+		     <tr>
+		     	   <td class="odd" colspan = "12">
+		     		   <label class="fr"><b>Total Approved Expenses</b></label>	
+				   </td>
+				  
+				   <td class="alignRightForAllNo"  colspan = "2">
+					<label>9300.00</label>
+				   </td>
+				
+		     </tr>
+		     <tr>
+		     	  <td class="odd" colspan = "12">
+						<label  class="fr"><b>Advance Amount</b></label>
+				 </td>
+				 <td colspan = "2" class = "alignRightForAllNo">
+					  <label>15000.00</label>
+				 </td>
+			</tr>
+			<tr>
+		     	  <td class="odd alignLeftForAllNo" colspan = "12">
+						<label  class="fr"><b>Balance Payable / Refund Amount </b></label>
+				 </td>
+				 <td colspan = "2" class = "alignRightForAllNo">
+				 	  <label>5700.00</label>
+				 </td>
+			</tr>
+			</table>
+			</div>
+		</div>
+			</br>
+
+	</div>			
+  
+
+		
+
+
