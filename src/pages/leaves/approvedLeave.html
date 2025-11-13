@@ -98,7 +98,7 @@
                   <span class="availability-status online"></span>
                 </div>
                 <div class="nav-profile-text">
-                  <p class="mb-1 text-black">David Greymaax</p>
+                  <p class="mb-1 text-black">Andrew Baker</p>
                 </div>
               </a>
               <div
@@ -404,7 +404,7 @@
               </div>
             </li>
 
-            <li class="nav-item">
+     <li class="nav-item">
               <a
                 class="nav-link"
                 data-bs-toggle="collapse"
@@ -419,18 +419,53 @@
               <div class="collapse" id="leave">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/buttons.html"
+                    <a class="nav-link" href="/src/pages/ui-features/buttons.html"
                       >Dashboard</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/dropdowns.html"
+                    <a class="nav-link" href="/src/pages/leaves/leaveAccount.html"
+                      >Leave Account</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/applyLeave.html"
                       >Apply Leave</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/typography.html"
-                      >Leave Account</a
+                    <a class="nav-link" href="/src/pages/leaves/appliedLeaves.html"
+                      >Applied Leaves</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/approvedLeave.html"
+                      >Approved Leaves</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/subordinateLeavePlan.html"
+                      >Subordinate Leave Plan</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/holidaysList.html"
+                      >Holidays List</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/leaveConfig.html"
+                      >Leave Configuration</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/leaveAdjustment.html"
+                      >Leave Adjustment</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/leaveBalanceLedger.html"
+                      >Leave Balance Ledger</a
                     >
                   </li>
                 </ul>
@@ -555,7 +590,8 @@
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
                     <a class="nav-link" href="pages/tables/basic-table.html"
-                      >Basic table</a
+                      >Total leave balance for year 2025 as on (18-11-2025)
+Leave Type	</a
                     >
                   </li>
                 </ul>
@@ -617,273 +653,94 @@
         </nav>
         <!-- partial -->
         <div class="main-panel">
-          <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title">Employee</h3>
-            </div>
-            <div class="row">
-              <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Employee Registration</h4>
-                    <p class="card-description">
-                      Fill in the required information to register a new
-                      employee
-                    </p>
-                    <form class="forms-sample">
-                      <div class="row">
-                        <!-- Employee ID -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="employeeId">Employee ID</label>
-                            <!-- <span class="text-danger">*</span> -->
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="employeeId"
-                              placeholder="Enter Employee ID"
-                              disabled
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Reporting ID -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="reportingId">Reporting ID</label>
-                            <!-- <span class="text-danger">*</span> -->
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="reportingId"
-                              placeholder="Enter Reporting ID"
-                              disabled
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Title -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="title">Title</label>
-                            <span class="text-danger">*</span>
-                            <select class="form-select" id="title" required>
-                              <option value="">Select</option>
-                              <option value="mr">Mr.</option>
-                              <option value="ms">Ms.</option>
-                              <option value="mrs">Mrs.</option>
-                              <option value="dr">Dr.</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <!-- First Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="firstName">First Name</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="firstName"
-                              placeholder="Enter First Name"
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Middle Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="middleName">Middle Name</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="middleName"
-                              placeholder="Enter Middle Name"
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Last Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="lastName">Last Name</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              placeholder="Enter Last Name"
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Date of Birth -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="dob">Date of Birth</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="date"
-                              class="form-control"
-                              id="dob"
-                              required
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Identification Document Number -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="idDocumentNumber"
-                              >Identification Document Number</label
-                            >
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="idDocumentNumber"
-                              placeholder="Enter Document Number"
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="row">
-                        <!-- Father's / Husband's First Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="fatherFirstName"
-                              >Father's / Husband's First Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="fatherFirstName"
-                              placeholder="Enter First Name"
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Father's / Husband's Middle Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="fatherMiddleName"
-                              >Father's / Husband's Middle Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="fatherMiddleName"
-                              placeholder="Enter Middle Name"
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Father's / Husband's Last Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="fatherLastName"
-                              >Father's / Husband's Last Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="fatherLastName"
-                              placeholder="Enter Last Name"
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Mother's First Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="motherFirstName"
-                              >Mother's First Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="motherFirstName"
-                              placeholder="Enter First Name"
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Mother's Middle Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="motherMiddleName"
-                              >Mother's Middle Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="motherMiddleName"
-                              placeholder="Enter Middle Name"
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Mother's Last Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="motherLastName"
-                              >Mother's Last Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="motherLastName"
-                              placeholder="Enter Last Name"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      
-
-                      <!-- Full Width Textarea -->
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label for="exampleTextarea1">Textarea</label>
-                            <span class="text-danger">*</span>
-                            <textarea
-                              class="form-control"
-                              id="exampleTextarea1"
-                              rows="4"
-                            ></textarea>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Buttons -->
-                      <button
-                        type="submit"
-                        class="btn btn-gradient-primary me-2"
-                      >
-                        Submit
-                      </button>
-                      <button class="btn btn-light">Cancel</button>
-                    </form>
-                  </div>
+            <div class="content-wrapper">
+                <div class="page-header">
+                    <h3 class="page-title">Approve Leaves</h3>
                 </div>
-              </div>
+                <div class="row">
+                    <div class="col-lg-12 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">List of Subordinates Leaves</h4>
+                                <p></p>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="lastName">Leave Status</label>
+                                        <select class="form-select" id="title" required>
+                                            <option value="Select">Select</option>
+                                            <option value="Pending Approval" selected>Pending Approval</option>
+                                            <option value="Pending For 2up Approval">Pending For 2up Approval</option>
+                                            <option value="Pending For Top Level Approval">Pending For Top Level Approval</option>
+                                            <option value="Approved">Approved</option>
+                                            <option value="Declined">Declined</option>
+                                            <option value="Cancelled">Cancel</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                    <th>Employee ID</th>
+                                    <th>Employee Name</th>
+                                    <th>Leave Type</th>
+                                    <th>Leave From Date</th>
+                                    <th>Leave To Date</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>E1001</td>
+                                        <td>Mr. Andrew Baker</td>
+                                        <td>Medical Leave</td>
+                                        <td>12-May-2025</td>
+                                        <td>17-May-2025</td>
+                                        <td>Approval Pending</td>
+                                            <td>
+                                            <a href="viewApprovedLeaves.html" class="btn btn-gradient-primary me-2">Edit</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>E2000</td>
+                                        <td>Mr. Ruth Neison</td>
+                                        <td>Casual Leave</td>
+                                        <td>09-May-2025</td>
+                                        <td>10-May-2025</td>
+                                        <td>Approval Pending</td>
+                                            <td>
+                                            <a href="viewApprovedLeaves.html" class="btn btn-gradient-primary me-2">Edit</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>E2005</td>
+                                        <td>Mr. Kevin Smith</td>
+                                        <td>Casual Leave</td>
+                                        <td>09-May-2025</td>
+                                        <td>10-May-2025</td>
+                                        <td>Approval Pending</td>
+                                            <td>
+                                            <a href="viewApprovedLeaves.html" class="btn btn-gradient-primary me-2">Edit</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>E2048</td>
+                                        <td>Mr. Mark Jackson</td>
+                                        <td>Casual Leave</td>
+                                        <td>11-May-2025</td>
+                                        <td>12-May-2025</td>
+                                        <td>Approval Pending</td>
+                                            <td>
+                                            <a href="viewApprovedLeaves.html" class="btn btn-gradient-primary me-2">Edit</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
@@ -893,15 +750,10 @@
               <span
                 class="text-muted text-center text-sm-left d-block d-sm-inline-block"
                 >Copyright © 2023
-                <a href="https://www.bootstrapdash.com/" target="_blank"
-                  >BootstrapDash</a
+                <a href="https://syborgtech.com/" target="_blank"
+                  >SyborgTech</a
                 >. All rights reserved.</span
               >
-              <span
-                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
-                >Hand-crafted & made with
-                <i class="mdi mdi-heart text-danger"></i
-              ></span>
             </div>
           </footer>
           <!-- partial -->
