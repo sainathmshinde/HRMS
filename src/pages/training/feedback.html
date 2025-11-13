@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
@@ -1183,477 +1187,301 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Create Salary</h3>
+              <h3 class="page-title">Feedback</h3>
             </div>
-            <div class="card calculate">
-              <div class="card-body">
-                <form class="forms-sample">
-                  <div class="row">
-                    <div class="row">
-                      <!-- Employee Search -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="employeeSearch">Employee Search</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="employeeSearch"
-                            value="Mithilesh Sadh"
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <!-- Employee CTC Per annum -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="ctc">Employee CTC Per annum</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="ctc"
-                            value="4,25,000.00"
-                            required
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <!-- Template Name -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="salaryStructure"
-                            >Salary Structure Template</label
-                          >
-                          <span class="text-danger">*</span>
-                          <select
-                            class="form-select"
-                            id="salaryStructure"
-                            required
-                          >
-                            <option value="1">Software Engineer</option>
-                            <option value="2">CEO</option>
-                            <option value="3">Accountant</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                 <div class="text-end">
-                   <a
-                    type="button"
-                    class="btn btn-gradient-primary me-2 girdView calculate"
-                    href="createSalary1.html"
-                  >
-                    Calculate Salary Structure
-                  </a>
-                 </div>
-                </form>
-              </div>
+            <div class="page-header">
+              <h5>Search training </h5>
+             
             </div>
-            <div class="gridBlock" style="display: none">
-                       
-             <table class = "formTable formBlockTable">
-				<div>
-                    <tr>
-				
-					<td class="odd-col">
-						<label>Component Name<span class="required">*</span></label>
-					</td>
-					<td class="even-col">
-						<select>
-							<option value="Select">Select</option>
-							<option value="1">Basic</option>
-							<option value="2">HRA</option>
-							<option value="3">DA</option>
-							<option value="4">Special Allowance</option>
-							<option value="5">Newspaper Allowance</option>
-							<option value="6">Travelling Allowance</option>
-							<option value="7">Performance Incentives</option>
-							<option value="8">Loyalty Incentives</option>
-							<option value="9">Sales Incentives</option>
-							<option value="10">PF</option>
-							<option value="11">ESI</option>
-							<option value="12">Gratuity</option>
-							<option value="13">Professional Tax</option>
-							<option value="14">Income Tax</option>
-							<option value="15">Variable</option>
-						</select>
-					</td>
-					<td class="odd-col">
-						<label>Component Type<span class="required">*</span></label>
-					</td>
-					<td class="even-col">
-						<select>
-							<option value="Select">Select</option>
-							<option value="1">Earning</option>
-							<option value="2">Deduction</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td class="odd-col">
-						<label>Component Category<span class="required">*</span></label>
-					</td>
-					<td class="even-col">
-						<select>
-							<option value="Select">Select</option>
-							<option value="1">Fixed</option>
-							<option value="2">Percent</option>
-						</select>
-					</td>
-					<td class="odd-col">
-						<label>Frequency<span class="required">*</span></label>
-					</td>
-					<td class="even-col">
-						<select>
-							<option value="Select">Select</option>
-							<option value="1">Monthly</option>
-							<option value="4" >Annually</option>	
-						</select>
-					</td>
-				</tr>
-				<tr>
-					
-					<td class="odd-col">
-						<label>Percentage </label>	
-					</td>
-					<td class="even-col">
-						<input type="text" title="Amount" />
-					</td>
-						<td class="odd-col">
-						<label>Percentage On The Basis </label>	
-					</td>
-					<td class="even-col">
-						<select id="EmployeeCompany_joinedAs">
-							<option value="Select">Select</option>
-							<option value="1">CTC</option>
-							<option value="2">Basic</option>
-						</select>	
-					</td>
-				</tr>
-					<tr>
-				
-					<td class="odd-col">
-						<label>Fixed amount </label>	
-					</td>
-					<td class="even-col">
-						<input type="text" title="Monthly Amount" />
-					</td>
-					<td class="odd-col">
-					
-					</td>
-					<td class="even-col">
-					
-					</td>
-				</tr>
-                </div>
-					
-			</table>
-              
-              
-                
-                
-              <div class="row">
-                       
-              
-                <div class="col-lg-12 grid-margin stretch-card">
-                
-                  <div class="card">
-                  
-                    <div class="card-body">
+
+            <div>
+              <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <form class="forms-sample">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="percentage">Training Title</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Title"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      
                      
-                 
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">From Date</label>
+                            <input
+                              type="date"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Title"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">To Date</label>
+                            <input
+                              type="date"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Title"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                       <div class="row">
+                        <!-- Component Name -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="componentName"
+                              >Training  type
+                            </label>
+                            <select
+                              class="form-select"
+                              id="componentName"
+                              required
+                            >
+                              <option value="Select">Select</option>
+                              <option value="1">
+                                Technical or technology training
+                              </option>
+                              <option value="2">Quality training</option>
+                              <option value="3">Skill training</option>
+                              <option value="4">Soft skill training</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="componentType"
+                              >Training  location</label
+                            >
+                            <select
+                              class="form-select"
+                              id="componentType"
+                              required
+                            >
+                              <option value="Select">Select</option>
+                              <option value="Pune">Pune</option>
+                              <option value="Mumbai">Mumbai</option>
+                              <option value="Banglore">Banglore</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                     
+
+                      <!-- Buttons -->
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center mb-4">
+                <a type="button" class="btn btn-gradient-primary me-4">
+                  Search
+                </a>
+                <a type="reset" class="btn btn-light"> Cancel </a>
+              </div>
+
+              <div class="page-header">
+                <h5>Attended trainings</h5>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
                       <table class="table">
-                                
-                          
-               
                         <thead>
-                          <tr>
-                            <th>Particulars</th>
-                            <th>Particulars Type</th>
-                            <th>Per Month</th>
-                            <th>Per Annum</th>
-                          </tr>
+                          <tr >
+					<th>
+						<label>Training title</label>
+					</th>
+					<th>
+						<label>Training from date</label>
+					</th>
+					<th>
+						<label>Training to date</label>
+					</th>
+					<th>
+						<label>Training type</label>
+					</th>
+					<th>
+						<label>Training location </label>
+					</th>
+					<th>
+						<label>Training Venue</label>
+					</th>
+					<th>
+						<label>Training description</label>
+					</th>
+					<th>
+						<label>Action</label>
+					</th>
+				</tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td>Salary</td>
-                            <td>-</td>
-                            <td>31,250.00</td>
-                            <td>3,75,000.00</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              Variable component paid annually based on
-                              performance
-                            </td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>50,000.00</td>
-                          </tr>
-                          <tr class="">
-                            <td>
-                              <b>TOTAL yearly projected earnings - CTC </b>
-                            </td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>
-                              <b>4,25,000.00</b>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td colspan="4">
-                              <b
-                                >Monthly Deductions (from Employee's
-                                Earnings)</b
-                              >
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Basic+DA</td>
-                            <td>Earning</td>
-                            <td>15,625.00</td>
-                            <td>1,87,500.00</td>
-                          </tr>
-                          <tr>
-                            <td>HRA</td>
-                            <td>Earning</td>
-                            <td>4,687.50</td>
-                            <td>56,250.00</td>
-                          </tr>
-                          <tr>
-                            <td>Transport Allowance</td>
-                            <td>Earning</td>
-                            <td>1,600.00</td>
-                            <td>56,250.00</td>
-                          </tr>
-                          <tr>
-                            <td>Transport Allowance</td>
-                            <td>Earning</td>
-                            <td>1,600.00</td>
-                            <td>56,250.00</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label>Transport Allowance</label>
-                            </td>
-                            <td>
-                              <label>Earning</label>
-                            </td>
-                            <td>
-                              <label>1,600.00</label>
-                            </td>
-                            <td>
-                              <label>56,250.00</label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label>Reimbursement of Medical Expense</label>
-                            </td>
-                            <td>
-                              <label>Earning</label>
-                            </td>
-                            <td>
-                              <label>1,250.00</label>
-                            </td>
-                            <td>
-                              <label>15,000.00</label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label>India Allowance</label>
-                            </td>
-                            <td>
-                              <label>Earning</label>
-                            </td>
-                            <td>
-                              <label>1,171.00</label>
-                            </td>
-                            <td>
-                              <label>14,052.00</label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label>Employer's PF Contribution</label>
-                            </td>
-                            <td>
-                              <label>Earning</label>
-                            </td>
-                            <td>
-                              <label>2,041.50</label>
-                            </td>
-                            <td>
-                              <label>24,498.00</label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label></label>
-                            </td>
-                            <td>
-                              <label><b>Total Earning</b></label>
-                            </td>
-                            <td>
-                              <label>31,250.00</label>
-                            </td>
-                            <td>
-                              <label>3,75,000.00</label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td colspan="4">
-                              <label
-                                ><b
-                                  >Monthly Deductions (from Employee's
-                                  Earnings)</b
-                                ></label
-                              >
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label>Employer's Providend Fund</label>
-                            </td>
-                            <td>
-                              <label>Deduction</label>
-                            </td>
-                            <td>
-                              <label>2,041.50</label>
-                            </td>
-                            <td>
-                              <label>24,498.00</label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label>Employee's Providend Fund</label>
-                            </td>
-                            <td>
-                              <label>Deduction</label>
-                            </td>
-                            <td>
-                              <label>1,800.00</label>
-                            </td>
-                            <td>
-                              <label>21,600.00</label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label>Profession Tax</label>
-                            </td>
-                            <td>
-                              <label>Deduction</label>
-                            </td>
-                            <td>
-                              <label>208.33</label>
-                            </td>
-                            <td>
-                              <label>2,500.00</label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label>TDS</label>
-                            </td>
-                            <td>
-                              <label>Deduction</label>
-                            </td>
-                            <td>
-                              <label>-</label>
-                            </td>
-                            <td>
-                              <label>-</label>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label>Other</label>
-                            </td>
-                            <td>
-                              <label>Deduction</label>
-                            </td>
-                            <td>
-                              <label>-</label>
-                            </td>
-                            <td>
-                              <label>-</label>
-                            </td>
-                          </tr>
-
-                          <tr>
-                            <td>
-                              <label></label>
-                            </td>
-                            <td>
-                              <label><b>Total Deduction</b></label>
-                            </td>
-                            <td>
-                              <label>4,049.83</label>
-                            </td>
-                            <td>
-                              <label>48,598.00</label>
-                            </td>
-                          </tr>
-                          <tr>
+					
 					<td>
-						<label><b>Net Take Home Before Tax</b></label>
+						<label>Meeting etiquettes</label>
 					</td>
 					<td>
-						<label></b></label>
+						<label>07-Jan-2016</label>
 					</td>
 					<td>
-						<label><b>27200.17</b></label>
+						<label>09-Jan-2016</label>
+					</td>							
+					<td>
+						<label>Soft skill</label>
 					</td>
 					<td>
-						<label><b>326402.00</b></label>
+						<label>Pune</label>
+					</td>
+					<td>
+						<label>B Wing Conference Hall 101</label>
+					</td>
+					<td>
+						<label>Behavioural training</label>
+					</td>
+				<td>
+						<a href="feedback1.html">Feedback</a>
 					</td>
 				</tr>
+                          <tr>
+					
+					<td>
+						<label>Meeting etiquettes</label>
+					</td>
+					<td>
+						<label>07-Jan-2016</label>
+					</td>
+					<td>
+						<label>09-Jan-2016</label>
+					</td>
+					<td>
+						<label>Soft skill</label>
+					</td>
+					<td>
+						<label>Pune</label>
+					</td>
+					<td>
+						<label>B Wing Conference Hall 101</label>
+					</td>
+					<td>
+						<label>Behavioural training</label>
+					</td>
+					<td>
+						<a href="feedback1.html">Feedback</a>
+					</td>
+				</tr>
+                <tr>
+					
+					<td>
+						<label>Meeting etiquettes</label>
+					</td>
+					<td>
+						<label>07-Jan-2016</label>
+					</td>
+					<td>
+						<label>09-Jan-2016</label>
+					</td>							
+					<td>
+						<label>Soft skill</label>
+					</td>
+					<td>
+						<label>Pune</label>
+					</td>
+					<td>
+						<label>B Wing Conference Hall 101</label>
+					</td>
+					<td>
+						<label>Behavioural training</label>
+					</td>							
+					<td>
+						<a href="feedback1.html">Feedback</a>
+					</td>
+				</tr>
+                
+                          
+                        
                         </tbody>
                       </table>
-                      <div class=" fr formButton" style="margin-top: 2;">
-                         <button
-                          type="button"                       
-                          class="btn btn-gradient-primary me-2 backButton"
-                      >
-                        Save
-                      </button>
-                      </div>
                     </div>
-                     
                   </div>
+                
                 </div>
+                  
+              </div>
+              <div class="page-header">
+                <h5>List of employee feedback</h5>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <table class="table">
+                        <thead>
+                          <tr class="head">
+					<th>
+						<label>Employee Id</label>
+					</th>
+					<th>
+						<label>Employee name</label>
+					</th>
+					<th>
+						<label>Action</label>
+					</th>
+					
+				</tr>
+                        </thead>
+                        <tbody>
+                 <tr>
+					<td>
+						<label>ID1019</label>
+					</td>
+					<td>
+						<label>Mr. Sharon White</label>
+					</td>
+					
+					<td>
+						<a href="feedback1.html">Feedback</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>ID1009</label>
+					</td>
+					<td>
+						<label>Mr. George Martin</label>
+					</td>
+					
+					<td>
+						<a href="feedback1.html">Feedback</a>
+					</td>
+				</tr>
+                
+                          
+                        
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                
+                </div>
+                  
               </div>
             </div>
           </div>
-
-          <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
-          <footer class="footer">
-            <div
-              class="d-sm-flex justify-content-center justify-content-sm-between"
-            >
-              <span
-                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
-                >Copyright © 2023
-                <a href="https://www.bootstrapdash.com/" target="_blank"
-                  >BootstrapDash</a
-                >. All rights reserved.</span
-              >
-              <span
-                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
-                >Hand-crafted & made with
-                <i class="mdi mdi-heart text-danger"></i
-              ></span>
-            </div>
-          </footer>
-          <!-- partial -->
-        </div>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
