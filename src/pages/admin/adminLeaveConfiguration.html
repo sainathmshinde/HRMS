@@ -462,7 +462,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/admin/LeaveConfiguration.html"
+                      href="/src/pages/leave/LeaveConfiguration.html"
                     >
                       Leave Configuration
                     </a>
@@ -1015,7 +1015,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/admin/leaveConfiguration.html"
+                      href="/src/pages/admin/adminLeaveConfiguration.html"
                     >
                       Leave Configuration
                     </a>
@@ -1029,7 +1029,10 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/admin/createKRA.html">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/admin/createAdminKra.html"
+                    >
                       Create KRA
                     </a>
                   </li>
@@ -1196,32 +1199,22 @@
           <div class="content-wrapper">
             <div class="page-header">
               <h3 class="page-title">Employee Type</h3>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <!-- <label for="title">Title</label> -->
-                  <span class="text-danger"></span>
+            </div>
+            <div class="row align-items-end mb-4">
+              <div class="col-md-3">
+                <div class="form-group mb-0">
                   <select class="form-select" id="title" required>
-                    <option value="mr">On Contract</option>
-                    <option value="mr">On Deputation</option>
+                    <option value="contract">On Contract</option>
+                    <option value="deputation">On Deputation</option>
                   </select>
                 </div>
               </div>
-              <div>
-                <a
-                  href="./CreateLeave.html"
-                  class="btn btn-gradient-primary me-2"
-                >
+
+              <div class="col-md-9 text-end">
+                <a href="./CreateLeave.html" class="btn btn-gradient-primary">
                   Add New
                 </a>
               </div>
-              <!-- <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Tables</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Basic tables
-                  </li>
-                </ol>
-              </nav> -->
             </div>
             <div class="row">
               <div class="col-lg-12 grid-margin stretch-card">
