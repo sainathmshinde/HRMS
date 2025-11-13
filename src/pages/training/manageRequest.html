@@ -1198,174 +1198,169 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Create Salary</h3>
+              <h3 class="page-title">Manage Request</h3>
             </div>
-            <div class="card calculate">
-              <div class="card-body">
-                <form class="forms-sample">
-                  <div class="row">
-                    <div class="row">
-                      <!-- Employee Search -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="employeeSearch">Employee Search</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="employeeSearch"
-                            value="Mithilesh Sadh"
-                            required
-                          />
+           
+            <div>
+                 <div class="col-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <form class="forms-sample">
+                        <div class="row">
+                          <!-- Component Name -->
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="componentName">Component Name</label>
+                              <span class="text-danger">*</span>
+                              <select
+                                class="form-select"
+                                id="componentName"
+                                required
+                              >
+                                <option value="Select">Select</option>
+                                <option value="1">Basic</option>
+                                <option value="2">HRA</option>
+                                <option value="3">DA</option>
+                                <option value="4">Special Allowance</option>
+                                <option value="5">Newspaper Allowance</option>
+                                <option value="6">Travelling Allowance</option>
+                                <option value="7">
+                                  Performance Incentives
+                                </option>
+                                <option value="8">Loyalty Incentives</option>
+                                <option value="9">Sales Incentives</option>
+                                <option value="10">PF</option>
+                                <option value="11">ESI</option>
+                                <option value="12">Gratuity</option>
+                                <option value="13">Professional Tax</option>
+                                <option value="14">Income Tax</option>
+                                <option value="15">Variable</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="componentType">Component Type</label>
+                              <span class="text-danger">*</span>
+                              <select
+                                class="form-select"
+                                id="componentType"
+                                required
+                              >
+                                <option value="Select">Select</option>
+                                <option value="1">Earning</option>
+                                <option value="2">Deduction</option>
+                              </select>
+                            </div>
+                          </div>
                         </div>
-                      </div>
 
-                      <!-- Employee CTC Per annum -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="ctc">Employee CTC Per annum</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="ctc"
-                            value="4,25,000.00"
-                            required
-                          />
-                        </div>
-                      </div>
-                    </div>
+                        <div class="row">
+                          <!-- Component Category-->
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="componentCategory"
+                                >Component Category</label
+                              >
+                              <span class="text-danger">*</span>
+                              <select
+                                class="form-select"
+                                id="componentCategory"
+                                required
+                              >
+                                <option value="Select">Select</option>
+                                <option value="1">Fixed</option>
+                                <option value="2">Percent</option>
+                              </select>
+                            </div>
+                          </div>
 
-                    <div class="row">
-                      <!-- Template Name -->
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="salaryStructure"
-                            >Salary Structure Template</label
-                          >
-                          <span class="text-danger">*</span>
-                          <select
-                            class="form-select"
-                            id="salaryStructure"
-                            required
-                          >
-                            <option value="1">Software Engineer</option>
-                            <option value="2">CEO</option>
-                            <option value="3">Accountant</option>
-                          </select>
+                          <!-- Frequency -->
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="frequency">Frequency</label>
+                              <span class="text-danger">*</span>
+                              <select
+                                class="form-select"
+                                id="frequency"
+                                required
+                              >
+                                <option value="Select">Select</option>
+                                <option value="1">Monthly</option>
+                                <option value="4">Annually</option>
+                              </select>
+                            </div>
+                          </div>
                         </div>
-                      </div>
+
+                        <div class="row">
+                          <!-- Percentage -->
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="percentage">Percentage</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="percentage"
+                                placeholder="Enter Percentage"
+                              />
+                            </div>
+                          </div>
+
+                          <!-- Percentage On The Basis O -->
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="frequency"
+                                >Percentage On The Basis Of</label
+                              >
+                              <span class="text-danger">*</span>
+                              <select
+                                class="form-select"
+                                id="frequency"
+                                required
+                              >
+                                <option value="Select">Select</option>
+                                <option value="1">CTC</option>
+                                <option value="2">Basic</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <!-- Fixed Amount -->
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="fixedAmount">Fixed Amount</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="fixedAmount"
+                                placeholder="Enter Amount"
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Buttons -->
+                      </form>
                     </div>
                   </div>
-                 <div class="text-center">
-                   <a
+                </div>
+                   <div class="text-center mb-4">
+                  <a
                     type="button"
-                    class="btn btn-gradient-primary me-2 girdView calculate"
+                    class="btn btn-gradient-primary me-4 "
                     href="createSalary1.html"
                   >
-                    Calculate Salary Structure
+                    Save
                   </a>
-                 </div>
-                </form>
-              </div>
-            </div>
-            <div class="gridBlock" style="display: none">
-                       
-             <table class = "formTable formBlockTable">
-				<div>
-                    <tr>
-				
-					<td class="odd-col">
-						<label>Component Name<span class="required">*</span></label>
-					</td>
-					<td class="even-col">
-						<select>
-							<option value="Select">Select</option>
-							<option value="1">Basic</option>
-							<option value="2">HRA</option>
-							<option value="3">DA</option>
-							<option value="4">Special Allowance</option>
-							<option value="5">Newspaper Allowance</option>
-							<option value="6">Travelling Allowance</option>
-							<option value="7">Performance Incentives</option>
-							<option value="8">Loyalty Incentives</option>
-							<option value="9">Sales Incentives</option>
-							<option value="10">PF</option>
-							<option value="11">ESI</option>
-							<option value="12">Gratuity</option>
-							<option value="13">Professional Tax</option>
-							<option value="14">Income Tax</option>
-							<option value="15">Variable</option>
-						</select>
-					</td>
-					<td class="odd-col">
-						<label>Component Type<span class="required">*</span></label>
-					</td>
-					<td class="even-col">
-						<select>
-							<option value="Select">Select</option>
-							<option value="1">Earning</option>
-							<option value="2">Deduction</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td class="odd-col">
-						<label>Component Category<span class="required">*</span></label>
-					</td>
-					<td class="even-col">
-						<select>
-							<option value="Select">Select</option>
-							<option value="1">Fixed</option>
-							<option value="2">Percent</option>
-						</select>
-					</td>
-					<td class="odd-col">
-						<label>Frequency<span class="required">*</span></label>
-					</td>
-					<td class="even-col">
-						<select>
-							<option value="Select">Select</option>
-							<option value="1">Monthly</option>
-							<option value="4" >Annually</option>	
-						</select>
-					</td>
-				</tr>
-				<tr>
-					
-					<td class="odd-col">
-						<label>Percentage </label>	
-					</td>
-					<td class="even-col">
-						<input type="text" title="Amount" />
-					</td>
-						<td class="odd-col">
-						<label>Percentage On The Basis </label>	
-					</td>
-					<td class="even-col">
-						<select id="EmployeeCompany_joinedAs">
-							<option value="Select">Select</option>
-							<option value="1">CTC</option>
-							<option value="2">Basic</option>
-						</select>	
-					</td>
-				</tr>
-					<tr>
-				
-					<td class="odd-col">
-						<label>Fixed amount </label>	
-					</td>
-					<td class="even-col">
-						<input type="text" title="Monthly Amount" />
-					</td>
-					<td class="odd-col">
-					
-					</td>
-					<td class="even-col">
-					
-					</td>
-				</tr>
+                  <a type="reset" class="btn btn-light" href="createSalary1.html">
+                    Cancel
+                  </a>
                 </div>
-					
-			</table>
+                        
+             
               
               
                 
@@ -1631,13 +1626,14 @@
 				</tr>
                         </tbody>
                       </table>
-                      <div class=" fr formButton" style="margin-top: 2;">
-                         <button
+                      <div class="text-center mt-4">
+                         <a
                           type="button"                       
                           class="btn btn-gradient-primary me-2 backButton"
+                          href="createSalary.html"
                       >
                         Save
-                      </button>
+                      </a>
                       </div>
                     </div>
                      
