@@ -42,12 +42,6 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
-    <!-- Font Awesome CSS CDN -->
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
   </head>
   <body>
     <div class="container-scroller">
@@ -299,6 +293,22 @@
         <!-- partial:../../partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
+            <!-- <li class="nav-item nav-profile">
+              <a href="#" class="nav-link">
+                <div class="nav-profile-image">
+                  <img src="assets/images/faces/face1.jpg" alt="profile" />
+                  <span class="login-status online"></span>
+                  change to offline or busy as needed
+                </div>
+                <div class="nav-profile-text d-flex flex-column">
+                  <span class="font-weight-bold mb-2">David Grey. H</span>
+                  <span class="text-secondary text-small">Project Manager</span>
+                </div>
+                <i
+                  class="mdi mdi-bookmark-check text-success nav-profile-badge"
+                ></i>
+              </a>
+            </li> -->
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -452,7 +462,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/leave/leaveConfiguration.html"
+                      href="pages/admin/LeaveConfiguration.html"
                     >
                       Leave Configuration
                     </a>
@@ -511,7 +521,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/attendance/attendanceRegister.html"
+                      href="../../pages/admin/leaveConfiguration.html"
                     >
                       Attendance Register
                     </a>
@@ -519,7 +529,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/attendance/attendanceConfiguration.html"
+                      href="/src/pages/attendance/attendanceConfiguration.html"
                     >
                       Attendance Configuration
                     </a>
@@ -542,95 +552,71 @@
               <div class="collapse" id="payroll" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/dashboard.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/dashboard.html">
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/payroll/salaryTemplate.html"
+                      href="pages/payroll/salaryTemplate.html"
                     >
                       Salary Template
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/createSalary.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/createSalary.html">
                       Create Salary
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/salaryRule.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/salaryRule.html">
                       Salary Rule
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/pfPtRule.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/pfPtRule.html">
                       PF PT Rule
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/payroll/taxDeductionRule.html"
+                      href="pages/payroll/taxDeductionRule.html"
                     >
                       Tax Deduction Rule
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/itrSlabs.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/itrSlabs.html">
                       ITR Slabs
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/monthlySalary.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/monthlySalary.html">
                       Monthly Salary
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/payroll/investmentDeclaration.html"
+                      href="pages/payroll/investmentDeclaration.html"
                     >
                       Investment Declaration
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/payroll/form16.html">
+                    <a class="nav-link" href="pages/payroll/form16.html">
                       Form 16
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/pfReturn.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/pfReturn.html">
                       PF Return
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/ptReturn.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/ptReturn.html">
                       PT Return
                     </a>
                   </li>
@@ -653,10 +639,7 @@
               <div class="collapse" id="performance" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/performance/dashboard.html"
-                    >
+                    <a class="nav-link" href="pages/performance/dashboard.html">
                       Dashboard
                     </a>
                   </li>
@@ -664,40 +647,34 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/assessmentSchedule.html"
+                      href="pages/performance/assessmentSchedule.html"
                     >
                       Assessment Schedule
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/performance/manageKRA.html"
-                    >
+                    <a class="nav-link" href="pages/performance/manageKRA.html">
                       Manage KRA
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/eligibility.html"
+                      href="pages/performance/eligibility.html"
                     >
                       Eligibility
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/performance/assignKRA.html"
-                    >
+                    <a class="nav-link" href="pages/performance/assignKRA.html">
                       Assign KRA
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/myAssignedKRA.html"
+                      href="pages/performance/myAssignedKRA.html"
                     >
                       My Assigned KRA
                     </a>
@@ -705,7 +682,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/manageTeamKRA.html"
+                      href="pages/performance/manageTeamKRA.html"
                     >
                       Manage Team KRA
                     </a>
@@ -713,7 +690,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/selfAssessment.html"
+                      href="pages/performance/selfAssessment.html"
                     >
                       Self Assessment
                     </a>
@@ -721,7 +698,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/subordinateAssessment.html"
+                      href="pages/performance/subordinateAssessment.html"
                     >
                       Subordinate Assessment
                     </a>
@@ -729,7 +706,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/reviewerAssessment.html"
+                      href="pages/performance/reviewerAssessment.html"
                     >
                       Reviewer Assessment
                     </a>
@@ -737,7 +714,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/assignBand.html"
+                      href="pages/performance/assignBand.html"
                     >
                       Assign Band
                     </a>
@@ -745,7 +722,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/assessmentReport.html"
+                      href="pages/performance/assessmentReport.html"
                     >
                       Assessment Report
                     </a>
@@ -753,7 +730,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/printCommunicationLetter.html"
+                      href="pages/performance/printCommunicationLetter.html"
                     >
                       Print Communication Letter
                     </a>
@@ -761,7 +738,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/printReviewResultLetter.html"
+                      href="pages/performance/printReviewResultLetter.html"
                     >
                       Print Review Result Letter
                     </a>
@@ -769,7 +746,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/employeePerformanceStatus.html"
+                      href="pages/performance/employeePerformanceStatus.html"
                     >
                       Employee Performance Status
                     </a>
@@ -777,7 +754,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/disciplinaryAction.html"
+                      href="pages/performance/disciplinaryAction.html"
                     >
                       Disciplinary Action
                     </a>
@@ -785,7 +762,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/bandTemplate.html"
+                      href="pages/performance/bandTemplate.html"
                     >
                       Band Template
                     </a>
@@ -809,17 +786,14 @@
               <div class="collapse" id="training" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/training/dashboard.html"
-                    >
+                    <a class="nav-link" href="pages/training/dashboard.html">
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/training/manageRequest.html"
+                      href="pages/training/manageRequest.html"
                     >
                       Manage Request
                     </a>
@@ -827,23 +801,20 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/training/manageTraining.html"
+                      href="pages/training/manageTraining.html"
                     >
                       Manage Training
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/training/enrollment.html"
-                    >
+                    <a class="nav-link" href="pages/training/enrollment.html">
                       Enrollment
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/training/trainerMaster.html"
+                      href="pages/training/trainerMaster.html"
                     >
                       Trainer Master
                     </a>
@@ -851,16 +822,13 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/training/attendanceAndGrade.html"
+                      href="pages/training/attendanceAndGrade.html"
                     >
                       Attendance And Grade
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/training/feedback.html"
-                    >
+                    <a class="nav-link" href="pages/training/feedback.html">
                       Feedback
                     </a>
                   </li>
@@ -882,17 +850,14 @@
               <div class="collapse" id="tourDiary" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/tourDiary/dashboard.html"
-                    >
+                    <a class="nav-link" href="pages/tourDiary/dashboard.html">
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/tourDiary/viewMonthlyWorkPlan.html"
+                      href="pages/tourDiary/viewMonthlyWorkPlan.html"
                     >
                       View Monthly Work Plan
                     </a>
@@ -900,7 +865,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/tourDiary/createTourPlan.html"
+                      href="pages/tourDiary/createTourPlan.html"
                     >
                       Create Tour Plan
                     </a>
@@ -908,7 +873,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/tourDiary/approveTeamTourPlan.html"
+                      href="pages/tourDiary/approveTeamTourPlan.html"
                     >
                       Approve Team Tour Plan
                     </a>
@@ -916,7 +881,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/tourDiary/monthlyDiary.html"
+                      href="pages/tourDiary/monthlyDiary.html"
                     >
                       Monthly Diary
                     </a>
@@ -924,7 +889,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/tourDiary/approveMonthlyDiary.html"
+                      href="pages/tourDiary/approveMonthlyDiary.html"
                     >
                       Approve Monthly Diary
                     </a>
@@ -932,7 +897,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/tourDiary/validateExpenses.html"
+                      href="pages/tourDiary/validateExpenses.html"
                     >
                       Validate Expenses
                     </a>
@@ -956,22 +921,19 @@
               <div class="collapse" id="recruitment" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/recruitment/dashboard.html"
-                    >
+                    <a class="nav-link" href="pages/recruitment/dashboard.html">
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/recruitment/srf.html">
+                    <a class="nav-link" href="pages/recruitment/srf.html">
                       SRF
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/selectionSteps.html"
+                      href="pages/recruitment/selectionSteps.html"
                     >
                       Selection Steps
                     </a>
@@ -979,7 +941,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/candidateRegistration.html"
+                      href="pages/recruitment/candidateRegistration.html"
                     >
                       Candidate Registration
                     </a>
@@ -987,7 +949,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/uploadCandidateInformation.html"
+                      href="pages/recruitment/uploadCandidateInformation.html"
                     >
                       Upload Candidate Information
                     </a>
@@ -995,7 +957,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/qualifyCandidates.html"
+                      href="pages/recruitment/qualifyCandidates.html"
                     >
                       Qualify Candidates
                     </a>
@@ -1003,7 +965,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/candidateMarks.html"
+                      href="pages/recruitment/candidateMarks.html"
                     >
                       Candidate Marks
                     </a>
@@ -1011,7 +973,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/finalResult.html"
+                      href="pages/recruitment/finalResult.html"
                     >
                       Final Result
                     </a>
@@ -1019,7 +981,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/referenceCheck.html"
+                      href="pages/recruitment/referenceCheck.html"
                     >
                       Reference Check
                     </a>
@@ -1027,7 +989,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/projectResourceAllocation.html"
+                      href="pages/recruitment/projectResourceAllocation.html"
                     >
                       Project Resource Allocation
                     </a>
@@ -1053,7 +1015,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/admin/leaveConfiguration.html"
+                      href="/src/pages/admin/adminLeaveConfiguration.html"
                     >
                       Leave Configuration
                     </a>
@@ -1061,20 +1023,23 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/admin/attendanceConfiguration.html"
+                      href="/src/pages/admin/adminAttendanceConfiguration.html"
                     >
                       Attendance Configuration
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/admin/createKRA.html">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/admin/createAdminKra.html"
+                    >
                       Create KRA
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/admin/allMastersScreens.html"
+                      href="/src/pages/admin/allMastersScreens.html"
                     >
                       All Masters Screens
                     </a>
@@ -1233,327 +1198,76 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Salary Template</h3>
-              <nav aria-label="breadcrumb">
-                <a
-                  href="javascript:void(0);"
-                  class="formView btn btn-gradient-primary me-2 gridBlock"
-                  >Add Salary Template</a
-                >
-              </nav>
+              <h3 class="page-title">Employee Type</h3>
             </div>
-            <div class="row gridBlock">
+            <div class="row align-items-end mb-4">
+              <div class="col-md-3">
+                <div class="form-group mb-0">
+                  <select class="form-select" id="title" required>
+                    <option value="contract">On Contract</option>
+                    <option value="deputation">On Deputation</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-md-9 text-end">
+                <a
+                  href="/src/pages/admin/createAdminAttendenceConfiguration.html"
+                  class="btn btn-gradient-primary me-2"
+                >
+                  Add New
+                </a>
+              </div>
+            </div>
+            <div class="row">
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
+                    <!-- <h4 class="card-title">Employee Type</h4>
+                    <p class="card-description">
+                      Add class <code>.table</code>
+                    </p> -->
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Designation Name</th>
+                          <th>Category Name</th>
                           <th>Description</th>
                           <th>Action</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>CEO</td>
-                          <td>CEO salary template</td>
-                          <td>
-                            <a href="javascript:void(0);" class="formView"
-                              ><i class="fa-solid fa-pen-to-square"></i
-                            ></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Accountant</td>
-                          <td>Accountant salary template</td>
+                          <td>General</td>
+                          <td>Employee General Shift Category</td>
                           <td>
                             <a
-                              href="javascript:void(0);"
-                              class="formView view-img"
-                              ><i class="fa-solid fa-pen-to-square"></i
-                            ></a>
+                              href="/src/pages/admin/createAttendenceConfiguration.html"
+                            >
+                              View
+                            </a>
                           </td>
                         </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="formBlock" style="display: none">
-              <div class="form-edit">&nbsp;</div>
-              <div class="row">
-                <div class="col-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <form class="forms-sample">
-                        <div class="row">
-                          <div class="row">
-                            <!-- Designation -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="designation">Designation</label>
-                                <span class="text-danger">*</span>
-                                <select
-                                  class="form-select"
-                                  id="designation"
-                                  required
-                                >
-                                  <option value="1">CEO</option>
-                                  <option value="2">Accountant</option>
-                                  <option value="3">COO</option>
-                                  <option value="4">VP Marketing</option>
-                                  <option value="5">VP HR</option>
-                                  <option value="6">VP Promotion</option>
-                                  <option value="7">Marketing Manager</option>
-                                  <option value="8">HR Manager</option>
-                                  <option value="9">Promotion Manager</option>
-                                  <option value="10">Production Manager</option>
-                                  <option value="11">HR Analyst</option>
-                                  <option value="12">Senior HR Analyst</option>
-                                  <option value="13">
-                                    Business Development Manager
-                                  </option>
-                                  <option value="14">Project Manager</option>
-                                  <option value="15">Team Lead</option>
-                                  <option value="16">Programmer</option>
-                                  <option value="17">Other</option>
-                                </select>
-                              </div>
-                            </div>
-
-                            <!-- Description -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="description">Description</label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="description"
-                                  placeholder="Enter Description"
-                                  required
-                                />
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <!-- Template Name -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="templateName">Template Name</label>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="templateName"
-                                  placeholder="CEO Template 1"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="page-header linkBlock">
-                <h3 class="page-title"></h3>
-                <nav aria-label="breadcrumb">
-                  <a
-                    href="javascript:void(0);"
-                    class="formView btn btn-gradient-primary mb-2 linkBlockForForm"
-                    >Add Salary Components</a
-                  >
-                </nav>
-              </div>
-
-              <div class="row formTable formBlockTable">
-                <div class="col-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <form class="forms-sample">
-                        <div class="row">
-                          <!-- Component Name -->
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="componentName">Component Name</label>
-                              <span class="text-danger">*</span>
-                              <select
-                                class="form-select"
-                                id="componentName"
-                                required
-                              >
-                                <option value="Select">Select</option>
-                                <option value="1">Basic</option>
-                                <option value="2">HRA</option>
-                                <option value="3">DA</option>
-                                <option value="4">Special Allowance</option>
-                                <option value="5">Newspaper Allowance</option>
-                                <option value="6">Travelling Allowance</option>
-                                <option value="7">
-                                  Performance Incentives
-                                </option>
-                                <option value="8">Loyalty Incentives</option>
-                                <option value="9">Sales Incentives</option>
-                                <option value="10">PF</option>
-                                <option value="11">ESI</option>
-                                <option value="12">Gratuity</option>
-                                <option value="13">Professional Tax</option>
-                                <option value="14">Income Tax</option>
-                                <option value="15">Variable</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="componentType">Component Type</label>
-                              <span class="text-danger">*</span>
-                              <select
-                                class="form-select"
-                                id="componentType"
-                                required
-                              >
-                                <option value="Select">Select</option>
-                                <option value="1">Earning</option>
-                                <option value="2">Deduction</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <!-- Component Category-->
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="componentCategory"
-                                >Component Category</label
-                              >
-                              <span class="text-danger">*</span>
-                              <select
-                                class="form-select"
-                                id="componentCategory"
-                                required
-                              >
-                                <option value="Select">Select</option>
-                                <option value="1">Fixed</option>
-                                <option value="2">Percent</option>
-                              </select>
-                            </div>
-                          </div>
-
-                          <!-- Frequency -->
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="frequency">Frequency</label>
-                              <span class="text-danger">*</span>
-                              <select
-                                class="form-select"
-                                id="frequency"
-                                required
-                              >
-                                <option value="Select">Select</option>
-                                <option value="1">Monthly</option>
-                                <option value="4">Annually</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <!-- Percentage -->
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="percentage">Percentage</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="percentage"
-                                placeholder="Enter Percentage"
-                              />
-                            </div>
-                          </div>
-
-                          <!-- Percentage On The Basis O -->
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="frequency"
-                                >Percentage On The Basis Of</label
-                              >
-                              <span class="text-danger">*</span>
-                              <select
-                                class="form-select"
-                                id="frequency"
-                                required
-                              >
-                                <option value="Select">Select</option>
-                                <option value="1">CTC</option>
-                                <option value="2">Basic</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                          <!-- Fixed Amount -->
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="fixedAmount">Fixed Amount</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="fixedAmount"
-                                placeholder="Enter Amount"
-                              />
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Buttons -->
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                <div class="saveButton text-center mb-4">
-                  <button
-                    type="button"
-                    class="btn btn-gradient-primary me-2 gridBlockForFormView"
-                  >
-                    Save
-                  </button>
-                  <button type="reset" class="btn btn-light girdView">
-                    Cancel
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="row gridBlockForForm" style="display: none">
-              <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <table class="table">
-                      <thead>
                         <tr>
-                          <th>Component</th>
-                          <th>Component Type</th>
-                          <th>Percentage(%)</th>
-                          <th>Percentage On Basis Of</th>
-                          <th>Fix Amount</th>
-                          <th>Frequency</th>
-                          <th>Action</th>
+                          <td>Afternoon</td>
+                          <td>Employee Afternoon Shift Category</td>
+                          <td>
+                            <a
+                              href="/src/pages/admin/createAttendenceConfiguration.html"
+                            >
+                              View
+                            </a>
+                          </td>
                         </tr>
-                      </thead>
-                      <tbody>
                         <tr>
-                          <td>Basis</td>
-                          <td>Percent</td>
-                          <td>50</td>
-                          <td>CTC</td>
-                          <td></td>
-                          <td>Monthly</td>
-                          <td>Delete</td>
+                          <td>Afternoon</td>
+                          <td>Employee Afternoon Shift Category</td>
+                          <td>
+                            <a
+                              href="/src/pages/admin/createAttendenceConfiguration.html"
+                            >
+                              View
+                            </a>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -1562,6 +1276,27 @@
               </div>
             </div>
           </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+                >Copyright © 2023
+                <a href="https://www.bootstrapdash.com/" target="_blank"
+                  >BootstrapDash</a
+                >. All rights reserved.</span
+              >
+              <span
+                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
+                >Hand-crafted & made with
+                <i class="mdi mdi-heart text-danger"></i
+              ></span>
+            </div>
+          </footer>
+          <!-- partial -->
         </div>
         <!-- main-panel ends -->
       </div>
@@ -1586,71 +1321,115 @@
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
-    <!-- End custom js for this page -->
-
     <script type="text/javascript">
       $(function () {
-        $(".formView").click(function () {
-          $(".formBlock").show();
-          $(".gridBlock").hide();
-          $(".gridBlockForForm").hide();
-          $("form").find("input[type='text']").val("");
-          $("form").find("textarea").val("");
-          $(".linkBlockForForm").hide();
+        $(".assignSchedule").click(function () {
+          $(".grid").hide();
+          $("#pendingForm").show();
+          $(".mounting-events-inner1").show();
+          $(".edit-img").hide();
+          $("form").find("input[type='text']").val(" ");
+          $(".edit-img").hide();
+
+          $("form").find("input").removeAttr("disabled");
+          $("form").find("select").removeAttr("disabled");
+          $("form").find(".carryForward").attr("disabled", "disabled");
+          $("form").find(".negativeCaption").attr("disabled", "disabled");
+          $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
+          $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
+          $("form").find("#accrual_dropdown").attr("disabled", "disabled");
         });
 
-        $(".girdView").click(function () {
-          $(".formBlock").hide();
-          $(".gridBlock").show();
-          $(".gridBlockForForm").hide();
+        $(".assignSchedule1").click(function () {
+          $("form")[0].reset();
+          $(".grid").hide();
+          $("#pendingForm").show();
+          $(".edit-img").show();
+
+          $("form").find("input[type='text']").prop("disabled", "disabled");
+          $("form").find("select").prop("disabled", "disabled");
         });
 
-        $(".gridBlockForFormView").click(function () {
-          $(".saveButton").hide();
-          $(".gridBlock").hide();
-          $(".formBlockTable").hide();
-          $(".gridBlockForForm").show();
-          $(".designationTable").show();
-          $(".linkBlockForForm").show();
-        });
-        $(".linkBlockForForm").click(function () {
-          $(".saveButton").show();
-          $(".gridBlock").hide();
-          $(".formBlockTable").show();
-          $(".gridBlockForForm").show();
-          $(".designationTable").show();
-          $(".linkBlockForForm").hide();
+        $(".enabledForm").click(function () {
+          $("form").find("input").removeAttr("disabled");
+          $("form").find("select").removeAttr("disabled");
+          $("form").find(".carryForward").attr("disabled", "disabled");
+          $("form").find(".negativeCaption").attr("disabled", "disabled");
+          $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
+          $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
+          $("form").find("#accrual_dropdown").attr("disabled", "disabled");
         });
 
-        $(".linkBlockForFormEdit").click(function () {
-          $(".saveButton").show();
-          $(".gridBlock").hide();
-          $(".formBlockTable").show();
-          $(".gridBlockForForm").show();
-          $(".designationTable").show();
-          $(".linkBlockForForm").hide();
+        $("#Carryforword_yes").click(function () {
+          $("form").find(".carryForward").removeAttr("disabled");
         });
 
-        $(".girdView").trigger("click");
-
-        $("#dateOfBirthDependent").datepicker({
-          changeMonth: true,
-          changeYear: true,
-          dateFormat: "dd-M-yy",
-          yearRange: "-70 :c",
+        $("#Carryforword_no").click(function () {
+          $("form").find(".carryForward").attr("disabled", "disabled");
         });
+
+        $(".grid").show();
+        $("#pendingForm").hide();
+
+        $("#Negative_yes").click(function () {
+          $("form").find(".negativeCaption").removeAttr("disabled");
+        });
+
+        $("#Negative_no").click(function () {
+          $("form").find(".negativeCaption").attr("disabled", "disabled");
+          $("form").find(".negativeCaption").prop("selectedIndex", 0);
+        });
+
+        $("#accrual_yes").click(function () {
+          $("form").find("#accrual_dropdown").removeAttr("disabled");
+        });
+        $("#accrual_no").click(function () {
+          $("form").find("#accrual_dropdown").attr("disabled", "disabled");
+          $("form").find("#accrual_dropdown").prop("selectedIndex", 0);
+        });
+
+        $("#Approval_yes").click(function () {
+          $("form").find("#ApprovalTop_yes").removeAttr("disabled");
+          $("form").find("#ApprovalTop_no").removeAttr("disabled");
+        });
+        $("#Approval_no").click(function () {
+          $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
+          $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
+        });
+      }); /*
+			$(".formView").click(function()
+			{
+				$(".grid").hide();
+				$("#pendingForm").show();
+				$("form").find("input").attr("disabled","disabled");
+				$("form").find("select").attr("disabled","disabled");
+			});*/
+      $(".disabledForm").click(function () {
+        $(".grid").show();
+        $("#pendingForm").hide();
+      });
+
+      $(".radio").click(function () {
+        if ($("#approved").is(":checked")) {
+          $("#forwardemployee").attr("disabled", "disabled");
+          $("#remark").attr("disabled", "disabled");
+        }
+        if ($("#declined").is(":checked")) {
+          $("#forwardemployee").attr("disabled", "disabled");
+          $("#remark").removeAttr("disabled");
+        }
+        if ($("#forwarded").is(":checked")) {
+          $("#forwardemployee").removeAttr("disabled");
+          $("#remark").attr("disabled", "disabled");
+        }
       });
     </script>
-    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
     <script
       src="js/multiDropdown.js"
       type="text/javascript"
       charset="utf-8"
     ></script>
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- End custom js for this page -->
   </body>
 </html>

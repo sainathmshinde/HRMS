@@ -42,37 +42,6 @@
   </head>
   <body>
     <div class="container-scroller">
-      <div class="row p-0 m-0 proBanner" id="proBanner">
-        <div class="col-md-12 p-0 m-0">
-          <div
-            class="card-body card-body-padding d-flex align-items-center justify-content-between"
-          >
-            <!-- <div class="ps-lg-3">
-              <div class="d-flex align-items-center justify-content-between">
-                <p class="mb-0 font-weight-medium me-3 buy-now-text">
-                  Free 24/7 customer support, updates, and more with this
-                  template!
-                </p>
-                <a
-                  href="https://www.bootstrapdash.com/product/purple-bootstrap-admin-template/"
-                  target="_blank"
-                  class="btn me-2 buy-now-btn border-0"
-                  >Buy Now</a
-                >
-              </div>
-            </div> -->
-            <div class="d-flex align-items-center justify-content-between">
-              <a
-                href="https://www.bootstrapdash.com/product/purple-bootstrap-admin-template/"
-                ><i class="mdi mdi-home me-3 text-white"></i
-              ></a>
-              <button id="bannerClose" class="btn border-0 p-0">
-                <i class="mdi mdi-close text-white mr-0"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- partial:partials/_navbar.html -->
       <nav
         class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
@@ -439,71 +408,77 @@
               >
                 <span class="menu-title">Leave</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-calendar-multiselect menu-icon"></i>
+                <i class="mdi mdi-contacts menu-icon"></i>
               </a>
               <div class="collapse" id="leave">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/leave/dashboard.html">
-                      Dashboard
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/leave/leaveAccount.html">
-                      Leave Account
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/leave/applyLeave.html">
-                      Apply Leave
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/leave/appliedLeave.html">
-                      Applied Leave
-                    </a>
+                    <a
+                      class="nav-link"
+                      href="/src/pages/ui-features/buttons.html"
+                      >Dashboard</a
+                    >
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/leave/approvedForwardLeave.html"
+                      href="/src/pages/leaves/leaveAccount.html"
+                      >Leave Account</a
                     >
-                      Approved / Forward Leave
-                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/applyLeave.html"
+                      >Apply Leave</a
+                    >
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/leave/subordinateLeavePlan.html"
+                      href="/src/pages/leaves/appliedLeaves.html"
+                      >Applied Leaves</a
                     >
-                      Subordinate Leave Plan
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/leave/holidayList.html">
-                      Holiday List
-                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/leave/leaveConfiguration.html"
+                      href="/src/pages/leaves/approvedLeave.html"
+                      >Approved Leaves</a
                     >
-                      Leave Configuration
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/leave/leaveAdjustment.html">
-                      Leave Adjustment
-                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/leave/leaveBalanceLedger.html"
+                      href="/src/pages/leaves/subordinateLeavePlan.html"
+                      >Subordinate Leave Plan</a
                     >
-                      Leave Balance Ledger
-                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/holidaysList.html"
+                      >Holidays List</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/leaveConfig.html"
+                      >Leave Configuration</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/leaveAdjustment.html"
+                      >Leave Adjustment</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/leaveBalanceLedger.html"
+                      >Leave Balance Ledger</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -546,7 +521,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/attendance/attendanceRegister.html"
+                      href="../../pages/admin/leaveConfiguration.html"
                     >
                       Attendance Register
                     </a>
@@ -554,7 +529,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/attendance/attendanceConfiguration.html"
+                      href="/src//pages/attendence/attendanceConfiguration.html"
                     >
                       Attendance Configuration
                     </a>
@@ -1040,7 +1015,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/admin/leaveConfiguration.html"
+                      href="/src/pages/admin/adminLeaveConfiguration.html"
                     >
                       Leave Configuration
                     </a>
@@ -1048,20 +1023,23 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/admin/attendanceConfiguration.html"
+                      href="/src/pages/admin/adminAttendanceConfiguration.html"
                     >
                       Attendance Configuration
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/admin/createKRA.html">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/admin/createAdminKra.html"
+                    >
                       Create KRA
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/admin/allMastersScreens.html"
+                      href="/src/pages/admin/allMastersScreens.html"
                     >
                       All Masters Screens
                     </a>
@@ -1075,143 +1053,6 @@
               <a class="nav-link" href="index.html">
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-bs-toggle="collapse"
-                href="#icons"
-                aria-expanded="false"
-                aria-controls="icons"
-              >
-                <span class="menu-title">Icons</span>
-                <i class="mdi mdi-contacts menu-icon"></i>
-              </a>
-              <div class="collapse" id="icons">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/icons/font-awesome.html"
-                      >Font Awesome</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-bs-toggle="collapse"
-                href="#forms"
-                aria-expanded="false"
-                aria-controls="forms"
-              >
-                <span class="menu-title">Forms</span>
-                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-              </a>
-              <div class="collapse" id="forms">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/forms/basic_elements.html"
-                      >Form Elements</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-bs-toggle="collapse"
-                href="#charts"
-                aria-expanded="false"
-                aria-controls="charts"
-              >
-                <span class="menu-title">Charts</span>
-                <i class="mdi mdi-chart-bar menu-icon"></i>
-              </a>
-              <div class="collapse" id="charts">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/charts/chartjs.html"
-                      >ChartJs</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-bs-toggle="collapse"
-                href="#tables"
-                aria-expanded="false"
-                aria-controls="tables"
-              >
-                <span class="menu-title">Tables</span>
-                <i class="mdi mdi-table-large menu-icon"></i>
-              </a>
-              <div class="collapse" id="tables">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/tables/basic-table.html"
-                      >Basic table</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-bs-toggle="collapse"
-                href="#auth"
-                aria-expanded="false"
-                aria-controls="auth"
-              >
-                <span class="menu-title">User Pages</span>
-                <i class="menu-arrow"></i>
-                <i class="mdi mdi-lock menu-icon"></i>
-              </a>
-              <div class="collapse" id="auth">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/samples/blank-page.html">
-                      Blank Page
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/samples/login.html">
-                      Login
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/samples/register.html">
-                      Register
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/samples/error-404.html">
-                      404
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/samples/error-500.html">
-                      500
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="docs/documentation.html"
-                target="_blank"
-              >
-                <span class="menu-title">Documentation</span>
-                <i class="mdi mdi-file-document-box menu-icon"></i>
               </a>
             </li>
           </ul>

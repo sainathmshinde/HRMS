@@ -42,12 +42,6 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
-    <!-- Font Awesome CSS CDN -->
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
   </head>
   <body>
     <div class="container-scroller">
@@ -297,8 +291,24 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+           <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
+            <!-- <li class="nav-item nav-profile">
+              <a href="#" class="nav-link">
+                <div class="nav-profile-image">
+                  <img src="assets/images/faces/face1.jpg" alt="profile" />
+                  <span class="login-status online"></span>
+                  change to offline or busy as needed
+                </div>
+                <div class="nav-profile-text d-flex flex-column">
+                  <span class="font-weight-bold mb-2">David Grey. H</span>
+                  <span class="text-secondary text-small">Project Manager</span>
+                </div>
+                <i
+                  class="mdi mdi-bookmark-check text-success nav-profile-badge"
+                ></i>
+              </a>
+            </li> -->
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -452,7 +462,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/leave/leaveConfiguration.html"
+                      href="pages/admin/LeaveConfiguration.html"
                     >
                       Leave Configuration
                     </a>
@@ -519,7 +529,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/attendance/attendanceConfiguration.html"
+                      href="/src/pages/attendance/attendanceConfiguration.html"
                     >
                       Attendance Configuration
                     </a>
@@ -542,95 +552,71 @@
               <div class="collapse" id="payroll" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/dashboard.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/dashboard.html">
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/payroll/salaryTemplate.html"
+                      href="pages/payroll/salaryTemplate.html"
                     >
                       Salary Template
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/createSalary.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/createSalary.html">
                       Create Salary
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/salaryRule.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/salaryRule.html">
                       Salary Rule
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/pfPtRule.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/pfPtRule.html">
                       PF PT Rule
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/payroll/taxDeductionRule.html"
+                      href="pages/payroll/taxDeductionRule.html"
                     >
                       Tax Deduction Rule
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/itrSlabs.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/itrSlabs.html">
                       ITR Slabs
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/monthlySalary.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/monthlySalary.html">
                       Monthly Salary
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/payroll/investmentDeclaration.html"
+                      href="pages/payroll/investmentDeclaration.html"
                     >
                       Investment Declaration
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/payroll/form16.html">
+                    <a class="nav-link" href="pages/payroll/form16.html">
                       Form 16
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/pfReturn.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/pfReturn.html">
                       PF Return
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/payroll/ptReturn.html"
-                    >
+                    <a class="nav-link" href="pages/payroll/ptReturn.html">
                       PT Return
                     </a>
                   </li>
@@ -653,10 +639,7 @@
               <div class="collapse" id="performance" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/performance/dashboard.html"
-                    >
+                    <a class="nav-link" href="pages/performance/dashboard.html">
                       Dashboard
                     </a>
                   </li>
@@ -664,40 +647,34 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/assessmentSchedule.html"
+                      href="pages/performance/assessmentSchedule.html"
                     >
                       Assessment Schedule
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/performance/manageKRA.html"
-                    >
+                    <a class="nav-link" href="pages/performance/manageKRA.html">
                       Manage KRA
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/eligibility.html"
+                      href="pages/performance/eligibility.html"
                     >
                       Eligibility
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/performance/assignKRA.html"
-                    >
+                    <a class="nav-link" href="pages/performance/assignKRA.html">
                       Assign KRA
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/myAssignedKRA.html"
+                      href="pages/performance/myAssignedKRA.html"
                     >
                       My Assigned KRA
                     </a>
@@ -705,7 +682,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/manageTeamKRA.html"
+                      href="pages/performance/manageTeamKRA.html"
                     >
                       Manage Team KRA
                     </a>
@@ -713,7 +690,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/selfAssessment.html"
+                      href="pages/performance/selfAssessment.html"
                     >
                       Self Assessment
                     </a>
@@ -721,7 +698,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/subordinateAssessment.html"
+                      href="pages/performance/subordinateAssessment.html"
                     >
                       Subordinate Assessment
                     </a>
@@ -729,7 +706,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/reviewerAssessment.html"
+                      href="pages/performance/reviewerAssessment.html"
                     >
                       Reviewer Assessment
                     </a>
@@ -737,7 +714,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/assignBand.html"
+                      href="pages/performance/assignBand.html"
                     >
                       Assign Band
                     </a>
@@ -745,7 +722,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/assessmentReport.html"
+                      href="pages/performance/assessmentReport.html"
                     >
                       Assessment Report
                     </a>
@@ -753,7 +730,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/printCommunicationLetter.html"
+                      href="pages/performance/printCommunicationLetter.html"
                     >
                       Print Communication Letter
                     </a>
@@ -761,7 +738,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/printReviewResultLetter.html"
+                      href="pages/performance/printReviewResultLetter.html"
                     >
                       Print Review Result Letter
                     </a>
@@ -769,7 +746,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/employeePerformanceStatus.html"
+                      href="pages/performance/employeePerformanceStatus.html"
                     >
                       Employee Performance Status
                     </a>
@@ -777,7 +754,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/disciplinaryAction.html"
+                      href="pages/performance/disciplinaryAction.html"
                     >
                       Disciplinary Action
                     </a>
@@ -785,7 +762,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/performance/bandTemplate.html"
+                      href="pages/performance/bandTemplate.html"
                     >
                       Band Template
                     </a>
@@ -809,17 +786,14 @@
               <div class="collapse" id="training" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/training/dashboard.html"
-                    >
+                    <a class="nav-link" href="pages/training/dashboard.html">
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/training/manageRequest.html"
+                      href="pages/training/manageRequest.html"
                     >
                       Manage Request
                     </a>
@@ -827,23 +801,20 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/training/manageTraining.html"
+                      href="pages/training/manageTraining.html"
                     >
                       Manage Training
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/training/enrollment.html"
-                    >
+                    <a class="nav-link" href="pages/training/enrollment.html">
                       Enrollment
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/training/trainerMaster.html"
+                      href="pages/training/trainerMaster.html"
                     >
                       Trainer Master
                     </a>
@@ -851,16 +822,13 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/training/attendanceAndGrade.html"
+                      href="pages/training/attendanceAndGrade.html"
                     >
                       Attendance And Grade
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/training/feedback.html"
-                    >
+                    <a class="nav-link" href="pages/training/feedback.html">
                       Feedback
                     </a>
                   </li>
@@ -882,17 +850,14 @@
               <div class="collapse" id="tourDiary" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/tourDiary/dashboard.html"
-                    >
+                    <a class="nav-link" href="pages/tourDiary/dashboard.html">
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/tourDiary/viewMonthlyWorkPlan.html"
+                      href="pages/tourDiary/viewMonthlyWorkPlan.html"
                     >
                       View Monthly Work Plan
                     </a>
@@ -900,7 +865,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/tourDiary/createTourPlan.html"
+                      href="pages/tourDiary/createTourPlan.html"
                     >
                       Create Tour Plan
                     </a>
@@ -908,7 +873,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/tourDiary/approveTeamTourPlan.html"
+                      href="pages/tourDiary/approveTeamTourPlan.html"
                     >
                       Approve Team Tour Plan
                     </a>
@@ -916,7 +881,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/tourDiary/monthlyDiary.html"
+                      href="pages/tourDiary/monthlyDiary.html"
                     >
                       Monthly Diary
                     </a>
@@ -924,7 +889,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/tourDiary/approveMonthlyDiary.html"
+                      href="pages/tourDiary/approveMonthlyDiary.html"
                     >
                       Approve Monthly Diary
                     </a>
@@ -932,7 +897,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/tourDiary/validateExpenses.html"
+                      href="pages/tourDiary/validateExpenses.html"
                     >
                       Validate Expenses
                     </a>
@@ -956,22 +921,19 @@
               <div class="collapse" id="recruitment" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="../../pages/recruitment/dashboard.html"
-                    >
+                    <a class="nav-link" href="pages/recruitment/dashboard.html">
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/recruitment/srf.html">
+                    <a class="nav-link" href="pages/recruitment/srf.html">
                       SRF
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/selectionSteps.html"
+                      href="pages/recruitment/selectionSteps.html"
                     >
                       Selection Steps
                     </a>
@@ -979,7 +941,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/candidateRegistration.html"
+                      href="pages/recruitment/candidateRegistration.html"
                     >
                       Candidate Registration
                     </a>
@@ -987,7 +949,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/uploadCandidateInformation.html"
+                      href="pages/recruitment/uploadCandidateInformation.html"
                     >
                       Upload Candidate Information
                     </a>
@@ -995,7 +957,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/qualifyCandidates.html"
+                      href="pages/recruitment/qualifyCandidates.html"
                     >
                       Qualify Candidates
                     </a>
@@ -1003,7 +965,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/candidateMarks.html"
+                      href="pages/recruitment/candidateMarks.html"
                     >
                       Candidate Marks
                     </a>
@@ -1011,7 +973,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/finalResult.html"
+                      href="pages/recruitment/finalResult.html"
                     >
                       Final Result
                     </a>
@@ -1019,7 +981,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/referenceCheck.html"
+                      href="pages/recruitment/referenceCheck.html"
                     >
                       Reference Check
                     </a>
@@ -1027,7 +989,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/recruitment/projectResourceAllocation.html"
+                      href="pages/recruitment/projectResourceAllocation.html"
                     >
                       Project Resource Allocation
                     </a>
@@ -1036,7 +998,7 @@
               </div>
             </li>
 
-            <li class="nav-item">
+        <li class="nav-item">
               <a
                 class="nav-link"
                 data-bs-toggle="collapse"
@@ -1053,7 +1015,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/admin/leaveConfiguration.html"
+                      href="/src/pages/admin/adminLeaveConfiguration.html"
                     >
                       Leave Configuration
                     </a>
@@ -1061,20 +1023,23 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/admin/attendanceConfiguration.html"
+                    href="/src/pages/admin/adminAttendanceConfiguration.html"
                     >
                       Attendance Configuration
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/admin/createKRA.html">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/admin/createAdminKra.html"
+                    >
                       Create KRA
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/admin/allMastersScreens.html"
+                      href="/src/pages/admin/allMastersScreens.html"
                     >
                       All Masters Screens
                     </a>
@@ -1233,335 +1198,660 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Salary Template</h3>
-              <nav aria-label="breadcrumb">
-                <a
-                  href="javascript:void(0);"
-                  class="formView btn btn-gradient-primary me-2 gridBlock"
-                  >Add Salary Template</a
-                >
-              </nav>
+              <h3 class="page-title">Leave Configuraton</h3>
+              <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Form elements
+                  </li>
+                </ol>
+              </nav> -->
             </div>
-            <div class="row gridBlock">
-              <div class="col-lg-12 grid-margin stretch-card">
+            <div class="row">
+           
+              <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Designation Name</th>
-                          <th>Description</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>CEO</td>
-                          <td>CEO salary template</td>
-                          <td>
-                            <a href="javascript:void(0);" class="formView"
-                              ><i class="fa-solid fa-pen-to-square"></i
-                            ></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Accountant</td>
-                          <td>Accountant salary template</td>
-                          <td>
-                            <a
-                              href="javascript:void(0);"
-                              class="formView view-img"
-                              ><i class="fa-solid fa-pen-to-square"></i
-                            ></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="formBlock" style="display: none">
-              <div class="form-edit">&nbsp;</div>
-              <div class="row">
-                <div class="col-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <form class="forms-sample">
-                        <div class="row">
-                          <div class="row">
-                            <!-- Designation -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="designation">Designation</label>
-                                <span class="text-danger">*</span>
-                                <select
-                                  class="form-select"
-                                  id="designation"
-                                  required
-                                >
-                                  <option value="1">CEO</option>
-                                  <option value="2">Accountant</option>
-                                  <option value="3">COO</option>
-                                  <option value="4">VP Marketing</option>
-                                  <option value="5">VP HR</option>
-                                  <option value="6">VP Promotion</option>
-                                  <option value="7">Marketing Manager</option>
-                                  <option value="8">HR Manager</option>
-                                  <option value="9">Promotion Manager</option>
-                                  <option value="10">Production Manager</option>
-                                  <option value="11">HR Analyst</option>
-                                  <option value="12">Senior HR Analyst</option>
-                                  <option value="13">
-                                    Business Development Manager
-                                  </option>
-                                  <option value="14">Project Manager</option>
-                                  <option value="15">Team Lead</option>
-                                  <option value="16">Programmer</option>
-                                  <option value="17">Other</option>
-                                </select>
-                              </div>
-                            </div>
+                    <h4 class="card-title">Leave Configuraton</h4>
+                    <form class="forms-sample">
+                      <!-- Row 1: Employee Type & Leave Type -->
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="employeeType">Employee Type</label>
+                            <select
+                              class="form-select"
+                              id="employeeType"
+                              required
+                            >
+                              <option value="">Select</option>
+                              <option value="on_contract">On Contract</option>
+                              <option value="on_deputation">
+                                On Deputation
+                              </option>
+                            </select>
+                          </div>
+                        </div>
 
-                            <!-- Description -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="description">Description</label>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="leaveType">Leave Type</label>
+                            <select class="form-select" id="leaveType" required>
+                              <option value="">Select</option>
+                              <option value="earned_leave">Casual Leave</option>
+                              <option value="earned_leave">Earned Leave</option>
+                              <option value="maternity_leave">
+                                Maternity Leave
+                              </option>
+                              <option value="paternity_leave">
+                                Paternity Leave
+                              </option>
+                              <option value="compensatory_off">
+                                Compensatory Off
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Row 2: Year Type & Opening Balance -->
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="yearType"
+                              >Year Type
+                              <span class="text-danger">*</span></label
+                            >
+                            <select class="form-select" id="yearType" required>
+                              <option value="">Select</option>
+                              <option value="calendar_year">
+                                Calendar Year
+                              </option>
+                              <option value="financial_year">
+                                Financial Year
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="openingBalance"
+                              >Opening Balance Applicable
+                              <span class="text-danger">*</span></label
+                            >
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
                                 <input
-                                  type="text"
-                                  class="form-control"
-                                  id="description"
-                                  placeholder="Enter Description"
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceYes"
+                                  value="yes"
                                   required
                                 />
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <!-- Template Name -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="templateName">Template Name</label>
+                                Yes
+                              </label>
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
                                 <input
-                                  type="text"
-                                  class="form-control"
-                                  id="templateName"
-                                  placeholder="CEO Template 1"
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceNo"
+                                  value="no"
                                 />
-                              </div>
+                                No
+                              </label>
                             </div>
                           </div>
                         </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      </div>
 
-              <div class="page-header linkBlock">
-                <h3 class="page-title"></h3>
-                <nav aria-label="breadcrumb">
-                  <a
-                    href="javascript:void(0);"
-                    class="formView btn btn-gradient-primary mb-2 linkBlockForForm"
-                    >Add Salary Components</a
-                  >
-                </nav>
-              </div>
+                      <!-- Row 3: Title & First Name -->
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label
+                              for="Annual Leave Quantity *
+"
+                              >Annual Leave Quantity *
 
-              <div class="row formTable formBlockTable">
-                <div class="col-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <form class="forms-sample">
-                        <div class="row">
-                          <!-- Component Name -->
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="componentName">Component Name</label>
-                              <span class="text-danger">*</span>
-                              <select
-                                class="form-select"
-                                id="componentName"
-                                required
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="Annual Leave Quantity *"
+                              placeholder="Annual Leave Quantity *"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="Accrual"
+                              >Accrual <span class="text-danger">*</span></label
+                            >
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
                               >
-                                <option value="Select">Select</option>
-                                <option value="1">Basic</option>
-                                <option value="2">HRA</option>
-                                <option value="3">DA</option>
-                                <option value="4">Special Allowance</option>
-                                <option value="5">Newspaper Allowance</option>
-                                <option value="6">Travelling Allowance</option>
-                                <option value="7">
-                                  Performance Incentives
-                                </option>
-                                <option value="8">Loyalty Incentives</option>
-                                <option value="9">Sales Incentives</option>
-                                <option value="10">PF</option>
-                                <option value="11">ESI</option>
-                                <option value="12">Gratuity</option>
-                                <option value="13">Professional Tax</option>
-                                <option value="14">Income Tax</option>
-                                <option value="15">Variable</option>
-                              </select>
+                                <input
+                                  type="radio"
+                                  name="Accrual "
+                                  id="Accrual "
+                                  value="yes"
+                                  required
+                                />
+                                Yes
+                              </label>
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="Accrual "
+                                  id="Accrual "
+                                  value="no"
+                                />
+                                No
+                              </label>
                             </div>
                           </div>
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="componentType">Component Type</label>
-                              <span class="text-danger">*</span>
-                              <select
-                                class="form-select"
-                                id="componentType"
-                                required
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="yearType"
+                              >Accural Frequency *
+                              <span class="text-danger">*</span></label
+                            >
+                            <select class="form-select" id="yearType" required>
+                              <option value="">Select</option>
+                              <option value="calendar_year">Monthly</option>
+                              <option value="financial_year">Quaterly</option>
+                              <option value="financial_year">
+                                Half Yearly
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="Total number of leaves as per frequency"
+                              >Total number of leaves as per frequency *
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="Total number of leaves as per frequency *"
+                              placeholder="Total number of leaves as per frequency *"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Total Number Leave -->
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="Carry Forward Applicable *"
+                              >Carry Forward Applicable *
+                              <span class="text-danger">*</span></label
+                            >
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
                               >
-                                <option value="Select">Select</option>
-                                <option value="1">Earning</option>
-                                <option value="2">Deduction</option>
-                              </select>
+                                <input
+                                  type="radio"
+                                  name="Accrual "
+                                  id="Accrual "
+                                  value="yes"
+                                  required
+                                />
+                                Yes
+                              </label>
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="Accrual "
+                                  id="Accrual "
+                                  value="no"
+                                />
+                                No
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="Carry forword max limit"
+                            >Carry forword max limit
+                            <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="Carry forword max limit"
+                            placeholder="Carry forword max limit"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <!-- Min Leave to be applied * -->
+                       <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="Min Leave to be applied *"
+                              >Min Leave to be applied * *
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="Min Leave to be applied *"
+                              placeholder="Min Leave to be applied *"
+                              required
+                            />
+                          </div>
+                        </div>
+                          <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="Max Leave to be applied *"
+                              >Max Leave to be applied *
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="Max Leave to be applied *"
+                              placeholder="Max Leave to be applied *"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+<!-- clubing with another leave -->
+                         <div class="row">
+                         <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="openingBalance"
+                              >Clubing with another Leave *
+                              <span class="text-danger">*</span></label
+                            >
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceYes"
+                                  value="yes"
+                                  required
+                                />
+                                Yes
+                              </label>
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceNo"
+                                  value="no"
+                                />
+                                No
+                              </label>
                             </div>
                           </div>
                         </div>
 
-                        <div class="row">
-                          <!-- Component Category-->
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="componentCategory"
-                                >Component Category</label
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="openingBalance"
+                              >Leave deduction while Sandwich *
+                              <span class="text-danger">*</span></label
+                            >
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
                               >
-                              <span class="text-danger">*</span>
-                              <select
-                                class="form-select"
-                                id="componentCategory"
-                                required
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceYes"
+                                  value="yes"
+                                  required
+                                />
+                                Yes
+                              </label>
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
                               >
-                                <option value="Select">Select</option>
-                                <option value="1">Fixed</option>
-                                <option value="2">Percent</option>
-                              </select>
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceNo"
+                                  value="no"
+                                />
+                                No
+                              </label>
                             </div>
                           </div>
+                        </div>
+                      </div>
 
-                          <!-- Frequency -->
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="frequency">Frequency</label>
-                              <span class="text-danger">*</span>
-                              <select
-                                class="form-select"
-                                id="frequency"
-                                required
+
+<!-- Navigate Leave Balance -->
+ <div class="row">
+      <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="openingBalance"
+                              >Negative Leave Balance
+                              <span class="text-danger">*</span></label
+                            >
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
                               >
-                                <option value="Select">Select</option>
-                                <option value="1">Monthly</option>
-                                <option value="4">Annually</option>
-                              </select>
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceYes"
+                                  value="yes"
+                                  required
+                                />
+                                Yes
+                              </label>
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceNo"
+                                  value="no"
+                                />
+                                No
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="Negative Leave Balance"
+                              >Negative Leave Balance
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="Total number of leaves as per frequency *"
+                              placeholder="Total number of leaves as per frequency *"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Enhancement -->
+                         <div class="row">
+                         <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="openingBalance"
+                              >Encashment * *
+                              <span class="text-danger">*</span></label
+                            >
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceYes"
+                                  value="yes"
+                                  required
+                                />
+                                Yes
+                              </label>
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceNo"
+                                  value="no"
+                                />
+                                No
+                              </label>
                             </div>
                           </div>
                         </div>
 
-                        <div class="row">
-                          <!-- Percentage -->
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="percentage">Percentage</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="percentage"
-                                placeholder="Enter Percentage"
-                              />
-                            </div>
-                          </div>
-
-                          <!-- Percentage On The Basis O -->
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="frequency"
-                                >Percentage On The Basis Of</label
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="openingBalance"
+                              >Encashment *
+                              <span class="text-danger">*</span></label
+                            >
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
                               >
-                              <span class="text-danger">*</span>
-                              <select
-                                class="form-select"
-                                id="frequency"
-                                required
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceYes"
+                                  value="yes"
+                                  required
+                                />
+                                1 up
+                              </label>
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
                               >
-                                <option value="Select">Select</option>
-                                <option value="1">CTC</option>
-                                <option value="2">Basic</option>
-                              </select>
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceNo"
+                                  value="no"
+                                />
+                                2 up
+                              </label>
+                               <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceNo"
+                                  value="no"
+                                />
+                             Top Level
+                              </label>
                             </div>
                           </div>
                         </div>
+                      </div>
 
-                        <div class="row">
-                          <!-- Fixed Amount -->
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="fixedAmount">Fixed Amount</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="fixedAmount"
-                                placeholder="Enter Amount"
-                              />
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Buttons -->
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                <div class="saveButton text-center mb-4">
-                  <button
-                    type="button"
-                    class="btn btn-gradient-primary me-2 gridBlockForFormView"
-                  >
-                    Save
-                  </button>
-                  <button type="reset" class="btn btn-light girdView">
-                    Cancel
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="row gridBlockForForm" style="display: none">
-              <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Component</th>
-                          <th>Component Type</th>
-                          <th>Percentage(%)</th>
-                          <th>Percentage On Basis Of</th>
-                          <th>Fix Amount</th>
-                          <th>Frequency</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Basis</td>
-                          <td>Percent</td>
-                          <td>50</td>
-                          <td>CTC</td>
-                          <td></td>
-                          <td>Monthly</td>
-                          <td>Delete</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                      <!-- Buttons -->
+                      <div class="text-end">
+  <a href="./LeaveConfiguration.html" class="btn btn-gradient-primary me-2">
+    Submit
+  </a>
+    <a href="./LeaveConfiguration.html" class="btn btn-gradient-secondary me-2">
+    Cancel
+  </a>
+</div>
+                  
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+                >Copyright © 2023
+                <a href="https://www.bootstrapdash.com/" target="_blank"
+                  >BootstrapDash</a
+                >. All rights reserved.</span
+              >
+              <span
+                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
+                >Hand-crafted & made with
+                <i class="mdi mdi-heart text-danger"></i
+              ></span>
+            </div>
+          </footer>
+          <!-- partial -->
         </div>
         <!-- main-panel ends -->
       </div>
@@ -1587,70 +1877,5 @@
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
     <!-- End custom js for this page -->
-
-    <script type="text/javascript">
-      $(function () {
-        $(".formView").click(function () {
-          $(".formBlock").show();
-          $(".gridBlock").hide();
-          $(".gridBlockForForm").hide();
-          $("form").find("input[type='text']").val("");
-          $("form").find("textarea").val("");
-          $(".linkBlockForForm").hide();
-        });
-
-        $(".girdView").click(function () {
-          $(".formBlock").hide();
-          $(".gridBlock").show();
-          $(".gridBlockForForm").hide();
-        });
-
-        $(".gridBlockForFormView").click(function () {
-          $(".saveButton").hide();
-          $(".gridBlock").hide();
-          $(".formBlockTable").hide();
-          $(".gridBlockForForm").show();
-          $(".designationTable").show();
-          $(".linkBlockForForm").show();
-        });
-        $(".linkBlockForForm").click(function () {
-          $(".saveButton").show();
-          $(".gridBlock").hide();
-          $(".formBlockTable").show();
-          $(".gridBlockForForm").show();
-          $(".designationTable").show();
-          $(".linkBlockForForm").hide();
-        });
-
-        $(".linkBlockForFormEdit").click(function () {
-          $(".saveButton").show();
-          $(".gridBlock").hide();
-          $(".formBlockTable").show();
-          $(".gridBlockForForm").show();
-          $(".designationTable").show();
-          $(".linkBlockForForm").hide();
-        });
-
-        $(".girdView").trigger("click");
-
-        $("#dateOfBirthDependent").datepicker({
-          changeMonth: true,
-          changeYear: true,
-          dateFormat: "dd-M-yy",
-          yearRange: "-70 :c",
-        });
-      });
-    </script>
-    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-    <script
-      src="js/multiDropdown.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
