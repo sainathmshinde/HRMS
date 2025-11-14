@@ -1200,33 +1200,51 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="page-header d-flex">
-              <nav aria-label="breadcrumb" class="ms-auto">
-                <div class="linkBlock">
-                  <a
-                    href="editAddMoreTemplateButton.html"
-                    class="btn btn-gradient-primary me-2"
-                    >Edit</a
-                  >
-                </div>
-              </nav>
-            </div>
-            <div class="col-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <form class="forms-sample">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="reportingId">Name</label>
-                          <span class="text-danger">*</span>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="reportingId"
-                            placeholder="26-Jan-2024"
-                            disabled
-                          />
+             <div class="page-header d-flex align-items-center justify-content-between mb-2">
+
+    <!-- Left side -->
+    <h3 class="page-title formViewTable mb-0">Band Template</h3>
+
+    <!-- Right side -->
+    <div class="linkBlock">
+        <a href="editAddMoreTemplateButton.html"
+           class="btn btn-gradient-primary me-2">
+           Edit
+        </a>
+    </div>
+
+</div>
+
+             <div class="col-12 grid-margin stretch-card ">
+                <div class="card">
+                  <div class="card-body">
+                    <form class="forms-sample">
+                      <div class="row">
+                          <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="reportingId">Name</label>
+                             <span class="text-danger">*</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="reportingId"
+                              placeholder="26-Jan-2024"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="employeeId">Year</label>
+                            <span class="text-danger"></span>
+                            <select class="form-select form-select-sm" id="title" required disabled>
+                                <option value="">Select</option>
+                                <option selected>FY - 2023-2024</option>
+                                <option>FY - 2022-2023</option>
+                                <option>FY - 2021-2022</option>
+                                <option>FY - 2020-2021</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -1367,12 +1385,18 @@
                   </div>
                 </div>
               </div>
+<<<<<<< HEAD
             </div>
             <div class="text-center">
               <a href="bandTemplate.html" class="btn btn-gradient-primary me-2"
                 >Save</a
               >
               <a href="bandTemplate.html" class="btn btn-light">Cancel</a>
+=======
+              <div class="text-end">
+              <a href="bandTemplate.html" class="btn btn-gradient-primary me-2">Save</a>
+             <a href="bandTemplate.html" class="btn btn-light">Cancel</a>
+>>>>>>> ab1ebe123bbf8842ea7ab421684f0c18049f81a3
             </div>
           </div>
         </div>

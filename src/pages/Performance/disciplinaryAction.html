@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
@@ -79,7 +83,7 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search employee"
+                  placeholder="Search projects"
                 />
               </div>
             </form>
@@ -1195,267 +1199,7 @@
           <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header mt-2">
-                 <h3 class="page-title formViewTable">Reviewer Assessment</h3>
-            </div>
-           <div class="row">
-            <div class="row">
-    <div class="col-lg-12 grid-margin stretch-card">
-    <div class="card">
-      <div class="card-body">
-        <div class="table-responsive"> <!-- Makes table scrollable if wide -->
-          <table class="table align-middle" style="width: 100%;">
-            <thead>
-              <tr>
-                <th>KRA</th>
-                <th>Weightage(%)</th>
-                <th>Indicators</th>
-                <th>Description</th>
-                <th>Target</th>
-                <th>Self Achievement</th>
-                <th>Self Score</th>
-                <th>Self Comment</th>
-                <th>Manage Achievement</th>
-                <th>Manage Score</th>
-                <th>Manage Comment</th>
-                <th>Score</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr class="odd">
-                <td rowspan="2"><label>Business team target</label></td>
-                <td rowspan="2"><label>30%</label></td>
-                <td><label>Customer discussion</label></td>
-                <td><label>Performance</label></td>
-                <td><label>15</label></td>
-                <td><label>15</label></td>
-                <td><label>100%</label></td>
-                <td><label>Satisfactory</label></td>
-                <td><label>10</label></td>
-                <td><label>33.33%</label></td>
-                <td><label>Satisfactory</label></td>
-                <td rowspan="2"><label>25%</label></td>
-              </tr>
-
-              <tr class="odd">
-                <td><label>Business individual target</label></td>
-                <td><label>Timeline</label></td>
-                <td><label>30</label></td>
-                <td><label>20</label></td>
-                <td><label>66.66%</label></td>
-                <td><label>Satisfactory</label></td>
-                <td><label>20</label></td>
-                <td><label>66.66%</label></td>
-                <td><label>Satisfactory</label></td>
-              </tr>
-
-              <tr class="even">
-                <td rowspan="2"><label>Competency individual</label></td>
-                <td rowspan="2"><label>20%</label></td>
-                <td><label>Team work</label></td>
-                <td><label>Completed work</label></td>
-                <td><label>20</label></td>
-                <td><label>15</label></td>
-                <td><label>75%</label></td>
-                <td><label>Completed as per expectation</label></td>
-                <td><label>15</label></td>
-                <td><label>75%</label></td>
-                <td><label>Work in Progress</label></td>
-                 <td rowspan="2"><label>15%</label></td>
-              </tr>
-
-              <tr class="even">
-                <td><label>Presentation</label></td>
-                <td><label>Production</label></td>
-                <td><label>15</label></td>
-                <td><label>10</label></td>
-                <td><label>66.66%</label></td>
-                <td><label>Completed as per expectation</label></td>
-                 <td><label>10</label></td>
-                <td><label>66.66%</label></td>
-                <td><label>Work in Progress</label></td>
-              </tr>
-
-              <tr class="odd">
-                <td rowspan="2"><label>Competency supervisor feedBack</label></td>
-                <td rowspan="2"><label>50%</label></td>
-                <td><label>Improve development quality</label></td>
-                <td><label>Testing</label></td>
-                <td><label>25</label></td>
-                <td><label>25</label></td>
-                <td><label>100%</label></td>
-                <td><label>Result is positive and developed as per need</label></td>
-                <td><label>20</label></td>
-                <td><label>80%</label></td>
-                <td><label>Average</label></td>
-                 <td rowspan="2"><label>40%</label></td>
-              </tr>
-
-              <tr class="odd">
-                <td><label>Improve bug fixing</label></td>
-                <td><label>Bug reduction</label></td>
-                <td><label>20</label></td>
-                <td><label>15</label></td>
-                <td><label>75%</label></td>
-                <td><label>Result is positive and developed as per need</label></td>
-                <td><label>15</label></td>
-                <td><label>75%</label></td>
-                <td><label>Average</label></td>
-              </tr>
-            </tbody>
-          </table>
-        </div> <!-- end table-responsive -->
-      </div> <!-- end card-body -->
-    </div> <!-- end card -->
-  </div> 
-  
-  <!-- end col -->
-      <div class="col-12 grid-margin stretch-card">
-                <div class="card " >
-                  <div class="card-body">
-                    <form class="forms-sample">
-                        <div class="row">
-                        <!-- Title -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="title">Strength By Manager</label>
-                            <span class="text-danger">*</span>
-                             <input
-                              type="text"
-                              class="form-control"
-                              id="reportingId"
-                              placeholder="Good typing speed"
-                              disabled
-                            />
-                          </div>
-                        </div>
-
-                        <!-- First Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="firstName">Weakness By Manager</label>
-                            <span class="text-danger">*</span>
-                             <input
-                              type="text"
-                              class="form-control"
-                              id="reportingId"
-                              placeholder="Late Coming"
-                              disabled
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Employee ID -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="employeeId">Grade by Manager</label>
-                            <span class="text-danger"></span>
-                           <input
-                              type="text"
-                              class="form-control"
-                              id="reportingId"
-                              placeholder="A"
-                              disabled
-                            />  
-                          </div>
-                        </div>
-
-                        <!-- Reporting ID -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="reportingId">Recommendation by Manager</label>
-                             <span class="text-danger"></span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="reportingId"
-                              placeholder="3_Months"
-                              disabled
-                            />   
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="lastName">Total score (%)</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              placeholder="80%"
-                              required
-                              disabled
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-               <div class="col-12 grid-margin stretch-card">
-                <div class="card " >
-                  <div class="card-body">
-                    <form class="forms-sample">
-                        <div class="row">
-                        <!-- Title -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="title">Strenght by reviewer</label>
-                            <span class="text-danger">*</span>
-                             <input
-                              type="text"
-                              class="form-control"
-                              id="reportingId"
-                              placeholder="Good typing speed"
-                            />
-                          </div>
-                        </div>
-
-                        <!-- First Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="firstName">Weakness By reviewer</label>
-                            <span class="text-danger">*</span>
-                             <input
-                              type="text"
-                              class="form-control"
-                              id="reportingId"
-                              placeholder="Late Coming"
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Employee ID -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="employeeId">Grade by reviewer</label>
-                            <span class="text-danger"></span>
-                           <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option selected>A</option>
-                                <option>B</option>
-                                <option>C</option>
-                                <option>D</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="text-end mb-4" style="margin-right: 20px;">
-  <a href="reviewerAssessment.html" class="btn btn-gradient-primary me-2">Submit</a>
-  <a href="reviewerAssessment.html" class="btn btn-gradient-light">Cancel</a>
-</div>
-                </div>
-              </div>
-</div> <!-- end row -->
+                 <h3 class="page-title formViewTable">Disciplinary Action</h3>
             </div>
           </div>
           </div>
@@ -1488,24 +1232,93 @@
     <script src="../../assets/js/select2.js"></script>
     <!-- End custom js for this page -->
 <script type="text/javascript"> 
-$(function(){
-
-  $(".disabledForm").click(function(){
-    $(".gridView").show();
-	$(".formView").hide();
-  
-  });
-  
-  $(".enableForm").click(function(){
-    $(".gridView").hide();
-	$(".formView").show();
-  
-  });
-  
-  $(".disabledForm").trigger("click");
-
-});	
-	
+	$(function(){
+	              $(".QualificationTable").hide();
+			$(".mounting-events-inner").hide();
+			$(".form-edit a.enabledForm").hide();
+			$(".edit-img").hide();
+			$(".editDiv").hide();
+			//$("form").find("input[type='text']").attr("disabled","disabled");
+			//$("form").find("textarea").attr("disabled","disabled");
+			//$("form").find("select").attr("disabled","disabled").select2();
+			  
+			 
+			 $(".projectEdit").click(function()
+			  {
+				$(".QualificationTable").show();
+				$(".mounting-events-inner").show();
+				$(".grid").hide();
+				$(".projectEdit").hide();
+				$(".searchArea").hide();
+			   });
+			   
+			
+			  $(".projectEditView").click(function()
+			  { $(".editDiv").show();
+			    $(".edit-img").show();
+				$(".QualificationTable").show();
+				$(".mounting-events-inner").show();
+				$(".grid").hide();
+				$(".projectEdit").hide();
+				$(".searchArea").hide();
+				$("input[type='text']").attr('disabled','disabled');
+				$("select").attr('disabled','disabled');
+				$("textarea").attr('disabled','disabled');
+			   });
+			   
+			 $(".edit-img").click(function(){
+			    $("input[type='text']").removeAttr('disabled');
+				$("select").removeAttr('disabled');
+				$("textarea").removeAttr('disabled');
+			 
+			 });
+			   
+			$(".disabledForm").click(function()
+			  {
+				$(".QualificationTable").hide();
+				$(".mounting-events-inner").hide();
+				$(".searchArea").show();
+				$(".grid").show();
+				$(".projectEdit").show();
+				$(".edit-img").hide();
+			    $(".editDiv").hide();
+			   });
+			   
+			 $(".enabledForm").click(function()
+			  {
+				$(".mounting-events-inner").show();
+				$(".form-edit a.enabledForm").hide();
+				$(".searchArea").hide();
+				$("form").find("input[type='text']").removeAttr("disabled");
+				$("form").find("textarea").removeAttr("disabled");
+				$("form").find("select").removeAttr("disabled").select2();
+			  });
+			  
+			  $("input[type='text']").val("");
+			  $(".update").val("Save");
+			  $(".cancel").val("Cancel");
+			 
+			  
+			  $("form").find("#Qualificationdetail_start").datepicker({
+				changeMonth:true,
+				changeYear:true,
+				dateFormat : 'dd-M-yy',
+				yearRange: '-70 :c'
+			});
+			$("form").find("#Qualificationdetail_finish").datepicker({
+				changeMonth:true,
+				changeYear:true,
+				dateFormat : 'dd-M-yy',
+				yearRange: '-70 :c'
+			});
+			
+			$(".addBand").click(function(){
+			  
+			    $('.bandTable').append('<tr><td class="odd-col"><label for="Qualificationdetail_educationlevelID">band<span class="required">*</span></label></td><td class="even-col"><select  id ="desig"><option value="Select">Select</option><option value="1" selected>A</option><option value="2">B</option><option value="3">C</option><option value="4">D</option></select></td><td class="odd-col"><label for="Designation">Score Range <span class="required">*</span></label></td><td class="even-col"><select id="Designation"><option value="Select">Select</option><option value="1">Less then 10%</option><option value="2">10% - 50%</option><option value="2">50% - 80%</option><option value="2">Greater then 80%</option></select></td></tr><tr><td class="odd-col" >		<label for="action">Actions</label> </td><td class="even-col" ><select  id ="desig"><option value="Select">Select</option><option value="1">Promotion</option><option value="2">As IS</option><option value="2">Confirmation</option><option value="2">Probation</option><option value="2">Increment</option></select></td><td class="odd-col"><label>Increment of current salary</label></td><td class="even-col"><input type="text" id ="increment"> <span> %</span></td></tr>');
+			});
+    
+			
+	});
 </script>
    
 	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>

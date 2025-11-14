@@ -1200,21 +1200,38 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="col-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <form class="forms-sample">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="reportingId">Name</label>
-                          <span class="text-danger">*</span>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="reportingId"
-                            placeholder="26-Jan-2024"
-                          />
+             <div class="page-header mt-2">
+                 <h3 class="page-title formViewTable">Band Template</h3>
+            </div>
+             <div class="col-12 grid-margin stretch-card ">
+                <div class="card">
+                  <div class="card-body">
+                    <form class="forms-sample">
+                      <div class="row">
+                          <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="reportingId">Name</label>
+                             <span class="text-danger">*</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="reportingId"
+                              placeholder="26-Jan-2024"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="employeeId">Year</label>
+                            <span class="text-danger"></span>
+                            <select class="form-select form-select-sm" id="title" required>
+                                <option value="">Select</option>
+                                <option selected>FY - 2023-2024</option>
+                                <option>FY - 2022-2023</option>
+                                <option>FY - 2021-2022</option>
+                                <option>FY - 2020-2021</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -1351,12 +1368,10 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="text-center">
-              <a href="bandTemplate.html" class="btn btn-gradient-primary me-2"
-                >Save</a
-              >
-              <a href="bandTemplate.html" class="btn btn-light">Cancel</a>
+              </div>
+              <div class="text-end">
+              <a href="bandTemplate.html" class="btn btn-gradient-primary me-2">Save</a>
+             <a href="bandTemplate.html" class="btn btn-gradient-light">Cancel</a>
             </div>
           </div>
         </div>
