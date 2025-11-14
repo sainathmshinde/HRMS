@@ -79,7 +79,7 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search projects"
+                  placeholder="Search employee"
                 />
               </div>
             </form>
@@ -654,7 +654,10 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/performance/manageKRA.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/performance/manageKRA.html"
+                    >
                       Manage KRA
                     </a>
                   </li>
@@ -667,7 +670,10 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/performance/assignKRA.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/performance/assignKRA.html"
+                    >
                       Assign KRA
                     </a>
                   </li>
@@ -1192,7 +1198,7 @@
           </ul>
         </nav>
         <!-- partial -->
-          <div class="main-panel">
+        <div class="main-panel">
           <div class="content-wrapper">
              <div class="page-header mt-2">
                  <h3 class="page-title formViewTable">Band Template</h3>
@@ -1228,53 +1234,79 @@
                           </div>
                         </div>
                       </div>
-
-                      <div class="row">
-                        <!-- Title -->
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label for="title">Remarks</label>
-                            <span class="text-danger"></span>
-                               <textarea
-                              class="form-control"
-                              id="exampleTextarea1"
-                              rows="2"
-                              placeholder=""
-                            ></textarea>
-                          </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="employeeId">Year</label>
+                          <span class="text-danger"></span>
+                          <select
+                            class="form-select form-select-sm"
+                            id="title"
+                            required
+                          >
+                            <option value="">Select</option>
+                            <option selected>FY - 2023-2024</option>
+                            <option>FY - 2022-2023</option>
+                            <option>FY - 2021-2022</option>
+                            <option>FY - 2020-2021</option>
+                          </select>
                         </div>
                       </div>
-                    </form>
-                  </div>
+                    </div>
+
+                    <div class="row">
+                      <!-- Title -->
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="title">Remarks</label>
+                          <span class="text-danger"></span>
+                          <textarea
+                            class="form-control"
+                            id="exampleTextarea1"
+                            rows="2"
+                            placeholder=""
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
-              <div>
-              <div class="page-headern d-flex mb-2">
-             <nav aria-label="breadcrumb" class="ms-auto">
-  <div>
-    <a href="javascript:void(0);" id="addBandBtn" class="btn btn-gradient-primary me-2">
-      Add More Band
-    </a>
-  </div>
-</nav>
             </div>
+            <div>
+              <div class="page-headern d-flex mb-2">
+                <nav aria-label="breadcrumb" class="ms-auto">
+                  <div>
+                    <a
+                      href="javascript:void(0);"
+                      id="addBandBtn"
+                      class="btn btn-gradient-primary me-2"
+                    >
+                      Add More Band
+                    </a>
+                  </div>
+                </nav>
+              </div>
             </div>
             <div id="bandContainer">
-              <div class="col-12 grid-margin stretch-card ">
+              <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
                     <form class="forms-sample">
                       <div class="row">
-                          <div class="col-md-6">
+                        <div class="col-md-6">
                           <div class="form-group">
                             <label for="reportingId">Band</label>
-                             <span class="text-danger">*</span>
-                             <select class="form-select form-select-sm" id="title" required >
-                                <option value="">Select</option>
-                                <option selected>A</option>
-                                <option>B</option>
-                                <option>C</option>
-                                <option>D</option>
+                            <span class="text-danger">*</span>
+                            <select
+                              class="form-select form-select-sm"
+                              id="title"
+                              required
+                            >
+                              <option value="">Select</option>
+                              <option selected>A</option>
+                              <option>B</option>
+                              <option>C</option>
+                              <option>D</option>
                             </select>
                           </div>
                         </div>
@@ -1282,12 +1314,16 @@
                           <div class="form-group">
                             <label for="employeeId">Score Range</label>
                             <span class="text-danger">*</span>
-                            <select class="form-select form-select-sm" id="title" required >
-                                <option value="">Select</option>
-                                <option>Less then 10%</option>
-                                <option>10% - 50%</option>
-                                <option>50% - 80%</option>
-                                <option>Greater then 80%</option>
+                            <select
+                              class="form-select form-select-sm"
+                              id="title"
+                              required
+                            >
+                              <option value="">Select</option>
+                              <option>Less then 10%</option>
+                              <option>10% - 50%</option>
+                              <option>50% - 80%</option>
+                              <option>Greater then 80%</option>
                             </select>
                           </div>
                         </div>
@@ -1299,20 +1335,26 @@
                           <div class="form-group">
                             <label for="title">Action</label>
                             <span class="text-danger"></span>
-                               <select class="form-select form-select-sm" id="title" required >
-                                <option value="">Select</option>
-                                <option>Promotion</option>
-                                <option>As Is</option>
-                                <option>Confirmation</option>
-                                <option>Probation</option>
-                                <option>Increment</option>
+                            <select
+                              class="form-select form-select-sm"
+                              id="title"
+                              required
+                            >
+                              <option value="">Select</option>
+                              <option>Promotion</option>
+                              <option>As Is</option>
+                              <option>Confirmation</option>
+                              <option>Probation</option>
+                              <option>Increment</option>
                             </select>
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="reportingId">Increment of current salary</label>
-                             <span class="text-danger"></span>%
+                            <label for="reportingId"
+                              >Increment of current salary</label
+                            >
+                            <span class="text-danger"></span>%
                             <input
                               type="text"
                               class="form-control"
@@ -1329,11 +1371,10 @@
               </div>
               <div class="text-end">
               <a href="bandTemplate.html" class="btn btn-gradient-primary me-2">Save</a>
-             <a href="bandTemplate.html" class="btn btn-light">Cancel</a>
+             <a href="bandTemplate.html" class="btn btn-gradient-light">Cancel</a>
             </div>
           </div>
-          
-          </div>
+        </div>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
@@ -1359,112 +1400,114 @@
     <script src="../../assets/js/select2.js"></script>
     <!-- End custom js for this page -->
 
-<script type="text/javascript"> 
-	$(function(){
-	              $(".QualificationTable").hide();
-			$(".mounting-events-inner").hide();
-			$(".form-edit a.enabledForm").hide();
-			$(".edit-img").hide();
-			$(".editDiv").hide();
-			//$("form").find("input[type='text']").attr("disabled","disabled");
-			//$("form").find("textarea").attr("disabled","disabled");
-			//$("form").find("select").attr("disabled","disabled").select2();
-			  
-			 
-			 $(".projectEdit").click(function()
-			  {
-				$(".QualificationTable").show();
-				$(".mounting-events-inner").show();
-				$(".grid").hide();
-				$(".projectEdit").hide();
-				$(".searchArea").hide();
-			   });
-			   
-			
-			  $(".projectEditView").click(function()
-			  { $(".editDiv").show();
-			    $(".edit-img").show();
-				$(".QualificationTable").show();
-				$(".mounting-events-inner").show();
-				$(".grid").hide();
-				$(".projectEdit").hide();
-				$(".searchArea").hide();
-				$("input[type='text']").attr('disabled','disabled');
-				$("select").attr('disabled','disabled');
-				$("textarea").attr('disabled','disabled');
-			   });
-			   
-			 $(".edit-img").click(function(){
-			    $("input[type='text']").removeAttr('disabled');
-				$("select").removeAttr('disabled');
-				$("textarea").removeAttr('disabled');
-			 
-			 });
-			   
-			$(".disabledForm").click(function()
-			  {
-				$(".QualificationTable").hide();
-				$(".mounting-events-inner").hide();
-				$(".searchArea").show();
-				$(".grid").show();
-				$(".projectEdit").show();
-				$(".edit-img").hide();
-			    $(".editDiv").hide();
-			   });
-			   
-			 $(".enabledForm").click(function()
-			  {
-				$(".mounting-events-inner").show();
-				$(".form-edit a.enabledForm").hide();
-				$(".searchArea").hide();
-				$("form").find("input[type='text']").removeAttr("disabled");
-				$("form").find("textarea").removeAttr("disabled");
-				$("form").find("select").removeAttr("disabled").select2();
-			  });
-			  
-			  $("input[type='text']").val("");
-			  $(".update").val("Save");
-			  $(".cancel").val("Cancel");
-			 
-			  
-			  $("form").find("#Qualificationdetail_start").datepicker({
-				changeMonth:true,
-				changeYear:true,
-				dateFormat : 'dd-M-yy',
-				yearRange: '-70 :c'
-			});
-			$("form").find("#Qualificationdetail_finish").datepicker({
-				changeMonth:true,
-				changeYear:true,
-				dateFormat : 'dd-M-yy',
-				yearRange: '-70 :c'
-			});
-			
-			$(".addBand").click(function(){
-			  
-			    $('.bandTable').append('<tr><td class="odd-col"><label for="Qualificationdetail_educationlevelID">band<span class="required">*</span></label></td><td class="even-col"><select  id ="desig"><option value="Select">Select</option><option value="1" selected>A</option><option value="2">B</option><option value="3">C</option><option value="4">D</option></select></td><td class="odd-col"><label for="Designation">Score Range <span class="required">*</span></label></td><td class="even-col"><select id="Designation"><option value="Select">Select</option><option value="1">Less then 10%</option><option value="2">10% - 50%</option><option value="2">50% - 80%</option><option value="2">Greater then 80%</option></select></td></tr><tr><td class="odd-col" >		<label for="action">Actions</label> </td><td class="even-col" ><select  id ="desig"><option value="Select">Select</option><option value="1">Promotion</option><option value="2">As IS</option><option value="2">Confirmation</option><option value="2">Probation</option><option value="2">Increment</option></select></td><td class="odd-col"><label>Increment of current salary</label></td><td class="even-col"><input type="text" id ="increment"> <span> %</span></td></tr>');
-			});
-    
-			
-	});
-</script>
-	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/multiDropdown.js" type="text/javascript" charset="utf-8"></script>
-<script>
-  document.getElementById('addBandBtn').addEventListener('click', function () {
-    const container = document.getElementById('bandContainer');
+    <script type="text/javascript">
+      $(function () {
+        $(".QualificationTable").hide();
+        $(".mounting-events-inner").hide();
+        $(".form-edit a.enabledForm").hide();
+        $(".edit-img").hide();
+        $(".editDiv").hide();
+        //$("form").find("input[type='text']").attr("disabled","disabled");
+        //$("form").find("textarea").attr("disabled","disabled");
+        //$("form").find("select").attr("disabled","disabled").select2();
 
-    // Get the first card as a template
-    const firstCard = container.querySelector('.col-12');
-    const newCard = firstCard.cloneNode(true); // deep clone
+        $(".projectEdit").click(function () {
+          $(".QualificationTable").show();
+          $(".mounting-events-inner").show();
+          $(".grid").hide();
+          $(".projectEdit").hide();
+          $(".searchArea").hide();
+        });
 
-    // Optionally clear any user input in the cloned card
-    newCard.querySelectorAll('input').forEach(input => input.value = '');
-    newCard.querySelectorAll('select').forEach(select => select.selectedIndex = 0);
+        $(".projectEditView").click(function () {
+          $(".editDiv").show();
+          $(".edit-img").show();
+          $(".QualificationTable").show();
+          $(".mounting-events-inner").show();
+          $(".grid").hide();
+          $(".projectEdit").hide();
+          $(".searchArea").hide();
+          $("input[type='text']").attr("disabled", "disabled");
+          $("select").attr("disabled", "disabled");
+          $("textarea").attr("disabled", "disabled");
+        });
 
-    // Append cloned card
-    container.appendChild(newCard);
-  });
-</script>
+        $(".edit-img").click(function () {
+          $("input[type='text']").removeAttr("disabled");
+          $("select").removeAttr("disabled");
+          $("textarea").removeAttr("disabled");
+        });
+
+        $(".disabledForm").click(function () {
+          $(".QualificationTable").hide();
+          $(".mounting-events-inner").hide();
+          $(".searchArea").show();
+          $(".grid").show();
+          $(".projectEdit").show();
+          $(".edit-img").hide();
+          $(".editDiv").hide();
+        });
+
+        $(".enabledForm").click(function () {
+          $(".mounting-events-inner").show();
+          $(".form-edit a.enabledForm").hide();
+          $(".searchArea").hide();
+          $("form").find("input[type='text']").removeAttr("disabled");
+          $("form").find("textarea").removeAttr("disabled");
+          $("form").find("select").removeAttr("disabled").select2();
+        });
+
+        $("input[type='text']").val("");
+        $(".update").val("Save");
+        $(".cancel").val("Cancel");
+
+        $("form").find("#Qualificationdetail_start").datepicker({
+          changeMonth: true,
+          changeYear: true,
+          dateFormat: "dd-M-yy",
+          yearRange: "-70 :c",
+        });
+        $("form").find("#Qualificationdetail_finish").datepicker({
+          changeMonth: true,
+          changeYear: true,
+          dateFormat: "dd-M-yy",
+          yearRange: "-70 :c",
+        });
+
+        $(".addBand").click(function () {
+          $(".bandTable").append(
+            '<tr><td class="odd-col"><label for="Qualificationdetail_educationlevelID">band<span class="required">*</span></label></td><td class="even-col"><select  id ="desig"><option value="Select">Select</option><option value="1" selected>A</option><option value="2">B</option><option value="3">C</option><option value="4">D</option></select></td><td class="odd-col"><label for="Designation">Score Range <span class="required">*</span></label></td><td class="even-col"><select id="Designation"><option value="Select">Select</option><option value="1">Less then 10%</option><option value="2">10% - 50%</option><option value="2">50% - 80%</option><option value="2">Greater then 80%</option></select></td></tr><tr><td class="odd-col" >		<label for="action">Actions</label> </td><td class="even-col" ><select  id ="desig"><option value="Select">Select</option><option value="1">Promotion</option><option value="2">As IS</option><option value="2">Confirmation</option><option value="2">Probation</option><option value="2">Increment</option></select></td><td class="odd-col"><label>Increment of current salary</label></td><td class="even-col"><input type="text" id ="increment"> <span> %</span></td></tr>'
+          );
+        });
+      });
+    </script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script
+      src="js/multiDropdown.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script>
+      document
+        .getElementById("addBandBtn")
+        .addEventListener("click", function () {
+          const container = document.getElementById("bandContainer");
+
+          // Get the first card as a template
+          const firstCard = container.querySelector(".col-12");
+          const newCard = firstCard.cloneNode(true); // deep clone
+
+          // Optionally clear any user input in the cloned card
+          newCard
+            .querySelectorAll("input")
+            .forEach((input) => (input.value = ""));
+          newCard
+            .querySelectorAll("select")
+            .forEach((select) => (select.selectedIndex = 0));
+
+          // Append cloned card
+          container.appendChild(newCard);
+        });
+    </script>
   </body>
 </html>

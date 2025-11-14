@@ -79,7 +79,7 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search projects"
+                  placeholder="Search employee"
                 />
               </div>
             </form>
@@ -654,7 +654,10 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/performance/manageKRA.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/performance/manageKRA.html"
+                    >
                       Manage KRA
                     </a>
                   </li>
@@ -667,7 +670,10 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/performance/assignKRA.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/performance/assignKRA.html"
+                    >
                       Assign KRA
                     </a>
                   </li>
@@ -1192,161 +1198,201 @@
           </ul>
         </nav>
         <!-- partial -->
-          <div class="main-panel">
+        <div class="main-panel">
           <div class="content-wrapper">
-         <div class="page-header mt-2">
-                 <h3 class="page-title">Manage Team KRA</h3>
+            <div class="page-header mt-2">
+              <h3 class="page-title">Manage Team KRA</h3>
             </div>
-<div class="col-12 grid-margin stretch-card">
-    <div class="card">
-        <div class="card-body">
-      <form class="forms-sample">
-        <div class="row">
-            <div class="col-md-6">
-            <div class="form-group mb-2">
-              <label for="employeeId">KRA <span class="text-danger">*</span></label>
-              <select class="form-select form-select-sm" id="title" required>
-                 <option value="dev">Thematic</option>
-                <option value="">Select</option>
-                <option value="ao">Team</option>
-                <option value="sao">Individual</option>
-                <option value="aaa">Thematic</option>
-                <option value="des">Collateral</option>
-                <option value="des">Compatency</option>
-                <option value="des">Customer Satisfaction</option>
-                <option value="des">Product Management</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group mb-2">
-              <label for="reportingId">Weightage (%) <span class="text-danger">*</span></label>
-              <input
-                type="text"
-                class="form-control form-control-sm"
-                id="reportingId"
-                placeholder="30"
-              />
-            </div>
-          </div>
-           <div class="col-md-6">
-                            <div class="form-group mb-2">
-                            <label for="reportingId">Start Date <span class="text-danger">*</span></label>
-                            <input
-                                type="text"
-                                class="form-control form-control-sm"
-                                id="reportingId"
-                                placeholder="1-Apr-2024"
-                            />
-                            </div>
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <form class="forms-sample">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group mb-2">
+                          <label for="employeeId"
+                            >KRA <span class="text-danger">*</span></label
+                          >
+                          <select
+                            class="form-select form-select-sm"
+                            id="title"
+                            required
+                          >
+                            <option value="dev">Thematic</option>
+                            <option value="">Select</option>
+                            <option value="ao">Team</option>
+                            <option value="sao">Individual</option>
+                            <option value="aaa">Thematic</option>
+                            <option value="des">Collateral</option>
+                            <option value="des">Compatency</option>
+                            <option value="des">Customer Satisfaction</option>
+                            <option value="des">Product Management</option>
+                          </select>
                         </div>
-                         <div class="col-md-6">
-                            <div class="form-group mb-2">
-                            <label for="reportingId">End Date <span class="text-danger">*</span></label>
-                            <input
-                                type="text"
-                                class="form-control form-control-sm"
-                                id="reportingId"
-                                placeholder="31-Mar-2025"
-                            />
-                            </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-2">
+                          <label for="reportingId"
+                            >Weightage (%)
+                            <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                            id="reportingId"
+                            placeholder="30"
+                          />
                         </div>
-        </div>
-      </form>
-    </div> 
-    </div>
- 
-</div>
- <div class="page-header d-flex">
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-2">
+                          <label for="reportingId"
+                            >Start Date
+                            <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                            id="reportingId"
+                            placeholder="1-Apr-2024"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-2">
+                          <label for="reportingId"
+                            >End Date <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                            id="reportingId"
+                            placeholder="31-Mar-2025"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="page-header d-flex">
               <nav aria-label="breadcrumb" class="ms-auto">
                 <div class="linkBlock">
-                <a href="javascript:void(0);" class="btn btn-gradient-primary me-2">Add More Indicators</a>
+                  <a
+                    href="javascript:void(0);"
+                    class="btn btn-gradient-primary me-2"
+                    >Add More Indicators</a
+                  >
                 </div>
               </nav>
             </div>
- <div class="col-12 grid-margin stretch-card">
-  <div class="card">
-    <div class="card-body">
-      <form class="forms-sample">
-        <div class="row">
-            <div class="col-md-4">
-             <div class="form-group mb-2">
-              <label for="reportingId">Indicators <span class="text-danger">*</span></label>
-              <input
-                type="text"
-                class="form-control form-control-sm"
-                id="reportingId"
-                placeholder="30"
-              />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group mb-2">
-              <label for="reportingId">Description<span class="text-danger">*</span></label>
-              <input
-                type="text"
-                class="form-control form-control-sm"
-                id="reportingId"
-                placeholder="30"
-              />
-            </div>
-          </div>
-           <div class="col-md-4">
-                            <div class="form-group mb-2">
-                            <label for="reportingId">Target <span class="text-danger">*</span></label>
-                            <input
-                                type="text"
-                                class="form-control form-control-sm"
-                                id="reportingId"
-                                placeholder="1-Apr-2024"
-                            />
-                            </div>
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <form class="forms-sample">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group mb-2">
+                          <label for="reportingId"
+                            >Indicators
+                            <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                            id="reportingId"
+                            placeholder="30"
+                          />
                         </div>
-        </div>
-         <div class="row">
-            <div class="col-md-4">
-             <div class="form-group mb-2">
-              <label for="reportingId">Indicators <span class="text-danger">*</span></label>
-              <input
-                type="text"
-                class="form-control form-control-sm"
-                id="reportingId"
-                placeholder="30"
-              />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group mb-2">
-              <label for="reportingId">Description<span class="text-danger">*</span></label>
-              <input
-                type="text"
-                class="form-control form-control-sm"
-                id="reportingId"
-                placeholder="30"
-              />
-            </div>
-          </div>
-           <div class="col-md-4">
-                            <div class="form-group mb-2">
-                            <label for="reportingId">Target <span class="text-danger">*</span></label>
-                            <input
-                                type="text"
-                                class="form-control form-control-sm"
-                                id="reportingId"
-                                placeholder="1-Apr-2024"
-                            />
-                            </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group mb-2">
+                          <label for="reportingId"
+                            >Description<span class="text-danger"
+                              >*</span
+                            ></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                            id="reportingId"
+                            placeholder="30"
+                          />
                         </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
- <div class="text-end">
-  <a href="editEmployeeManageKRA.html" class="btn btn-gradient-primary me-2">Update</a>
-  <a href="editEmployeeManageKRA.html" class="btn btn-light">Cancel</a>
-</div>
-
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group mb-2">
+                          <label for="reportingId"
+                            >Target <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                            id="reportingId"
+                            placeholder="1-Apr-2024"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group mb-2">
+                          <label for="reportingId"
+                            >Indicators
+                            <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                            id="reportingId"
+                            placeholder="30"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group mb-2">
+                          <label for="reportingId"
+                            >Description<span class="text-danger"
+                              >*</span
+                            ></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                            id="reportingId"
+                            placeholder="30"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group mb-2">
+                          <label for="reportingId"
+                            >Target <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                            id="reportingId"
+                            placeholder="1-Apr-2024"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="text-end">
+              <a
+                href="editEmployeeManageKRA.html"
+                class="btn btn-gradient-primary me-2"
+                >Update</a
+              >
+              <a href="editEmployeeManageKRA.html" class="btn btn-light"
+                >Cancel</a
+              >
+            </div>
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
@@ -1376,104 +1422,95 @@
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
     <!-- End custom js for this page -->
-<script type="text/javascript"> 
-	$(function(){
-	  
-			  // $(".menudropdown").prop('selectedIndex','5');
-	          
-			   $(".createKRA").hide();
-				$(".KRAAcceptance").hide();
-				$(".mounting-events-inner").hide();
-		$(".kraView").click(function (){
-			
-			$(".KRAAcceptance").show();
-			$(".mounting-events-inner").show();
-		});
-		
-		 $(".disabledForm").click(function (){
-			
-			$(".KRAAcceptance").hide();
-			$(".mounting-events-inner").hide();
-		});
-		
-		    $(".KRAAssigh").hide();
-			$(".mounting-events-inner1").hide();
-			
-		 $(".disabledForm1").click(function (){
-			
-			$(".KRAAssigh").hide();
-			$(".mounting-events-inner1").hide();
-		});
-		 $(".assignSchedule").click(function (){
-			
-			$(".KRAAssigh").show();
-			$(".kraAssignedGrid").hide();
-			$(".mounting-events-inner").show();
-			$(".mounting-events-inner1").show();
-			$(".formViewTable").hide();
-		});
-	
-		
-		$("form").find("#Qualificationdetail_start").datepicker({
-				changeMonth:true,
-				changeYear:true,
-				dateFormat : 'dd-M-yy',
-				yearRange: '-70 :c'
-			});
-			$("form").find("#Qualificationdetail_finish").datepicker({
-				changeMonth:true,
-				changeYear:true,
-				dateFormat : 'dd-M-yy',
-				yearRange: '-70 :c'
-			});
-		 
-		 
-			$(".disabledForm").click(function(){
-			    $(".formViewTable").show();
-				$(".KRAAssigh").hide();
-				$(".kraAssignedGrid").show();
-				$(".mounting-events-inner").hide();
-				$(".mounting-events-inner1").hide();
-				/*
+    <script type="text/javascript">
+      $(function () {
+        // $(".menudropdown").prop('selectedIndex','5');
+
+        $(".createKRA").hide();
+        $(".KRAAcceptance").hide();
+        $(".mounting-events-inner").hide();
+        $(".kraView").click(function () {
+          $(".KRAAcceptance").show();
+          $(".mounting-events-inner").show();
+        });
+
+        $(".disabledForm").click(function () {
+          $(".KRAAcceptance").hide();
+          $(".mounting-events-inner").hide();
+        });
+
+        $(".KRAAssigh").hide();
+        $(".mounting-events-inner1").hide();
+
+        $(".disabledForm1").click(function () {
+          $(".KRAAssigh").hide();
+          $(".mounting-events-inner1").hide();
+        });
+        $(".assignSchedule").click(function () {
+          $(".KRAAssigh").show();
+          $(".kraAssignedGrid").hide();
+          $(".mounting-events-inner").show();
+          $(".mounting-events-inner1").show();
+          $(".formViewTable").hide();
+        });
+
+        $("form").find("#Qualificationdetail_start").datepicker({
+          changeMonth: true,
+          changeYear: true,
+          dateFormat: "dd-M-yy",
+          yearRange: "-70 :c",
+        });
+        $("form").find("#Qualificationdetail_finish").datepicker({
+          changeMonth: true,
+          changeYear: true,
+          dateFormat: "dd-M-yy",
+          yearRange: "-70 :c",
+        });
+
+        $(".disabledForm").click(function () {
+          $(".formViewTable").show();
+          $(".KRAAssigh").hide();
+          $(".kraAssignedGrid").show();
+          $(".mounting-events-inner").hide();
+          $(".mounting-events-inner1").hide();
+          /*
 				$(".createKRA").hide();
 				$(".mounting-events-inner").hide();
 				$(".kraGridBlock").show();
 				$(".addKRALink").show();
 				*/
-				
-			});
-			$(".addKRALink").click(function(){
-				$(".createKRA").show();
-				$(".mounting-events-inner").show();
-				
-				$(".kraGridBlock").hide();
-				$(".addKRALink").hide();
-				$(".formViewTable").hide();
-				$(".KRAAssigh").hide();
-				$(".kraAssignedGrid").hide();
-				$(".mounting-events-inner").show();
-				$(".mounting-events-inner1").hide();
-				
-			});
-			
-			$(".disabledForm2").click(function(){
-			  
-				$(".addKRALink").show();
-				$(".KRAAssigh").show();
-				$(".mounting-events-inner1").show();
-				$(".mounting-events-inner").hide();
-				 $(".formViewTable").hide();
-			   $(".kraAssignedGrid").hide();
-			   $(".createKRA").hide();
-				$(".kraGridBlock").hide();
-				
-			   
-			});
-			
-	});
-</script>
-   
-	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/multiDropdown.js" type="text/javascript" charset="utf-8"></script>
+        });
+        $(".addKRALink").click(function () {
+          $(".createKRA").show();
+          $(".mounting-events-inner").show();
+
+          $(".kraGridBlock").hide();
+          $(".addKRALink").hide();
+          $(".formViewTable").hide();
+          $(".KRAAssigh").hide();
+          $(".kraAssignedGrid").hide();
+          $(".mounting-events-inner").show();
+          $(".mounting-events-inner1").hide();
+        });
+
+        $(".disabledForm2").click(function () {
+          $(".addKRALink").show();
+          $(".KRAAssigh").show();
+          $(".mounting-events-inner1").show();
+          $(".mounting-events-inner").hide();
+          $(".formViewTable").hide();
+          $(".kraAssignedGrid").hide();
+          $(".createKRA").hide();
+          $(".kraGridBlock").hide();
+        });
+      });
+    </script>
+
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script
+      src="js/multiDropdown.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
   </body>
 </html>
