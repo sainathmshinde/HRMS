@@ -505,7 +505,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendence/markAttendance.html"
+                      href="pages/attendance/markAttendance.html"
                     >
                       Mark Attendance
                     </a>
@@ -513,7 +513,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendence/authorization.html"
+                      href="pages/attendance/attendanceAuthorization.html"
                     >
                       Attendance Authorization
                     </a>
@@ -521,7 +521,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/attendance/attendanceRegister.html"
+                      href="../../pages/admin/leaveConfiguration.html"
                     >
                       Attendance Register
                     </a>
@@ -1015,7 +1015,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/admin/leaveConfiguration.html"
+                      href="/src/pages/admin/adminLeaveConfiguration.html"
                     >
                       Leave Configuration
                     </a>
@@ -1023,7 +1023,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendance/attendanceConfiguration.html"
+                      href="/src/pages/admin/adminAttendanceConfiguration.html"
                     >
                       Attendance Configuration
                     </a>
@@ -1039,7 +1039,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/admin/allMastersScreens.html"
+                      href="/src/pages/admin/allMastersScreens.html"
                     >
                       All Masters Screens
                     </a>
@@ -1198,274 +1198,79 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Mark attendance</h3>
+              <h3 class="page-title">Employee Type</h3>
             </div>
-            <div class="row">
-              <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <form class="forms-sample">
-                      <div class="row">
-                        <!-- Middle Name -->
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="middleName">Date * </label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="middleName"
-                              value="01-Mar-2023"
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Last Name -->
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="lastName">Total working hours</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              placeholder="Total working hours"
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="middleName">In location</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="In location"
-                              value=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- In Location -->
-                      <div class="row">
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="lastName">Out location</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              placeholder=""
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="middleName">Direction In </label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="In"
-                              value="IN"
-                              disabled
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Last Name -->
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="lastName">Direction out</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              value="OUT"
-                              disabled
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Middle Name -->
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="middleName">In time</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="In"
-                              value="[09:16:09 Hrs]
-"
-                              disabled
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Last Name -->
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="lastName">Out time</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              value="[09:16:09 Hrs]
-"
-                              disabled
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+            <div class="row align-items-end mb-4">
+              <div class="col-md-3">
+                <div class="form-group mb-0">
+                  <select class="form-select" id="title" required>
+                    <option value="contract">On Contract</option>
+                    <option value="deputation">On Deputation</option>
+                  </select>
                 </div>
               </div>
-            </div>
 
-            <div class="page-header">
-              <h3 class="page-title">Last 30 days attendance</h3>
+              <div class="col-md-9 text-end">
+                <a
+                  href="/src/pages/admin/createAdminAttendenceConfiguration.html"
+                  class="btn btn-gradient-primary me-2"
+                >
+                  Add New
+                </a>
+              </div>
             </div>
             <div class="row">
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <div class="table-responsive">
-                      <!-- Makes table scrollable if wide -->
-                      <table class="table align-middle" style="width: 100%">
-                        <thead>
-                          <tr>
-                            <th>Date</th>
-                            <th>Employee Name</th>
-                            <th>Employee ID</th>
-                            <th>In Time</th>
-                            <th>Out Time</th>
-                            <th>Working Hours</th>
-                            <th>Capture Type</th>
-                            <th>Is Weekly Off</th>
-                            <th>Is Leave</th>
-                            <th>Is Holiday</th>
-                            <th>Is Late</th>
-                            <th>Is Authorized</th>
-                            <th>Attendance</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>23-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td>09:15:45</td>
-                            <td>18:00:29</td>
-                            <td>08:85:00</td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Present</td>
-                          </tr>
-                          <tr>
-                            <td>24-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>Yes</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Absent</td>
-                          </tr>
-                          <tr>
-                            <td>25-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td>09:15:45</td>
-                            <td>18:00:29</td>
-                            <td>08:85:00</td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>Yes</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Present</td>
-                          </tr>
-                          <tr>
-                            <td>26-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td>09:15:45</td>
-                            <td>08:85:00</td>
-                            <td></td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Conflict</td>
-                          </tr>
-                          <tr>
-                            <td>27-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td>11:00:00</td>
-                            <td>06:00:00</td>
-                            <td>07:00:00</td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Yes</td>
-                            <td>No</td>
-                            <td>Present</td>
-                          </tr>
-                          <tr>
-                            <td>28-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td>11:00:00</td>
-                            <td>06:00:00</td>
-                            <td>07:00:00</td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Yes</td>
-                            <td>No</td>
-                            <td>Present</td>
-                          </tr>
-                          <tr>
-                            <td>29-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td>11:00:00</td>
-                            <td>06:00:00</td>
-                            <td>07:00:00</td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Yes</td>
-                            <td>No</td>
-                            <td>Half Day</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <!-- <h4 class="card-title">Employee Type</h4>
+                    <p class="card-description">
+                      Add class <code>.table</code>
+                    </p> -->
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Category Name</th>
+                          <th>Description</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>General</td>
+                          <td>Employee General Shift Category</td>
+                          <td>
+                            <a
+                              href="/src/pages/admin/createAttendenceConfiguration.html"
+                            >
+                              View
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Afternoon</td>
+                          <td>Employee Afternoon Shift Category</td>
+                          <td>
+                            <a
+                              href="/src/pages/admin/createAttendenceConfiguration.html"
+                            >
+                              View
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Afternoon</td>
+                          <td>Employee Afternoon Shift Category</td>
+                          <td>
+                            <a
+                              href="/src/pages/admin/createAttendenceConfiguration.html"
+                            >
+                              View
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>

@@ -309,96 +309,69 @@
                 ></i>
               </a>
             </li> -->
-            <li class="nav-item">
+              <li class="nav-item">
               <a
                 class="nav-link"
                 data-bs-toggle="collapse"
-                href="#employeeMenu"
+                href="#leave"
                 aria-expanded="false"
-                aria-controls="employeeMenu"
+                aria-controls="leave"
               >
-                <span class="menu-title">Employee</span>
+                <span class="menu-title">Leave</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-account-group menu-icon"></i>
+                <i class="mdi mdi-contacts menu-icon"></i>
               </a>
-              <div class="collapse" id="employeeMenu">
+              <div class="collapse" id="leave">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/dashboard.html">
-                      Dashboard
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/employee/createEmployee.html"
+                    <a class="nav-link" href="/src/pages/ui-features/buttons.html"
+                      >Dashboard</a
                     >
-                      Create Employee
-                    </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/employee/employmentInfo.html"
+                    <a class="nav-link" href="/src/pages/leaves/leaveAccount.html"
+                      >Leave Account</a
                     >
-                      Employment Information
-                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/contact.html">
-                      Contact
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/employee/qualification.html"
+                    <a class="nav-link" href="/src/pages/leaves/applyLeave.html"
+                      >Apply Leave</a
                     >
-                      Qualification
-                    </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/employee/workExperience.html"
+                    <a class="nav-link" href="/src/pages/leaves/appliedLeaves.html"
+                      >Applied Leaves</a
                     >
-                      Work Experience
-                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/documents.html">
-                      Documents
-                    </a>
+                    <a class="nav-link" href="/src/pages/leaves/approvedLeave.html"
+                      >Approved Leaves</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/health.html">
-                      Health
-                    </a>
+                    <a class="nav-link" href="/src/pages/leaves/subordinateLeavePlan.html"
+                      >Subordinate Leave Plan</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/probation.html">
-                      Probation
-                    </a>
+                    <a class="nav-link" href="/src/pages/leaves/holidaysList.html"
+                      >Holidays List</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/compensation.html">
-                      Compensation And Benefits
-                    </a>
+                    <a class="nav-link" href="/src/pages/leaves/leaveConfig.html"
+                      >Leave Configuration</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/accountInfo.html">
-                      Account Information
-                    </a>
+                    <a class="nav-link" href="/src/pages/leaves/leaveAdjustment.html"
+                      >Leave Adjustment</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/assets.html">
-                      Assets
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/employeeExit.html">
-                      Employee Exit
-                    </a>
+                    <a class="nav-link" href="/src/pages/leaves/leaveBalanceLedger.html"
+                      >Leave Balance Ledger</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -619,270 +592,246 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Employee</h3>
+              <h3 class="page-title">Leave Adjustment</h3>
             </div>
             <div class="row">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Employee Registration</h4>
-                    <p class="card-description">
-                      Fill in the required information to register a new
-                      employee
-                    </p>
                     <form class="forms-sample">
-                      <div class="row">
-                        <!-- Employee ID -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="employeeId">Employee ID</label>
-                            <!-- <span class="text-danger">*</span> -->
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="employeeId"
-                              placeholder="Enter Employee ID"
-                              disabled
-                            />
-                          </div>
+                      <!-- Row 1: Employee Type & Leave Type -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                <label for="employeeType">Employee <span class="text-danger">*</span></label>
+                                <select
+                                    class="form-select"
+                                    id="employeeType"
+                                    required
+                                    >
+                                    <option value="">Select</option>
+                                    <option value="on_contract" selected>Ruth Neison</option>
+                                    <option value="on_deputation">Kevin Smith</option>
+                                    <option value="on_contract">Mark Jackson</option>
+                                    <option value="on_deputation">John Andrew</option>
+                                </select>
+                            </div>
                         </div>
-
-                        <!-- Reporting ID -->
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="reportingId">Reporting ID</label>
-                            <!-- <span class="text-danger">*</span> -->
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="reportingId"
-                              placeholder="Enter Reporting ID"
-                              disabled
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Title -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="title">Title</label>
-                            <span class="text-danger">*</span>
-                            <select class="form-select" id="title" required>
+                            <label for="leaveType">Leave Type<span class="text-danger">*</span></label>
+                            <select class="form-select" id="leaveType" required>
                               <option value="">Select</option>
-                              <option value="mr">Mr.</option>
-                              <option value="ms">Ms.</option>
-                              <option value="mrs">Mrs.</option>
-                              <option value="dr">Dr.</option>
+                              <option value="earned_leave" selected>Casual Leave</option>
+                              <option value="earned_leave">Earned Leave</option>
+                              <option value="maternity_leave">
+                                Maternity Leave
+                              </option>
+                              <option value="paternity_leave">
+                                Paternity Leave
+                              </option>
+                              <option value="compensatory_off">
+                                Compensatory Off
+                              </option>
                             </select>
                           </div>
                         </div>
-
-                        <!-- First Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="firstName">First Name</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="firstName"
-                              placeholder="Enter First Name"
-                              required
-                            />
-                          </div>
-                        </div>
                       </div>
-
+                      <!-- Row 2: Year Type & Opening Balance -->
                       <div class="row">
-                        <!-- Middle Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="middleName">Middle Name</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="middleName"
-                              placeholder="Enter Middle Name"
-                            />
-                          </div>
-                        </div>
 
-                        <!-- Last Name -->
+  <!-- Opening Balance Applicable (NOW FIRST COLUMN) -->
                         <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="lastName">Last Name</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              placeholder="Enter Last Name"
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
+                            <div class="form-group">
+                            <label for="openingBalance">
+                                Leave Adjustment Type <span class="text-danger">*</span>
+                            </label>
 
-                      <div class="row">
-                        <!-- Date of Birth -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="dob">Date of Birth</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="date"
-                              class="form-control"
-                              id="dob"
-                              required
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Identification Document Number -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="idDocumentNumber"
-                              >Identification Document Number</label
+                            <div
+                                style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                                "
                             >
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="idDocumentNumber"
-                              placeholder="Enter Document Number"
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
+                                <label
+                                style="
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                "
+                                >
+                                <input
+                                    type="radio"
+                                    name="openingBalance"
+                                    id="openingBalanceYes"
+                                    value="yes"
+                                    required
+                                />
+                                Opening
+                                </label>
 
-                      <div class="row">
-                        <!-- Father's / Husband's First Name -->
+                                <label
+                                style="
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                "
+                                >
+                                <input
+                                    type="radio"
+                                    name="openingBalance"
+                                    id="openingBalanceNo"
+                                    value="no"
+                                />
+                                Adjustment
+                                </label>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- Year Type (NOW SECOND COLUMN) -->
                         <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="fatherFirstName"
-                              >Father's / Husband's First Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="fatherFirstName"
-                              placeholder="Enter First Name"
-                            />
-                          </div>
-                        </div>
+                            <div class="form-group">
+                            <label for="yearType">
+                                Date <span class="text-danger">*</span>
+                            </label>
 
-                        <!-- Father's / Husband's Middle Name -->
+                            <input 
+                                type="date"
+                                class="form-control"
+                                id="fromDate"
+                                name="fromDate"
+                                value=""
+                            />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 3: Title & First Name -->
+                    <div class="row">
                         <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="fatherMiddleName"
-                              >Father's / Husband's Middle Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="fatherMiddleName"
-                              placeholder="Enter Middle Name"
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Father's / Husband's Last Name -->
+                            <div class="form-group"> 
+                                <label for="yearType" >No Of Leave To Adjust <span class="text-danger">*</span></label >
+                              <input
+                                    type="text"
+                                    class="form-control"
+                                    id="noOfLeaveToAdjust"
+                                    placeholder="Enter No Of Leave To Adjust"
+                                />
+                            </div> 
+                        </div> 
                         <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="fatherLastName"
-                              >Father's / Husband's Last Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="fatherLastName"
-                              placeholder="Enter Last Name"
-                            />
-                          </div>
-                        </div>
+                            <div class="form-group"> 
+                                <label for="natureOfAdjustment" >Nature Of Adjustment <span class="text-danger">*</span>
+                                </label >
+                                <div style=" display: flex; align-items: center; gap: 20px; margin-top: 8px; " >
+                                    <label style=" display: flex; align-items: center; gap: 5px; " >
+                                    <input type="radio" name="natureOfAdjustment" id="natureOfAdjustmentYes" value="add" required /> Add </label>
+                                    <label style=" display: flex; align-items: center; gap: 5px; " > 
+                                    <input type="radio" name="natureOfAdjustment" id="natureOfAdjustmentNo" value="deduct" /> Deduct </label>
+                                </div> 
+                            </div>
+                        </div> 
+                    </div>
+                    <!-- Buttons -->
+                    <div class="text-end ">
+                        <a href="./leaveAdjustment.html" class="btn btn-gradient-primary me-2">
+                            Submit
+                        </a>
+                        <a href="./leaveAdjustment.html" class="btn btn-gradient-light">
+                            Cancel
+                        </a>
+                    </div>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
 
-                        <!-- Mother's First Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="motherFirstName"
-                              >Mother's First Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="motherFirstName"
-                              placeholder="Enter First Name"
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Mother's Middle Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="motherMiddleName"
-                              >Mother's Middle Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="motherMiddleName"
-                              placeholder="Enter Middle Name"
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Mother's Last Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="motherLastName"
-                              >Mother's Last Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="motherLastName"
-                              placeholder="Enter Last Name"
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Full Width Textarea -->
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label for="exampleTextarea1">Textarea</label>
-                            <span class="text-danger">*</span>
-                            <textarea
-                              class="form-control"
-                              id="exampleTextarea1"
-                              rows="4"
-                            ></textarea>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Buttons -->
-                      <button
-                        type="submit"
-                        class="btn btn-gradient-primary me-2"
-                      >
-                        Submit
-                      </button>
-                      <button class="btn btn-light">Cancel</button>
+              <div class="page-header">
+              <h3 class="page-title">Leave Taken By Employee</h3>
+            </div>
+            <div class="row">
+              <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <class="forms-sample">
+                      <!-- Row 1: Employee Type & Leave Type -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="employeeType">Opening Balance</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="openingBalance"
+                                            placeholder="10"
+                                            disabled
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Row 2: Year Type & Opening Balance -->
+                            <div class="row">
+                                <div class="col-lg-12 grid-margin stretch-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                    <th>Leave Start Date</th>
+                                                    <th>Leave End Date</th>
+                                                    <th>No Of Leave Taken</th>
+                                                    <th>Total Balance</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>10-March-2025</td>
+                                                        <td>11-March-2025</td>
+                                                        <td>2</td>
+                                                        <td>8</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12-May-2025</td>
+                                                        <td>17-May-2025</td>
+                                                        <td>6</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Closing Balance</td>
+                                                        <td>2</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <!-- Buttons -->
+                    <div class="text-end ">
+                        <a href="./leaveAdjustment.html" class="btn btn-gradient-primary me-2">
+                            Submit
+                        </a>
+                        <a href="./leaveAdjustment.html" class="btn btn-gradient-light">
+                            Cancel
+                        </a>
+                    </div>
                     </form>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+        </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
@@ -892,15 +841,10 @@
               <span
                 class="text-muted text-center text-sm-left d-block d-sm-inline-block"
                 >Copyright © 2023
-                <a href="https://www.bootstrapdash.com/" target="_blank"
-                  >BootstrapDash</a
+                <a href="https://www.syborgtech.com/" target="_blank"
+                  >SyborgTech</a
                 >. All rights reserved.</span
               >
-              <span
-                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
-                >Hand-crafted & made with
-                <i class="mdi mdi-heart text-danger"></i
-              ></span>
             </div>
           </footer>
           <!-- partial -->

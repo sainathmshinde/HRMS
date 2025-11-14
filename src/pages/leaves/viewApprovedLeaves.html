@@ -404,7 +404,7 @@
               </div>
             </li>
 
-            <li class="nav-item">
+              <li class="nav-item">
               <a
                 class="nav-link"
                 data-bs-toggle="collapse"
@@ -419,18 +419,53 @@
               <div class="collapse" id="leave">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/buttons.html"
+                    <a class="nav-link" href="/src/pages/ui-features/buttons.html"
                       >Dashboard</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/dropdowns.html"
+                    <a class="nav-link" href="/src/pages/leaves/leaveAccount.html"
+                      >Leave Account</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/applyLeave.html"
                       >Apply Leave</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/ui-features/typography.html"
-                      >Leave Account</a
+                    <a class="nav-link" href="/src/pages/leaves/appliedLeaves.html"
+                      >Applied Leaves</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/approvedLeave.html"
+                      >Approved Leaves</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/subordinateLeavePlan.html"
+                      >Subordinate Leave Plan</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/holidaysList.html"
+                      >Holidays List</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/leaveConfig.html"
+                      >Leave Configuration</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/leaveAdjustment.html"
+                      >Leave Adjustment</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/leaves/leaveBalanceLedger.html"
+                      >Leave Balance Ledger</a
                     >
                   </li>
                 </ul>
@@ -619,17 +654,14 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Employee</h3>
+              <h3 class="page-title">Approve Leaves</h3>
+              
             </div>
             <div class="row">
+             
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Employee Registration</h4>
-                    <p class="card-description">
-                      Fill in the required information to register a new
-                      employee
-                    </p>
                     <form class="forms-sample">
                       <div class="row">
                         <!-- Employee ID -->
@@ -641,7 +673,7 @@
                               type="text"
                               class="form-control"
                               id="employeeId"
-                              placeholder="Enter Employee ID"
+                              placeholder="E1001"
                               disabled
                             />
                           </div>
@@ -650,13 +682,13 @@
                         <!-- Reporting ID -->
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="reportingId">Reporting ID</label>
+                            <label for="reportingId">Employee Name</label>
                             <!-- <span class="text-danger">*</span> -->
                             <input
                               type="text"
                               class="form-control"
                               id="reportingId"
-                              placeholder="Enter Reporting ID"
+                              placeholder="Andrew Baker"
                               disabled
                             />
                           </div>
@@ -667,216 +699,305 @@
                         <!-- Title -->
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="title">Title</label>
-                            <span class="text-danger">*</span>
-                            <select class="form-select" id="title" required>
-                              <option value="">Select</option>
-                              <option value="mr">Mr.</option>
-                              <option value="ms">Ms.</option>
-                              <option value="mrs">Mrs.</option>
-                              <option value="dr">Dr.</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <!-- First Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="firstName">First Name</label>
-                            <span class="text-danger">*</span>
+                            <label for="leaveType">Leave Type</label>
+                            <!-- <span class="text-danger">*</span> -->
                             <input
                               type="text"
                               class="form-control"
-                              id="firstName"
-                              placeholder="Enter First Name"
-                              required
+                              id="leaveType"
+                              placeholder="Medical Leave"
+                              disabled
                             />
+                          </div>
+                        </div>
+
+                        <!-- Leave Radio -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="openingBalance"
+                              >Leave
+                              <!-- <span class="text-danger">*</span></label
+                            > -->
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="Leave"
+                                  id="FullDay"
+                                  value="yes"
+                                  checked
+                                  disabled
+                                />
+                                Full Day
+                              </label>
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceNo"
+                                  value="no"
+                                  disabled
+                                />
+                                First Half
+                              </label>
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceNo"
+                                  value="no"
+                                  disabled
+                                />
+                                Second Half
+                              </label>
+                            </div>
                           </div>
                         </div>
                       </div>
 
+                        <!-- From Date -->
                       <div class="row">
-                        <!-- Middle Name -->
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="middleName">Middle Name</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="middleName"
-                              placeholder="Enter Middle Name"
+                            <label for="dob">From Date</label>
+                            <span class="text-danger">*</span>
+                            <input 
+                                type="date"
+                                class="form-control"
+                                id="fromDate"
+                                name="fromDate"
+                                value="2025-05-12"
+                                disabled
                             />
                           </div>
                         </div>
-
-                        <!-- Last Name -->
+                       <!-- To Date -->
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="lastName">Last Name</label>
+                            <label for="dob">To Date</label>
                             <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              placeholder="Enter Last Name"
-                              required
+                            <input 
+                                type="date"
+                                class="form-control"
+                                id="toDate"
+                                name="toDate"
+                                value="2025-05-17"
+                                disabled
                             />
                           </div>
                         </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Date of Birth -->
-                        <div class="col-md-6">
+                        <!-- Leave Reason -->
+                        <div class="col-md-12">
                           <div class="form-group">
-                            <label for="dob">Date of Birth</label>
-                            <span class="text-danger">*</span>
+                            <label for="Reason For Leave">Reason For Leave</label>
+                            <!-- <span class="text-danger">*</span> -->
                             <input
-                              type="date"
+                              type="text"
                               class="form-control"
-                              id="dob"
-                              required
-                            />
+                              id="ReasonForLeave"
+                              placeholder="Travelling out of town for personal reason."
+                              rows="4"
+                              disabled
+                            ></input>
                           </div>
                         </div>
 
                         <!-- Identification Document Number -->
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="idDocumentNumber"
-                              >Identification Document Number</label
-                            >
-                            <span class="text-danger">*</span>
+                            <label for="Balance of Selected Leave Type">1Up Approver name</label>
+                            <!-- <span class="text-danger">*</span> -->
                             <input
                               type="text"
                               class="form-control"
-                              id="idDocumentNumber"
-                              placeholder="Enter Document Number"
-                              required
+                              id="approverName"
+                              placeholder="Mr. Brian Anderson"
+                              disabled
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="Balance of Selected Leave Type">Remark of 1Up approver</label>
+                            <!-- <span class="text-danger">*</span> -->
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="remarkApprover"
+                              placeholder="Approved"
+                              disabled
                             />
                           </div>
                         </div>
                       </div>
-
                       <div class="row">
-                        <!-- Father's / Husband's First Name -->
+                        
+                        <!-- Action Radio -->
+
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="fatherFirstName"
-                              >Father's / Husband's First Name</label
+                            <label for="openingBalance"
+                              >Action
+                              <span class="text-danger">*</span></label
                             >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="fatherFirstName"
-                              placeholder="Enter First Name"
-                            />
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="action"
+                                  id="approve"
+                                  value="no"
+                                />
+                                Approve
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="firstName">2Up Approver</label>
+                            <select class="form-select" id="title" required>
+                              <option value="Select">Select</option>
+                              <option value="">Mr. George Martin</option>
+                              <option value="">Ms. Susan Carter</option>
+                              <option value="">Mr. David Cutler</option>
+                            </select>
+                          </div>
+                        </div>
+                          <!-- Action Forword Radio -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="action"
+                                  id="approve"
+                                  value="no"
+                                />
+                                Forword
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="firstName">Forword To</label>
+                            <select class="form-select" id="title" required>
+                              <option value="Select">Select</option>
+                              <option value="">Mr. George Martin</option>
+                              <option value="">Ms. Susan Carter</option>
+                              <option value="">Mr. David Cutler</option>
+                            </select>
+                          </div>
+                        </div>
+                          <!-- Action Decline Radio -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="action"
+                                  id="approve"
+                                  value="no"
+                                />
+                                Decline
+                              </label>
+                            </div>
                           </div>
                         </div>
 
                         <!-- Father's / Husband's Middle Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="fatherMiddleName"
-                              >Father's / Husband's Middle Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="fatherMiddleName"
-                              placeholder="Enter Middle Name"
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Father's / Husband's Last Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="fatherLastName"
-                              >Father's / Husband's Last Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="fatherLastName"
-                              placeholder="Enter Last Name"
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Mother's First Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="motherFirstName"
-                              >Mother's First Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="motherFirstName"
-                              placeholder="Enter First Name"
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Mother's Middle Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="motherMiddleName"
-                              >Mother's Middle Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="motherMiddleName"
-                              placeholder="Enter Middle Name"
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Mother's Last Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="motherLastName"
-                              >Mother's Last Name</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="motherLastName"
-                              placeholder="Enter Last Name"
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Full Width Textarea -->
-                      <div class="row">
                         <div class="col-md-12">
                           <div class="form-group">
-                            <label for="exampleTextarea1">Textarea</label>
-                            <span class="text-danger">*</span>
-                            <textarea
+                            <label for="Reason For Leave">Reason For Approval/Forward/Decline </label>
+                            <!-- <span class="text-danger">*</span> -->
+                            <input
+                              type="text"
                               class="form-control"
-                              id="exampleTextarea1"
+                              id="Remarks"
+                              placeholder=""
                               rows="4"
-                            ></textarea>
+                            ></input>
                           </div>
                         </div>
                       </div>
-
                       <!-- Buttons -->
-                      <button
-                        type="submit"
-                        class="btn btn-gradient-primary me-2"
-                      >
-                        Submit
-                      </button>
-                      <button class="btn btn-light">Cancel</button>
+                        <div class="text-end ">
+                        <a href="./approvedLeave.html" class="btn btn-gradient-primary me-2">
+                            Cancel Leave
+                        </a>
+                        <a href="./approvedLeave.html" class="btn btn-gradient-light">
+                            Back
+                        </a>
+                    </div>
                     </form>
                   </div>
                 </div>
@@ -892,15 +1013,10 @@
               <span
                 class="text-muted text-center text-sm-left d-block d-sm-inline-block"
                 >Copyright © 2023
-                <a href="https://www.bootstrapdash.com/" target="_blank"
-                  >BootstrapDash</a
+                <a href="https://www.syborgtech.com/" target="_blank"
+                  >SyborgTech</a
                 >. All rights reserved.</span
               >
-              <span
-                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
-                >Hand-crafted & made with
-                <i class="mdi mdi-heart text-danger"></i
-              ></span>
             </div>
           </footer>
           <!-- partial -->

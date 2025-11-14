@@ -291,7 +291,7 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+           <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <!-- <li class="nav-item nav-profile">
               <a href="#" class="nav-link">
@@ -505,7 +505,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendence/markAttendance.html"
+                      href="pages/attendance/markAttendance.html"
                     >
                       Mark Attendance
                     </a>
@@ -513,7 +513,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendence/authorization.html"
+                      href="pages/attendance/attendanceAuthorization.html"
                     >
                       Attendance Authorization
                     </a>
@@ -998,7 +998,7 @@
               </div>
             </li>
 
-            <li class="nav-item">
+               <li class="nav-item">
               <a
                 class="nav-link"
                 data-bs-toggle="collapse"
@@ -1015,7 +1015,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/admin/leaveConfiguration.html"
+                      href="/src/pages/admin/adminLeaveConfiguration.html"
                     >
                       Leave Configuration
                     </a>
@@ -1023,7 +1023,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendance/attendanceConfiguration.html"
+                      href="/src/pages/admin/adminAttendanceConfiguration.html"
                     >
                       Attendance Configuration
                     </a>
@@ -1039,7 +1039,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/admin/allMastersScreens.html"
+                      href="/src/pages/admin/allMastersScreens.html"
                     >
                       All Masters Screens
                     </a>
@@ -1198,275 +1198,248 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Mark attendance</h3>
-            </div>
-            <div class="row">
-              <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <form class="forms-sample">
-                      <div class="row">
-                        <!-- Middle Name -->
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="middleName">Date * </label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="middleName"
-                              value="01-Mar-2023"
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Last Name -->
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="lastName">Total working hours</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              placeholder="Total working hours"
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="middleName">In location</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="In location"
-                              value=""
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- In Location -->
-                      <div class="row">
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="lastName">Out location</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              placeholder=""
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="middleName">Direction In </label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="In"
-                              value="IN"
-                              disabled
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Last Name -->
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="lastName">Direction out</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              value="OUT"
-                              disabled
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Middle Name -->
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="middleName">In time</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="In"
-                              value="[09:16:09 Hrs]
-"
-                              disabled
-                            />
-                          </div>
-                        </div>
-
-                        <!-- Last Name -->
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label for="lastName">Out time</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              value="[09:16:09 Hrs]
-"
-                              disabled
-                              required
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+              <h3 class="page-title">Employee Type</h3>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <!-- <label for="title">Title</label> -->
+                  <span class="text-danger"></span>
+                  <select class="form-select" id="title" required>
+                    <option value="mr">On Contract</option>
+                    <option value="mr">On Deputation</option>
+                  </select>
                 </div>
               </div>
-            </div>
-
-            <div class="page-header">
-              <h3 class="page-title">Last 30 days attendance</h3>
+              <div>
+                <a
+                  href="/src/pages/admin/createAttendenceConfiguration.html"
+                  class="btn btn-gradient-primary me-2"
+                >
+                  Add New
+                </a>
+              </div>
+              <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Tables</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Basic tables
+                  </li>
+                </ol>
+              </nav> -->
             </div>
             <div class="row">
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <div class="table-responsive">
-                      <!-- Makes table scrollable if wide -->
-                      <table class="table align-middle" style="width: 100%">
-                        <thead>
-                          <tr>
-                            <th>Date</th>
-                            <th>Employee Name</th>
-                            <th>Employee ID</th>
-                            <th>In Time</th>
-                            <th>Out Time</th>
-                            <th>Working Hours</th>
-                            <th>Capture Type</th>
-                            <th>Is Weekly Off</th>
-                            <th>Is Leave</th>
-                            <th>Is Holiday</th>
-                            <th>Is Late</th>
-                            <th>Is Authorized</th>
-                            <th>Attendance</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>23-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td>09:15:45</td>
-                            <td>18:00:29</td>
-                            <td>08:85:00</td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Present</td>
-                          </tr>
-                          <tr>
-                            <td>24-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>Yes</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Absent</td>
-                          </tr>
-                          <tr>
-                            <td>25-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td>09:15:45</td>
-                            <td>18:00:29</td>
-                            <td>08:85:00</td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>Yes</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Present</td>
-                          </tr>
-                          <tr>
-                            <td>26-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td>09:15:45</td>
-                            <td>08:85:00</td>
-                            <td></td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Conflict</td>
-                          </tr>
-                          <tr>
-                            <td>27-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td>11:00:00</td>
-                            <td>06:00:00</td>
-                            <td>07:00:00</td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Yes</td>
-                            <td>No</td>
-                            <td>Present</td>
-                          </tr>
-                          <tr>
-                            <td>28-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td>11:00:00</td>
-                            <td>06:00:00</td>
-                            <td>07:00:00</td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Yes</td>
-                            <td>No</td>
-                            <td>Present</td>
-                          </tr>
-                          <tr>
-                            <td>29-Jan-2023</td>
-                            <td>George Martin</td>
-                            <td>ID1009</td>
-                            <td>11:00:00</td>
-                            <td>06:00:00</td>
-                            <td>07:00:00</td>
-                            <td>Web</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>No</td>
-                            <td>Yes</td>
-                            <td>No</td>
-                            <td>Half Day</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    <!-- <h4 class="card-title">Employee Type</h4>
+                    <p class="card-description">
+                      Add class <code>.table</code>
+                    </p> -->
+                    <table class="table">
+                   <thead>
+                  <tr>
+                    <th style="width: 10%">Is Applicable</th>
+                    <th style="width: 25%">Rule</th>
+                    <th style="width: 35%">Configuration</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-center">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name="dailyAttendance"
+                        checked
+                      />
+                    </td>
+                    <td>Daily Attendance</td>
+                    
+                    <td>
+                      <div class="row g-2">
+                        <div class="col-md-12">
+                          <label class="form-label small">In Time</label>
+                          <input
+                            type="time"
+                            class="form-control"
+                            name="inTime"
+                            value="09:00"
+                          />
+                        </div>
+                        </div>
+
+                      <div class="row">
+                          <div class="col-md-12">
+                          <label class="form-label small">Out Time</label>
+                          <input
+                            type="time"
+                            class="form-control"
+                            name="outTime"
+                            value="18:00"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                          <label class="form-label small"
+                            >Grace Time (mins)</label
+                          >
+                          <input
+                            type="number"
+                            class="form-control"
+                            name="graceTime"
+                            placeholder="e.g. 15"
+                          />
+                        </div>
+                      </div>
+                      </div>
+                      
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-center">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name="halfDayRule"
+                      />
+                    </td>
+                    <td>Half Day Rule</td>
+                    
+                    <td>
+                      <div class="row g-2">
+                        <div class="col-md-6">
+                          <label class="form-label small">Grace Minutes</label>
+                          <input
+                            type="number"
+                            class="form-control"
+                            name="halfDayGrace"
+                            placeholder="e.g. 60"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label small">Half Day After</label>
+                          <select class="form-select" name="halfDayAfter">
+                            <option value="">Select</option>
+                            <option value="1">1 Hour Late</option>
+                            <option value="2">2 Hours Late</option>
+                            <option value="3">3 Hours Late</option>
+                          </select>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-center">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name="lunchBreak"
+                      />
+                    </td>
+                    <td>Lunch Break</td>
+                    
+                    <td>
+                      <div class="row g-2">
+                        <div class="col-md-6">
+                          <label class="form-label small">Start Time</label>
+                          <input
+                            type="time"
+                            class="form-control"
+                            name="lunchStart"
+                            value="13:00"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label small">End Time</label>
+                          <input
+                            type="time"
+                            class="form-control"
+                            name="lunchEnd"
+                            value="13:30"
+                          />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-center">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name="overtimeRule"
+                      />
+                    </td>
+                    <td>Overtime Rule</td>
+                    
+                    <td>
+                      <div class="row g-2">
+                        <div class="col-md-6">
+                          <label class="form-label small">Min Hours</label>
+                          <input
+                            type="number"
+                            class="form-control"
+                            name="minOvertimeHours"
+                            placeholder="e.g. 1"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label small">Max Hours</label>
+                          <input
+                            type="number"
+                            class="form-control"
+                            name="maxOvertimeHours"
+                            placeholder="e.g. 4"
+                          />
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="text-center">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        name="weeklyOff"
+                      />
+                    </td>
+                    <td>Weekly Off</td>
+                    
+                    <td>
+                      <div class="row g-2">
+                        <div class="col-md-12">
+                          <label class="form-label small">Select Days</label>
+                          <select
+                            class="form-select"
+                            name="weeklyOffDays"
+                            multiple
+                          >
+                            <option>Sunday</option>
+                            <option>Monday</option>
+                            <option>Tuesday</option>
+                            <option>Wednesday</option>
+                            <option>Thursday</option>
+                            <option>Friday</option>
+                            <option>Saturday</option>
+                          </select>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+                    </table>
+                      <a
+                  href="/src/pages/admin/attendanceConfiguration.html"
+                  class="btn btn-gradient-primary me-2"
+                >
+                  Save Configuration
+                </a>
+
                   </div>
+                
                 </div>
               </div>
             </div>

@@ -521,7 +521,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/admin/leaveConfiguration.html"
+                      href="pages/attendance/attendanceRegister.html"
                     >
                       Attendance Register
                     </a>
@@ -1015,7 +1015,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/admin/leaveConfiguration.html"
+                      href="/src/pages/admin/adminLeaveConfiguration.html"
                     >
                       Leave Configuration
                     </a>
@@ -1023,20 +1023,23 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="../../pages/admin/attendanceConfiguration.html"
+                      href="/src/pages/admin/adminAttendanceConfiguration.html"
                     >
                       Attendance Configuration
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/admin/createKRA.html">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/admin/createAdminKra.html"
+                    >
                       Create KRA
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/admin/allMastersScreens.html"
+                      href="/src/pages/admin/allMastersScreens.html"
                     >
                       All Masters Screens
                     </a>
@@ -1196,32 +1199,25 @@
           <div class="content-wrapper">
             <div class="page-header">
               <h3 class="page-title">Employee Type</h3>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <!-- <label for="title">Title</label> -->
-                  <span class="text-danger"></span>
+            </div>
+            <div class="row align-items-end mb-4">
+              <div class="col-md-3">
+                <div class="form-group mb-0">
                   <select class="form-select" id="title" required>
-                    <option value="mr">On Contract</option>
-                    <option value="mr">On Deputation</option>
+                    <option value="contract">On Contract</option>
+                    <option value="deputation">On Deputation</option>
                   </select>
                 </div>
               </div>
-              <div>
+
+              <div class="col-md-9 text-end">
                 <a
-                  href="/src/pages/admin/createAttendenceConfiguration.html"
+                  href="/src/pages/admin/createAdminAttendenceConfiguration.html"
                   class="btn btn-gradient-primary me-2"
                 >
                   Add New
                 </a>
               </div>
-              <!-- <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Tables</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Basic tables
-                  </li>
-                </ol>
-              </nav> -->
             </div>
             <div class="row">
               <div class="col-lg-12 grid-margin stretch-card">
@@ -1231,212 +1227,344 @@
                     <p class="card-description">
                       Add class <code>.table</code>
                     </p> -->
-                    <table class="table">
-                   <thead>
-                  <tr>
-                    <th style="width: 10%">Is Applicable</th>
-                    <th style="width: 25%">Rule</th>
-                    <th style="width: 35%">Configuration</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="text-center">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        name="dailyAttendance"
-                        checked
-                      />
-                    </td>
-                    <td>Daily Attendance</td>
-                    
-                    <td>
-                      <div class="row g-2">
-                        <div class="col-md-12">
-                          <label class="form-label small">In Time</label>
-                          <input
-                            type="time"
-                            class="form-control"
-                            name="inTime"
-                            value="09:00"
-                          />
-                        </div>
-                        </div>
+                    <table class="table table-bordered align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th style="width: 10%">Is Applicable</th>
+                          <th style="width: 25%">Rule</th>
+                          <th style="width: 65%">Input</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- Working Time -->
+                        <tr>
+                          <td class="text-center">
+                            <input type="checkbox" class="form-check-input" />
+                          </td>
+                          <td>Working Time</td>
+                          <td>
+                            <div class="row g-2 mb-2">
+                              <div class="col-md-6">
+                                <label class="form-label small"
+                                  >In Time (Hrs)</label
+                                >
+                                <input type="time" class="form-control" />
+                              </div>
+                              <div class="col-md-6">
+                                <label class="form-label small"
+                                  >Grace time for late coming (mins)</label
+                                >
+                                <input
+                                  type="number"
+                                  class="form-control"
+                                  placeholder="e.g. 10"
+                                />
+                              </div>
+                            </div>
+                            <div class="row g-2 mb-2">
+                              <div class="col-md-6">
+                                <label class="form-label small"
+                                  >Out Time (Hrs)</label
+                                >
+                                <input type="time" class="form-control" />
+                              </div>
+                              <div class="col-md-6">
+                                <label class="form-label small"
+                                  >Grace time for Early going (mins)</label
+                                >
+                                <input
+                                  type="number"
+                                  class="form-control"
+                                  placeholder="e.g. 5"
+                                />
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
 
-                      <div class="row">
-                          <div class="col-md-12">
-                          <label class="form-label small">Out Time</label>
-                          <input
-                            type="time"
-                            class="form-control"
-                            name="outTime"
-                            value="18:00"
-                          />
-                        </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-md-12">
-                          <label class="form-label small"
-                            >Grace Time (mins)</label
-                          >
-                          <input
-                            type="number"
-                            class="form-control"
-                            name="graceTime"
-                            placeholder="e.g. 15"
-                          />
-                        </div>
-                      </div>
-                      </div>
-                      
-                    </td>
-                  </tr>
+                        <!-- Lunch Time -->
+                        <tr>
+                          <td class="text-center">
+                            <input type="checkbox" class="form-check-input" />
+                          </td>
+                          <td>Lunch Time</td>
+                          <td>
+                            <div class="row g-2">
+                              <div class="col-md-6">
+                                <label class="form-label small"
+                                  >From (min)</label
+                                >
+                                <input type="time" class="form-control" />
+                              </div>
+                              <div class="col-md-6">
+                                <label class="form-label small">To (min)</label>
+                                <input type="time" class="form-control" />
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
 
-                  <tr>
-                    <td class="text-center">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        name="halfDayRule"
-                      />
-                    </td>
-                    <td>Half Day Rule</td>
-                    
-                    <td>
-                      <div class="row g-2">
-                        <div class="col-md-6">
-                          <label class="form-label small">Grace Minutes</label>
-                          <input
-                            type="number"
-                            class="form-control"
-                            name="halfDayGrace"
-                            placeholder="e.g. 60"
-                          />
-                        </div>
-                        <div class="col-md-6">
-                          <label class="form-label small">Half Day After</label>
-                          <select class="form-select" name="halfDayAfter">
-                            <option value="">Select</option>
-                            <option value="1">1 Hour Late</option>
-                            <option value="2">2 Hours Late</option>
-                            <option value="3">3 Hours Late</option>
-                          </select>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
+                        <!-- Tea Break -->
+                        <tr>
+                          <td class="text-center">
+                            <input type="checkbox" class="form-check-input" />
+                          </td>
+                          <td>Tea Break</td>
+                          <td>
+                            <div class="row g-2">
+                              <div class="col-md-6">
+                                <label class="form-label small"
+                                  >No. of Tea Breaks</label
+                                >
+                                <select class="form-select">
+                                  <option value="">Select</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                </select>
+                              </div>
+                              <div class="col-md-6">
+                                <label class="form-label small"
+                                  >For How many min</label
+                                >
+                                <input
+                                  type="number"
+                                  class="form-control"
+                                  placeholder="e.g. 15"
+                                />
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
 
-                  <tr>
-                    <td class="text-center">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        name="lunchBreak"
-                      />
-                    </td>
-                    <td>Lunch Break</td>
-                    
-                    <td>
-                      <div class="row g-2">
-                        <div class="col-md-6">
-                          <label class="form-label small">Start Time</label>
-                          <input
-                            type="time"
-                            class="form-control"
-                            name="lunchStart"
-                            value="13:00"
-                          />
-                        </div>
-                        <div class="col-md-6">
-                          <label class="form-label small">End Time</label>
-                          <input
-                            type="time"
-                            class="form-control"
-                            name="lunchEnd"
-                            value="13:30"
-                          />
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
+                        <!-- Non Working Days -->
+                        <tr>
+                          <td class="text-center">
+                            <input type="checkbox" class="form-check-input" />
+                          </td>
+                          <td>Non Working Days</td>
+                          <td>
+                            <div class="row g-3">
+                              <div class="col-md-6">
+                                <label class="form-label small"
+                                  >Weekly OFF 1</label
+                                >
+                                <select class="form-select">
+                                  <option>Select</option>
+                                  <option>Sunday</option>
+                                  <option>Monday</option>
+                                  <option>Tuesday</option>
+                                  <option>Wednesday</option>
+                                  <option>Thursday</option>
+                                  <option>Friday</option>
+                                  <option>Saturday</option>
+                                </select>
+                              </div>
+                              <div class="col-md-6">
+                                <label class="form-label small"
+                                  >Order of Weekly OFF 1</label
+                                >
+                                <div>
+                                  <label class="form-check-label me-2"
+                                    ><input
+                                      type="checkbox"
+                                      class="form-check-input me-1"
+                                    />1st</label
+                                  >
+                                  <label class="form-check-label me-2"
+                                    ><input
+                                      type="checkbox"
+                                      class="form-check-input me-1"
+                                    />2nd</label
+                                  >
+                                  <label class="form-check-label me-2"
+                                    ><input
+                                      type="checkbox"
+                                      class="form-check-input me-1"
+                                    />3rd</label
+                                  >
+                                  <label class="form-check-label me-2"
+                                    ><input
+                                      type="checkbox"
+                                      class="form-check-input me-1"
+                                    />4th</label
+                                  >
+                                  <label class="form-check-label"
+                                    ><input
+                                      type="checkbox"
+                                      class="form-check-input me-1"
+                                    />5th</label
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row g-3">
+                              <div class="col-md-6">
+                                <label class="form-label small"
+                                  >Weekly OFF 2</label
+                                >
+                                <select class="form-select">
+                                  <option>Select</option>
+                                  <option>Sunday</option>
+                                  <option>Monday</option>
+                                  <option>Tuesday</option>
+                                  <option>Wednesday</option>
+                                  <option>Thursday</option>
+                                  <option>Friday</option>
+                                  <option>Saturday</option>
+                                </select>
+                              </div>
+                              <div class="col-md-6">
+                                <label class="form-label small"
+                                  >Order of Weekly OFF 1</label
+                                >
+                                <div>
+                                  <label class="form-check-label me-2"
+                                    ><input
+                                      type="checkbox"
+                                      class="form-check-input me-1"
+                                    />1st</label
+                                  >
+                                  <label class="form-check-label me-2"
+                                    ><input
+                                      type="checkbox"
+                                      class="form-check-input me-1"
+                                    />2nd</label
+                                  >
+                                  <label class="form-check-label me-2"
+                                    ><input
+                                      type="checkbox"
+                                      class="form-check-input me-1"
+                                    />3rd</label
+                                  >
+                                  <label class="form-check-label me-2"
+                                    ><input
+                                      type="checkbox"
+                                      class="form-check-input me-1"
+                                    />4th</label
+                                  >
+                                  <label class="form-check-label"
+                                    ><input
+                                      type="checkbox"
+                                      class="form-check-input me-1"
+                                    />5th</label
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
 
-                  <tr>
-                    <td class="text-center">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        name="overtimeRule"
-                      />
-                    </td>
-                    <td>Overtime Rule</td>
-                    
-                    <td>
-                      <div class="row g-2">
-                        <div class="col-md-6">
-                          <label class="form-label small">Min Hours</label>
-                          <input
-                            type="number"
-                            class="form-control"
-                            name="minOvertimeHours"
-                            placeholder="e.g. 1"
-                          />
-                        </div>
-                        <div class="col-md-6">
-                          <label class="form-label small">Max Hours</label>
-                          <input
-                            type="number"
-                            class="form-control"
-                            name="maxOvertimeHours"
-                            placeholder="e.g. 4"
-                          />
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
+                        <!-- Consider half day -->
+                        <tr>
+                          <td class="text-center">
+                            <input type="checkbox" class="form-check-input" />
+                          </td>
+                          <td>
+                            Consider half day if work duration is less than
+                            (mins)
+                          </td>
+                          <td>
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder="e.g. 240"
+                            />
+                          </td>
+                        </tr>
 
-                  <tr>
-                    <td class="text-center">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        name="weeklyOff"
-                      />
-                    </td>
-                    <td>Weekly Off</td>
-                    
-                    <td>
-                      <div class="row g-2">
-                        <div class="col-md-12">
-                          <label class="form-label small">Select Days</label>
-                          <select
-                            class="form-select"
-                            name="weeklyOffDays"
-                            multiple
-                          >
-                            <option>Sunday</option>
-                            <option>Monday</option>
-                            <option>Tuesday</option>
-                            <option>Wednesday</option>
-                            <option>Thursday</option>
-                            <option>Friday</option>
-                            <option>Saturday</option>
-                          </select>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
+                        <!-- Consider absent -->
+                        <tr>
+                          <td class="text-center">
+                            <input type="checkbox" class="form-check-input" />
+                          </td>
+                          <td>
+                            Consider absent if work duration is less than (mins)
+                          </td>
+                          <td>
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder="e.g. 120"
+                            />
+                          </td>
+                        </tr>
+
+                        <!-- Mark weekly off and holiday prefix -->
+                        <tr>
+                          <td class="text-center">
+                            <input type="checkbox" class="form-check-input" />
+                          </td>
+                          <td>
+                            Mark weekly off and holiday as absent if prefix day
+                            is absent
+                          </td>
+                          <td>
+                            <input type="checkbox" class="form-check-input" />
+                          </td>
+                        </tr>
+
+                        <!-- Mark weekly off and holiday suffix -->
+                        <tr>
+                          <td class="text-center">
+                            <input type="checkbox" class="form-check-input" />
+                          </td>
+                          <td>
+                            Mark weekly off and holiday as absent if suffix day
+                            is absent
+                          </td>
+                          <td>
+                            <input type="checkbox" class="form-check-input" />
+                          </td>
+                        </tr>
+
+                        <!-- Absent when late -->
+                        <tr>
+                          <td class="text-center">
+                            <input type="checkbox" class="form-check-input" />
+                          </td>
+                          <td>Absent when late for (days)</td>
+                          <td>
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder="e.g. 3"
+                            />
+                          </td>
+                        </tr>
+
+                        <!-- Attendance Cycle -->
+                        <tr>
+                          <td class="text-center">
+                            <input type="checkbox" class="form-check-input" />
+                          </td>
+                          <td>Attendance Cycle</td>
+                          <td>
+                            <div class="row g-2">
+                              <div class="col-md-4">
+                                <label class="form-label small">From Day</label>
+                                <select class="form-select">
+                                  <option>Select</option>
+                                  <option>Monday</option>
+                                  <option>Tuesday</option>
+                                  <option>Wednesday</option>
+                                  <option>Thursday</option>
+                                  <option>Friday</option>
+                                  <option>Saturday</option>
+                                  <option>Sunday</option>
+                                </select>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
-                      <a
-                  href="/src/pages/admin/attendanceConfiguration.html"
-                  class="btn btn-gradient-primary me-2"
-                >
-                  Save Configuration
-                </a>
-
+                    <a
+                      href="/src/pages/admin/attendanceConfiguration.html"
+                      class="btn btn-gradient-primary me-2 mt-2"
+                    >
+                      Save Configuration
+                    </a>
                   </div>
-                
                 </div>
               </div>
             </div>
