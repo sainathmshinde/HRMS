@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
@@ -1195,210 +1199,8 @@
           <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header mt-2">
-                 <h3 class="page-title formViewTable">Assign Band</h3>
+                 <h3 class="page-title formViewTable">Disciplinary Action</h3>
             </div>
-
-             <div class="col-12 grid-margin stretch-card">
-                <div class="card " >
-                  <div class="card-body">
-                    <form class="forms-sample">
-                      <div class="row">
-                        <!-- Employee ID -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="employeeId">Employee ID- name</label>
-                            <span class="text-danger"></span>
-                           <input
-                              type="text"
-                              class="form-control"
-                              id="reportingId"
-                              placeholder="ID-name"
-                            />  
-                          </div>
-                        </div>
-
-                        <!-- Reporting ID -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="reportingId">Designation</label>
-                             <span class="text-danger"></span>
-                            <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option selected>Developer</option>
-                                <option>Accounts Officer</option>
-                                <option>Senior Accounts Officer</option>
-                                <option>Admin/Account Assistant</option>
-                                  <option>Developer</option>
-                                    <option>Designer</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Title -->
-                       <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="reportingId">Score Range</label>
-                             <span class="text-danger"></span>
-                            <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option >Less then 10%</option>
-                                <option>10%-50%</option>
-                                <option>50%-80%</option>
-                                <option>Greater then 80%</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <!-- First Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="firstName">KRA</label>
-                            <span class="text-danger"></span>
-                            <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option>Team Target</option>
-                                <option>Individual Target</option>
-                                <option>Competency Individual</option>
-                                <option>Competency Supervisor FeedBack</option>
-                                  <option>Payments & Settelments</option>
-                                    <option>Report Management</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <!-- Middle Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="middleName">KRA Score Greater than (%)</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              placeholder=""
-                              required
-                            />
-                          </div>
-                        </div>
-                         <div class="col-md-6">
-                            <div class="form-group mb-2">
-                            <label for="title">Year <span class="text-danger"></span></label>
-                            <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option selected>FY - 2023-2024</option>
-                                <option>FY - 2022-2023</option>
-                                <option>FY - 2021-2022</option>
-                                <option>FY - 2020-2021</option>
-                            </select>
-                            </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  
-               <div class="text-end">
-              <button
-                        type="submit"
-                        class="btn btn-gradient-primary mb-4 " style="margin-right: 20px;"
-                      >
-                        Search
-                      </button>
-                      </div>
-           
-                </div>
-              </div>
-             <div class="row g-2 ">
-                        <div class="col-md-3">
-                            <div class="form-group mb-2">
-                            <label for="title">Year <span class="text-danger">*</span></label>
-                            <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option selected>FY - 2023-2024</option>
-                                <option>FY - 2022-2023</option>
-                                <option>FY - 2021-2022</option>
-                                <option>FY - 2020-2021</option>
-                            </select>
-                            </div>
-                        </div>
-                        <div class="col-md-1"></div>
-                          <div class="col-md-3 ml-4">
-                            <div class="form-group ml-4">
-                            <label for="title">Band<span class="text-danger">*</span></label>
-                            <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option selected>All</option>
-                                <option>A</option>
-                                <option>B</option>
-                                <option>C</option>
-                                <option>D</option>
-                            </select>
-                            </div>
-                        </div>
-                        </div>
-        
-            <div class="row ">
-              <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Employee ID</th>
-                          <th>Employee Name</th>
-                          <th>Designation</th>
-                          <th>Department</th>
-                          <th>Location</th>
-                          <th>Default Band</th>
-                          <th>Score</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                            <td><label>ID1009</label></td>
-                            <td><label>Susan Kelly</label></td>
-                            <td><label>Developer</label></td>
-                            <td><label>IT</label></td>
-                            <td><label>Pune</label></td>
-                            <td><label>A</label></td>
-                             <td><label>90%</label></td>
-                        </tr>
-                        <tr>
-                            <td><label>ID1016</label></td>
-                            <td><label>Sharon White</label></td>
-                            <td><label>Developer</label></td>
-                            <td><label>IT</label></td>
-                            <td><label>Pune</label></td>
-                            <td><label>C</label></td>
-                             <td><label>50%</label></td>
-                        </tr>
-                        <tr>
-                            <td><label>ID1017</label></td>
-                            <td><label>Rith Nelson</label></td>
-                            <td><label>Developer</label></td>
-                            <td><label>IT</label></td>
-                            <td><label>Pune</label></td>
-                            <td><label>B</label></td>
-                             <td><label>80%</label></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-          </div>
-           <div class="text-end">
-              <button
-                        type="submit"
-                        class="btn btn-gradient-primary me-2 "
-                      >
-                        Assign Band
-                      </button>
-                      <button class="btn btn-light">Cancel</button>
-                      </div>
           </div>
           </div>
           <!-- content-wrapper ends -->
@@ -1431,10 +1233,73 @@
     <!-- End custom js for this page -->
 <script type="text/javascript"> 
 	$(function(){
-		$("#assignPerfmData").hide();
-		
-		
-		$("form").find("#Qualificationdetail_start").datepicker({
+	              $(".QualificationTable").hide();
+			$(".mounting-events-inner").hide();
+			$(".form-edit a.enabledForm").hide();
+			$(".edit-img").hide();
+			$(".editDiv").hide();
+			//$("form").find("input[type='text']").attr("disabled","disabled");
+			//$("form").find("textarea").attr("disabled","disabled");
+			//$("form").find("select").attr("disabled","disabled").select2();
+			  
+			 
+			 $(".projectEdit").click(function()
+			  {
+				$(".QualificationTable").show();
+				$(".mounting-events-inner").show();
+				$(".grid").hide();
+				$(".projectEdit").hide();
+				$(".searchArea").hide();
+			   });
+			   
+			
+			  $(".projectEditView").click(function()
+			  { $(".editDiv").show();
+			    $(".edit-img").show();
+				$(".QualificationTable").show();
+				$(".mounting-events-inner").show();
+				$(".grid").hide();
+				$(".projectEdit").hide();
+				$(".searchArea").hide();
+				$("input[type='text']").attr('disabled','disabled');
+				$("select").attr('disabled','disabled');
+				$("textarea").attr('disabled','disabled');
+			   });
+			   
+			 $(".edit-img").click(function(){
+			    $("input[type='text']").removeAttr('disabled');
+				$("select").removeAttr('disabled');
+				$("textarea").removeAttr('disabled');
+			 
+			 });
+			   
+			$(".disabledForm").click(function()
+			  {
+				$(".QualificationTable").hide();
+				$(".mounting-events-inner").hide();
+				$(".searchArea").show();
+				$(".grid").show();
+				$(".projectEdit").show();
+				$(".edit-img").hide();
+			    $(".editDiv").hide();
+			   });
+			   
+			 $(".enabledForm").click(function()
+			  {
+				$(".mounting-events-inner").show();
+				$(".form-edit a.enabledForm").hide();
+				$(".searchArea").hide();
+				$("form").find("input[type='text']").removeAttr("disabled");
+				$("form").find("textarea").removeAttr("disabled");
+				$("form").find("select").removeAttr("disabled").select2();
+			  });
+			  
+			  $("input[type='text']").val("");
+			  $(".update").val("Save");
+			  $(".cancel").val("Cancel");
+			 
+			  
+			  $("form").find("#Qualificationdetail_start").datepicker({
 				changeMonth:true,
 				changeYear:true,
 				dateFormat : 'dd-M-yy',
@@ -1447,16 +1312,13 @@
 				yearRange: '-70 :c'
 			});
 			
-			$(".disabledFormbutton").click(function()
-			{
-				$("#assignPerfmData").hide();
+			$(".addBand").click(function(){
+			  
+			    $('.bandTable').append('<tr><td class="odd-col"><label for="Qualificationdetail_educationlevelID">band<span class="required">*</span></label></td><td class="even-col"><select  id ="desig"><option value="Select">Select</option><option value="1" selected>A</option><option value="2">B</option><option value="3">C</option><option value="4">D</option></select></td><td class="odd-col"><label for="Designation">Score Range <span class="required">*</span></label></td><td class="even-col"><select id="Designation"><option value="Select">Select</option><option value="1">Less then 10%</option><option value="2">10% - 50%</option><option value="2">50% - 80%</option><option value="2">Greater then 80%</option></select></td></tr><tr><td class="odd-col" >		<label for="action">Actions</label> </td><td class="even-col" ><select  id ="desig"><option value="Select">Select</option><option value="1">Promotion</option><option value="2">As IS</option><option value="2">Confirmation</option><option value="2">Probation</option><option value="2">Increment</option></select></td><td class="odd-col"><label>Increment of current salary</label></td><td class="even-col"><input type="text" id ="increment"> <span> %</span></td></tr>');
 			});
+    
+			
 	});
-	function showForm()
-	{
-		$("#assignPerfmData").show();
-	}
-	
 </script>
    
 	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
