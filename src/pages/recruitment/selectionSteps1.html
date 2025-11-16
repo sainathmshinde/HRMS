@@ -83,7 +83,7 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search employee"
+                  placeholder="Search projects"
                 />
               </div>
             </form>
@@ -1037,24 +1037,161 @@
               </div>
             </li>
 
-            <!-- COmponents code removed -->
+            <!-- COmponents code -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="menu-title">Dashboard</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#icons"
+                aria-expanded="false"
+                aria-controls="icons"
+              >
+                <span class="menu-title">Icons</span>
+                <i class="mdi mdi-contacts menu-icon"></i>
+              </a>
+              <div class="collapse" id="icons">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/icons/font-awesome.html"
+                      >Font Awesome</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#forms"
+                aria-expanded="false"
+                aria-controls="forms"
+              >
+                <span class="menu-title">Forms</span>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              </a>
+              <div class="collapse" id="forms">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/forms/basic_elements.html"
+                      >Form Elements</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#charts"
+                aria-expanded="false"
+                aria-controls="charts"
+              >
+                <span class="menu-title">Charts</span>
+                <i class="mdi mdi-chart-bar menu-icon"></i>
+              </a>
+              <div class="collapse" id="charts">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/charts/chartjs.html"
+                      >ChartJs</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#tables"
+                aria-expanded="false"
+                aria-controls="tables"
+              >
+                <span class="menu-title">Tables</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+              <div class="collapse" id="tables">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/tables/basic-table.html"
+                      >Basic table</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#auth"
+                aria-expanded="false"
+                aria-controls="auth"
+              >
+                <span class="menu-title">User Pages</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-lock menu-icon"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/blank-page.html">
+                      Blank Page
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/login.html">
+                      Login
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/register.html">
+                      Register
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-404.html">
+                      404
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-500.html">
+                      500
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="docs/documentation.html"
+                target="_blank"
+              >
+                <span class="menu-title">Documentation</span>
+                <i class="mdi mdi-file-document-box menu-icon"></i>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Manage Request</h3>
+              <h3 class="page-title">Selection Steps</h3>
             </div>
             <div class="page-header">
-              <h5>Search training request</h5>
-              <nav aria-label="breadcrumb">
-                <a
-                  class="btn btn-gradient-primary me-2"
-                  href="manageRequest1.html"
-                  >Add New</a
-                >
-              </nav>
+              <h5>HRR (Human Resource Request)</h5>
+             
             </div>
 
             <div>
@@ -1063,230 +1200,277 @@
                   <div class="card-body">
                     <form class="forms-sample">
                       <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label for="percentage">Request Title</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="percentage"
-                              placeholder="Enter Title"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="percentage">From Date</label>
-                            <input
-                              type="date"
-                              class="form-control"
-                              id="percentage"
-                              placeholder="Enter Title"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="percentage">To Date</label>
-                            <input
-                              type="date"
-                              class="form-control"
-                              id="percentage"
-                              placeholder="Enter Title"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <!-- Component Name -->
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="componentName"
-                              >Training request type
+                              >HRR
                             </label>
+
                             <select
                               class="form-select"
                               id="componentName"
                               required
                             >
                               <option value="Select">Select</option>
-                              <option value="1">
-                                Technical or technology training
-                              </option>
-                              <option value="2">Quality training</option>
-                              <option value="3">Skill training</option>
-                              <option value="4">Soft skill training</option>
+						<option value="1" selected>Desk Officer HRR</option>
+						<option value="2">Block Coordinator HRR</option>
+						<option value="3">Assistant - IT HRR</option>
+						<option value="4">Accountant HRR</option>
                             </select>
                           </div>
                         </div>
-                        <div class="col-md-6">
+                          <div class="col-md-6">
                           <div class="form-group">
-                            <label for="componentType"
-                              >Training request location</label
-                            >
-                            <select
-                              class="form-select"
-                              id="componentType"
-                              required
-                            >
-                              <option value="Select">Select</option>
-                              <option value="Pune">Pune</option>
-                              <option value="Mumbai">Mumbai</option>
-                              <option value="Banglore">Banglore</option>
-                            </select>
+                            <label for="percentage">Skills</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              value="Typing"
+                            />
                           </div>
                         </div>
-                        <div class="text-end mb-4">
-                <a type="button" class="btn btn-gradient-primary me-4">
-                  Save
-                </a>
-                <a type="reset" class="btn btn-gradient-light"> Cancel </a>
-              </div>
                       </div>
-
+                      <div class="row">
+                         <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">No. Of Position</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              value="4"
+                            />
+                          </div>
+                        </div>
+                          <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Experience</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              value="0-2 Yr"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                     <div class="row">
+                         <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Age</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              value="18-25 Yr"
+                            />
+                          </div>
+                        </div>
+                          <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Qualification</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              value="Diploma"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                         <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Compensation And Benefits (INR) Annually</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              value="12000/-"
+                            />
+                          </div>
+                        </div>
+                         
+                      </div>
+                       
+                       
+                      
+                      
+                      
 
                       <!-- Buttons -->
                     </form>
                   </div>
-                 
+                
 
                 </div>
               </div>
+               <div class="page-header">
+              <h5>Selection Steps</h5>
+             
+            </div>
+
+            <div>
+              <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <form class="forms-sample">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="componentName"
+                              >Selection Steps
+                            </label>
+                                                        <span class="text-danger">*</span>
+
+
+                            <select
+                              class="form-select"
+                              id="componentName"
+                              required
+                            >
+                              <option value="Select">Select</option>
+								<option value="1">Written Test</option>
+								<option value="">Group Discussion</option>
+								<option value="">Personal Interview</option>
+								<option value="">Presentation</option>
+                            </select>
+                          </div>
+                        </div>
+                          <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Weightage (%)</label>
+                                                        <span class="text-danger">*</span>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                     
+                       
+                       
+                      
+                      
+                      
+
+                      <!-- Buttons -->
+                    </form>
+                  </div>
+                
+
+                </div>
+              </div>
+
+
               
               <div class="page-header">
-                <h5>Training request list</h5>
-              </div>
+  <h5></h5>
+  <nav aria-label="breadcrumb">
+    <a class="btn btn-gradient-primary me-2" id="addBandBtn">Add Rounds</a>
+  </nav>
+</div>
 
-              <div class="row">
-                <div class="col-lg-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th>
-                              <label>Title</label>
-                            </th>
-                            <th>
-                              <label>From date</label>
-                            </th>
-                            <th>
-                              <label>To date</label>
-                            </th>
-                            <th>
-                              <label>Type</label>
-                            </th>
-                            <th>
-                              <label>Location</label>
-                            </th>
+<div class="col-12 grid-margin stretch-card">
+  <div class="card">
+    <div class="card-body">
+      <form class="forms-sample">
 
-                            <th>
-                              <label>Description</label>
-                            </th>
-                            <th>
-                              <label>Authorized</label>
-                            </th>
-                            <th>
-                              <label>Action</label>
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <label>Meeting etiquettes</label>
-                            </td>
-                            <td>
-                              <label>31-May-2025</label>
-                            </td>
-                            <td>
-                              <label>31-May-2025</label>
-                            </td>
-                            <td>
-                              <label>Soft skill</label>
-                            </td>
-                            <td>
-                              <label>Pune</label>
-                            </td>
+        <!-- Education Container -->
+        <div id="educationContainer">
 
-                            <td>
-                              <label>Behavioural training</label>
-                            </td>
-                            <td>
-                              <label>No</label>
-                            </td>
-                            <td>
-                              <a href="manageRequest1.html"
-                                ><i class="fa-solid fa-pen-to-square"></i
-                              ></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label>Meeting etiquettes</label>
-                            </td>
-                            <td>
-                              <label>07-Jan-2025</label>
-                            </td>
-                            <td>
-                              <label>09-Jan-2025</label>
-                            </td>
-                            <td>
-                              <label>Soft skill</label>
-                            </td>
-                            <td>
-                              <label>Pune</label>
-                            </td>
+          <!-- FIRST Education Row -->
+          <div class="row educationRow">
+           
+                        <div class="col-md-6">
+              <div class="form-group">
+                 <label for="percentage">Round</label>
+                                                        <span class="text-danger">*</span>
 
-                            <td>
-                              <label>Behavioural training</label>
-                            </td>
-                            <td>
-                              <label>Yes</label>
-                            </td>
-                            <td>
-                              <a href="manageRequest1.html"
-                                ><i class="fa-solid fa-pen-to-square"></i
-                              ></a>
-                            </td>
-                          </tr>
-                          <tr class="">
-                            <td>
-                              <label>Meeting etiquettes</label>
-                            </td>
-                            <td>
-                              <label>07-Jan-2025</label>
-                            </td>
-                            <td>
-                              <label>09-Jan-2025</label>
-                            </td>
-                            <td>
-                              <label>Soft skill</label>
-                            </td>
-                            <td>
-                              <label>Pune</label>
-                            </td>
-                            <td>
-                              <label>Behavioural training</label>
-                            </td>
-                            <td>
-                              <label>No</label>
-                            </td>
-                            <td>
-                              <a href="manageRequest1.html"
-                                ><i class="fa-solid fa-pen-to-square"></i
-                              ></a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Round"
+                            />
               </div>
             </div>
+             <div class="col-md-6">
+              <div class="form-group">
+                 <label for="percentage">Marks</label>
+                                                        <span class="text-danger">*</span>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Marks"
+                            />
+              </div>
+            </div>
+             <div class="col-md-6">
+              <div class="form-group">
+                 <label for="percentage">Qualify Marks</label>
+                                                        <span class="text-danger">*</span>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Qualify Marks"
+                            />
+              </div>
+            </div>
+             <div class="col-md-6">
+              <div class="form-group">
+                 <label for="percentage">Interviewer Name </label>
+                                                        <span class="text-danger">*</span>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Interviewer Name"
+                            />
+              </div>
+            </div>
+
+          </div>
+
+        </div> 
+
+
+      </form>
+    </div>
+   
+  </div>
+</div>
+
+             
+
+              
+            </div>
+              <div class="text-end mb-2">
+                  <a
+                    type="button"
+                    class="btn btn-gradient-primary me-4"
+                    href="selectionSteps.html"
+                  >
+                    Save
+                  </a>
+                  <a
+                    type="reset"
+                    class="btn btn-gradient-light"
+                    href="selectionSteps.html"
+                  >
+                    Back
+                  </a>
+                </div>
           </div>
         <!-- main-panel ends -->
       </div>
@@ -1357,5 +1541,23 @@
       type="text/javascript"
       charset="utf-8"
     ></script>
+  <script>
+  document.getElementById('addBandBtn').addEventListener('click', function () {
+
+    const container = document.getElementById('educationContainer');
+    const firstRow = container.querySelector('.educationRow');
+
+    // Clone the row
+    const newRow = firstRow.cloneNode(true);
+
+    // Clear the input value in cloned row
+    newRow.querySelector('input').value = "";
+
+    // Append the cloned row
+    container.appendChild(newRow);
+  });
+</script>
+
+
   </body>
 </html>
