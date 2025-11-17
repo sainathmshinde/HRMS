@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
@@ -767,6 +771,54 @@
                       Band Template
                     </a>
                   </li>
+                   <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/performance/eligibleEmployeesReports.html"
+                    >
+                      Eligible Employees Reports
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/performance/reviewerAssessmentReports.html"
+                    >
+                     Reviewer Assessment Reports
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/performance/pipReports.html"
+                    >
+                     PIP Reports
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/performance/totalPendingAssessmentReports.html"
+                    >
+                      Total Pending Assessment Reports
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/performance/performanceTrendReports.html"
+                    >
+                      Performance Trend Reports
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/performance/KRAAnalysisReports.html"
+                    >
+                     KRA Analysis Reports
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -1194,217 +1246,489 @@
         <!-- partial -->
           <div class="main-panel">
           <div class="content-wrapper">
-            <div class="page-header mt-2">
-                 <h3 class="page-title formViewTable">Assign Band</h3>
+             <div class="page-header mt-2">
+              <h3 class="page-title ">Employees In PIP Reports</h3>
             </div>
+          <div class="col-12 grid-margin stretch-card">
+  <div class="card">
+    <div class="card-body">
+      <form class="forms-sample">
+        <div class="row">
+          <!-- Designation -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="designation">Designation</label>
+              <select class="form-select form-select-sm" id="designation" required>
+                <option>Not required</option>
+                <option selected>All</option>
+                <option>Accounts Officer</option>
+                <option>Senior Accounts Officer</option>
+                <option>Admin /Account Assistant</option>
+                <option>Project Manager - Product and services</option>
+                <option>Developer</option>
+                <option>Designer</option>
+              </select>
+            </div>
+          </div>
 
-             <div class="col-12 grid-margin stretch-card">
-                <div class="card " >
-                  <div class="card-body">
-                    <form class="forms-sample">
-                      <div class="row">
-                        <!-- Employee ID -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="employeeId">Employee ID- name</label>
-                            <span class="text-danger"></span>
-                           <input
-                              type="text"
-                              class="form-control"
-                              id="reportingId"
-                              placeholder="ID-name"
-                            />  
-                          </div>
-                        </div>
+          <!-- Department -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="department">Department</label>
+              <select class="form-select form-select-sm" id="department" required>
+                <option>Not required</option>
+                <option selected>All</option>
+                <option>Accounts</option>
+                <option>Sales</option>
+                <option>IT</option>
+                <option>HR</option>
+              </select>
+            </div>
+          </div>
 
-                        <!-- Reporting ID -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="reportingId">Designation</label>
-                             <span class="text-danger"></span>
-                            <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option selected>Developer</option>
-                                <option>Accounts Officer</option>
-                                <option>Senior Accounts Officer</option>
-                                <option>Admin/Account Assistant</option>
-                                  <option>Developer</option>
-                                    <option>Designer</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
+          <!-- Location -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="location">Location</label>
+              <select class="form-select form-select-sm" id="location" required>
+                <option>Not required</option>
+                <option>All</option>
+                <option selected>Pune</option>
+                <option>Mumbai</option>
+                <option>Nagpur</option>
+                <option>Aurangabad</option>
+              </select>
+            </div>
+          </div>
+        </div>
 
-                      <div class="row">
-                        <!-- Title -->
-                       <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="reportingId">Score Range</label>
-                             <span class="text-danger"></span>
-                            <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option >Less then 10%</option>
-                                <option>10%-50%</option>
-                                <option>50%-80%</option>
-                                <option>Greater then 80%</option>
-                            </select>
-                          </div>
-                        </div>
+        <div class="row">
+          <!-- Status -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="status">Status</label>
+              <select class="form-select form-select-sm" id="status" required>
+                <option>Not required</option>
+                <option>All</option>
+                <option selected>In progress</option>
+                <option>Completed</option>
+              </select>
+            </div>
+          </div>
 
-                        <!-- First Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="firstName">KRA</label>
-                            <span class="text-danger"></span>
-                            <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option>Team Target</option>
-                                <option>Individual Target</option>
-                                <option>Competency Individual</option>
-                                <option>Competency Supervisor FeedBack</option>
-                                  <option>Payments & Settelments</option>
-                                    <option>Report Management</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
+          <!-- From Date -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="fromDate">From Date</label>
+              <input type="text" class="form-control" id="fromDate" placeholder="Mar-2025" required/>
+            </div>
+          </div>
 
-                      <div class="row">
-                        <!-- Middle Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="middleName">KRA Score Greater than (%)</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="lastName"
-                              placeholder=""
-                              required
-                            />
-                          </div>
-                        </div>
-                         <div class="col-md-6">
-                            <div class="form-group mb-2">
-                            <label for="title">Year <span class="text-danger"></span></label>
-                            <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option selected>FY - 2023-2024</option>
-                                <option>FY - 2022-2023</option>
-                                <option>FY - 2021-2022</option>
-                                <option>FY - 2020-2021</option>
-                            </select>
-                            </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  
-               <div class="text-end">
-              <button
-                        type="submit"
-                        class="btn btn-gradient-primary mb-4 " style="margin-right: 40px;"
-                      >
-                        Search
-                      </button>
-                      </div>
-           
-                </div>
-              </div>
-             <div class="row g-2 ">
-                        <div class="col-md-3">
-                            <div class="form-group mb-2">
-                            <label for="title">Year <span class="text-danger">*</span></label>
-                            <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option selected>FY - 2023-2024</option>
-                                <option>FY - 2022-2023</option>
-                                <option>FY - 2021-2022</option>
-                                <option>FY - 2020-2021</option>
-                            </select>
-                            </div>
-                        </div>
-                        <div class="col-md-1"></div>
-                          <div class="col-md-3 ml-4">
-                            <div class="form-group ml-4">
-                            <label for="title">Band<span class="text-danger">*</span></label>
-                            <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option selected>All</option>
-                                <option>A</option>
-                                <option>B</option>
-                                <option>C</option>
-                                <option>D</option>
-                            </select>
-                            </div>
-                        </div>
-                        </div>
-        
-            <div class="row ">
-              <div class="col-lg-12 grid-margin stretch-card">
+          <!-- To Date -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="toDate">To Date</label>
+              <input type="text" class="form-control" id="toDate" placeholder="July-2025" required/>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Year -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="year">Year</label>
+              <select class="form-select form-select-sm" id="year" required>
+                <option>Not required</option>
+                <option>All</option>
+                <option selected>FY - 2023-2024</option>
+                <option>FY - 2022-2023</option>
+                <option>FY - 2021-2022</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+      </form>
+       <div class="text-end">
+             <button class="btn btn-gradient-primary btn-sm ms-3">Go</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="commanTable" class="table-responsive">
+  <table class="table table-bordered align-middle border text-center">
+    <tr>
+      <td class="text-start">Count</td>
+      <td class="text-start">9</td>
+      <td class="text-start">Employees in PIP</td>
+      <td class="text-start">129</td>
+      <td></td>
+      <td></td>
+      <td class="text-center" style="width:5%;">
+        <button class="btn btn-outline-secondary btn-sm">CSV</button>
+      </td>
+      <td class="text-center" style="width:5%;">
+        <button class="btn btn-outline-secondary btn-sm">Print</button>
+      </td>
+    </tr>
+  </table>
+</div>
+
+              <div class="mt-4">
+                <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
                     <table class="table">
                       <thead>
-                        <tr>
-                          <th>Employee ID</th>
-                          <th>Employee Name</th>
-                          <th>Designation</th>
-                          <th>Department</th>
-                          <th>Location</th>
-                          <th>Default Band</th>
-                          <th>Score</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                            <td><label>ID1009</label></td>
-                            <td><label>Susan Kelly</label></td>
-                            <td><label>Developer</label></td>
-                            <td><label>IT</label></td>
-                            <td><label>Pune</label></td>
-                            <td><label>A</label></td>
-                             <td><label>90%</label></td>
-                        </tr>
-                        <tr>
-                            <td><label>ID1016</label></td>
-                            <td><label>Sharon White</label></td>
-                            <td><label>Developer</label></td>
-                            <td><label>IT</label></td>
-                            <td><label>Pune</label></td>
-                            <td><label>C</label></td>
-                             <td><label>50%</label></td>
-                        </tr>
-                        <tr>
-                            <td><label>ID1017</label></td>
-                            <td><label>Rith Nelson</label></td>
-                            <td><label>Developer</label></td>
-                            <td><label>IT</label></td>
-                            <td><label>Pune</label></td>
-                            <td><label>B</label></td>
-                             <td><label>80%</label></td>
-                        </tr>
+                       <tr class="head">
+					<th style="padding-right:0px;">
+						Employee ID<span class="downArrowHead">&#x25bc;</span>
+					</th>
+					<th>
+				        Employee Name
+					</th>
+					<th>
+						<label>Designation</label>
+					</th>
+					<th>
+						Department
+					</th>
+					<th>
+						Location
+					</th>
+					<th>
+						PIP assign by
+					</th>
+					<th>
+						Status
+					</th>
+					<th>
+						Start date
+					</th>
+					<th>
+						End date
+					</th>
+					<th>
+						Action
+					</th>
+				</tr>
+				<tr class="even">
+					<td>
+						<label>ID1154</label>
+					</td>
+					<td>
+						<label>Kevin Young</label>
+					</td>
+					
+					<td>
+						<label>Admin / Account Assistant</label>
+					</td>	
+					<td>
+						<label>HR</label>
+					</td>
+					<td>
+						<label>Pune</label>
+					</td>
+					<td>
+						 	Laura Collins
+					</td>
+					<td>
+						<label>In progress</label>
+					</td>	
+					<td>
+						<label>02-Mar-16</label>
+					</td>
+					<td>
+						<label>02-May-2016</label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>				<tr class="odd">
+					<td>
+						ID1174
+					</td>
+					<td>
+						Jeff Hall
+					</td>
+					
+					<td>
+						Project Manager
+					</td>	
+					<td>
+						Sales
+					</td>
+					<td>
+						Pune
+					</td>
+					<td>Gowri Dubey
+					</td>
+					<td>
+						<label>In progress</label>
+					</td>	
+					<td>
+						<label>02-Mar-16</label>
+					</td>
+					<td>
+						<label>02-May-2016</label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						ID1199
+					</td>
+					<td>
+						Aarushi Dixit
+					</td>
+					
+					<td>
+						Admin / Account Assistant
+					</td>	
+					<td>
+						HR
+					</td>
+					<td>
+						Pune
+					</td>
+					<td>
+						 	Laura Collins
+					</td>
+					<td>
+						<label>In progress</label>
+					</td>	
+					<td>
+						<label>02-Mar-16</label>
+					</td>
+					<td>
+						<label>02-May-2016</label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>				<tr class="odd">
+					<td>
+						ID1271
+					</td>
+					<td>
+						Brian Anderson
+					</td>
+					
+					<td>
+						Accounts Officer
+					</td>	
+					<td>
+						IT
+					</td>
+					<td>
+						Pune
+					</td>
+					<td>
+						 	Laura Collins
+					</td>
+					<td>
+						<label>In progress</label>
+					</td>	
+					<td>
+						<label>02-Mar-16</label>
+					</td>
+					<td>
+						<label>02-June-2016</label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>		
+				<tr class="even">
+					<td>
+						ID1322
+					</td>
+					<td>
+						Sharon White
+					</td>
+					
+					<td>
+						Admin / Account Assistant
+					</td>	
+					<td>
+						HR
+					</td>
+					<td>
+						Pune
+					</td>
+					<td>
+						Gowri Dubey
+					</td>
+					<td>
+						<label>In progress</label>
+					</td>	
+					<td>
+						<label>02-Mar-16</label>
+					</td>
+					<td>
+						<label>02-Apr-2016</label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>				
+				<tr class="odd">
+					<td>
+						ID1345
+					</td>
+					<td>
+						Priya Awasthi
+					</td>
+					
+					<td>
+						Project Manager
+					</td>	
+					<td>
+						Sales
+					</td>
+					<td>
+						Pune
+					</td>
+					<td>
+						Mary Scott
+					</td>
+					<td>
+						<label>In progress</label>
+					</td>	
+					<td>
+						<label>02-Mar-16</label>
+					</td>
+					<td>
+						<label>02-May-2016</label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"><i class="fa-solid fa-pen-to-square"></i> </a>
+					</td>
+				</tr>
+
+				<tr class="even">
+					<td>
+						ID1360
+					</td>
+					<td>
+						George Martin
+					</td>
+					
+					<td>
+						Project Manager
+					</td>	
+					<td>
+						Sales
+					</td>
+					<td>
+						Pune
+					</td>
+					<td>
+						Mary Scott
+					</td>
+					<td>
+						<label>In progress</label>
+					</td>	
+					<td>
+						<label>02-Mar-16</label>
+					</td>
+					<td>
+						<label>02-May-2016</label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"><i class="fa-solid fa-pen-to-square"></i> </a>
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						ID1362
+					</td>
+					<td>
+						Ruth Nelson
+					</td>
+					
+					<td>Admin / Account Assistant</td>	
+					<td>HR</td>
+					<td>Pune</td>
+					<td>
+						Gowri Dubey
+					</td>
+					<td>
+						<label>In progress</label>
+					</td>	
+					<td>
+						<label>02-Mar-16</label>
+					</td>
+					<td>
+						<label>02-May-2016</label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>
+				<tr class="even">
+					<td>ID1390</td>
+					<td>Mayur Apte</td>
+					<td>HR</td>	
+					<td>Sales</td>
+					<td>Pune</td>
+					<td>
+						Mary Scott
+					</td>
+					<td>
+						<label>In progress</label>
+					</td>	
+					<td>
+						<label>02-Mar-16</label>
+					</td>
+					<td>
+						<label>02-May-2016</label>
+					</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
               </div>
+              </div>
+         <div class="mt-4 d-flex justify-content-end">
+           <nav>
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+
+    <li class="page-item active">
+      <a class="page-link" href="#">26</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">27</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">28</a>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+         </div>
           </div>
-           <div class="text-end">
-              <button
-                        type="submit"
-                        class="btn btn-gradient-primary me-2 "
-                      >
-                        Assign Band
-                      </button>
-                      <button class="btn btn-light">Cancel</button>
-                      </div>
           </div>
-          </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
-          <!-- partial -->
-        </div>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
@@ -1429,37 +1753,37 @@
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
     <!-- End custom js for this page -->
+
+ 
 <script type="text/javascript"> 
-	$(function(){
-		$("#assignPerfmData").hide();
-		
-		
-		$("form").find("#Qualificationdetail_start").datepicker({
-				changeMonth:true,
+
+$(function(){
+             // $(".menudropdown").prop('selectedIndex','3');
+			  
+			  $("#from_Date").datepicker({
+	            changeMonth:true,
 				changeYear:true,
 				dateFormat : 'dd-M-yy',
 				yearRange: '-70 :c'
-			});
-			$("form").find("#Qualificationdetail_finish").datepicker({
-				changeMonth:true,
-				changeYear:true,
-				dateFormat : 'dd-M-yy',
-				yearRange: '-70 :c'
-			});
+			});	
 			
-			$(".disabledFormbutton").click(function()
-			{
-				$("#assignPerfmData").hide();
-			});
+	$("#to_Date").datepicker({
+				changeMonth:true,
+				changeYear:true,
+				dateFormat : 'dd-M-yy',
+				yearRange: '-70 :c'
+			});	
+		/*	
+		$('#reportTable').paging({
+		   limit:10,
+		   activePage: 0
+		   });
+         */
 	});
-	function showForm()
-	{
-		$("#assignPerfmData").show();
-	}
 	
 </script>
-   
 	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/multiDropdown.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/multiDropdown.js" type="text/javascript" charset="utf-8"></script>
+
   </body>
 </html>

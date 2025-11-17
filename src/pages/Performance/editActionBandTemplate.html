@@ -1201,42 +1201,37 @@
         <div class="main-panel">
           <div class="content-wrapper">
              <div class="page-header d-flex align-items-center justify-content-between mb-2">
-
-    <!-- Left side -->
     <h3 class="page-title formViewTable mb-0">Band Template</h3>
-
-    <!-- Right side -->
     <div class="linkBlock">
         <a href="editAddMoreTemplateButton.html"
            class="btn btn-gradient-primary me-2">
            Edit
         </a>
     </div>
-
 </div>
-
-             <div class="col-12 grid-margin stretch-card ">
-                <div class="card">
+ <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card " >
                   <div class="card-body">
                     <form class="forms-sample">
                       <div class="row">
-                          <div class="col-md-6">
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
                           <div class="form-group">
-                            <label for="reportingId">Name</label>
-                             <span class="text-danger">*</span>
-                            <input
+                            <label for="employeeId">Name</label>
+                            <span class="text-danger">*</span>
+                           <input
                               type="text"
                               class="form-control"
                               id="reportingId"
-                              placeholder="26-Jan-2024"
+                              placeholder=""
                               disabled
-                            />
+                            />  
                           </div>
                         </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="employeeId">Year</label>
-                            <span class="text-danger"></span>
+                         <div class="col-md-6">
+                            <div class="form-group mb-2">
+                            <label for="title">Year <span class="text-danger"></span></label>
                             <select class="form-select form-select-sm" id="title" required disabled>
                                 <option value="">Select</option>
                                 <option selected>FY - 2023-2024</option>
@@ -1244,71 +1239,44 @@
                                 <option>FY - 2021-2022</option>
                                 <option>FY - 2020-2021</option>
                             </select>
+                            </div>
+                        </div>
+                      </div>
+                         <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="lastName">Remarks </label>
+                            <span class="text-danger"></span>
+                             <textarea
+                              class="form-control"
+                              id="exampleTextarea1"
+                              rows="2"
+                              placeholder=""
+                              disabled
+                            ></textarea>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="employeeId">Year</label>
-                          <span class="text-danger"></span>
-                          <select
-                            class="form-select form-select-sm"
-                            id="title"
-                            required
-                            disabled
-                          >
-                            <option value="">Select</option>
-                            <option selected>FY - 2023-2024</option>
-                            <option>FY - 2022-2023</option>
-                            <option>FY - 2021-2022</option>
-                            <option>FY - 2020-2021</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <!-- Title -->
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label for="title">Remarks</label>
-                          <span class="text-danger"></span>
-                          <textarea
-                            class="form-control"
-                            id="exampleTextarea1"
-                            rows="2"
-                            placeholder=""
-                            disabled
-                          ></textarea>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
+                    </form>
+                  </div>
                 </div>
               </div>
+               <div class="page-header d-flex">
+              <nav aria-label="breadcrumb" class="ms-auto">
+                <div class="linkBlock">
+                <a href="javascript:void(0);" id="addBandBtn"  class="btn btn-gradient-primary me-2">Add More Band</a>
+                </div>
+              </nav>
             </div>
-            <div>
-              <div class="page-headern d-flex mb-2">
-                <nav aria-label="breadcrumb " class="ms-auto">
-                  <div class="linkBlock">
-                    <a
-                      href="javascript:void(0);"
-                      class="addBand btn btn-gradient-primary me-2"
-                      >Add More Band</a
-                    >
-                  </div>
-                </nav>
-              </div>
-            </div>
-            <div class="col-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <div class="">
+            <div id="bandContainer">
+               <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card " >
+                  <div class="card-body">
                     <form class="forms-sample">
+                      <div class="row">
+                      </div>
                       <div class="row">
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="reportingId">Band</label>
+                            <label for="employeeId">Band</label>
                             <span class="text-danger">*</span>
                             <select
                               class="form-select form-select-sm"
@@ -1324,11 +1292,10 @@
                             </select>
                           </div>
                         </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="employeeId">Score Range</label>
-                            <span class="text-danger">*</span>
-                            <select
+                         <div class="col-md-6">
+                            <div class="form-group mb-2">
+                            <label for="title">Score Range <span class="text-danger">*</span></label>
+                             <select
                               class="form-select form-select-sm"
                               id="title"
                               required
@@ -1340,15 +1307,12 @@
                               <option>50% - 80%</option>
                               <option>Greater then 80%</option>
                             </select>
-                          </div>
-                        </div>
-                      </div>
 
-                      <div class="row">
-                        <!-- Title -->
-                        <div class="col-md-6">
+                            </div>
+                        </div>
+                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="title">Action</label>
+                            <label for="lastName">Action </label>
                             <span class="text-danger"></span>
                             <select
                               class="form-select form-select-sm"
@@ -1365,7 +1329,7 @@
                             </select>
                           </div>
                         </div>
-                        <div class="col-md-6">
+                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="reportingId"
                               >Increment of current salary</label
@@ -1385,20 +1349,11 @@
                   </div>
                 </div>
               </div>
-<<<<<<< HEAD
             </div>
-            <div class="text-center">
-              <a href="bandTemplate.html" class="btn btn-gradient-primary me-2"
-                >Save</a
-              >
-              <a href="bandTemplate.html" class="btn btn-light">Cancel</a>
-=======
-              <div class="text-end">
+                 <div class="text-end">
               <a href="bandTemplate.html" class="btn btn-gradient-primary me-2">Save</a>
-             <a href="bandTemplate.html" class="btn btn-light">Cancel</a>
->>>>>>> ab1ebe123bbf8842ea7ab421684f0c18049f81a3
+             <a href="bandTemplate.html" class="btn btn-gradient-light">Cancel</a>
             </div>
-          </div>
         </div>
         <!-- main-panel ends -->
       </div>
@@ -1512,5 +1467,27 @@
       type="text/javascript"
       charset="utf-8"
     ></script>
+    <script>
+      document
+        .getElementById("addBandBtn")
+        .addEventListener("click", function () {
+          const container = document.getElementById("bandContainer");
+
+          // Get the first card as a template
+          const firstCard = container.querySelector(".col-lg-12");
+          const newCard = firstCard.cloneNode(true); // deep clone
+
+          // Optionally clear any user input in the cloned card
+          newCard
+            .querySelectorAll("input")
+            .forEach((input) => (input.value = ""));
+          newCard
+            .querySelectorAll("select")
+            .forEach((select) => (select.selectedIndex = 0));
+
+          // Append cloned card
+          container.appendChild(newCard);
+        });
+    </script>
   </body>
 </html>
