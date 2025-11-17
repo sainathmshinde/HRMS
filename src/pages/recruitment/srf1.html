@@ -83,7 +83,7 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search employee"
+                  placeholder="Search projects"
                 />
               </div>
             </form>
@@ -1037,24 +1037,161 @@
               </div>
             </li>
 
-            <!-- COmponents code removed -->
+            <!-- COmponents code -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="menu-title">Dashboard</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#icons"
+                aria-expanded="false"
+                aria-controls="icons"
+              >
+                <span class="menu-title">Icons</span>
+                <i class="mdi mdi-contacts menu-icon"></i>
+              </a>
+              <div class="collapse" id="icons">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/icons/font-awesome.html"
+                      >Font Awesome</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#forms"
+                aria-expanded="false"
+                aria-controls="forms"
+              >
+                <span class="menu-title">Forms</span>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              </a>
+              <div class="collapse" id="forms">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/forms/basic_elements.html"
+                      >Form Elements</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#charts"
+                aria-expanded="false"
+                aria-controls="charts"
+              >
+                <span class="menu-title">Charts</span>
+                <i class="mdi mdi-chart-bar menu-icon"></i>
+              </a>
+              <div class="collapse" id="charts">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/charts/chartjs.html"
+                      >ChartJs</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#tables"
+                aria-expanded="false"
+                aria-controls="tables"
+              >
+                <span class="menu-title">Tables</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+              <div class="collapse" id="tables">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/tables/basic-table.html"
+                      >Basic table</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#auth"
+                aria-expanded="false"
+                aria-controls="auth"
+              >
+                <span class="menu-title">User Pages</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-lock menu-icon"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/blank-page.html">
+                      Blank Page
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/login.html">
+                      Login
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/register.html">
+                      Register
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-404.html">
+                      404
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-500.html">
+                      500
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="docs/documentation.html"
+                target="_blank"
+              >
+                <span class="menu-title">Documentation</span>
+                <i class="mdi mdi-file-document-box menu-icon"></i>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Manage Training</h3>
+              <h3 class="page-title">SRF</h3>
             </div>
             <div class="page-header">
-              <h5>Search training </h5>
-              <nav aria-label="breadcrumb">
-                <a
-                  class="btn btn-gradient-primary me-2"
-                  href="manageTraining1.html"
-                  >Add New</a
-                >
-              </nav>
+              <h5>Search training request</h5>
+             
             </div>
 
             <div>
@@ -1063,38 +1200,25 @@
                   <div class="card-body">
                     <form class="forms-sample">
                       <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                           <div class="form-group">
-                            <label for="percentage">Training Title</label>
+                            <label for="percentage">SRF ID</label>
                             <input
                               type="text"
                               class="form-control"
                               id="percentage"
-                              placeholder="Enter Title"
+                              placeholder="Enter SRF ID"
                             />
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
+                          <div class="col-md-6">
                           <div class="form-group">
-                            <label for="percentage">From Date</label>
+                            <label for="percentage">Total Position</label>
                             <input
-                              type="date"
+                              type="text"
                               class="form-control"
                               id="percentage"
-                              placeholder="Enter Title"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="percentage">To Date</label>
-                            <input
-                              type="date"
-                              class="form-control"
-                              id="percentage"
-                              placeholder="Enter Title"
+                              placeholder="Enter total position"
                             />
                           </div>
                         </div>
@@ -1104,226 +1228,319 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="componentName"
-                              >Training  type
+                              >Designation
                             </label>
+                                                        <span class="text-danger">*</span>
+
                             <select
                               class="form-select"
                               id="componentName"
                               required
                             >
                               <option value="Select">Select</option>
-                              <option value="1">
-                                Technical or technology training
-                              </option>
-                              <option value="2">Quality training</option>
-                              <option value="3">Skill training</option>
-                              <option value="4">Soft skill training</option>
+								<option value="1" selected>Developer</option>
+								<option value="">District Project Manager</option>
+								<option value="">Senior Accounts Officer</option>
+								<option value="">Desk Officer</option>
+								<option value="">Office superintendent</option>
                             </select>
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="componentType"
-                              >Training request location</label
+                              >Department</label
                             >
+                                                        <span class="text-danger">*</span>
+
                             <select
                               class="form-select"
                               id="componentType"
                               required
                             >
-                              <option value="Select">Select</option>
-                              <option value="Pune">Pune</option>
-                              <option value="Mumbai">Mumbai</option>
-                              <option value="Banglore">Banglore</option>
+                              <option selected>All</option>
+									<option>Accounts</option>
+									<option>Sales</option>
+									<option>IT</option>
+									<option>HR</option>
                             </select>
                           </div>
                         </div>
                       </div>
                       <div class="row">
-                        <!-- Component Name -->
+                      <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">SRF Name</label>
+                            <span class="text-danger">*</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter SRF Name "
+                            />
+                          </div>
+                        </div>
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="componentName"
-                              >Training status
-                            </label>
+                            <label for="percentage">Joining Date</label>
+                                                        <span class="text-danger">*</span>
+
+                            <input
+                              type="date"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Title"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                       <div class="row">
+                        <!-- Component Name -->
+                      <div class="col-md-6"> 
+  <div class="form-group">
+    <label>Age <span class="text-danger">*</span></label>
+
+    <div class="d-flex gap-2">
+        <label class="small mb-1">Min</label>
+      <select class="form-select" required>
+         <option value="2" selected>18</option>   
+								   <option value="3">19</option>    
+								   <option value="4">20</option>    
+								   <option value="5">21</option>    
+								   <option value="6">22</option>    
+								   <option value="7">23</option>    
+								   <option value="8">24</option>    
+								   <option value="9">25</option>    
+								   <option value="10">26</option>    
+								   <option value="11">27</option>    
+								   <option value="12">28</option>    
+								   <option value="13">29</option>    
+								   <option value="14">30</option>    
+								   <option value="15">31</option>    
+								   <option value="16">32</option>    
+								   <option value="9999">33</option>  
+      </select>
+
+        <label class="small mb-1">Max</label>
+      <select class="form-select" required>
+        <option value="2" selected>18</option>    
+								   <option value="3">19</option>    
+								   <option value="4">20</option>    
+								   <option value="5">21</option>    
+								   <option value="6">22</option>    
+								   <option value="7">23</option>    
+								   <option value="8">24</option>    
+								   <option value="9">25</option>    
+								   <option value="10">26</option>    
+								   <option value="11">27</option>    
+								   <option value="12" >28</option>    
+								   <option value="13">29</option>    
+								   <option value="14">30</option>    
+								   <option value="15">31</option>    
+								   <option value="16">32</option>    
+								   <option value="9999">33</option>  
+      </select>
+    </div>
+
+  </div>
+                            </div>
+
+                        <div class="col-md-6"> 
+  <div class="form-group">
+    <label>Experience <span class="text-danger">*</span></label>
+
+    <div class="d-flex gap-2">
+        <label class="small mb-1">Min</label>
+      <select class="form-select" required>
+        <option selected>0</option>
+				       <option>1</option>
+					   <option>2</option>
+					   <option>3</option>
+					   <option>4</option>
+					    <option>5</option>
+					   <option>6</option>
+					   <option>7</option>
+					   <option>8</option>
+					    <option>9</option>
+					   <option>10</option>
+      </select>
+
+        <label class="small mb-1">Max</label>
+      <select class="form-select" required>
+       <option>0</option>
+				       <option selected>1</option>
+					   <option>2</option>
+					   <option>3</option>
+					   <option>4</option>
+					    <option>5</option>
+					   <option>6</option>
+					   <option>7</option>
+					   <option>8</option>
+					    <option>9</option>
+					   <option>10</option>
+      </select>
+    </div>
+
+  </div>
+                            </div>
+                      </div>
+                       <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">CTC range (INR) Annually</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter CTC range"
+                            />
+                          </div>
+                        </div>
+                          <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="componentType"
+                              >Location</label
+                            >
+                                                        <span class="text-danger">*</span>
+
                             <select
                               class="form-select"
-                              id="componentName"
+                              id="componentType"
                               required
                             >
-                              <option value="Select">Select</option>
-                              <option value="1">
-                                Training Status
-                              </option>
-                              <option value="2">All</option>
-                              <option value="3"> Complete</option>
-                              <option value="4">In progress</option>
-                                                            <option value="5">Created</option>
-
+                              <option selected>Pune</option>
+									<option>All</option>
+									<option>Mumbai</option>
+									<option>Nagpur</option>
+									<option>Aurangabad</option>
                             </select>
                           </div>
                         </div>
-                         <div class="text-end">
-                <a type="button" class="btn btn-gradient-primary me-4">
-                  Save
-                </a>
-                <a type="reset" class="btn btn-gradient-light"> Cancel </a>
-              </div>
-                        
                       </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Mandatory Skills</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Mandatory Skills"
+                            />
+                          </div>
+                        </div>
+                          <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage"> Skills</label>
+                                                        <span class="text-danger">*</span>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Skills"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="percentage">Roles/ Responsibilities</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Mandatory Skills"
+                            />
+                          </div>
+                        </div>
+                         
+                      </div>
+                      
 
                       <!-- Buttons -->
                     </form>
                   </div>
-                 
+                
+
                 </div>
               </div>
               
-
               <div class="page-header">
-                <h5>List of trainings</h5>
-              </div>
+  <h5></h5>
+  <nav aria-label="breadcrumb">
+    <a class="btn btn-gradient-primary me-2" id="addBandBtn">Add Education</a>
+  </nav>
+</div>
 
-              <div class="row">
-                <div class="col-lg-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th>
-                              <label>Title</label>
-                            </th>
-                            <th>
-                              <label>From date</label>
-                            </th>
-                            <th>
-                              <label>To date</label>
-                            </th>
-                            <th>
-                              <label>Type</label>
-                            </th>
-                            <th>
-                              <label>Location</label>
-                            </th>
+<div class="col-12 grid-margin stretch-card">
+  <div class="card">
+    <div class="card-body">
+      <form class="forms-sample">
 
-                            <th>
-                              <label>Description</label>
-                            </th>
-                            <th>
-                              <label>Authorized</label>
-                            </th>
-                             <th>
-                              <label>Status</label>
-                            </th>
-                            <th>
-                              <label>Action</label>
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <label>Meeting etiquettes</label>
-                            </td>
-                            <td>
-                              <label>31-May-2025</label>
-                            </td>
-                            <td>
-                              <label>31-May-2025</label>
-                            </td>
-                            <td>
-                              <label>Soft skill</label>
-                            </td>
-                            <td>
-                              <label>Pune</label>
-                            </td>
+        <!-- Education Container -->
+        <div id="educationContainer">
 
-                            <td>
-                              <label>Behavioural training</label>
-                            </td>
-                            <td>
-                              <label>No</label>
-                            </td>
-                             <td>
-                              <label>Created</label>
-                            </td>
-                            <td>
-                              <a href="manageTraining1.html"
-                                ><i class="fa-solid fa-pen-to-square"></i
-                              ></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label>Meeting etiquettes</label>
-                            </td>
-                            <td>
-                              <label>07-Jan-2025</label>
-                            </td>
-                            <td>
-                              <label>09-Jan-2025</label>
-                            </td>
-                            <td>
-                              <label>Soft skill</label>
-                            </td>
-                            <td>
-                              <label>Pune</label>
-                            </td>
+          <!-- FIRST Education Row -->
+          <div class="row educationRow">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Education</label>
+                <span class="text-danger">*</span>
 
-                            <td>
-                              <label>Behavioural training</label>
-                            </td>
-                            <td>
-                              <label>Yes</label>
-                            </td>
-                             <td>
-                              <label>In Progress</label>
-                            </td>
-                            <td>
-                              <a href="manageTraining1.html"
-                                ><i class="fa-solid fa-pen-to-square"></i
-                              ></a>
-                            </td>
-                          </tr>
-                          <tr class="">
-                            <td>
-                              <label>Meeting etiquettes</label>
-                            </td>
-                            <td>
-                              <label>07-Jan-2025</label>
-                            </td>
-                            <td>
-                              <label>09-Jan-2025</label>
-                            </td>
-                            <td>
-                              <label>Soft skill</label>
-                            </td>
-                            <td>
-                              <label>Pune</label>
-                            </td>
-                            <td>
-                              <label>Behavioural training</label>
-                            </td>
-                            <td>
-                              <label>No</label>
-                            </td>
-                             <td>
-                              <label>Cancel</label>
-                            </td>
-                            <td>
-                              <a href="manageTraining1.html"
-                                ><i class="fa-solid fa-pen-to-square"></i
-                              ></a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
+                <select class="form-select" required>
+                  <option value="Select">Select</option>
+                  <option value="2">B.A</option>
+                  <option value="3">B.Arch</option>
+                  <option value="4">BCA</option>
+                  <option value="5">B.B.A</option>
+                  <option value="6">B.Com</option>
+                  <option value="7">B.Ed</option>
+                  <option value="8">BDS</option>
+                  <option value="9">BHM</option>
+                  <option value="10">B.Pharma</option>
+                  <option value="11">B.Sc</option>
+                  <option value="12">B.Tech/B.E.</option>
+                  <option value="13">LLB</option>
+                  <option value="14">MBBS</option>
+                  <option value="15">Diploma</option>
+                  <option value="16">BVSC</option>
+                  <option value="9999">Other</option>
+                </select>
               </div>
             </div>
+          </div>
+
+        </div> 
+
+
+      </form>
+    </div>
+   
+  </div>
+</div>
+
+             
+
+              
+            </div>
+              <div class="text-end mb-2">
+                  <a
+                    type="button"
+                    class="btn btn-gradient-primary me-4"
+                    href="srf.html"
+                  >
+                    Save
+                  </a>
+                  <a
+                    type="reset"
+                    class="btn btn-gradient-light"
+                    href="srf.html"
+                  >
+                    Cancel
+                  </a>
+                </div>
           </div>
         <!-- main-panel ends -->
       </div>
@@ -1394,5 +1611,22 @@
       type="text/javascript"
       charset="utf-8"
     ></script>
+   <script>
+  document.getElementById('addBandBtn').addEventListener('click', function () {
+
+    const container = document.getElementById('educationContainer');
+    const firstRow = container.querySelector('.educationRow');
+
+    // Clone only the education row
+    const newRow = firstRow.cloneNode(true);
+
+    // Reset dropdown
+    newRow.querySelector('select').selectedIndex = 0;
+
+    // Append cloned row
+    container.appendChild(newRow);
+  });
+</script>
+
   </body>
 </html>

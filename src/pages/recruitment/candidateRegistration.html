@@ -83,7 +83,7 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search employee"
+                  placeholder="Search projects"
                 />
               </div>
             </form>
@@ -1037,24 +1037,161 @@
               </div>
             </li>
 
-            <!-- COmponents code removed -->
+            <!-- COmponents code -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="menu-title">Dashboard</span>
+                <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#icons"
+                aria-expanded="false"
+                aria-controls="icons"
+              >
+                <span class="menu-title">Icons</span>
+                <i class="mdi mdi-contacts menu-icon"></i>
+              </a>
+              <div class="collapse" id="icons">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/icons/font-awesome.html"
+                      >Font Awesome</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#forms"
+                aria-expanded="false"
+                aria-controls="forms"
+              >
+                <span class="menu-title">Forms</span>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              </a>
+              <div class="collapse" id="forms">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/forms/basic_elements.html"
+                      >Form Elements</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#charts"
+                aria-expanded="false"
+                aria-controls="charts"
+              >
+                <span class="menu-title">Charts</span>
+                <i class="mdi mdi-chart-bar menu-icon"></i>
+              </a>
+              <div class="collapse" id="charts">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/charts/chartjs.html"
+                      >ChartJs</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#tables"
+                aria-expanded="false"
+                aria-controls="tables"
+              >
+                <span class="menu-title">Tables</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+              <div class="collapse" id="tables">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/tables/basic-table.html"
+                      >Basic table</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#auth"
+                aria-expanded="false"
+                aria-controls="auth"
+              >
+                <span class="menu-title">User Pages</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-lock menu-icon"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/blank-page.html">
+                      Blank Page
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/login.html">
+                      Login
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/register.html">
+                      Register
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-404.html">
+                      404
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-500.html">
+                      500
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="docs/documentation.html"
+                target="_blank"
+              >
+                <span class="menu-title">Documentation</span>
+                <i class="mdi mdi-file-document-box menu-icon"></i>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Manage Training</h3>
+              <h3 class="page-title">Candidate RegistrationF</h3>
             </div>
             <div class="page-header">
-              <h5>Search training </h5>
-              <nav aria-label="breadcrumb">
-                <a
-                  class="btn btn-gradient-primary me-2"
-                  href="manageTraining1.html"
-                  >Add New</a
-                >
-              </nav>
+              <h5>Search training request</h5>
+             
             </div>
 
             <div>
@@ -1063,22 +1200,68 @@
                   <div class="card-body">
                     <form class="forms-sample">
                       <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                           <div class="form-group">
-                            <label for="percentage">Training Title</label>
+                            <label for="percentage">ID</label>
+                            <span class="text-danger">*</span>
+
                             <input
                               type="text"
                               class="form-control"
                               id="percentage"
-                              placeholder="Enter Title"
+                              value="C1001"
+                            />
+                          </div>
+                        </div>
+                          <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">First Name</label>
+                                                        <span class="text-danger">*</span>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter First Name"
                             />
                           </div>
                         </div>
                       </div>
-                      <div class="row">
+                     
+                       <div class="row">
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="percentage">From Date</label>
+                            <label for="percentage">Middle Name</label>
+                            <span class="text-danger">*</span>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Middle Name"
+                            />
+                          </div>
+                        </div>
+                          <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Last Name</label>
+                                                        <span class="text-danger">*</span>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Last Name"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                       <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage"> Date of Birth</label>
+                                                        <span class="text-danger">*</span>
+
                             <input
                               type="date"
                               class="form-control"
@@ -1087,243 +1270,295 @@
                             />
                           </div>
                         </div>
-                        <div class="col-md-6">
+                          <div class="col-md-6">
                           <div class="form-group">
-                            <label for="percentage">To Date</label>
+                            <label for="percentage">Contact Number</label>
+                                                        <span class="text-danger">*</span>
+
                             <input
-                              type="date"
+                              type="text"
                               class="form-control"
                               id="percentage"
-                              placeholder="Enter Title"
+                              placeholder="Enter Contact Number"
                             />
                           </div>
                         </div>
                       </div>
                       <div class="row">
                         <!-- Component Name -->
-                        <div class="col-md-6">
+                       <div class="col-md-6">
                           <div class="form-group">
-                            <label for="componentName"
-                              >Training  type
-                            </label>
-                            <select
-                              class="form-select"
-                              id="componentName"
-                              required
-                            >
-                              <option value="Select">Select</option>
-                              <option value="1">
-                                Technical or technology training
-                              </option>
-                              <option value="2">Quality training</option>
-                              <option value="3">Skill training</option>
-                              <option value="4">Soft skill training</option>
-                            </select>
+                            <label for="percentage">Skills</label>
+                                                        <span class="text-danger">*</span>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter Skills "
+                            />
                           </div>
                         </div>
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="componentType"
-                              >Training request location</label
+                              >Education</label
                             >
+                                                        <span class="text-danger">*</span>
+
                             <select
                               class="form-select"
                               id="componentType"
                               required
                             >
                               <option value="Select">Select</option>
-                              <option value="Pune">Pune</option>
-                              <option value="Mumbai">Mumbai</option>
-                              <option value="Banglore">Banglore</option>
+						 <!--<option value="1">Not Pursuing Graduation</option>-->
+						 <option value="2">B.A</option>
+						 <option value="3">B.Arch</option>   
+						 <option value="4">BCA</option>    
+						 <option value="5">B.B.A</option>   
+						 <option value="6">B.Com</option>    
+						 <option value="7">B.Ed</option>    
+						 <option value="8">BDS</option>    
+						 <option value="9">BHM</option>   
+						 <option value="10">B.Pharma</option> 
+						 <option value="11">B.Sc</option>    
+						 <option value="12" >B.Tech/B.E.</option>   
+						 <option value="13">LLB</option>   
+						 <option value="14">MBBS</option>    
+						 <option value="15">Diploma</option>  
+						 <option value="16">BVSC</option>   
+						 <option value="9999">Other</option>
                             </select>
                           </div>
                         </div>
                       </div>
                       <div class="row">
-                        <!-- Component Name -->
-                        <div class="col-md-6">
+                     <div class="col-md-6">
                           <div class="form-group">
-                            <label for="componentName"
-                              >Training status
-                            </label>
+                            <label for="componentType"
+                              >Source</label
+                            >
+
                             <select
                               class="form-select"
-                              id="componentName"
+                              id="componentType"
                               required
                             >
                               <option value="Select">Select</option>
-                              <option value="1">
-                                Training Status
-                              </option>
-                              <option value="2">All</option>
-                              <option value="3"> Complete</option>
-                              <option value="4">In progress</option>
-                                                            <option value="5">Created</option>
-
+						 <option value="2">Agency</option>
+						 <option value="3">Walkin </option>   
+						 <option value="4">Reference</option>    
+						 <option value="5">campus interview</option>        
+						 <option value="9999">Other</option>  
                             </select>
                           </div>
                         </div>
-                         <div class="text-end">
-                <a type="button" class="btn btn-gradient-primary me-4">
-                  Save
-                </a>
-                <a type="reset" class="btn btn-gradient-light"> Cancel </a>
-              </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Reference by</label>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter reference by"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                    <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Total Experience</label>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter total experience"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Relevant Experience</label>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter relevant experience"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                       <div class="row">
+                    <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Current Organization</label>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter current organization"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Current Location</label>
+                                                        <span class="text-danger">*</span>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter location"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                    <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Current CTC</label>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter current CTC"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Expected CTC</label>
+                                                        <span class="text-danger">*</span>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter expected CTC"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                    <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Notice Period</label>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter notice period"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">CV received date</label>
+                                                        <span class="text-danger">*</span>
+
+                            <input
+                              type="date"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter date"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                     <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="componentType"
+                              >Status</label
+                            >
+                                                                                    <span class="text-danger">*</span>
+
+
+                            <select
+                              class="form-select"
+                              id="componentType"
+                              required
+                            >
+                              <option value="Select">New</option>
+						 <option value="2">Registered</option>
+						 <option value="3">Interview Scheduled </option>   
+						   
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="percentage">Upload CV</label>
+
+                            <input
+                              type="file"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter reference by"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                    <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="percentage">Remark</label>
+
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="percentage"
+                              placeholder="Enter remark"
+                            />
+                          </div>
+                        </div>
+                              <div class="text-end mb-2">
+                  <a
+                    type="button"
+                    class="btn btn-gradient-primary me-4"
+                  >
+                    Save
+                  </a>
+                  <a
+                    type="reset"
+                    class="btn btn-gradient-light"
+                  >
+                    Cancel
+                  </a>
+                </div>
                         
                       </div>
+                       
+                      
+                     
+                      
+                      
 
-                      <!-- Buttons -->
                     </form>
                   </div>
-                 
+                
+
                 </div>
               </div>
               
+     
 
-              <div class="page-header">
-                <h5>List of trainings</h5>
-              </div>
 
-              <div class="row">
-                <div class="col-lg-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th>
-                              <label>Title</label>
-                            </th>
-                            <th>
-                              <label>From date</label>
-                            </th>
-                            <th>
-                              <label>To date</label>
-                            </th>
-                            <th>
-                              <label>Type</label>
-                            </th>
-                            <th>
-                              <label>Location</label>
-                            </th>
 
-                            <th>
-                              <label>Description</label>
-                            </th>
-                            <th>
-                              <label>Authorized</label>
-                            </th>
-                             <th>
-                              <label>Status</label>
-                            </th>
-                            <th>
-                              <label>Action</label>
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <label>Meeting etiquettes</label>
-                            </td>
-                            <td>
-                              <label>31-May-2025</label>
-                            </td>
-                            <td>
-                              <label>31-May-2025</label>
-                            </td>
-                            <td>
-                              <label>Soft skill</label>
-                            </td>
-                            <td>
-                              <label>Pune</label>
-                            </td>
+             
 
-                            <td>
-                              <label>Behavioural training</label>
-                            </td>
-                            <td>
-                              <label>No</label>
-                            </td>
-                             <td>
-                              <label>Created</label>
-                            </td>
-                            <td>
-                              <a href="manageTraining1.html"
-                                ><i class="fa-solid fa-pen-to-square"></i
-                              ></a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <label>Meeting etiquettes</label>
-                            </td>
-                            <td>
-                              <label>07-Jan-2025</label>
-                            </td>
-                            <td>
-                              <label>09-Jan-2025</label>
-                            </td>
-                            <td>
-                              <label>Soft skill</label>
-                            </td>
-                            <td>
-                              <label>Pune</label>
-                            </td>
-
-                            <td>
-                              <label>Behavioural training</label>
-                            </td>
-                            <td>
-                              <label>Yes</label>
-                            </td>
-                             <td>
-                              <label>In Progress</label>
-                            </td>
-                            <td>
-                              <a href="manageTraining1.html"
-                                ><i class="fa-solid fa-pen-to-square"></i
-                              ></a>
-                            </td>
-                          </tr>
-                          <tr class="">
-                            <td>
-                              <label>Meeting etiquettes</label>
-                            </td>
-                            <td>
-                              <label>07-Jan-2025</label>
-                            </td>
-                            <td>
-                              <label>09-Jan-2025</label>
-                            </td>
-                            <td>
-                              <label>Soft skill</label>
-                            </td>
-                            <td>
-                              <label>Pune</label>
-                            </td>
-                            <td>
-                              <label>Behavioural training</label>
-                            </td>
-                            <td>
-                              <label>No</label>
-                            </td>
-                             <td>
-                              <label>Cancel</label>
-                            </td>
-                            <td>
-                              <a href="manageTraining1.html"
-                                ><i class="fa-solid fa-pen-to-square"></i
-                              ></a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              
             </div>
+        
           </div>
         <!-- main-panel ends -->
       </div>
@@ -1394,5 +1629,22 @@
       type="text/javascript"
       charset="utf-8"
     ></script>
+   <script>
+  document.getElementById('addBandBtn').addEventListener('click', function () {
+
+    const container = document.getElementById('educationContainer');
+    const firstRow = container.querySelector('.educationRow');
+
+    // Clone only the education row
+    const newRow = firstRow.cloneNode(true);
+
+    // Reset dropdown
+    newRow.querySelector('select').selectedIndex = 0;
+
+    // Append cloned row
+    container.appendChild(newRow);
+  });
+</script>
+
   </body>
 </html>
