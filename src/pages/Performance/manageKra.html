@@ -1059,7 +1059,7 @@
           </ul>
         </nav>
         <!-- partial -->
-        <div class="main-panel">
+      <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
               <h3 class="page-title">Manage KRA</h3>
@@ -1073,25 +1073,53 @@
                 </div>
               </nav>
             </div>
-
-<div class="col-12 grid-margin stretch-card kraGridBlock" >
-  <div class="card ">
-    <div class="card-body">
-      <form class="forms-sample">
-        <div class="row kraGridBlock">
-          <div class="col-md-6">
-            <div class="form-group mb-2">
-              <label for="employeeId">Designation <span class="text-danger">*</span></label>
-              <select class="form-select form-select-sm" id="title" required>
-                <option value="">Select</option>
-                <option value="ao">Accounts Officer</option>
-                <option value="sao">Senior Account Officer</option>
-                <option value="aaa">Admin/Account Assistant</option>
-                <option selected>Developer</option>
-                <option value="des">Designer</option>
-              </select>
+ 
+            <div class="col-12 grid-margin stretch-card kraGridBlock">
+              <div class="card">
+                <div class="card-body">
+                  <form class="forms-sample">
+                    <div class="row kraGridBlock">
+                      <div class="col-md-6">
+                        <div class="form-group mb-2">
+                          <label for="employeeId"
+                            >Designation
+                            <span class="text-danger">*</span></label
+                          >
+                          <select
+                            class="form-select form-select-sm"
+                            id="title"
+                            required
+                          >
+                            <option value="">Select</option>
+                            <option value="dev">Developer</option>
+                            <option value="ao">Accounts Officer</option>
+                            <option value="sao">Senior Account Officer</option>
+                            <option value="aaa">Admin/Account Assistant</option>
+                            <option value="des">Designer</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-2">
+                          <label for="reportingId"
+                            >Total Weightage (%)
+                            <span class="text-danger"></span
+                          ></label>
+                          <input
+                            type="text"
+                            class="form-control form-control-sm"
+                            id="reportingId"
+                            placeholder="100"
+                            disabled
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
-
+ 
             <div class="row kraGridBlock">
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
@@ -1112,7 +1140,7 @@
                           <td rowspan="2">
                             <label>Thematic</label>
                           </td>
-
+ 
                           <td>
                             <label>Customer Discussion</label>
                           </td>
@@ -1125,7 +1153,7 @@
                           <td rowspan="2">
                             <label>30%</label>
                           </td>
-
+ 
                           <td rowspan="2">
                             <a
                               href="editButtonManageKRA.html"
@@ -1149,7 +1177,7 @@
                           <td rowspan="2">
                             <label>Competency</label>
                           </td>
-
+ 
                           <td>
                             <label>Team Work</label>
                           </td>
@@ -1159,11 +1187,11 @@
                           <td>
                             <label>-</label>
                           </td>
-
+ 
                           <td rowspan="2">
                             <label>20%</label>
                           </td>
-
+ 
                           <td rowspan="2">
                             <a
                               href="editButtonManageKRA.html"
@@ -1187,7 +1215,7 @@
                           <td rowspan="2">
                             <label>Competency-SupervisorFeedBack</label>
                           </td>
-
+ 
                           <td>
                             <label>Improve Development Quality</label>
                           </td>
@@ -1200,7 +1228,7 @@
                           <td rowspan="2">
                             <label>50%</label>
                           </td>
-
+ 
                           <td rowspan="2">
                             <a
                               href="editButtonManageKRA.html"
@@ -1228,10 +1256,6 @@
             </div>
           </div>
         </div>
-        <!-- main-panel ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
-    </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
