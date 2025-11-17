@@ -1592,5 +1592,46 @@
       type="text/javascript"
       charset="utf-8"
     ></script>
+    <script type="text/javascript"> 
+	$(function()
+	{
+		$(".criteriaChanged").find("select").attr("disabled","disabled");			
+		$(".searchCandidateForm").hide();
+		
+		$(".addNewShortList").click(function()
+	  {
+		
+		$(".searchListForm").hide();
+		$(".addNewShortList").hide();
+		$(".shortListCandidate").hide();
+		$(".searchCandidateForm").show();
+		
+	  });
+	  
+	  
+	 
+	  
+	  
+	  $(".searchSave").click(function()
+	  {
+		
+		$(".searchListForm").show();
+		$(".addNewShortList").show();
+		$(".shortListCandidate").show();
+		
+		
+	  });
+	 
+	  
+		
+	});
+	
+	 function enableChangesCriteria()
+	  {
+		
+			$(".criteriaChanged").find("select").removeAttr("disabled").select2();		
+	  }
+	
+</script>
   </body>
 </html>
