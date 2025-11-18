@@ -98,7 +98,7 @@
                   <span class="availability-status online"></span>
                 </div>
                 <div class="nav-profile-text">
-                  <p class="mb-1 text-black"> Andrew Baker</p>
+                  <p class="mb-1 text-black">Andrew Baker</p>
                 </div>
               </a>
               <div
@@ -592,200 +592,336 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Add Diary</h3>
+              <h3 class="page-title">View Monthly Work Plan</h3>
+            </div>
+            <div class="row" >
+              <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="employeeType">Month <span class="text-danger">*</span></label>
+                                <select
+                                    class="form-select"
+                                    id="month"
+                                    required
+                                    >
+                                    <option value="">Select</option>
+                                    <option value="on_contract" selected>January</option>
+                                    <option value="on_deputation">February</option>
+                                    <option value="on_contract">March</option>
+                                    <option value="on_deputation">April</option>
+                                    <option value="on_contract">May</option>
+                                    <option value="on_deputation">June</option>
+                                    <option value="on_contract">July</option>
+                                    <option value="on_deputation">August</option>
+                                    <option value="on_contract">September</option>
+                                    <option value="on_deputation">October</option>
+                                    <option value="on_contract">November</option>
+                                    <option value="on_deputation">December</option>
+                                </select>
+                            </div>
+              </div>
+              <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="year">Year<span class="text-danger">*</span></label>
+                            <select class="form-select" id="year" required>
+                              <option value="">Select</option>
+                              <option value="earned_leave" selected>2025</option>
+                              <option value="earned_leave">2026</option>
+                              <option value="earned_leave">2027</option>
+                              <option value="earned_leave">2028</option>
+                              <option value="earned_leave">2029</option>
+                              <option value="earned_leave">2030</option>
+                            </select>
+                          </div>
+              </div>
             </div>
             <div class="row">
               <div class="col-12 grid-margin stretch-card">
                 <div class="card">
-                  <div class="card-body">
-                    <form class="forms-sample">
-                      <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                            <label for="yearType">
-                                Tour Date <span class="text-danger">*</span>
-                            </label>
-
-                            <input 
-                                type="date"
-                                class="form-control"
-                                id="fromDate"
-                                name="fromDate"
-                                value=""
-                            />
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                            <label for="openingBalance">
-                                Work Mode <span class="text-danger">*</span>
-                            </label>
-
-                            <div
-                                style="
-                                display: flex;
-                                align-items: center;
-                                gap: 20px;
-                                margin-top: 8px;
-                                "
-                            >
-                                <label
-                                style="
-                                    display: flex;
-                                    align-items: center;
-                                    gap: 5px;
-                                "
-                                >
-                                <input
-                                    type="radio"
-                                    name="openingBalance"
-                                    id="openingBalanceYes"
-                                    value="yes"
-                                    required
-                                    checked
-                                />
-                                In Office
-                                </label>
-
-                                <label
-                                style="
-                                    display: flex;
-                                    align-items: center;
-                                    gap: 5px;
-                                "
-                                >
-                                <input
-                                    type="radio"
-                                    name="openingBalance"
-                                    id="openingBalanceNo"
-                                    value="no"
-                                />
-                                Tour
-                                </label>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Row 3: Title & First Name -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group"> 
-                                <label for="yearType" >Work Done <span class="text-danger">*</span></label >
-                              <input
-                                    type="text"
-                                    class="form-control"
-                                    id="workDone"
-                                    placeholder="Enter Your Work Done"
-                                />
-                            </div> 
-                        </div> 
-                        <div class="col-md-6">
-                            <div class="form-group"> 
-                                <label for="yearType" >Submit Back Office Reports<span class="text-danger">*</span></label >
-                              <input
-                                    type="file"
-                                    class="form-control"
-                                    id="fileUpload"
-                                    placeholder="Upload File"
-                                />
-                            </div> 
-                        </div>
-                    </div>
-                    </form>
-                    </div>
-                    </div>
-                    </div>
-        </div>
-
-         <div class="row">
-              <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="forms-sample">
-        <form class="row">     
-         <div class="text-end ">
-                       <a href="javascript:void(0);" id="addBandBtn" class="btn btn-gradient-primary me-2 mb-4">
-                            Add Activity
-                        </a>
-                        </div>
-                        <div id="bandContainer">
-                            <div class="col-12">
-                                
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group mb-2">
-                                                        <label for="employeeId">Activity<span class="text-danger">*</span></label>
-                                                        <select
-                                                            class="form-select"
-                                                            id="Activity"
-                                                            required
-                                                            >
-                                                            <option value="">Select</option>
-                                                            <option value="on_contract" selected>January</option>
-                                                            <option value="on_deputation">February</option>
-                                                            <option value="on_contract">March</option>
-                                                            <option value="on_deputation">April</option>
-                                                            <option value="on_contract">May</option>
-                                                            <option value="on_deputation">June</option>
-                                                            <option value="on_contract">July</option>
-                                                            <option value="on_deputation">August</option>
-                                                            <option value="on_contract">September</option>
-                                                            <option value="on_deputation">October</option>
-                                                            <option value="on_contract">November</option>
-                                                            <option value="on_deputation">December</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                   
-                            </div>
-                        </div>
-                    </form>
-                    </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                <div class="text-end ">
-                        <a href="./leaveAdjustment.html" class="btn btn-gradient-primary me-2">
-                            Add Expenses
-                        </a>
-                 <div class="row">
-              <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="forms-sample">
+                  <div class="card-body" style="margin-bottom: -80px;">
+                    <class="forms-sample">
                       <!-- Row 1: Employee Type & Leave Type -->
                             <!-- Row 2: Year Type & Opening Balance -->
                             <div class="row">
                                 <div class="col-lg-12 grid-margin stretch-card">
                                     <div class="card">
-                                        <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table align-middle" style="width: 100%">
-                                                    <thead>
-                                                        <tr>
-                                                        <th>Travel<br>From</th>
-                                                        <th>Travel<br> To</th>
-                                                        <th>Travel<br> Expenses</th>
-                                                        <th>DA</th>
-                                                        <th>Approve<br> DA</th>
-                                                        <th>Lodging<br> Expenses</th>
-                                                        <th>Approve Lodging<br> Expenses</th>
-                                                        <th>Miscellanies<br> Expenses</th>
-                                                        <th>Approve Miscellanies<br> Expenses</th>
-                                                        <th>Expenses<br> Status</th>
-                                                        <th>Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
+                                        <!-- <div class="card-body"> -->
+                                            <table class="table">
+                                                <thead>
                                                     <tr>
-                                                        <td>No Record Found</td>
+                                                    <th>Date</th>
+                                                    <th>Work Mode</th>
+                                                    <th>From</th>
+                                                    <th>To</th>
+                                                    <th>Work Plan</th>
+                                                    <th>Travel Booking</th>
+                                                    <th>Accommodation Booking</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>01-Jan-2025</td>
+                                                        <td>In Office</td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>02-Jan-2025</td>
+                                                        <td>In Office</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>03-Jan-2025</td>
+                                                        <td>In Office</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>04-Jan-2025</td>
+                                                        <td>Weekly Off</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>05-Jan-2025</td>
+                                                        <td>Weekly Off</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06-Jan-2025</td>
+                                                        <td>Tour</td>
+                                                        <td>Pune</td>
+                                                        <td>Mumbai</td>
+                                                        <td>Mission Work</td>
+                                                        <td>Self</td>
+                                                        <td>Self</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07-Jan-2025</td>
+                                                        <td>Tour</td>
+                                                        <td></td>
+                                                        <td>Mumbai</td>
+                                                        <td>Mission Work</td>
+                                                        <td>Self</td>
+                                                        <td>Self</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08-Jan-2025</td>
+                                                        <td>Tour</td>
+                                                        <td></td>
+                                                        <td>Mumbai</td>
+                                                        <td>Mission Work</td>
+                                                        <td>Self</td>
+                                                        <td>Self</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>09-Jan-2025</td>
+                                                        <td>Tour</td>
+                                                        <td>Mumbai</td>
+                                                        <td>Nagpur</td>
+                                                        <td>Mission Work</td>
+                                                        <td>Self</td>
+                                                        <td>Self</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10-Jan-2025</td>
+                                                        <td>Tour</td>
+                                                        <td>Mumbai</td>
+                                                        <td>Nagpur</td>
+                                                        <td>Mission Work</td>
+                                                        <td>Self</td>
+                                                        <td>Self</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>11-Jan-2025</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12-Jan-2025</td>
+                                                        <td>Weekly Off</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>13-Jan-2025</td>
+                                                        <td>In Office</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>14-Jan-2025</td>
+                                                        <td>In Office</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>15-Jan-2025</td>
+                                                        <td>In Office</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>16-Jan-2025</td>
+                                                        <td>Tour</td>
+                                                        <td>Pune</td>
+                                                        <td>Satara</td>
+                                                        <td>Mission Work</td>
+                                                        <td>Self</td>
+                                                        <td>Self</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>17-Jan-2025</td>
+                                                        <td>Tour</td>
+                                                        <td></td>
+                                                        <td>Satara</td>
+                                                        <td>Mission Work</td>
+                                                        <td>Self</td>
+                                                        <td>Self</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>18-Jan-2025</td>
+                                                        <td>Weekly Off</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>19-Jan-2025</td>
+                                                        <td>Weekly Off</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>20-Jan-2025</td>
+                                                        <td>In Office</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>21-Jan-2025</td>
+                                                        <td>In Office</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>22-Jan-2025</td>
+                                                        <td>In Office</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>23-Jan-2025</td>
+                                                        <td>Tour</td>
+                                                        <td>Pune</td>
+                                                        <td>Sangli</td>
+                                                        <td>Mission Work</td>
+                                                        <td>Self</td>
+                                                        <td>Self</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>24-Jan-2025</td>
+                                                        <td>Tour</td>
+                                                        <td></td>
+                                                        <td>Sangli</td>
+                                                        <td>Mission Work</td>
+                                                        <td>Self</td>
+                                                        <td>Self</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>25-Jan-2025</td>
+                                                        <td>Tour</td>
+                                                        <td></td>
+                                                        <td>Sangli</td>
+                                                        <td>Mission Work</td>
+                                                        <td>Self</td>
+                                                        <td>Self</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>26-Jan-2025</td>
+                                                        <td>Weekly Off</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>27-Jan-2025</td>
+                                                        <td>In Office</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>28-Jan-2025</td>
+                                                        <td>In Office</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>29-Jan-2025</td>
+                                                        <td>In Office</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>30-Jan-2025</td>
+                                                        <td>In Office</td>
                                                         <td></td>
                                                         <td></td>
                                                         <td></td>
@@ -794,22 +930,22 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                        </div>
+                                            <p></p>
+                                            <label for="note">Note :- Only Approved tour plan will move to diary.</label>
+                                            <div class="text-end mb-4">
+                                                <a class="btn btn-gradient-primary me-2" tabindex="-1" aria-disabled="true">
+                                                    Move To Diary
+                                                </a>
+                                            </div>
+                                        <!-- </div> -->
                                     </div>
                                 </div>
                             </div>
-                            </div>
-                    <!-- Buttons -->
                     </form>
-                  </div>
-                  </div>
                 </div>
               </div>
             </div>
-            </div>
-        </div>
-        </div>
-        
+          </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
@@ -824,7 +960,6 @@
                 >. All rights reserved.</span
               >
             </div>
-            
           </footer>
           <!-- partial -->
         </div>
@@ -852,22 +987,5 @@
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
     <!-- End custom js for this page -->
-
-    <script>
-  document.getElementById('addBandBtn').addEventListener('click', function () {
-    const container = document.getElementById('bandContainer');
-
-    // Get the first card as a template
-    const firstCard = container.querySelector('.col-12');
-    const newCard = firstCard.cloneNode(true); // deep clone
-
-    // Optionally clear any user input in the cloned card
-    newCard.querySelectorAll('input').forEach(input => input.value = '');
-    newCard.querySelectorAll('select').forEach(select => select.selectedIndex = 0);
-
-    // Append cloned card
-    container.appendChild(newCard);
-  });
-</script>
   </body>
 </html>
