@@ -1,6 +1,4 @@
-
-
-          <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -293,7 +291,7 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
-          <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <!-- <li class="nav-item nav-profile">
               <a href="#" class="nav-link">
@@ -1000,7 +998,7 @@
               </div>
             </li>
 
-              <li class="nav-item">
+            <li class="nav-item">
               <a
                 class="nav-link"
                 data-bs-toggle="collapse"
@@ -1025,7 +1023,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                    href="/src/pages/admin/adminAttendanceConfiguration.html"
+                      href="/src/pages/admin/adminAttendanceConfiguration.html"
                     >
                       Attendance Configuration
                     </a>
@@ -1095,7 +1093,7 @@
                           <div class="form-group">
                             <label for="leaveType">Leave Type</label>
                             <select class="form-select" id="leaveType" required>
-                             <option value="earned_leave">Casual Leave</option>
+                              <option value="earned_leave">Casual Leave</option>
                               <option value="earned_leave">Earned Leave</option>
                               <option value="maternity_leave">
                                 Maternity Leave
@@ -1185,9 +1183,9 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label
-                              for="Annual Leave Quantity *
+                              for="Annual Leave Quantity
 "
-                              >Annual Leave Quantity *
+                              >Annual Leave Quantity
 
                               <span class="text-danger">*</span></label
                             >
@@ -1196,7 +1194,7 @@
                               class="form-control"
                               id="Annual Leave Quantity *"
                               placeholder="Annual Leave Quantity *"
-                                value="8"
+                              value="8"
                               required
                             />
                           </div>
@@ -1254,7 +1252,7 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="yearType"
-                              >Accural Frequency *
+                              >Accural Frequency
                               <span class="text-danger">*</span></label
                             >
                             <select class="form-select" id="yearType" required>
@@ -1272,14 +1270,14 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="Total number of leaves as per frequency"
-                              >Total number of leaves as per frequency *
+                              >Total number of leaves as per frequency
                               <span class="text-danger">*</span></label
                             >
                             <input
                               type="text"
                               class="form-control"
-                              id="Total number of leaves as per frequency *"
-                              placeholder="Total number of leaves as per frequency *"
+                              id="Total number of leaves as per frequency"
+                              placeholder="Total number of leaves as per frequency"
                               required
                             />
                           </div>
@@ -1291,7 +1289,7 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="Carry Forward Applicable *"
-                              >Carry Forward Applicable *
+                              >Carry Forward Applicable
                               <span class="text-danger">*</span></label
                             >
                             <div
@@ -1302,13 +1300,7 @@
                                 margin-top: 8px;
                               "
                             >
-                              <label
-                                style="
-                                  display: flex;
-                                  align-items: center;
-                                  gap: 5px;
-                                "
-                              >
+                              <label style="display: flex; align-items: center">
                                 <input
                                   type="radio"
                                   name="Accrual "
@@ -1337,51 +1329,52 @@
                           </div>
                         </div>
                         <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="Carry forword max limit"
-                            >Carry forword max limit
-                            <span class="text-danger">*</span></label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="Carry forword max limit"
-                            placeholder="Carry forword max limit"
-                            value="5"
-                            required
-                          />
-                        </div>
-                      </div>
-
-                      <!-- Min Leave to be applied * -->
-                       <div class="row">
-                        <div class="col-md-6">
                           <div class="form-group">
-                            <label for="Min Leave to be applied *"
-                              >Min Leave to be applied * *
+                            <label for="Carry forword max limit"
+                              >Carry forword max limit
                               <span class="text-danger">*</span></label
                             >
                             <input
                               type="text"
                               class="form-control"
-                              id="Min Leave to be applied *"
-                              placeholder="Min Leave to be applied *"
+                              id="Carry forword max limit"
+                              placeholder="Carry forword max limit"
+                              value="5"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Min Leave to be applied * -->
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="Min Leave to be applied"
+                              >Min Leave to be applied
+                              <span class="text-danger">*</span></label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="Min Leave to be applied"
+                              placeholder="Min Leave to be applied"
                               value="1"
                               required
                             />
                           </div>
                         </div>
-                          <div class="col-md-6">
+                        <div class="col-md-6">
                           <div class="form-group">
-                            <label for="Max Leave to be applied *"
-                              >Max Leave to be applied *
+                            <label for="Max Leave to be applied"
+                              >Max Leave to be applied
                               <span class="text-danger">*</span></label
                             >
                             <input
                               type="text"
                               class="form-control"
-                              id="Max Leave to be applied *"
-                              placeholder="Max Leave to be applied *"
+                              id="Max Leave to be applied"
+                              placeholder="Max Leave to be applied"
                               value="7"
                               required
                             />
@@ -1389,12 +1382,12 @@
                         </div>
                       </div>
 
-<!-- clubing with another leave -->
-                         <div class="row">
-                         <div class="col-md-6">
+                      <!-- clubing with another leave -->
+                      <div class="row">
+                        <div class="col-md-6">
                           <div class="form-group">
                             <label for="openingBalance"
-                              >Clubing with another Leave *
+                              >Clubing with another Leave
                               <span class="text-danger">*</span></label
                             >
                             <div
@@ -1443,7 +1436,7 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="openingBalance"
-                              >Leave deduction while Sandwich *
+                              >Leave deduction while Sandwich
                               <span class="text-danger">*</span></label
                             >
                             <div
@@ -1490,10 +1483,9 @@
                         </div>
                       </div>
 
-
-<!-- Navigate Leave Balance -->
- <div class="row">
-      <div class="col-md-6">
+                      <!-- Navigate Leave Balance -->
+                      <div class="row">
+                        <div class="col-md-6">
                           <div class="form-group">
                             <label for="openingBalance"
                               >Negative Leave Balance
@@ -1558,10 +1550,10 @@
                           </div>
                         </div>
                       </div>
-                      
+
                       <!-- Enhancement -->
-                         <div class="row">
-                         <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-6">
                           <div class="form-group">
                             <label for="openingBalance"
                               >Encashment * *
@@ -1613,7 +1605,7 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="openingBalance"
-                              >Encashment *
+                              >Encashment
                               <span class="text-danger">*</span></label
                             >
                             <div
@@ -1655,7 +1647,7 @@
                                 />
                                 2 up
                               </label>
-                               <label
+                              <label
                                 style="
                                   display: flex;
                                   align-items: center;
@@ -1668,23 +1660,31 @@
                                   id="openingBalanceNo"
                                   value="no"
                                 />
-                             Top Level
+                                Top Level
                               </label>
                             </div>
                           </div>
                         </div>
                       </div>
 
+                      <div>
+                        <div class="text-end mt-3">
+                          <a
+                            href="./LeaveConfiguration.html"
+                            class="btn btn-gradient-primary me-2"
+                          >
+                            Submit
+                          </a>
+                          <a
+                            href="./LeaveConfiguration.html"
+                            class="btn btn-gradient-light me-2"
+                          >
+                            Cancel
+                          </a>
+                        </div>
+                      </div>
+
                       <!-- Buttons -->
-             <div class="text-end mt-3">
-  <a href="./LeaveConfiguration.html" class="btn btn-gradient-primary me-2">
-    Submit
-  </a>
-   <a href="./LeaveConfiguration.html" class="btn btn-gradient-secondary me-2">
-    Cancel
-  </a>
-</div>
-               
                     </form>
                   </div>
                 </div>
