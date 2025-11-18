@@ -79,7 +79,7 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search employee"
+                  placeholder="Search projects"
                 />
               </div>
             </form>
@@ -98,7 +98,7 @@
                   <span class="availability-status online"></span>
                 </div>
                 <div class="nav-profile-text">
-                  <p class="mb-1 text-black">Andrew Baker</p>
+                  <p class="mb-1 text-black"> Andrew Baker</p>
                 </div>
               </a>
               <div
@@ -309,102 +309,7 @@
                 ></i>
               </a>
             </li> -->
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                data-bs-toggle="collapse"
-                href="#employeeMenu"
-                aria-expanded="false"
-                aria-controls="employeeMenu"
-              >
-                <span class="menu-title">Employee</span>
-                <i class="menu-arrow"></i>
-                <i class="mdi mdi-account-group menu-icon"></i>
-              </a>
-              <div class="collapse" id="employeeMenu">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/dashboard.html">
-                      Dashboard
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/employee/createEmployee.html"
-                    >
-                      Create Employee
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/employee/employmentInfo.html"
-                    >
-                      Employment Information
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/contact.html">
-                      Contact
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/employee/qualification.html"
-                    >
-                      Qualification
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/employee/workExperience.html"
-                    >
-                      Work Experience
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/documents.html">
-                      Documents
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/health.html">
-                      Health
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/probation.html">
-                      Probation
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/compensation.html">
-                      Compensation And Benefits
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/accountInfo.html">
-                      Account Information
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/assets.html">
-                      Assets
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/employeeExit.html">
-                      Employee Exit
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-       <li class="nav-item">
+              <li class="nav-item">
               <a
                 class="nav-link"
                 data-bs-toggle="collapse"
@@ -466,6 +371,39 @@
                   <li class="nav-item">
                     <a class="nav-link" href="/src/pages/leaves/leaveBalanceLedger.html"
                       >Leave Balance Ledger</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#leave"
+                aria-expanded="false"
+                aria-controls="leave"
+              >
+                <span class="menu-title">Leave</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-contacts menu-icon"></i>
+              </a>
+              <div class="collapse" id="leave">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ui-features/buttons.html"
+                      >Dashboard</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ui-features/dropdowns.html"
+                      >Apply Leave</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ui-features/typography.html"
+                      >Leave Account</a
                     >
                   </li>
                 </ul>
@@ -590,8 +528,7 @@
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
                     <a class="nav-link" href="pages/tables/basic-table.html"
-                      >Total leave balance for year 2025 as on (18-11-2025)
-Leave Type	</a
+                      >Basic table</a
                     >
                   </li>
                 </ul>
@@ -652,76 +589,162 @@ Leave Type	</a
           </ul>
         </nav>
         <!-- partial -->
-    <div class="main-panel">
-        <div class="content-wrapper">
+        <div class="main-panel">
+          <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Leave Configuration</h3>
-              <nav aria-label="breadcrumb">
-                <a href="addNewLeaveConfig.html" class="btn btn-gradient-primary me-2">Add New</a>
-              </nav>
+              <h3 class="page-title">Approve Team Tour Plan</h3>
             </div>
             <div class="row">
-                <div class="col-12 grid-margin stretch-card">
-                    <div class="card">
-                        <div class="card-body position-relative">
-                            <form class="forms-sample">
-                            <div class="row">
-                                <!-- Employee ID -->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="employeeId">Employee Type</label>
-                                        <!-- <span class="text-danger">*</span> -->
-                                        <select class="form-select" id="title" required>
-                                            <option value="Select">Select</option>
-                                            <option value="on_contract" selected>On Contract</option>
-                                            <option value="on_deputation">On Deputation</option>
-                                        </select>
+              <!-- <div class="col-12 grid-margin stretch-card"> -->
+                <!-- <div class="card">
+                  <div class="card-body"> -->
+                    <form class="forms-sample">
+                      <!-- Row 1: Employee Type & Leave Type -->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group"> 
+                                <label for="yearType" >Employeee <span class="text-danger">*</span></label >
+                              <select
+                                    class="form-select"
+                                    id="employeeType"
+                                    required
+                                    >
+                                    <option value="">Select</option>
+                                    <option value="on_contract" selected>Ruth Neison</option>
+                                    <option value="on_deputation">Kevin Smith</option>
+                                    <option value="on_contract">Mark Jackson</option>
+                                    <option value="on_deputation">John Andrew</option>
+                                </select>
+                            </div> 
+                        </div> 
+                          <div class="col-md-3">
+                                <div class="form-group">
+                                <label for="employeeType">Month <span class="text-danger">*</span></label>
+                                <select
+                                    class="form-select"
+                                    id="month"
+                                    required
+                                    >
+                                    <option value="">Select</option>
+                                    <option value="January" selected>January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="year">Year<span class="text-danger">*</span></label>
+                            <select class="form-select" id="year" required>
+                              <option value="">Select</option>
+                              <option value="2025" selected>2025</option>
+                              <option value="2026">2026</option>
+                              <option value="2027">2027</option>
+                              <option value="2028">2028</option>
+                              <option value="2029">2029</option>
+                              <option value="2030">2030</option>
+                            </select>
+                          </div>
+                        </div>
+                    </div>
+                   
+                    </form>
+                    <!-- </div>
+                </div> -->
+                <!-- </div> -->
+            </div>
+
+              <div class="page-header">
+            </div>
+            <div class="row">
+              <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="forms-sample">
+                                            <div class="table-responsive">
+                      <!-- Makes table scrollable if wide -->
+                      <table class="table align-middle" style="width: 100%">
+                        <thead>
+                          <tr>
+                            <th>
+                              <input type="checkbox" id="selectAll" />
+                              <label for="selectAll" class="ms-1 mb-0"
+                                >Select All</label
+                              >
+                            </th>
+                            <th>From Date</th>
+                            <th>To Date</th>
+                            <th>Travel From</th>
+                            <th>Travel To</th>
+                            <th>Purpose Of Visit</th>
+                            <th>Travel Booking By</th>
+                            <th>Accommodation Booking By</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <input type="checkbox" class="rowCheckbox" />
+                            </td>
+                            <td>06-Jan-2025</td>
+                            <td>06-Jan-2025</td>
+                            <td>Pune</td>
+                            <td>Mumbai</td>
+                            <td>Mission Work</td>
+                            <td>Self</td>
+                            <td>Self</td>
+                            <td>Submitted</td>
+                            <td></td>
+                          </tr>
+ 
+                          <!-- Row 2 -->
+                          <tr>
+                            <td>
+                              <input type="checkbox" class="rowCheckbox" />
+                            </td>
+                            <td>16-Jan-2025</td>
+                            <td>17-Jan-2025</td>
+                            <td>Pune</td>
+                            <td>Satara</td>
+                            <td>Mission Work</td>
+                            <td>Self</td>
+                            <td>Self</td>
+                            <td>Created</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Leave Type</th>
-                          <th>Year Type</th>
-                          <th>Annual Leave Quantity</th>
-                          <th>Min Leave to be applied</th>
-                          <th>Max Leave to be applied</th>
-                          <th>Action</th>
-
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Casual Leave</td>
-                          <td>Financial Year</td>
-                          <td>8</td>
-                          <td>1</td>
-                          <td>7</td>
-                            <td>
-                            <a href="viewLeaveConfig.html" class="btn btn-gradient-primary me-2">Edit</a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Earned Leave</td>
-                          <td>Calendar Year</td>
-                          <td>20</td>
-                          <td>3</td>
-                          <td>10</td>
-                            <td>
-                            <a href="viewLeaveConfig.html" class="btn btn-gradient-primary me-2">Edit</a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                        </div>
-                      </div>
+                    <!-- Buttons -->
+                    <div class="text-end ">
+                        <a href="./createTourPlan.html" class="btn btn-gradient-primary me-2">
+                            Approve
+                        </a>
+                        <a href="./createTourPlan.html" class="btn btn-gradient-light">
+                            Reject
+                        </a>
+                    </div>
                     </form>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+        </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
@@ -731,7 +754,7 @@ Leave Type	</a
               <span
                 class="text-muted text-center text-sm-left d-block d-sm-inline-block"
                 >Copyright © 2023
-                <a href="https://syborgtech.com/" target="_blank"
+                <a href="https://www.syborgtech.com/" target="_blank"
                   >SyborgTech</a
                 >. All rights reserved.</span
               >
