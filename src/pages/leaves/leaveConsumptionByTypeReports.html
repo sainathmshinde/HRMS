@@ -484,6 +484,97 @@
                       Leave Balance Ledger
                     </a>
                   </li>
+                   <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/employeesOnLeaveReports.html"
+                      >Employees On Leave Reports</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/totalPlannedLeavesReports.html"
+                      >Total Planned Leaves Reports</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/plannedVsActualReports.html"
+                      >Planned Vs Actual Reports</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/holidaysListReports.html"
+                      >Holiday List Reports</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/leaveConsumptionByTypeReports.html"
+                      >  Leave Consumption By Type Reports</a
+                    >
+                  </li>
+                 <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/leaveConsumptionTrendReports.html"
+                      >  Leave Consumption Trend Reports</a
+                    >
+                  </li>
+                   <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/leaveBalanceReports.html"
+                      >  Leave Balance Reports</a
+                    >
+                  </li>
+                   <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/leaveSummaryReports.html"
+                      >  Leave Summary For Year 15 - 16 Reports</a
+                    >
+                  </li>
+                   <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/leaveReasonReports.html"
+                      >  Leave Reason Reports</a
+                    >
+                  </li>
+                   <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/leaveTypeCountReports.html"
+                      >  Leave Type Count Reports</a
+                    >
+                  </li>
+                   <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/availedLeaveTypeReports.html"
+                      >  Availed Leave Type Reports</a
+                    >
+                  </li>
+                   <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/noLeavesAvailedReports.html"
+                      >  No Leaves Availed Reports</a
+                    >
+                  </li>
+                   <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/SLAReports.html"
+                      >  SLA Reports</a
+                    >
+                  </li>
                 </ul>
               </div>
             </li>
@@ -1332,10 +1423,10 @@
           </ul>
         </nav>
         <!-- partial -->
-           <div class="main-panel">
+            <div class="main-panel">
           <div class="content-wrapper">
              <div class="page-header mt-2">
-              <h3 class="page-title ">Present Trend Reports</h3>
+              <h3 class="page-title ">Leave Consumption By Type Reports</h3>
             </div>
           <div class="col-12 grid-margin stretch-card">
   <div class="card">
@@ -1345,14 +1436,14 @@
                   <div class="col-md-4">
             <div class="form-group">
               <label for="toDate">From Date</label>
-              <input type="text" class="form-control" id="toDate" placeholder="1-June-2025" required/>
+              <input type="text" class="form-control" id="toDate" placeholder="Aug-2025" required/>
             </div>
           </div>
        
          <div class="col-md-4">
             <div class="form-group">
               <label for="toDate">To Date</label>
-              <input type="text" class="form-control" id="toDate" placeholder="31-May-2025" required/>
+              <input type="text" class="form-control" id="toDate" placeholder="Jan-2025" required/>
             </div>
           </div>
            <div class="col-md-4 text-end" style="margin-top: 35px;">
@@ -1369,10 +1460,10 @@
         <table class="table table-bordered align-middle text-center">
             <tr>
                 <td class="text-start">Count</td>
-                <td class="text-start">9</td>
+                <td class="text-start">3</td>
 
-                <td class="text-start">Total Months :</td>
-                <td class="text-start">12</td>
+                <td class="text-start"></td>
+                <td class="text-start"></td>
                 <td class="text-center" style="width:6%;">
                     <button class="btn btn-outline-secondary btn-sm">CSV</button>
                 </td>
@@ -1396,63 +1487,69 @@
         <div class="table-responsive"> <!-- Makes table scrollable if wide -->
           <table class="table align-middle">
           <tr>
-						<th style="padding-right:0px;">Month <span class="downArrowHead">&#x25bc;</span></th>
-						<th>Count</th>
-						<th>Action</th>
-					</tr>
-					<tr class="odd">
-						<td>June</td>
-						<td>1890</td>
-						<td><a  href="monthlyStatusReports.html"><i class="fa-solid fa-pen-to-square" ></i></a></td>
-
+						<th style="padding-right:0px;">Month   <span class="downArrowHead">&#x25bc;</span></th>
+						<th>Casual</th>
+						<th>Privilage</th>
+						<th>Medical</th>
+						<th>Maternity</th>
+						<th>Paternity</th>
+					    <th>Action</th>
 					</tr>
 					<tr class="even">
-						<td>Jully</td>
-						<td>1840</td>
-						<td><a  href="monthlyStatusReports.html"><i class="fa-solid fa-pen-to-square" ></i></a></td>
+						<td>Feb-2025</td>
+						<td>758</td>
+						<td>150</td>
+						<td>468</td>
+						<td>10</td>
+						<td>18</td>
+						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
 					</tr>
 					<tr class="odd">
-						<td>August</td>
-						<td>1847</td>
-						<td><a  href="monthlyStatusReports.html"><i class="fa-solid fa-pen-to-square" ></i></a></td>
-
+						<td>Jan-2025</td>
+						<td>573</td>
+						<td>236</td>
+						<td>392</td>
+						<td>9</td>
+						<td>23</td>
+						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
 					</tr>
 					<tr class="even">
-						<td>September</td>
-						<td>1899</td>
-						<td><a  href="monthlyStatusReports.html"><i class="fa-solid fa-pen-to-square" ></i></a></td>
-
-					</tr>					
-					<tr class="odd">
-						<td>October</td>
-						<td>1909</td>
-						<td><a  href="monthlyStatusReports.html"><i class="fa-solid fa-pen-to-square" ></i></a></td>
-
-					</tr>
-				
-
-					<tr class="even">
-						<td>November </td>
-						<td>1741 </td>
-						<td><a  href="monthlyStatusReports.html"><i class="fa-solid fa-pen-to-square" ></i></a></td>
-
+						<td>Dec-2025</td>
+						<td>936</td>
+						<td>450</td>
+						<td>536</td>
+						<td>20</td>
+						<td>48</td>
+						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
 					</tr>
 					<tr class="odd">
-						<td>December </td>
-						<td>1950</td>
-						<td><a  href="monthlyStatusReports.html"><i class="fa-solid fa-pen-to-square" ></i></a></td>
-
+						<td>Nov-2025</td>
+						<td>1075</td>
+						<td>82</td>
+						<td>543</td>
+						<td>23</td>
+						<td>21</td>
+						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
 					</tr>
 					<tr class="even">
-						<td>January </td>
-						<td>1800  </td>
-						<td><a  href="monthlyStatusReports.html"><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
+						<td>Oct-2025</td>
+						<td>336</td>
+						<td>65</td>
+						<td>564</td>
+						<td>16</td>
+						<td>18</td>
+						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
+					</tr>	
 					<tr class="odd">
-						<td>February </td>
-						<td>1870</td>
-						<td><a  href="monthlyStatusReports.html"><i class="fa-solid fa-pen-to-square" ></i></a></td>
+						<td>Sep-2025</td>
+						<td>557</td>
+						<td>92</td>
+						<td>289</td>
+						<td>75</td>
+						<td>77</td>
+						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
 					</tr>
+					
         </table>
     </div>
 </div>
@@ -1470,13 +1567,6 @@
     <li class="page-item active">
       <a class="page-link" href="#">1</a>
     </li>
-    <li class="page-item">
-      <a class="page-link" href="#">2</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">3</a>
-    </li>
-
     <li class="page-item">
       <a class="page-link" href="#" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
