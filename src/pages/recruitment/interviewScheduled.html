@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
-    <link
+     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
@@ -83,7 +83,7 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search projects"
+                  placeholder="Search employee"
                 />
               </div>
             </form>
@@ -295,7 +295,7 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+       <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <li class="nav-item">
               <a
@@ -901,6 +901,62 @@
                       Feedback
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/pendingTrainingRequest.html"
+                    >
+                      Pending Training Request
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/trainersAcrossOrganization.html"
+                    >
+                      Training Across Organization
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/trainingTrend.html"
+                    >
+                      Training Trend
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/totalScheduledTraining.html"
+                    >
+                      Total Scheduled Training
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/softSkillsTechnical.html"
+                    >
+                      Soft Skills vs Technical
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/participants.html"
+                    >
+                      Participants
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/trainersRating.html"
+                    >
+                      Trainer's Rating
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -1067,6 +1123,78 @@
                       href="../../pages/recruitment/projectResourceAllocation.html"
                     >
                       Project Resource Allocation
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/openPosition.html"
+                    >
+                      Open Positions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/srfAbove90.html"
+                    >
+                      SRF Above 90 Days
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/buWisePosition.html"
+                    >
+                      BU Wise Positions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/resumeAvailable.html"
+                    >
+                      Resume Available
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/interviewScheduled.html"
+                    >
+                      Interview Scheduled
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/projectResource.html"
+                    >
+                      Project Resources
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/projectPositions.html"
+                    >
+                      Project Positions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/projectCost.html"
+                    >
+                      Project Cost
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/resourceProjects.html"
+                    >
+                      Resource Projects
                     </a>
                   </li>
                 </ul>
@@ -1267,252 +1395,322 @@
           </ul>
         </nav>
         <!-- partial -->
-        <div class="main-panel">
+          <div class="main-panel">
           <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title">Qualify Candidates</h3>
+             <div class="page-header mt-2">
+              <h3 class="page-title ">Interview scheduled for this week</h3>
             </div>
+                   <div class="col-12 grid-margin stretch-card">
+  <div class="card">
+    <div class="card-body">
+      <form class="forms-sample">
+       
 
-            <div class="col-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <form class="forms-sample">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="financialYear">SRF</label>
-                          <span class="text-danger">*</span>
-                          <select
-                            class="form-select"
-                            id="financialYear"
-                            required
-                          >
-                            <option value="Select">Select</option>
-                            <option value="1">Desk Officer</option>
-                            <option value="2">Block Coordinator</option>
-                            <option value="3">Assistant - IT</option>
-                            <option value="4">Accountant</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          
-                          <label for="financialYear"
-                            >Change Eligibility Criteria</label
-                          >
+        <div class="row">
+          <!-- Status -->
+          
 
-                          <input
-                            type="radio"
-                            name="Feedback_9"
-                            style="margin-left: 20px"
-                            onclick="enableChangesCriteria()"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
+          <!-- From Date -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="fromDate">From Date</label>
+              <input type="text" class="form-control" id="fromDate" placeholder="1-May-2024" required/>
             </div>
-            <div class="criteriaChanged" id="criteriaID">
-              <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <form class="forms-sample">
-                      <div class="row">
-                        <!-- Component Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label
-                              >Age <span class="text-danger">*</span></label
-                            >
+          </div>
 
-                            <div class="d-flex gap-2">
-                              <label class="small mb-1">Min</label>
-                              <select class="form-select" required>
-                                <option value="2" selected>18</option>
-                                <option value="3">19</option>
-                                <option value="4">20</option>
-                                <option value="5">21</option>
-                                <option value="6">22</option>
-                                <option value="7">23</option>
-                                <option value="8">24</option>
-                                <option value="9">25</option>
-                                <option value="10">26</option>
-                                <option value="11">27</option>
-                                <option value="12">28</option>
-                                <option value="13">29</option>
-                                <option value="14">30</option>
-                                <option value="15">31</option>
-                                <option value="16">32</option>
-                                <option value="9999">33</option>
-                              </select>
-
-                              <label class="small mb-1">Max</label>
-                              <select class="form-select" required>
-                                <option value="2" selected>18</option>
-                                <option value="3">19</option>
-                                <option value="4">20</option>
-                                <option value="5">21</option>
-                                <option value="6">22</option>
-                                <option value="7">23</option>
-                                <option value="8">24</option>
-                                <option value="9">25</option>
-                                <option value="10">26</option>
-                                <option value="11">27</option>
-                                <option value="12">28</option>
-                                <option value="13">29</option>
-                                <option value="14">30</option>
-                                <option value="15">31</option>
-                                <option value="16">32</option>
-                                <option value="9999">33</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label
-                              >Experience
-                              <span class="text-danger">*</span></label
-                            >
-
-                            <div class="d-flex gap-2">
-                              <label class="small mb-1">Min</label>
-                              <select class="form-select" required>
-                                <option selected>0</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                              </select>
-
-                              <label class="small mb-1">Max</label>
-                              <select class="form-select" required>
-                                <option>0</option>
-                                <option selected>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="componentType">Education</label>
-
-                            <select
-                              class="form-select"
-                              id="componentType"
-                              required
-                            >
-                              <option value="Select">Select</option>
-                              <option value="1">Bachelor of Arts</option>
-                              <option value="2">
-                                Bachelor of Law [B.A,L.L.B]
-                              </option>
-                              <option value="2">
-                                Bachelor of Architecture [B.Arch]
-                              </option>
-                              <option value="2">
-                                Bachelor of Commerce [B.COM]
-                              </option>
-                              <option value="2">
-                                Bachelor of Computer Science [B.C.S]
-                              </option>
-                              <option value="2">
-                                Bachelor of Business Studies [B.B.S]
-                              </option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="text-end">
-                          <a
-                            type="button"
-                            class="btn btn-gradient-primary me-4"
-                          >
-                            Search
-                          </a>
-                        </div>
-                      </div>
-
-                      <!-- Buttons -->
-                    </form>
-                  </div>
-                </div>
-              </div>
+          <!-- To Date -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="toDate">To Date</label>
+              <input type="text" class="form-control" id="toDate" placeholder="30-Apr-2025" required/>
             </div>
-             <div class="col-lg-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <table class="table">
-                        
-                        <tbody>
-                         <tr>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="status">Time</label>
+              <select class="form-select form-select-sm" id="status" required>
+                               <option>Not Required</option>
+									<option selected>All</option>
+									<option>12 PM - 1 PM</option>
+									<option>2 PM - 3 PM</option>
+									<option>3 PM - 4 PM</option>
+									<option>4 PM - 5 PM</option>
 									
-					<td>
-						<label>Total eligible candidates</label>
-					</td>
-									
-					<td>
-						<label>3</label>
-					</td>
-					
-					<td>
-<a href=""
-                                >Eligible candidates report					</td>					
-				</tr>
-                          <tr>
-					
-					<td>
-						<label>Total not eligible candidates</label>
-					</td>
-					
-				
-					
-					<td>
-						<label>4 </label>
-					</td>
-					
-					<td>
-<a href=""
-                                >Not eligible candidates report					</td>					
-				</tr>
-                         
-                
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                 <div class="text-end mb-2">
-                  <a
-                    type="button"
-                    class="btn btn-gradient-primary me-4"
-                  >
-                    Qualify Candidates
-                  </a>
-                 
-                </div>
+              </select>
+            </div>
           </div>
         </div>
+        <div class="row">
+          <!-- Status -->
+          
+
+          <!-- From Date -->
+         <div class="col-md-4">
+            <div class="form-group">
+              <label for="status">SRF ID - Name</label>
+              <select class="form-select form-select-sm" id="status" required>
+                               <option>Not required</option>
+								<option selected>All</option>
+								<option >S1001 - Java developer</option>
+								<option>S1002 - Oracle developer</option>
+								<option>S1003 - Web developer</option>
+								<option>S1004 - Python developer</option>
+								<option>S1004 - Project manager</option>
+									
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="status">Interviewer</label>
+              <select class="form-select form-select-sm" id="status" required>
+                               <option>Not Required</option>
+									<option selected>All</option>
+									<option>ID1100 - Soham Agarwal </option>
+									<option>ID1105 - Brian Anderson </option>
+									<option>ID1112 - Aditya Singh</option>
+									<option>ID1132 - Sunil Menon </option>
+									
+              </select>
+            </div>
+          </div>
+        </div>
+      </form>
+       <div class="text-end">
+             <button class="btn btn-gradient-primary btn-sm ms-3">Go</button>
+        </div>
+    </div>
+  </div>
+</div>
+   
+<div
+              class="d-flex justify-content-between align-items-center mb-2 p-2 border bg-light"
+            >
+              <div>
+                <strong>Count:</strong> 9 |
+                <strong>Total:</strong> 13
+              </div>
+
+              <div>
+                <button class="btn btn-outline-secondary btn-sm me-2">
+                  CSV
+                </button>
+                <button class="btn btn-outline-secondary btn-sm">Print</button>
+              </div>
+            </div>
+              <div class="mt-4">
+                <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card" style="overflow-x: auto; width: 100%">
+                  <div class="card-body">
+                    <table class="table">
+                      <thead>
+                      <tr>
+					
+					<th  style="padding-right:0px;">
+						Interview Date<span class="downArrowHead">&#x25bc;</span>
+					</th>
+                    <th>Interview Time</th>
+						<th>SRF ID</th>
+						<th>SRF Name</th>
+						<th>Candidate Name</th>
+						<th>Contact Number</th>	
+						<th>Interviewer ID</th>
+						<th>Interviewer Name</th>
+						<th>Type of interview</th> 
+						<th>Location</th>	
+						<th>Round of interview</th>
+						<th>Action</th>
+					
+					
+					
+                     
+                    
+                   
+				</tr>
+				<tr>
+					    <td>03-Mar-2025</td>
+						<td>12 PM - 1 PM</td>
+						<td>S1001</td>
+						<td>Java Developer</td>
+						<td>Aarushi Dixit</td>
+						<td>2135468790</td>
+						<td>ID1132</td>
+						<td>Sunil Menon</td>
+						<td>Telephonic </td>
+						<td>Telephonic bridge</td>
+						<td>1</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>
+				<tr class="even">
+					<td>03-Mar-2025</td>
+						<td>3 PM - 4 PM</td>
+						<td>S1003</td>
+						<td>Web Developer</td>
+						<td>Aditya Jayaraman </td>
+						<td>8956548754</td>
+						<td>ID1112</td>
+						<td>Aditya Singh</td>
+						<td>Face to face</td>
+						<td>Conference Room</td>
+						<td>2</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>
+								<tr>
+					<td>03-Mar-2025</td>
+						<td>3 PM - 4 PM</td>
+						<td>S1001</td>
+						<td>Java Developer</td>
+						<td>Deepak Patel</td>
+						<td>2321545689</td>
+						<td>ID1105</td> 
+						<td>Brian Anderson</td>
+						<td>Face to face</td>
+						<td>Conference Room</td>
+						<td>3</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i> </a>
+					</td>
+				</tr>
+				<tr class="even">
+					<td>04-Mar-2025</td>
+						<td>12 PM - 1 PM</td>
+						<td>S1003</td>
+						<td>Web Developer</td>
+						<td>Nikhil Bose</td>
+						<td>5468791320</td>
+						<td>ID1132</td>
+						<td>Sunil Menon</td>
+						<td>Web</td>
+						<td>Conference Room</td>
+						<td>2</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+                    </tr>
+                    <tr class="even">
+					<td>05-Mar-2025</td>
+						<td>3 PM - 4 PM</td>
+						<td>S1001</td>
+						<td>Java Developer</td>
+						<td>Sneha Iyer</td>
+						<td>4560879213</td>
+						<td>ID1105</td>
+						<td>Brian Anderson</td>
+						<td>Face to face</td>
+						<td>Conference Room</td>
+						<td>1</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+                    </tr>
+                    <tr class="even">
+					<td>06-Mar-2025</td>
+						<td>3 PM - 4 PM</td>
+						<td>S1002</td>
+						<td>Oracle Developer</td>
+						<td>Shekhar Pathak</td>
+						<td>2189875654</td>
+						<td>ID1105</td>
+						<td>Brian Anderson</td>
+						<td>Telephonic</td>
+						<td>Telephonic bridge</td>
+						<td>1</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+                    </tr>
+                    <tr class="even">
+					<td>06-Mar-2025</td>
+						<td>4 PM - 5 PM</td>
+						<td>S1003</td>
+						<td>Web Developer</td>
+						<td>Rishabh Sharma</td>
+						<td>8789562354</td>
+						<td>ID1132</td>
+						<td>Sunil Menon</td>
+						<td>Web</td>
+						<td>Conference Room</td>
+						<td>1</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+                    </tr>
+                    <tr class="even">
+					<td>07-Mar-2025</td>
+						<td>3 PM - 4 PM</td>
+						<td>S1004</td>
+						<td>Project Manager</td>
+						<td>Radhika Pandey</td>
+						<td>2138795190</td>
+						<td>ID1132</td>
+						<td>Sunil Menon</td>
+						<td>Telephonic</td>
+						<td>Telephonic bridge</td>
+						<td>3</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+                    </tr>
+                    <tr class="even">
+					<td>07-Mar-2025</td>
+						<td>12 PM - 1 PM</td>
+						<td>S1002</td>
+						<td>Oracle Developer</td>
+						<td>Khushi Mittal</td>
+						<td>3256541202</td>
+						<td>ID1105</td>
+						<td>Brian Anderson</td>
+						<td>Web</td>
+						<td>Conference Room</td>
+						<td>1</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+                    </tr>
+				
+				
+			
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              </div>
+          <div class="mt-4 d-flex justify-content-end">
+           <nav>
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+
+    <li class="page-item active">
+      <a class="page-link" href="#">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">3</a>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+         </div>
+          </div>
+          </div>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
@@ -1538,93 +1736,31 @@
     <script src="../../assets/js/select2.js"></script>
     <!-- End custom js for this page -->
 
-    <script type="text/javascript">
-      $(function () {
-        $(".formView").click(function () {
-          $(".formBlock").show();
-          $(".gridBlock").hide();
-          $(".formBlockTable").hide();
-          $(".saveButton").hide();
-          $(".formButton").hide();
-          $(".calculate").show();
-        });
+ <script type="text/javascript"> 
 
-        $(".girdView").click(function () {
-          $(".gridBlock").show();
-          $(".calculate").hide();
-          $(".formBlock").hide();
-          $(".formBlockTable").hide();
-          $(".saveButton").show();
-          $(".addLink").show();
-          $(".buttonSet").hide();
-          $(".formButton").show();
-        });
-
-        $(".addLink").click(function () {
-          $(".gridBlock").show();
-          $(".calculate").hide();
-          $(".formBlockTable").show();
-          $(".saveButton").show();
-          $(".addLink").hide();
-          $(".buttonSet").show();
-        });
-
-        $(".backButton").click(function () {
-          $(".formView").trigger("click");
-        });
-        $(".formView").trigger("click");
-      });
-      function enableChangesCriteria() {
-        $(".criteriaChanged").find("select").removeAttr("disabled").select2();
-      }
-    </script>
-    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-    <script
-      src="js/multiDropdown.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    <script type="text/javascript"> 
-	$(function()
-	{
-		$(".criteriaChanged").find("select").attr("disabled","disabled");			
-		$(".searchCandidateForm").hide();
-		
-		$(".addNewShortList").click(function()
-	  {
-		
-		$(".searchListForm").hide();
-		$(".addNewShortList").hide();
-		$(".shortListCandidate").hide();
-		$(".searchCandidateForm").show();
-		
-	  });
-	  
-	  
-	 
-	  
-	  
-	  $(".searchSave").click(function()
-	  {
-		
-		$(".searchListForm").show();
-		$(".addNewShortList").show();
-		$(".shortListCandidate").show();
-		
-		
-	  });
-	 
-	  
-		
+$(function(){
+             // $(".menudropdown").prop('selectedIndex','3');
+			  
+			  $("#from_Date").datepicker({
+	            changeMonth:true,
+				changeYear:true,
+				dateFormat : 'dd-M-yy',
+				yearRange: '-70 :c'
+			});	
+			
+	$("#to_Date").datepicker({
+				changeMonth:true,
+				changeYear:true,
+				dateFormat : 'dd-M-yy',
+				yearRange: '-70 :c'
+			});	
+		 $(".content").mCustomScrollbar();
 	});
 	
-	 function enableChangesCriteria()
-	  {
-		
-			$(".criteriaChanged").find("select").removeAttr("disabled").select2();		
-	  }
-	
 </script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/reportsFilter.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/multiDropdown.js" type="text/javascript" charset="utf-8"></script>
+
   </body>
 </html>

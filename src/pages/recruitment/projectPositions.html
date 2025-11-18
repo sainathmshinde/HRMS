@@ -83,7 +83,7 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search projects"
+                  placeholder="Search employee"
                 />
               </div>
             </form>
@@ -901,6 +901,62 @@
                       Feedback
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/pendingTrainingRequest.html"
+                    >
+                      Pending Training Request
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/trainersAcrossOrganization.html"
+                    >
+                      Training Across Organization
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/trainingTrend.html"
+                    >
+                      Training Trend
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/totalScheduledTraining.html"
+                    >
+                      Total Scheduled Training
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/softSkillsTechnical.html"
+                    >
+                      Soft Skills vs Technical
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/participants.html"
+                    >
+                      Participants
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/trainersRating.html"
+                    >
+                      Trainer's Rating
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -1067,6 +1123,78 @@
                       href="../../pages/recruitment/projectResourceAllocation.html"
                     >
                       Project Resource Allocation
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/openPosition.html"
+                    >
+                      Open Positions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/srfAbove90.html"
+                    >
+                      SRF Above 90 Days
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/buWisePosition.html"
+                    >
+                      BU Wise Positions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/resumeAvailable.html"
+                    >
+                      Resume Available
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/interviewScheduled.html"
+                    >
+                      Interview Scheduled
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/projectResource.html"
+                    >
+                      Project Resources
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/projectPositions.html"
+                    >
+                      Project Positions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/projectCost.html"
+                    >
+                      Project Cost
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/resourceProjects.html"
+                    >
+                      Resource Projects
                     </a>
                   </li>
                 </ul>
@@ -1269,248 +1397,824 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title">Qualify Candidates</h3>
+            <div class="page-header mt-2">
+              <h3 class="page-title">Project Positions</h3>
             </div>
+            <div class="row g-2 formViewTable">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="percentage">From Date</label>
 
-            <div class="col-12 grid-margin stretch-card">
-              <div class="card">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="percentage"
+                    value="2025-09-10"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="percentage">To Date</label>
+
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="percentage"
+                    value="2025-10-10"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex justify-content-between align-items-center mb-2 p-2 border bg-light"
+            >
+              <div>
+                <strong>Allocated Resources:</strong> 18|
+                <strong>Open Positions:</strong> 21
+              </div>
+
+              <div>
+                <button class="btn btn-gradient-primary btn-sm ms-3">Go</button>
+                <button class="btn btn-outline-secondary btn-sm me-2">
+                  CSV
+                </button>
+                <button class="btn btn-outline-secondary btn-sm">Print</button>
+              </div>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card" style="overflow-x: auto; width: 100%">
                 <div class="card-body">
-                  <form class="forms-sample">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="financialYear">SRF</label>
-                          <span class="text-danger">*</span>
-                          <select
-                            class="form-select"
-                            id="financialYear"
-                            required
-                          >
-                            <option value="Select">Select</option>
-                            <option value="1">Desk Officer</option>
-                            <option value="2">Block Coordinator</option>
-                            <option value="3">Assistant - IT</option>
-                            <option value="4">Accountant</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          
-                          <label for="financialYear"
-                            >Change Eligibility Criteria</label
-                          >
-
-                          <input
-                            type="radio"
-                            name="Feedback_9"
-                            style="margin-left: 20px"
-                            onclick="enableChangesCriteria()"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="criteriaChanged" id="criteriaID">
-              <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <form class="forms-sample">
-                      <div class="row">
-                        <!-- Component Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label
-                              >Age <span class="text-danger">*</span></label
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th style="padding: 0; width: 150px">
+                          <div class="dropdown">
+                            <!-- Header Button -->
+                            <button
+                              class="btn btn-sm dropdown-toggle w-100 text-start"
+                              type="button"
+                              data-bs-toggle="dropdown"
                             >
+                              Project
+                            </button>
 
-                            <div class="d-flex gap-2">
-                              <label class="small mb-1">Min</label>
-                              <select class="form-select" required>
-                                <option value="2" selected>18</option>
-                                <option value="3">19</option>
-                                <option value="4">20</option>
-                                <option value="5">21</option>
-                                <option value="6">22</option>
-                                <option value="7">23</option>
-                                <option value="8">24</option>
-                                <option value="9">25</option>
-                                <option value="10">26</option>
-                                <option value="11">27</option>
-                                <option value="12">28</option>
-                                <option value="13">29</option>
-                                <option value="14">30</option>
-                                <option value="15">31</option>
-                                <option value="16">32</option>
-                                <option value="9999">33</option>
-                              </select>
+                            <!-- Dropdown Menu -->
+                            <div
+                              class="dropdown-menu"
+                              style="
+                                width: 240px;
+                                max-height: 250px;
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                                padding-left: 40px;
+                              "
+                            >
+                              <!-- Select All -->
+                              <div class="form-check mb-1">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="designationAll"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="designationAll"
+                                  >Select All</label
+                                >
+                              </div>
 
-                              <label class="small mb-1">Max</label>
-                              <select class="form-select" required>
-                                <option value="2" selected>18</option>
-                                <option value="3">19</option>
-                                <option value="4">20</option>
-                                <option value="5">21</option>
-                                <option value="6">22</option>
-                                <option value="7">23</option>
-                                <option value="8">24</option>
-                                <option value="9">25</option>
-                                <option value="10">26</option>
-                                <option value="11">27</option>
-                                <option value="12">28</option>
-                                <option value="13">29</option>
-                                <option value="14">30</option>
-                                <option value="15">31</option>
-                                <option value="16">32</option>
-                                <option value="9999">33</option>
-                              </select>
+                              <hr class="my-1" />
+
+                              <!-- Checkbox List -->
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des1"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des1"
+                                  >Manufacturing</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des2"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des2"
+                                  >Health services</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des3"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des3"
+                                  >Infrastructure</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des4"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des4"
+                                  >Insurance</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >Tele - communication</label
+                                >
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >Business intelligence</label
+                                >
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >Oracle services</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des6"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des6"
+                                  >Consulting</label
+                                >
+                              </div>
                             </div>
                           </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label
-                              >Experience
-                              <span class="text-danger">*</span></label
+                        </th>
+                        <th>SRF Opening Date</th>
+                        <th>Positions open</th>
+                        <th>Positions closed</th>
+                        <th>No of CV's submitted</th>
+                        <th style="padding: 0; width: 150px">
+                          <div class="dropdown">
+                            <!-- Header Button -->
+                            <button
+                              class="btn btn-sm dropdown-toggle w-100 text-start"
+                              type="button"
+                              data-bs-toggle="dropdown"
                             >
+                              Designation
+                            </button>
 
-                            <div class="d-flex gap-2">
-                              <label class="small mb-1">Min</label>
-                              <select class="form-select" required>
-                                <option selected>0</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                              </select>
+                            <!-- Dropdown Menu -->
+                            <div
+                              class="dropdown-menu"
+                              style="
+                                width: 240px;
+                                max-height: 250px;
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                                padding-left: 40px;
+                              "
+                            >
+                              <!-- Select All -->
+                              <div class="form-check mb-1">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="designationAll"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="designationAll"
+                                  >Select All</label
+                                >
+                              </div>
 
-                              <label class="small mb-1">Max</label>
-                              <select class="form-select" required>
-                                <option>0</option>
-                                <option selected>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                              </select>
+                              <hr class="my-1" />
+
+                              <!-- Checkbox List -->
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des1"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des1"
+                                  >Developer</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des2"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des2"
+                                  >Designer</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des3"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des3"
+                                  >Accounts Officer</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des4"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des4"
+                                  >Project manager</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >Admin / Account Assistant</label
+                                >
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >HR</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des7"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des7"
+                                  >Blank</label
+                                >
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="componentType">Education</label>
+                        </th>
 
-                            <select
-                              class="form-select"
-                              id="componentType"
-                              required
+                        <th style="width: 10%; padding: 0">
+                          <div class="dropdown">
+                            <!-- Header / Button -->
+                            <button
+                              class="btn btn-sm dropdown-toggle w-100 text-start"
+                              type="button"
+                              id="departmentDropdown"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
                             >
-                              <option value="Select">Select</option>
-                              <option value="1">Bachelor of Arts</option>
-                              <option value="2">
-                                Bachelor of Law [B.A,L.L.B]
-                              </option>
-                              <option value="2">
-                                Bachelor of Architecture [B.Arch]
-                              </option>
-                              <option value="2">
-                                Bachelor of Commerce [B.COM]
-                              </option>
-                              <option value="2">
-                                Bachelor of Computer Science [B.C.S]
-                              </option>
-                              <option value="2">
-                                Bachelor of Business Studies [B.B.S]
-                              </option>
-                            </select>
+                              Department
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <div
+                              class="dropdown-menu"
+                              style="
+                                width: 240px;
+                                max-height: 250px;
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                                padding-left: 40px;
+                              "
+                            >
+                              <!-- Select All -->
+                              <div class="form-check mb-2">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="selectAll"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="selectAll"
+                                  style="margin-left: 2px"
+                                >
+                                  Select All
+                                </label>
+                              </div>
+
+                              <div class="dropdown-divider"></div>
+
+                              <!-- Individual Checkboxes -->
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="deptSales"
+                                  checked
+                                />
+                                <label class="form-check-label" for="deptSales"
+                                  >Sales</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="deptIT"
+                                  checked
+                                />
+                                <label class="form-check-label" for="deptIT"
+                                  >IT</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="deptAccounts"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="deptAccounts"
+                                  >Accounts</label
+                                >
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="deptAccounts"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="deptAccounts"
+                                  >Sales</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="deptHR"
+                                  checked
+                                />
+                                <label class="form-check-label" for="deptHR"
+                                  >HR</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="deptProduction"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="deptProduction"
+                                  >Production</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="deptRnD"
+                                  checked
+                                />
+                                <label class="form-check-label" for="deptRnD"
+                                  >Research and Development</label
+                                >
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div class="text-end">
+                        </th>
+
+                        <th style="padding-left: 0; padding-right: 0">
+                          <div class="dropdown">
+                            <!-- Header / Button -->
+                            <button
+                              class="btn btn-sm dropdown-toggle w-100 text-start"
+                              type="button"
+                              id="locationDropdown"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Location
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <div
+                              class="dropdown-menu"
+                              style="
+                                width: 240px;
+                                max-height: 250px;
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                                padding-left: 40px;
+                              "
+                            >
+                              <!-- Select All -->
+                              <div class="form-check mb-2">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="selectAllLocation"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="selectAllLocation"
+                                  >Select All</label
+                                >
+                              </div>
+
+                              <div class="dropdown-divider"></div>
+
+                              <!-- Individual Checkboxes -->
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locPune"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locPune"
+                                  >Pune</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locMumbai"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locMumbai"
+                                  >Mumbai</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locBanglore"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="locBanglore"
+                                  >Banglore</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locNagpur"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locNagpur"
+                                  >Nagpur</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locDelhi"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locDelhi"
+                                  >Delhi</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locGujrat"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locGujrat"
+                                  >Gujrat</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locKerala"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locKerala"
+                                  >Kerala</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locAndhra"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locAndhra"
+                                  >Andhra Pradesh</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locBlank"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locBlank"
+                                  >Blank</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+
+                        <th>Onboarding Date</th>
+                        <th>Ageing</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Manufacturing</td>
+                        <td>05-Jan-25</td>
+                        <td>5</td>
+                        <td>10</td>
+                        <td>33</td>
+                        <td>Project manager</td>
+                        <td>IT</td>
+
+                        <td>Pune</td>
+                        <td>15-Mar-25</td>
+                        <td>70</td>
+                        <td>Open</td>
+
+                        <td>
                           <a
-                            type="button"
-                            class="btn btn-gradient-primary me-4"
+                            href="javascript:void(0);"
+                            class="projectEdit assignSchedule AssesmentLink1 view-img"
                           >
-                            Search
-                          </a>
-                        </div>
-                      </div>
-
-                      <!-- Buttons -->
-                    </form>
-                  </div>
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Health services</td>
+                        <td>05-Jan-25</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>12</td>
+                        <td>Project manager</td>
+                        <td>Sales</td>
+                        <td>Pune</td>
+                        <td>5-Feb-25</td>
+                        <td>55</td>
+                        <td>Open</td>
+                        <td>
+                          <a
+                            href="javascript:void(0);"
+                            class="projectEdit assignSchedule AssesmentLink1 view-img"
+                          >
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Infrastructure</td>
+                        <td>25-Jan-25</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>14</td>
+                        <td>Developer</td>
+                        <td>IT</td>
+                        <td>Pune</td>
+                        <td>25-Mar-25</td>
+                        <td>35</td>
+                        <td>Open</td>
+                        <td>
+                          <a
+                            href="javascript:void(0);"
+                            class="projectEdit assignSchedule AssesmentLink1 view-img"
+                          >
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Insurance</td>
+                        <td>01-Feb-25</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>25</td>
+                        <td>Developer</td>
+                        <td>IT</td>
+                        <td>Pune</td>
+                        <td>15-Mar-25</td>
+                        <td>30</td>
+                        <td>Open</td>
+                        <td>
+                          <a
+                            href="javascript:void(0);"
+                            class="projectEdit assignSchedule AssesmentLink1 view-img"
+                          >
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Tele - communication</td>
+                        <td>25-Jan-25</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>14</td>
+                        <td>Developer</td>
+                        <td>IT</td>
+                        <td>Pune</td>
+                        <td>25-Mar-25</td>
+                        <td>35</td>
+                        <td>Open</td>
+                        <td>
+                          <a
+                            href="javascript:void(0);"
+                            class="projectEdit assignSchedule AssesmentLink1 view-img"
+                          >
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Business intellegence</td>
+                        <td>01-Feb-25</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>25</td>
+                        <td>Developer</td>
+                        <td>IT</td>
+                        <td>Pune</td>
+                        <td>15-Mar-25</td>
+                        <td>30</td>
+                        <td>Open</td>
+                        <td>
+                          <a
+                            href="javascript:void(0);"
+                            class="projectEdit assignSchedule AssesmentLink1 view-img"
+                          >
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Oracle services</td>
+                        <td>25-Jan-25</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>14</td>
+                        <td>Designer</td>
+                        <td>IT</td>
+                        <td>Pune</td>
+                        <td>25-Mar-25</td>
+                        <td>35</td>
+                        <td>Open</td>
+                        <td>
+                          <a
+                            href="javascript:void(0);"
+                            class="projectEdit assignSchedule AssesmentLink1 view-img"
+                          >
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Consulting</td>
+                        <td>01-Feb-16</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>25</td>
+                        <td>Accounts officer</td>
+                        <td>IT</td>
+                        <td>Pune</td>
+                        <td>15-Mar-16</td>
+                        <td>30</td>
+                        <td>Open</td>
+                        <td>
+                          <a
+                            href="javascript:void(0);"
+                            class="projectEdit assignSchedule AssesmentLink1 view-img"
+                          >
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
-             <div class="col-lg-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <table class="table">
-                        
-                        <tbody>
-                         <tr>
-									
-					<td>
-						<label>Total eligible candidates</label>
-					</td>
-									
-					<td>
-						<label>3</label>
-					</td>
-					
-					<td>
-<a href=""
-                                >Eligible candidates report					</td>					
-				</tr>
-                          <tr>
-					
-					<td>
-						<label>Total not eligible candidates</label>
-					</td>
-					
-				
-					
-					<td>
-						<label>4 </label>
-					</td>
-					
-					<td>
-<a href=""
-                                >Not eligible candidates report					</td>					
-				</tr>
-                         
-                
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                 <div class="text-end mb-2">
-                  <a
-                    type="button"
-                    class="btn btn-gradient-primary me-4"
-                  >
-                    Qualify Candidates
-                  </a>
-                 
-                </div>
+            <div class="mt-4 d-flex justify-content-end">
+              <nav>
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
+
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
         <!-- main-panel ends -->
@@ -1540,91 +2244,34 @@
 
     <script type="text/javascript">
       $(function () {
-        $(".formView").click(function () {
-          $(".formBlock").show();
-          $(".gridBlock").hide();
-          $(".formBlockTable").hide();
-          $(".saveButton").hide();
-          $(".formButton").hide();
-          $(".calculate").show();
+        // $(".menudropdown").prop('selectedIndex','3');
+
+        $("#from_Date").datepicker({
+          changeMonth: true,
+          changeYear: true,
+          dateFormat: "dd-M-yy",
+          yearRange: "-70 :c",
         });
 
-        $(".girdView").click(function () {
-          $(".gridBlock").show();
-          $(".calculate").hide();
-          $(".formBlock").hide();
-          $(".formBlockTable").hide();
-          $(".saveButton").show();
-          $(".addLink").show();
-          $(".buttonSet").hide();
-          $(".formButton").show();
+        $("#to_Date").datepicker({
+          changeMonth: true,
+          changeYear: true,
+          dateFormat: "dd-M-yy",
+          yearRange: "-70 :c",
         });
-
-        $(".addLink").click(function () {
-          $(".gridBlock").show();
-          $(".calculate").hide();
-          $(".formBlockTable").show();
-          $(".saveButton").show();
-          $(".addLink").hide();
-          $(".buttonSet").show();
-        });
-
-        $(".backButton").click(function () {
-          $(".formView").trigger("click");
-        });
-        $(".formView").trigger("click");
+        $(".content").mCustomScrollbar();
       });
-      function enableChangesCriteria() {
-        $(".criteriaChanged").find("select").removeAttr("disabled").select2();
-      }
     </script>
     <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script
+      src="js/reportsFilter.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
     <script
       src="js/multiDropdown.js"
       type="text/javascript"
       charset="utf-8"
     ></script>
-    <script type="text/javascript"> 
-	$(function()
-	{
-		$(".criteriaChanged").find("select").attr("disabled","disabled");			
-		$(".searchCandidateForm").hide();
-		
-		$(".addNewShortList").click(function()
-	  {
-		
-		$(".searchListForm").hide();
-		$(".addNewShortList").hide();
-		$(".shortListCandidate").hide();
-		$(".searchCandidateForm").show();
-		
-	  });
-	  
-	  
-	 
-	  
-	  
-	  $(".searchSave").click(function()
-	  {
-		
-		$(".searchListForm").show();
-		$(".addNewShortList").show();
-		$(".shortListCandidate").show();
-		
-		
-	  });
-	 
-	  
-		
-	});
-	
-	 function enableChangesCriteria()
-	  {
-		
-			$(".criteriaChanged").find("select").removeAttr("disabled").select2();		
-	  }
-	
-</script>
   </body>
 </html>
