@@ -79,7 +79,7 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search employee"
+                  placeholder="Search projects"
                 />
               </div>
             </form>
@@ -98,7 +98,7 @@
                   <span class="availability-status online"></span>
                 </div>
                 <div class="nav-profile-text">
-                  <p class="mb-1 text-black">Andrew Baker</p>
+                  <p class="mb-1 text-black">David Greymaax</p>
                 </div>
               </a>
               <div
@@ -404,7 +404,7 @@
               </div>
             </li>
 
-       <li class="nav-item">
+              <li class="nav-item">
               <a
                 class="nav-link"
                 data-bs-toggle="collapse"
@@ -590,8 +590,7 @@
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
                     <a class="nav-link" href="pages/tables/basic-table.html"
-                      >Total leave balance for year 2025 as on (18-11-2025)
-Leave Type	</a
+                      >Basic table</a
                     >
                   </li>
                 </ul>
@@ -652,70 +651,282 @@ Leave Type	</a
           </ul>
         </nav>
         <!-- partial -->
-    <div class="main-panel">
-        <div class="content-wrapper">
+        <div class="main-panel">
+          <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Leave Configuration</h3>
-              <nav aria-label="breadcrumb">
-                <a href="addNewLeaveConfig.html" class="btn btn-gradient-primary me-2">Add New</a>
-              </nav>
+              <h3 class="page-title">Create Tour Plan</h3>
+              
             </div>
             <div class="row">
-                <div class="col-12 grid-margin stretch-card">
-                    <div class="card">
-                        <div class="card-body position-relative">
-                            <form class="forms-sample">
-                            <div class="row">
-                                <!-- Employee ID -->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="employeeId">Employee Type</label>
-                                        <!-- <span class="text-danger">*</span> -->
-                                        <select class="form-select" id="title" required>
-                                            <option value="Select">Select</option>
-                                            <option value="on_contract" selected>On Contract</option>
-                                            <option value="on_deputation">On Deputation</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Leave Type</th>
-                          <th>Year Type</th>
-                          <th>Annual Leave Quantity</th>
-                          <th>Min Leave to be applied</th>
-                          <th>Max Leave to be applied</th>
-                          <th>Action</th>
+             
+              <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <form class="forms-sample">
+                      <div class="row">
+                        <!-- Date of Birth -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="dob">From Date</label>
+                            <span class="text-danger">*</span>
+                            <input 
+                                type="date"
+                                class="form-control"
+                                id="fromDate"
+                                name="fromDate"
+                                value="dd-mm-yyyy"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="dob">To Date</label>
+                            <span class="text-danger">*</span>
+                            <input 
+                                type="date"
+                                class="form-control"
+                                id="toDate"
+                                name="toDate"
+                                value="dd-mm-yyyy"
+                            />
+                          </div>
+                        </div>
+                        <!-- Leave Reason -->
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="PurposeOfVisit">Purpose Of Visit</label>
+                            <span class="text-danger">*</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="PurposeOfVisit"
+                              placeholder="Travelling out of town for personal reason."
+                              rows="4"
+                            ></input>
+                          </div>
+                        </div>
 
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Casual Leave</td>
-                          <td>Financial Year</td>
-                          <td>8</td>
-                          <td>1</td>
-                          <td>7</td>
-                            <td>
-                            <a href="viewLeaveConfig.html" class="btn btn-gradient-primary me-2">Edit</a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Earned Leave</td>
-                          <td>Calendar Year</td>
-                          <td>20</td>
-                          <td>3</td>
-                          <td>10</td>
-                            <td>
-                            <a href="viewLeaveConfig.html" class="btn btn-gradient-primary me-2">Edit</a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                        <!-- Identification Document Number -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="travelFrom">Travel From</label>
+                            <!-- <span class="text-danger">*</span> -->
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="travelFrom"
+                              placeholder="Enter Your Starting Jouerney From"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="travelTo">Travel To</label>
+                            <!-- <span class="text-danger">*</span> -->
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="travelTo"
+                              placeholder="Enter Your Destination"
+                            />
+                          </div>
                         </div>
                       </div>
+                      <div class="row">
+                        <!-- Title -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="leaveType">Travel Booking By</label>
+                            <!-- <span class="text-danger">*</span> -->
+                            <select
+                              class="form-select"
+                              id="travelBookingBy"
+                              required
+                            >
+                              <option value="">Select</option>
+                              <option value="on_contract">Office</option>
+                              <option value="on_deputation">Self</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Leave Radio -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="openingBalance"
+                              >Leave
+                              <span class="text-danger">*</span></label
+                            >
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="addTour"
+                                  id="Intercity"
+                                  value="no"
+                                  
+                                />
+                                Intercity
+                              </label>
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="addTour"
+                                  id="Local"
+                                  value="no"
+                                />
+                                Local
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                       <div class="row">
+                        <!-- Title -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="leaveType">Mode Of Travel</label>
+                            <!-- <span class="text-danger">*</span> -->
+                            <select
+                              class="form-select"
+                              id="modeOfTravel"
+                              required
+                            >
+                              <option value="">Select</option>
+                              <option value="on_contract">Bus</option>
+                              <option value="on_deputation">Train</option>
+                              <option value="on_contract">Flight</option>
+                              <option value="on_deputation">Car</option>
+                              <option value="on_contract">Cab</option>
+                              <option value="on_deputation">Office Vehicle</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Leave Radio -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="travelTo">Others</label>
+                            <!-- <span class="text-danger">*</span> -->
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="others"
+                              placeholder="Enter Chossen Mode Of Travel"
+                            />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                        <!-- Title -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="leaveType">Accommodation Booking By</label>
+                            <!-- <span class="text-danger">*</span> -->
+                            <select
+                              class="form-select"
+                              id="accommodationBookingBy"
+                              required
+                            >
+                              <option value="">Select</option>
+                              <option value="on_contract">Office</option>
+                              <option value="on_deputation">Self</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Leave Radio -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="travelTo">No. Of Days Stay</label>
+                            <!-- <span class="text-danger">*</span> -->
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="noOfDaysStay"
+                              placeholder="Enter Number Of Days Stay"
+                            />
+                            </div>
+                          </div>
+                      </div>
+                       <div class="row">
+                        <!-- Title -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="leaveType">Accommodation Type</label>
+                            <!-- <span class="text-danger">*</span> -->
+                            <select
+                              class="form-select"
+                              id="accommodationType"
+                              required
+                            >
+                              <option value="">Select</option>
+                              <option value="on_contract">Hotel</option>
+                              <option value="on_deputation">Guest House</option>
+                              <option value="on_contract">Other</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Leave Radio -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="travelTo">Others</label>
+                            <!-- <span class="text-danger">*</span> -->
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="others"
+                              placeholder="Enter Chossen Accommodation Type"
+                            />
+                            </div>
+                          </div>
+                        </div>
+                      <div class="row">
+                        <!-- Father's / Husband's First Name -->
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="travelAndAccommodationInstruction">Travel And Accommodation Instruction</label>
+                            <span class="text-danger">*</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="travelAndAccommodationInstruction"
+                              placeholder="Add your travel and accommodation instructions here"
+                              rows="4"
+                            ></input>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <!-- Buttons -->
+                        <div class="text-end">
+                        <a href="./createTourPlan.html" class="btn btn-gradient-primary me-2">
+                            Save
+                        </a>
+                        <a href="./createTourPlan.html" class="btn btn-gradient-light">
+                            Cancel
+                        </a>
+                    </div>
                     </form>
                   </div>
                 </div>
@@ -731,7 +942,7 @@ Leave Type	</a
               <span
                 class="text-muted text-center text-sm-left d-block d-sm-inline-block"
                 >Copyright © 2023
-                <a href="https://syborgtech.com/" target="_blank"
+                <a href="https://www.syborgtech.com/" target="_blank"
                   >SyborgTech</a
                 >. All rights reserved.</span
               >
