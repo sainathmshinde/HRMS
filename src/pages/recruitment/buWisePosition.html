@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
-    <link
+     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
@@ -83,7 +83,7 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search projects"
+                  placeholder="Search employee"
                 />
               </div>
             </form>
@@ -295,7 +295,7 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+       <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <li class="nav-item">
               <a
@@ -901,6 +901,62 @@
                       Feedback
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/pendingTrainingRequest.html"
+                    >
+                      Pending Training Request
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/trainersAcrossOrganization.html"
+                    >
+                      Training Across Organization
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/trainingTrend.html"
+                    >
+                      Training Trend
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/totalScheduledTraining.html"
+                    >
+                      Total Scheduled Training
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/softSkillsTechnical.html"
+                    >
+                      Soft Skills vs Technical
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/participants.html"
+                    >
+                      Participants
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/trainersRating.html"
+                    >
+                      Trainer's Rating
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -1067,6 +1123,78 @@
                       href="../../pages/recruitment/projectResourceAllocation.html"
                     >
                       Project Resource Allocation
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/openPosition.html"
+                    >
+                      Open Positions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/srfAbove90.html"
+                    >
+                      SRF Above 90 Days
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/buWisePosition.html"
+                    >
+                      BU Wise Positions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/resumeAvailable.html"
+                    >
+                      Resume Available
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/interviewScheduled.html"
+                    >
+                      Interview Scheduled
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/projectResource.html"
+                    >
+                      Project Resources
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/projectPositions.html"
+                    >
+                      Project Positions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/projectCost.html"
+                    >
+                      Project Cost
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/resourceProjects.html"
+                    >
+                      Resource Projects
                     </a>
                   </li>
                 </ul>
@@ -1267,252 +1395,335 @@
           </ul>
         </nav>
         <!-- partial -->
-        <div class="main-panel">
+          <div class="main-panel">
           <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title">Qualify Candidates</h3>
+             <div class="page-header mt-2">
+              <h3 class="page-title ">BU Wise Positions</h3>
             </div>
-
-            <div class="col-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <form class="forms-sample">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="financialYear">SRF</label>
-                          <span class="text-danger">*</span>
-                          <select
-                            class="form-select"
-                            id="financialYear"
-                            required
-                          >
-                            <option value="Select">Select</option>
-                            <option value="1">Desk Officer</option>
-                            <option value="2">Block Coordinator</option>
-                            <option value="3">Assistant - IT</option>
-                            <option value="4">Accountant</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          
-                          <label for="financialYear"
-                            >Change Eligibility Criteria</label
-                          >
-
-                          <input
-                            type="radio"
-                            name="Feedback_9"
-                            style="margin-left: 20px"
-                            onclick="enableChangesCriteria()"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="criteriaChanged" id="criteriaID">
-              <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <form class="forms-sample">
-                      <div class="row">
-                        <!-- Component Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label
-                              >Age <span class="text-danger">*</span></label
-                            >
-
-                            <div class="d-flex gap-2">
-                              <label class="small mb-1">Min</label>
-                              <select class="form-select" required>
-                                <option value="2" selected>18</option>
-                                <option value="3">19</option>
-                                <option value="4">20</option>
-                                <option value="5">21</option>
-                                <option value="6">22</option>
-                                <option value="7">23</option>
-                                <option value="8">24</option>
-                                <option value="9">25</option>
-                                <option value="10">26</option>
-                                <option value="11">27</option>
-                                <option value="12">28</option>
-                                <option value="13">29</option>
-                                <option value="14">30</option>
-                                <option value="15">31</option>
-                                <option value="16">32</option>
-                                <option value="9999">33</option>
-                              </select>
-
-                              <label class="small mb-1">Max</label>
-                              <select class="form-select" required>
-                                <option value="2" selected>18</option>
-                                <option value="3">19</option>
-                                <option value="4">20</option>
-                                <option value="5">21</option>
-                                <option value="6">22</option>
-                                <option value="7">23</option>
-                                <option value="8">24</option>
-                                <option value="9">25</option>
-                                <option value="10">26</option>
-                                <option value="11">27</option>
-                                <option value="12">28</option>
-                                <option value="13">29</option>
-                                <option value="14">30</option>
-                                <option value="15">31</option>
-                                <option value="16">32</option>
-                                <option value="9999">33</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label
-                              >Experience
-                              <span class="text-danger">*</span></label
-                            >
-
-                            <div class="d-flex gap-2">
-                              <label class="small mb-1">Min</label>
-                              <select class="form-select" required>
-                                <option selected>0</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                              </select>
-
-                              <label class="small mb-1">Max</label>
-                              <select class="form-select" required>
-                                <option>0</option>
-                                <option selected>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="componentType">Education</label>
-
-                            <select
-                              class="form-select"
-                              id="componentType"
-                              required
-                            >
-                              <option value="Select">Select</option>
-                              <option value="1">Bachelor of Arts</option>
-                              <option value="2">
-                                Bachelor of Law [B.A,L.L.B]
-                              </option>
-                              <option value="2">
-                                Bachelor of Architecture [B.Arch]
-                              </option>
-                              <option value="2">
-                                Bachelor of Commerce [B.COM]
-                              </option>
-                              <option value="2">
-                                Bachelor of Computer Science [B.C.S]
-                              </option>
-                              <option value="2">
-                                Bachelor of Business Studies [B.B.S]
-                              </option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="text-end">
-                          <a
-                            type="button"
-                            class="btn btn-gradient-primary me-4"
-                          >
-                            Search
-                          </a>
-                        </div>
-                      </div>
-
-                      <!-- Buttons -->
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-             <div class="col-lg-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <table class="table">
-                        
-                        <tbody>
-                         <tr>
+                   <div class="col-12 grid-margin stretch-card">
+  <div class="card">
+    <div class="card-body">
+      <form class="forms-sample">
+        <div class="row">
+          <!-- Designation -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="designation">SRF ID - Name</label>
+              <select class="form-select form-select-sm" id="designation" required>
+									<option selected>All</option>
 									
-					<td>
-						<label>Total eligible candidates</label>
-					</td>
-									
-					<td>
-						<label>3</label>
-					</td>
-					
-					<td>
-<a href=""
-                                >Eligible candidates report					</td>					
-				</tr>
-                          <tr>
-					
-					<td>
-						<label>Total not eligible candidates</label>
-					</td>
-					
-				
-					
-					<td>
-						<label>4 </label>
-					</td>
-					
-					<td>
-<a href=""
-                                >Not eligible candidates report					</td>					
-				</tr>
-                         
-                
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                 <div class="text-end mb-2">
-                  <a
-                    type="button"
-                    class="btn btn-gradient-primary me-4"
-                  >
-                    Qualify Candidates
-                  </a>
-                 
-                </div>
+              </select>
+            </div>
+          </div>
+
+          <!-- Department -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="department">Department</label>
+              <select class="form-select form-select-sm" id="department" required>
+                 <option>Not required</option>
+									<option selected>All</option>
+									<option>Accounts</option>
+									<option >Sales</option>
+									<option>IT</option>
+									<option>HR</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="location">Location</label>
+              <select class="form-select form-select-sm" id="location" required>
+                                   <option>Not required</option>
+									<option>All</option>
+									<option selected>Pune</option>
+									<option>Mumbai</option>
+									<option>Nagpur</option>
+									<option>Aurangabad</option>
+              </select>
+            </div>
           </div>
         </div>
+        <div class="row">
+          <!-- Designation -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="designation">Designation</label>
+              <select class="form-select form-select-sm" id="designation" required>
+                <option>Not required</option>
+										<option>Not Required</option>
+									<option selected>All</option>
+									<option>Accounts Officer</option>
+									<option>Senior Accounts Officer</option>
+									<option>Admin / Account Assistant</option>
+									<option>Project Manager</option>
+									<option>Developer</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Department -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="department">Ageing (days)</label>
+              <select class="form-select form-select-sm" id="department" required>
+                                   <option>Not required</option>
+									<option selected >All</option>
+									<option >0 - 10</option>
+									<option>10 - 20</option>
+									<option>21 - 30</option>
+									<option>31 - 40</option>
+									<option>41 - 50</option>
+									<option>51 - 60</option>
+									<option>61 - 70</option>
+									<option>71 - 80</option>
+									<option>81 - 90</option>
+									<option >91 and above</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="location">Status</label>
+              <select class="form-select form-select-sm" id="location" required>
+                                    <option>Not required</option>
+									<option selected>All</option>
+									<option >Open</option>
+									
+									<option>Closed</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Status -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="status">Business unit</label>
+              <select class="form-select form-select-sm" id="status" required>
+                               <option>Not required</option>
+									<option >All</option>
+									<option >Manufacturing</option>
+									<option>Health Services</option>
+									<option>Infrastructure</option>
+								    <option >Insurance</option>
+									<option>Tele-Communication</option>
+									<option>Business intelligence</option>
+								    <option selected >Oracle services</option>
+									<option>Consulting</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- From Date -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="fromDate">From Date</label>
+              <input type="text" class="form-control" id="fromDate" placeholder="1-May-2024" required/>
+            </div>
+          </div>
+
+          <!-- To Date -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="toDate">To Date</label>
+              <input type="text" class="form-control" id="toDate" placeholder="30-Apr-2025" required/>
+            </div>
+          </div>
+        </div>
+      </form>
+       <div class="text-end">
+             <button class="btn btn-gradient-primary btn-sm ms-3">Go</button>
+        </div>
+    </div>
+  </div>
+</div>
+   
+ 
+<div
+              class="d-flex justify-content-between align-items-center mb-2 p-2 border bg-light"
+            >
+              <div>
+                <strong>Count:</strong> 4 |
+                <strong>SRF:</strong> 4 |
+                <strong> Open Positions:</strong> 33
+              </div>
+
+              <div>
+                <button class="btn btn-gradient-primary btn-sm ms-3">Go</button>
+                <button class="btn btn-outline-secondary btn-sm me-2">
+                  CSV
+                </button>
+                <button class="btn btn-outline-secondary btn-sm">Print</button>
+              </div>
+            </div>
+              <div class="mt-4">
+                <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card" style="overflow-x: auto; width: 100%">
+                  <div class="card-body">
+                    <table class="table">
+                      <thead>
+                      <tr class="head">
+					<th>
+						<label>SRF ID</label>
+					</th>
+					<th>
+						<label>SRF Name</label>
+					</th>
+					<th  style="padding-right:0px;">
+						SRF Opening Date<span class="downArrowHead">&#x25bc;</span>
+					</th>
+					<th>
+						Positions Open
+					</th>
+					
+					<th>
+						Positions Closed
+					</th>
+					
+					<th>
+						No of CV's submitted
+					</th>
+                    <th>
+						Designation
+					</th>
+                    <th>
+						Department
+					</th>
+                     <th>
+						Business Unit
+					</th>
+                     <th>
+						Location
+					</th>
+                    <th>
+						Onboarding Date
+					</th>
+                    
+                    <th>
+						Status
+					</th>
+                   
+					<th>
+						<label>Action</label>
+					</th>
+				</tr>
+				<tr>
+					    <td>S1002</td>
+					<td>Oracle developer</td> 
+					<td>05-Jan-25</td>	
+					<td>5</td>
+					<td>10</td>
+					<td>33</td>	
+					<td>Oracle developer</td>
+					<td>IT</td>
+					<td>Oracle Services</td>
+					<td>Pune</td>
+					<td>15-Mar-25</td>
+					<td>70</td>
+					<td>Open</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>
+				<tr class="even">
+					<td>S1004</td>
+					<td>Project manager</td> 
+					<td>05-Jan-25</td>	
+					<td>1</td>
+					<td>2</td>
+					<td>12</td>	
+					<td>Project manager</td>
+					<td>Sales</td>
+					<td>Oracle Services</td>
+					<td>Pune</td>
+					<td>5-Feb-25</td>
+					<td>55</td>
+					<td>Open</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>
+								<tr>
+					<td>S1008</td>
+					<td>Senior oracle developer</td> 
+					<td>25-Jan-25</td>	
+					<td>3</td>
+					<td>1</td>
+					<td>14</td>	
+					<td>Oracle developer</td>
+					<td>IT</td>
+					<td>Oracle services</td>
+					<td>Pune</td>
+					<td>25-Mar-25</td>
+					<td>35</td>
+					<td>Open</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i> </a>
+					</td>
+				</tr>
+				<tr class="even">
+					<td>S1009</td>
+					<td>Oracle developer</td> 
+					<td>01-Feb-25</td>	
+					<td>2</td>
+					<td>1</td>
+					<td>25</td>	
+					<td>Oracle Developer</td>
+					<td>IT</td>
+					<td>Oracle services</td>
+					<td>Pune</td>
+					<td>15-Mar-25</td>
+					<td>30</td>
+					<td>Open</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				
+				
+			
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              </div>
+          <div class="mt-4 d-flex justify-content-end">
+           <nav>
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+
+    <li class="page-item active">
+      <a class="page-link" href="#">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">3</a>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+         </div>
+          </div>
+          </div>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
@@ -1538,93 +1749,31 @@
     <script src="../../assets/js/select2.js"></script>
     <!-- End custom js for this page -->
 
-    <script type="text/javascript">
-      $(function () {
-        $(".formView").click(function () {
-          $(".formBlock").show();
-          $(".gridBlock").hide();
-          $(".formBlockTable").hide();
-          $(".saveButton").hide();
-          $(".formButton").hide();
-          $(".calculate").show();
-        });
+ <script type="text/javascript"> 
 
-        $(".girdView").click(function () {
-          $(".gridBlock").show();
-          $(".calculate").hide();
-          $(".formBlock").hide();
-          $(".formBlockTable").hide();
-          $(".saveButton").show();
-          $(".addLink").show();
-          $(".buttonSet").hide();
-          $(".formButton").show();
-        });
-
-        $(".addLink").click(function () {
-          $(".gridBlock").show();
-          $(".calculate").hide();
-          $(".formBlockTable").show();
-          $(".saveButton").show();
-          $(".addLink").hide();
-          $(".buttonSet").show();
-        });
-
-        $(".backButton").click(function () {
-          $(".formView").trigger("click");
-        });
-        $(".formView").trigger("click");
-      });
-      function enableChangesCriteria() {
-        $(".criteriaChanged").find("select").removeAttr("disabled").select2();
-      }
-    </script>
-    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-    <script
-      src="js/multiDropdown.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    <script type="text/javascript"> 
-	$(function()
-	{
-		$(".criteriaChanged").find("select").attr("disabled","disabled");			
-		$(".searchCandidateForm").hide();
-		
-		$(".addNewShortList").click(function()
-	  {
-		
-		$(".searchListForm").hide();
-		$(".addNewShortList").hide();
-		$(".shortListCandidate").hide();
-		$(".searchCandidateForm").show();
-		
-	  });
-	  
-	  
-	 
-	  
-	  
-	  $(".searchSave").click(function()
-	  {
-		
-		$(".searchListForm").show();
-		$(".addNewShortList").show();
-		$(".shortListCandidate").show();
-		
-		
-	  });
-	 
-	  
-		
+$(function(){
+             // $(".menudropdown").prop('selectedIndex','3');
+			  
+			  $("#from_Date").datepicker({
+	            changeMonth:true,
+				changeYear:true,
+				dateFormat : 'dd-M-yy',
+				yearRange: '-70 :c'
+			});	
+			
+	$("#to_Date").datepicker({
+				changeMonth:true,
+				changeYear:true,
+				dateFormat : 'dd-M-yy',
+				yearRange: '-70 :c'
+			});	
+		 $(".content").mCustomScrollbar();
 	});
 	
-	 function enableChangesCriteria()
-	  {
-		
-			$(".criteriaChanged").find("select").removeAttr("disabled").select2();		
-	  }
-	
 </script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/reportsFilter.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/multiDropdown.js" type="text/javascript" charset="utf-8"></script>
+
   </body>
 </html>
