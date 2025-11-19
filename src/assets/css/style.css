@@ -18564,6 +18564,7 @@ fieldset:disabled .ajax-upload-dragdrop .ajax-file-upload,
   border-top-left-radius: var(--bs-border-radius-pill) !important;
 }
 
+
 .visible {
   visibility: visible !important;
 }

@@ -11,60 +11,57 @@
     <!-- plugins:css -->
     <link
       rel="stylesheet"
-      href="assets/vendors/mdi/css/materialdesignicons.min.css"
+      href="../../assets/vendors/mdi/css/materialdesignicons.min.css"
     />
     <link
       rel="stylesheet"
-      href="assets/vendors/ti-icons/css/themify-icons.css"
+      href="../../assets/vendors/ti-icons/css/themify-icons.css"
     />
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
     <link
       rel="stylesheet"
-      href="assets/vendors/font-awesome/css/font-awesome.min.css"
+      href="../../assets/vendors/css/vendor.bundle.base.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/font-awesome/css/font-awesome.min.css"
     />
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <link
       rel="stylesheet"
-      href="assets/vendors/font-awesome/css/font-awesome.min.css"
+      href="../../assets/vendors/select2/select2.min.css"
     />
     <link
       rel="stylesheet"
-      href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css"
+      href="../../assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css"
     />
+   
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-
+    <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
   </head>
   <body>
     <div class="container-scroller">
-      <!-- partial:partials/_navbar.html -->
+      <!-- partial:../../partials/_navbar.html -->
       <nav
         class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
       >
         <div
-          class="navbar-brand-wrapper d-flex align-items-center justify-content-start"
+          class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start"
         >
-          <a class="navbar-brand brand-logo" href="index.html">
-            <img
-              src="assets/images/HUMANOVA (1).svg"
-              alt="logo"
-              style="
-                width: 200px;
-                height: auto;
-                margin-left: 5px;
-                display: block;
-              "
-            />
+          <!-- <a class="navbar-brand brand-logo" href="../../index.html"
+            ><img src="../../assets/images/logo.svg" alt="logo"
+          /></a>
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"
+            ><img src="../../assets/images/logo-mini.svg" alt="logo"
+          /></a> -->
+          <a class="navbar-brand brand-logo" href=".././../index.html">
+            <img src="/src/assets/images/syborg-tech 1.svg" alt="logo" />
           </a>
-          <!-- <a class="navbar-brand brand-logo-mini" href="index.html"></a>
-            <img src="assets/images/logo-mini.svg" alt="logo" />
-          </a> -->
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <button
@@ -83,7 +80,7 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search employee"
+                  placeholder="Search projects"
                 />
               </div>
             </form>
@@ -98,11 +95,11 @@
                 aria-expanded="false"
               >
                 <div class="nav-profile-img">
-                  <img src="assets/images/faces/face1.jpg" alt="image" />
+                  <img src="../../assets/images/faces/face1.jpg" alt="image" />
                   <span class="availability-status online"></span>
                 </div>
                 <div class="nav-profile-text">
-                  <p class="mb-1 text-black">Andrew Baker</p>
+                  <p class="mb-1 text-black">David Greymaax</p>
                 </div>
               </a>
               <div
@@ -143,7 +140,7 @@
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <img
-                      src="assets/images/faces/face4.jpg"
+                      src="../../assets/images/faces/face4.jpg"
                       alt="image"
                       class="profile-pic"
                     />
@@ -163,7 +160,7 @@
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <img
-                      src="assets/images/faces/face2.jpg"
+                      src="../../assets/images/faces/face2.jpg"
                       alt="image"
                       class="profile-pic"
                     />
@@ -183,7 +180,7 @@
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <img
-                      src="assets/images/faces/face3.jpg"
+                      src="../../assets/images/faces/face3.jpg"
                       alt="image"
                       class="profile-pic"
                     />
@@ -294,7 +291,7 @@
       </nav>
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
+        <!-- partial:../../partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <!-- <li class="nav-item nav-profile">
@@ -328,10 +325,7 @@
               <div class="collapse" id="employeeMenu">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/employee/dashboardEmployee.html"
-                    >
+                    <a class="nav-link" href="pages/employee/dashboard.html">
                       Dashboard
                     </a>
                   </li>
@@ -421,77 +415,71 @@
               >
                 <span class="menu-title">Leave</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-contacts menu-icon"></i>
+                <i class="mdi mdi-calendar-multiselect menu-icon"></i>
               </a>
               <div class="collapse" id="leave">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/dashboardLeave.html"
-                      >Dashboard</a
-                    >
+                    <a class="nav-link" href="pages/leave/dashboard.html">
+                      Dashboard
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/leave/leaveAccount.html">
+                      Leave Account
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/leave/applyLeave.html">
+                      Apply Leave
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/leave/appliedLeave.html">
+                      Applied Leave
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/leaves/leaveAccount.html"
-                      >Leave Account</a
+                      href="pages/leave/approvedForwardLeave.html"
                     >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/leaves/applyLeave.html"
-                      >Apply Leave</a
-                    >
+                      Approved / Forward Leave
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/leaves/appliedLeaves.html"
-                      >Applied Leaves</a
+                      href="pages/leave/subordinateLeavePlan.html"
                     >
+                      Subordinate Leave Plan
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/leave/holidayList.html">
+                      Holiday List
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/leaves/approvedLeave.html"
-                      >Approved Leaves</a
+                      href="pages/leave/leaveConfiguration.html"
                     >
+                      Leave Configuration
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/leave/leaveAdjustment.html">
+                      Leave Adjustment
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/leaves/subordinateLeavePlan.html"
-                      >Subordinate Leave Plan</a
+                      href="pages/leave/leaveBalanceLedger.html"
                     >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/holidaysList.html"
-                      >Holidays List</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/leaveConfig.html"
-                      >Leave Configuration</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/leaveAdjustment.html"
-                      >Leave Adjustment</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/leaveBalanceLedger.html"
-                      >Leave Balance Ledger</a
-                    >
+                      Leave Balance Ledger
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -526,7 +514,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendence/authorization.html"
+                      href="pages/attendance/attendanceAuthorization.html"
                     >
                       Attendance Authorization
                     </a>
@@ -534,7 +522,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendence/attendenceRegister.html"
+                      href="pages/attendance/attendanceRegister.html"
                     >
                       Attendance Register
                     </a>
@@ -542,7 +530,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src//pages/attendence/attendanceConfiguration.html"
+                      href="pages/attendance/attendanceConfiguration.html"
                     >
                       Attendance Configuration
                     </a>
@@ -575,64 +563,85 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/payroll/salaryTemplate.html"
+                      href="../../pages/payroll/salaryTemplate.html"
                     >
                       Salary Template
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/createSalary.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/createSalary.html"
+                    >
                       Create Salary
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/salaryRule.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/salaryRule.html"
+                    >
                       Salary Rule
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/pfPtRule.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/pfPtRule.html"
+                    >
                       PF PT Rule
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/payroll/taxDeductionRule.html"
+                      href="../../pages/payroll/taxDeductionRule.html"
                     >
                       Tax Deduction Rule
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/itrSlabs.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/itrSlabs.html"
+                    >
                       ITR Slabs
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/monthlySalary.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/monthlySalary.html"
+                    >
                       Monthly Salary
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/payroll/investmentDeclaration.html"
+                      href="../../pages/payroll/investmentDeclaration.html"
                     >
                       Investment Declaration
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/form16.html">
+                    <a class="nav-link" href="../../pages/payroll/form16.html">
                       Form 16
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/pfReturn.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/pfReturn.html"
+                    >
                       PF Return
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/ptReturn.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/ptReturn.html"
+                    >
                       PT Return
                     </a>
                   </li>
@@ -655,10 +664,7 @@
               <div class="collapse" id="performance" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/performance/dashboardPerformance.html"
-                    >
+                    <a class="nav-link" href="pages/performance/dashboard.html">
                       Dashboard
                     </a>
                   </li>
@@ -807,7 +813,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/training/dashboardTraining.html"
+                      href="../../pages/training/dashboard.html"
                     >
                       Dashboard
                     </a>
@@ -815,7 +821,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/manageRequest.html"
+                      href="../../pages/training/manageRequest.html"
                     >
                       Manage Request
                     </a>
@@ -823,20 +829,23 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/manageTraining.html"
+                      href="../../pages/training/manageTraining.html"
                     >
                       Manage Training
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/training/enrollment.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/enrollment.html"
+                    >
                       Enrollment
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/trainerMaster.html"
+                      href="../../pages/training/trainerMaster.html"
                     >
                       Trainer Master
                     </a>
@@ -844,68 +853,17 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/attendanceAndGrade.html"
+                      href="../../pages/training/attendanceAndGrade.html"
                     >
                       Attendance And Grade
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/training/feedback.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/feedback.html"
+                    >
                       Feedback
-                    </a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/training/pendingTrainingRequest.html"
-                    >
-                      Pending Training Request
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/training/trainersAcrossOrganization.html"
-                    >
-                      Trainers Across Organization
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/training/trainingTrend.html"
-                    >
-                      Training Trend
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/training/totalScheduledTraining.html"
-                    >
-                      Total Scheduled Training
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/training/softSkillsTechnical.html"
-                    >
-                      Soft Skills vs Technical
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/training/participants.html">
-                      Participants
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/training/trainersRating.html"
-                    >
-                      Trainer's Rating
                     </a>
                   </li>
                 </ul>
@@ -997,10 +955,7 @@
               <div class="collapse" id="recruitment" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/recruitment/dashboardRecruitment.html"
-                    >
+                    <a class="nav-link" href="pages/recruitment/dashboard.html">
                       Dashboard
                     </a>
                   </li>
@@ -1094,7 +1049,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/admin/adminLeaveConfiguration.html"
+                      href="pages/admin/leaveConfiguration.html"
                     >
                       Leave Configuration
                     </a>
@@ -1102,23 +1057,20 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/admin/adminAttendanceConfiguration.html"
+                      href="pages/admin/attendanceConfiguration.html"
                     >
                       Attendance Configuration
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/admin/createAdminKra.html"
-                    >
+                    <a class="nav-link" href="pages/admin/createKRA.html">
                       Create KRA
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/admin/allMastersScreens.html"
+                      href="pages/admin/allMastersScreens.html"
                     >
                       All Masters Screens
                     </a>
@@ -1132,6 +1084,143 @@
               <a class="nav-link" href="index.html">
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#icons"
+                aria-expanded="false"
+                aria-controls="icons"
+              >
+                <span class="menu-title">Icons</span>
+                <i class="mdi mdi-contacts menu-icon"></i>
+              </a>
+              <div class="collapse" id="icons">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/icons/font-awesome.html"
+                      >Font Awesome</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#forms"
+                aria-expanded="false"
+                aria-controls="forms"
+              >
+                <span class="menu-title">Forms</span>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              </a>
+              <div class="collapse" id="forms">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/forms/basic_elements.html"
+                      >Form Elements</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#charts"
+                aria-expanded="false"
+                aria-controls="charts"
+              >
+                <span class="menu-title">Charts</span>
+                <i class="mdi mdi-chart-bar menu-icon"></i>
+              </a>
+              <div class="collapse" id="charts">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/charts/chartjs.html"
+                      >ChartJs</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#tables"
+                aria-expanded="false"
+                aria-controls="tables"
+              >
+                <span class="menu-title">Tables</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+              <div class="collapse" id="tables">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/tables/basic-table.html"
+                      >Basic table</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#auth"
+                aria-expanded="false"
+                aria-controls="auth"
+              >
+                <span class="menu-title">User Pages</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-lock menu-icon"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/blank-page.html">
+                      Blank Page
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/login.html">
+                      Login
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/register.html">
+                      Register
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-404.html">
+                      404
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-500.html">
+                      500
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="docs/documentation.html"
+                target="_blank"
+              >
+                <span class="menu-title">Documentation</span>
+                <i class="mdi mdi-file-document-box menu-icon"></i>
               </a>
             </li>
           </ul>
@@ -1160,255 +1249,135 @@
               </nav>
             </div>
             <div class="row">
-              <div class="col-md-4 stretch-card grid-margin">
+              <div class="col-md-3 stretch-card grid-margin">
                 <div class="card bg-gradient-danger card-img-holder text-white">
                   <div class="card-body">
                     <img
-                      src="assets/images/dashboard/circle.svg"
+                      src="../../assets/images/circle.svg"
                       class="card-img-absolute"
                       alt="circle-image"
                     />
-                    <h4 class="font-weight-normal mb-3">
-                      Weekly Sales
-                      <i class="mdi mdi-chart-line mdi-24px float-end"></i>
-                    </h4>
-                    <h2 class="mb-5">$15,000</h2>
-                    <h6 class="card-text">Increased by 60%</h6>
-                  </div>
-                </div>
-              </div>
+         <h5 class="mb-4">Total Employees On Leave</h5>
+       <div class="d-flex justify-content-start mb-3">
+        <div class="me-2">
+          <h2 class="fw-bold mb-0">14</h2>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-              <div class="col-md-4 stretch-card grid-margin">
+              <div class="col-md-3 stretch-card grid-margin">
                 <div
                   class="card bg-gradient-success card-img-holder text-white"
                 >
                   <div class="card-body">
                     <img
-                      src="assets/images/dashboard/circle.svg"
+                      src="../../assets/images/circle.svg"
                       class="card-img-absolute"
                       alt="circle-image"
                     />
-                    <h4 class="font-weight-normal mb-3">
-                      Weekly Orders
-                      <i
-                        class="mdi mdi-bookmark-outline mdi-24px float-end"
-                      ></i>
-                    </h4>
-                    <h2 class="mb-5">45,633</h2>
-                    <h6 class="card-text">Decreased by 10%</h6>
-                  </div>
-                </div>
-              </div>
+                          <h5 class="mb-4">Total Planned leaves</h5>
+      <div class="d-flex mb-3">
+        <div class="me-5">
+          <h2 class="mb-0 fw-bold">14</h2>
+          <h6 class="mb-0">Employees</h6>
+        </div>
+        <div>
+          <h2 class="mb-0 fw-bold">43</h2>
+          <h6 class="mb-0">Leaves</h6>
+        </div>
+      </div>
+      <p class="mb-0 mt-3 fw-semibold">In next 30 days</p>
+    </div>
+  </div>
+</div>
 
-              <div class="col-md-4 stretch-card grid-margin">
+              <div class="col-md-3 stretch-card grid-margin">
                 <div
                   class="card bg-gradient-primary card-img-holder text-white"
                 >
                   <div class="card-body">
                     <img
-                      src="assets/images/dashboard/circle.svg"
+                      src="../../assets/images/circle.svg"
                       class="card-img-absolute"
                       alt="circle-image"
                     />
-                    <h4 class="font-weight-normal mb-3">
-                      Visitors Online
-                      <i class="mdi mdi-diamond mdi-24px float-end"></i>
-                    </h4>
-                    <h2 class="mb-5">95,574</h2>
-                    <h6 class="card-text">Increased by 5%</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4 stretch-card grid-margin">
+                 <h5 class="mb-4">Planned Vs Actual</h5>
+      <div class="d-flex mb-3">
+        <div class="me-5">
+          <h2 class="mb-0 fw-bold">30</h2>
+          <h6 class="mb-0">Planned</h6>
+        </div>
+        <div>
+          <h2 class="mb-0 fw-bold">38</h2>
+          <h6 class="mb-0">Actual</h6>
+        </div>
+      </div>
+      <p class="mb-0 mt-3 fw-semibold">In last 30 days</p>
+    </div>
+  </div>
+</div>
+ <div class="col-md-3 stretch-card grid-margin">
                 <div class="card bg-gradient-info card-img-holder text-white">
                   <div class="card-body">
                     <img
-                      src="assets/images/dashboard/circle.svg"
+                      src="../../assets/images/circle.svg"
                       class="card-img-absolute"
                       alt="circle-image"
                     />
-                    <h4 class="font-weight-normal mb-3">
-                      Weekly Sales
-                      <i class="mdi mdi-chart-line mdi-24px float-end"></i>
-                    </h4>
-                    <h2 class="mb-5">$15,000</h2>
-                    <h6 class="card-text">Increased by 60%</h6>
-                  </div>
-                </div>
-              </div>
+                    <h5 class="mb-4">Holidays</h5>
 
-              <div class="col-md-4 stretch-card grid-margin">
-                <div
-                  class="card bg-gradient-warning card-img-holder text-white"
-                >
-                  <div class="card-body">
-                    <img
-                      src="assets/images/dashboard/circle.svg"
-                      class="card-img-absolute"
-                      alt="circle-image"
-                    />
-                    <h4 class="font-weight-normal mb-3">
-                      Weekly Orders
-                      <i
-                        class="mdi mdi-bookmark-outline mdi-24px float-end"
-                      ></i>
-                    </h4>
-                    <h2 class="mb-5">45,633</h2>
-                    <h6 class="card-text">Decreased by 10%</h6>
-                  </div>
-                </div>
-              </div>
+      <div class="mb-4">
+        <h1 class="fw-bold mb-1">3</h1>
+       
+      </div>
 
-              <div class="col-md-4 stretch-card grid-margin">
-                <div class="card bg-gradient-dark card-img-holder text-white">
-                  <div class="card-body">
-                    <img
-                      src="assets/images/dashboard/circle.svg"
-                      class="card-img-absolute"
-                      alt="circle-image"
-                    />
-                    <h4 class="font-weight-normal mb-3">
-                      Visitors Online
-                      <i class="mdi mdi-diamond mdi-24px float-end"></i>
-                    </h4>
-                    <h2 class="mb-5">95,574</h2>
-                    <h6 class="card-text">Increased by 5%</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <p class="fw-semibold mb-0">In last 60 days</p>
+    </div>
+  </div>
+</div>
             <div class="row">
-              <div class="col-md-7 grid-margin stretch-card">
+             
+
+
+            <div class="row">
+              <div class="col-md-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
                     <div class="clearfix">
                       <h4 class="card-title float-start">
-                        Visit And Sales Statistics
+                        Leave Consumption by type in last 6 months
                       </h4>
                       <div
-                        id="visit-sale-chart-legend"
+                        id="visit-sale-chart9-legend"
                         class="rounded-legend legend-horizontal legend-top-right float-end"
                       ></div>
                     </div>
-                    <canvas id="visit-sale-chart" class="mt-4"></canvas>
+                    <canvas id="visit-sale-chart9" class="mt-4"></canvas>
                   </div>
                 </div>
               </div>
-              <div class="col-md-5 grid-margin stretch-card">
+              <div class="col-md-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Traffic Sources</h4>
-                    <div
-                      class="doughnutjs-wrapper d-flex justify-content-center"
-                    >
-                      <canvas id="traffic-chart"></canvas>
+                    <div class="clearfix">
+                      <h4 class="card-title float-start">
+                        Gender count by business unit
+                      </h4>
+                      <div
+                        id="visit-sale-chart10-legend"
+                        class="rounded-legend legend-horizontal legend-top-right float-end"
+                      ></div>
                     </div>
-                    <div
-                      id="traffic-chart-legend"
-                      class="rounded-legend legend-vertical legend-bottom-left pt-4"
-                    ></div>
+                    <canvas id="visit-sale-chart10" class="mt-4"></canvas>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-12 grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Recent Tickets</h4>
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th>Assignee</th>
-                            <th>Subject</th>
-                            <th>Status</th>
-                            <th>Last Update</th>
-                            <th>Tracking ID</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/faces/face1.jpg"
-                                class="me-2"
-                                alt="image"
-                              />
-                              David Grey
-                            </td>
-                            <td>Fund is not recieved</td>
-                            <td>
-                              <label class="badge badge-gradient-success"
-                                >DONE</label
-                              >
-                            </td>
-                            <td>Dec 5, 2017</td>
-                            <td>WD-12345</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/faces/face2.jpg"
-                                class="me-2"
-                                alt="image"
-                              />
-                              Stella Johnson
-                            </td>
-                            <td>High loading time</td>
-                            <td>
-                              <label class="badge badge-gradient-warning"
-                                >PROGRESS</label
-                              >
-                            </td>
-                            <td>Dec 12, 2017</td>
-                            <td>WD-12346</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/faces/face3.jpg"
-                                class="me-2"
-                                alt="image"
-                              />
-                              Marina Michel
-                            </td>
-                            <td>Website down for one week</td>
-                            <td>
-                              <label class="badge badge-gradient-info"
-                                >ON HOLD</label
-                              >
-                            </td>
-                            <td>Dec 16, 2017</td>
-                            <td>WD-12347</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/faces/face4.jpg"
-                                class="me-2"
-                                alt="image"
-                              />
-                              John Doe
-                            </td>
-                            <td>Loosing control on server</td>
-                            <td>
-                              <label class="badge badge-gradient-danger"
-                                >REJECTED</label
-                              >
-                            </td>
-                            <td>Dec 3, 2017</td>
-                            <td>WD-12348</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
+           
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
@@ -1438,21 +1407,73 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="assets/vendors/chart.js/chart.umd.js"></script>
-    <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="../../assets/vendors/select2/select2.min.js"></script>
+    <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/misc.js"></script>
-    <script src="assets/js/settings.js"></script>
-    <script src="assets/js/todolist.js"></script>
-    <script src="assets/js/jquery.cookie.js"></script>
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/todolist.js"></script>
+    <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
-    <script src="assets/js/dashboard.js"></script>
+    <script src="../../assets/js/file-upload.js"></script>
+    <script src="../../assets/js/typeahead.js"></script>
+    <script src="../../assets/js/select2.js"></script>
+    <script src="../../assets/js/dashboard.js"> </script>
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+        <script src="../../assets/vendors/chart.js/chart.umd.js"></script>
+
+    <script src="../../assets/js/dashboard-dark.js"></script>
     <!-- End custom js for this page -->
+
+    <script type="text/javascript">
+      $(function () {
+        $(".formView").click(function () {
+          $(".formBlock").show();
+          $(".gridBlock").hide();
+          $(".formBlockTable").hide();
+          $(".saveButton").hide();
+          $(".formButton").hide();
+          $(".calculate").show();
+        });
+
+        $(".girdView").click(function () {
+          $(".gridBlock").show();
+          $(".calculate").hide();
+          $(".formBlock").hide();
+          $(".formBlockTable").hide();
+          $(".saveButton").show();
+          $(".addLink").show();
+          $(".buttonSet").hide();
+          $(".formButton").show();
+        });
+
+        $(".addLink").click(function () {
+          $(".gridBlock").show();
+          $(".calculate").hide();
+          $(".formBlockTable").show();
+          $(".saveButton").show();
+          $(".addLink").hide();
+          $(".buttonSet").show();
+        });
+
+        $(".backButton").click(function () {
+          $(".formView").trigger("click");
+        });
+        $(".formView").trigger("click");
+      });
+    </script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script
+      src="js/multiDropdown.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
   </body>
 </html>

@@ -21209,37 +21209,18 @@ code {
   height: 6px;
 }
 
-.bg-gradient-primary {
+/* Fix typo in bg-gradient-primary */
+/* .bg-gradient-primary { 
   background: linear-gradient(to right, #da8cff, #9a55ff) !important;
-}
+} */
 
-.bg-gradient-secondary {
-  background: linear-gradient(to right, #e7ebf0, #868e96) !important;
-}
+/* Beautiful mixed gradient for cards */
+/* .bg-gradient-mixed {
+  background: linear-gradient(135deg, #ff9966, #ff5e62, #fcb045) !important;
+} */
 
-.bg-gradient-success, .datepicker-custom .datepicker.datepicker-inline .datepicker-days .table-condensed tbody tr td.day.today:before {
-  background: linear-gradient(to right, #84d9d2, #07cdae) !important;
-}
 
-.bg-gradient-info {
-  background: linear-gradient(to right, #90caf9, #047edf 99%) !important;
-}
 
-.bg-gradient-warning, .datepicker-custom .datepicker.datepicker-inline .datepicker-days .table-condensed tbody tr td.day.active:before {
-  background: linear-gradient(to right, #f6e384, #ffd500) !important;
-}
-
-.bg-gradient-danger {
-  background: linear-gradient(to right, #ffbf96, #fe7096) !important;
-}
-
-.bg-gradient-light {
-  background: linear-gradient(to bottom, #f4f4f4, #e4e4e9) !important;
-}
-
-.bg-gradient-dark {
-  background: linear-gradient(89deg, #5e7188, #3e4b5b) !important;
-}
 
 /* Demo Styles */
 .template-demo .slider-wrap {
