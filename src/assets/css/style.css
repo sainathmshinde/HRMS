@@ -24976,7 +24976,7 @@ code {
 .select2-container--default .select2-selection--single .select2-search__field,
 .select2-container--default .select2-selection--single,
 .form-select {
-  border: 1px solid #ebedf2;
+  border: 1px solid #9f9f9f;
   font-family: "ubuntu-regular", sans-serif;
   background-color: #ffffff;
 }
@@ -25202,7 +25202,7 @@ select.border-dark.tt-hint:focus,
 }
 select.form-select {
   padding: 0.4375rem 0.75rem;
-  border: 0;
+  /* border: #9f9f9f; */
   outline: 1px solid #ebedf2;
   color: #c9c8c8;
 }
@@ -27857,7 +27857,7 @@ dl li {
 .auth .auth-form-light .input-group .typeahead:active,
 .auth .auth-form-light .input-group .tt-query:active,
 .auth .auth-form-light .input-group .tt-hint:active {
-  border-color: #ebedf2;
+  border-color: #552486;
 }
 .auth .auth-form-transparent {
   background: transparent;
