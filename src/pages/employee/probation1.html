@@ -1046,7 +1046,9 @@
             <div class="page-header">
               <h3 class="page-title">Contract & Probation</h3>
             </div>
-            <div class="accordion" id="accordionExample">
+           <div class="card">
+            <div class="card-body">
+                 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
     <h3 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -1152,11 +1154,19 @@
                       <!-- Employee Search -->
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="employeeSearch">Contract Type</label>
-                           <span class="text-danger">*</span>
+                          
+                            <label for="employeeSearch">Contract Type</label>
+<span class="text-danger">*</span>
 
-                         	<input type="radio" name="type" checked="checked">&nbsp;Renewal contract&nbsp;&nbsp;
-							<input type="radio" name="type" >&nbsp;New contract&nbsp;&nbsp;
+<label style="margin-left: 20px;">
+  <input type="radio" name="type" checked="checked">
+  Renewal contract
+</label>
+
+<label style="margin-left: 20px;">
+  <input type="radio" name="type">
+  New contract
+</label>
                         </div>
                       </div>
                       </div>
@@ -1240,6 +1250,119 @@
               </div>
             </div>
             
+			
+		</div>
+
+
+        <div id="addProjectBlock">
+		
+			
+			
+             <div class="page-header" style="padding: 25px;">
+              <h5>Probation Information</h5>
+             
+            </div>
+			
+
+
+             <div class="card ">
+              <div class="card-body">
+                <form class="forms-sample">
+                  <div class="row">
+                    <div class="row">
+                      <!-- Employee Search -->
+                     
+                      </div>
+                      <div class="row">
+                      <!-- Employee CTC Per annum -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="ctc">Probation Start Date</label>
+                           <span class="text-danger">*</span>
+
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="ctc"
+                            value="4,25,000.00"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="ctc">Probation End Date</label>
+                           <span class="text-danger">*</span>
+
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="ctc"
+                            value="4,25,000.00"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div class="row">
+                         <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="componentName"
+                              >Status
+                            </label>
+                                                       <span class="text-danger">*</span>
+
+                            <select
+                              class="form-select"
+                              id="componentName"
+                              required
+                            >
+                              <option value="Select">Select</option>
+                              <option value="1" selected>
+                                Probation
+                              </option>
+                              <option value="2">Extended</option>
+                              <option value="3">Confirmed</option>
+                              <option value="4">Termination</option>
+                            </select>
+                          </div>
+                        </div>
+
+                    </div>
+                     <div class="row">
+                         <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="ctc">Remark</label>
+                           <span class="text-danger">*</span>
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="ctc"
+                            placeholder="Probation for 1 month"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                    </div>
+
+                    
+                     <div class="text-end mounting-events-inner">
+                   <a
+                    type="button"
+                    class="btn btn-gradient-primary me-2 girdView AgirdView"
+                  >
+                    Save
+                  </a>
+                  <a type="button" class="btn btn-gradient-light girdView AgirdView"> Cancel</a>
+                 </div>
+                  </div>
+                
+                </form>
+              </div>
+            </div>
 			
 		</div>
         <div id="projectGridBlock" style="padding: 25px;">
@@ -1372,12 +1495,337 @@
     </h3>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
+<div class="row gridBlock PgridBlock ">
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          	<th>
+								<label>Employee ID</label>
+							</th>
+							<th>
+								<label>Employee Name</label>
+							</th>
+							<th>
+								<label>Probation Start Date</label>
+							</th>
+							<th>
+								<label>Probation End Date</label>
+							</th>
+                            <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                       
+							<td>
+								<label>E100</label>
+							</td>
+							<td>
+								<label>Sharon White</label>
+							</td>
+							<td>
+								<label>15-Apr-2025</label>
+							</td>
+							<td>
+								<label>15-Jul-2025</label>
+							</td>
+                          <td>
+                            <a class="PformView"
+                              ><i class="fa-solid fa-pen-to-square"></i
+                            ></a>
+                          </td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                     
+                  </div>
+                </div>
+              </div>
+                
+            </div> 
+             
+            <div class=" PformBlock">
+                 <div class="page-header" style="padding: 25px;">
+              <h5>Contract Details </h5>
+             
+            </div>
+			
+
+
+             
+                <form class="forms-sample" style="padding-left: 20px; padding-right: 20px;">
+                  <div class="row">
+                    <div class="row">
+                      <!-- Employee Search -->
+                     
+                      </div>
+                      <div>
+                         <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="ctc">Contract Name</label>
+                           <span class="text-danger">*</span>
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="ctc"
+                            placeholder="Employee Contract"
+                            required
+                          />
+                        </div>
+                      </div>
+                      </div>
+                      <div class="row">
+                      <!-- Employee CTC Per annum -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="ctc"> Start Date</label>
+                           <span class="text-danger">*</span>
+
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="ctc"
+                            value="2025-09-11"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="ctc"> End Date</label>
+                           <span class="text-danger">*</span>
+
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="ctc"
+                            value="2025-11-11"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                   
+                   
+                     <div class="row">
+                         <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="ctc">Remark</label>
+                           <span class="text-danger">*</span>
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="ctc"
+                            placeholder="Contract for 11 month"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                       <div class="col-md-6">
+                        <div class="form-group">
+                         <label for="document">Document</label>
+
+                              <div class="document-link">
+                                <a href="javascript:void(0);" style="color:#2989D8;">Agreement.pdf</a>
+  </div>
+</div>
+
+                      </div>
+                    </div>
+
+                    
+                    
+                  </div>
+                
+                </form>
+              
+            <div class="page-header" style="padding: 25px;">
+              <h5>Probation Details </h5>
+             
+            </div>
+			
+
+
+            
+                <form class="forms-sample" style="padding-left: 20px; padding-right: 20px;">
+                  <div class="row">
+                   
+                      
+                      <div class="row">
+                      <!-- Employee CTC Per annum -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="ctc"> Start Date</label>
+                           <span class="text-danger">*</span>
+
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="ctc"
+                            value="2025-09-11"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="ctc"> End Date</label>
+                           <span class="text-danger">*</span>
+
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="ctc"
+                            value="2025-11-11"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                   
+                   
+                     
+
+                    
+                    
+                  </div>
+                
+                </form>
+              
+            <div class="page-header" style="padding: 25px;">
+              <h5>Other Reviews </h5>
+             
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          	<th>
+								<label>Review By</label>
+							</th>
+							<th>
+								<label>Review Date</label>
+							</th>
+							<th>
+								<label>Remark</label>
+							</th>
+							
+                            <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                       
+							<td>
+								<label>Mangesh M</label>
+							</td>
+							<td>
+								<label>10-Aug-2025</label>
+							</td>
+							<td>
+								<label>Need more improvements</label>
+							</td>
+							<td>
+								<label>Terminate</label>
+							</td>
+                         
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                     
+                  </div>
+                </div>
+              </div>
+              <form class="forms-sample" style="margin-left: 20px;">
+                  <div class="row">
+                     <div class="row">
+                         <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="ctc"> Your review remark</label>
+                           <span class="text-danger">*</span>
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="ctc"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <!-- Employee Search -->
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          
+                            <label for="employeeSearch">Action</label>
+<span class="text-danger">*</span>
+
+<label style="margin-left: 20px;">
+  <input type="radio" class="radio" id="Confirm" name="action">
+  Confirm
+</label>
+
+<label style="margin-left: 20px;">
+  <input type="radio" class="radio" id="Extend" name="action">
+  Extend
+</label>
+<label style="margin-left: 20px;">
+  <input type="radio" class="radio" id="Terminate" name="action">
+  Terminate
+</label>
+                        </div>
+                      </div>
+                      </div>
+                   
+                      
+                      
+                   
+                   
+                     
+
+                    
+                    
+                  </div>
+                  <div class="text-end mounting-events-inner" style="margin-right: 40px;">
+                   <a
+                    type="button"
+                    class="btn btn-gradient-primary me-2 girdView PgirdView"
+                  >
+                    Save
+                  </a>
+                  <a type="button" class="btn btn-gradient-light girdView PgirdView"> Cancel</a>
+                 </div>
+                
+                </form>
+
+					
+					
+				
+                
+                </div> 
+           
+         </div>
     </div>
   </div>
  
 </div>
+
+            </div>
+           </div>
            
 
             
@@ -1588,6 +2036,8 @@
 		$(".contracdetails").find("select").attr("disabled","disabled");		
 
 	  });
+      
+
 	  
 	  $(".PgirdView").click(function()
 	  {
