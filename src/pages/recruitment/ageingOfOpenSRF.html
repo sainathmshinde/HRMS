@@ -11,50 +11,60 @@
     <!-- plugins:css -->
     <link
       rel="stylesheet"
-      href="assets/vendors/mdi/css/materialdesignicons.min.css"
+      href="../../assets/vendors/mdi/css/materialdesignicons.min.css"
     />
     <link
       rel="stylesheet"
-      href="assets/vendors/ti-icons/css/themify-icons.css"
+      href="../../assets/vendors/ti-icons/css/themify-icons.css"
     />
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
     <link
       rel="stylesheet"
-      href="assets/vendors/font-awesome/css/font-awesome.min.css"
+      href="../../assets/vendors/css/vendor.bundle.base.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/font-awesome/css/font-awesome.min.css"
     />
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <link
       rel="stylesheet"
-      href="assets/vendors/font-awesome/css/font-awesome.min.css"
+      href="../../assets/vendors/select2/select2.min.css"
     />
     <link
       rel="stylesheet"
-      href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css"
+      href="../../assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css"
     />
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
-      <!-- partial:partials/_navbar.html -->
+      <!-- partial:../../partials/_navbar.html -->
       <nav
         class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
       >
         <div
           class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start"
         >
-          <a class="navbar-brand brand-logo" href="index.html">
-            <img src="assets/images/syborg-tech 1.svg" alt="logo" />
+          <!-- <a class="navbar-brand brand-logo" href="../../index.html"
+            ><img src="../../assets/images/logo.svg" alt="logo"
+          /></a>
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"
+            ><img src="../../assets/images/logo-mini.svg" alt="logo"
+          /></a> -->
+          <a class="navbar-brand brand-logo" href=".././../index.html">
+            <img src="/src/assets/images/syborg-tech 1.svg" alt="logo" />
           </a>
-          <!-- <a class="navbar-brand brand-logo-mini" href="index.html"></a>
-            <img src="assets/images/logo-mini.svg" alt="logo" />
-          </a> -->
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <button
@@ -88,11 +98,11 @@
                 aria-expanded="false"
               >
                 <div class="nav-profile-img">
-                  <img src="assets/images/faces/face1.jpg" alt="image" />
+                  <img src="../../assets/images/faces/face1.jpg" alt="image" />
                   <span class="availability-status online"></span>
                 </div>
                 <div class="nav-profile-text">
-                  <p class="mb-1 text-black">Andrew Baker</p>
+                  <p class="mb-1 text-black">David Greymaax</p>
                 </div>
               </a>
               <div
@@ -133,7 +143,7 @@
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <img
-                      src="assets/images/faces/face4.jpg"
+                      src="../../assets/images/faces/face4.jpg"
                       alt="image"
                       class="profile-pic"
                     />
@@ -153,7 +163,7 @@
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <img
-                      src="assets/images/faces/face2.jpg"
+                      src="../../assets/images/faces/face2.jpg"
                       alt="image"
                       class="profile-pic"
                     />
@@ -173,7 +183,7 @@
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
                     <img
-                      src="assets/images/faces/face3.jpg"
+                      src="../../assets/images/faces/face3.jpg"
                       alt="image"
                       class="profile-pic"
                     />
@@ -284,25 +294,9 @@
       </nav>
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
-            <!-- <li class="nav-item nav-profile">
-              <a href="#" class="nav-link">
-                <div class="nav-profile-image">
-                  <img src="assets/images/faces/face1.jpg" alt="profile" />
-                  <span class="login-status online"></span>
-                  change to offline or busy as needed
-                </div>
-                <div class="nav-profile-text d-flex flex-column">
-                  <span class="font-weight-bold mb-2">David Grey. H</span>
-                  <span class="text-secondary text-small">Project Manager</span>
-                </div>
-                <i
-                  class="mdi mdi-bookmark-check text-success nav-profile-badge"
-                ></i>
-              </a>
-            </li> -->
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -318,14 +312,17 @@
               <div class="collapse" id="employeeMenu">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/dashboard.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/employee/dashboard.html"
+                    >
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/employee/createEmployee.html"
+                      href="../../pages/employee/createEmployee.html"
                     >
                       Create Employee
                     </a>
@@ -333,20 +330,23 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/employee/employmentInfo.html"
+                      href="../../pages/employee/employmentInfo.html"
                     >
                       Employment Information
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/contact.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/employee/contact.html"
+                    >
                       Contact
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/employee/qualification.html"
+                      href="../../pages/employee/qualification.html"
                     >
                       Qualification
                     </a>
@@ -354,96 +354,59 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/employee/workExperience.html"
+                      href="../../pages/employee/workExperience.html"
                     >
                       Work Experience
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/documents.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/employee/documents.html"
+                    >
                       Documents
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/health.html">
+                    <a class="nav-link" href="../../pages/employee/health.html">
                       Health
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/probation.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/employee/probation.html"
+                    >
                       Probation
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/probation1.html">
-                      Probation 1
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/compensation.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/employee/compensation.html"
+                    >
                       Compensation And Benefits
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/accountInfo.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/employee/accountInfo.html"
+                    >
                       Account Information
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/assets.html">
+                    <a class="nav-link" href="../../pages/employee/assets.html">
                       Assets
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/employeeExit.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/employee/employeeExit.html"
+                    >
                       Employee Exit
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/employee/totalHeadcount.html"
-                    >
-                      Total Headcount
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/employee/employmentType.html"
-                    >
-                      Employment Type
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/joiningDate.html">
-                      Joining Date
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/exitEmployee.html">
-                      Employee Exit
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/employee/gender.html">
-                      Gender
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/employee/profileCompleted.html"
-                    >
-                      Profile Completed
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/employee/contractRenewal.html"
-                    >
-                      Contract Renewal Pending
                     </a>
                   </li>
                 </ul>
@@ -460,168 +423,86 @@
               >
                 <span class="menu-title">Leave</span>
                 <i class="menu-arrow"></i>
-                <i class="mdi mdi-contacts menu-icon"></i>
+                <i class="mdi mdi-calendar-multiselect menu-icon"></i>
               </a>
               <div class="collapse" id="leave">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/ui-features/buttons.html"
-                      >Dashboard</a
-                    >
+                    <a class="nav-link" href="../../pages/leave/dashboard.html">
+                      Dashboard
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/leaves/leaveAccount.html"
-                      >Leave Account</a
+                      href="../../pages/leave/leaveAccount.html"
                     >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/leaves/applyLeave.html"
-                      >Apply Leave</a
-                    >
+                      Leave Account
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/leaves/appliedLeaves.html"
-                      >Applied Leaves</a
+                      href="../../pages/leave/applyLeave.html"
                     >
+                      Apply Leave
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/leaves/approvedLeave.html"
-                      >Approved Leaves</a
+                      href="../../pages/leave/appliedLeave.html"
                     >
+                      Applied Leave
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/leaves/subordinateLeavePlan.html"
-                      >Subordinate Leave Plan</a
+                      href="../../pages/leave/approvedForwardLeave.html"
                     >
+                      Approved / Forward Leave
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/leaves/holidaysList.html"
-                      >Holidays List</a
+                      href="../../pages/leave/subordinateLeavePlan.html"
                     >
+                      Subordinate Leave Plan
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/leaves/leaveConfig.html"
-                      >Leave Configuration</a
+                      href="../../pages/leave/holidayList.html"
                     >
+                      Holiday List
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/leaves/leaveAdjustment.html"
-                      >Leave Adjustment</a
+                      href="../../pages/leave/leaveConfiguration.html"
                     >
+                      Leave Configuration
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/leaves/leaveBalanceLedger.html"
-                      >Leave Balance Ledger</a
+                      href="../../pages/leave/leaveAdjustment.html"
                     >
+                      Leave Adjustment
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/leaves/employeesOnLeaveReports.html"
-                      >Employees On Leave Reports</a
+                      href="../../pages/leave/leaveBalanceLedger.html"
                     >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/totalPlannedLeavesReports.html"
-                      >Total Planned Leaves Reports</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/plannedVsActualReports.html"
-                      >Planned Vs Actual Reports</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/holidaysListReports.html"
-                      >Holiday List Reports</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/leaveConsumptionByTypeReports.html"
-                      >  Leave Consumption By Type Reports</a
-                    >
-                  </li>
-                 <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/leaveConsumptionTrendReports.html"
-                      >  Leave Consumption Trend Reports</a
-                    >
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/leaveBalanceReports.html"
-                      >  Leave Balance Reports</a
-                    >
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/leaveSummaryReports.html"
-                      >  Leave Summary For Year 15 - 16 Reports</a
-                    >
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/leaveReasonReports.html"
-                      >  Leave Reason Reports</a
-                    >
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/leaveTypeCountReports.html"
-                      >  Leave Type Count Reports</a
-                    >
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/availedLeaveTypeReports.html"
-                      >  Availed Leave Type Reports</a
-                    >
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/noLeavesAvailedReports.html"
-                      >  No Leaves Availed Reports</a
-                    >
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/SLAReports.html"
-                      >  SLA Reports</a
-                    >
+                      Leave Balance Ledger
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -641,14 +522,17 @@
               <div class="collapse" id="attendance" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/attendance/dashboard.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/attendance/dashboard.html"
+                    >
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendence/markAttendance.html"
+                      href="../../pages/attendance/markAttendance.html"
                     >
                       Mark Attendance
                     </a>
@@ -656,7 +540,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendence/authorization.html"
+                      href="../../pages/attendance/attendanceAuthorization.html"
                     >
                       Attendance Authorization
                     </a>
@@ -664,7 +548,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendence/attendenceRegister.html"
+                      href="../../pages/attendance/attendanceRegister.html"
                     >
                       Attendance Register
                     </a>
@@ -672,97 +556,9 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src//pages/attendence/attendanceConfiguration.html"
+                      href="../../pages/attendance/attendanceConfiguration.html"
                     >
                       Attendance Configuration
-                    </a>
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src//pages/attendence/presentEmployeesReports.html"
-                    >
-                      Present Employees Reports
-                    </a>
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src//pages/attendence/absentEmployeesReports.html"
-                    >
-                       Absent Employees Reports
-                    </a>
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src//pages/attendence/monthlyHoursReports.html"
-                    >
-                     Monthly Hours Reports
-                    </a>
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src//pages/attendence/customReports.html"
-                    >
-                     Custom Reports
-                    </a>
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src//pages/attendence/userReports.html"
-                    >
-                     User Reports
-                    </a>
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src//pages/attendence/dailyAttendanceReports.html"
-                    >
-                      Daily Attendance Reports
-                    </a>
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src//pages/attendence/monthlyStatusReports.html"
-                    >
-                     Monthly Status Reports
-                    </a>
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src//pages/attendence/lateComingReports.html"
-                    >
-                      Late Coming Reports
-                    </a>
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src//pages/attendence/earlyGoingReports.html"
-                    >
-                      Early Going Reports
-                    </a>
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src//pages/attendence/presentTrendReports.html"
-                    >
-                      Present Trend Reports
-                    </a>
-                  </li>
-                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src//pages/attendence/attendanceDailyReports.html"
-                    >
-                      Attandace Daily Reports
                     </a>
                   </li>
                 </ul>
@@ -783,71 +579,95 @@
               <div class="collapse" id="payroll" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/dashboard.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/dashboard.html"
+                    >
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/payroll/salaryTemplate.html"
+                      href="../../pages/payroll/salaryTemplate.html"
                     >
                       Salary Template
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/createSalary.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/createSalary.html"
+                    >
                       Create Salary
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/salaryRule.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/salaryRule.html"
+                    >
                       Salary Rule
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/pfPtRule.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/pfPtRule.html"
+                    >
                       PF PT Rule
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/payroll/taxDeductionRule.html"
+                      href="../../pages/payroll/taxDeductionRule.html"
                     >
                       Tax Deduction Rule
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/itrSlabs.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/itrSlabs.html"
+                    >
                       ITR Slabs
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/monthlySalary.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/monthlySalary.html"
+                    >
                       Monthly Salary
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/payroll/investmentDeclaration.html"
+                      href="../../pages/payroll/investmentDeclaration.html"
                     >
                       Investment Declaration
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/form16.html">
+                    <a class="nav-link" href="../../pages/payroll/form16.html">
                       Form 16
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/pfReturn.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/pfReturn.html"
+                    >
                       PF Return
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/payroll/ptReturn.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/payroll/ptReturn.html"
+                    >
                       PT Return
                     </a>
                   </li>
@@ -870,7 +690,10 @@
               <div class="collapse" id="performance" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/performance/dashboard.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/performance/dashboard.html"
+                    >
                       Dashboard
                     </a>
                   </li>
@@ -878,34 +701,40 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/assessmentSchedule.html"
+                      href="../../pages/performance/assessmentSchedule.html"
                     >
                       Assessment Schedule
                     </a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/performance/manageKRA.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/performance/manageKRA.html"
+                    >
                       Manage KRA
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/eligibility.html"
+                      href="../../pages/performance/eligibility.html"
                     >
                       Eligibility
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/performance/assignKRA.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/performance/assignKRA.html"
+                    >
                       Assign KRA
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/myAssignedKRA.html"
+                      href="../../pages/performance/myAssignedKRA.html"
                     >
                       My Assigned KRA
                     </a>
@@ -913,7 +742,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/manageTeamKRA.html"
+                      href="../../pages/performance/manageTeamKRA.html"
                     >
                       Manage Team KRA
                     </a>
@@ -921,7 +750,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/selfAssessment.html"
+                      href="../../pages/performance/selfAssessment.html"
                     >
                       Self Assessment
                     </a>
@@ -929,7 +758,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/subordinateAssessment.html"
+                      href="../../pages/performance/subordinateAssessment.html"
                     >
                       Subordinate Assessment
                     </a>
@@ -937,7 +766,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/reviewerAssessment.html"
+                      href="../../pages/performance/reviewerAssessment.html"
                     >
                       Reviewer Assessment
                     </a>
@@ -945,7 +774,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/assignBand.html"
+                      href="../../pages/performance/assignBand.html"
                     >
                       Assign Band
                     </a>
@@ -953,7 +782,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/assessmentReport.html"
+                      href="../../pages/performance/assessmentReport.html"
                     >
                       Assessment Report
                     </a>
@@ -961,7 +790,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/printCommunicationLetter.html"
+                      href="../../pages/performance/printCommunicationLetter.html"
                     >
                       Print Communication Letter
                     </a>
@@ -969,7 +798,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/printReviewResultLetter.html"
+                      href="../../pages/performance/printReviewResultLetter.html"
                     >
                       Print Review Result Letter
                     </a>
@@ -977,7 +806,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/employeePerformanceStatus.html"
+                      href="../../pages/performance/employeePerformanceStatus.html"
                     >
                       Employee Performance Status
                     </a>
@@ -985,7 +814,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/disciplinaryAction.html"
+                      href="../../pages/performance/disciplinaryAction.html"
                     >
                       Disciplinary Action
                     </a>
@@ -993,57 +822,9 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/bandTemplate.html"
+                      href="../../pages/performance/bandTemplate.html"
                     >
                       Band Template
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/performance/eligibleEmployeesReports.html"
-                    >
-                      Eligible Employees Reports
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/performance/reviewerAssessmentReports.html"
-                    >
-                     Reviewer Assessment Reports
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/performance/pipReports.html"
-                    >
-                     PIP Reports
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/performance/totalPendingAssessmentReports.html"
-                    >
-                      Total Pending Assessment Reports
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/performance/performanceTrendReports.html"
-                    >
-                      Performance Trend Reports
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/performance/KRAAnalysisReports.html"
-                    >
-                     KRA Analysis Reports
                     </a>
                   </li>
                 </ul>
@@ -1065,14 +846,17 @@
               <div class="collapse" id="training" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/training/dashboard.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/dashboard.html"
+                    >
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/manageRequest.html"
+                      href="../../pages/training/manageRequest.html"
                     >
                       Manage Request
                     </a>
@@ -1080,20 +864,23 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/manageTraining.html"
+                      href="../../pages/training/manageTraining.html"
                     >
                       Manage Training
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/training/enrollment.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/enrollment.html"
+                    >
                       Enrollment
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/trainerMaster.html"
+                      href="../../pages/training/trainerMaster.html"
                     >
                       Trainer Master
                     </a>
@@ -1101,21 +888,23 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/attendanceAndGrade.html"
+                      href="../../pages/training/attendanceAndGrade.html"
                     >
                       Attendance And Grade
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/training/feedback.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/feedback.html"
+                    >
                       Feedback
                     </a>
                   </li>
-
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/pendingTrainingRequest.html"
+                      href="../../pages/training/pendingTrainingRequest.html"
                     >
                       Pending Training Request
                     </a>
@@ -1123,15 +912,15 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/trainersAcrossOrganization.html"
+                      href="../../pages/training/trainersAcrossOrganization.html"
                     >
-                      Trainers Across Organization
+                      Training Across Organization
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/trainingTrend.html"
+                      href="../../pages/training/trainingTrend.html"
                     >
                       Training Trend
                     </a>
@@ -1139,7 +928,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/totalScheduledTraining.html"
+                      href="../../pages/training/totalScheduledTraining.html"
                     >
                       Total Scheduled Training
                     </a>
@@ -1147,20 +936,23 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/softSkillsTechnical.html"
+                      href="../../pages/training/softSkillsTechnical.html"
                     >
                       Soft Skills vs Technical
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/training/participants.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/training/participants.html"
+                    >
                       Participants
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/training/trainersRating.html"
+                      href="../../pages/training/trainersRating.html"
                     >
                       Trainer's Rating
                     </a>
@@ -1183,14 +975,17 @@
               <div class="collapse" id="tourDiary" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/tourDiary/dashboard.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/tourDiary/dashboard.html"
+                    >
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/tourDiary/viewMonthlyWorkPlan.html"
+                      href="../../pages/tourDiary/viewMonthlyWorkPlan.html"
                     >
                       View Monthly Work Plan
                     </a>
@@ -1198,7 +993,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/tourDiary/createTourPlan.html"
+                      href="../../pages/tourDiary/createTourPlan.html"
                     >
                       Create Tour Plan
                     </a>
@@ -1206,7 +1001,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/tourDiary/approveTeamTourPlan.html"
+                      href="../../pages/tourDiary/approveTeamTourPlan.html"
                     >
                       Approve Team Tour Plan
                     </a>
@@ -1214,7 +1009,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/tourDiary/monthlyDiary.html"
+                      href="../../pages/tourDiary/monthlyDiary.html"
                     >
                       Monthly Diary
                     </a>
@@ -1222,7 +1017,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/tourDiary/approveMonthlyDiary.html"
+                      href="../../pages/tourDiary/approveMonthlyDiary.html"
                     >
                       Approve Monthly Diary
                     </a>
@@ -1230,51 +1025,9 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/tourDiary/validateExpenses.html"
+                      href="../../pages/tourDiary/validateExpenses.html"
                     >
                       Validate Expenses
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/tourDiary/tourPlanned.html">
-                      Tours Planned
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/tourDiary/tourDiaryStatus.html"
-                    >
-                      Tour Diary Status
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/tourDiary/teamTourPlanned.html"
-                    >
-                      Team Tour Planned
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pages/tourDiary/claimStatus.html">
-                      Claim Status
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/tourDiary/trendOfTourExpenses.html"
-                    >
-                      Trend Of Tour Expenses
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/tourDiary/trendOfVillage.html"
-                    >
-                      Trend of Village Halt and Field Visit
                     </a>
                   </li>
                 </ul>
@@ -1296,19 +1049,22 @@
               <div class="collapse" id="recruitment" data-bs-parent="">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/recruitment/dashboard.html">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/dashboard.html"
+                    >
                       Dashboard
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/recruitment/srf.html">
+                    <a class="nav-link" href="../../pages/recruitment/srf.html">
                       SRF
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/selectionSteps.html"
+                      href="../../pages/recruitment/selectionSteps.html"
                     >
                       Selection Steps
                     </a>
@@ -1316,7 +1072,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/candidateRegistration.html"
+                      href="../../pages/recruitment/candidateRegistration.html"
                     >
                       Candidate Registration
                     </a>
@@ -1324,7 +1080,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/uploadCandidateInformation.html"
+                      href="../../pages/recruitment/uploadCandidateInformation.html"
                     >
                       Upload Candidate Information
                     </a>
@@ -1332,7 +1088,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/qualifyCandidates.html"
+                      href="../../pages/recruitment/qualifyCandidates.html"
                     >
                       Qualify Candidates
                     </a>
@@ -1340,7 +1096,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/candidateMarks.html"
+                      href="../../pages/recruitment/candidateMarks.html"
                     >
                       Candidate Marks
                     </a>
@@ -1348,7 +1104,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/finalResult.html"
+                      href="../../pages/recruitment/finalResult.html"
                     >
                       Final Result
                     </a>
@@ -1356,7 +1112,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/referenceCheck.html"
+                      href="../../pages/recruitment/referenceCheck.html"
                     >
                       Reference Check
                     </a>
@@ -1364,7 +1120,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/projectResourceAllocation.html"
+                      href="../../pages/recruitment/projectResourceAllocation.html"
                     >
                       Project Resource Allocation
                     </a>
@@ -1372,7 +1128,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/openPosition.html"
+                      href="../../pages/recruitment/openPosition.html"
                     >
                       Open Positions
                     </a>
@@ -1380,7 +1136,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/srfAbove90.html"
+                      href="../../pages/recruitment/srfAbove90.html"
                     >
                       SRF Above 90 Days
                     </a>
@@ -1388,15 +1144,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/ageingOfOpenSRF.html"
-                    >
-                      Ageing Of Open SRF
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="pages/recruitment/buWisePosition.html"
+                      href="../../pages/recruitment/buWisePosition.html"
                     >
                       BU Wise Positions
                     </a>
@@ -1404,7 +1152,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/resumeAvailable.html"
+                      href="../../pages/recruitment/resumeAvailable.html"
                     >
                       Resume Available
                     </a>
@@ -1412,7 +1160,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/interviewScheduled.html"
+                      href="../../pages/recruitment/interviewScheduled.html"
                     >
                       Interview Scheduled
                     </a>
@@ -1420,7 +1168,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/projectResource.html"
+                      href="../../pages/recruitment/projectResource.html"
                     >
                       Project Resources
                     </a>
@@ -1428,7 +1176,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/projectPositions.html"
+                      href="../../pages/recruitment/projectPositions.html"
                     >
                       Project Positions
                     </a>
@@ -1436,7 +1184,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/projectCost.html"
+                      href="../../pages/recruitment/projectCost.html"
                     >
                       Project Cost
                     </a>
@@ -1444,7 +1192,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/recruitment/resourceProjects.html"
+                      href="../../pages/recruitment/resourceProjects.html"
                     >
                       Resource Projects
                     </a>
@@ -1470,7 +1218,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/admin/adminLeaveConfiguration.html"
+                      href="../../pages/admin/leaveConfiguration.html"
                     >
                       Leave Configuration
                     </a>
@@ -1478,23 +1226,20 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/admin/adminAttendanceConfiguration.html"
+                      href="../../pages/admin/attendanceConfiguration.html"
                     >
                       Attendance Configuration
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/admin/createAdminKra.html"
-                    >
+                    <a class="nav-link" href="../../pages/admin/createKRA.html">
                       Create KRA
                     </a>
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/admin/allMastersScreens.html"
+                      href="../../pages/admin/allMastersScreens.html"
                     >
                       All Masters Screens
                     </a>
@@ -1510,262 +1255,620 @@
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
             </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#icons"
+                aria-expanded="false"
+                aria-controls="icons"
+              >
+                <span class="menu-title">Icons</span>
+                <i class="mdi mdi-contacts menu-icon"></i>
+              </a>
+              <div class="collapse" id="icons">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/icons/font-awesome.html"
+                      >Font Awesome</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#forms"
+                aria-expanded="false"
+                aria-controls="forms"
+              >
+                <span class="menu-title">Forms</span>
+                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              </a>
+              <div class="collapse" id="forms">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/forms/basic_elements.html"
+                      >Form Elements</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#charts"
+                aria-expanded="false"
+                aria-controls="charts"
+              >
+                <span class="menu-title">Charts</span>
+                <i class="mdi mdi-chart-bar menu-icon"></i>
+              </a>
+              <div class="collapse" id="charts">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/charts/chartjs.html"
+                      >ChartJs</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#tables"
+                aria-expanded="false"
+                aria-controls="tables"
+              >
+                <span class="menu-title">Tables</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+              <div class="collapse" id="tables">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/tables/basic-table.html"
+                      >Basic table</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="collapse"
+                href="#auth"
+                aria-expanded="false"
+                aria-controls="auth"
+              >
+                <span class="menu-title">User Pages</span>
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi-lock menu-icon"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/blank-page.html">
+                      Blank Page
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/login.html">
+                      Login
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/register.html">
+                      Register
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-404.html">
+                      404
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/samples/error-500.html">
+                      500
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="docs/documentation.html"
+                target="_blank"
+              >
+                <span class="menu-title">Documentation</span>
+                <i class="mdi mdi-file-document-box menu-icon"></i>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- partial -->
-        <div class="main-panel">
+          <div class="main-panel">
           <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title">
-                <span
-                  class="page-title-icon bg-gradient-primary text-white me-2"
-                >
-                  <i class="mdi mdi-home"></i>
-                </span>
-                Dashboard
-              </h3>
-              <nav aria-label="breadcrumb">
-                <ul class="breadcrumb">
-                  <li class="breadcrumb-item active" aria-current="page">
-                    <span></span>Overview
-                    <i
-                      class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"
-                    ></i>
-                  </li>
-                </ul>
-              </nav>
+             <div class="page-header mt-2">
+              <h3 class="page-title ">Ageing Of Open SRF</h3>
             </div>
-            <div class="row">
-              <div class="col-md-4 stretch-card grid-margin">
-                <div class="card bg-gradient-danger card-img-holder text-white">
-                  <div class="card-body">
-                    <img
-                      src="assets/images/dashboard/circle.svg"
-                      class="card-img-absolute"
-                      alt="circle-image"
-                    />
-                    <h4 class="font-weight-normal mb-3">
-                      Weekly Sales
-                      <i class="mdi mdi-chart-line mdi-24px float-end"></i>
-                    </h4>
-                    <h2 class="mb-5">$ 15,0000</h2>
-                    <h6 class="card-text">Increased by 60%</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 stretch-card grid-margin">
-                <div class="card bg-gradient-info card-img-holder text-white">
-                  <div class="card-body">
-                    <img
-                      src="assets/images/dashboard/circle.svg"
-                      class="card-img-absolute"
-                      alt="circle-image"
-                    />
-                    <h4 class="font-weight-normal mb-3">
-                      Weekly Orders
-                      <i
-                        class="mdi mdi-bookmark-outline mdi-24px float-end"
-                      ></i>
-                    </h4>
-                    <h2 class="mb-5">45,6334</h2>
-                    <h6 class="card-text">Decreased by 10%</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 stretch-card grid-margin">
-                <div
-                  class="card bg-gradient-success card-img-holder text-white"
-                >
-                  <div class="card-body">
-                    <img
-                      src="assets/images/dashboard/circle.svg"
-                      class="card-img-absolute"
-                      alt="circle-image"
-                    />
-                    <h4 class="font-weight-normal mb-3">
-                      Visitors Online
-                      <i class="mdi mdi-diamond mdi-24px float-end"></i>
-                    </h4>
-                    <h2 class="mb-5">95,5741</h2>
-                    <h6 class="card-text">Increased by 5%</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-7 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="clearfix">
-                      <h4 class="card-title float-start">
-                        Visit And Sales Statistics
-                      </h4>
-                      <div
-                        id="visit-sale-chart-legend"
-                        class="rounded-legend legend-horizontal legend-top-right float-end"
-                      ></div>
-                    </div>
-                    <canvas id="visit-sale-chart" class="mt-4"></canvas>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Traffic Sources</h4>
-                    <div
-                      class="doughnutjs-wrapper d-flex justify-content-center"
-                    >
-                      <canvas id="traffic-chart"></canvas>
-                    </div>
-                    <div
-                      id="traffic-chart-legend"
-                      class="rounded-legend legend-vertical legend-bottom-left pt-4"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Recent Tickets</h4>
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th>Assignee</th>
-                            <th>Subject</th>
-                            <th>Status</th>
-                            <th>Last Update</th>
-                            <th>Tracking ID</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/faces/face1.jpg"
-                                class="me-2"
-                                alt="image"
-                              />
-                              David Grey
-                            </td>
-                            <td>Fund is not recieved</td>
-                            <td>
-                              <label class="badge badge-gradient-success"
-                                >DONE</label
-                              >
-                            </td>
-                            <td>Dec 5, 2017</td>
-                            <td>WD-12345</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/faces/face2.jpg"
-                                class="me-2"
-                                alt="image"
-                              />
-                              Stella Johnson
-                            </td>
-                            <td>High loading time</td>
-                            <td>
-                              <label class="badge badge-gradient-warning"
-                                >PROGRESS</label
-                              >
-                            </td>
-                            <td>Dec 12, 2017</td>
-                            <td>WD-12346</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/faces/face3.jpg"
-                                class="me-2"
-                                alt="image"
-                              />
-                              Marina Michel
-                            </td>
-                            <td>Website down for one week</td>
-                            <td>
-                              <label class="badge badge-gradient-info"
-                                >ON HOLD</label
-                              >
-                            </td>
-                            <td>Dec 16, 2017</td>
-                            <td>WD-12347</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/faces/face4.jpg"
-                                class="me-2"
-                                alt="image"
-                              />
-                              John Doe
-                            </td>
-                            <td>Loosing control on server</td>
-                            <td>
-                              <label class="badge badge-gradient-danger"
-                                >REJECTED</label
-                              >
-                            </td>
-                            <td>Dec 3, 2017</td>
-                            <td>WD-12348</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                   <div class="col-12 grid-margin stretch-card">
+  <div class="card">
+    <div class="card-body">
+      <form class="forms-sample">
+        <div class="row">
+          <!-- Designation -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="designation">SRF ID - Name</label>
+              <select class="form-select form-select-sm" id="designation" required>
+               <option>Not required</option>
+									<option selected>All</option>
+									<option >S1001 - Java developer</option>
+									<option>S1002 - Oracle developer</option>
+									<option>S1003 - Web developer</option>
+									<option>S1004 - Python developer</option>
+									<option>S1004 - Project manager</option>
+              </select>
             </div>
           </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:partials/_footer.html -->
-          <footer class="footer">
-            <div
-              class="d-sm-flex justify-content-center justify-content-sm-between"
-            >
-              <span
-                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
-                >Copyright © 2023
-                <a href="https://www.bootstrapdash.com/" target="_blank"
-                  >BootstrapDash</a
-                >. All rights reserved.</span
-              >
-              <span
-                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
-                >Hand-crafted & made with
-                <i class="mdi mdi-heart text-danger"></i
-              ></span>
+
+          <!-- Department -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="department">Department</label>
+              <select class="form-select form-select-sm" id="department" required>
+                 <option>Not required</option>
+									<option selected>All</option>
+									<option>Accounts</option>
+									<option >Sales</option>
+									<option>IT</option>
+									<option>HR</option>
+              </select>
             </div>
-          </footer>
-          <!-- partial -->
+          </div>
+
+          <!-- Location -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="location">Location</label>
+              <select class="form-select form-select-sm" id="location" required>
+                                   <option>Not required</option>
+									<option>All</option>
+									<option selected>Pune</option>
+									<option>Mumbai</option>
+									<option>Nagpur</option>
+									<option>Aurangabad</option>
+              </select>
+            </div>
+          </div>
         </div>
+        <div class="row">
+          <!-- Designation -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="designation">Designation</label>
+              <select class="form-select form-select-sm" id="designation" required>
+                <option>Not required</option>
+										<option>Not Required</option>
+									<option selected>All</option>
+									<option>Accounts Officer</option>
+									<option>Senior Accounts Officer</option>
+									<option>Admin / Account Assistant</option>
+									<option>Project Manager</option>
+									<option>Developer</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Department -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="department">Ageing (days)</label>
+              <select class="form-select form-select-sm" id="department" required>
+                                   <option>Not required</option>
+									<option >All</option>
+									<option >0 - 10</option>
+									<option>10 - 20</option>
+									<option>21 - 30</option>
+									<option>31 - 40</option>
+									<option>41 - 50</option>
+									<option>51 - 60</option>
+									<option>61 - 70</option>
+									<option>71 - 80</option>
+									<option>81 - 90</option>
+									<option selected>91 and above</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="location">Status</label>
+              <select class="form-select form-select-sm" id="location" required>
+                                    <option>Not required</option>
+									<option >All</option>
+									<option selected>Open</option>
+									
+									<option>Closed</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Status -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="status">Business unit</label>
+              <select class="form-select form-select-sm" id="status" required>
+                               <option>Not required</option>
+									<option selected>All</option>
+									<option >Manufacturing</option>
+									<option>Health Services</option>
+									<option>Infrastructure</option>
+								    <option >Insurence</option>
+									<option>Tele-Communication</option>
+									<option>Business intellegence</option>
+								    <option >Oracle services</option>
+									<option>Consulting</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- From Date -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="fromDate">From Date</label>
+              <input type="text" class="form-control" id="fromDate" placeholder="1-May-2024" required/>
+            </div>
+          </div>
+
+          <!-- To Date -->
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="toDate">To Date</label>
+              <input type="text" class="form-control" id="toDate" placeholder="30-Apr-2025" required/>
+            </div>
+          </div>
+        </div>
+      </form>
+       <div class="text-end">
+             <button class="btn btn-gradient-primary btn-sm ms-3">Go</button>
+        </div>
+    </div>
+  </div>
+</div>
+   <div id="commanTable" class="table-responsive">
+  <table class="table table-bordered align-middle border text-center">
+    <tr>
+      <td class="text-start">Count</td>
+      <td class="text-start">9</td>
+      <td class="text-start">SRF</td>
+      <td class="text-start">10</td>
+      <td></td>
+      <td></td>
+      <td class="text-center" style="width:5%;">
+        <button class="btn btn-outline-secondary btn-sm">CSV</button>
+      </td>
+      <td class="text-center" style="width:5%;">
+        <button class="btn btn-outline-secondary btn-sm">Print</button>
+      </td>
+    </tr>
+  </table>
+</div>
+              <div class="mt-4">
+                <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card" style="overflow-x: auto; width: 100%">
+                  <div class="card-body">
+                    <table class="table">
+                      <thead>
+                      <tr class="head">
+					<th>
+						<label>SRF ID</label>
+					</th>
+					<th>
+						<label>SRF Name</label>
+					</th>
+					<th>
+						SRF Opening Date
+					</th>
+					<th>
+						Positions Open
+					</th>
+					
+					<th>
+						Positions Closed
+					</th>
+					
+					<th>
+						No of CV's submitted
+					</th>
+                    <th>
+						Designation
+					</th>
+                    <th>
+						Department
+					</th>
+                     <th>
+						Business Unit
+					</th>
+                     <th>
+						Location
+					</th>
+                    <th>
+						Onboarding Date
+					</th>
+                    <th  style="padding-right:0px;">
+						Ageing<span class="downArrowHead">&#x25bc;</span>
+					</th>
+                    <th>
+						Status
+					</th>
+                   
+					<th>
+						<label>Action</label>
+					</th>
+				</tr>
+				<tr>
+					    <td>S1011</td>
+					<td>Java developer</td> 
+					<td>03-Oct-25</td>	
+					<td>5</td>
+					<td>10</td>
+					<td>33</td>	
+					<td>Developer</td>
+					<td>IT</td>
+					<td>Health services</td>
+					<td>Pune</td>
+					<td>29-Jan-25</td>
+					<td>117</td>
+					<td>Open</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>
+				<tr class="even">
+					<td>S1012</td>
+					<td>Oracle developer</td> 
+					<td>3-Oct-25</td>	
+					<td>5</td>
+					<td>10</td>
+					<td>33</td>	
+					<td>Oracle developer</td>
+					<td>IT</td>
+					<td>Oracle Services</td>
+					<td>Pune</td>
+					<td>15-Jan-25</td>
+					<td>117</td>
+					<td>Open</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>
+								<tr>
+					<td>S1013</td>
+					<td>Web developer</td> 
+					<td>15-Oct-25</td>	
+					<td>3</td>
+					<td>4</td>
+					<td>29</td>	
+					<td>Web developer</td>
+					<td>IT</td>
+					<td>Tele-Communication</td>
+					<td>Pune</td>
+					<td>15-Jan-25</td>
+					<td>105</td>
+					<td>Open</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i> </a>
+					</td>
+				</tr>
+				<tr class="even">
+					<td>S1014</td>
+					<td>Project manager</td> 
+					<td>17-Oct-25</td>	
+					<td>1</td>
+					<td>2</td>
+					<td>12</td>	
+					<td>Project manager</td>
+					<td>Sales</td>
+					<td>Manufacturing</td>
+					<td>Pune</td>
+					<td>5-Feb-25</td>
+					<td>103</td>
+					<td>Open</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>
+								<tr class="odd">
+					<td>S1015</td>
+					<td>Sales manager</td> 
+					<td>22-Oct-25</td>	
+					<td>5</td>
+					<td>10</td>
+					<td>33</td>	
+					<td>Developer</td>
+					<td>IT</td>
+					<td>Manufacturing</td>
+					<td>Pune</td>
+					<td>15-Feb-25</td>
+					<td>98</td>
+					<td>Open</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i> </a>
+					</td>
+				</tr>
+				<tr class="even">
+					<td>S1016</td>
+					<td>C/C++ developer</td> 
+					<td>22-Oct-25</td>	
+					<td>1</td>
+					<td>0</td>
+					<td>9</td>	
+					<td>C/C++ developer</td>
+					<td>IT</td>
+					<td>Tele-Communication</td>
+					<td>Pune</td>
+					<td>21-Feb-25</td>
+					<td>98</td>
+					<td>Open</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>	
+
+				<tr class="odd">
+					<td>S1017</td>
+					<td>Java developer</td> 
+					<td>25-Oct-25</td>	
+					<td>4</td>
+					<td>2</td>
+					<td>16</td>	
+					<td>Java developer</td>
+					<td>IT</td>
+					<td>Tele-Communication</td>
+					<td>Pune</td>
+					<td>22-Jan-25</td>
+					<td>95</td>
+					<td>Open</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>
+				<tr class="even">
+					<td>S1018</td>
+					<td>Senior oracle developer</td> 
+					<td>28-Oct-25</td>	
+					<td>3</td>
+					<td>1</td>
+					<td>14</td>	
+					<td>Oracle developer</td>
+					<td>IT</td>
+					<td>Oracle services</td>
+					<td>Pune</td>
+					<td>25-Jan-25</td>
+					<td>92</td>
+					<td>Open</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
+					</td>
+				</tr>				<tr class="odd">
+					<td>S1019</td>
+					<td>Oracle developer</td> 
+					<td>29-Oct-25</td>	
+					<td>2</td>
+					<td>1</td>
+					<td>25</td>	
+					<td>Oracle Developer</td>
+					<td>IT</td>
+					<td>Oracle services</td>
+					<td>Pune</td>
+					<td>15-Mar-25</td>
+					<td>92</td>
+					<td>Open</td>
+					<td>
+						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i> </a>
+					</td>
+				</tr>
+			
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              </div>
+          <div class="mt-4 d-flex justify-content-end">
+           <nav>
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+
+    <li class="page-item active">
+      <a class="page-link" href="#">1</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item">
+      <a class="page-link" href="#">3</a>
+    </li>
+
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+         </div>
+          </div>
+          </div>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="assets/vendors/chart.js/chart.umd.js"></script>
-    <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="../../assets/vendors/select2/select2.min.js"></script>
+    <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/misc.js"></script>
-    <script src="assets/js/settings.js"></script>
-    <script src="assets/js/todolist.js"></script>
-    <script src="assets/js/jquery.cookie.js"></script>
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/todolist.js"></script>
+    <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page -->
-    <script src="assets/js/dashboard.js"></script>
+    <script src="../../assets/js/file-upload.js"></script>
+    <script src="../../assets/js/typeahead.js"></script>
+    <script src="../../assets/js/select2.js"></script>
     <!-- End custom js for this page -->
+
+ <script type="text/javascript"> 
+
+$(function(){
+             // $(".menudropdown").prop('selectedIndex','3');
+			  
+			  $("#from_Date").datepicker({
+	            changeMonth:true,
+				changeYear:true,
+				dateFormat : 'dd-M-yy',
+				yearRange: '-70 :c'
+			});	
+			
+	$("#to_Date").datepicker({
+				changeMonth:true,
+				changeYear:true,
+				dateFormat : 'dd-M-yy',
+				yearRange: '-70 :c'
+			});	
+		 $(".content").mCustomScrollbar();
+	});
+	
+</script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/reportsFilter.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/multiDropdown.js" type="text/javascript" charset="utf-8"></script>
+
   </body>
 </html>

@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
-     <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
@@ -295,7 +295,7 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
-       <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <li class="nav-item">
               <a
@@ -407,6 +407,59 @@
                       href="../../pages/employee/employeeExit.html"
                     >
                       Employee Exit
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/employee/totalHeadcount.html"
+                    >
+                      Total Headcount
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/employee/employmentType.html"
+                    >
+                      Employment Type
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/employee/joiningDate.html"
+                    >
+                      Joining Date
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/employee/exitEmployee.html"
+                    >
+                      Employee Exit
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/employee/gender.html">
+                      Gender
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/employee/profileCompleted.html"
+                    >
+                      Profile Completed
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/employee/contractRenewal.html"
+                    >
+                      Contract Renewal Pending
                     </a>
                   </li>
                 </ul>
@@ -1125,6 +1178,78 @@
                       Project Resource Allocation
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/openPosition.html"
+                    >
+                      Open Positions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/srfAbove90.html"
+                    >
+                      SRF Above 90 Days
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/buWisePosition.html"
+                    >
+                      BU Wise Positions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/resumeAvailable.html"
+                    >
+                      Resume Available
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/interviewScheduled.html"
+                    >
+                      Interview Scheduled
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/projectResource.html"
+                    >
+                      Project Resources
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/projectPositions.html"
+                    >
+                      Project Positions
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/projectCost.html"
+                    >
+                      Project Cost
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="../../pages/recruitment/resourceProjects.html"
+                    >
+                      Resource Projects
+                    </a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -1323,222 +1448,916 @@
           </ul>
         </nav>
         <!-- partial -->
-          <div class="main-panel">
+        <div class="main-panel">
           <div class="content-wrapper">
-             <div class="page-header mt-2">
-              <h3 class="page-title "> Training Reports</h3>
+            <div class="page-header mt-2">
+              <h3 class="page-title">Employee Exit</h3>
             </div>
-                   <div class="col-12 grid-margin stretch-card">
-  <div class="card">
-    <div class="card-body">
-      <form class="forms-sample">
-        <div class="row">
-          <!-- Designation -->
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="designation">Employee ID</label>
-              <select class="form-select form-select-sm" id="designation" required>
-                <option>Not required</option>
-										<option selected>All</option>
-										<option>ID1001</option>
-										<option>ID1002</option>
-										<option>ID1003</option>
-										<option>ID1004</option>
-										<option>ID1005</option>
-										<option>ID1006</option>
-										<option>ID1007</option>
-										<option>ID1008</option>
-              </select>
-            </div>
-          </div>
+            <div class="row g-2 formViewTable">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="percentage">From Date</label>
 
-          <!-- Department -->
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="department">Training Type</label>
-              <select class="form-select form-select-sm" id="department" required>
-                 <option>Not required</option>
-									<option selected>All</option>
-									<option>Technical</option>
-									<option>Quality </option>
-									<option>Skill </option>
-									<option>Soft Skill </option>
-              </select>
-            </div>
-          </div>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="percentage"
+                    value="2025-09-10"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="percentage">To Date</label>
 
-          <!-- Location -->
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="location">Grade</label>
-              <select class="form-select form-select-sm" id="location" required>
-               <option>All</option>
-									<option selected>A</option>
-									<option>B</option>
-									<option>C</option>
-									<option>D</option>
-              </select>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="percentage"
+                    value="2025-10-10"
+                    required
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-
-       
-      </form>
-       <div class="text-end">
-             <button class="btn btn-gradient-primary btn-sm ms-3">Go</button>
-        </div>
-    </div>
-  </div>
-</div>
-   
-<div
+            <div
               class="d-flex justify-content-between align-items-center mb-2 p-2 border bg-light"
             >
               <div>
-                <strong>Count:</strong> 9 |
-                <strong>Participants:</strong> 11
+                <strong>Exit Count:</strong> 30 |
+                <strong> Location:</strong> Pune
               </div>
 
               <div>
+                <button class="btn btn-gradient-primary btn-sm ms-3">Go</button>
                 <button class="btn btn-outline-secondary btn-sm me-2">
                   CSV
                 </button>
                 <button class="btn btn-outline-secondary btn-sm">Print</button>
               </div>
             </div>
-              <div class="mt-4">
-                <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card" style="overflow-x: auto; width: 100%">
-                  <div class="card-body">
-                    <table class="table">
-                     <tr>
-						<th>Employee ID</th>
-						<th>Employee Name</th>
-						<th>Training Type</th>
-						<th>Grade</th>
-						<th>Action</th>
-						
-						
-					</tr>
-				<tr>
-						<td>ID1008</td>
-						<td>Mark Wilson</td>
-						<td>Technical</td>
-						<td>A</td>
-					<td>
-						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
-					</td>
-				</tr>
-				<tr>
-					<td>ID1009</td>
-						<td>Susan Kelly </td>
-						<td>Technical</td>
-						<td>A</td>
-					<td>
-						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
-					</td>
-				</tr>
-								<tr>
-					<td>ID1010</td>
-						<td>Susan Carter</td>
-						<td>Technical</td>
-						<td>A</td>
-					<td>
-						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i> </a>
-					</td>
-				</tr>
-				<tr class="even">
-					<td>ID1012</td>
-						<td>Sharon White</td>
-						<td>Technical</td>
-						<td>A</td>
-					<td>
-						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
-					</td>
-				</tr>
-								<tr class="odd">
-					<td>ID1013</td>
-						<td>Brian Anderson </td>
-						<td>Technical</td>
-						<td>A</td>
-					<td>
-						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i> </a>
-					</td>
-				</tr>
-				<tr class="even">
-						<td>ID1015</td>
-						<td>Kevin Young  </td>
-						<td>Technical</td>
-						<td>A</td>
-					<td>
-						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
-					</td>
-				</tr>	
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card" style="overflow-x: auto; width: 100%">
+                <div class="card-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Employee Name</th>
 
-				<tr class="odd">
-						<td>ID1017</td>
-						<td>Kelly Wilson</td>
-						<td>Technical</td>
-						<td>A</td>
-					<td>
-						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
-					</td>
-				</tr>
-				<tr class="even">
-						<td>ID1018</td>
-						<td>Jeff Wilson</td>
-						<td>Technical</td>
-						<td>A</td>
-					<td>
-						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img">  <i class="fa-solid fa-pen-to-square"></i></a>
-					</td>
-				</tr>				<tr class="odd">
-						<td>ID1020</td>
-						<td>Brian West</td>
-						<td>Technical</td>
-						<td>A</td>
-					<td>
-						<a href="javascript:void(0);" class="projectEdit assignSchedule AssesmentLink1 view-img"> <i class="fa-solid fa-pen-to-square"></i> </a>
-					</td>
-				</tr>
-			
-                      </tbody>
-                    </table>
-                  </div>
+                        <th style="padding: 0; width: 150px">
+                          <div class="dropdown">
+                            <!-- Header Button -->
+                            <button
+                              class="btn btn-sm dropdown-toggle w-100 text-start"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                            >
+                              Designation
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <div
+                              class="dropdown-menu"
+                              style="
+                                width: 240px;
+                                max-height: 250px;
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                                padding-left: 40px;
+                              "
+                            >
+                              <!-- Select All -->
+                              <div class="form-check mb-1">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="designationAll"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="designationAll"
+                                  >Select All</label
+                                >
+                              </div>
+
+                              <hr class="my-1" />
+
+                              <!-- Checkbox List -->
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des1"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des1"
+                                  >Developer</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des2"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des2"
+                                  >Designer</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des3"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des3"
+                                  >Accounts Officer</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des4"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des4"
+                                  >Project manager</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >Admin / Account Assistant</label
+                                >
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >HR</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des7"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des7"
+                                  >Blank</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th style="padding: 0; width: 150px">
+                          <div class="dropdown">
+                            <!-- Header Button -->
+                            <button
+                              class="btn btn-sm dropdown-toggle w-100 text-start"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                            >
+                              Department
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <div
+                              class="dropdown-menu"
+                              style="
+                                width: 240px;
+                                max-height: 250px;
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                                padding-left: 40px;
+                              "
+                            >
+                              <!-- Select All -->
+                              <div class="form-check mb-1">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="designationAll"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="designationAll"
+                                  >Select All</label
+                                >
+                              </div>
+
+                              <hr class="my-1" />
+
+                              <!-- Checkbox List -->
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des1"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des1"
+                                  >Sales</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des2"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des2"
+                                  >IT</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des3"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des3"
+                                  >Accounts</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des4"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des4"
+                                  >Manufacturing</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >HR</label
+                                >
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >Production</label
+                                >
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >Research and Development
+                                </label>
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des6"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des6"
+                                  >Blank</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th style="padding: 0; width: 150px">
+                          <div class="dropdown">
+                            <!-- Header Button -->
+                            <button
+                              class="btn btn-sm dropdown-toggle w-100 text-start"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                            >
+                              BU
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <div
+                              class="dropdown-menu"
+                              style="
+                                width: 240px;
+                                max-height: 250px;
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                                padding-left: 40px;
+                              "
+                            >
+                              <!-- Select All -->
+                              <div class="form-check mb-1">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="designationAll"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="designationAll"
+                                  >Select All</label
+                                >
+                              </div>
+
+                              <hr class="my-1" />
+
+                              <!-- Checkbox List -->
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des1"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des1"
+                                  >Manufacturing</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des2"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des2"
+                                  >Health Services</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des3"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des3"
+                                  >Infrastructure</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des4"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des4"
+                                  >Insurance</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >Tele - Communication</label
+                                >
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >Business Intelligence</label
+                                >
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >Oracle Services
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des5"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des5"
+                                  >Consulting
+                                </label>
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des6"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des6"
+                                  >Blank</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+
+                        <th style="padding-left: 0; padding-right: 0">
+                          <div class="dropdown">
+                            <!-- Header / Button -->
+                            <button
+                              class="btn btn-sm dropdown-toggle w-100 text-start"
+                              type="button"
+                              id="locationDropdown"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Location
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <div
+                              class="dropdown-menu"
+                              style="
+                                width: 240px;
+                                max-height: 250px;
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                                padding-left: 40px;
+                              "
+                            >
+                              <!-- Select All -->
+                              <div class="form-check mb-2">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="selectAllLocation"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="selectAllLocation"
+                                  >Select All</label
+                                >
+                              </div>
+
+                              <div class="dropdown-divider"></div>
+
+                              <!-- Individual Checkboxes -->
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locPune"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locPune"
+                                  >Pune</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locMumbai"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locMumbai"
+                                  >Mumbai</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locBanglore"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="locBanglore"
+                                  >Banglore</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locNagpur"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locNagpur"
+                                  >Nagpur</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locDelhi"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locDelhi"
+                                  >Delhi</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locGujrat"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locGujrat"
+                                  >Gujrat</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locKerala"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locKerala"
+                                  >Kerala</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locAndhra"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locAndhra"
+                                  >Andhra Pradesh</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="locBlank"
+                                  checked
+                                />
+                                <label class="form-check-label" for="locBlank"
+                                  >Blank</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>Exit Date</th>
+                        <th style="padding: 0; width: 150px">
+                          <div class="dropdown">
+                            <!-- Header Button -->
+                            <button
+                              class="btn btn-sm dropdown-toggle w-100 text-start"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                            >
+                              Type of Separation
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <div
+                              class="dropdown-menu"
+                              style="
+                                width: 240px;
+                                max-height: 250px;
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                                padding-left: 40px;
+                              "
+                            >
+                              <!-- Select All -->
+                              <div class="form-check mb-1">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="designationAll"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="designationAll"
+                                  >Select All</label
+                                >
+                              </div>
+
+                              <hr class="my-1" />
+
+                              <!-- Checkbox List -->
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des1"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des1"
+                                  >Resignation</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des2"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des2"
+                                  >Retirement</label
+                                >
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des6"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des6"
+                                  >Termination for Cause
+                                </label>
+                              </div>
+
+                              <div class="form-check">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="des6"
+                                  checked
+                                />
+                                <label class="form-check-label" for="des6"
+                                  >Blank
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </th>
+                        <th>Reason</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>ID1008</td>
+                        <td>Sneha Iyer</td>
+                        <td>Accounts Officer</td>
+                        <td>Accounts</td>
+                        <td>Business Intellegence</td>
+                        <td>Pune</td>
+                        <td>03-Mar-2025</td>
+                        <td>Resignation</td>
+                        <td>Personal</td>
+                        <td>
+                          <a href="javascript:void(0);">
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ID1010</td>
+                        <td>George Martin</td>
+                        <td>Admin / Account Assistant</td>
+                        <td>HR</td>
+                        <td>Business Intellegence</td>
+                        <td>Pune</td>
+                        <td>02-Mar-2025</td>
+                        <td>Resignation</td>
+                        <td>Salary</td>
+                        <td>
+                          <a href="javascript:void(0);">
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ID1017</td>
+                        <td>Abhishek Deshmukh</td>
+                        <td>Project Manager</td>
+                        <td>Sales</td>
+                        <td>Health Sevices</td>
+                        <td>Pune</td>
+                        <td>01-Mar-2025</td>
+                        <td>Resignation</td>
+                        <td>Transfer</td>
+                        <td>
+                          <a href="javascript:void(0);">
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ID1011</td>
+                        <td>Kevin Young</td>
+                        <td>Admin / Account Assistant</td>
+                        <td>Sales</td>
+                        <td>Insurance</td>
+                        <td>Pune</td>
+                        <td>21-Feb-2025</td>
+                        <td>Resignation</td>
+                        <td>No Promotion</td>
+                        <td>
+                          <a href="javascript:void(0);">
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ID1019</td>
+                        <td>Mark Wilson</td>
+                        <td>Project Manager</td>
+                        <td>IT</td>
+                        <td>Health Sevices</td>
+                        <td>Pune</td>
+                        <td>21-Feb-2025</td>
+                        <td>Resignation</td>
+                        <td>Salary</td>
+                        <td>
+                          <a href="javascript:void(0);">
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ID1014</td>
+                        <td>Ruth Nelson</td>
+                        <td>Admin / Account Assistant</td>
+                        <td>HR</td>
+                        <td>Consulting</td>
+                        <td>Pune</td>
+                        <td>17-Feb-2025</td>
+                        <td>Resignation</td>
+                        <td>Salary</td>
+                        <td>
+                          <a href="javascript:void(0);">
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ID1012</td>
+                        <td>Vedant Chaudhary</td>
+                        <td>HR</td>
+                        <td>Accounts</td>
+                        <td>Manufacturing</td>
+                        <td>Pune</td>
+                        <td>15-Feb-2016</td>
+                        <td>Retirement</td>
+                        <td>-</td>
+                        <td>
+                          <a href="javascript:void(0);">
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ID1021</td>
+                        <td>Susan Kelly</td>
+                        <td>Project Manager - Product and services</td>
+                        <td>Sales</td>
+                        <td>Health Sevices</td>
+                        <td>Pune</td>
+                        <td>11-Feb-2025</td>
+                        <td>Retirement</td>
+                        <td>-</td>
+                        <td>
+                          <a href="javascript:void(0);">
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ID1022</td>
+                        <td>Sharon White</td>
+                        <td>Admin / Account Assistant</td>
+                        <td>Accounts</td>
+                        <td>Tele - Communication</td>
+                        <td>Pune</td>
+                        <td>11-Feb-2025</td>
+                        <td>Termination</td>
+                        <td>Violation of company law</td>
+                        <td>
+                          <a href="javascript:void(0);">
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>ID1024</td>
+                        <td>Brian Anderson</td>
+                        <td>Developer</td>
+                        <td>IT</td>
+                        <td>Health Sevices</td>
+                        <td>Pune</td>
+                        <td>9-Feb-2025</td>
+                        <td>Resignation</td>
+                        <td>Salary</td>
+                        <td>
+                          <a href="javascript:void(0);">
+                            <i class="fa-solid fa-pen-to-square"></i
+                          ></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-              </div>
-          <div class="mt-4 d-flex justify-content-end">
-           <nav>
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
+            </div>
+            <div class="mt-4 d-flex justify-content-end">
+              <nav>
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
 
-    <li class="page-item active">
-      <a class="page-link" href="#">1</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">2</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">3</a>
-    </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                  </li>
 
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-
-
-         </div>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
-          </div>
+        </div>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
@@ -1564,31 +2383,36 @@
     <script src="../../assets/js/select2.js"></script>
     <!-- End custom js for this page -->
 
- <script type="text/javascript"> 
+    <script type="text/javascript">
+      $(function () {
+        // $(".menudropdown").prop('selectedIndex','3');
 
-$(function(){
-             // $(".menudropdown").prop('selectedIndex','3');
-			  
-			  $("#from_Date").datepicker({
-	            changeMonth:true,
-				changeYear:true,
-				dateFormat : 'dd-M-yy',
-				yearRange: '-70 :c'
-			});	
-			
-	$("#to_Date").datepicker({
-				changeMonth:true,
-				changeYear:true,
-				dateFormat : 'dd-M-yy',
-				yearRange: '-70 :c'
-			});	
-		 $(".content").mCustomScrollbar();
-	});
-	
-</script>
-		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/reportsFilter.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/multiDropdown.js" type="text/javascript" charset="utf-8"></script>
+        $("#from_Date").datepicker({
+          changeMonth: true,
+          changeYear: true,
+          dateFormat: "dd-M-yy",
+          yearRange: "-70 :c",
+        });
 
+        $("#to_Date").datepicker({
+          changeMonth: true,
+          changeYear: true,
+          dateFormat: "dd-M-yy",
+          yearRange: "-70 :c",
+        });
+        $(".content").mCustomScrollbar();
+      });
+    </script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script
+      src="js/reportsFilter.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script
+      src="js/multiDropdown.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
   </body>
 </html>
