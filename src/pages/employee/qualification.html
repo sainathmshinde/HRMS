@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
@@ -665,9 +669,12 @@
                           data-bs-parent="#accordionExample"
                         >
                           <div class="accordion-body">
-                            <div class="row">
+                            
+                            
+                            <div class="row" id="Education" style="display:none;">
                               
-                                <div class="row">
+
+                                <div class="row" >
                                   <!-- Education Level -->
                                   <div class="col-md-6">
                                     <div class="form-group">
@@ -895,16 +902,22 @@
                                 
                                 <!-- Buttons -->
                                 <div class="text-end">
-                                  <a href="manageKra.html" class="btn btn-gradient-primary me-2 ">
+                                  <!-- <a href="manageKra.html" class="btn btn-gradient-primary me-2 ">
                                     Save
                                   </a>
                                   <a href="manageKra.html" class="btn btn-gradient-light">
                                     Cancel
-                                  </a>
+                                  </a> -->
+                                  <button id="saveEducationBtn" class="btn btn-gradient-primary me-2">Save</button>
+                                  <button id="cancelEducationBtn" class="btn btn-gradient-light">Cancel</button>
+
                                 </div>
                               
                             </div>
-                            <div class="row">
+                            <div class="row" id="EducationTable" style="display:block;">
+                              <div class="text-end mb-2">
+                                <button id="editEducationBtn" class="btn btn-primary">Add More Qualification</button>
+                              </div>
                               <table class="table">
                                   <tbody>
                                     <tr >
@@ -950,7 +963,10 @@
                                       <label>3.5</label>
                                     </td>
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                      
+                                       <a href="javascript:void(0);"
+                                ><i id="viewEducationBtn"  class="fa-solid fa-eye projectEdit QprojectEdit actionLinks view-img" style="color: #080808; margin-right: 10px;"></i></a></>
+                              <a><i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i></a>
                                           
                                     </td>
                                   </tr>
@@ -973,9 +989,12 @@
                                     <td>
                                       <label>4</label>
                                     </td>
-                                    <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;
-                                      <a href="javascript:void(0);" class="deleteLink  actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                  <td>
+                                      
+                                       <a href="javascript:void(0);"
+                                ><i id="viewEducationBtn"  class="fa-solid fa-eye projectEdit QprojectEdit actionLinks view-img" style="color: #080808; margin-right: 10px;"></i></a></>
+                              <a><i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i></a>
+                                          
                                     </td>
                                   </tr>
                                   <tr >
@@ -998,8 +1017,11 @@
                                       <label>5</label>
                                     </td>
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;
-                                      <a href="javascript:void(0);" class="deleteLink  actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                      
+                                       <a href="javascript:void(0);"
+                                ><i id="viewEducationBtn"  class="fa-solid fa-eye projectEdit QprojectEdit actionLinks view-img" style="color: #080808; margin-right: 10px;"></i></a></>
+                              <a><i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i></a>
+                                          
                                     </td>
                                   </tr>
                                 </tbody>
@@ -1438,6 +1460,45 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
+     <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const eduForm = document.getElementById("Education");
+    const eduTable = document.getElementById("EducationTable");
+
+    const editBtn = document.getElementById("editEducationBtn");
+    const saveBtn = document.getElementById("saveEducationBtn");
+    const cancelBtn = document.getElementById("cancelEducationBtn");
+    const viewBtn = document.getElementById("viewEducationBtn")
+
+
+    // Click Edit → Show form, hide table
+    editBtn.addEventListener("click", function () {
+        eduTable.style.display = "none";
+        eduForm.style.display = "block";
+    });
+
+    // Click Save → Show table, hide form
+    saveBtn.addEventListener("click", function () {
+        eduForm.style.display = "none";
+        eduTable.style.display = "block";
+    });
+
+    // Click Cancel → Show table, hide form
+    cancelBtn.addEventListener("click", function () {
+        eduForm.style.display = "none";
+        eduTable.style.display = "block";
+    });
+    viewBtn.addEventListener("click", function () {
+        eduTable.style.display = "none";
+        eduForm.style.display = "block";
+    });
+   
+
+});
+</script>
+
+
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
