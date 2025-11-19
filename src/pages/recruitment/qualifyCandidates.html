@@ -1297,14 +1297,7 @@
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <!-- <label for="percentage">Change Criteria </label>
-
-                          <input
-                            type="checkbox"
-                            class="form-control"
-                            id="percentage"
-                            onclick=""
-                          /> -->
+                          
                           <label for="financialYear"
                             >Change Eligibility Criteria</label
                           >
@@ -1592,5 +1585,46 @@
       type="text/javascript"
       charset="utf-8"
     ></script>
+    <script type="text/javascript"> 
+	$(function()
+	{
+		$(".criteriaChanged").find("select").attr("disabled","disabled");			
+		$(".searchCandidateForm").hide();
+		
+		$(".addNewShortList").click(function()
+	  {
+		
+		$(".searchListForm").hide();
+		$(".addNewShortList").hide();
+		$(".shortListCandidate").hide();
+		$(".searchCandidateForm").show();
+		
+	  });
+	  
+	  
+	 
+	  
+	  
+	  $(".searchSave").click(function()
+	  {
+		
+		$(".searchListForm").show();
+		$(".addNewShortList").show();
+		$(".shortListCandidate").show();
+		
+		
+	  });
+	 
+	  
+		
+	});
+	
+	 function enableChangesCriteria()
+	  {
+		
+			$(".criteriaChanged").find("select").removeAttr("disabled").select2();		
+	  }
+	
+</script>
   </body>
 </html>
