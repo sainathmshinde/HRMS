@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
@@ -404,7 +408,7 @@
               </div>
             </li>
 
-            <li class="nav-item">
+      <li class="nav-item">
               <a
                 class="nav-link"
                 data-bs-toggle="collapse"
@@ -419,16 +423,12 @@
               <div class="collapse" id="leave">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/ui-features/buttons.html"
+                    <a class="nav-link" href="/src/pages/ui-features/buttons.html"
                       >Dashboard</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/leaveAccount.html"
+                    <a class="nav-link" href="/src/pages/leaves/leaveAccount.html"
                       >Leave Account</a
                     >
                   </li>
@@ -438,51 +438,37 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/appliedLeaves.html"
+                    <a class="nav-link" href="/src/pages/leaves/appliedLeaves.html"
                       >Applied Leaves</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/approvedLeave.html"
+                    <a class="nav-link" href="/src/pages/leaves/approvedLeave.html"
                       >Approved Leaves</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/subordinateLeavePlan.html"
+                    <a class="nav-link" href="/src/pages/leaves/subordinateLeavePlan.html"
                       >Subordinate Leave Plan</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/holidaysList.html"
+                    <a class="nav-link" href="/src/pages/leaves/holidaysList.html"
                       >Holidays List</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/leaveConfig.html"
+                    <a class="nav-link" href="/src/pages/leaves/leaveConfig.html"
                       >Leave Configuration</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/leaveAdjustment.html"
+                    <a class="nav-link" href="/src/pages/leaves/leaveAdjustment.html"
                       >Leave Adjustment</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/src/pages/leaves/leaveBalanceLedger.html"
+                    <a class="nav-link" href="/src/pages/leaves/leaveBalanceLedger.html"
                       >Leave Balance Ledger</a
                     >
                   </li>
@@ -609,8 +595,8 @@
                   <li class="nav-item">
                     <a class="nav-link" href="pages/tables/basic-table.html"
                       >Total leave balance for year 2025 as on (18-11-2025)
-                      Leave Type
-                    </a>
+Leave Type	</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -670,117 +656,103 @@
           </ul>
         </nav>
         <!-- partial -->
-        <div class="main-panel">
-          <div class="content-wrapper">
+    <div class="main-panel">
+        <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Approve Leaves</h3>
+              <h3 class="page-title">Approved Leaves</h3>
             </div>
             <div class="row">
-              <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">List of Subordinates Leaves</h4>
-                    <p></p>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="lastName">Leave Status</label>
-                        <select class="form-select" id="title" required>
-                          <option value="Select">Select</option>
-                          <option value="Pending Approval" selected>
-                            Pending Approval
-                          </option>
-                          <option value="Pending For 2up Approval">
-                            Pending For 2up Approval
-                          </option>
-                          <option value="Pending For Top Level Approval">
-                            Pending For Top Level Approval
-                          </option>
-                          <option value="Approved">Approved</option>
-                          <option value="Declined">Declined</option>
-                          <option value="Cancelled">Cancel</option>
-                        </select>
+                                <!-- Employee ID -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="employeeId">Leave Status</label>
+                                        <!-- <span class="text-danger">*</span> -->
+                                        <select class="form-select" id="title" required>
+                                            <option value="Select"selected>Select</option>
+                                            <option value="2025">Pending Approval</option>
+                                            <option value="2026">Pending For 2Up Approval</option>
+                                            <option value="2026">Pending For Top Leavel Approval</option>
+                                            <option value="2025">Approved/option>
+                                            <option value="2025">Cancel</option> 
+                                            <option value="2025">Decline</option> 
+                                        </select>
+                                    </div>
+                                </div> 
+                                <!-- Total holidays -->
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 grid-margin stretch-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th><label>Employee Id</label></th>
+                                  <th><label>Employee Name</label></th>
+                                  <th><label>Leave Type</label></th>
+                                  <th><label>Leave From Date</label></th>
+                                  <th><label>Leave To Date</label></th>
+                                  <th><label>Status</label></th>
+                                  <th><label>Action</label></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>E1001</td>
+                                  <td>Mr. Andrew Baker</td>
+                                  <td>Medical Leave</td>
+                                  <td>12-May-2025</td>
+                                  <td>17-May-2025</td>
+                                  <td>Approval Pending</td>
+                                  <td>
+                                    <a href="viewApprovedLeaves.html"><i style="color:#080808" class="fa-solid fa-eye"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>E2000</td>
+                                  <td>Mr. Ruth Neison</td>
+                                  <td>Casual Leave</td>
+                                  <td>09-May-2025</td>
+                                  <td>10-May-2025</td>
+                                  <td>Approval Pending</td>
+                                  <td>
+                                    <a href="viewApprovedLeaves.html"><i style="color:#080808" class="fa-solid fa-eye"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <tr>
+                                    <td>E2005</td>
+                                    <td>Mr. Kevin Smith</td>
+                                    <td>Casual Leave</td>
+                                    <td>09-May-2025</td>
+                                    <td>10-May-2025</td>
+                                    <td>Approval Pending</td>
+                                  <td>
+                                    <a href="viewApprovedLeaves.html"><i style="color:#080808" class="fa-solid fa-eye"></i></a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>E2048</td>
+                                  <td>Mr. Mark Jackson</td>
+                                  <td>Casual Leave</td>
+                                  <td>11-May-2025</td>
+                                  <td>12-May-2025</td>
+                                  <td>Approval Pending</td>
+                                  <td>
+                                    <a href="viewApprovedLeaves.html"><i style="color:#080808" class="fa-solid fa-eye"></i></a>
+                                  </td>
+                                </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
-                  </div>
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>Employee ID</th>
-                        <th>Employee Name</th>
-                        <th>Leave Type</th>
-                        <th>Leave From Date</th>
-                        <th>Leave To Date</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>E1001</td>
-                        <td>Mr. Andrew Baker</td>
-                        <td>Medical Leave</td>
-                        <td>12-May-2025</td>
-                        <td>17-May-2025</td>
-                        <td>Approval Pending</td>
-                        <td>
-                          <a
-                            href="viewApprovedLeaves.html"
-                            class="btn btn-gradient-primary me-2"
-                            >Edit</a
-                          >
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>E2000</td>
-                        <td>Mr. Ruth Neison</td>
-                        <td>Casual Leave</td>
-                        <td>09-May-2025</td>
-                        <td>10-May-2025</td>
-                        <td>Approval Pending</td>
-                        <td>
-                          <a
-                            href="viewApprovedLeaves.html"
-                            class="btn btn-gradient-primary me-2"
-                            >Edit</a
-                          >
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>E2005</td>
-                        <td>Mr. Kevin Smith</td>
-                        <td>Casual Leave</td>
-                        <td>09-May-2025</td>
-                        <td>10-May-2025</td>
-                        <td>Approval Pending</td>
-                        <td>
-                          <a
-                            href="viewApprovedLeaves.html"
-                            class="btn btn-gradient-primary me-2"
-                            >Edit</a
-                          >
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>E2048</td>
-                        <td>Mr. Mark Jackson</td>
-                        <td>Casual Leave</td>
-                        <td>11-May-2025</td>
-                        <td>12-May-2025</td>
-                        <td>Approval Pending</td>
-                        <td>
-                          <a
-                            href="viewApprovedLeaves.html"
-                            class="btn btn-gradient-primary me-2"
-                            >Edit</a
-                          >
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  </form>
                 </div>
               </div>
-            </div>
-          </div>
+              </div>
+              </div>
+              </div>
+              </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
@@ -790,7 +762,8 @@
               <span
                 class="text-muted text-center text-sm-left d-block d-sm-inline-block"
                 >Copyright © 2023
-                <a href="https://syborgtech.com/" target="_blank">SyborgTech</a
+                <a href="https://syborgtech.com/" target="_blank"
+                  >SyborgTech</a
                 >. All rights reserved.</span
               >
             </div>

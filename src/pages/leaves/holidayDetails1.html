@@ -42,10 +42,6 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
   </head>
   <body>
     <div class="container-scroller">
@@ -408,7 +404,7 @@
               </div>
             </li>
 
-       <li class="nav-item">
+            <li class="nav-item">
               <a
                 class="nav-link"
                 data-bs-toggle="collapse"
@@ -423,12 +419,16 @@
               <div class="collapse" id="leave">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/ui-features/buttons.html"
+                    <a
+                      class="nav-link"
+                      href="/src/pages/ui-features/buttons.html"
                       >Dashboard</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/leaves/leaveAccount.html"
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/leaveAccount.html"
                       >Leave Account</a
                     >
                   </li>
@@ -438,37 +438,51 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/leaves/appliedLeaves.html"
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/appliedLeaves.html"
                       >Applied Leaves</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/leaves/approvedLeave.html"
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/approvedLeave.html"
                       >Approved Leaves</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/leaves/subordinateLeavePlan.html"
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/subordinateLeavePlan.html"
                       >Subordinate Leave Plan</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/leaves/holidaysList.html"
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/holidaysList.html"
                       >Holidays List</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/leaves/leaveConfig.html"
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/leaveConfig.html"
                       >Leave Configuration</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/leaves/leaveAdjustment.html"
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/leaveAdjustment.html"
                       >Leave Adjustment</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/src/pages/leaves/leaveBalanceLedger.html"
+                    <a
+                      class="nav-link"
+                      href="/src/pages/leaves/leaveBalanceLedger.html"
                       >Leave Balance Ledger</a
                     >
                   </li>
@@ -595,8 +609,8 @@
                   <li class="nav-item">
                     <a class="nav-link" href="pages/tables/basic-table.html"
                       >Total leave balance for year 2025 as on (18-11-2025)
-Leave Type	</a
-                    >
+                      Leave Type
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -656,69 +670,57 @@ Leave Type	</a
           </ul>
         </nav>
         <!-- partial -->
-    <div class="main-panel">
-        <div class="content-wrapper">
+        <div class="main-panel">
+          <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Leave Configuration</h3>
-              <nav aria-label="breadcrumb">
-                <a href="addNewLeaveConfig.html" class="btn btn-gradient-primary me-2">Add New</a>
-              </nav>
+              <h3 class="page-title">Holiday Details</h3>
             </div>
             <div class="row">
-                <div class="col-12 grid-margin stretch-card">
-                    <div class="card">
-                        <div class="card-body position-relative">
-                            <form class="forms-sample">
-                            <div class="row">
-                                <!-- Employee ID -->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="employeeId">Employee Type</label>
-                                        <!-- <span class="text-danger">*</span> -->
-                                        <select class="form-select" id="title" required>
-                                            <option value="Select">Select</option>
-                                            <option value="on_contract" selected>On Contract</option>
-                                            <option value="on_deputation">On Deputation</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Leave Type</th>
-                          <th>Year Type</th>
-                          <th>Annual Leave Quantity</th>
-                          <th>Min Leave to be applied</th>
-                          <th>Max Leave to be applied</th>
-                          <th>Action</th>
-
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Casual Leave</td>
-                          <td>Financial Year</td>
-                          <td>8</td>
-                          <td>1</td>
-                          <td>7</td>
-                          <td>
-                            <a href="viewLeaveConfig.html"> <i class="fa-solid fa-pen-to-square"></i></a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Earned Leave</td>
-                          <td>Calendar Year</td>
-                          <td>20</td>
-                          <td>3</td>
-                          <td>10</td>
-                          <td>
-                            <a href="viewLeaveConfig.html"> <i class="fa-solid fa-pen-to-square"></i></a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <form class="forms-sample">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="lastName">Name</label>
+                            <span class="text-danger">*</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="holidayDetails"
+                              placeholder="Enter Festival Name"
+                              required
+                            />
+                          </div>
                         </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="lastName">Date</label>
+                            <span class="text-danger">*</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="date"
+                              placeholder="Enter Festival Date"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="text-end">
+                        <a
+                          href="./holidaysList.html"
+                          class="btn btn-gradient-primary me-2"
+                        >
+                          Save
+                        </a>
+                        <a
+                          href="./holidaysList.html"
+                          class="btn btn-gradient-light"
+                        >
+                          Cancel
+                        </a>
                       </div>
                     </form>
                   </div>
@@ -735,8 +737,7 @@ Leave Type	</a
               <span
                 class="text-muted text-center text-sm-left d-block d-sm-inline-block"
                 >Copyright © 2023
-                <a href="https://syborgtech.com/" target="_blank"
-                  >SyborgTech</a
+                <a href="https://syborgtech.com/" target="_blank">SyborgTech</a
                 >. All rights reserved.</span
               >
             </div>
