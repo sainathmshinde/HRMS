@@ -1667,14 +1667,28 @@
             <div class="row">
                         <div class="col-md-3">
                           <div class="form-group">
-                            <label for="date">Date *</label>
-                            <input
-                              type="date"
-                              class="form-control"
-                              id="date"
-                              required
-                            />
+  <label for="month">Date</label>
+  <input
+    type="month"
+    class="form-control"
+    id="month"
+    value="2025-09"   
+  />
+</div>
+                        </div>
+                         <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="title">Designation</label>
+                            <select class="form-select" id="title" required>
+                              <option value="mr">Select</option>
+                              <option value="mr" selected>Team Lead</option>
+                              <option value="mr">HR</option>
+                              <option value="mr">Developer</option>
+                              <option value="mr">IT</option>
+                              
+                            </select>
                           </div>
+                        </div>
                         </div>
             <div class="row">
               <div class="col-12 grid-margin stretch-card">
@@ -1682,18 +1696,18 @@
                   <div class="card-body">
                     <form class="forms-sample">
                       <div class="attendancetable">
-              <!-- <a href="salaryCalculation.html"> -->
-                  <div class="table-responsive"> <!-- Makes table scrollable if wide -->
+              
+                  <div class="table-responsive"> 
                     <div class="table align-middle" style="width: 100%;">
                 <div class="table align-middle" style="width: 100%;">
-				<div class="mb-4">
-                    <img src="/src/assets/images/MonthlyAttendanceMgmt1.png" alt="attendance"/>
-				</div>
+				          <div class="mb-4">
+                    <img style="height: 100%; width: 100%;" src="/src/assets/images/MonthlyAttendance2.png.png" alt="attendance"/>
+				              </div>
 
-			    </div>
-			</div>
+			                 </div>
+			                 </div>
             
-              <!-- </a> -->
+              
             </div>
  
                       </div>
@@ -1703,7 +1717,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
