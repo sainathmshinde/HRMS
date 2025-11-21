@@ -1597,10 +1597,28 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">View Monthly Work Plan</h3>
+               <h3 class="page-title fixed-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-book"></i></span>
+                Monthly Diary
+              </h3>
+
             </div>
-                      <div class="row" >
-                            <div class="col-md-3">
+                    
+                      
+                            <div class="row">
+                                <div class="col-lg-12 grid-margin stretch-card">
+                                    <div class="card">
+                                        <div class="card-body">
+                                          <div class="col-md-6 mt-3 text-end" style="margin-left: 600px;">
+                <a href="addDiary.html" class="btn btn-gradient-primary me-2">Add Dairy</a>
+              
+              
+                <a href="printMonthlyDiary.html" class="btn btn-gradient-primary me-2">Print Monthly Diary</a>
+              
+              </div>
+                                        <div style="margin-top: -50px;">
+                                           <div class="row">
+                                           <div class="col-md-3">
                                 <div class="form-group">
                                 <label for="employeeType">Month <span class="text-danger">*</span></label>
                                 <select
@@ -1638,22 +1656,10 @@
                             </select>
                           </div>
                         </div>
-                             <div class="col-md-6 mt-3 text-end">
-                <a href="addDiary.html" class="btn btn-gradient-primary me-2">Add Dairy</a>
-              
-              
-                <a href="printMonthlyDiary.html" class="btn btn-gradient-primary me-2">Print Monthly Diary</a>
-              
-              </div>
-                      </div>
-                      <!-- Row 1: Employee Type & Leave Type -->
-                            <!-- Row 2: Year Type & Opening Balance -->
-                            <div class="row">
-                                <div class="col-lg-12 grid-margin stretch-card">
-                                    <div class="card">
-                                        <div class="card-body">
+
+                                         </div>
                                           <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-3">
                                             <div class="form-group">
                                                   <label for="reportingId">Monthly Diary Supervisor Status</label>
                                                   <!-- <span class="text-danger">*</span> -->
@@ -1666,7 +1672,7 @@
                                                   />
                                             </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-3">
                                             <div class="form-group">
                                                   <label for="reportingId">Monthly Diary Admin Status</label>
                                                   <!-- <span class="text-danger">*</span> -->
@@ -1679,7 +1685,10 @@
                                                   />
                                             </div>
                                             </div>
+                                              
+                                            
                                           </div>
+                                        </div>
                                             <div class="table-responsive">
                       <!-- Makes table scrollable if wide -->
                       <table class="table align-middle" style="width: 100%">

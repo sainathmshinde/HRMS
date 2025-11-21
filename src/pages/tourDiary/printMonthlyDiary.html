@@ -1596,33 +1596,38 @@
 <div class="main-panel">
     <div class="content-wrapper">
         <div class="page-header d-flex justify-content-between align-items-center">
-            <h3 class="page-title m-0">Print Monthly Diary</h3>
-            <div class="d-flex gap-2">
+             <h3 class="page-title fixed-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-book"></i></span>
+                 View Monthly Diary
+              </h3>
+
+           
+        </div>
+         <div class=" text-end mt-5">
                 <a href="monthlyDiary.html" class="btn btn-gradient-primary">Back To Monthly Diary</a>
                 <a href="#" onclick="printDiv()" class="btn btn-gradient-primary">Print</a>
             </div>
-        </div>
         <div id="printArea">
             <div class="row">
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label for="reportingId">Name</label>
                                     <span class="text-danger">*</span>
                                     <input type="text" class="form-control" id="name" placeholder="Andrew Baker" disabled/>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label for="reportingId">Designation</label>
                                     <span class="text-danger">*</span>
                                     <input type="text" class="form-control" id="Designation" placeholder="Manager" disabled/>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label for="reportingId">Month</label>
                                     <span class="text-danger">*</span>
@@ -2265,7 +2270,7 @@
             </div>
         </form>
             </div>
-            <div class="row">
+            <div class="row" style="margin-top: -60px;">
         <div class="col-lg-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
