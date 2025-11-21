@@ -29623,7 +29623,7 @@ dl li {
 
 .sidebar {
   overflow-y: auto !important;   /* sidebar scrollable */
-  max-height: calc(100vh - 70px); /* navbar उंची minus */
+  max-height: calc(100vh - 70px); /* navbar height minus */
 }
 
 /* scrollbar style */
