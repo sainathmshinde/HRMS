@@ -1597,19 +1597,20 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title">Manage KRA</h3>
-              <nav aria-label="breadcrumb">
-                <div class="linkBlock">
-                  <a
+              <div class="page-header">
+              <h3 class="page-title fixed-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-gear"></i></span>
+               Manage KRA
+              </h3>
+            </div>
+            <div class="row align-items-end mt-5">
+              <div class="text-end">
+                 <a
                     href="editAdminManageKRA.html"
                     class="formView addKRALink btn btn-gradient-primary me-2"
-                    >Add new KRA</a
-                  >
-                </div>
-              </nav>
+                    >Add new KRA</a>
+              </div>
             </div>
-
             <div class="col-12 grid-margin stretch-card kraGridBlock">
               <div class="card">
                 <div class="card-body">
@@ -1660,7 +1661,8 @@
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <table class="table kraGrid grid kraDetailTable">
+                     <div class="table-responsive"> <!-- Makes table scrollable if wide -->
+          <table class="table align-middle kraGrid grid kraDetailTable">
                       <thead>
                         <tr>
                           <th>KRA</th>
@@ -1786,11 +1788,25 @@
                         </tr>
                       </tbody>
                     </table>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+           <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+                >Copyright © 2023
+                <a href="https://www.syborgtech.com/" target="_blank"
+                  >SyborgTech</a
+                >. All rights reserved.</span
+              >
+            </div>
+          </footer>
         </div>
         <!-- main-panel ends -->
       </div>
