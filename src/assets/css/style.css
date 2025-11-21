@@ -29663,11 +29663,13 @@ dl li {
 /* --- Sidebar hover override: add this at the END of your final stylesheet --- */
 
 .sidebar .nav .nav-item > a.nav-link {
-  display: block;              /* anchor पूर्ण लाइन भरून background दाखवण्यासाठी */
-  padding: 0.75rem 1.25rem;    /* adjust as needed to match layout */
+  display: flex !important;               /* icon + text same line */
+  align-items: center !important;         /* vertical center */
+  justify-content: space-between !important; /* icon always at right end (तुला हवंय तेच) */
+  padding: 0.75rem 1.1rem;
   border-radius: 10px;
-  transition: background 0.25s ease, color 0.25s ease;
 }
+
 
 /* Strong, specific hover rule - loaded last so it overrides existing scss rules */
 .sidebar .nav .nav-item > a.nav-link:hover,
