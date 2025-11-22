@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
@@ -59,7 +63,7 @@
             ><img src="../../assets/images/logo-mini.svg" alt="logo"
           /></a> -->
           <a class="navbar-brand brand-logo" href=".././../index.html">
-             <img
+            <img
               src="/src/assets/images/HUMANOVA (1).svg"
               alt="logo"
               style="
@@ -302,7 +306,7 @@
         <!-- partial:../../partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
-               <li class="nav-item">
+            <li class="nav-item">
               <a
                 class="nav-link"
                 data-bs-toggle="collapse"
@@ -1591,10 +1595,16 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header mt-2">
-              <h3 class="page-title addKRALink">My Assigned KRA</h3>
+              <h3 class="page-title fixed-title">
+                <span
+                  class="page-title-icon bg-gradient-primary text-white me-2"
+                  ><i class="fa-solid fa-square-check"></i
+                ></span>
+                My Assigned KRA
+              </h3>
             </div>
 
-            <div class="row g-2 gridView">
+            <div class="row g-2 gridView mt-5">
               <div class="col-md-3">
                 <div class="form-group mb-2">
                   <label for="title"
@@ -1606,126 +1616,133 @@
                     required
                   >
                     <option value="">Select</option>
-                    <option selected>FY - 2023-2024</option>
+                    <option selected>FY - 2025-2026</option>
+                    <option>FY - 2024-2025</option>
+                    <option>FY - 2023-2024</option>
                     <option>FY - 2022-2023</option>
-                    <option>FY - 2021-2022</option>
-                    <option>FY - 2020-2021</option>
                   </select>
                 </div>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-lg-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>KRA</th>
-                          <th>Weightage(%)</th>
-                          <th>Indicators</th>
-                          <th>Description</th>
-                          <th>Target</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td rowspan="2">
-                            <label>Thematic</label>
-                          </td>
-                          <td rowspan="2">
-                            <label>30%</label>
-                          </td>
+            <div class="row" style="margin-top: -30px">
+              <div class="gridView">
+                <div class="col-lg-12 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>KRA</th>
+                              <th>Weightage(%)</th>
+                              <th>Indicators</th>
+                              <th>Description</th>
+                              <th>Target</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td rowspan="2">
+                                <label>Thematic</label>
+                              </td>
+                              <td rowspan="2">
+                                <label>30%</label>
+                              </td>
 
-                          <td>
-                            <label>Customer Discussion</label>
-                          </td>
-                          <td>
-                            <label>Performance</label>
-                          </td>
-                          <td>
-                            <label>15</label>
-                          </td>
-                        </tr>
+                              <td>
+                                <label>Customer Discussion</label>
+                              </td>
+                              <td>
+                                <label>Performance</label>
+                              </td>
+                              <td>
+                                <label>15</label>
+                              </td>
+                            </tr>
 
-                        <tr>
-                          <td>
-                            <label>Collateral</label>
-                          </td>
-                          <td>
-                            <label>Timeline</label>
-                          </td>
-                          <td>
-                            <label>30</label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td rowspan="2">
-                            <label>Competency</label>
-                          </td>
+                            <tr>
+                              <td>
+                                <label>Collateral</label>
+                              </td>
+                              <td>
+                                <label>Timeline</label>
+                              </td>
+                              <td>
+                                <label>30</label>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">
+                                <label>Competency</label>
+                              </td>
 
-                          <td rowspan="2">
-                            <label>20%</label>
-                          </td>
+                              <td rowspan="2">
+                                <label>20%</label>
+                              </td>
 
-                          <td>
-                            <label>Team Work</label>
-                          </td>
-                          <td>
-                            <label>Group Activity</label>
-                          </td>
-                          <td>
-                            <label>20</label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <label>Presentation</label>
-                          </td>
-                          <td>
-                            <label>Production</label>
-                          </td>
-                          <td>
-                            <label>15</label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td rowspan="2">
-                            <label>Competency-SupervisorFeedBack</label>
-                          </td>
-                          <td rowspan="2">
-                            <label>50%</label>
-                          </td>
+                              <td>
+                                <label>Team Work</label>
+                              </td>
+                              <td>
+                                <label>Group Activity</label>
+                              </td>
+                              <td>
+                                <label>20</label>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <label>Presentation</label>
+                              </td>
+                              <td>
+                                <label>Production</label>
+                              </td>
+                              <td>
+                                <label>15</label>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">
+                                <label>Competency-SupervisorFeedBack</label>
+                              </td>
+                              <td rowspan="2">
+                                <label>50%</label>
+                              </td>
 
-                          <td>
-                            <label>Improve Development Quality</label>
-                          </td>
-                          <td>
-                            <label>Testing</label>
-                          </td>
-                          <td>
-                            <label>25</label>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <label>Improve Bug Fixing</label>
-                          </td>
-                          <td>
-                            <label>Bug Reduction</label>
-                          </td>
-                          <td>
-                            <label>20</label>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                              <td>
+                                <label>Improve Development Quality</label>
+                              </td>
+                              <td>
+                                <label>Testing</label>
+                              </td>
+                              <td>
+                                <label>25</label>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <label>Improve Bug Fixing</label>
+                              </td>
+                              <td>
+                                <label>Bug Reduction</label>
+                              </td>
+                              <td>
+                                <label>20</label>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 grid-margin stretch-card">
+            <div
+              class="col-12 grid-margin stretch-card"
+              style="margin-top: -60px"
+            >
               <div class="card">
                 <div class="card-body">
                   <form class="forms-sample">
@@ -1759,17 +1776,30 @@
                       </div>
                     </div>
                   </form>
-                  
-            <div class="text-end" style="margin-right: 30px;">
-              <button type="submit" class="btn btn-gradient-primary me-2">
-                Accept
-              </button>
-              <button class="btn btn-gradient-light me-2">Decline</button>
-            </div>
+
+                  <div class="text-end" style="margin-right: 30px">
+                    <button type="submit" class="btn btn-gradient-primary me-2">
+                      Accept
+                    </button>
+                    <button class="btn btn-gradient-light me-2">Decline</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+                >Copyright © 2023
+                <a href="https://www.syborgtech.com/" target="_blank"
+                  >SyborgTech</a
+                >. All rights reserved.</span
+              >
+            </div>
+          </footer>
         </div>
 
         <!-- main-panel ends -->
