@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
@@ -1591,9 +1595,12 @@
           <div class="main-panel">
           <div class="content-wrapper">
              <div class="page-header mt-2">
-              <h3 class="page-title">Manage KRA</h3>
+              <h3 class="page-title fixed-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-list-check"></i></span>
+               Performance - Manage KRA
+              </h3>
             </div>
-<div class="col-12 grid-margin stretch-card">
+<div class="col-12 grid-margin stretch-card mt-5">
   <div class="card m-0 p-1">
     <div class="card-body">
       <form  class="forms-sample">
@@ -1645,7 +1652,7 @@
   </div>
   </div>
   <div class="">
-     <div class="page-header d-flex">
+     <div class="page-header d-flex" style="margin-top: -30px;">
               <nav aria-label="breadcrumb" class="ms-auto">
                 <div class="linkBlock">
                 <a href="javascript:void(0);" id="addBandBtn"  class="btn btn-gradient-primary me-2">Add More Indicators</a>
@@ -1697,7 +1704,7 @@
         </div>
         </div>
         </div>
-                <div class="text-end">
+                <div class="text-end" style="margin-top: -20px;">
   <a href="manageKra.html" class="btn btn-gradient-primary me-2 ">
     Save
   </a>
@@ -1705,10 +1712,23 @@
     Cancel
   </a>
 </div>
-  </div>
-
-              
+  </div>   
           </div>
+          
+
+           <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+                >Copyright © 2023
+                <a href="https://www.syborgtech.com/" target="_blank"
+                  >SyborgTech</a
+                >. All rights reserved.</span
+              >
+            </div>
+          </footer> 
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->

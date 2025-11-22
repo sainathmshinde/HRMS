@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
@@ -1591,19 +1595,22 @@
           <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header mt-2">
-                 <h3 class="page-title buttonLink breadCrumb">Assign KRA</h3>
+               <h3 class="page-title fixed-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-square-check"></i></span>
+               Assign KRA
+              </h3>
             </div>
             
-               <div class="row g-2 formShow" style="display: none;">
+               <div class="row g-2 formShow mt-5" style="display: none;">
                         <div class="col-md-3">
                             <div class="form-group mb-2">
                             <label for="title">Year <span class="text-danger">*</span></label>
                             <select class="form-select form-select-sm" id="title" required>
-                                <option value="">Select</option>
-                                <option selected>FY - 2023-2024</option>
+                               <option value="">Select</option>
+                                <option selected>FY - 2025-2026</option>
+                                <option>FY - 2024-2025</option>
+                                <option>FY - 2023-2024</option>
                                 <option>FY - 2022-2023</option>
-                                <option>FY - 2021-2022</option>
-                                <option>FY - 2020-2021</option>
                             </select>
                             </div>
                         </div>
@@ -1622,16 +1629,16 @@
           </div>
                         </div>
         
-            <div class="page-header formShow" style="display: none;">
-              <h3 class="page-title mt-4 formShow" style="display: none;">Employee List</h3>
-              <nav aria-label="breadcrumb">
-              </nav>
-            </div>
             <div class="row formShow" style="display: none;">
-              <div class="col-lg-12 grid-margin stretch-card">
+               <div class="gridView">
+              <div class="col-lg-12 grid-margin stretch-card" style="margin-top: -30px;">
                 <div class="card">
                   <div class="card-body">
+                     <div class="table-responsive">
                     <table class="table">
+                       <div class="page-header">
+              <h4>Employee List</h4>
+            </div>
                       <thead>
                         <tr>
                           <th>Select</th>
@@ -1642,43 +1649,43 @@
                           <th>Location</th>
                         </tr>
                       </thead>
-                      <tbody>
+                     <tbody>
                         <tr>
                          <td><input type="checkbox" checked /></td>
-                            <td><label>ID1008</label></td>
-                            <td><label>Peter Carpenter</label></td>
+                            <td><label>ID 121</label></td>
+                            <td><label>Aditi Kulkarni</label></td>
                             <td><label>Developer</label></td>
                             <td><label>IT</label></td>
                             <td><label>Pune</label></td>
                         </tr>
                         <tr>
                            <td><input type="checkbox" checked /></td>
-                            <td><label>ID1009</label></td>
-                            <td><label>Susan Kelly</label></td>
+                            <td><label>ID 144</label></td>
+                            <td><label>Rohan Patankar</label></td>
                             <td><label>Developer</label></td>
                             <td><label>IT</label></td>
                             <td><label>Pune</label></td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" checked /></td>
-                            <td><label>ID1016</label></td>
-                            <td><label>Sharon White</label></td>
+                            <td><label>ID 150</label></td>
+                            <td><label>Vedant Shah</label></td>
                             <td><label>Developer</label></td>
                             <td><label>IT</label></td>
                             <td><label>Pune</label></td>
                         </tr>
                         <tr>
                           <td><input type="checkbox" checked /></td>
-                            <td><label>ID1017</label></td>
-                            <td><label>Rith Nelson</label></td>
+                            <td><label>ID 183</label></td>
+                            <td><label>Ishita Mehra</label></td>
                             <td><label>Developer</label></td>
                             <td><label>IT</label></td>
                             <td><label>Pune</label></td>
                         </tr>
                         <tr>
                            <td><input type="checkbox"  /></td>
-                            <td><label>ID1018</label></td>
-                            <td><label>Susan Carter</label></td>
+                            <td><label>ID 204</label></td>
+                            <td><label>Harshal Yadav</label></td>
                             <td><label>Developer</label></td>
                             <td><label>IT</label></td>
                             <td><label>Pune</label></td>
@@ -1686,18 +1693,21 @@
                         <tr>
                              <tr class="odd">
                             <td><input type="checkbox"  /></td>
-                            <td><label>ID1019</label></td>
-                            <td><label>George Martin</label></td>
+                            <td><label>ID 364</label></td>
+                            <td><label>Shreya Deshpande</label></td>
                             <td><label>Developer</label></td>
                             <td><label>IT</label></td>
                             <td><label>Pune</label></td>
                         </tr>
                       </tbody>
+ 
                     </table>
+                    </div>
                   </div>
                 </div>
               </div>
-               <div class="text-end">
+              </div>
+               <div class="text-end" style="margin-top: -20px;">
                 <button
                     type="submit"
                     class="btn btn-gradient-primary me-2 viewGrid"
@@ -1707,16 +1717,19 @@
             </div>
           </div>
 
-                <div class="page-header">
-              <h5 class="enabledForm" style="display: none; margin-top: -20px;">Indicator Assigned To employees</h5>
-              <nav aria-label="breadcrumb">
-              </nav>
-            </div>
+               
             <div class="row enabledForm" style="display: none;">
+               <div class="gridView">
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
+                     <div class="table-responsive">
                     <table class="table">
+                       <div class="page-header">
+              <h5 class="enabledForm" style="display: none;">Indicator Assigned To employees</h5>
+              <nav aria-label="breadcrumb">
+              </nav>
+            </div>
                       <thead>
                         <tr>
                           <th>Employee Id</th>
@@ -1726,31 +1739,33 @@
                       </thead>
                       <tbody>
                         <tr>
-                            <td><label>ID1008</label></td>
-                            <td><label>Peter Carpenter</label></td>
+                            <td><label>ID 121</label></td>
+                            <td><label>Aditi Kulkarni</label></td>
                             <td><label>Developer</label></td>
                         </tr>
                         <tr>
-                            <td><label>ID1009</label></td>
-                            <td><label>Susan Kelly</label></td>
+                             <td><label>ID 144</label></td>
+                            <td><label>Rohan Patankar</label></td>
                             <td><label>Developer</label></td>
                         </tr>
                         <tr>
-                            <td><label>ID1016</label></td>
-                            <td><label>Sharon White</label></td>
+                            <td><label>ID 150</label></td>
+                            <td><label>Vedant Shah</label></td>
                             <td><label>Developer</label></td>
                         </tr>
                         <tr>
-                            <td><label>ID1017</label></td>
-                            <td><label>Rith Nelson</label></td>
+                            <td><label>ID 183</label></td>
+                            <td><label>Ishita Mehra</label></td>
                             <td><label>Developer</label></td>
                         </tr>
                       </tbody>
                     </table>
+                    </div>
                   </div>
                 </div>
               </div>
-                <div class="text-end">
+              </div>
+                <div class="text-end" style="margin-top: -20px;">
   <a href="javascript:void(0);" class="btn btn-gradient-primary me-2 disabledForm">
     Back
   </a>
@@ -1758,7 +1773,21 @@
 
             </div>
           </div>
+           <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+                >Copyright © 2023
+                <a href="https://www.syborgtech.com/" target="_blank"
+                  >SyborgTech</a
+                >. All rights reserved.</span
+              >
+            </div>
+          </footer> 
           </div>
+          
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->

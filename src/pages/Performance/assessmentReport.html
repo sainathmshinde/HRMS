@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
@@ -1593,7 +1597,10 @@
           <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header mt-2">
-                 <h3 class="page-title formViewTable">Assessment Report</h3>
+               <h3 class="page-title fixed-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-file-circle-check"></i></span>
+                Assessment Report
+              </h3>
             </div>
 
              <div class="col-lg-12 grid-margin stretch-card">
@@ -1663,10 +1670,10 @@
                             <label for="title">Year <span class="text-danger"></span></label>
                             <select class="form-select form-select-sm" id="title" required>
                                 <option value="">Select</option>
-                                <option selected>FY - 2023-2024</option>
+                                 <option selected>FY - 2024-2025</option>
+                                <option>FY - 2023-2024</option>
                                 <option>FY - 2022-2023</option>
                                 <option>FY - 2021-2022</option>
-                                <option>FY - 2020-2021</option>
                             </select>
                             </div>
                         </div>
@@ -1684,7 +1691,7 @@
                       </div>
                 </div>
               </div>
-        <div class="page-header ">
+        <div class="page-header " style="margin-top: -30px;">
                  <h5 class=" formViewTable">Employee Contract Renewal Process</h5>
             </div>
 
@@ -1697,7 +1704,7 @@
                             </div>
                             </div>
                         </div>
-             <div class="col-12 grid-margin stretch-card">
+             <div class="col-12 grid-margin stretch-card" style="margin-top: -20px;">
                 <div class="card m-0 p-1 " >
                   <div class="card-body">
                     <form class="forms-sample">
@@ -1734,7 +1741,7 @@
               </div>
             
                      
-            <div class="row">
+            <div class="row" style="margin-top: -60px;">
   <div class="gridView">
     <div class="col-lg-12 grid-margin stretch-card" >
     <div class="card">
@@ -1760,8 +1767,8 @@
                       <tbody>
                         <tr>
                              <td><input type="checkbox"  /></td>
-                            <td><label>ID1009</label></td>
-                            <td><label>Susan Kelly</label></td>
+                            <td><label>ID 121</label></td>
+                            <td><label>Aditi Kulkarni</label></td>
                             <td><label>Developer</label></td>
                             <td><label>IT</label></td>
                             <td><label>Pune</label></td>
@@ -1772,12 +1779,12 @@
                              <td><label>Completed</label></td>
                            <td><a href="editActionAssessmentReport.html" class="projectEdit view-img">Assessment Report</a><br>
                         <a href="editActionDetailAppraisal.html" class="projectEdit view-img">Detail Appraisal</a></td>
-
+ 
                         </tr>
                         <tr>
                              <td><input type="checkbox" /></td>
-                            <td><label>ID1016</label></td>
-                            <td><label>Sharon White</label></td>
+                            <td><label>ID 144</label></td>
+                            <td><label>Rohan Patankar</label></td>
                             <td><label>Developer</label></td>
                             <td><label>IT</label></td>
                             <td><label>Pune</label></td>
@@ -1788,12 +1795,12 @@
                                <td><label>Completed</label></td>
                              <td><a href="editActionAssessmentReport.html" class="projectEdit view-img">Assessment Report</a><br>
                         <a href="editActionDetailAppraisal.html" class="projectEdit view-img">Detail Appraisal</a></td>
-
+ 
                         </tr>
                         <tr>
                              <td><input type="checkbox"  /></td>
-                            <td><label>ID1017</label></td>
-                            <td><label>Rith Nelson</label></td>
+                            <td><label>ID 150</label></td>
+                            <td><label>Vedant Shah</label></td>
                             <td><label>Developer</label></td>
                             <td><label>IT</label></td>
                             <td><label>Pune</label></td>
@@ -1812,7 +1819,7 @@
               </div>
               
           </div>
-           <div class="text-end">
+           <div class="text-end" style="margin-top: -20px;">
               <button
                         type="submit"
                         class="btn btn-gradient-primary me-2 "
@@ -1824,6 +1831,19 @@
           </div>
           
           </div>
+           <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+                >Copyright © 2023
+                <a href="https://www.syborgtech.com/" target="_blank"
+                  >SyborgTech</a
+                >. All rights reserved.</span
+              >
+            </div>
+          </footer>
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->

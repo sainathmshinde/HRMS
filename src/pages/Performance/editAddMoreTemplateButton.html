@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
@@ -1591,9 +1595,12 @@
          <div class="main-panel">
           <div class="content-wrapper">
              <div class="page-header d-flex align-items-center justify-content-between mb-2">
-    <h3 class="page-title formViewTable mb-0">Band Template</h3>
+   <h3 class="page-title fixed-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-file-circle-plus"></i></span>
+            Performance - Band Template
+              </h3>
 </div>
- <div class="col-lg-12 grid-margin stretch-card">
+ <div class="col-lg-12 grid-margin stretch-card mt-4">
                 <div class="card " >
                   <div class="card-body">
                     <form class="forms-sample">
@@ -1617,10 +1624,10 @@
                             <label for="title">Year <span class="text-danger"></span></label>
                             <select class="form-select form-select-sm" id="title" required>
                                 <option value="">Select</option>
-                                <option selected>FY - 2023-2024</option>
+                                 <option selected>FY - 2025-2026</option>
+                                <option>FY - 2024-2025</option>
+                                <option>FY - 2023-2024</option>
                                 <option>FY - 2022-2023</option>
-                                <option>FY - 2021-2022</option>
-                                <option>FY - 2020-2021</option>
                             </select>
                             </div>
                         </div>
@@ -1641,7 +1648,7 @@
                   </div>
                 </div>
               </div>
-               <div class="page-header d-flex">
+               <div class="page-header d-flex" style="margin-top: -30px;">
               <nav aria-label="breadcrumb" class="ms-auto">
                 <div>
                 <a href="javascript:void(0);" id="addBandBtn"  class="btn btn-gradient-primary me-2">Add More Band</a>
@@ -1649,7 +1656,7 @@
               </nav>
             </div>
             <div id="bandContainer">
-               <div class="col-lg-12 grid-margin stretch-card">
+               <div class="col-lg-12 grid-margin stretch-card" style="margin-top: -33px;">
                 <div class="card "  >
                   <div class="card-body">
                     <form class="forms-sample">
@@ -1728,11 +1735,24 @@
                 </div>
               </div>
             </div>
-                 <div class="text-end">
+                 <div class="text-end" style="margin-top: -20px;">
               <a href="bandTemplate.html" class="btn btn-gradient-primary me-2">Save</a>
              <a href="bandTemplate.html" class="btn btn-gradient-light">Cancel</a>
             </div>
         </div>
+         <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+                >Copyright © 2023
+                <a href="https://www.syborgtech.com/" target="_blank"
+                  >SyborgTech</a
+                >. All rights reserved.</span
+              >
+            </div>
+          </footer>
         <!-- main-panel ends -->
       </div>
         </div>
