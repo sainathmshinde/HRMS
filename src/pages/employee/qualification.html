@@ -923,7 +923,7 @@
                                       <th>
                                         <label>Finish Month-Year</label>
                                       </th>
-                                      <th>
+                                      <th style="white-space: normal; word-wrap: break-word; max-width: 120px;">
                                         <label>Percentage / CGPA / Grade</label>
                                       </th>
                                       <th>
@@ -950,7 +950,11 @@
                                       <label>3.5</label>
                                     </td>
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                      
+                                       <a >
+                                        <i href="javascript:void(0);" class="fa-solid fa-eye viewBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a><i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i></a>
                                           
                                     </td>
                                   </tr>
@@ -973,9 +977,13 @@
                                     <td>
                                       <label>4</label>
                                     </td>
-                                    <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;
-                                      <a href="javascript:void(0);" class="deleteLink  actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                  <td>
+                                      
+                                       <a >
+                                        <i href="javascript:void(0);"class="fa-solid fa-eye viewBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a><i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i></a>
+                                          
                                     </td>
                                   </tr>
                                   <tr >
@@ -998,8 +1006,12 @@
                                       <label>5</label>
                                     </td>
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;
-                                      <a href="javascript:void(0);" class="deleteLink  actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                      
+                                      <a >
+                                        <i href="javascript:void(0);"class="fa-solid fa-eye viewBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a><i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i></a>
+                                          
                                     </td>
                                   </tr>
                                 </tbody>
@@ -1029,7 +1041,7 @@
                           data-bs-parent="#accordionExample"
                         >
                           <div class="accordion-body">
-                            <div class="row">
+                            <div class="row" id="skill" style="display:none;">
                               
                                 <div class="row">
                                   <!-- Skills Level -->
@@ -1156,16 +1168,22 @@
                                 
                                 <!-- Buttons -->
                                 <div class="text-end">
-                                  <a href="manageKra.html" class="btn btn-gradient-primary me-2 ">
+                                  <!-- <a href="manageKra.html" class="btn btn-gradient-primary me-2 ">
                                     Save
                                   </a>
                                   <a href="manageKra.html" class="btn btn-gradient-light">
                                     Cancel
-                                  </a>
+                                  </a> -->
+                                  <button id="saveSkillBtn" class="btn btn-gradient-primary me-2">Save</button>
+                                  <button id="cancelSkillBtn" class="btn btn-gradient-light">Cancel</button>
+
                                 </div>
                               
                             </div>
-                            <div class="row">
+                            <div class="row" id="skillTable" style="display:block;">
+                              <div class="text-end mb-2">
+                                <button id="editSkillBtn" class="btn btn-primary">Add More Skills</button>
+                              </div>
                               <table class="table">
                                   <tbody>
                                     <tr >
@@ -1199,8 +1217,11 @@
                                       <label>HR Management College</label>
                                     </td>
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                          
+                                      <a >
+                                        <i href="javascript:void(0);" class="fa-solid fa-eye viewSkillBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>  
+                                      <a><i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i></a>
+                                         
                                     </td>
                                   </tr>
                                   
@@ -1231,7 +1252,7 @@
                           data-bs-parent="#accordionExample"
                         >
                           <div class="accordion-body">
-                            <div class="row">
+                            <div class="row" id="lang" style="display:none;">
                               
                                 <div class="row">
                                   <!-- Language -->
@@ -1302,16 +1323,21 @@
                                 
                                 <!-- Buttons -->
                                 <div class="text-end">
-                                  <a href="manageKra.html" class="btn btn-gradient-primary me-2 ">
+                                  <!-- <a href="manageKra.html" class="btn btn-gradient-primary me-2 ">
                                     Save
                                   </a>
                                   <a href="manageKra.html" class="btn btn-gradient-light">
                                     Cancel
-                                  </a>
+                                  </a> -->
+                                  <button id="saveLangBtn" class="btn btn-gradient-primary me-2">Save</button>
+                                  <button id="cancelLangBtn" class="btn btn-gradient-light">Cancel</button>
                                 </div>
                               
                             </div>
-                            <div class="row">
+                            <div class="row" id="langTable" style="display:block;">
+                              <div class="text-end mb-2">
+                                <button id="editLangBtn" class="btn btn-primary">Add New Languages</button>
+                              </div>
                               <table class="table">
                                   <tbody>
                                     <tr >
@@ -1345,7 +1371,11 @@
                                       <label><input type="checkbox" class="form-check-input"></label>
                                     </td>
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                          <a> 
+                                           <i  href="javascript:void(0);" class="fa-solid fa-eye viewLangBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                          </a>
+                                         <a><i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i></a>
+                              
                                           
                                     </td>
                                   </tr>
@@ -1363,8 +1393,11 @@
                                       <label><input type="checkbox" class="form-check-input"></label>
                                     </td>
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                          
+                                       <a > 
+                                            <i href="javascript:void(0);" class="fa-solid fa-eye viewLangBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+</a>
+                                         <a><i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i></a>
+                              
                                     </td>
                                   </tr>
                                   <tr >
@@ -1381,8 +1414,11 @@
                                       <label><input type="checkbox" class="form-check-input"></label>
                                     </td>
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                          
+                                       <a > 
+                                            <i href="javascript:void(0);" class="fa-solid fa-eye viewLangBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+</a>
+                                         <a><i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i></a>
+                              
                                     </td>
                                   </tr>
                                   
@@ -1438,6 +1474,127 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
+     <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const eduForm = document.getElementById("Education");
+    const eduTable = document.getElementById("EducationTable");
+
+    const editBtn = document.getElementById("editEducationBtn");
+    const saveBtn = document.getElementById("saveEducationBtn");
+    const cancelBtn = document.getElementById("cancelEducationBtn");
+    const viewBtn = document.getElementById("viewEducationBtn")
+    const viewBtns = document.querySelectorAll(".viewBtn");
+
+
+    // Click Edit → Show form, hide table
+    editBtn.addEventListener("click", function () {
+        eduTable.style.display = "none";
+        eduForm.style.display = "block";
+    });
+
+    // Click Save → Show table, hide form
+    saveBtn.addEventListener("click", function () {
+        eduForm.style.display = "none";
+        eduTable.style.display = "block";
+    });
+
+    // Click Cancel → Show table, hide form
+    cancelBtn.addEventListener("click", function () {
+        eduForm.style.display = "none";
+        eduTable.style.display = "block";
+    });
+   
+    viewBtns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            eduTable.style.display = "none";
+            eduForm.style.display = "block";
+        });
+    });
+
+});
+</script>
+
+     <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const skillForm = document.getElementById("skill");
+    const skillTable = document.getElementById("skillTable");
+
+    const editBtn = document.getElementById("editSkillBtn");
+    const saveBtn = document.getElementById("saveSkillBtn");
+    const cancelBtn = document.getElementById("cancelSkillBtn");
+    //const viewBtn = document.getElementById("viewSkillBtn")
+    const viewSkillBtns = document.querySelectorAll(".viewSkillBtn");
+    // Click Edit → Show form, hide table
+    editBtn.addEventListener("click", function () {
+        skillTable.style.display = "none";
+        skillForm.style.display = "block";
+    });
+
+    // Click Save → Show table, hide form
+    saveBtn.addEventListener("click", function () {
+        skillForm.style.display = "none";
+        skillTable.style.display = "block";
+    });
+
+    // Click Cancel → Show table, hide form
+    cancelBtn.addEventListener("click", function () {
+        skillForm.style.display = "none";
+        skillTable.style.display = "block";
+    });
+    // Apply event to all view icons
+    viewSkillBtns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            skillTable.style.display = "none";
+            skillForm.style.display = "block";
+        });
+    });
+   
+
+});
+</script>
+
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const langForm = document.getElementById("lang");
+    const langTable = document.getElementById("langTable");
+
+    const editLangBtn = document.getElementById("editLangBtn");
+    const saveLangBtn = document.getElementById("saveLangBtn");
+    const cancelLangBtn = document.getElementById("cancelLangBtn");
+
+    const viewLangBtns = document.querySelectorAll(".viewLangBtn");
+
+    editLangBtn.addEventListener("click", function () {
+        langTable.style.display = "none";
+        langForm.style.display = "block";
+    });
+
+    saveLangBtn.addEventListener("click", function () {
+        langForm.style.display = "none";
+        langTable.style.display = "block";
+    });
+
+    cancelLangBtn.addEventListener("click", function () {
+        langForm.style.display = "none";
+        langTable.style.display = "block";
+    });
+
+    // Apply event to all view icons
+    viewLangBtns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            langTable.style.display = "none";
+            langForm.style.display = "block";
+        });
+    });
+
+});
+
+</script>
+
+
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>

@@ -645,7 +645,15 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-
+                            <div class="d-flex justify-content-end mb-2">
+                              <button
+                                type="button"
+                                id="editEmpExitBtn"
+                                class="btn btn-outline-primary btn-sm"
+                              >
+                                Edit
+                              </button>
+                            </div>
                        <div class="row">
                         <!-- Reason for exit -->
                         <div class="col-md-6">
@@ -726,14 +734,15 @@
                       </div>
 
                         <!-- Buttons -->
-                    <div class="text-end mt-3">
-                      <a href="#" class="btn btn-gradient-primary me-2">
+                    <div class="text-end mt-3" style="display: none"
+                              id="EmpExitBtn">
+                      <a href="#" class="btn btn-gradient-primary me-2" id="saveEmpExitBtn">
                         Submit
                       </a>
-                      <a href="#" class="btn btn-gradient-secondary me-2">
+                      <a href="#" class="btn btn-gradient-secondary me-2" id="cancelEmpExitBtn">
                         Cancel
                       </a>
-                      <a href="#" class="btn btn-gradient-secondary me-2">
+                      <a href="#" class="btn btn-gradient-secondary me-2" id="initiateClearanceBtn">
                         Initiate Clearance
                       </a>
                     </div>
@@ -782,6 +791,50 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
+     <script>
+      const editEmpExitBtn = document.getElementById("editEmpExitBtn");
+      const actionEmpExitButtons = document.getElementById("EmpExitBtn");
+      const saveEmpExitBtn = document.getElementById("saveEmpExitBtn");
+      const cancelEmpExitBtn = document.getElementById("cancelEmpExitBtn");
+      const initiateClearanceBtn = document.getElementById("initiateClearanceBtn");
+      const EmpExitformFields = document.querySelectorAll(
+        "#EmpExit input, #EmpExit select"
+      );
+
+      // Initially disable all inputs
+      toggleFields(false);
+
+      function toggleFields(enable) {
+        EmpExitformFields.forEach((field) => (field.disabled = !enable));
+      }
+
+      editEmpExitBtn.addEventListener("click", () => {
+        toggleFields(true);
+        actionEmpExitButtons.style.display = "block";
+        editEmpExitBtn.style.display = "none";
+      });
+
+      saveEmpExitBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionEmpExitButtons.style.display = "none";
+        editEmpExitBtn.style.display = "block";
+        // optionally: submit form here if needed
+      });
+
+      cancelEmpExitBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionEmpExitButtons.style.display = "none";
+        editEmpExitBtn.style.display = "block";
+      });
+      EmpExitformFields.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionEmpExitButtons.style.display = "none";
+        editEmpExitBtn.style.display = "block";
+      });
+</script>
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>

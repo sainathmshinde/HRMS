@@ -649,6 +649,16 @@
                       <div class="accordion-body">
                         <div class="row">
                           <form class="forms-sample">
+                            <div class="d-flex justify-content-end mb-2">
+                              <button
+                                type="button"
+                                id="editqInfoBtn"
+                                class="btn btn-outline-primary btn-sm"
+                              >
+                                Edit
+                              </button>
+                            </div>
+
                             <div class="row">
                               <!-- Employee ID -->
                               <div class="col-md-6">
@@ -954,19 +964,23 @@
                       </div> -->
 
                             <!-- Buttons -->
-                            <div class="text-end">
-                              <a
-                                href="manageKra.html"
+                            <div
+                              class="text-end"
+                              style="display: none"
+                              id="qInfoBtn"
+                            >
+                              <button
+                                id="saveqInfoBtn"
                                 class="btn btn-gradient-primary me-2"
                               >
                                 Save
-                              </a>
-                              <a
-                                href="manageKra.html"
+                              </button>
+                              <button
+                                id="cancelqInfoBtn"
                                 class="btn btn-gradient-light"
                               >
                                 Cancel
-                              </a>
+                              </button>
                             </div>
                           </form>
                         </div>
@@ -995,6 +1009,15 @@
                       <div class="accordion-body">
                         <div class="row">
                           <form class="forms-sample">
+                            <div class="d-flex justify-content-end mb-2">
+                              <button
+                                type="button"
+                                id="editpInfoBtn"
+                                class="btn btn-outline-primary btn-sm"
+                              >
+                                Edit
+                              </button>
+                            </div>
                             <div class="row">
                               <!-- Employee ID -->
                               <div class="col-md-6">
@@ -1429,19 +1452,23 @@
                             </div>
 
                             <!-- Buttons -->
-                            <div class="text-end">
-                              <a
-                                href="manageKra.html"
+                            <div
+                              class="text-end"
+                              style="display: none"
+                              id="pInfoBtn"
+                            >
+                              <button
+                                id="savepInfoBtn"
                                 class="btn btn-gradient-primary me-2"
                               >
                                 Save
-                              </a>
-                              <a
-                                href="manageKra.html"
+                              </button>
+                              <button
+                                id="cancelpInfoBtn"
                                 class="btn btn-gradient-light"
                               >
                                 Cancel
-                              </a>
+                              </button>
                             </div>
                           </form>
                         </div>
@@ -1470,6 +1497,15 @@
                       <div class="accordion-body">
                         <div class="row">
                           <form class="forms-sample">
+                            <div class="d-flex justify-content-end mb-2">
+                              <button
+                                type="button"
+                                id="editeInfoBtn"
+                                class="btn btn-outline-primary btn-sm"
+                              >
+                                Edit
+                              </button>
+                            </div>
                             <div class="row">
                               <!-- Employee ID -->
                               <div class="col-md-6">
@@ -2027,19 +2063,23 @@
                             </div>
 
                             <!-- Buttons -->
-                            <div class="text-end">
-                              <a
-                                href="manageKra.html"
+                            <div
+                              class="text-end"
+                              style="display: none"
+                              id="eInfoBtn"
+                            >
+                              <button
+                                id="saveeInfoBtn"
                                 class="btn btn-gradient-primary me-2"
                               >
                                 Save
-                              </a>
-                              <a
-                                href="manageKra.html"
+                              </button>
+                              <button
+                                id="canceleInfoBtn"
                                 class="btn btn-gradient-light"
                               >
                                 Cancel
-                              </a>
+                              </button>
                             </div>
                           </form>
                         </div>
@@ -2091,6 +2131,118 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
+    <script>
+      const editBtn = document.getElementById("editqInfoBtn");
+      const actionButtons = document.getElementById("qInfoBtn");
+      const saveBtn = document.getElementById("saveqInfoBtn");
+      const cancelBtn = document.getElementById("cancelqInfoBtn");
+      const formFields = document.querySelectorAll(
+        "#qInfo input, #qInfo select"
+      );
+
+      // Initially disable all inputs
+      toggleFields(false);
+
+      function toggleFields(enable) {
+        formFields.forEach((field) => (field.disabled = !enable));
+      }
+
+      editBtn.addEventListener("click", () => {
+        toggleFields(true);
+        actionButtons.style.display = "block";
+        editBtn.style.display = "none";
+      });
+
+      saveBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionButtons.style.display = "none";
+        editBtn.style.display = "block";
+        // optionally: submit form here if needed
+      });
+
+      cancelBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionButtons.style.display = "none";
+        editBtn.style.display = "block";
+      });
+    </script>
+
+    <script>
+      const editpInfoBtn = document.getElementById("editpInfoBtn");
+      const actionpInfoButtons = document.getElementById("pInfoBtn");
+      const savepInfoBtn = document.getElementById("savepInfoBtn");
+      const cancelpInfoBtn = document.getElementById("cancelpInfoBtn");
+      const pInfopInfoformFields = document.querySelectorAll(
+        "#pInfo input, #pInfo select"
+      );
+
+      // Initially disable all inputs
+      toggleFields(false);
+
+      function toggleFields(enable) {
+        pInfopInfoformFields.forEach((field) => (field.disabled = !enable));
+      }
+
+      editpInfoBtn.addEventListener("click", () => {
+        toggleFields(true);
+        actionpInfoButtons.style.display = "block";
+        editpInfoBtn.style.display = "none";
+      });
+
+      savepInfoBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionpInfoButtons.style.display = "none";
+        editpInfoBtn.style.display = "block";
+        // optionally: submit form here if needed
+      });
+
+      cancelpInfoBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionpInfoButtons.style.display = "none";
+        editpInfoBtn.style.display = "block";
+      });
+    </script>
+    <script>
+      const editeInfoBtn = document.getElementById("editeInfoBtn");
+      const actioneInfoButtons = document.getElementById("eInfoBtn");
+      const saveeInfoBtn = document.getElementById("saveeInfoBtn");
+      const canceleInfoBtn = document.getElementById("canceleInfoBtn");
+      const eInfoeInfoformFields = document.querySelectorAll(
+        "#eInfo input, #eInfo select"
+      );
+
+      // Initially disable all inputs
+      toggleFields(false);
+
+      function toggleFields(enable) {
+        eInfoeInfoformFields.forEach((field) => (field.disabled = !enable));
+      }
+
+      editeInfoBtn.addEventListener("click", () => {
+        toggleFields(true);
+        actioneInfoButtons.style.display = "block";
+        editeInfoBtn.style.display = "none";
+      });
+
+      saveeInfoBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actioneInfoButtons.style.display = "none";
+        editeInfoBtn.style.display = "block";
+        // optionally: submit form here if needed
+      });
+
+      canceleInfoBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actioneInfoButtons.style.display = "none";
+        editeInfoBtn.style.display = "block";
+      });
+    </script>
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>

@@ -42,6 +42,11 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
@@ -644,7 +649,7 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                  <div class="row">
+                  <div class="row" id="docInfo" style="display:none;">
 
                     <div class="row">
                       <!-- Document Category -->
@@ -727,19 +732,19 @@
                     </div>
 
                      <!-- Buttons -->
-                    <div class="text-end">
-                      <a href="#" class="btn btn-gradient-primary me-2 ">
-                        Save
-                      </a>
-                      <a href="#" class="btn btn-gradient-light">
-                        Cancel
-                      </a>
-                    </div>
+                     <div class="text-end">
+                                  <button id="savedocInfoBtn" class="btn btn-gradient-primary me-2">Save</button>
+                                  <button id="canceldocInfoBtn" class="btn btn-gradient-light">Cancel</button>
+                                  
+                                </div>
 
                   </div>
 
-                  <div class="row">
-                              <table class="table">
+                  <div class="row" id="docInfoTable" style="display:block;">
+                    <div class="text-end mb-2">
+                                <button id="editdocInfoBtn" class="btn btn-primary">Add Document</button>
+                              </div>          
+                    <table class="table">
                                   <tbody>
                                     <tr >
                                       <th>
@@ -766,8 +771,12 @@
                                       <label><a href="#">E102_Passport_0.pdf</a></label>
                                     </td>                                                                      
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                          
+                                       <a >
+                                        <i href="javascript:void(0);" class="fa-solid fa-eye viewdocInfoBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a>
+                                        <i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i>
+                                      </a>   
                                     </td>
                                   </tr>
                                   <tr >
@@ -781,8 +790,12 @@
                                       <label><a href="#">E102_Aadhar_01.pdf</a></label>
                                     </td>                                                                      
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                          
+                                       <a >
+                                        <i href="javascript:void(0);" class="fa-solid fa-eye viewdocInfoBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a>
+                                        <i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i>
+                                      </a>   
                                     </td>
                                   </tr>
                                   
@@ -833,6 +846,45 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const docInfoForm = document.getElementById("docInfo");
+    const docInfoTable = document.getElementById("docInfoTable");
+
+    const editdocInfoBtn = document.getElementById("editdocInfoBtn");
+    const savedocInfoBtn = document.getElementById("savedocInfoBtn");
+    const canceldocInfoBtn = document.getElementById("canceldocInfoBtn");
+
+    const viewdocInfoBtns = document.querySelectorAll(".viewdocInfoBtn");
+
+    editdocInfoBtn.addEventListener("click", function () {
+        docInfoTable.style.display = "none";
+        docInfoForm.style.display = "block";
+    });
+
+    savedocInfoBtn.addEventListener("click", function () {
+        docInfoForm.style.display = "none";
+        docInfoTable.style.display = "block";
+    });
+
+    canceldocInfoBtn.addEventListener("click", function () {
+        docInfoForm.style.display = "none";
+        docInfoTable.style.display = "block";
+    });
+
+    // Apply event to all view icons
+    viewdocInfoBtns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            docInfoTable.style.display = "none";
+            docInfoForm.style.display = "block";
+        });
+    });
+
+});
+
+</script>
+
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>

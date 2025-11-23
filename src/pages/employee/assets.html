@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container-scroller">
@@ -644,7 +648,7 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                     <div class="row">
+                     <div class="row" id="asetInfo" style="display:none;">
 
                        <div class="row">
                         <!-- Asset -->
@@ -734,16 +738,16 @@
 
                         <!-- Buttons -->
                     <div class="text-end">
-                      <a href="#" class="btn btn-gradient-primary me-2 ">
-                        Save
-                      </a>
-                      <a href="#" class="btn btn-gradient-light">
-                        Cancel
-                      </a>
-                    </div>
+                                  <button id="saveasetInfoBtn" class="btn btn-gradient-primary me-2">Save</button>
+                                  <button id="cancelasetInfoBtn" class="btn btn-gradient-light">Cancel</button>
+                                  
+                                </div>
 
                     </div>
-                    <div class="row">
+                    <div class="row" id="asetInfoTable" style="display:block;">
+                      <div class="text-end mb-2">
+                                <button id="editasetInfoBtn" class="btn btn-primary">Add Asset</button>
+                              </div>     
                               <table class="table">
                                   <tbody>
                                     <tr >
@@ -783,8 +787,12 @@
                                       <label>Ruth Nelson</label>
                                     </td>                                    
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                          
+                                      <a >
+                                        <i href="javascript:void(0);" class="fa-solid fa-eye viewasetInfoBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a>
+                                        <i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i>
+                                      </a>    
                                     </td>
                                   </tr>
                                   <tr >
@@ -804,8 +812,12 @@
                                       <label>Sharon White</label>
                                     </td>
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;
-                                      <a href="javascript:void(0);" class="deleteLink  actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                      <a >
+                                        <i href="javascript:void(0);" class="fa-solid fa-eye viewasetInfoBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a>
+                                        <i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i>
+                                      </a>
                                     </td>
                                   </tr>
                                   <tr >
@@ -825,8 +837,12 @@
                                       <label>Susan Carter</label>
                                     </td>
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;
-                                      <a href="javascript:void(0);" class="deleteLink  actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                      <a >
+                                        <i href="javascript:void(0);" class="fa-solid fa-eye viewasetInfoBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a>
+                                        <i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i>
+                                      </a>
                                     </td>
                                   </tr>
                                   
@@ -878,6 +894,44 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
+     <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const asetInfoForm = document.getElementById("asetInfo");
+    const asetInfoTable = document.getElementById("asetInfoTable");
+
+    const editasetInfoBtn = document.getElementById("editasetInfoBtn");
+    const saveasetInfoBtn = document.getElementById("saveasetInfoBtn");
+    const cancelasetInfoBtn = document.getElementById("cancelasetInfoBtn");
+
+    const viewasetInfoBtns = document.querySelectorAll(".viewasetInfoBtn");
+
+    editasetInfoBtn.addEventListener("click", function () {
+        asetInfoTable.style.display = "none";
+        asetInfoForm.style.display = "block";
+    });
+
+    saveasetInfoBtn.addEventListener("click", function () {
+        asetInfoForm.style.display = "none";
+        asetInfoTable.style.display = "block";
+    });
+
+    cancelasetInfoBtn.addEventListener("click", function () {
+        asetInfoForm.style.display = "none";
+        asetInfoTable.style.display = "block";
+    });
+
+    // Apply event to all view icons
+    viewasetInfoBtns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            asetInfoTable.style.display = "none";
+            asetInfoForm.style.display = "block";
+        });
+    });
+
+});
+
+</script>
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>

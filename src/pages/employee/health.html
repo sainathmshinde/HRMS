@@ -645,7 +645,15 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-
+                            <div class="d-flex justify-content-end mb-2">
+                              <button
+                                type="button"
+                                id="editHealthBtn"
+                                class="btn btn-outline-primary btn-sm"
+                              >
+                                Edit
+                              </button>
+                            </div>
                       <div class="row">
                         <!-- Age -->
                         <div class="col-md-6">
@@ -886,14 +894,24 @@
                       </div>
 
                       <!-- Buttons -->
-                    <div class="text-end">
-                      <a href="#" class="btn btn-gradient-primary me-2 ">
-                        Save
-                      </a>
-                      <a href="#" class="btn btn-gradient-light">
-                        Cancel
-                      </a>
-                    </div>
+                            <div
+                              class="text-end"
+                              style="display: none"
+                              id="HealthBtn"
+                            >
+                              <button
+                                id="saveHealthBtn"
+                                class="btn btn-gradient-primary me-2"
+                              >
+                                Save
+                              </button>
+                              <button
+                                id="cancelHealthBtn"
+                                class="btn btn-gradient-light"
+                              >
+                                Cancel
+                              </button>
+                            </div>
 
                     </div>
             </div>
@@ -939,6 +957,43 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
+     <script>
+      const editHealthBtn = document.getElementById("editHealthBtn");
+      const actionHealthButtons = document.getElementById("HealthBtn");
+      const saveHealthBtn = document.getElementById("saveHealthBtn");
+      const cancelHealthBtn = document.getElementById("cancelHealthBtn");
+      const HealthformFields = document.querySelectorAll(
+        "#Health input, #Health select"
+      );
+
+      // Initially disable all inputs
+      toggleFields(false);
+
+      function toggleFields(enable) {
+        HealthformFields.forEach((field) => (field.disabled = !enable));
+      }
+
+      editHealthBtn.addEventListener("click", () => {
+        toggleFields(true);
+        actionHealthButtons.style.display = "block";
+        editHealthBtn.style.display = "none";
+      });
+
+      saveHealthBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionHealthButtons.style.display = "none";
+        editHealthBtn.style.display = "block";
+        // optionally: submit form here if needed
+      });
+
+      cancelHealthBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionHealthButtons.style.display = "none";
+        editHealthBtn.style.display = "block";
+      });
+</script>
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
