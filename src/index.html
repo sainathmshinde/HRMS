@@ -666,7 +666,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendance/dashboardAttendance.html"
+                      href="/src/pages/attendence/dashboardAttendance.html"
                     >
                       Dashboard
                     </a>
@@ -910,7 +910,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/dashboardPerformance.html"
+                      href="/src/pages/performance/dashboardPerformance.html"
                     >
                       Dashboard
                     </a>
@@ -1576,238 +1576,267 @@
           </ul>
             </nav>
         <!-- partial -->
-        <div class="main-panel">
+           <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">
+              <h3 class="page-title fixed-title">
                 <span
                   class="page-title-icon bg-gradient-primary text-white me-2"
-                >
-                  <i class="mdi mdi-home"></i>
-                </span>
+                  ><i class="mdi mdi-home"></i
+                ></span>
                 Dashboard
               </h3>
-              <nav aria-label="breadcrumb">
-                <ul class="breadcrumb">
-                  <li class="breadcrumb-item active" aria-current="page">
-                    <span></span>Overview
-                    <i
-                      class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"
-                    ></i>
-                  </li>
-                </ul>
-              </nav>
             </div>
-            <div class="row">
-              <div class="col-md-4 stretch-card grid-margin">
-                <div class="card bg-gradient-danger card-img-holder text-white">
-                  <div class="card-body">
-                    <img
-                      src="assets/images/dashboard/circle.svg"
-                      class="card-img-absolute"
-                      alt="circle-image"
-                    />
-                    <h4 class="font-weight-normal mb-3">
-                      Weekly Sales
-                      <i class="mdi mdi-chart-line mdi-24px float-end"></i>
-                    </h4>
-                    <h2 class="mb-5">$ 15,0000</h2>
-                    <h6 class="card-text">Increased by 60%</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 stretch-card grid-margin">
-                <div class="card bg-gradient-info card-img-holder text-white">
-                  <div class="card-body">
-                    <img
-                      src="assets/images/dashboard/circle.svg"
-                      class="card-img-absolute"
-                      alt="circle-image"
-                    />
-                    <h4 class="font-weight-normal mb-3">
-                      Weekly Orders
-                      <i
-                        class="mdi mdi-bookmark-outline mdi-24px float-end"
-                      ></i>
-                    </h4>
-                    <h2 class="mb-5">45,6334</h2>
-                    <h6 class="card-text">Decreased by 10%</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 stretch-card grid-margin">
-                <div
-                  class="card bg-gradient-success card-img-holder text-white"
-                >
-                  <div class="card-body">
-                    <img
-                      src="assets/images/dashboard/circle.svg"
-                      class="card-img-absolute"
-                      alt="circle-image"
-                    />
-                    <h4 class="font-weight-normal mb-3">
-                      Visitors Online
-                      <i class="mdi mdi-diamond mdi-24px float-end"></i>
-                    </h4>
-                    <h2 class="mb-5">95,5741</h2>
-                    <h6 class="card-text">Increased by 5%</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-7 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="clearfix">
-                      <h4 class="card-title float-start">
-                        Visit And Sales Statistics
-                      </h4>
-                      <div
-                        id="visit-sale-chart-legend"
-                        class="rounded-legend legend-horizontal legend-top-right float-end"
-                      ></div>
+             <div style="margin-top: 20px">
+              <div class="row gy-4 gx-3">
+                <!-- CARD 1 -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
+                   <div class="col-12 col-md-4">
+                  <div
+                    class="card bg-gradient-sb-pink card-img-holder custom-text2 h-100"
+                  >
+                    <div class="card-body position-relative">
+                      <img
+                        src="/src/assets/images/circle.svg"
+                        class="card-img-absolute"
+                        alt="circle-image"
+                      />
+ 
+                      <h5 class="mb-4">Alerts </h5>
+ 
+ 
+                      <p class=" mt-3 mb-0">1. Today is Aditi Kulkarni's birthday</p></br>
+                      <p class=" mt-3 mb-0">2. Upcoming event</p></br>
+                      <p class=" mt-3 mb-0">3. Client visit</p></br>
+ 
+ 
                     </div>
-                    <canvas id="visit-sale-chart" class="mt-4"></canvas>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-5 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Traffic Sources</h4>
-                    <div
-                      class="doughnutjs-wrapper d-flex justify-content-center"
-                    >
-                      <canvas id="traffic-chart"></canvas>
+                <div class="col-12 col-md-4">
+                  <div
+                    class="card bg-gradient-sb-blue card-img-holder custom-text h-100"
+                  >
+                    <div class="card-body position-relative">
+                      <img
+                        src="/src/assets/images/circle.svg"
+                        class="card-img-absolute"
+                        alt="circle-image"
+                      />
+ 
+                      <h5 class="mb-4" >Notification</h5>
+ 
+              <p class=" mt-3 mb-0">Upcoming Training</p>
+               <p class=" mt-3 mb-0">Appraisal</p>
                     </div>
-                    <div
-                      id="traffic-chart-legend"
-                      class="rounded-legend legend-vertical legend-bottom-left pt-4"
-                    ></div>
                   </div>
                 </div>
+ 
+                <!-- CARD 2 -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
+                <div class="col-12 col-md-4">
+                  <div
+                    class="card bg-gradient-sb-voilet card-img-holder custom-text1 h-100"
+                  >
+                    <div class="card-body position-relative">
+                      <img
+                        src="/src//assets/images/circle.svg"
+                        class="card-img-absolute"
+                        alt="circle-image"
+                      />
+ 
+                      <h5 class="mb-4">Favourities</h5>
+ 
+                     <p class=" mt-3 mb-0">My Dashboard</p>
+                     <p class=" mt-3 mb-0">Review Leaves</p>
+                    </div>
+                  </div>
+                </div>
+               
+               
               </div>
+ 
+             
             </div>
-            <div class="row">
-              <div class="col-12 grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Recent Tickets</h4>
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th>Assignee</th>
-                            <th>Subject</th>
-                            <th>Status</th>
-                            <th>Last Update</th>
-                            <th>Tracking ID</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/faces/face1.jpg"
-                                class="me-2"
-                                alt="image"
-                              />
-                              David Grey
-                            </td>
-                            <td>Fund is not recieved</td>
-                            <td>
-                              <label class="badge badge-gradient-success"
-                                >DONE</label
-                              >
-                            </td>
-                            <td>Dec 5, 2017</td>
-                            <td>WD-12345</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/faces/face2.jpg"
-                                class="me-2"
-                                alt="image"
-                              />
-                              Stella Johnson
-                            </td>
-                            <td>High loading time</td>
-                            <td>
-                              <label class="badge badge-gradient-warning"
-                                >PROGRESS</label
-                              >
-                            </td>
-                            <td>Dec 12, 2017</td>
-                            <td>WD-12346</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/faces/face3.jpg"
-                                class="me-2"
-                                alt="image"
-                              />
-                              Marina Michel
-                            </td>
-                            <td>Website down for one week</td>
-                            <td>
-                              <label class="badge badge-gradient-info"
-                                >ON HOLD</label
-                              >
-                            </td>
-                            <td>Dec 16, 2017</td>
-                            <td>WD-12347</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <img
-                                src="assets/images/faces/face4.jpg"
-                                class="me-2"
-                                alt="image"
-                              />
-                              John Doe
-                            </td>
-                            <td>Loosing control on server</td>
-                            <td>
-                              <label class="badge badge-gradient-danger"
-                                >REJECTED</label
-                              >
-                            </td>
-                            <td>Dec 3, 2017</td>
-                            <td>WD-12348</td>
-                          </tr>
-                        </tbody>
-                      </table>
+            <div style="margin-top: 20px">
+              <div class="row gy-4 gx-3">
+                <!-- CARD 1 -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
+                <div class="col-12 col-md-3">
+                  <div
+                    class="card bg-gradient-sb-blue card-img-holder custom-text h-100"
+                  >
+                    <div class="card-body position-relative">
+                      <img
+                        src="/src/assets/images/circle.svg"
+                        class="card-img-absolute"
+                        alt="circle-image"
+                      />
+ 
+                      <h5 class="mb-4">Total Headcount</h5>
+ 
+                      <div class="d-flex flex-wrap mb-3">
+                        <div class="me-3 mb-2">
+                          <h4 class="fw-bold mb-0">1972</h4>
+                       
+                        </div>
+ 
+                       
+                      </div>
+ 
+                      <p class="fw-semibold mt-3 mb-0">As on today</p>
+                    </div>
+                  </div>
+                </div>
+ 
+                <!-- CARD 2 -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
+                <div class="col-12 col-md-3">
+                  <div
+                    class="card bg-gradient-sb-voilet card-img-holder custom-text1 h-100"
+                  >
+                    <div class="card-body position-relative">
+                      <img
+                        src="/src//assets/images/circle.svg"
+                        class="card-img-absolute"
+                        alt="circle-image"
+                      />
+ 
+                      <h5 class="mb-4">Attendance</h5>
+ 
+                      <div class="d-flex justify-content-start mb-3">
+                        <div class="text-center">
+                          <h4 class="fw-bold mb-0">358</h4>
+                          <h6 class="mb-0">Absent</h6>
+                        </div>
+                        <div class="text-center" style="margin-left: 40px">
+                          <h4 class="fw-bold mb-0">1614</h4>
+                          <h6 class="mb-0">Present</h6>
+                        </div>
+                      </div>
+ 
+                      <p class="fw-semibold mt-3 mb-0">As on today</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3">
+                  <div
+                    class="card bg-gradient-sb-pink card-img-holder custom-text2 h-100"
+                  >
+                    <div class="card-body position-relative">
+                      <img
+                        src="/src/assets/images/circle.svg"
+                        class="card-img-absolute"
+                        alt="circle-image"
+                      />
+ 
+                      <h5 class="mb-4">Contract to be renewed </h5>
+ 
+                      <div class="d-flex justify-content-start mb-3">
+                        <div class="text-center">
+                          <h4 class="fw-bold mb-0">45</h4>
+                         
+                        </div>
+                       
+                      </div>
+ 
+                      <p class="fw-semibold mt-3 mb-0">In nect 30 days</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3">
+                  <div
+                    class="card bg-gradient-sb-yellow card-img-holder custom-text3 h-100"
+                  >
+                    <div class="card-body position-relative">
+                      <img
+                        src="/src/assets/images/circle.svg"
+                        class="card-img-absolute"
+                        alt="circle-image"
+                      />
+ 
+                      <h5 class="mb-4">Headcount change</h5>
+ 
+                     
+                       <div class="d-flex justify-content-start mb-3">
+                        <div class="mb-4">
+                        <h4 class="fw-bold mb-1">30</h4>
+                        <h6 class="mb-0">Exit</h6>
+                      </div>
+                       <div class="mb-4" style="margin-left: 20px;">
+                        <h4 class="fw-bold mb-1">14</h4>
+                        <h6 class="mb-0">Joining</h6>
+                      </div>
+                      </div>
+ 
+                      <p class="fw-semibold mb-0">In last 30 days</p>
                     </div>
                   </div>
                 </div>
               </div>
+ 
+             
             </div>
-          </div>
+ 
+            <!-- <div class="row" style="margin-top: 20px">
+              <div class="row">
+                <div class="col-md-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="clearfix">
+                        <h5 class="float-start">Profile Completion Status</h5>
+                        <div
+                          id="visit-sale-chart1-legend"
+                          class="rounded-legend legend-horizontal legend-top-right float-end"
+                        ></div>
+                      </div>
+                      <canvas id="visit-sale-chart1" class="mt-4"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="clearfix">
+                        <h5 class="float-start">
+                          Gender count by business unit
+                        </h5>
+                        <div
+                          id="visit-sale-chart2-legend"
+                          class="rounded-legend legend-horizontal legend-top-right float-end"
+                        ></div>
+                      </div>
+                      <canvas id="visit-sale-chart2" class="mt-4"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+         
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
-          <footer class="footer">
-            <div
-              class="d-sm-flex justify-content-center justify-content-sm-between"
-            >
-              <span
-                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
-                >Copyright © 2023
-                <a href="https://www.bootstrapdash.com/" target="_blank"
-                  >BootstrapDash</a
-                >. All rights reserved.</span
-              >
-              <span
-                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
-                >Hand-crafted & made with
-                <i class="mdi mdi-heart text-danger"></i
-              ></span>
-            </div>
-          </footer>
+ 
           <!-- partial -->
+           
         </div>
+        <footer class="footer">
+<div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+>
+<span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+>Copyright © 2023
+<a href="https://www.syborgtech.com/" target="_blank"
+>SyborgTech</a
+>. All rights reserved.</span
+>
+</div>
+</footer>
+       
+        <!-- main-panel ends -->
+      </div>
+ 
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->

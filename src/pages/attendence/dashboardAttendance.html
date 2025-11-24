@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -42,10 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
-     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
   </head>
   <body class="sidebar-fixed">
     <div class="container-scroller">
@@ -63,16 +63,15 @@
             ><img src="../../assets/images/logo-mini.svg" alt="logo"
           /></a> -->
           <a class="navbar-brand brand-logo" href=".././../index.html">
-            <img
-              src="/src/assets/images/HUMANOVA (1).svg"
-              alt="logo"
+             <img 
+            src="/src/assets/images/HUMANOVA (1).svg"
+             alt="logo" 
               style="
                 width: 200px;
                 height: auto;
                 margin-left: 5px;
                 display: block;
-              "
-            />
+              "/>
           </a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
@@ -304,7 +303,7 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
-          <nav class="sidebar sidebar-offcanvas" id="sidebar">
+       <nav class="sidebar sidebar-offcanvas" id="sidebar">
          <ul class="nav">
             <li class="nav-item">
               <a
@@ -675,7 +674,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendence/dashboardAttendance.html"
+                      href="/src/pages/attendance/dashboardAttendance.html"
                     >
                       Dashboard
                     </a>
@@ -919,7 +918,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/performance/dashboardPerformance.html"
+                      href="pages/performance/dashboardPerformance.html"
                     >
                       Dashboard
                     </a>
@@ -1585,157 +1584,160 @@
           </ul>
             </nav>
         <!-- partial -->
-        <div class="main-panel">
+    <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-               <h3 class="page-title fixed-title">
-                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-location-dot"></i></span>
-                Tour Plan
+              <h3 class="page-title fixed-title">
+                <span
+                  class="page-title-icon bg-gradient-primary text-white me-2"
+                  ><i class="mdi mdi-home"></i
+                ></span>
+                Dashboard
               </h3>
-             
-                </div>
-                    <div class="row" style="margin-top: 50px;">
-                        <div class="col-md-3">
-                                <div class="form-group">
-                                <label for="employeeType">Month <span class="text-danger">*</span></label>
-                                <select
-                                    class="form-select"
-                                    id="month"
-                                    required
-                                    >
-                                    <option value="">Select</option>
-                                    <option value="on_contract" selected>January</option>
-                                    <option value="on_deputation">February</option>
-                                    <option value="on_contract">March</option>
-                                    <option value="on_deputation">April</option>
-                                    <option value="on_contract">May</option>
-                                    <option value="on_deputation">June</option>
-                                    <option value="on_contract">July</option>
-                                    <option value="on_deputation">August</option>
-                                    <option value="on_contract">September</option>
-                                    <option value="on_deputation">October</option>
-                                    <option value="on_contract">November</option>
-                                    <option value="on_deputation">December</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="form-group">
-                            <label for="year">Year<span class="text-danger">*</span></label>
-                            <select class="form-select" id="year" required>
-                              <option value="">Select</option>
-                              <option value="earned_leave" selected>2025</option>
-                              <option value="earned_leave">2026</option>
-                              <option value="earned_leave">2027</option>
-                              <option value="earned_leave">2028</option>
-                              <option value="earned_leave">2029</option>
-                              <option value="earned_leave">2030</option>
-                            </select>
-                          </div>
-                        </div>
-                        
-                    </div>
-                    <div>
-                      <div class="page-header" style="margin-top: -70px;">
-                            <h3 class="page-title"></h3>
-                            <a href="viewTourPlan.html" class="btn btn-gradient-primary me-2">Add Tour Plan</a>
-                        </div>
-                    </div>
-                    <div class="row" style="margin-top: -20px;">
-                        <div class="col-lg-12 grid-margin stretch-card">
-                            <div class="card">
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                <!-- Makes table scrollable if wide -->
-                                <table class="table align-middle" style="width: 100%">
-                                    <thead>
-                                    <tr>
-                                        <th>
-                                        <input type="checkbox" id="selectAll" />
-                                        <label for="selectAll" class="ms-1 mb-0"
-                                            >Select All</label
-                                        >
-                                        </th>
-                                        <th>From Date</th>
-                                        <th>To Date</th>
-                                        <th>Travel From</th>
-                                        <th>Travel To</th>
-                                        <th>Purpose Of Visit</th>
-                                        <th>Travel Booking By</th>
-                                        <th>Accommodation Booking By</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                        <input type="checkbox" class="rowCheckbox" />
-                                        </td>
-                                        <td>06-Jan-2025</td>
-                                        <td>06-Jan-2025</td>
-                                        <td>Pune</td>
-                                        <td>Mumbai</td>
-                                        <td>Mission Work</td>
-                                        <td>Self</td>
-                                        <td>Self</td>
-                                        <td>Submitted</td>
-                                        <td>
-                                          <a href="viewTourPlan.html"><i style="color:#080808" class="fa-solid fa-eye"></i></a>
-                                    </tr>
-            
-                                    <!-- Row 2 -->
-                                    <tr>
-                                        <td>
-                                        <input type="checkbox" class="rowCheckbox" />
-                                        </td>
-                                        <td>16-Jan-2025</td>
-                                        <td>17-Jan-2025</td>
-                                        <td>Pune</td>
-                                        <td>Satara</td>
-                                        <td>Mission Work</td>
-                                        <td>Self</td>
-                                        <td>Self</td>
-                                        <td>Created</td>
-                                        <td>
-                                                            <a href="viewTourPlan.html"><i style="color:#080808" class="fa-solid fa-eye"></i></a>
-                                    </tr>
-            
-                                    <!-- Row 3 -->
-                                    <tr>
-                                        <td>
-                                        <input type="checkbox" class="rowCheckbox" />
-                                        </td>
-                                        <td>23-Jan-2025</td>
-                                        <td>25-Jan-2025</td>
-                                        <td>Pune</td>
-                                        <td>Sangli</td>
-                                        <td>Mission Work</td>
-                                        <td>Self</td>
-                                        <td>Self</td>
-                                        <td>Created</td>
-                                        <td>
-                                                            <a href="viewTourPlan.html"><i style="color:#080808" class="fa-solid fa-eye"></i></a>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                </div>
-                                   
-                            </div>
-                             
-                            </div>
-                            
-                        </div>      
-                        <div class="text-end" style="margin-top: -25px;">
-                                    <a  class="btn btn-gradient-primary me-2">
-                                        Submit Approval
-                                    </a>
-                                </div>        
-                    </div>
-                </form>
             </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
+            <div style="margin-top: 20px">
+              <div class="row gy-4 gx-3">
+                <!-- CARD 1 -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
+                <div class="col-12 col-md-4">
+                  <div
+                    class="card bg-gradient-sb-blue card-img-holder custom-text h-100"
+                  >
+                    <div class="card-body position-relative">
+                      <img
+                        src="../../assets/images/circle.svg"
+                        class="card-img-absolute"
+                        alt="circle-image"
+                      />
+
+                      <h5 class="mb-4">Present employees</h5>
+
+                      <div class="d-flex flex-wrap mb-3">
+                        <div class="me-3 mb-2">
+                          <h4 class="fw-bold mb-0">1354</h4>
+                        </div>
+                      </div>
+
+                      <p class="fw-semibold mt-3 mb-0">As on today</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
+                <div class="col-12 col-md-4">
+                  <div
+                    class="card bg-gradient-sb-voilet card-img-holder custom-text1 h-100"
+                  >
+                    <div class="card-body position-relative">
+                      <img
+                        src="../../assets/images/circle.svg"
+                        class="card-img-absolute"
+                        alt="circle-image"
+                      />
+
+                      <h5 class="mb-4">Absent employees</h5>
+
+                      <div class="d-flex justify-content-start mb-3">
+                        <div class="text-center">
+                          <h4 class="fw-bold mb-0">419</h4>
+                        </div>
+                      </div>
+
+                      <p class="fw-semibold mt-3 mb-0">As on today</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div
+                    class="card bg-gradient-sb-pink card-img-holder custom-text2 h-100"
+                  >
+                    <div class="card-body position-relative">
+                      <img
+                        src="../../assets/images/circle.svg"
+                        class="card-img-absolute"
+                        alt="circle-image"
+                      />
+
+                      <h5 class="mb-4">Late coming</h5>
+
+                      <div class="d-flex justify-content-start mb-3">
+                        <div class="text-center">
+                          <h4 class="fw-bold mb-0">152</h4>
+                        </div>
+                      </div>
+
+                      <p class="fw-semibold mt-3 mb-0">As on today</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row gy-4 gx-3" style="margin-top: 1px">
+                <!-- CARD 3 -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
+
+                <!-- CARD 4 -->
+                <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
+                <div class="col-12 col-md-4">
+                  <div
+                    class="card bg-gradient-sb-yellow card-img-holder custom-text3 h-100"
+                  >
+                    <div class="card-body position-relative">
+                      <img
+                        src="../../assets/images/circle.svg"
+                        class="card-img-absolute"
+                        alt="circle-image"
+                      />
+
+                      <h5 class="mb-4">Early going</h5>
+
+                      <div class="mb-4">
+                        <h4 class="fw-bold mb-1">190</h4>
+                      </div>
+
+                      <p class="fw-semibold mb-0">In last 7 days</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-top: 20px">
+              <div class="row">
+                <div class="col-md-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="clearfix">
+                        <h5 class="float-start">Profile Completion Status</h5>
+                        <div
+                          id="visit-sale-chart1-legend"
+                          class="rounded-legend legend-horizontal legend-top-right float-end"
+                        ></div>
+                      </div>
+                      <canvas id="visit-sale-chart1" class="mt-4"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="clearfix">
+                        <h5 class="float-start">
+                          Gender count by business unit
+                        </h5>
+                        <div
+                          id="visit-sale-chart2-legend"
+                          class="rounded-legend legend-horizontal legend-top-right float-end"
+                        ></div>
+                      </div>
+                      <canvas id="visit-sale-chart2" class="mt-4"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <footer class="footer">
             <div
               class="d-sm-flex justify-content-center justify-content-sm-between"
@@ -1749,10 +1751,11 @@
               >
             </div>
           </footer>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+
           <!-- partial -->
         </div>
-        <!-- main-panel ends -->
-      </div>
       <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
@@ -1774,6 +1777,56 @@
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
+    <script src="../../assets/js/dashboard.js"> </script>
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+        <script src="../../assets/vendors/chart.js/chart.umd.js"></script>
+
+    <script src="../../assets/js/dashboard-dark.js"></script>
     <!-- End custom js for this page -->
+
+    <script type="text/javascript">
+      $(function () {
+        $(".formView").click(function () {
+          $(".formBlock").show();
+          $(".gridBlock").hide();
+          $(".formBlockTable").hide();
+          $(".saveButton").hide();
+          $(".formButton").hide();
+          $(".calculate").show();
+        });
+
+        $(".girdView").click(function () {
+          $(".gridBlock").show();
+          $(".calculate").hide();
+          $(".formBlock").hide();
+          $(".formBlockTable").hide();
+          $(".saveButton").show();
+          $(".addLink").show();
+          $(".buttonSet").hide();
+          $(".formButton").show();
+        });
+
+        $(".addLink").click(function () {
+          $(".gridBlock").show();
+          $(".calculate").hide();
+          $(".formBlockTable").show();
+          $(".saveButton").show();
+          $(".addLink").hide();
+          $(".buttonSet").show();
+        });
+
+        $(".backButton").click(function () {
+          $(".formView").trigger("click");
+        });
+        $(".formView").trigger("click");
+      });
+    </script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script
+      src="js/multiDropdown.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
   </body>
 </html>
