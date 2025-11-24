@@ -37,7 +37,7 @@ function printDiv() {
         ${linksHtml}
         ${printOverrides}
       </head>
-      <body>
+      <body class="sidebar-fixed">
         ${htmlContent}
       </body>
     </html>

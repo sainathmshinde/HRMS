@@ -42,8 +42,12 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
   </head>
-  <body>
+  <body class="sidebar-fixed">
     <div class="container-scroller">
       <!-- partial:../../partials/_navbar.html -->
       <nav
@@ -1590,9 +1594,11 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Approve Leaves</h3>
-              
-            </div>
+              <h3 class="page-title fixed-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-list-check"></i></span>
+                Approve Leave
+              </h3>
+              </div>
             <div class="row">
              
               <div class="col-12 grid-margin stretch-card">
@@ -1609,7 +1615,7 @@
                               type="text"
                               class="form-control"
                               id="employeeId"
-                              placeholder="E1001"
+                              placeholder="ID529"
                               disabled
                             />
                           </div>
@@ -1624,7 +1630,7 @@
                               type="text"
                               class="form-control"
                               id="reportingId"
-                              placeholder="Andrew Baker"
+                              placeholder="Kunal Jagtap"
                               disabled
                             />
                           </div>
@@ -1928,10 +1934,10 @@
                       <!-- Buttons -->
                         <div class="text-end ">
                         <a href="./approvedLeave.html" class="btn btn-gradient-primary me-2">
-                            Cancel Leave
+                            Save
                         </a>
                         <a href="./approvedLeave.html" class="btn btn-gradient-light">
-                            Back
+                            Cancel
                         </a>
                     </div>
                     </form>

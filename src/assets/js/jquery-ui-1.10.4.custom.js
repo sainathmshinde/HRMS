@@ -9008,7 +9008,7 @@ $.widget( "ui.dialog", {
 				activeElement = this.document[ 0 ].activeElement;
 
 				// Support: IE9, IE10
-				// If the <body> is blurred, IE will switch windows, see #4520
+				// If the <body class="sidebar-fixed"> is blurred, IE will switch windows, see #4520
 				if ( activeElement && activeElement.nodeName.toLowerCase() !== "body" ) {
 
 					// Hiding a focused element doesn't trigger blur in WebKit
