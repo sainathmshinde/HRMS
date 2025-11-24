@@ -29808,6 +29808,7 @@ body.holiday-list-page .card-body {
     padding-top: -30px !important;
 }
 
+<<<<<<< Updated upstream
 .bg-gradient-primary {
   background: linear-gradient(to right, #da8cff, #9a55ff) !important;
 }
@@ -29980,3 +29981,26 @@ body.holiday-list-page .card-body {
   background: linear-gradient(89deg, #5e7188, #3e4b5b) !important;
 }
 
+=======
+/*Salary Template Page Fix*/
+
+body.salary-template-page .content-wrapper .page-header {
+  margin-bottom: 0.75rem !important;
+}
+
+body.salary-template-page .content-wrapper .text-end.mb-4 {
+  margin-top: 0 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+body.salary-template-page .gridBlock,
+body.salary-template-page .formBlock {
+  margin-top: 0 !important;
+}
+
+body.salary-template-page .formBlock .form-edit {
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+>>>>>>> Stashed changes
