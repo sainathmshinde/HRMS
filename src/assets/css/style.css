@@ -29799,3 +29799,11 @@ body {
   /* box-shadow: 0 6px 18px rgba(0,0,0,0.06); */
 }
 
+/*HolidayList Allignment Fix*/
+body.holiday-list-page .text-end.mb-4 {
+    margin-bottom: -20px !important;
+}
+
+body.holiday-list-page .card-body {
+    padding-top: -30px !important;
+}
