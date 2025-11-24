@@ -669,7 +669,16 @@
                       data-bs-parent="#accordionExample"
                     >
                       <div class="accordion-body">
-                        <div class="row" id="Bank" style="display: none">
+                        <div class="row">
+                          <div class="d-flex justify-content-end mb-2">
+                            <button
+                              type="button"
+                              id="editBankBtn"
+                              class="btn btn-outline-primary btn-sm"
+                            >
+                              Edit
+                            </button>
+                          </div>
                           <div class="row">
                             <!-- Name as per bank record -->
                             <div class="col-md-6">
@@ -894,7 +903,11 @@
                           </div>
 
                           <!-- Buttons -->
-                          <div class="text-end mt-3">
+                          <div
+                            class="text-end mt-3"
+                            style="display: none"
+                            id="BankBtn"
+                          >
                             <button
                               id="saveBankBtn"
                               class="btn btn-gradient-primary me-2"
@@ -931,12 +944,8 @@
                       aria-labelledby="headingTwo"
                       data-bs-parent="#accordionExample"
                     >
-                      <div
-                        class="accordion-body"
-                        id="Nominee"
-                        style="display: none"
-                      >
-                        <div class="row">
+                      <div class="accordion-body">
+                        <div class="row" id="Nominee" style="display: none">
                           <div class="row">
                             <!-- Name of nominee -->
                             <div class="col-md-6">
@@ -1428,7 +1437,43 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
+    <script>
+      const editBankBtn = document.getElementById("editBankBtn");
+      const actionBankButtons = document.getElementById("BankBtn");
+      const saveBankBtn = document.getElementById("saveBankBtn");
+      const cancelBankBtn = document.getElementById("cancelBankBtn");
+      const BankformFields = document.querySelectorAll(
+        "#Bank input, #Bank select"
+      );
 
+      // Initially disable all inputs
+      toggleFields(false);
+
+      function toggleFields(enable) {
+        BankformFields.forEach((field) => (field.disabled = !enable));
+      }
+
+      editBankBtn.addEventListener("click", () => {
+        toggleFields(true);
+        actionBankButtons.style.display = "block";
+        editBankBtn.style.display = "none";
+      });
+
+      saveBankBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionBankButtons.style.display = "none";
+        editBankBtn.style.display = "block";
+        // optionally: submit form here if needed
+      });
+
+      cancelBankBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionBankButtons.style.display = "none";
+        editBankBtn.style.display = "block";
+      });
+    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const NomineeForm = document.getElementById("Nominee");
