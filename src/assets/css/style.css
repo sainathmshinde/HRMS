@@ -24412,11 +24412,9 @@ code {
   border: 0;
   background: #fff;
 }
-
 /* .card .card-body {
   padding: 8px;
 } */
-
 
 
 .dashboard-card-body {
@@ -24432,13 +24430,11 @@ code {
 
 }
 
-
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color);
 }
-
 
 /* .dashboard-cards .card .card-body {
     display: flex;
@@ -24451,6 +24447,24 @@ code {
   padding: 1rem 2.5rem;
   margin-top: 10px;
 }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* center vertically */
+  align-items: flex-start;  /* align text left */
+  height: 100%;
+  padding-left: 20px;       /* optional: adjust left spacing */
+}
+
+
+
+/* .dashboard-cards .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+} */
+
 
 
 
@@ -29845,6 +29859,187 @@ body.holiday-list-page .text-end.mb-4 {
 
 body.holiday-list-page .card-body {
   padding-top: -30px !important;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(to right, #da8cff, #9a55ff) !important;
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(to right, #e7ebf0, #868e96) !important;
+}
+
+.bg-gradient-sb-blue {
+  background: linear-gradient(to right, #cffafe, #cffafe) !important;
+}
+.bg-gradient-sb-voilet {
+  background: linear-gradient(to right, #D6B7F8, #D6B7F8) !important;
+}
+.bg-gradient-sb-pink {
+  background: linear-gradient(to right, #FFB6E0, #FFB6E0) !important;
+}
+.bg-gradient-sb-yellow {
+  background: linear-gradient(to right, #FFEDD5, #FFEDD5) !important;
+}
+ 
+
+.bg-gradient-success,
+
+.datepicker-custom
+  .datepicker.datepicker-inline
+  .datepicker-days
+  .table-condensed
+  tbody
+  tr
+  td.day.today:before {
+  background: linear-gradient(to right, #84d9d2, #07cdae) !important;
+}
+
+.bg-gradient-info {
+  background: linear-gradient(to right, #90caf9, #047edf 99%) !important;
+}
+/* Payroll Dashboard 1st card text */
+.custom-text h4 {
+  color: #0891B2;   
+}
+.custom-text h5 {
+  color: #0891B2;   
+}
+.custom-text h6 {
+  color: #0891B2;   
+}
+.custom-text p {
+  color: #0891B2;  
+}
+.custom-text ul li {
+  color: #0891B2;    
+}
+/* Payroll Dashboard 1st card text */
+.custom-text1 h4 {
+  color: #9333EA;   
+}
+.custom-text1 h5 {
+  color: #9333EA;   
+}
+.custom-text1 h6 {
+  color: #9333EA;   
+}
+.custom-text1 p {
+  color: #9333EA; 
+}
+
+.custom-text1 ul li {
+  color: #9333EA;    
+}
+
+
+.custom-text2 h4 {
+  color: #DB2777;   
+}
+.custom-text2 h5 {
+  color: #DB2777;   
+}
+.custom-text2 h6 {
+  color: #DB2777;   
+}
+.custom-text2 p {
+  color: #DB2777;  
+}
+
+.custom-text3 h4 {
+  color: #F97316;   
+}
+.custom-text3 h5 {
+  color: #F97316;   
+}
+.custom-text3 h6 {
+  color: #F97316;   
+}
+.custom-text3 p {
+  color: #F97316;  
+}
+
+
+.custom-text:hover {
+  background: #0891B2 !important; /* new hover background */
+  color: #ffffff !important; /* text color on hover */
+}
+.custom-text1:hover {
+  background: #9333EA !important; /* new hover background */
+  color: #EAD6FF !important; /* text color on hover */
+}
+
+.custom-text2:hover {
+  background: #DB2777!important; /* new hover background */
+  color: #EAD6FF !important; /* text color on hover */
+}
+
+.custom-text3:hover {
+  background: #F97316!important; /* new hover background */
+  color: #EAD6FF !important; /* text color on hover */
+}
+
+.custom-text:hover h1,
+.custom-text1:hover ul li,
+.custom-text:hover ul li,
+.custom-text:hover h2,
+.custom-text:hover h3,
+.custom-text:hover h4,
+.custom-text:hover h5,
+.custom-text:hover h6,
+.custom-text:hover p {
+  color: #ffffff !important;
+}
+.custom-text1:hover h1,
+.custom-text1:hover h2,
+.custom-text1:hover h3,
+.custom-text1:hover h4,
+.custom-text1:hover h5,
+.custom-text1:hover h6,
+.custom-text1:hover p {
+  color: #EAD6FF !important;
+}
+.custom-text2:hover h1,
+.custom-text2:hover h2,
+.custom-text2:hover h3,
+.custom-text2:hover h4,
+.custom-text2:hover h5,
+.custom-text2:hover h6,
+.custom-text2:hover p {
+  color: #FCE7F3 !important;
+}
+.custom-text3:hover h1,
+.custom-text3:hover h2,
+.custom-text3:hover h3,
+.custom-text3:hover h4,
+.custom-text3:hover h5,
+.custom-text3:hover h6,
+.custom-text3:hover p {
+  color: #FFEDD5 !important;
+}
+
+
+.bg-gradient-warning,
+.datepicker-custom
+  .datepicker.datepicker-inline
+  .datepicker-days
+  .table-condensed
+  tbody
+  tr
+  td.day.active:before {
+  background: linear-gradient(to right, #f6e384, #ffd500) !important;
+}
+
+.bg-gradient-danger {
+  background: linear-gradient(to right, #ffbf96, #fe7096) !important;
+}
+
+.bg-gradient-light {
+  background: linear-gradient(to bottom, #f4f4f4, #e4e4e9) !important;
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(89deg, #5e7188, #3e4b5b) !important;
 }
 
 /*Salary Template Page Fix*/
