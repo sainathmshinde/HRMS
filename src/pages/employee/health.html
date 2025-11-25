@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body class="sidebar-fixed">
     <div class="container-scroller">
@@ -670,7 +674,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendance/dashboardAttendance.html"
+                      href="/src/pages/attendence/dashboardAttendance.html"
                     >
                       Dashboard
                     </a>
@@ -1583,13 +1587,26 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Health Information</h3>
+              <h3 class="page-title fixed-title">
+<span class="page-title-icon bg-gradient-primary text-white me-2">
+<i class="fa-solid fa-book-medical"></i>
+</span>	Health Information</h3>
+              
             </div>
-            <div class="card">
+            <div class="card" style="margin-top: 50px;">
                 <div class="card-body">
                     <div class="row">
-
+                            
                       <div class="row">
+                        <div class="d-flex justify-content-end mb-2" style="margin-top: -10px;">
+                              <button
+                                type="button"
+                                id="editHealthBtn"
+                                class="btn btn-primary"
+                              >
+                                Edit
+                              </button>
+                            </div>
                         <!-- Age -->
                         <div class="col-md-6">
                           <div class="form-group">
@@ -1768,7 +1785,9 @@
                           </div>
                         </div>
                       </div>
-                      <h3>Health Insurance</h3>
+                      <div class="page-header">
+                        <h5>Health Insurance</h5>
+                      </div>
                       <div class="row">
                         <!-- Insurance company's name -->
                         <div class="col-md-6">
@@ -1829,40 +1848,49 @@
                       </div>
 
                       <!-- Buttons -->
-                    <div class="text-end">
-                      <a href="#" class="btn btn-gradient-primary me-2 ">
-                        Save
-                      </a>
-                      <a href="#" class="btn btn-gradient-light">
-                        Cancel
-                      </a>
-                    </div>
+                            <div
+                              class="text-end"
+                              style="display: none; margin-right: 140px;"
+                              id="HealthBtn"
+                              
+                            >
+                              <button
+                                id="saveHealthBtn"
+                                class="btn btn-gradient-primary me-2"
+                              >
+                                Save
+                              </button>
+                              <button
+                                id="cancelHealthBtn"
+                                class="btn btn-gradient-light"
+                              >
+                                Cancel
+                              </button>
+                            </div>
 
                     </div>
             </div>
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
-          <footer class="footer">
-            <div
-              class="d-sm-flex justify-content-center justify-content-sm-between"
-            >
-              <span
-                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
-                >Copyright © 2023
-                <a href="https://www.bootstrapdash.com/" target="_blank"
-                  >BootstrapDash</a
-                >. All rights reserved.</span
-              >
-              <span
-                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
-                >Hand-crafted & made with
-                <i class="mdi mdi-heart text-danger"></i
-              ></span>
-            </div>
-          </footer>
+ 
           <!-- partial -->
         </div>
+        <footer class="footer">
+<div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+>
+<span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+>Copyright © 2023
+<a href="https://www.syborgtech.com/" target="_blank"
+>SyborgTech</a
+>. All rights reserved.</span
+>
+</div>
+</footer>
+
+
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
@@ -1882,6 +1910,43 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
+     <script>
+      const editHealthBtn = document.getElementById("editHealthBtn");
+      const actionHealthButtons = document.getElementById("HealthBtn");
+      const saveHealthBtn = document.getElementById("saveHealthBtn");
+      const cancelHealthBtn = document.getElementById("cancelHealthBtn");
+      const HealthformFields = document.querySelectorAll(
+        "#Health input, #Health select"
+      );
+
+      // Initially disable all inputs
+      toggleFields(false);
+
+      function toggleFields(enable) {
+        HealthformFields.forEach((field) => (field.disabled = !enable));
+      }
+
+      editHealthBtn.addEventListener("click", () => {
+        toggleFields(true);
+        actionHealthButtons.style.display = "block";
+        editHealthBtn.style.display = "none";
+      });
+
+      saveHealthBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionHealthButtons.style.display = "none";
+        editHealthBtn.style.display = "block";
+        // optionally: submit form here if needed
+      });
+
+      cancelHealthBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionHealthButtons.style.display = "none";
+        editHealthBtn.style.display = "block";
+      });
+</script>
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>

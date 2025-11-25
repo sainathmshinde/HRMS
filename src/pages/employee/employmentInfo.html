@@ -63,15 +63,16 @@
             ><img src="../../assets/images/logo-mini.svg" alt="logo"
           /></a> -->
           <a class="navbar-brand brand-logo" href=".././../index.html">
-              <img 
-            src="/src/assets/images/HUMANOVA (1).svg"
-             alt="logo" 
+            <img
+              src="/src/assets/images/HUMANOVA (1).svg"
+              alt="logo"
               style="
                 width: 200px;
                 height: auto;
                 margin-left: 5px;
                 display: block;
-              "/>
+              "
+            />
           </a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
@@ -674,7 +675,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendance/dashboardAttendance.html"
+                      href="/src/pages/attendence/dashboardAttendance.html"
                     >
                       Dashboard
                     </a>
@@ -1587,14 +1588,20 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-                <h3 class="page-title fixed-title">
-                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-user"></i></span>
+              <h3 class="page-title fixed-title">
+                <span
+                  class="page-title-icon bg-gradient-primary text-white me-2"
+                  ><i class="fa-solid fa-circle-info"></i>
+                </span>
                 Employment Information
               </h3>
-              </div>
-            <div class="card">
+            </div>
+            <div class="card" style="margin-top: 45px">
               <div class="card-body">
-                <div class="accordion" style="margin-top: 15px;" id="accordionExample">
+                <div
+                  class="accordion"
+                  id="accordionExample"
+                >
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                       <button
@@ -1617,6 +1624,16 @@
                       <div class="accordion-body">
                         <div class="row">
                           <form class="forms-sample">
+                            <div class="d-flex justify-content-end mb-2">
+                              <button
+                                type="button"
+                                id="editqInfoBtn"
+                                class="btn btn-primary"
+                              >
+                                Edit
+                              </button>
+                            </div>
+
                             <div class="row">
                               <!-- Employee ID -->
                               <div class="col-md-6">
@@ -1922,19 +1939,23 @@
                       </div> -->
 
                             <!-- Buttons -->
-                            <div class="text-end">
-                              <a
-                                href="manageKra.html"
+                            <div
+                              class="text-end"
+                              style="display: none"
+                              id="qInfoBtn"
+                            >
+                              <button
+                                id="saveqInfoBtn"
                                 class="btn btn-gradient-primary me-2"
                               >
                                 Save
-                              </a>
-                              <a
-                                href="manageKra.html"
+                              </button>
+                              <button
+                                id="cancelqInfoBtn"
                                 class="btn btn-gradient-light"
                               >
                                 Cancel
-                              </a>
+                              </button>
                             </div>
                           </form>
                         </div>
@@ -1963,6 +1984,15 @@
                       <div class="accordion-body">
                         <div class="row">
                           <form class="forms-sample">
+                            <div class="d-flex justify-content-end mb-2">
+                              <button
+                                type="button"
+                                id="editpInfoBtn"
+                                class="btn btn-primary"
+                              >
+                                Edit
+                              </button>
+                            </div>
                             <div class="row">
                               <!-- Employee ID -->
                               <div class="col-md-6">
@@ -2397,19 +2427,23 @@
                             </div>
 
                             <!-- Buttons -->
-                            <div class="text-end">
-                              <a
-                                href="manageKra.html"
+                            <div
+                              class="text-end"
+                              style="display: none"
+                              id="pInfoBtn"
+                            >
+                              <button
+                                id="savepInfoBtn"
                                 class="btn btn-gradient-primary me-2"
                               >
                                 Save
-                              </a>
-                              <a
-                                href="manageKra.html"
+                              </button>
+                              <button
+                                id="cancelpInfoBtn"
                                 class="btn btn-gradient-light"
                               >
                                 Cancel
-                              </a>
+                              </button>
                             </div>
                           </form>
                         </div>
@@ -2438,6 +2472,15 @@
                       <div class="accordion-body">
                         <div class="row">
                           <form class="forms-sample">
+                            <div class="d-flex justify-content-end mb-2">
+                              <button
+                                type="button"
+                                id="editeInfoBtn"
+                                class="btn btn-primary"
+                              >
+                                Edit
+                              </button>
+                            </div>
                             <div class="row">
                               <!-- Employee ID -->
                               <div class="col-md-6">
@@ -2995,19 +3038,23 @@
                             </div>
 
                             <!-- Buttons -->
-                            <div class="text-end">
-                              <a
-                                href="manageKra.html"
+                            <div
+                              class="text-end"
+                              style="display: none"
+                              id="eInfoBtn"
+                            >
+                              <button
+                                id="saveeInfoBtn"
                                 class="btn btn-gradient-primary me-2"
                               >
                                 Save
-                              </a>
-                              <a
-                                href="manageKra.html"
+                              </button>
+                              <button
+                                id="canceleInfoBtn"
                                 class="btn btn-gradient-light"
                               >
                                 Cancel
-                              </a>
+                              </button>
                             </div>
                           </form>
                         </div>
@@ -3018,8 +3065,6 @@
               </div>
             </div>
           </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
             <div
               class="d-sm-flex justify-content-center justify-content-sm-between"
@@ -3033,6 +3078,9 @@
               >
             </div>
           </footer>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+
           <!-- partial -->
         </div>
         <!-- main-panel ends -->
@@ -3054,30 +3102,144 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
+    <script>
+      const editBtn = document.getElementById("editqInfoBtn");
+      const actionButtons = document.getElementById("qInfoBtn");
+      const saveBtn = document.getElementById("saveqInfoBtn");
+      const cancelBtn = document.getElementById("cancelqInfoBtn");
+      const formFields = document.querySelectorAll(
+        "#qInfo input, #qInfo select"
+      );
+
+      // Initially disable all inputs
+      toggleFields(false);
+
+      function toggleFields(enable) {
+        formFields.forEach((field) => (field.disabled = !enable));
+      }
+
+      editBtn.addEventListener("click", () => {
+        toggleFields(true);
+        actionButtons.style.display = "block";
+        editBtn.style.display = "none";
+      });
+
+      saveBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionButtons.style.display = "none";
+        editBtn.style.display = "block";
+        // optionally: submit form here if needed
+      });
+
+      cancelBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionButtons.style.display = "none";
+        editBtn.style.display = "block";
+      });
+    </script>
+
+    <script>
+      const editpInfoBtn = document.getElementById("editpInfoBtn");
+      const actionpInfoButtons = document.getElementById("pInfoBtn");
+      const savepInfoBtn = document.getElementById("savepInfoBtn");
+      const cancelpInfoBtn = document.getElementById("cancelpInfoBtn");
+      const pInfopInfoformFields = document.querySelectorAll(
+        "#pInfo input, #pInfo select"
+      );
+
+      // Initially disable all inputs
+      toggleFields(false);
+
+      function toggleFields(enable) {
+        pInfopInfoformFields.forEach((field) => (field.disabled = !enable));
+      }
+
+      editpInfoBtn.addEventListener("click", () => {
+        toggleFields(true);
+        actionpInfoButtons.style.display = "block";
+        editpInfoBtn.style.display = "none";
+      });
+
+      savepInfoBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionpInfoButtons.style.display = "none";
+        editpInfoBtn.style.display = "block";
+        // optionally: submit form here if needed
+      });
+
+      cancelpInfoBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionpInfoButtons.style.display = "none";
+        editpInfoBtn.style.display = "block";
+      });
+    </script>
+    <script>
+      const editeInfoBtn = document.getElementById("editeInfoBtn");
+      const actioneInfoButtons = document.getElementById("eInfoBtn");
+      const saveeInfoBtn = document.getElementById("saveeInfoBtn");
+      const canceleInfoBtn = document.getElementById("canceleInfoBtn");
+      const eInfoeInfoformFields = document.querySelectorAll(
+        "#eInfo input, #eInfo select"
+      );
+
+      // Initially disable all inputs
+      toggleFields(false);
+
+      function toggleFields(enable) {
+        eInfoeInfoformFields.forEach((field) => (field.disabled = !enable));
+      }
+
+      editeInfoBtn.addEventListener("click", () => {
+        toggleFields(true);
+        actioneInfoButtons.style.display = "block";
+        editeInfoBtn.style.display = "none";
+      });
+
+      saveeInfoBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actioneInfoButtons.style.display = "none";
+        editeInfoBtn.style.display = "block";
+        // optionally: submit form here if needed
+      });
+
+      canceleInfoBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actioneInfoButtons.style.display = "none";
+        editeInfoBtn.style.display = "block";
+      });
+    </script>
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
     <!-- End custom js for this page -->
-     <script>
-(function(){
-  const title = document.querySelector('.page-header .page-title');
-  if(!title) return;
+    <script>
+      (function () {
+        const title = document.querySelector(".page-header .page-title");
+        if (!title) return;
 
-  const topNav = document.querySelector('.navbar') || { offsetHeight: 60 };
-  const threshold = title.getBoundingClientRect().top + window.scrollY;
+        const topNav = document.querySelector(".navbar") || {
+          offsetHeight: 60,
+        };
+        const threshold = title.getBoundingClientRect().top + window.scrollY;
 
-  function onScroll(){
-    if(window.scrollY > threshold - topNav.offsetHeight - 8) {
-      title.classList.add('fixed-title');
-    } else {
-      title.classList.remove('fixed-title');
-    }
-  }
-  window.addEventListener('scroll', onScroll);
-  // initial call
-  onScroll();
-})();
-</script>
+        function onScroll() {
+          if (window.scrollY > threshold - topNav.offsetHeight - 8) {
+            title.classList.add("fixed-title");
+          } else {
+            title.classList.remove("fixed-title");
+          }
+        }
+        window.addEventListener("scroll", onScroll);
+        // initial call
+        onScroll();
+      })();
+    </script>
   </body>
 </html>

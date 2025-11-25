@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body class="sidebar-fixed">
     <div class="container-scroller">
@@ -670,7 +674,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendance/dashboardAttendance.html"
+                      href="/src/pages/attendence/dashboardAttendance.html"
                     >
                       Dashboard
                     </a>
@@ -1583,12 +1587,29 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Contact Information</h3>
+              <h3 class="page-title fixed-title">
+<span class="page-title-icon bg-gradient-primary text-white me-2">
+<i class="fa-solid fa-phone"></i>
+</span>	Contact Information</h3>
+              
             </div>
              <form class="forms-sample">
-            <div class="card">
+              
+            <div class="card" style="margin-top: 50px">
               <div class="card-body">
-                <h4 class="card-title">Permanent Address</h4>
+                <div class="d-flex justify-content-end mb-2" style="margin-top: -10px;">
+                              <button
+                                type="button"
+                                id="editContBtn"
+                               class="btn btn-primary"
+                              >
+                                Edit
+                              </button>
+                            </div>
+
+                <div class="page-header" style="margin-top: -10px;">
+                  <h5>Permanent Address</h5>
+                </div>
 
                 <div class="row">
                   <!-- Address line 1 -->
@@ -1913,9 +1934,11 @@
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div class="card" style="margin-top: 20px;">
                   <div class="card-body">
-                    <h4 class="card-title">Present Address</h4>
+                    <div class="page-header" style="margin-top: -10px;">
+                  <h5>Present Address</h5>
+                </div>
               
               <div class="row">
                 <!-- Same As permanent address -->
@@ -2227,9 +2250,11 @@
               </div>
             </div>
             </div>
-            <div class="card">
+            <div class="card" style="margin-top: 20px; overflow-x: auto; width: 100%;">
               <div class="card-body">
-                <h4 class="card-title">Emergency Contacts</h4>
+                 <div class="page-header" style="margin-top: -10px;">
+                  <h5>Emergency Contact </h5>
+                </div>
             <table class="table">
               <thead>
                 <tr>
@@ -2313,42 +2338,46 @@
             
             </div>
           </div>
-            <div class="card">
-                  <div class="card-body">
+            
           <!-- Buttons -->
-                    <div class="text-end">
-                      <a href="#" class="btn btn-gradient-primary me-2 ">
-                        Save
-                      </a>
-                      <a href="#" class="btn btn-gradient-light">
-                        Cancel
-                      </a>
-                    </div>
-           </div>
-          </div>
+                            <div
+                              class="text-end mt-3"
+                              style="display: none"
+                              id="ContBtn"
+                            >
+                              <button
+                                id="saveContBtn"
+                                class="btn btn-gradient-primary me-2"
+                              >
+                                Save
+                              </button>
+                              <button
+                                id="cancelContBtn"
+                                class="btn btn-gradient-light"
+                              >
+                                Cancel
+                              </button>
+                            </div>
+          
             </form>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
-          <footer class="footer">
-            <div
-              class="d-sm-flex justify-content-center justify-content-sm-between"
-            >
-              <span
-                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
-                >Copyright © 2023
-                <a href="https://www.bootstrapdash.com/" target="_blank"
-                  >BootstrapDash</a
-                >. All rights reserved.</span
-              >
-              <span
-                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
-                >Hand-crafted & made with
-                <i class="mdi mdi-heart text-danger"></i
-              ></span>
-            </div>
-          </footer>
+        
           <!-- partial -->
         </div>
+         <footer class="footer">
+<div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+>
+<span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+>Copyright © 2023
+<a href="https://www.syborgtech.com/" target="_blank"
+>SyborgTech</a
+>. All rights reserved.</span
+>
+</div>
+</footer>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
@@ -2361,6 +2390,44 @@
     <script src="../../assets/vendors/select2/select2.min.js"></script>
     <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
     <!-- End plugin js for this page -->
+<script>
+      const editContBtn = document.getElementById("editContBtn");
+      const actionContButtons = document.getElementById("ContBtn");
+      const saveContBtn = document.getElementById("saveContBtn");
+      const cancelContBtn = document.getElementById("cancelContBtn");
+      const ContformFields = document.querySelectorAll(
+        "#Cont input, #Cont select"
+      );
+
+      // Initially disable all inputs
+      toggleFields(false);
+
+      function toggleFields(enable) {
+        ContformFields.forEach((field) => (field.disabled = !enable));
+      }
+
+      editContBtn.addEventListener("click", () => {
+        toggleFields(true);
+        actionContButtons.style.display = "block";
+        editContBtn.style.display = "none";
+      });
+
+      saveContBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionContButtons.style.display = "none";
+        editContBtn.style.display = "block";
+        // optionally: submit form here if needed
+      });
+
+      cancelContBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleFields(false);
+        actionContButtons.style.display = "none";
+        editContBtn.style.display = "block";
+      });
+    </script>
+
     <!-- inject:js -->
     <script src="../../assets/js/off-canvas.js"></script>
     <script src="../../assets/js/misc.js"></script>

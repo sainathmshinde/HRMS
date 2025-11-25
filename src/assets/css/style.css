@@ -24415,6 +24415,8 @@ code {
 }
 .card .card-body {
   padding: 1rem 2.5rem;
+  margin-top: 10px;
+  
 }
 .card .card-body + .card-body {
   padding-top: 1rem;
@@ -29822,6 +29824,32 @@ body.salary-template-page .content-wrapper .text-end.mb-4 {
 body.salary-template-page .gridBlock,
 body.salary-template-page .formBlock {
   margin-top: 0 !important;
+}
+.bg-gradient-sb-blue {
+  background: linear-gradient(to right, #8FF5FF, #8FF5FF) !important;
+}
+.bg-gradient-sb-voilet {
+  background: linear-gradient(to right, #D6B7F8, #D6B7F8) !important;
+}
+.bg-gradient-sb-pink {
+  background: linear-gradient(to right, #FFB6E0, #FFB6E0) !important;
+}
+.bg-gradient-sb-yellow {
+  background: linear-gradient(to right, #E8DE70, #E8DE70) !important;
+}
+ 
+
+.bg-gradient-success,
+
+.datepicker-custom
+  .datepicker.datepicker-inline
+  .datepicker-days
+  .table-condensed
+  tbody
+  tr
+  td.day.today:before {
+  background: linear-gradient(to right, #84d9d2, #07cdae) !important;
+>>>>>>> 004d53db09131873db771ac5c8f822664adc74dc
 }
 
 body.salary-template-page .formBlock .form-edit {

@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body class="sidebar-fixed">
     <div class="container-scroller">
@@ -670,7 +674,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendance/dashboardAttendance.html"
+                      href="/src/pages/attendence/dashboardAttendance.html"
                     >
                       Dashboard
                     </a>
@@ -1583,9 +1587,13 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Work Experience Information</h3>
+              <h3 class="page-title fixed-title">
+<span class="page-title-icon bg-gradient-primary text-white me-2">
+<i class="fa-solid fa-clipboard-check"></i>
+</span>	Work Experience Information		</h3>
+             
             </div>
-            <div class="card">
+            <div class="card" style="margin-top: 50px;">
                 <div class="card-body">
                     <div class="accordion" id="accordionExample">
                       <div class="accordion-item">
@@ -1608,7 +1616,7 @@
                           data-bs-parent="#accordionExample"
                         >
                           <div class="accordion-body">
-                            <div class="row">
+                            <div class="row" id="wExp" style="display:none;">
                               
                                 <div class="row">
                                   <!-- attachDocument -->
@@ -1892,16 +1900,16 @@
                                 
                                 <!-- Buttons -->
                                 <div class="text-end">
-                                  <a href="manageKra.html" class="btn btn-gradient-primary me-2 ">
-                                    Save
-                                  </a>
-                                  <a href="manageKra.html" class="btn btn-gradient-light">
-                                    Cancel
-                                  </a>
+                                  <button id="savewExpBtn" class="btn btn-gradient-primary me-2">Save</button>
+                                  <button id="cancelwExpBtn" class="btn btn-gradient-light">Cancel</button>
+                                  
                                 </div>
                               
                             </div>
-                            <div class="row">
+                            <div class="row" id="wExpTable" style="display:block;">
+                              <div class="text-end mb-2">
+                                <button id="editwExpBtn" class="btn btn-primary">Add Experience</button>
+                              </div>
                               <table class="table">
                                   <tbody>
                                     <tr >
@@ -1941,8 +1949,13 @@
                                       <label></label>
                                     </td>                                    
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                          
+                                      <a >
+                                        <i href="javascript:void(0);" class="fa-solid fa-eye viewwExpBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a>
+                                        <i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i>
+                                      </a>
+                                         
                                     </td>
                                   </tr>
                                   <tr >
@@ -1962,8 +1975,12 @@
                                       <label>4</label>
                                     </td>
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;
-                                      <a href="javascript:void(0);" class="deleteLink  actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                      <a >
+                                        <i href="javascript:void(0);" class="fa-solid fa-eye viewwExpBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a>
+                                        <i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i>
+                                      </a>
                                     </td>
                                   </tr>
                                   
@@ -1994,7 +2011,7 @@
                           data-bs-parent="#accordionExample"
                         >
                           <div class="accordion-body">
-                            <div class="row">
+                            <div class="row" id="pRef" style="display:none;">
                               
                                 <div class="row">
                                   <!-- Name -->
@@ -2109,18 +2126,18 @@
                                   </div>                                
                                 </div>
                                 
-                                <!-- Buttons -->
+                               <!-- Buttons -->
                                 <div class="text-end">
-                                  <a href="manageKra.html" class="btn btn-gradient-primary me-2 ">
-                                    Save
-                                  </a>
-                                  <a href="manageKra.html" class="btn btn-gradient-light">
-                                    Cancel
-                                  </a>
+                                  <button id="savepRefBtn" class="btn btn-gradient-primary me-2">Save</button>
+                                  <button id="cancelpRefBtn" class="btn btn-gradient-light">Cancel</button>
+                                  
                                 </div>
                               
                             </div>
-                            <div class="row">
+                            <div class="row" id="pRefTable" style="display:block;">
+                              <div class="text-end mb-2">
+                                <button id="editpRefBtn" class="btn btn-primary">Add Experience</button>
+                              </div>
                               <table class="table">
                                   <tbody>
                                     <tr >
@@ -2154,8 +2171,12 @@
                                       <label>benjamin@newdesign.com</label>
                                     </td>
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                          
+                                      <a >
+                                        <i href="javascript:void(0);" class="fa-solid fa-eye viewpRefBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a>
+                                        <i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i>
+                                      </a> 
                                     </td>
                                   </tr>
                                   <tr >
@@ -2172,8 +2193,12 @@
                                       <label>gabrielh@rockwire.com</label>
                                     </td>
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                          
+                                      <a >
+                                        <i href="javascript:void(0);" class="fa-solid fa-eye viewpRefBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a>
+                                        <i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i>
+                                      </a> 
                                     </td>
                                   </tr>
                                   
@@ -2190,26 +2215,22 @@
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
-          <footer class="footer">
-            <div
-              class="d-sm-flex justify-content-center justify-content-sm-between"
-            >
-              <span
-                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
-                >Copyright © 2023
-                <a href="https://www.bootstrapdash.com/" target="_blank"
-                  >BootstrapDash</a
-                >. All rights reserved.</span
-              >
-              <span
-                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
-                >Hand-crafted & made with
-                <i class="mdi mdi-heart text-danger"></i
-              ></span>
-            </div>
-          </footer>
+          
           <!-- partial -->
         </div>
+        <footer class="footer">
+<div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+>
+<span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+>Copyright © 2023
+<a href="https://www.syborgtech.com/" target="_blank"
+>SyborgTech</a
+>. All rights reserved.</span
+>
+</div>
+</footer>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
@@ -2229,6 +2250,84 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const wExpForm = document.getElementById("wExp");
+    const wExpTable = document.getElementById("wExpTable");
+
+    const editwExpBtn = document.getElementById("editwExpBtn");
+    const savewExpBtn = document.getElementById("savewExpBtn");
+    const cancelwExpBtn = document.getElementById("cancelwExpBtn");
+
+    const viewwExpBtns = document.querySelectorAll(".viewwExpBtn");
+
+    editwExpBtn.addEventListener("click", function () {
+        wExpTable.style.display = "none";
+        wExpForm.style.display = "block";
+    });
+
+    savewExpBtn.addEventListener("click", function () {
+        wExpForm.style.display = "none";
+        wExpTable.style.display = "block";
+    });
+
+    cancelwExpBtn.addEventListener("click", function () {
+        wExpForm.style.display = "none";
+        wExpTable.style.display = "block";
+    });
+
+    // Apply event to all view icons
+    viewwExpBtns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            wExpTable.style.display = "none";
+            wExpForm.style.display = "block";
+        });
+    });
+
+});
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const pRefForm = document.getElementById("pRef");
+    const pRefTable = document.getElementById("pRefTable");
+
+    const editpRefBtn = document.getElementById("editpRefBtn");
+    const savepRefBtn = document.getElementById("savepRefBtn");
+    const cancelpRefBtn = document.getElementById("cancelpRefBtn");
+
+    const viewpRefBtns = document.querySelectorAll(".viewpRefBtn");
+
+    editpRefBtn.addEventListener("click", function () {
+        pRefTable.style.display = "none";
+        pRefForm.style.display = "block";
+    });
+
+    savepRefBtn.addEventListener("click", function () {
+        pRefForm.style.display = "none";
+        pRefTable.style.display = "block";
+    });
+
+    cancelpRefBtn.addEventListener("click", function () {
+        pRefForm.style.display = "none";
+        pRefTable.style.display = "block";
+    });
+
+    // Apply event to all view icons
+    viewpRefBtns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            pRefTable.style.display = "none";
+            pRefForm.style.display = "block";
+        });
+    });
+
+});
+
+</script>
+
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
