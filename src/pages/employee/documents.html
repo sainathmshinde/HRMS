@@ -42,6 +42,11 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body class="sidebar-fixed">
     <div class="container-scroller">
@@ -300,24 +305,8 @@
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
-          <ul class="nav">
-            <!-- <li class="nav-item nav-profile">
-              <a href="#" class="nav-link">
-                <div class="nav-profile-image">
-                  <img src="assets/images/faces/face1.jpg" alt="profile" />
-                  <span class="login-status online"></span>
-                  change to offline or busy as needed
-                </div>
-                <div class="nav-profile-text d-flex flex-column">
-                  <span class="font-weight-bold mb-2">David Grey. H</span>
-                  <span class="text-secondary text-small">Project Manager</span>
-                </div>
-                <i
-                  class="mdi mdi-bookmark-check text-success nav-profile-badge"
-                ></i>
-              </a>
-            </li> -->
-             <li class="nav-item">
+         <ul class="nav">
+            <li class="nav-item">
               <a
                 class="nav-link"
                 data-bs-toggle="collapse"
@@ -397,13 +386,13 @@
                       Probation
                     </a>
                   </li>
-                
+                  
                   <li class="nav-item">
                     <a
                       class="nav-link"
                       href="/src/pages/employee/compensation.html"
                     >
-                      Compensation And Benefits
+                      Compensation & Benefits
                     </a>
                   </li>
                   <li class="nav-item">
@@ -432,7 +421,7 @@
                       class="nav-link"
                       href="/src/pages/employee/totalHeadcount.html"
                     >
-                      Total Headcount
+                      Total Headcount Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -440,7 +429,7 @@
                       class="nav-link"
                       href="/src/pages/employee/employmentType.html"
                     >
-                      Employment Type
+                      Employment Type Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -448,7 +437,7 @@
                       class="nav-link"
                       href="/src/pages/employee/joiningDate.html"
                     >
-                      Joining Date
+                      Joining Date Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -456,12 +445,12 @@
                       class="nav-link"
                       href="/src/pages/employee/exitEmployee.html"
                     >
-                      Employee Exit
+                      Employee Exit Reports
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/src/pages/employee/gender.html">
-                      Gender
+                      By Gender Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -469,7 +458,7 @@
                       class="nav-link"
                       href="/src/pages/employee/profileCompleted.html"
                     >
-                      Profile Completed
+                      Profile Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -477,7 +466,7 @@
                       class="nav-link"
                       href="/src/pages/employee/contractRenewal.html"
                     >
-                      Contract Renewal Pending
+                      Contract Reports
                     </a>
                   </li>
                 </ul>
@@ -570,14 +559,14 @@
                     <a
                       class="nav-link"
                       href="/src/pages/leaves/employeesOnLeaveReports.html"
-                      >Employees On Leave Reports</a
+                      >On Leave Reports</a
                     >
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
                       href="/src/pages/leaves/totalPlannedLeavesReports.html"
-                      >Total Planned Leaves Reports</a
+                      >Planned Leaves Reports</a
                     >
                   </li>
                   <li class="nav-item">
@@ -599,7 +588,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/leaveConsumptionByTypeReports.html"
                     >
-                      Leave Consumption By Type Reports</a
+                      Leave Type Reports</a
                     >
                   </li>
                   <li class="nav-item">
@@ -607,7 +596,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/leaveConsumptionTrendReports.html"
                     >
-                      Leave Consumption Trend Reports</a
+                      Leave Trend Reports</a
                     >
                   </li>
                   <li class="nav-item">
@@ -623,7 +612,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/leaveSummaryReports.html"
                     >
-                      Leave Summary For Year 15 - 16 Reports</a
+                      Leave Summary Reports</a
                     >
                   </li>
                   <li class="nav-item">
@@ -639,7 +628,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/leaveTypeCountReports.html"
                     >
-                      Leave Type Count Reports</a
+                      Leave Count Reports</a
                     >
                   </li>
                   <li class="nav-item">
@@ -647,7 +636,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/availedLeaveTypeReports.html"
                     >
-                      Availed Leave Type Reports</a
+                      Availed Leave Reports</a
                     >
                   </li>
                   <li class="nav-item">
@@ -655,7 +644,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/noLeavesAvailedReports.html"
                     >
-                      No Leaves Availed Reports</a
+                      No Availed leave Reports</a
                     >
                   </li>
                   <li class="nav-item">
@@ -686,7 +675,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/attendance/dashboardAttendance.html"
+                      href="/src/pages/attendence/dashboardAttendance.html"
                     >
                       Dashboard
                     </a>
@@ -704,7 +693,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/authorization.html"
                     >
-                      Attendance Authorization
+                      Mark Authorization
                     </a>
                   </li>
                   <li class="nav-item">
@@ -720,7 +709,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/attendanceConfiguration.html"
                     >
-                      Attendance Configuration
+                      Configuration
                     </a>
                   </li>
                   <li class="nav-item">
@@ -728,7 +717,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/presentEmployeesReports.html"
                     >
-                      Present Employees Reports
+                      Present Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -736,7 +725,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/absentEmployeesReports.html"
                     >
-                      Absent Employees Reports
+                      Absent Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -768,7 +757,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/dailyAttendanceReports.html"
                     >
-                      Daily Attendance Reports
+                      Daily Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -800,7 +789,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/presentTrendReports.html"
                     >
-                      Present Trend Reports
+                      Trend Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -808,7 +797,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/attendanceDailyReports.html"
                     >
-                      Attandace Daily Reports
+                      Daily Reports
                     </a>
                   </li>
                 </ul>
@@ -930,7 +919,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="pages/performance/dashboardPerformance.html"
+                      href="/src/pages/performance/dashboardPerformance.html"
                     >
                       Dashboard
                     </a>
@@ -1030,7 +1019,7 @@
                       class="nav-link"
                       href="/src/pages/performance/printCommunicationLetter.html"
                     >
-                      Print Communication Letter
+                      Communication Letter
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1038,7 +1027,7 @@
                       class="nav-link"
                       href="/src/pages/performance/printReviewResultLetter.html"
                     >
-                      Print Review Result Letter
+                      Review Result Letter
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1046,7 +1035,7 @@
                       class="nav-link"
                       href="/src/pages/performance/employeePerformanceStatus.html"
                     >
-                      Employee Performance Status
+                      Performance Status
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1070,7 +1059,7 @@
                       class="nav-link"
                       href="/src/pages/performance/eligibleEmployeesReports.html"
                     >
-                      Eligible Employees Reports
+                      Eligibility Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1078,7 +1067,7 @@
                       class="nav-link"
                       href="/src/pages/performance/reviewerAssessmentReports.html"
                     >
-                      Reviewer Assessment Reports
+                      Reviewer Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1094,7 +1083,7 @@
                       class="nav-link"
                       href="/src/pages/performance/totalPendingAssessmentReports.html"
                     >
-                      Total Pending Assessment Reports
+                      Pending Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1102,7 +1091,7 @@
                       class="nav-link"
                       href="/src/pages/performance/performanceTrendReports.html"
                     >
-                      Performance Trend Reports
+                      Trend Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1193,7 +1182,7 @@
                       class="nav-link"
                       href="/src/pages/training/pendingTrainingRequest.html"
                     >
-                      Pending Training Request
+                      Pending Request Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1201,7 +1190,7 @@
                       class="nav-link"
                       href="/src/pages/training/trainersAcrossOrganization.html"
                     >
-                      Trainers Across Organization
+                      Organization Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1209,7 +1198,7 @@
                       class="nav-link"
                       href="/src/pages/training/trainingTrend.html"
                     >
-                      Training Trend
+                      Trend Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1217,7 +1206,7 @@
                       class="nav-link"
                       href="/src/pages/training/totalScheduledTraining.html"
                     >
-                      Total Scheduled Training
+                      Scheduled Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1225,7 +1214,7 @@
                       class="nav-link"
                       href="/src/pages/training/softSkillsTechnical.html"
                     >
-                      Soft Skills vs Technical
+                      Skills Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1233,7 +1222,7 @@
                       class="nav-link"
                       href="/src/pages/training/participants.html"
                     >
-                      Participants
+                      Participants Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1241,7 +1230,7 @@
                       class="nav-link"
                       href="/src/pages/training/trainersRating.html"
                     >
-                      Trainer's Rating
+                      Rating Reports
                     </a>
                   </li>
                 </ul>
@@ -1322,7 +1311,7 @@
                       class="nav-link"
                       href="/src/pages/tourDiary/tourPlanned.html"
                     >
-                      Tours Planned
+                      Tours Planned Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1330,7 +1319,7 @@
                       class="nav-link"
                       href="/src/pages/tourDiary/tourDiaryStatus.html"
                     >
-                      Tour Diary Status
+                      Status Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1338,7 +1327,7 @@
                       class="nav-link"
                       href="/src/pages/tourDiary/teamTourPlanned.html"
                     >
-                      Team Tour Planned
+                      Tour Planned Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1346,7 +1335,7 @@
                       class="nav-link"
                       href="/src/pages/tourDiary/claimStatus.html"
                     >
-                      Claim Status
+                      Claim Status Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1354,7 +1343,7 @@
                       class="nav-link"
                       href="/src/pages/tourDiary/trendOfTourExpenses.html"
                     >
-                      Trend Of Tour Expenses
+                      Expenses Trend Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1362,7 +1351,7 @@
                       class="nav-link"
                       href="/src/pages/tourDiary/trendOfVillage.html"
                     >
-                      Trend of Village Halt and Field Visit
+                      Trend of Visit Reports
                     </a>
                   </li>
                 </ul>
@@ -1417,7 +1406,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/uploadCandidateInformation.html"
                     >
-                      Upload Candidate Information
+                      Candidate Information
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1457,7 +1446,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/projectResourceAllocation.html"
                     >
-                      Project Resource Allocation
+                      Resource Allocation
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1465,7 +1454,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/openPosition.html"
                     >
-                      Open Positions
+                      Open Positions Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1473,7 +1462,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/srfAbove90.html"
                     >
-                      SRF Above 90 Days
+                      SRF Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1481,7 +1470,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/ageingOfOpenSRF.html"
                     >
-                      Ageing Of Open SRF
+                      SRF Ageing Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1489,7 +1478,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/buWisePosition.html"
                     >
-                      BU Wise Positions
+                      BU Positions Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1497,7 +1486,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/resumeAvailable.html"
                     >
-                      Resume Available
+                      Resume Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1505,7 +1494,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/interviewScheduled.html"
                     >
-                      Interview Scheduled
+                      Interview Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1513,7 +1502,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/projectResource.html"
                     >
-                      Project Resources
+                      Project Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1521,7 +1510,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/projectPositions.html"
                     >
-                      Project Positions
+                      Positions Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1529,7 +1518,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/projectCost.html"
                     >
-                      Project Cost
+                      Cost Reports
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1537,7 +1526,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/resourceProjects.html"
                     >
-                      Resource Projects
+                      Resource Reports
                     </a>
                   </li>
                 </ul>
@@ -1593,18 +1582,21 @@
                 </ul>
               </div>
             </li>
-      
           </ul>
-        </nav>
+            </nav>
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Document Information</h3>
+              <h3 class="page-title fixed-title">
+<span class="page-title-icon bg-gradient-primary text-white me-2">
+<i class="fa-solid fa-file"></i>
+</span>Document Information	</h3>
+              
             </div>
-            <div class="card">
+            <div class="card" style="margin-top: 50px;">
                 <div class="card-body">
-                  <div class="row">
+                  <div class="row" id="docInfo" style="display:none;">
 
                     <div class="row">
                       <!-- Document Category -->
@@ -1687,23 +1679,23 @@
                     </div>
 
                      <!-- Buttons -->
-                    <div class="text-end">
-                      <a href="#" class="btn btn-gradient-primary me-2 ">
-                        Save
-                      </a>
-                      <a href="#" class="btn btn-gradient-light">
-                        Cancel
-                      </a>
-                    </div>
+                     <div class="text-end">
+                                  <button id="savedocInfoBtn" class="btn btn-gradient-primary me-2">Save</button>
+                                  <button id="canceldocInfoBtn" class="btn btn-gradient-light">Cancel</button>
+                                  
+                                </div>
 
                   </div>
 
-                  <div class="row">
-                              <table class="table">
+                  <div class="row" id="docInfoTable" style="display:block;">
+                    <div class="text-end mb-2" style="margin-top: -10px;">
+                                <button id="editdocInfoBtn" class="btn btn-primary">Add Document</button>
+                              </div>          
+                    <table class="table">
                                   <tbody>
                                     <tr >
                                       <th>
-                                        <label>Document Categary</label>
+                                        <label>Document Category</label>
                                       </th>
                                       <th>
                                         <label>Remark</label>
@@ -1726,8 +1718,12 @@
                                       <label><a href="#">E102_Passport_0.pdf</a></label>
                                     </td>                                                                      
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                          
+                                       <a >
+                                        <i href="javascript:void(0);" class="fa-solid fa-eye viewdocInfoBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a>
+                                        <i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i>
+                                      </a>   
                                     </td>
                                   </tr>
                                   <tr >
@@ -1741,8 +1737,12 @@
                                       <label><a href="#">E102_Aadhar_01.pdf</a></label>
                                     </td>                                                                      
                                     <td>
-                                      <a class="projectEdit QprojectEdit actionLinks view-img" href="javascript:void(0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="deleteLink actionLinks delete-img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                          
+                                       <a >
+                                        <i href="javascript:void(0);" class="fa-solid fa-eye viewdocInfoBtn projectEdit QprojectEdit actionLinks view-img" style="color:#080808; margin-right:10px;"></i>
+                                      </a>
+                                      <a>
+                                        <i href="javascript:void(0);" class="fa-solid fa-trash deleteLink actionLinks delete-img" style="color: red;"></i>
+                                      </a>   
                                     </td>
                                   </tr>
                                   
@@ -1754,26 +1754,22 @@
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
-          <footer class="footer">
-            <div
-              class="d-sm-flex justify-content-center justify-content-sm-between"
-            >
-              <span
-                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
-                >Copyright © 2023
-                <a href="https://www.bootstrapdash.com/" target="_blank"
-                  >BootstrapDash</a
-                >. All rights reserved.</span
-              >
-              <span
-                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
-                >Hand-crafted & made with
-                <i class="mdi mdi-heart text-danger"></i
-              ></span>
-            </div>
-          </footer>
+
           <!-- partial -->
         </div>
+                  <footer class="footer">
+<div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+>
+<span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+>Copyright © 2023
+<a href="https://www.syborgtech.com/" target="_blank"
+>SyborgTech</a
+>. All rights reserved.</span
+>
+</div>
+</footer>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
@@ -1793,6 +1789,45 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const docInfoForm = document.getElementById("docInfo");
+    const docInfoTable = document.getElementById("docInfoTable");
+
+    const editdocInfoBtn = document.getElementById("editdocInfoBtn");
+    const savedocInfoBtn = document.getElementById("savedocInfoBtn");
+    const canceldocInfoBtn = document.getElementById("canceldocInfoBtn");
+
+    const viewdocInfoBtns = document.querySelectorAll(".viewdocInfoBtn");
+
+    editdocInfoBtn.addEventListener("click", function () {
+        docInfoTable.style.display = "none";
+        docInfoForm.style.display = "block";
+    });
+
+    savedocInfoBtn.addEventListener("click", function () {
+        docInfoForm.style.display = "none";
+        docInfoTable.style.display = "block";
+    });
+
+    canceldocInfoBtn.addEventListener("click", function () {
+        docInfoForm.style.display = "none";
+        docInfoTable.style.display = "block";
+    });
+
+    // Apply event to all view icons
+    viewdocInfoBtns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            docInfoTable.style.display = "none";
+            docInfoForm.style.display = "block";
+        });
+    });
+
+});
+
+</script>
+
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>

@@ -24415,6 +24415,8 @@ code {
 }
 .card .card-body {
   padding: 1rem 2.5rem;
+  margin-top: 10px;
+  
 }
 .card .card-body + .card-body {
   padding-top: 1rem;
@@ -29817,7 +29819,7 @@ body.holiday-list-page .card-body {
 }
 
 .bg-gradient-sb-blue {
-  background: linear-gradient(to right, #cffafe, #cffafe) !important;
+  background: linear-gradient(to right, #8FF5FF, #8FF5FF) !important;
 }
 .bg-gradient-sb-voilet {
   background: linear-gradient(to right, #D6B7F8, #D6B7F8) !important;
@@ -29826,7 +29828,7 @@ body.holiday-list-page .card-body {
   background: linear-gradient(to right, #FFB6E0, #FFB6E0) !important;
 }
 .bg-gradient-sb-yellow {
-  background: linear-gradient(to right, #FFEDD5, #FFEDD5) !important;
+  background: linear-gradient(to right, #E8DE70, #E8DE70) !important;
 }
  
 
