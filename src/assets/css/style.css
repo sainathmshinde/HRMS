@@ -18564,7 +18564,6 @@ fieldset:disabled .ajax-upload-dragdrop .ajax-file-upload,
   border-top-left-radius: var(--bs-border-radius-pill) !important;
 }
 
-
 .visible {
   visibility: visible !important;
 }
@@ -24416,7 +24415,6 @@ code {
 .card .card-body {
   padding: 1rem 2.5rem;
   margin-top: 10px;
-  
 }
 .card .card-body + .card-body {
   padding-top: 1rem;
@@ -29619,12 +29617,10 @@ dl li {
 }
 /*# sourceMappingURL=maps/style.css.map */
 
-
-
 /* ===== Sidebar Darker Text + Scroll ===== */
 
 .sidebar {
-  overflow-y: auto !important;   /* sidebar scrollable */
+  overflow-y: auto !important; /* sidebar scrollable */
   /* max-height: calc(100vh - 70px);  */
   max-height: 100vh;
 }
@@ -29642,7 +29638,7 @@ dl li {
 .sidebar .nav .nav-link,
 .sidebar .menu-title,
 .sidebar .sub-menu .nav-link {
-  color: #2d2d2d !important;      /* ← darker color */
+  color: #2d2d2d !important; /* ← darker color */
   font-weight: 500;
 }
 
@@ -29658,21 +29654,20 @@ dl li {
   color: #000 !important;
 }
 .nav-item .nav-link:hover {
-    background: linear-gradient(135deg, #ff9aeb, #7b5bfa);
-    color: #fff !important;
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
+  background: linear-gradient(135deg, #ff9aeb, #7b5bfa);
+  color: #fff !important;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
 /* --- Sidebar hover override: add this at the END of your final stylesheet --- */
 
 .sidebar .nav .nav-item > a.nav-link {
-  display: flex !important;               /* icon + text same line */
-  align-items: center !important;         /* vertical center */
+  display: flex !important; /* icon + text same line */
+  align-items: center !important; /* vertical center */
   justify-content: space-between !important; /* icon always at right end (तुला हवंय तेच) */
   padding: 0.75rem 1.1rem;
   border-radius: 10px;
 }
-
 
 /* Strong, specific hover rule - loaded last so it overrides existing scss rules */
 .sidebar .nav .nav-item > a.nav-link:hover,
@@ -29685,12 +29680,12 @@ dl li {
 .sticky-header {
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 20px;                
-  z-index: 30;              
-  background: #f6eef3;      
+  top: 20px;
+  z-index: 30;
+  background: #f6eef3;
   padding: 14px 20px;
   border-radius: 8px;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.02); 
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
 }
 .sticky-header h4 {
   margin: 0;
@@ -29699,7 +29694,9 @@ dl li {
   font-weight: 600;
 }
 /* ensure ancestors don't clip sticky */
-.main-panel, .content-wrapper, .page-body-wrapper {
+.main-panel,
+.content-wrapper,
+.page-body-wrapper {
   overflow: visible;
 }
 
@@ -29707,12 +29704,12 @@ dl li {
 .page-header.sticky-header {
   position: -webkit-sticky;
   position: sticky;
-  top: 80px;      
+  top: 80px;
   z-index: 999;
   background: #f6eef3;
   padding: 14px 20px;
   border-radius: 8px;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
 }
 /* ---------- Restore page scrolling; keep card scrolling ---------- */
 
@@ -29743,7 +29740,7 @@ body {
   top: auto;
   z-index: 999;
 }
-            /* ---------- Restore page scrolling; keep card scrolling ---------- */
+/* ---------- Restore page scrolling; keep card scrolling ---------- */
 
 /* Allow page to scroll normally */
 .content-wrapper,
@@ -29763,7 +29760,9 @@ body {
   display: flex;
   flex-direction: column;
   /* use max-height instead of forcing full height */
-  max-height: calc(100vh - 220px); /* adjust 220px for top navbar + header + margins */
+  max-height: calc(
+    100vh - 220px
+  ); /* adjust 220px for top navbar + header + margins */
   margin: 0;
 }
 .scrollable-card .card-body {
@@ -29792,22 +29791,22 @@ body {
 
 .page-header .page-title.fixed-title {
   position: fixed;
-  top: calc(60px + 8px);     /* Top navbar height */
-  left: calc(260px + 1px);   /* Sidebar width */
-  right: 1px;                
+  top: calc(60px + 8px); /* Top navbar height */
+  left: calc(260px + 1px); /* Sidebar width */
+  right: 1px;
   z-index: 2000;
-  background:#f2edf3;
+  background: #f2edf3;
   padding: 10px 16px;
   /* box-shadow: 0 6px 18px rgba(0,0,0,0.06); */
 }
 
 /*HolidayList Allignment Fix*/
 body.holiday-list-page .text-end.mb-4 {
-    margin-bottom: -20px !important;
+  margin-bottom: -20px !important;
 }
 
 body.holiday-list-page .card-body {
-    padding-top: -30px !important;
+  padding-top: -30px !important;
 }
 
 /*Salary Template Page Fix*/
@@ -29826,21 +29825,19 @@ body.salary-template-page .formBlock {
   margin-top: 0 !important;
 }
 .bg-gradient-sb-blue {
-  background: linear-gradient(to right, #8FF5FF, #8FF5FF) !important;
+  background: linear-gradient(to right, #8ff5ff, #8ff5ff) !important;
 }
 .bg-gradient-sb-voilet {
-  background: linear-gradient(to right, #D6B7F8, #D6B7F8) !important;
+  background: linear-gradient(to right, #d6b7f8, #d6b7f8) !important;
 }
 .bg-gradient-sb-pink {
-  background: linear-gradient(to right, #FFB6E0, #FFB6E0) !important;
+  background: linear-gradient(to right, #ffb6e0, #ffb6e0) !important;
 }
 .bg-gradient-sb-yellow {
-  background: linear-gradient(to right, #E8DE70, #E8DE70) !important;
+  background: linear-gradient(to right, #e8de70, #e8de70) !important;
 }
- 
 
 .bg-gradient-success,
-
 .datepicker-custom
   .datepicker.datepicker-inline
   .datepicker-days
@@ -29849,7 +29846,6 @@ body.salary-template-page .formBlock {
   tr
   td.day.today:before {
   background: linear-gradient(to right, #84d9d2, #07cdae) !important;
->>>>>>> 004d53db09131873db771ac5c8f822664adc74dc
 }
 
 body.salary-template-page .formBlock .form-edit {
@@ -29857,7 +29853,6 @@ body.salary-template-page .formBlock .form-edit {
   margin: 0 !important;
   padding: 0 !important;
 }
-
 
 /* Attendance Register*/
 
@@ -29874,52 +29869,48 @@ body.salary-template-page .formBlock .form-edit {
 
 .excel-container table th,
 .excel-container table td {
-  border: 1px solid #6a008a;   
+  border: 1px solid #6a008a;
   padding: 4px 6px;
   text-align: center;
   white-space: nowrap;
 }
 
-
 .excel-container table thead tr th {
-  background-color: #e91e63;    
+  background-color: #e91e63;
   color: #ffffff;
   font-weight: 300 !important;
 }
 
-
 .excel-container table tbody tr td:first-child {
-  background-color: #f2a654;    /* orange dark */
-  color: #000000 !important;    /* black font */
+  background-color: #f2a654; /* orange dark */
+  color: #000000 !important; /* black font */
   font-weight: 300 !important;
 }
 
-
 .excel-container table tbody tr td:nth-child(2) {
-  background-color: #f6e84e;     /* yellow dark */
+  background-color: #f6e84e; /* yellow dark */
   color: #000000 !important;
   font-weight: normal !important;
   text-align: left;
 }
 
-
 .excel-container table tbody tr td:nth-child(3),
 .excel-container table tbody tr td:nth-child(4) {
-  background-color: #58d8a3;   
+  background-color: #58d8a3;
   color: #000000 !important;
   font-weight: normal !important;
 }
 
 .excel-container table tbody tr:nth-child(odd) td {
-  background-color: #dbe8ff;   
+  background-color: #dbe8ff;
 }
 
 .excel-container table tbody tr:nth-child(even) td {
-  background-color: #f3e6ff;    
+  background-color: #f3e6ff;
 }
 
 .d-flex.justify-content-end.mb-0 {
-    margin-bottom: -20px !important;
+  margin-bottom: -20px !important;
 }
 
 .attendance-filters {
@@ -29930,10 +29921,10 @@ body.salary-template-page .formBlock .form-edit {
 
 .form-control,
 .form-select {
-  height: 36px;              
-  padding: 4px 10px;          
-  border: 1px solid #ced4da;  
-  border-radius: 4px;        
+  height: 36px;
+  padding: 4px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
   font-size: 14px;
   background-color: #ffffff;
   box-shadow: none;
@@ -29941,7 +29932,7 @@ body.salary-template-page .formBlock .form-edit {
 
 .form-control:focus,
 .form-select:focus {
-  border-color: #8a42ff;  
+  border-color: #8a42ff;
   outline: 0;
   box-shadow: 0 0 0 0.15rem rgba(138, 66, 255, 0.25);
 }
@@ -29949,8 +29940,8 @@ body.salary-template-page .formBlock .form-edit {
 /* ===== sidebar nav item spacing override (gap between items) ===== */
 
 .sidebar .nav > .nav-item:not(.nav-category):not(.nav-profile) {
-  margin-bottom: 2px;        
-  border-radius: 6px;        
+  margin-bottom: 2px;
+  border-radius: 6px;
 }
 
 .sidebar .nav > .nav-item:not(.nav-category):not(.nav-profile) > .nav-link {
