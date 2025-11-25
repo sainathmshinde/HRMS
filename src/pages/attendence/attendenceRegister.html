@@ -46,6 +46,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
   </head>
   <body class="sidebar-fixed">
     <div class="container-scroller">
@@ -1594,209 +1595,358 @@
                 Attendance Register
               </h3>
             </div>
-            <div class="row mt-5">
-                        <div class="col-md-3">
-                          <div class="form-group">
-  <label for="month">Date</label>
-  <input
-    type="month"
-    class="form-control"
-    id="month"
-    value="2025-09"   
-  />
-</div>
-                        </div>
-                         <div class="col-md-3">
-                          <div class="form-group">
-                            <label for="title">Designation</label>
-                            <select class="form-select" id="title" required>
-                              <option value="mr">Select</option>
-                              <option value="mr" selected>Team Lead</option>
-                              <option value="mr">HR</option>
-                              <option value="mr">Developer</option>
-                              <option value="mr">IT</option>
-                              
-                            </select>
-                          </div>
-                        </div>
-                        </div>
-            <div class="row"  style="margin-top: -50px;">
-              <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <form class="forms-sample">
-                      <div class="attendancetable">
-              
-                  <div class="table-responsive"> 
-                    <div class="table align-middle" style="width: 100%;">
-                <div class="table align-middle" style="width: 100%;">
-				          <div class="mb-4">
-                    <img style="height: 100%; width: 100%;" src="/src/assets/images/MonthlyAttendance2.png.png" alt="attendance"/>
-				              </div>
-
-			                 </div>
-			                 </div>
-            
-              
-            </div>
- 
-                      </div>
-                    </form>
-                  </div>
-                  <!-- Submit Button -->
+            <div class="row mt-1 attendance-filters" style="margin-bottom: -65px;">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="month">Date</label>
+                  <input
+                    type="month"
+                    class="form-control"
+                    id="month"
+                    value="2025-09"   
+                  />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="title">Designation</label>
+                  <select class="form-select" id="title" required>
+                    <option value="mr">Select</option>
+                    <option value="mr" selected>Team Lead</option>
+                    <option value="mr">HR</option>
+                    <option value="mr">Developer</option>
+                    <option value="mr">IT</option>
+                  </select>
                 </div>
               </div>
             </div>
-          
-          <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
-           <footer class="footer">
-            <div
-              class="d-sm-flex justify-content-center justify-content-sm-between"
-            >
-              <span
-                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
-                >Copyright © 2023
-                <a href="https://www.syborgtech.com/" target="_blank"
-                  >SyborgTech</a
-                >. All rights reserved.</span
-              >
+            <div class="d-flex justify-content-end mb-0">
+              <button id="btnExportExcel" class="btn btn-sm btn-primary me-2">
+                <i class="fa-solid fa-file-csv"></i>
+              </button>
+              <button id="btnPrintPdf" class="btn btn-sm btn-primary">
+                <i class="fa-solid fa-print"></i>
+              </button>
             </div>
-          </footer>
-          <!-- partial -->
-        </div>
-        <!-- main-panel ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="../../assets/vendors/select2/select2.min.js"></script>
-    <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="../../assets/js/off-canvas.js"></script>
-    <script src="../../assets/js/misc.js"></script>
-    <script src="../../assets/js/settings.js"></script>
-    <script src="../../assets/js/todolist.js"></script>
-    <script src="../../assets/js/jquery.cookie.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="../../assets/js/file-upload.js"></script>
-    <script src="../../assets/js/typeahead.js"></script>
-    <script src="../../assets/js/select2.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        $(".assignSchedule").click(function () {
-          $(".grid").hide();
-          $("#pendingForm").show();
-          $(".mounting-events-inner1").show();
-          $(".edit-img").hide();
-          $("form").find("input[type='text']").val(" ");
-          $(".edit-img").hide();
+            <div class="row">
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="col-md-6">
+                      <div
+                        class="form-group"
+                        style="
+                          display: flex;
+                          align-items: center;
+                          gap: 30px;
+                          flex-wrap: wrap;
+                        ">
+                      </div>
+                    </div>
+                    <style>
+                      /* Excel table container – horizontal scroll */
+                      .excel-container {
+                        overflow-x: auto;
+                      }
 
-          $("form").find("input").removeAttr("disabled");
-          $("form").find("select").removeAttr("disabled");
-          $("form").find(".carryForward").attr("disabled", "disabled");
-          $("form").find(".negativeCaption").attr("disabled", "disabled");
-          $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
-          $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
-          $("form").find("#accrual_dropdown").attr("disabled", "disabled");
-        });
+                      .excel-container table {
+                        border-collapse: collapse;
+                        font-size: 12px;
+                        width: 100%;
+                      }
 
-        $(".assignSchedule1").click(function () {
-          $("form")[0].reset();
-          $(".grid").hide();
-          $("#pendingForm").show();
-          $(".edit-img").show();
+                      .excel-container table td,
+                      .excel-container table th {
+                        border: 1px solid #ccc;
+                        padding: 2px 4px;
+                        text-align: center;
+                        white-space: nowrap;
+                      }
+                    </style>
 
-          $("form").find("input[type='text']").prop("disabled", "disabled");
-          $("form").find("select").prop("disabled", "disabled");
-        });
+                    <div class="table-responsive excel-container" style="margin-top:-30px;">
+                      <div id="excelTableWrapper"></div>
+                    </div>
 
-        $(".enabledForm").click(function () {
-          $("form").find("input").removeAttr("disabled");
-          $("form").find("select").removeAttr("disabled");
-          $("form").find(".carryForward").attr("disabled", "disabled");
-          $("form").find(".negativeCaption").attr("disabled", "disabled");
-          $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
-          $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
-          $("form").find("#accrual_dropdown").attr("disabled", "disabled");
-        });
 
-        $("#Carryforword_yes").click(function () {
-          $("form").find(".carryForward").removeAttr("disabled");
-        });
 
-        $("#Carryforword_no").click(function () {
-          $("form").find(".carryForward").attr("disabled", "disabled");
-        });
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              
+                              <!-- content-wrapper ends -->
+                              <!-- partial:../../partials/_footer.html -->
+                              <footer class="footer">
+                                <div
+                                  class="d-sm-flex justify-content-center justify-content-sm-between"
+                                >
+                                  <span
+                                    class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+                                    >Copyright © 2023
+                                    <a href="https://www.syborgtech.com/" target="_blank"
+                                      >SyborgTech</a
+                                    >. All rights reserved.</span
+                                  >
+                                </div>
+                              </footer>
+                              <!-- partial -->
+                            </div>
+                            <!-- main-panel ends -->
+                          </div>
+                          <!-- page-body-wrapper ends -->
+                        </div>
+                        <!-- container-scroller -->
+                        <!-- plugins:js -->
+                        <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 
-        $(".grid").show();
-        $("#pendingForm").hide();
+                        <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+                        <!-- endinject -->
+                        <!-- Plugin js for this page -->
+                        <script src="../../assets/vendors/select2/select2.min.js"></script>
+                        <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+                        <!-- End plugin js for this page -->
+                        <!-- inject:js -->
+                        <script src="../../assets/js/off-canvas.js"></script>
+                        <script src="../../assets/js/misc.js"></script>
+                        <script src="../../assets/js/settings.js"></script>
+                        <script src="../../assets/js/todolist.js"></script>
+                        <script src="../../assets/js/jquery.cookie.js"></script>
+                        <!-- endinject -->
+                        <!-- Custom js for this page -->
+                        <script src="../../assets/js/file-upload.js"></script>
+                        <script src="../../assets/js/typeahead.js"></script>
+                        <script src="../../assets/js/select2.js"></script>
+                        <script type="text/javascript">
+                          $(function () {
+                            $(".assignSchedule").click(function () {
+                              $(".grid").hide();
+                              $("#pendingForm").show();
+                              $(".mounting-events-inner1").show();
+                              $(".edit-img").hide();
+                              $("form").find("input[type='text']").val(" ");
+                              $(".edit-img").hide();
 
-        $("#Negative_yes").click(function () {
-          $("form").find(".negativeCaption").removeAttr("disabled");
-        });
+                              $("form").find("input").removeAttr("disabled");
+                              $("form").find("select").removeAttr("disabled");
+                              $("form").find(".carryForward").attr("disabled", "disabled");
+                              $("form").find(".negativeCaption").attr("disabled", "disabled");
+                              $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
+                              $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
+                              $("form").find("#accrual_dropdown").attr("disabled", "disabled");
+                            });
 
-        $("#Negative_no").click(function () {
-          $("form").find(".negativeCaption").attr("disabled", "disabled");
-          $("form").find(".negativeCaption").prop("selectedIndex", 0);
-        });
+                            $(".assignSchedule1").click(function () {
+                              $("form")[0].reset();
+                              $(".grid").hide();
+                              $("#pendingForm").show();
+                              $(".edit-img").show();
 
-        $("#accrual_yes").click(function () {
-          $("form").find("#accrual_dropdown").removeAttr("disabled");
-        });
-        $("#accrual_no").click(function () {
-          $("form").find("#accrual_dropdown").attr("disabled", "disabled");
-          $("form").find("#accrual_dropdown").prop("selectedIndex", 0);
-        });
+                              $("form").find("input[type='text']").prop("disabled", "disabled");
+                              $("form").find("select").prop("disabled", "disabled");
+                            });
 
-        $("#Approval_yes").click(function () {
-          $("form").find("#ApprovalTop_yes").removeAttr("disabled");
-          $("form").find("#ApprovalTop_no").removeAttr("disabled");
-        });
-        $("#Approval_no").click(function () {
-          $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
-          $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
-        });
-      }); /*
-			$(".formView").click(function()
-			{
-				$(".grid").hide();
-				$("#pendingForm").show();
-				$("form").find("input").attr("disabled","disabled");
-				$("form").find("select").attr("disabled","disabled");
-			});*/
-      $(".disabledForm").click(function () {
-        $(".grid").show();
-        $("#pendingForm").hide();
-      });
+                            $(".enabledForm").click(function () {
+                              $("form").find("input").removeAttr("disabled");
+                              $("form").find("select").removeAttr("disabled");
+                              $("form").find(".carryForward").attr("disabled", "disabled");
+                              $("form").find(".negativeCaption").attr("disabled", "disabled");
+                              $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
+                              $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
+                              $("form").find("#accrual_dropdown").attr("disabled", "disabled");
+                            });
 
-      $(".radio").click(function () {
-        if ($("#approved").is(":checked")) {
-          $("#forwardemployee").attr("disabled", "disabled");
-          $("#remark").attr("disabled", "disabled");
-        }
-        if ($("#declined").is(":checked")) {
-          $("#forwardemployee").attr("disabled", "disabled");
-          $("#remark").removeAttr("disabled");
-        }
-        if ($("#forwarded").is(":checked")) {
-          $("#forwardemployee").removeAttr("disabled");
-          $("#remark").attr("disabled", "disabled");
-        }
-      });
-    </script>
-    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-    <script
-      src="js/multiDropdown.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    <!-- End custom js for this page -->
-  </body>
-</html>
+                            $("#Carryforword_yes").click(function () {
+                              $("form").find(".carryForward").removeAttr("disabled");
+                            });
+
+                            $("#Carryforword_no").click(function () {
+                              $("form").find(".carryForward").attr("disabled", "disabled");
+                            });
+
+                            $(".grid").show();
+                            $("#pendingForm").hide();
+
+                            $("#Negative_yes").click(function () {
+                              $("form").find(".negativeCaption").removeAttr("disabled");
+                            });
+
+                            $("#Negative_no").click(function () {
+                              $("form").find(".negativeCaption").attr("disabled", "disabled");
+                              $("form").find(".negativeCaption").prop("selectedIndex", 0);
+                            });
+
+                            $("#accrual_yes").click(function () {
+                              $("form").find("#accrual_dropdown").removeAttr("disabled");
+                            });
+                            $("#accrual_no").click(function () {
+                              $("form").find("#accrual_dropdown").attr("disabled", "disabled");
+                              $("form").find("#accrual_dropdown").prop("selectedIndex", 0);
+                            });
+
+                            $("#Approval_yes").click(function () {
+                              $("form").find("#ApprovalTop_yes").removeAttr("disabled");
+                              $("form").find("#ApprovalTop_no").removeAttr("disabled");
+                            });
+                            $("#Approval_no").click(function () {
+                              $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
+                              $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
+                            });
+                          }); 
+                          $(".disabledForm").click(function () {
+                            $(".grid").show();
+                            $("#pendingForm").hide();
+                          });
+
+                          $(".radio").click(function () {
+                            if ($("#approved").is(":checked")) {
+                              $("#forwardemployee").attr("disabled", "disabled");
+                              $("#remark").attr("disabled", "disabled");
+                            }
+                            if ($("#declined").is(":checked")) {
+                              $("#forwardemployee").attr("disabled", "disabled");
+                              $("#remark").removeAttr("disabled");
+                            }
+                            if ($("#forwarded").is(":checked")) {
+                              $("#forwardemployee").removeAttr("disabled");
+                              $("#remark").attr("disabled", "disabled");
+                            }
+                          });
+                        </script>
+                        <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+                        <script
+                          src="js/multiDropdown.js"
+                          type="text/javascript"
+                          charset="utf-8"
+                        ></script>
+                        <!-- End custom js for this page -->
+
+                        <!-- Excel to HTML Table Conversion and Styling -->
+
+                    <script>
+                      // Load Excel when page is ready
+                      window.addEventListener("DOMContentLoaded", function () {
+                        const excelUrl = "../../assets/excel/Attendance.xlsx";
+                        loadExcelToTable(excelUrl);
+
+                        // Export to Excel button
+                        const exportBtn = document.getElementById("btnExportExcel");
+                        if (exportBtn) {
+                          exportBtn.addEventListener("click", function () {
+                            // same Excel file download
+                            window.location.href = excelUrl;
+                          });
+                        }
+
+                        // Print (open PDF) button
+                        const printBtn = document.getElementById("btnPrintPdf");
+                      if (printBtn) {
+                        printBtn.addEventListener("click", function () {
+                          window.open("Attendance.pdf", "_blank");
+                        });
+                      }
+                      });
+                      function loadExcelToTable(url) {
+                        fetch(url)
+                          .then(function (response) {
+                            if (!response.ok) {
+                              throw new Error("Excel not loaded: " + response.statusText);
+                            }
+                            return response.arrayBuffer();
+                          })
+                          .then(function (data) {
+                            const workbook = XLSX.read(data, { type: "array" });
+
+                            const sheetName = workbook.SheetNames[0];
+                            const worksheet = workbook.Sheets[sheetName];
+
+                            let rows = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+                            // remove first 4 extra rows
+                            rows = rows.slice(4);
+
+                            const newSheet = XLSX.utils.aoa_to_sheet(rows);
+                            const html = XLSX.utils.sheet_to_html(newSheet);
+
+                            const wrapper = document.getElementById("excelTableWrapper");
+                            wrapper.innerHTML = html;
+
+                            const table = wrapper.querySelector("table");
+                            if (table) {
+                              table.classList.add("table", "table-bordered");
+                              applyAttendanceColors(table);
+                            }
+                          })
+                          .catch(function (err) {
+                            console.error(err);
+                            document.getElementById("excelTableWrapper").innerText =
+                              "Error during Excel file load.";
+                          });
+                      }
+
+                      function applyAttendanceColors(table) {
+                        const COLORS = {
+                          green: "#A9D08E",  // P
+                          blue: "#BDD7EE",   // WO
+                          yellow: "#FFE699", // L, WF, HD, Ex
+                          red: "#FF6666"     // C
+                        };
+
+                        // rows where Payable days should be red even if value is 30
+                        const SPECIAL_RED_PAYABLES = new Set([
+                          "Aditi Kulkarni|30",
+                          "Manasi Gokhale|30",
+                        ]);
+
+                        for (let r = 1; r < table.rows.length; r++) {
+                          const row = table.rows[r];
+
+                          // color attendance cells
+                          for (let c = 4; c < row.cells.length; c++) {
+                            const cell = row.cells[c];
+                            const val = cell.textContent.trim().toUpperCase();
+
+                            if (!val) continue;
+
+                            if (val === "P") {
+                              cell.style.backgroundColor = COLORS.green;
+                            } else if (val === "WO") {
+                              cell.style.backgroundColor = COLORS.blue;
+                            } else if (
+                              val === "L" ||
+                              val === "WF" ||
+                              val === "HD" ||
+                              val === "EX"
+                            ) {
+                              cell.style.backgroundColor = COLORS.yellow;
+                            } else if (val === "C") {
+                              cell.style.backgroundColor = COLORS.red;
+                            }
+                          }
+
+                          // color Payable days column
+                          const lastCellIndex = row.cells.length - 1;
+                          if (lastCellIndex >= 0) {
+                            const payableCell = row.cells[lastCellIndex];
+                            const payableText = payableCell.textContent.trim();
+                            const payableNum = parseInt(payableText, 10);
+
+                            const employeeName =
+                              row.cells[1] && row.cells[1].textContent
+                                ? row.cells[1].textContent.trim()
+                                : "";
+
+                            const key = employeeName + "|" + payableText;
+
+                            if (
+                              (!isNaN(payableNum) && payableNum < 30) ||
+                              SPECIAL_RED_PAYABLES.has(key)
+                            ) {
+                              payableCell.style.color = "#FF0000";
+                              payableCell.style.fontWeight = "bold";
+                            }
+                          }
+                        }
+                      }
+                    </script>
+                  </body>
+                </html>
