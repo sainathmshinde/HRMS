@@ -29808,180 +29808,6 @@ body.holiday-list-page .card-body {
     padding-top: -30px !important;
 }
 
-<<<<<<< Updated upstream
-.bg-gradient-primary {
-  background: linear-gradient(to right, #da8cff, #9a55ff) !important;
-}
-
-.bg-gradient-secondary {
-  background: linear-gradient(to right, #e7ebf0, #868e96) !important;
-}
-
-.bg-gradient-sb-blue {
-  background: linear-gradient(to right, #cffafe, #cffafe) !important;
-}
-.bg-gradient-sb-voilet {
-  background: linear-gradient(to right, #D6B7F8, #D6B7F8) !important;
-}
-.bg-gradient-sb-pink {
-  background: linear-gradient(to right, #FFB6E0, #FFB6E0) !important;
-}
-.bg-gradient-sb-yellow {
-  background: linear-gradient(to right, #FFEDD5, #FFEDD5) !important;
-}
- 
-
-.bg-gradient-success,
-
-.datepicker-custom
-  .datepicker.datepicker-inline
-  .datepicker-days
-  .table-condensed
-  tbody
-  tr
-  td.day.today:before {
-  background: linear-gradient(to right, #84d9d2, #07cdae) !important;
-}
-
-.bg-gradient-info {
-  background: linear-gradient(to right, #90caf9, #047edf 99%) !important;
-}
-/* Payroll Dashboard 1st card text */
-.custom-text h4 {
-  color: #0891B2;   
-}
-.custom-text h5 {
-  color: #0891B2;   
-}
-.custom-text h6 {
-  color: #0891B2;   
-}
-.custom-text p {
-  color: #0891B2;  
-}
-/* Payroll Dashboard 1st card text */
-.custom-text1 h4 {
-  color: #9333EA;   
-}
-.custom-text1 h5 {
-  color: #9333EA;   
-}
-.custom-text1 h6 {
-  color: #9333EA;   
-}
-.custom-text1 p {
-  color: #9333EA;  
-}
-
-
-.custom-text2 h4 {
-  color: #DB2777;   
-}
-.custom-text2 h5 {
-  color: #DB2777;   
-}
-.custom-text2 h6 {
-  color: #DB2777;   
-}
-.custom-text2 p {
-  color: #DB2777;  
-}
-
-.custom-text3 h4 {
-  color: #F97316;   
-}
-.custom-text3 h5 {
-  color: #F97316;   
-}
-.custom-text3 h6 {
-  color: #F97316;   
-}
-.custom-text3 p {
-  color: #F97316;  
-}
-
-
-.custom-text:hover {
-  background: #0891B2 !important; /* new hover background */
-  color: #ffffff !important; /* text color on hover */
-}
-.custom-text1:hover {
-  background: #9333EA !important; /* new hover background */
-  color: #EAD6FF !important; /* text color on hover */
-}
-
-.custom-text2:hover {
-  background: #DB2777!important; /* new hover background */
-  color: #EAD6FF !important; /* text color on hover */
-}
-
-.custom-text3:hover {
-  background: #F97316!important; /* new hover background */
-  color: #EAD6FF !important; /* text color on hover */
-}
-
-.custom-text:hover h1,
-.custom-text:hover h2,
-.custom-text:hover h3,
-.custom-text:hover h4,
-.custom-text:hover h5,
-.custom-text:hover h6,
-.custom-text:hover p {
-  color: #ffffff !important;
-}
-.custom-text1:hover h1,
-.custom-text1:hover h2,
-.custom-text1:hover h3,
-.custom-text1:hover h4,
-.custom-text1:hover h5,
-.custom-text1:hover h6,
-.custom-text1:hover p {
-  color: #EAD6FF !important;
-}
-.custom-text2:hover h1,
-.custom-text2:hover h2,
-.custom-text2:hover h3,
-.custom-text2:hover h4,
-.custom-text2:hover h5,
-.custom-text2:hover h6,
-.custom-text2:hover p {
-  color: #FCE7F3 !important;
-}
-.custom-text3:hover h1,
-.custom-text3:hover h2,
-.custom-text3:hover h3,
-.custom-text3:hover h4,
-.custom-text3:hover h5,
-.custom-text3:hover h6,
-.custom-text3:hover p {
-  color: #FFEDD5 !important;
-}
-
-
-.bg-gradient-warning,
-.datepicker-custom
-  .datepicker.datepicker-inline
-  .datepicker-days
-  .table-condensed
-  tbody
-  tr
-  td.day.active:before {
-  background: linear-gradient(to right, #f6e384, #ffd500) !important;
-}
-
-.bg-gradient-danger {
-  background: linear-gradient(to right, #ffbf96, #fe7096) !important;
-}
-
-.bg-gradient-light {
-  background: linear-gradient(to bottom, #f4f4f4, #e4e4e9) !important;
-}
-
-.bg-gradient-dark {
-  background: linear-gradient(89deg, #5e7188, #3e4b5b) !important;
-}
-
-=======
 /*Salary Template Page Fix*/
 
 body.salary-template-page .content-wrapper .page-header {
@@ -30003,4 +29829,102 @@ body.salary-template-page .formBlock .form-edit {
   margin: 0 !important;
   padding: 0 !important;
 }
->>>>>>> Stashed changes
+
+
+/* Attendance Register*/
+
+.excel-container {
+  overflow-x: auto;
+}
+
+.excel-container table {
+  border-collapse: collapse;
+  font-size: 12px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.excel-container table th,
+.excel-container table td {
+  border: 1px solid #6a008a;   
+  padding: 4px 6px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+.excel-container table thead tr th {
+  background-color: #e91e63;    
+  color: #ffffff;
+  font-weight: 300 !important;
+}
+
+
+.excel-container table tbody tr td:first-child {
+  background-color: #f2a654;    /* orange dark */
+  color: #000000 !important;    /* black font */
+  font-weight: 300 !important;
+}
+
+
+.excel-container table tbody tr td:nth-child(2) {
+  background-color: #f6e84e;     /* yellow dark */
+  color: #000000 !important;
+  font-weight: normal !important;
+  text-align: left;
+}
+
+
+.excel-container table tbody tr td:nth-child(3),
+.excel-container table tbody tr td:nth-child(4) {
+  background-color: #58d8a3;   
+  color: #000000 !important;
+  font-weight: normal !important;
+}
+
+.excel-container table tbody tr:nth-child(odd) td {
+  background-color: #dbe8ff;   
+}
+
+.excel-container table tbody tr:nth-child(even) td {
+  background-color: #f3e6ff;    
+}
+
+.d-flex.justify-content-end.mb-0 {
+    margin-bottom: -20px !important;
+}
+
+.attendance-filters {
+  margin-top: 60px !important;
+}
+
+/* ========= Global form inputs & dropdowns (all pages) ========= */
+
+.form-control,
+.form-select {
+  height: 36px;              
+  padding: 4px 10px;          
+  border: 1px solid #ced4da;  
+  border-radius: 4px;        
+  font-size: 14px;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #8a42ff;  
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(138, 66, 255, 0.25);
+}
+
+/* ===== sidebar nav item spacing override (gap between items) ===== */
+
+.sidebar .nav > .nav-item:not(.nav-category):not(.nav-profile) {
+  margin-bottom: 2px;        
+  border-radius: 6px;        
+}
+
+.sidebar .nav > .nav-item:not(.nav-category):not(.nav-profile) > .nav-link {
+  border-radius: 6px;
+}
