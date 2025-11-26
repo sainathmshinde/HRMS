@@ -1368,6 +1368,893 @@ if ($("#visit-sale-chart6").length) {
 
     });
   }
+
+   if ($("#visit-sale-chart11").length) { 
+    const ctx = document.getElementById('visit-sale-chart11');
+
+    var graphGradient1 = document.getElementById('visit-sale-chart11').getContext("2d");
+    var graphGradient2 = document.getElementById('visit-sale-chart11').getContext("2d");
+    var graphGradient3 = document.getElementById('visit-sale-chart11').getContext("2d");
+
+    var gradientStrokeViolet = graphGradient1.createLinearGradient(0, 0, 0, 181);
+    gradientStrokeViolet.addColorStop(0, 'rgba(218, 140, 255, 1)');
+    gradientStrokeViolet.addColorStop(1, 'rgba(154, 85, 255, 1)');
+    var gradientLegendViolet = 'linear-gradient(to right, rgba(218, 140, 255, 1), rgba(154, 85, 255, 1))';
+
+  
+
+    var gradientStrokeBlue = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeBlue.addColorStop(0, 'rgba(108, 218, 230, 1)');
+    gradientStrokeBlue.addColorStop(1, 'rgba(7, 142, 157, 1)');
+    var gradientLegendBlue = 'linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))';
+
+     var gradientStrokeRed = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeRed.addColorStop(0, 'rgba(243, 116, 116, 1)');
+    gradientStrokeRed.addColorStop(1, 'rgba(255, 4, 0, 1)');
+    var gradientLegendred = 'linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))';
+
+      var gradientStrokeGreen = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeGreen.addColorStop(0, 'rgba(97, 226, 120, 1)');
+    gradientStrokeGreen.addColorStop(1, 'rgba(35, 138, 26, 1)');
+    var gradientLegendGreen = 'linear-gradient(to right, rgba(97, 226, 120, 1), rgba(35, 138, 26, 1))';
+
+    const bgColor1 = ["rgba(218, 140, 255, 1)"];
+    const bgColor2 = ["rgba(54, 215, 232, 1)"];
+    const bgColor3 = ["rgba(227, 47, 47, 1)"];
+    const bgColor4 = ["rgba(47, 227, 89, 1)"];
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Sep-15','Oct-15', 'Nov-15', 'Dec-15', 'Jan-15', 'Feb-15'],
+        datasets: [{
+          label: "Present Trends",
+          borderColor: gradientStrokeRed,
+          backgroundColor: gradientStrokeRed,
+          fillColor: bgColor1,
+          hoverBackgroundColor: gradientStrokeRed,
+          pointRadius: 0,
+          fill: false,
+          borderWidth: 1,
+          fill: 'origin',
+          data: [1800, 1909, 1741, 1950, 1800, 1870],
+          barPercentage: 0.5,
+          categoryPercentage: 0.5,
+        },
+        
+       
+        
+         ]   
+        },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        elements: {
+          line: {
+            tension: 0.4,
+          },
+        },
+        scales: {
+          y: {
+            display: true,
+            grid: {
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+            },
+          },
+          x: {
+            display: true,
+            grid: {
+              display: false,
+            },
+          }
+        },
+        plugins: {
+          legend: {
+            display: false,
+          }
+        }
+      },
+     plugins: [{
+  afterInit: function (chart, args, options) {
+
+    const chartId = chart.canvas.id;
+    const legendId = `${chartId}-legend`;
+    const legendContainer = document.getElementById(legendId);
+
+    if (!legendContainer) return;
+
+    legendContainer.innerHTML = ""; // clear previous legends
+
+    const ul = document.createElement('ul');
+
+    chart.data.datasets.forEach((ds) => {
+      const color = ds.backgroundColor;
+      ul.innerHTML += `
+        <li>
+          <span style="background-color:${color}"></span>
+          ${ds.label}
+        </li>
+      `;
+    });
+
+    legendContainer.appendChild(ul);
+  }
+}]
+
+    });
+  }
+
+  if ($("#visit-sale-chart12").length) { 
+    const ctx = document.getElementById('visit-sale-chart12');
+
+    var graphGradient = ctx.getContext("2d");
+
+    // Gradients
+    var gradientStrokeViolet = graphGradient.createLinearGradient(0, 0, 0, 181);
+    gradientStrokeViolet.addColorStop(0, 'rgba(218, 140, 255, 1)');
+    gradientStrokeViolet.addColorStop(1, 'rgba(154, 85, 255, 1)');
+
+    var gradientStrokeBlue = graphGradient.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeBlue.addColorStop(0, 'rgba(108, 218, 230, 1)');
+    gradientStrokeBlue.addColorStop(1, 'rgba(7, 142, 157, 1)');
+
+    var gradientStrokeRed = graphGradient.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeRed.addColorStop(0, 'rgba(243, 116, 116, 1)');
+    gradientStrokeRed.addColorStop(1, 'rgba(255, 4, 0, 1)');
+
+    var gradientStrokeGreen = graphGradient.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeGreen.addColorStop(0, 'rgba(97, 226, 120, 1)');
+    gradientStrokeGreen.addColorStop(1, 'rgba(35, 138, 26, 1)');
+
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Present','Leave','Absent','Holiday','On Duty'],
+            datasets: [{
+                label: "",
+                backgroundColor: [
+                    gradientStrokeRed,
+                    gradientStrokeBlue,
+                    gradientStrokeViolet,
+                    gradientStrokeGreen,
+                    'rgba(255, 193, 7, 1)',
+                    'rgba(0, 123, 255, 1)'
+                ],
+                borderWidth: 1,
+                data: ['1354', '388', '30', '67', '92'],
+            }]
+        },
+
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: { display: false }
+            }
+        },
+
+        plugins: [{
+            afterInit: function (chart, args, options) {
+
+                const chartId = chart.canvas.id;
+                const legendId = `${chartId}-legend`;
+                const legendContainer = document.getElementById(legendId);
+                if (!legendContainer) return;
+
+                legendContainer.innerHTML = "";
+                const ul = document.createElement('ul');
+
+                chart.data.labels.forEach((label, i) => {
+                    const color = chart.data.datasets[0].backgroundColor[i];
+                    ul.innerHTML += `
+                        <li>
+                            <span style="background:${color};"></span>
+                            ${label}
+                        </li>
+                    `;
+                });
+
+                legendContainer.appendChild(ul);
+            }
+        }]
+    });
+}
+
+
+   if ($("#visit-sale-chart13").length) { 
+    const ctx = document.getElementById('visit-sale-chart13');
+
+    var graphGradient1 = document.getElementById('visit-sale-chart13').getContext("2d");
+    var graphGradient2 = document.getElementById('visit-sale-chart13').getContext("2d");
+    var graphGradient3 = document.getElementById('visit-sale-chart13').getContext("2d");
+
+    var gradientStrokeViolet = graphGradient1.createLinearGradient(0, 0, 0, 181);
+    gradientStrokeViolet.addColorStop(0, 'rgba(218, 140, 255, 1)');
+    gradientStrokeViolet.addColorStop(1, 'rgba(154, 85, 255, 1)');
+    var gradientLegendViolet = 'linear-gradient(to right, rgba(218, 140, 255, 1), rgba(154, 85, 255, 1))';
+
+  
+
+    var gradientStrokeBlue = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeBlue.addColorStop(0, 'rgba(108, 218, 230, 1)');
+    gradientStrokeBlue.addColorStop(1, 'rgba(7, 142, 157, 1)');
+    var gradientLegendBlue = 'linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))';
+
+     var gradientStrokeRed = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeRed.addColorStop(0, 'rgba(243, 116, 116, 1)');
+    gradientStrokeRed.addColorStop(1, 'rgba(255, 4, 0, 1)');
+    var gradientLegendred = 'linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))';
+
+      var gradientStrokeGreen = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeGreen.addColorStop(0, 'rgba(97, 226, 120, 1)');
+    gradientStrokeGreen.addColorStop(1, 'rgba(35, 138, 26, 1)');
+    var gradientLegendGreen = 'linear-gradient(to right, rgba(97, 226, 120, 1), rgba(35, 138, 26, 1))';
+
+    const bgColor1 = ["rgba(218, 140, 255, 1)"];
+    const bgColor2 = ["rgba(54, 215, 232, 1)"];
+    const bgColor3 = ["rgba(227, 47, 47, 1)"];
+    const bgColor4 = ["rgba(47, 227, 89, 1)"];
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Sep-15','Oct-15', 'Nov-15', 'Dec-15', 'Jan-15', 'Feb-15'],
+        datasets: [{
+          label: "Village Halt",
+          borderColor: gradientStrokeRed,
+          backgroundColor: gradientStrokeRed,
+          fillColor: bgColor1,
+          hoverBackgroundColor: gradientStrokeRed,
+          pointRadius: 0,
+          fill: false,
+          borderWidth: 1,
+          fill: 'origin',
+          data: [500, 450, 300,700, 100, 300],
+          barPercentage: 0.5,
+          categoryPercentage: 0.5,
+        },
+        
+        {
+          label: "Field Halt",
+          borderColor: gradientStrokeBlue,
+          backgroundColor: gradientStrokeBlue,
+          fillColor: bgColor1,
+          hoverBackgroundColor: gradientStrokeBlue,
+          pointRadius: 0,
+          fill: false,
+          borderWidth: 1,
+          fill: 'origin',
+          data: [200, 300, 400,200, 300, 50],
+          barPercentage: 0.5,
+          categoryPercentage: 0.5,
+        },
+       
+        
+         ]   
+        },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        elements: {
+          line: {
+            tension: 0.4,
+          },
+        },
+        scales: {
+          y: {
+            display: true,
+            grid: {
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+            },
+          },
+          x: {
+            display: true,
+            grid: {
+              display: false,
+            },
+          }
+        },
+        plugins: {
+          legend: {
+            display: false,
+          }
+        }
+      },
+     plugins: [{
+  afterInit: function (chart, args, options) {
+
+    const chartId = chart.canvas.id;
+    const legendId = `${chartId}-legend`;
+    const legendContainer = document.getElementById(legendId);
+
+    if (!legendContainer) return;
+
+    legendContainer.innerHTML = ""; // clear previous legends
+
+    const ul = document.createElement('ul');
+
+    chart.data.datasets.forEach((ds) => {
+      const color = ds.backgroundColor;
+      ul.innerHTML += `
+        <li>
+          <span style="background-color:${color}"></span>
+          ${ds.label}
+        </li>
+      `;
+    });
+
+    legendContainer.appendChild(ul);
+  }
+}]
+
+    });
+  }
+
+  if ($("#visit-sale-chart14").length) { 
+    const ctx = document.getElementById('visit-sale-chart14');
+
+    var graphGradient1 = document.getElementById('visit-sale-chart14').getContext("2d");
+    var graphGradient2 = document.getElementById('visit-sale-chart14').getContext("2d");
+    var graphGradient3 = document.getElementById('visit-sale-chart14').getContext("2d");
+
+    var gradientStrokeViolet = graphGradient1.createLinearGradient(0, 0, 0, 181);
+    gradientStrokeViolet.addColorStop(0, 'rgba(218, 140, 255, 1)');
+    gradientStrokeViolet.addColorStop(1, 'rgba(154, 85, 255, 1)');
+    var gradientLegendViolet = 'linear-gradient(to right, rgba(218, 140, 255, 1), rgba(154, 85, 255, 1))';
+
+  
+
+    var gradientStrokeBlue = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeBlue.addColorStop(0, 'rgba(108, 218, 230, 1)');
+    gradientStrokeBlue.addColorStop(1, 'rgba(7, 142, 157, 1)');
+    var gradientLegendBlue = 'linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))';
+
+     var gradientStrokeRed = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeRed.addColorStop(0, 'rgba(243, 116, 116, 1)');
+    gradientStrokeRed.addColorStop(1, 'rgba(255, 4, 0, 1)');
+    var gradientLegendred = 'linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))';
+
+      var gradientStrokeGreen = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeGreen.addColorStop(0, 'rgba(97, 226, 120, 1)');
+    gradientStrokeGreen.addColorStop(1, 'rgba(35, 138, 26, 1)');
+    var gradientLegendGreen = 'linear-gradient(to right, rgba(97, 226, 120, 1), rgba(35, 138, 26, 1))';
+
+    const bgColor1 = ["rgba(218, 140, 255, 1)"];
+    const bgColor2 = ["rgba(54, 215, 232, 1)"];
+    const bgColor3 = ["rgba(227, 47, 47, 1)"];
+    const bgColor4 = ["rgba(47, 227, 89, 1)"];
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Sep-15','Oct-15', 'Nov-15', 'Dec-15', 'Jan-15', 'Feb-15'],
+        datasets: [{
+          label: "Monthly Total Expense",
+          borderColor: gradientStrokeViolet,
+          backgroundColor: gradientStrokeViolet,
+          fillColor: bgColor1,
+          hoverBackgroundColor: gradientStrokeViolet,
+          pointRadius: 0,
+          fill: false,
+          borderWidth: 1,
+          fill: 'origin',
+          data: [1000, 1140, 1160, 1240, 720, 460],
+          barPercentage: 0.5,
+          categoryPercentage: 0.5,
+        },
+        
+     
+        
+         ]   
+        },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        elements: {
+          line: {
+            tension: 0.4,
+          },
+        },
+        scales: {
+          y: {
+            display: true,
+            grid: {
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+            },
+          },
+          x: {
+            display: true,
+            grid: {
+              display: false,
+            },
+          }
+        },
+        plugins: {
+          legend: {
+            display: false,
+          }
+        }
+      },
+     plugins: [{
+  afterInit: function (chart, args, options) {
+
+    const chartId = chart.canvas.id;
+    const legendId = `${chartId}-legend`;
+    const legendContainer = document.getElementById(legendId);
+
+    if (!legendContainer) return;
+
+    legendContainer.innerHTML = ""; // clear previous legends
+
+    const ul = document.createElement('ul');
+
+    chart.data.datasets.forEach((ds) => {
+      const color = ds.backgroundColor;
+      ul.innerHTML += `
+        <li>
+          <span style="background-color:${color}"></span>
+          ${ds.label}
+        </li>
+      `;
+    });
+
+    legendContainer.appendChild(ul);
+  }
+}]
+
+    });
+  }
+
+  if ($("#visit-sale-chart15").length) { 
+    const ctx = document.getElementById('visit-sale-chart15');
+
+    var graphGradient1 = document.getElementById('visit-sale-chart15').getContext("2d");
+    var graphGradient2 = document.getElementById('visit-sale-chart15').getContext("2d");
+    var graphGradient3 = document.getElementById('visit-sale-chart15').getContext("2d");
+
+    var gradientStrokeViolet = graphGradient1.createLinearGradient(0, 0, 0, 181);
+    gradientStrokeViolet.addColorStop(0, 'rgba(218, 140, 255, 1)');
+    gradientStrokeViolet.addColorStop(1, 'rgba(154, 85, 255, 1)');
+    var gradientLegendViolet = 'linear-gradient(to right, rgba(218, 140, 255, 1), rgba(154, 85, 255, 1))';
+
+  
+
+    var gradientStrokeBlue = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeBlue.addColorStop(0, 'rgba(108, 218, 230, 1)');
+    gradientStrokeBlue.addColorStop(1, 'rgba(7, 142, 157, 1)');
+    var gradientLegendBlue = 'linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))';
+
+     var gradientStrokeRed = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeRed.addColorStop(0, 'rgba(243, 116, 116, 1)');
+    gradientStrokeRed.addColorStop(1, 'rgba(255, 4, 0, 1)');
+    var gradientLegendred = 'linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))';
+
+      var gradientStrokeGreen = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeGreen.addColorStop(0, 'rgba(97, 226, 120, 1)');
+    gradientStrokeGreen.addColorStop(1, 'rgba(35, 138, 26, 1)');
+    var gradientLegendGreen = 'linear-gradient(to right, rgba(97, 226, 120, 1), rgba(35, 138, 26, 1))';
+
+    const bgColor1 = ["rgba(218, 140, 255, 1)"];
+    const bgColor2 = ["rgba(54, 215, 232, 1)"];
+    const bgColor3 = ["rgba(227, 47, 47, 1)"];
+    const bgColor4 = ["rgba(47, 227, 89, 1)"];
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Manufacturing','Health Services', 'Infrastructure', 'Insurance', 'Tele-communication', 'Business Intelligence','Oracle Services', 'Consulting'],
+        datasets: [{
+          label: "Cost In Lakhs",
+          borderColor: gradientStrokeViolet,
+          backgroundColor: gradientStrokeViolet,
+          fillColor: bgColor1,
+          hoverBackgroundColor: gradientStrokeViolet,
+          pointRadius: 0,
+          fill: false,
+          borderWidth: 1,
+          fill: 'origin',
+          data: [15, 4, 9, 2, 9, 10,11,10],
+          barPercentage: 0.5,
+          categoryPercentage: 0.5,
+        },
+        
+     
+        
+         ]   
+        },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        elements: {
+          line: {
+            tension: 0.4,
+          },
+        },
+        scales: {
+          y: {
+            display: true,
+            grid: {
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+            },
+          },
+          x: {
+            display: true,
+            grid: {
+              display: false,
+            },
+          }
+        },
+        plugins: {
+          legend: {
+            display: false,
+          }
+        }
+      },
+     plugins: [{
+  afterInit: function (chart, args, options) {
+
+    const chartId = chart.canvas.id;
+    const legendId = `${chartId}-legend`;
+    const legendContainer = document.getElementById(legendId);
+
+    if (!legendContainer) return;
+
+    legendContainer.innerHTML = ""; // clear previous legends
+
+    const ul = document.createElement('ul');
+
+    chart.data.datasets.forEach((ds) => {
+      const color = ds.backgroundColor;
+      ul.innerHTML += `
+        <li>
+          <span style="background-color:${color}"></span>
+          ${ds.label}
+        </li>
+      `;
+    });
+
+    legendContainer.appendChild(ul);
+  }
+}]
+
+    });
+  }
+
+    if ($("#visit-sale-chart16").length) { 
+    const ctx = document.getElementById('visit-sale-chart16');
+
+    var graphGradient1 = document.getElementById('visit-sale-chart16').getContext("2d");
+    var graphGradient2 = document.getElementById('visit-sale-chart16').getContext("2d");
+    var graphGradient3 = document.getElementById('visit-sale-chart16').getContext("2d");
+
+    var gradientStrokeViolet = graphGradient1.createLinearGradient(0, 0, 0, 181);
+    gradientStrokeViolet.addColorStop(0, 'rgba(218, 140, 255, 1)');
+    gradientStrokeViolet.addColorStop(1, 'rgba(154, 85, 255, 1)');
+    var gradientLegendViolet = 'linear-gradient(to right, rgba(218, 140, 255, 1), rgba(154, 85, 255, 1))';
+
+  
+
+    var gradientStrokeBlue = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeBlue.addColorStop(0, 'rgba(108, 218, 230, 1)');
+    gradientStrokeBlue.addColorStop(1, 'rgba(7, 142, 157, 1)');
+    var gradientLegendBlue = 'linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))';
+
+     var gradientStrokeRed = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeRed.addColorStop(0, 'rgba(243, 116, 116, 1)');
+    gradientStrokeRed.addColorStop(1, 'rgba(255, 4, 0, 1)');
+    var gradientLegendred = 'linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))';
+
+      var gradientStrokeGreen = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeGreen.addColorStop(0, 'rgba(97, 226, 120, 1)');
+    gradientStrokeGreen.addColorStop(1, 'rgba(35, 138, 26, 1)');
+    var gradientLegendGreen = 'linear-gradient(to right, rgba(97, 226, 120, 1), rgba(35, 138, 26, 1))';
+
+    const bgColor1 = ["rgba(218, 140, 255, 1)"];
+    const bgColor2 = ["rgba(54, 215, 232, 1)"];
+    const bgColor3 = ["rgba(227, 47, 47, 1)"];
+    const bgColor4 = ["rgba(47, 227, 89, 1)"];
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Manufacturing','Health Services', 'Infrastructure', 'Insurance', 'Tele-communication', 'Business Intelligence','Oracle Services', 'Consulting'],
+        datasets: [{
+          label: "Open Position",
+          borderColor: gradientStrokeGreen,
+          backgroundColor: gradientStrokeGreen,
+          fillColor: bgColor1,
+          hoverBackgroundColor: gradientStrokeGreen,
+          pointRadius: 0,
+          fill: false,
+          borderWidth: 1,
+          fill: 'origin',
+          data: [7, 3, 3, 9, 9, ,2,14,4],
+          barPercentage: 0.5,
+          categoryPercentage: 0.5,
+        },
+        
+        {
+          label: "Closed Position",
+          borderColor: gradientStrokeBlue,
+          backgroundColor: gradientStrokeBlue,
+          fillColor: bgColor1,
+          hoverBackgroundColor: gradientStrokeBlue,
+          pointRadius: 0,
+          fill: false,
+          borderWidth: 1,
+          fill: 'origin',
+          data: [15, 4, 9, 2, 9, 10,11,10],
+          barPercentage: 0.5,
+          categoryPercentage: 0.5,
+        },
+     
+        
+         ]   
+        },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        elements: {
+          line: {
+            tension: 0.4,
+          },
+        },
+        scales: {
+          y: {
+            display: true,
+            grid: {
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+            },
+          },
+          x: {
+            display: true,
+            grid: {
+              display: false,
+            },
+          }
+        },
+        plugins: {
+          legend: {
+            display: false,
+          }
+        }
+      },
+     plugins: [{
+  afterInit: function (chart, args, options) {
+
+    const chartId = chart.canvas.id;
+    const legendId = `${chartId}-legend`;
+    const legendContainer = document.getElementById(legendId);
+
+    if (!legendContainer) return;
+
+    legendContainer.innerHTML = ""; // clear previous legends
+
+    const ul = document.createElement('ul');
+
+    chart.data.datasets.forEach((ds) => {
+      const color = ds.backgroundColor;
+      ul.innerHTML += `
+        <li>
+          <span style="background-color:${color}"></span>
+          ${ds.label}
+        </li>
+      `;
+    });
+
+    legendContainer.appendChild(ul);
+  }
+}]
+
+    });
+  }
+
+  if ($("#visit-sale-chart17").length) { 
+    const ctx = document.getElementById('visit-sale-chart17');
+
+    var graphGradient1 = document.getElementById('visit-sale-chart17').getContext("2d");
+    var graphGradient2 = document.getElementById('visit-sale-chart17').getContext("2d");
+    var graphGradient3 = document.getElementById('visit-sale-chart17').getContext("2d");
+
+    var gradientStrokeViolet = graphGradient1.createLinearGradient(0, 0, 0, 181);
+    gradientStrokeViolet.addColorStop(0, 'rgba(218, 140, 255, 1)');
+    gradientStrokeViolet.addColorStop(1, 'rgba(154, 85, 255, 1)');
+    var gradientLegendViolet = 'linear-gradient(to right, rgba(218, 140, 255, 1), rgba(154, 85, 255, 1))';
+
+  
+
+    var gradientStrokeBlue = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeBlue.addColorStop(0, 'rgba(108, 218, 230, 1)');
+    gradientStrokeBlue.addColorStop(1, 'rgba(7, 142, 157, 1)');
+    var gradientLegendBlue = 'linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))';
+
+     var gradientStrokeRed = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeRed.addColorStop(0, 'rgba(243, 116, 116, 1)');
+    gradientStrokeRed.addColorStop(1, 'rgba(255, 4, 0, 1)');
+    var gradientLegendred = 'linear-gradient(to right, rgba(54, 215, 232, 1), rgba(177, 148, 250, 1))';
+
+      var gradientStrokeGreen = graphGradient2.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeGreen.addColorStop(0, 'rgba(97, 226, 120, 1)');
+    gradientStrokeGreen.addColorStop(1, 'rgba(35, 138, 26, 1)');
+    var gradientLegendGreen = 'linear-gradient(to right, rgba(97, 226, 120, 1), rgba(35, 138, 26, 1))';
+
+    const bgColor1 = ["rgba(218, 140, 255, 1)"];
+    const bgColor2 = ["rgba(54, 215, 232, 1)"];
+    const bgColor3 = ["rgba(227, 47, 47, 1)"];
+    const bgColor4 = ["rgba(47, 227, 89, 1)"];
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['01-Feb-2025','02-Feb-2025', '03-Feb-2025', '04-Feb-2025', '05-Feb-2025', '08-Feb-2025','09-Feb-2025', '10-Feb-2025'],
+        datasets: [
+  {
+    label: "Open Position",
+    borderColor: gradientStrokeGreen,
+    backgroundColor: gradientStrokeGreen,
+    hoverBackgroundColor: gradientStrokeGreen,
+    pointRadius: 0,
+    fill: false,
+    borderWidth: 1,
+    data: [7, 3, 3, 9, 9, 2, 14, 4],
+    barPercentage: 0.5,
+    categoryPercentage: 0.5,
+  },
+  ]   
+        },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        elements: {
+          line: {
+            tension: 0.4,
+          },
+        },
+        scales: {
+          y: {
+            display: true,
+            grid: {
+              display: true,
+              drawOnChartArea: true,
+              drawTicks: false,
+            },
+          },
+          x: {
+            display: true,
+            grid: {
+              display: false,
+            },
+          }
+        },
+        plugins: {
+          legend: {
+            display: false,
+          }
+        }
+      },
+     plugins: [{
+  afterInit: function (chart, args, options) {
+
+    const chartId = chart.canvas.id;
+    const legendId = `${chartId}-legend`;
+    const legendContainer = document.getElementById(legendId);
+
+    if (!legendContainer) return;
+
+    legendContainer.innerHTML = ""; // clear previous legends
+
+    const ul = document.createElement('ul');
+
+    chart.data.datasets.forEach((ds) => {
+      const color = ds.backgroundColor;
+      ul.innerHTML += `
+        <li>
+          <span style="background-color:${color}"></span>
+          ${ds.label}
+        </li>
+      `;
+    });
+
+    legendContainer.appendChild(ul);
+  }
+}]
+
+    });
+  }
+
+   if ($("#visit-sale-chart18").length) { 
+    const ctx = document.getElementById('visit-sale-chart18');
+
+    var graphGradient = ctx.getContext("2d");
+
+    // Gradients
+    var gradientStrokeViolet = graphGradient.createLinearGradient(0, 0, 0, 181);
+    gradientStrokeViolet.addColorStop(0, 'rgba(218, 140, 255, 1)');
+    gradientStrokeViolet.addColorStop(1, 'rgba(154, 85, 255, 1)');
+
+    var gradientStrokeBlue = graphGradient.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeBlue.addColorStop(0, 'rgba(108, 218, 230, 1)');
+    gradientStrokeBlue.addColorStop(1, 'rgba(7, 142, 157, 1)');
+
+    var gradientStrokeRed = graphGradient.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeRed.addColorStop(0, 'rgba(243, 116, 116, 1)');
+    gradientStrokeRed.addColorStop(1, 'rgba(243, 105, 102, 1)');
+
+    var gradientStrokeGreen = graphGradient.createLinearGradient(0, 0, 0, 360);
+    gradientStrokeGreen.addColorStop(0, 'rgba(97, 226, 120, 1)');
+    gradientStrokeGreen.addColorStop(1, 'rgba(35, 138, 26, 1)');
+
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['18-25','26-30','31-35','36-40','41-45'],
+            datasets: [{
+                label: "",
+                backgroundColor: [
+                    gradientStrokeRed,
+                    gradientStrokeBlue,
+                    gradientStrokeViolet,
+                    gradientStrokeGreen,
+                    'rgba(255, 193, 7, 1)',
+                    'rgba(0, 123, 255, 1)'
+                ],
+                borderWidth: 1,
+                data: ["300", '388', '30', '67', '92'],
+            }]
+        },
+       options: {
+       responsive: true,
+       maintainAspectRatio: true,
+
+        plugins: {
+        legend: { display: false },
+
+        tooltip: {
+            callbacks: {
+                label: function(context) {
+                    const value = Number(context.raw);
+                    const dataArray = context.dataset.data.map(Number);
+                    const total = dataArray.reduce((a, b) => a + b, 0);
+                    const percentage = ((value / total) * 100).toFixed(1);
+                    return `${value} (${percentage}%)`;
+                }
+            }
+        }
+    }
+}
+,
+
+        plugins: [{
+            afterInit: function (chart, args, options) {
+
+                const chartId = chart.canvas.id;
+                const legendId = `${chartId}-legend`;
+                const legendContainer = document.getElementById(legendId);
+                if (!legendContainer) return;
+
+                legendContainer.innerHTML = "";
+                const ul = document.createElement('ul');
+
+                chart.data.labels.forEach((label, i) => {
+                    const color = chart.data.datasets[0].backgroundColor[i];
+                    ul.innerHTML += `
+                        <li>
+                            <span style="background:${color};"></span>
+                            ${label}
+                        </li>
+                    `;
+                });
+
+                legendContainer.appendChild(ul);
+            }
+        }]
+    });
+}
+
   if ($("#inline-datepicker").length) {
     $('#inline-datepicker').datepicker({
       enableOnReadonly: true,
