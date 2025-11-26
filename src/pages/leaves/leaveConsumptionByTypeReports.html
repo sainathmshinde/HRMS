@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
-     <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
@@ -63,15 +63,16 @@
             ><img src="../../assets/images/logo-mini.svg" alt="logo"
           /></a> -->
           <a class="navbar-brand brand-logo" href=".././../index.html">
-             <img 
-            src="/src/assets/images/HUMANOVA (1).svg"
-             alt="logo" 
+            <img
+              src="/src/assets/images/HUMANOVA (1).svg"
+              alt="logo"
               style="
                 width: 200px;
                 height: auto;
                 margin-left: 5px;
                 display: block;
-              "/>
+              "
+            />
           </a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
@@ -84,15 +85,145 @@
           </button>
           <div class="search-field d-none d-md-block">
             <form class="d-flex align-items-center h-100" action="#">
-              <div class="input-group">
-                <div class="input-group-prepend bg-transparent">
-                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
+              <div
+                class="search-field d-none d-md-block position-relative"
+                style="max-width: 420px"
+              >
+                <form
+                  id="searchForm"
+                  class="d-flex align-items-center h-100"
+                  novalidate
+                >
+                  <div class="input-group w-100">
+                    <span
+                      class="input-group-text bg-transparent border-0"
+                      id="searchIcon"
+                      aria-hidden="true"
+                    >
+                      <i class="mdi mdi-magnify"></i>
+                    </span>
+
+                    <input
+                      type="text"
+                      id="searchInput"
+                      class="form-control bg-transparent border-0"
+                      placeholder="Search..."
+                      autocomplete="off"
+                      aria-label="Search"
+                      aria-haspopup="true"
+                      aria-controls="searchResultCard"
+                    />
+                  </div>
+                </form>
+
+                <!-- Result Card (hidden by default) -->
+
+                <div
+                  id="searchResultCard"
+                  class="card shadow position-absolute d-none"
+                  role="dialog"
+                  aria-modal="false"
+                  aria-labelledby="resultName"
+                  style="
+                    z-index: 2000;
+                    top: 48px;
+                    left: 30px;
+                    width: 300px;
+                    border-radius: 14px;
+                    background: #ffffff;
+                    border: 1px solid rgba(0, 0, 0, 0.06);
+                    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
+                    padding: 6px 0;
+                    transition: all 0.25s ease;
+                  "
+                >
+                  <div
+                    class="card-body d-flex gap-3 align-items-start"
+                    style="padding: 18px 20px"
+                  >
+                    <img
+                      src="/src/assets/images/HarshalYadav.jpeg"
+                      class="rounded-circle"
+                      width="105"
+                      height="105"
+                      style="
+                        border: 3px solid rgba(37, 99, 235, 0.12);
+                        transition: transform 0.25s ease;
+                      "
+                      onmouseover="this.style.transform='scale(1.06)'"
+                      onmouseout="this.style.transform='scale(1)'"
+                    />
+
+                    <div style="flex: 1">
+                      <h5
+                        id="resultName"
+                        class="mb-3"
+                        style="
+                          font-size: 18px;
+                          font-weight: 500;
+                          color: #0f172a;
+                          margin-bottom: 10px;
+                        "
+                      >
+                        Harshad Yadav
+                      </h5>
+
+                      <a
+                        href="/src/pages/employee/employmentInfo.html"
+                        class="d-block small"
+                        style="
+                          padding: 8px 8px;
+                          font-size: 14px;
+                          border-radius: 6px;
+                          transition: all 0.2s ease;
+                          text-decoration: none;
+                          color: #9333ea;
+                          font-weight: 700;
+                        "
+                        onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+                        onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                      >
+                        View Profile
+                      </a>
+
+                      <a
+                        href="/src/pages/employee/employeeSummary.html"
+                        class="d-block small"
+                        style="
+                          padding: 8px 8px;
+                          font-size: 14px;
+                          border-radius: 6px;
+                          transition: all 0.2s ease;
+                          text-decoration: none;
+                          color: #9333ea;
+                          font-weight: 700;
+                        "
+                        onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+                        onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                      >
+                        Summary
+                      </a>
+
+                      <a
+                        href="/src/pages/leaves/approvedLeave.html"
+                        class="d-block small"
+                        style="
+                          padding: 8px 8px;
+                          font-size: 14px;
+                          border-radius: 6px;
+                          transition: all 0.2s ease;
+                          text-decoration: none;
+                          color: #9333ea;
+                          font-weight: 700;
+                        "
+                        onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+                        onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                      >
+                        Approve Leave
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <input
-                  type="text"
-                  class="form-control bg-transparent border-0"
-                  placeholder="Search..."
-                />
               </div>
             </form>
           </div>
@@ -303,8 +434,8 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
-         <nav class="sidebar sidebar-offcanvas" id="sidebar">
-         <ul class="nav">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -385,7 +516,7 @@
                       Probation
                     </a>
                   </li>
-                  
+
                   <li class="nav-item">
                     <a
                       class="nav-link"
@@ -1582,168 +1713,216 @@
               </div>
             </li>
           </ul>
-            </nav>
+        </nav>
         <!-- partial -->
-            <div class="main-panel">
+        <div class="main-panel">
           <div class="content-wrapper">
-             <div class="page-header mt-2">
-               <h3 class="page-title fixed-title">
-                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-gears"></i></span>
+            <div class="page-header mt-2">
+              <h3 class="page-title fixed-title">
+                <span
+                  class="page-title-icon bg-gradient-primary text-white me-2"
+                  ><i class="fa-solid fa-gears"></i
+                ></span>
                 Leave Consumption By Type Reports
               </h3>
             </div>
-          <div class="col-12 grid-margin stretch-card">
-  <div class="card">
-    <div class="card-body">
-      <form class="forms-sample">
-        <div class="row">
-                  <div class="col-md-4">
-            <div class="form-group">
-              <label for="toDate">From Date</label>
-              <input type="text" class="form-control" id="toDate" placeholder="Aug-2025" required/>
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <form class="forms-sample">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="toDate">From Date</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="toDate"
+                            placeholder="Aug-2025"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="toDate">To Date</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="toDate"
+                            placeholder="Jan-2026"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 text-end" style="margin-top: 35px">
+                        <button class="btn btn-gradient-primary btn-sm ms-3">
+                          Go
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
-          </div>
-       
-         <div class="col-md-4">
-            <div class="form-group">
-              <label for="toDate">To Date</label>
-              <input type="text" class="form-control" id="toDate" placeholder="Jan-2026" required/>
+
+            <div class="mb-4" style="margin-top: -35px">
+              <div id="commanTable" class="table-responsive">
+                <table class="table table-bordered align-middle text-center">
+                  <tr>
+                    <td class="text-start">Count</td>
+                    <td class="text-start">3</td>
+
+                    <td class="text-start"></td>
+                    <td class="text-start"></td>
+                    <td class="text-center" style="width: 6%">
+                      <button class="btn btn-outline-secondary btn-sm">
+                        CSV
+                      </button>
+                    </td>
+
+                    <!-- PRINT -->
+                    <td class="text-center" style="width: 6%">
+                      <button class="btn btn-outline-secondary btn-sm">
+                        Print
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
-          </div>
-           <div class="col-md-4 text-end" style="margin-top: 35px;">
-             <button class="btn btn-gradient-primary btn-sm ms-3">Go</button>
-        </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
 
-<div class="mb-4" style="margin-top: -35px;">
-    <div id="commanTable" class="table-responsive">
-        <table class="table table-bordered align-middle text-center">
-            <tr>
-                <td class="text-start">Count</td>
-                <td class="text-start">3</td>
+            <div class="mb-4" style="margin-top: -50px">
+              <div class="row">
+                <div class="gridView">
+                  <div class="col-lg-12 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="table-responsive">
+                          <!-- Makes table scrollable if wide -->
+                          <table class="table align-middle">
+                            <tr>
+                              <th style="padding-right: 0px">
+                                Month
+                                <span class="downArrowHead">&#x25bc;</span>
+                              </th>
+                              <th>Casual</th>
+                              <th>Privilage</th>
+                              <th>Medical</th>
+                              <th>Maternity</th>
+                              <th>Paternity</th>
+                              <th>Action</th>
+                            </tr>
+                            <tr class="even">
+                              <td>Feb-2026</td>
+                              <td>758</td>
+                              <td>150</td>
+                              <td>468</td>
+                              <td>10</td>
+                              <td>18</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+                            <tr class="odd">
+                              <td>Jan-2026</td>
+                              <td>573</td>
+                              <td>236</td>
+                              <td>392</td>
+                              <td>9</td>
+                              <td>23</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+                            <tr class="even">
+                              <td>Dec-2025</td>
+                              <td>936</td>
+                              <td>450</td>
+                              <td>536</td>
+                              <td>20</td>
+                              <td>48</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+                            <tr class="odd">
+                              <td>Nov-2025</td>
+                              <td>1075</td>
+                              <td>82</td>
+                              <td>543</td>
+                              <td>23</td>
+                              <td>21</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+                            <tr class="even">
+                              <td>Oct-2025</td>
+                              <td>336</td>
+                              <td>65</td>
+                              <td>564</td>
+                              <td>16</td>
+                              <td>18</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+                            <tr class="odd">
+                              <td>Sep-2025</td>
+                              <td>557</td>
+                              <td>92</td>
+                              <td>289</td>
+                              <td>75</td>
+                              <td>77</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-end"
+                    style="margin-top: -20px"
+                  >
+                    <nav>
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
 
-                <td class="text-start"></td>
-                <td class="text-start"></td>
-                <td class="text-center" style="width:6%;">
-                    <button class="btn btn-outline-secondary btn-sm">CSV</button>
-                </td>
-
-                <!-- PRINT -->
-                <td class="text-center" style="width:6%;">
-                    <button class="btn btn-outline-secondary btn-sm">Print</button>
-                </td>
-            </tr>
-        </table>
-    </div>
-</div>
-
-
-<div class="mb-4" style="margin-top: -50px;">
-   <div class="row">
-  <div class="gridView">
-    <div class="col-lg-12 grid-margin stretch-card" >
-    <div class="card">
-      <div class="card-body">
-        <div class="table-responsive"> <!-- Makes table scrollable if wide -->
-          <table class="table align-middle">
-          <tr>
-						<th style="padding-right:0px;">Month   <span class="downArrowHead">&#x25bc;</span></th>
-						<th>Casual</th>
-						<th>Privilage</th>
-						<th>Medical</th>
-						<th>Maternity</th>
-						<th>Paternity</th>
-					    <th>Action</th>
-					</tr>
-					<tr class="even">
-						<td>Feb-2026</td>
-						<td>758</td>
-						<td>150</td>
-						<td>468</td>
-						<td>10</td>
-						<td>18</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="odd">
-						<td>Jan-2026</td>
-						<td>573</td>
-						<td>236</td>
-						<td>392</td>
-						<td>9</td>
-						<td>23</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="even">
-						<td>Dec-2025</td>
-						<td>936</td>
-						<td>450</td>
-						<td>536</td>
-						<td>20</td>
-						<td>48</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="odd">
-						<td>Nov-2025</td>
-						<td>1075</td>
-						<td>82</td>
-						<td>543</td>
-						<td>23</td>
-						<td>21</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="even">
-						<td>Oct-2025</td>
-						<td>336</td>
-						<td>65</td>
-						<td>564</td>
-						<td>16</td>
-						<td>18</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>	
-					<tr class="odd">
-						<td>Sep-2025</td>
-						<td>557</td>
-						<td>92</td>
-						<td>289</td>
-						<td>75</td>
-						<td>77</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					
-        </table>
-    </div>
-</div>
-</div>
-</div>
-<div class="d-flex justify-content-end" style="margin-top: -20px;">
-           <nav>
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-
-    <li class="page-item active">
-      <a class="page-link" href="#">1</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-
-
-         </div>
-</div>
- </div>
- </div>  
+                        <li class="page-item active">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <footer class="footer">
             <div
@@ -1757,8 +1936,8 @@
                 >. All rights reserved.</span
               >
             </div>
-          </footer> 
-          </div>
+          </footer>
+        </div>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
@@ -1782,8 +1961,107 @@
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
+    <script>
+      (function () {
+        // Configuration
+        const TARGET_NAME = "harshad"; // canonical full name, lowercase
+        const MIN_CHARS_TO_SHOW = 4; // show after >= 4 chars typed
+
+        // Elements
+        const form = document.getElementById("searchForm");
+        const input = document.getElementById("searchInput");
+        const card = document.getElementById("searchResultCard");
+
+        // Utility: show/hide functions
+        function showCard() {
+          if (card.classList.contains("d-none")) {
+            card.classList.remove("d-none");
+            input.setAttribute("aria-expanded", "true");
+            // optionally move focus to the card if you want keyboard navigation
+          }
+        }
+        function hideCard() {
+          if (!card.classList.contains("d-none")) {
+            card.classList.add("d-none");
+            input.setAttribute("aria-expanded", "false");
+          }
+        }
+
+        // 1) Show card when user types >= MIN_CHARS_TO_SHOW
+        input.addEventListener("input", function () {
+          const v = (this.value || "").trim();
+          if (v.length >= MIN_CHARS_TO_SHOW) {
+            showCard();
+          } else {
+            hideCard();
+          }
+        });
+
+        // 2) Handle Enter: prevent form submit and open card when full name OR length >= MIN_CHARS_TO_SHOW
+        input.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {
+            // prevent actual form submission / page reload
+            e.preventDefault();
+
+            const v = (this.value || "").trim().toLowerCase();
+
+            // If typed EXACT full name -> show card
+            if (v === TARGET_NAME) {
+              showCard();
+              // Optional: you could also navigate automatically:
+              // window.location.href = "profile.html";
+              return;
+            }
+
+            // If user typed >= MIN_CHARS_TO_SHOW -> also show
+            if (v.length >= MIN_CHARS_TO_SHOW) {
+              showCard();
+              return;
+            }
+
+            // otherwise ignore enter (do nothing)
+          }
+        });
+
+        // 3) Click outside to close
+        document.addEventListener("click", function (evt) {
+          const target = evt.target;
+          if (!card.contains(target) && target !== input) {
+            hideCard();
+          }
+        });
+
+        // 4) Optional: if user clicks a result link, let normal navigation happen but hide the card
+        card.addEventListener("click", function (evt) {
+          // If they click a link, the browser will navigate — we don't need to do anything
+          // But hide the card to keep UI tidy in case of SPA navigation.
+          hideCard();
+        });
+
+        // 5) Safety: ensure script doesn't break when elements are missing
+        if (!input || !card || !form) {
+          console.warn(
+            "[search] required elements missing: searchInput / searchResultCard / searchForm"
+          );
+        }
+      })();
+    </script>
+    <style>
+      #searchResultCard {
+        border-radius: 10px;
+        min-width: 260px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      }
+      #searchResultCard .card-body {
+        padding: 12px;
+      }
+      #searchInput:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    </style>
     <!-- End custom js for this page -->
- <script type="text/javascript">
+    <script type="text/javascript">
       $(function () {
         $(".assignSchedule").click(function () {
           $(".grid").hide();

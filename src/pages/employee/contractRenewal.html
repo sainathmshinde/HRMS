@@ -85,15 +85,145 @@
           </button>
           <div class="search-field d-none d-md-block">
             <form class="d-flex align-items-center h-100" action="#">
-              <div class="input-group">
-                <div class="input-group-prepend bg-transparent">
-                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
+              <div
+                class="search-field d-none d-md-block position-relative"
+                style="max-width: 420px"
+              >
+                <form
+                  id="searchForm"
+                  class="d-flex align-items-center h-100"
+                  novalidate
+                >
+                  <div class="input-group w-100">
+                    <span
+                      class="input-group-text bg-transparent border-0"
+                      id="searchIcon"
+                      aria-hidden="true"
+                    >
+                      <i class="mdi mdi-magnify"></i>
+                    </span>
+
+                    <input
+                      type="text"
+                      id="searchInput"
+                      class="form-control bg-transparent border-0"
+                      placeholder="Search..."
+                      autocomplete="off"
+                      aria-label="Search"
+                      aria-haspopup="true"
+                      aria-controls="searchResultCard"
+                    />
+                  </div>
+                </form>
+
+                <!-- Result Card (hidden by default) -->
+
+                <div
+                  id="searchResultCard"
+                  class="card shadow position-absolute d-none"
+                  role="dialog"
+                  aria-modal="false"
+                  aria-labelledby="resultName"
+                  style="
+                    z-index: 2000;
+                    top: 48px;
+                    left: 30px;
+                    width: 300px;
+                    border-radius: 14px;
+                    background: #ffffff;
+                    border: 1px solid rgba(0, 0, 0, 0.06);
+                    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
+                    padding: 6px 0;
+                    transition: all 0.25s ease;
+                  "
+                >
+                  <div
+                    class="card-body d-flex gap-3 align-items-start"
+                    style="padding: 18px 20px"
+                  >
+                    <img
+                      src="/src/assets/images/HarshalYadav.jpeg"
+                      class="rounded-circle"
+                      width="105"
+                      height="105"
+                      style="
+                        border: 3px solid rgba(37, 99, 235, 0.12);
+                        transition: transform 0.25s ease;
+                      "
+                      onmouseover="this.style.transform='scale(1.06)'"
+                      onmouseout="this.style.transform='scale(1)'"
+                    />
+
+                    <div style="flex: 1">
+                      <h5
+                        id="resultName"
+                        class="mb-3"
+                        style="
+                          font-size: 18px;
+                          font-weight: 500;
+                          color: #0f172a;
+                          margin-bottom: 10px;
+                        "
+                      >
+                        Harshad Yadav
+                      </h5>
+
+                      <a
+                        href="/src/pages/employee/employmentInfo.html"
+                        class="d-block small"
+                        style="
+                          padding: 8px 8px;
+                          font-size: 14px;
+                          border-radius: 6px;
+                          transition: all 0.2s ease;
+                          text-decoration: none;
+                          color: #9333ea;
+                          font-weight: 700;
+                        "
+                        onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+                        onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                      >
+                        View Profile
+                      </a>
+
+                      <a
+                        href="/src/pages/employee/employeeSummary.html"
+                        class="d-block small"
+                        style="
+                          padding: 8px 8px;
+                          font-size: 14px;
+                          border-radius: 6px;
+                          transition: all 0.2s ease;
+                          text-decoration: none;
+                          color: #9333ea;
+                          font-weight: 700;
+                        "
+                        onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+                        onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                      >
+                        Summary
+                      </a>
+
+                      <a
+                        href="/src/pages/leaves/approvedLeave.html"
+                        class="d-block small"
+                        style="
+                          padding: 8px 8px;
+                          font-size: 14px;
+                          border-radius: 6px;
+                          transition: all 0.2s ease;
+                          text-decoration: none;
+                          color: #9333ea;
+                          font-weight: 700;
+                        "
+                        onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+                        onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                      >
+                        Approve Leave
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <input
-                  type="text"
-                  class="form-control bg-transparent border-0"
-                  placeholder="Search..."
-                />
               </div>
             </form>
           </div>
@@ -2429,6 +2559,142 @@
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
+    <div
+      class="search-field d-none d-md-block position-relative"
+      style="max-width: 420px"
+    >
+      <form id="searchForm" class="d-flex align-items-center h-100" novalidate>
+        <div class="input-group w-100">
+          <span
+            class="input-group-text bg-transparent border-0"
+            id="searchIcon"
+            aria-hidden="true"
+          >
+            <i class="mdi mdi-magnify"></i>
+          </span>
+
+          <input
+            type="text"
+            id="searchInput"
+            class="form-control bg-transparent border-0"
+            placeholder="Search..."
+            autocomplete="off"
+            aria-label="Search"
+            aria-haspopup="true"
+            aria-controls="searchResultCard"
+          />
+        </div>
+      </form>
+
+      <!-- Result Card (hidden by default) -->
+
+      <div
+        id="searchResultCard"
+        class="card shadow position-absolute d-none"
+        role="dialog"
+        aria-modal="false"
+        aria-labelledby="resultName"
+        style="
+          z-index: 2000;
+          top: 48px;
+          left: 30px;
+          width: 300px;
+          border-radius: 14px;
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.06);
+          box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
+          padding: 6px 0;
+          transition: all 0.25s ease;
+        "
+      >
+        <div
+          class="card-body d-flex gap-3 align-items-start"
+          style="padding: 18px 20px"
+        >
+          <img
+            src="/src/assets/images/HarshalYadav.jpeg"
+            class="rounded-circle"
+            width="105"
+            height="105"
+            style="
+              border: 3px solid rgba(37, 99, 235, 0.12);
+              transition: transform 0.25s ease;
+            "
+            onmouseover="this.style.transform='scale(1.06)'"
+            onmouseout="this.style.transform='scale(1)'"
+          />
+
+          <div style="flex: 1">
+            <h5
+              id="resultName"
+              class="mb-3"
+              style="
+                font-size: 18px;
+                font-weight: 500;
+                color: #0f172a;
+                margin-bottom: 10px;
+              "
+            >
+              Harshad Yadav
+            </h5>
+
+            <a
+              href="/src/pages/employee/employmentInfo.html"
+              class="d-block small"
+              style="
+                padding: 8px 8px;
+                font-size: 14px;
+                border-radius: 6px;
+                transition: all 0.2s ease;
+                text-decoration: none;
+                color: #9333ea;
+                font-weight: 700;
+              "
+              onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+              onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+            >
+              View Profile
+            </a>
+
+            <a
+              href="/src/pages/employee/employeeSummary.html"
+              class="d-block small"
+              style="
+                padding: 8px 8px;
+                font-size: 14px;
+                border-radius: 6px;
+                transition: all 0.2s ease;
+                text-decoration: none;
+                color: #9333ea;
+                font-weight: 700;
+              "
+              onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+              onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+            >
+              Summary
+            </a>
+
+            <a
+              href="/src/pages/leaves/approvedLeave.html"
+              class="d-block small"
+              style="
+                padding: 8px 8px;
+                font-size: 14px;
+                border-radius: 6px;
+                transition: all 0.2s ease;
+                text-decoration: none;
+                color: #9333ea;
+                font-weight: 700;
+              "
+              onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+              onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+            >
+              Approve Leave
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- End custom js for this page -->
 
     <script type="text/javascript">
