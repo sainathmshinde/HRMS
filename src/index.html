@@ -111,23 +111,139 @@
   </form>
 
   <!-- Result Card (hidden by default) -->
-  <div id="searchResultCard"
-       class="card shadow position-absolute w-100 d-none"
-       role="dialog"
-       aria-modal="false"
-       aria-labelledby="resultName"
-       style="z-index:2000; top:48px;">
-    <div class="card-body d-flex align-items-center gap-3">
-      <img src="/src/assets/images/user.avif"  class="rounded-circle" width="70" height="70" />
-      <div>
-        <h6 id="resultName" class="mb-1">Harshad Yadav</h6>
-        <a href="profile.html" class="d-block small text-primary">View Profile</a>
-        <a href="summary.html" class="d-block small text-primary">Summary</a>
-        <a href="leaveApproval.html" class="d-block small text-primary">Approve Leave</a>
-        
-      </div>
+ 
+   
+<div id="searchResultCard"
+     class="card shadow position-absolute d-none"
+     role="dialog"
+     aria-modal="false"
+     aria-labelledby="resultName"
+     style="
+        z-index:2000;
+        top:48px;
+        left:30px;
+        width:300px;
+        border-radius:14px;
+        background:#ffffff;
+        border:1px solid rgba(0,0,0,0.06);
+        box-shadow:0 8px 26px rgba(0,0,0,0.12);
+        padding:6px 0;
+        transition:all .25s ease;
+     "
+>
+  <div class="card-body d-flex gap-3 align-items-start"
+   
+       style="padding:18px 20px;">
+
+    <img src="/src/assets/images/HarshalYadav.jpeg"
+         class="rounded-circle"
+         width="105"
+         height="105"
+         style="
+            border:3px solid rgba(37,99,235,0.12);
+            transition: transform .25s ease;
+         "
+         onmouseover="this.style.transform='scale(1.06)'"
+         onmouseout="this.style.transform='scale(1)'"
+    />
+
+    <div style="flex:1;">
+      <h5 id="resultName"
+          class="mb-3"
+          style="
+            font-size:18px;
+            font-weight:500;
+            color:#0f172a;
+            margin-bottom:10px;
+          ">
+        Harshad Yadav
+      </h5>
+
+      <a href="/src/pages/employee/employmentInfo.html"
+         class="d-block small"
+         style="
+            padding:8px 8px;
+            font-size:14px;
+            border-radius:6px;
+            transition:all .2s ease;
+            text-decoration:none;
+            color:#9333EA;
+            font-weight: 700;
+         "
+         onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+         onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+      >
+        View Profile
+      </a>
+
+      <a href="/src/pages/employee/employeeSummary.html"
+         class="d-block small"
+         style="
+            padding:8px 8px;
+            font-size:14px;
+            border-radius:6px;
+            transition:all .2s ease;
+            text-decoration:none;
+            color:#9333EA;
+            font-weight: 700;
+         "
+         onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+         onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+      >
+        Summary
+      </a>
+
+      <a href="/src/pages/leaves/approvedLeave.html"
+         class="d-block small "
+         style="
+            padding:8px 8px;
+            font-size:14px;
+            border-radius:6px;
+            transition:all .2s ease;
+            text-decoration:none;
+            color:#9333EA;
+            font-weight: 700;
+         "
+         onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+         onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+      >
+        Approve Leave
+      </a>
+      
+
     </div>
   </div>
+              <!-- <div
+                    class="card bg-gradient-sb-voilet card-img-holder custom-text1 h-100"
+                  >
+                    <div class="card-body position-relative">
+                      <img
+                        src="/src//assets/images/circle.svg"
+                        class="card-img-absolute"
+                        alt="circle-image"
+                      />
+ 
+                        <h5 >Attendance</h5>
+ 
+                      <div class="d-flex flex-wrap">
+                        <div class="me-3 ">
+                          <h4 class="fw-bold ">358</h4>
+                           <h6>Present</h6>
+                           <p >As on today</p>
+                        </div>
+                        <div>
+                          <h4 class="fw-bold ">1614</h4>
+                          <h6> Absent</h6>
+                          
+                          </div>
+                      </div>
+                    </div>
+                  </div> -->
+
+</div>
+
+
+
 </div>
 
 
@@ -458,7 +574,7 @@
                       class="nav-link"
                       href="/src/pages/employee/totalHeadcount.html"
                     >
-                      Total Headcount Reports
+                      Total Headcount Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -466,7 +582,7 @@
                       class="nav-link"
                       href="/src/pages/employee/employmentType.html"
                     >
-                      Employment Type Reports
+                      Employment Type Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -474,7 +590,7 @@
                       class="nav-link"
                       href="/src/pages/employee/joiningDate.html"
                     >
-                      Joining Date Reports
+                      Joining Date Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -482,12 +598,12 @@
                       class="nav-link"
                       href="/src/pages/employee/exitEmployee.html"
                     >
-                      Employee Exit Reports
+                      Employee Exit Report
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/src/pages/employee/gender.html">
-                      By Gender Reports
+                      By Gender Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -495,7 +611,7 @@
                       class="nav-link"
                       href="/src/pages/employee/profileCompleted.html"
                     >
-                      Profile Reports
+                      Profile Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -503,7 +619,7 @@
                       class="nav-link"
                       href="/src/pages/employee/contractRenewal.html"
                     >
-                      Contract Reports
+                      Contract Report
                     </a>
                   </li>
                 </ul>
@@ -596,28 +712,28 @@
                     <a
                       class="nav-link"
                       href="/src/pages/leaves/employeesOnLeaveReports.html"
-                      >On Leave Reports</a
+                      >On Leave Report</a
                     >
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
                       href="/src/pages/leaves/totalPlannedLeavesReports.html"
-                      >Planned Leaves Reports</a
+                      >Planned Leaves Report</a
                     >
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
                       href="/src/pages/leaves/plannedVsActualReports.html"
-                      >Planned Vs Actual Reports</a
+                      >Planned Vs Actual Report</a
                     >
                   </li>
                   <li class="nav-item">
                     <a
                       class="nav-link"
                       href="/src/pages/leaves/holidaysListReports.html"
-                      >Holiday List Reports</a
+                      >Holiday List Report</a
                     >
                   </li>
                   <li class="nav-item">
@@ -625,7 +741,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/leaveConsumptionByTypeReports.html"
                     >
-                      Leave Type Reports</a
+                      Leave Type Report</a
                     >
                   </li>
                   <li class="nav-item">
@@ -633,7 +749,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/leaveConsumptionTrendReports.html"
                     >
-                      Leave Trend Reports</a
+                      Leave Trend Report</a
                     >
                   </li>
                   <li class="nav-item">
@@ -641,7 +757,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/leaveBalanceReports.html"
                     >
-                      Leave Balance Reports</a
+                      Leave Balance Report</a
                     >
                   </li>
                   <li class="nav-item">
@@ -649,7 +765,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/leaveSummaryReports.html"
                     >
-                      Leave Summary Reports</a
+                      Leave Summary Report</a
                     >
                   </li>
                   <li class="nav-item">
@@ -657,7 +773,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/leaveReasonReports.html"
                     >
-                      Leave Reason Reports</a
+                      Leave Reason Report</a
                     >
                   </li>
                   <li class="nav-item">
@@ -665,7 +781,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/leaveTypeCountReports.html"
                     >
-                      Leave Count Reports</a
+                      Leave Count Report</a
                     >
                   </li>
                   <li class="nav-item">
@@ -673,7 +789,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/availedLeaveTypeReports.html"
                     >
-                      Availed Leave Reports</a
+                      Availed Leave Report</a
                     >
                   </li>
                   <li class="nav-item">
@@ -681,7 +797,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/noLeavesAvailedReports.html"
                     >
-                      No Availed leave Reports</a
+                      No Availed leave Report</a
                     >
                   </li>
                   <li class="nav-item">
@@ -689,7 +805,7 @@
                       class="nav-link"
                       href="/src/pages/leaves/SLAReports.html"
                     >
-                      SLA Reports</a
+                      SLA Report</a
                     >
                   </li>
                 </ul>
@@ -754,7 +870,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/presentEmployeesReports.html"
                     >
-                      Present Reports
+                      Present Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -762,7 +878,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/absentEmployeesReports.html"
                     >
-                      Absent Reports
+                      Absent Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -770,7 +886,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/monthlyHoursReports.html"
                     >
-                      Monthly Hours Reports
+                      Monthly Hours Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -778,7 +894,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/customReports.html"
                     >
-                      Custom Reports
+                      Custom Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -786,7 +902,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/userReports.html"
                     >
-                      User Reports
+                      User Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -794,7 +910,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/dailyAttendanceReports.html"
                     >
-                      Daily Reports
+                      Daily Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -802,7 +918,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/monthlyStatusReports.html"
                     >
-                      Monthly Status Reports
+                      Monthly Status Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -810,7 +926,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/lateComingReports.html"
                     >
-                      Late Coming Reports
+                      Late Coming Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -818,7 +934,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/earlyGoingReports.html"
                     >
-                      Early Going Reports
+                      Early Going Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -826,7 +942,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/presentTrendReports.html"
                     >
-                      Trend Reports
+                      Trend Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -834,7 +950,7 @@
                       class="nav-link"
                       href="/src/pages/attendence/attendanceDailyReports.html"
                     >
-                      Daily Reports
+                      Daily Report
                     </a>
                   </li>
                 </ul>
@@ -1096,7 +1212,7 @@
                       class="nav-link"
                       href="/src/pages/performance/eligibleEmployeesReports.html"
                     >
-                      Eligibility Reports
+                      Eligibility Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1104,7 +1220,7 @@
                       class="nav-link"
                       href="/src/pages/performance/reviewerAssessmentReports.html"
                     >
-                      Reviewer Reports
+                      Reviewer Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1112,7 +1228,7 @@
                       class="nav-link"
                       href="/src/pages/performance/pipReports.html"
                     >
-                      PIP Reports
+                      PIP Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1120,7 +1236,7 @@
                       class="nav-link"
                       href="/src/pages/performance/totalPendingAssessmentReports.html"
                     >
-                      Pending Reports
+                      Pending Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1128,7 +1244,7 @@
                       class="nav-link"
                       href="/src/pages/performance/performanceTrendReports.html"
                     >
-                      Trend Reports
+                      Trend Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1136,7 +1252,7 @@
                       class="nav-link"
                       href="/src/pages/performance/KRAAnalysisReports.html"
                     >
-                      KRA Analysis Reports
+                      KRA Analysis Report
                     </a>
                   </li>
                 </ul>
@@ -1219,7 +1335,7 @@
                       class="nav-link"
                       href="/src/pages/training/pendingTrainingRequest.html"
                     >
-                      Pending Request Reports
+                      Pending Request Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1227,7 +1343,7 @@
                       class="nav-link"
                       href="/src/pages/training/trainersAcrossOrganization.html"
                     >
-                      Organization Reports
+                      Organization Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1235,7 +1351,7 @@
                       class="nav-link"
                       href="/src/pages/training/trainingTrend.html"
                     >
-                      Trend Reports
+                      Trend Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1243,7 +1359,7 @@
                       class="nav-link"
                       href="/src/pages/training/totalScheduledTraining.html"
                     >
-                      Scheduled Reports
+                      Scheduled Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1251,7 +1367,7 @@
                       class="nav-link"
                       href="/src/pages/training/softSkillsTechnical.html"
                     >
-                      Skills Reports
+                      Skills Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1259,7 +1375,7 @@
                       class="nav-link"
                       href="/src/pages/training/participants.html"
                     >
-                      Participants Reports
+                      Participants Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1267,7 +1383,7 @@
                       class="nav-link"
                       href="/src/pages/training/trainersRating.html"
                     >
-                      Rating Reports
+                      Rating Report
                     </a>
                   </li>
                 </ul>
@@ -1348,7 +1464,7 @@
                       class="nav-link"
                       href="/src/pages/tourDiary/tourPlanned.html"
                     >
-                      Tours Planned Reports
+                      Tours Planned Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1356,7 +1472,7 @@
                       class="nav-link"
                       href="/src/pages/tourDiary/tourDiaryStatus.html"
                     >
-                      Status Reports
+                      Status Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1364,7 +1480,7 @@
                       class="nav-link"
                       href="/src/pages/tourDiary/teamTourPlanned.html"
                     >
-                      Tour Planned Reports
+                      Tour Planned Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1372,7 +1488,7 @@
                       class="nav-link"
                       href="/src/pages/tourDiary/claimStatus.html"
                     >
-                      Claim Status Reports
+                      Claim Status Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1380,7 +1496,7 @@
                       class="nav-link"
                       href="/src/pages/tourDiary/trendOfTourExpenses.html"
                     >
-                      Expenses Trend Reports
+                      Expenses Trend Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1388,7 +1504,7 @@
                       class="nav-link"
                       href="/src/pages/tourDiary/trendOfVillage.html"
                     >
-                      Trend of Visit Reports
+                      Trend of Visit Report
                     </a>
                   </li>
                 </ul>
@@ -1491,7 +1607,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/openPosition.html"
                     >
-                      Open Positions Reports
+                      Open Positions Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1499,7 +1615,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/srfAbove90.html"
                     >
-                      SRF Reports
+                      SRF Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1507,7 +1623,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/ageingOfOpenSRF.html"
                     >
-                      SRF Ageing Reports
+                      SRF Ageing Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1515,7 +1631,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/buWisePosition.html"
                     >
-                      BU Positions Reports
+                      BU Positions Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1523,7 +1639,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/resumeAvailable.html"
                     >
-                      Resume Reports
+                      Resume Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1531,7 +1647,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/interviewScheduled.html"
                     >
-                      Interview Reports
+                      Interview Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1539,7 +1655,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/projectResource.html"
                     >
-                      Project Reports
+                      Project Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1547,7 +1663,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/projectPositions.html"
                     >
-                      Positions Reports
+                      Positions Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1555,7 +1671,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/projectCost.html"
                     >
-                      Cost Reports
+                      Cost Report
                     </a>
                   </li>
                   <li class="nav-item">
@@ -1563,7 +1679,7 @@
                       class="nav-link"
                       href="/src/pages/recruitment/resourceProjects.html"
                     >
-                      Resource Reports
+                      Resource Report
                     </a>
                   </li>
                 </ul>
