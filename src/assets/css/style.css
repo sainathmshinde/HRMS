@@ -13411,6 +13411,7 @@ fieldset:disabled .ajax-upload-dragdrop .ajax-file-upload,
   --bs-card-border-color: var(--bs-border-color-translucent);
   --bs-card-border-radius: 0.3125rem;
   --bs-card-box-shadow: ;
+  
   --bs-card-inner-border-radius: calc(
     var(--bs-border-radius) - (var(--bs-border-width))
   );
@@ -29672,9 +29673,9 @@ dl li {
 /* --- Sidebar hover override: add this at the END of your final stylesheet --- */
 
 .sidebar .nav .nav-item > a.nav-link {
-  display: flex !important; /* icon + text same line */
-  align-items: center !important; /* vertical center */
-  justify-content: space-between !important; /* icon always at right end (तुला हवंय तेच) */
+  display: flex !important;               
+  align-items: center !important;         
+  justify-content: space-between !important; 
   padding: 0.75rem 1.1rem;
   border-radius: 10px;
 }
@@ -29792,20 +29793,34 @@ body {
 .sidebar .nav .nav-item > a.nav-link.active,
 .sidebar .nav .nav-item > a.nav-link.active:focus,
 .sidebar .nav .nav-item > a.nav-link.active:hover {
-  background: linear-gradient(135deg, #ff9aeb, #7b5bfa) !important;
-  color: #ffffff !important;
+  background: linear-gradient(135deg, #ff9aebc7, #7b5bfa66) !important;
+  color: #000000 !important;
   text-decoration: none;
 }
+
+/* .sidebar .nav .nav-item > a.nav-link,  */
+/* .sidebar .nav .nav-item > a.nav-link:focus, */
+.sidebar .nav .nav-item > a.nav-link:hover {
+  background: linear-gradient(135deg, #ff9aeb54, #7b5bfa3d) !important;
+  color: #000000 !important;
+  text-decoration: none;
+}
+
+
+
+
+
+
 
 /* fixed page title */
 
 .page-header .page-title.fixed-title {
   position: fixed;
-  top: calc(60px + 8px); /* Top navbar height */
-  left: calc(260px + 1px); /* Sidebar width */
-  right: 1px;
-  z-index: 2000;
-  background: #f2edf3;
+  top: calc(60px + 8px);     /* Top navbar height */
+  left: calc(260px + 1px);   /* Sidebar width */
+  right: 1px;                
+  z-index: 1000;
+  background:#f2edf3;
   padding: 10px 16px;
   /* box-shadow: 0 6px 18px rgba(0,0,0,0.06); */
 }
@@ -29938,6 +29953,7 @@ body.holiday-list-page .card-body {
 }
 
 .custom-text:hover h1,
+.custom-text1:hover ul li,
 .custom-text:hover ul li,
 .custom-text:hover h2,
 .custom-text:hover h3,
@@ -29948,7 +29964,6 @@ body.holiday-list-page .card-body {
   color: #ffffff !important;
 }
 .custom-text1:hover h1,
-.custom-text1:hover ul li,
 .custom-text1:hover h2,
 .custom-text1:hover h3,
 .custom-text1:hover h4,
@@ -29975,6 +29990,7 @@ body.holiday-list-page .card-body {
 .custom-text3:hover p {
   color: #FFEDD5 !important;
 }
+
 
 .bg-gradient-warning,
 .datepicker-custom

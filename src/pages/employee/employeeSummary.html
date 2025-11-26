@@ -1591,14 +1591,14 @@
               <h3 class="page-title fixed-title">
                 <span
                   class="page-title-icon bg-gradient-primary text-white me-2"
-                  ><i class="fa-solid fa-circle-info"></i>
+                  ><i class="fa-solid fa-user"></i>
                 </span>
                 Harshad Yadav's Profile
               </h3>
             </div>
             <div class="card" style="margin-top: 30px; overflow-x: auto; width: 100%;">
               <div class="card-body">
-                <table class="grid summaryTable" style="width:100%; border-collapse: collapse;">
+                <table class="grid summaryTable" style="width:100%; border-collapse: collapse; padding-top: 15px;">
   <tr>
     <!-- Profile Image -->
     <td style="width:15%; vertical-align:top; text-align:center; padding:10px;">
@@ -1696,6 +1696,7 @@
                 <div
                   class="accordion"
                   id="accordionExample"
+                  style="margin-top: 20px;"
                 >
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -1717,309 +1718,531 @@
                       data-bs-parent="#accordionExample"
                     >
                       <div class="accordion-body">
-                        <div class="row">
-                          <form class="forms-sample">
-                            <div class="d-flex justify-content-end mb-2">
-                              <button
-                                type="button"
-                                id="editqInfoBtn"
-                                class="btn btn-primary"
-                              >
-                                Edit
-                              </button>
-                            </div>
-
-                            <div class="row">
-                              <!-- Employee ID -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="employeeId">Employee ID</label>
-                                  <!-- <span class="text-danger">*</span> -->
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="employeeId"
-                                    placeholder="Enter Employee ID"
-                                    disabled
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- Reporting ID -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="reportingId">Reporting ID</label>
-                                  <!-- <span class="text-danger">*</span> -->
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="reportingId"
-                                    placeholder="Enter Reporting ID"
-                                    disabled
-                                  />
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <!-- Title -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="title">Title</label>
-                                  <span class="text-danger">*</span>
-                                  <select
-                                    class="form-select"
-                                    id="title"
-                                    required
-                                  >
-                                    <option value="">Select</option>
-                                    <option value="mr">Mr.</option>
-                                    <option value="ms">Ms.</option>
-                                    <option value="mrs">Mrs.</option>
-                                    <option value="dr">Dr.</option>
-                                  </select>
-                                </div>
-                              </div>
-
-                              <!-- First Name -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="firstName">First Name</label>
-                                  <span class="text-danger">*</span>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="firstName"
-                                    placeholder="Enter First Name"
-                                    required
-                                  />
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <!-- Middle Name -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="middleName">Middle Name</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="middleName"
-                                    placeholder="Enter Middle Name"
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- Last Name -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="lastName">Last Name</label>
-                                  <span class="text-danger">*</span>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="lastName"
-                                    placeholder="Enter Last Name"
-                                    required
-                                  />
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <!-- Date of Birth -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="dob">Date of Birth</label>
-                                  <span class="text-danger">*</span>
-                                  <input
-                                    type="date"
-                                    class="form-control"
-                                    id="dob"
-                                    required
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- Identification Document Number -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="idDocumentNumber"
-                                    >Identification Document Number</label
-                                  >
-                                  <span class="text-danger">*</span>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="idDocumentNumber"
-                                    placeholder="Enter Document Number"
-                                    required
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                           
-                            <div class="row">
-                              <!-- Father's / Husband's First Name -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="fatherFirstName"
-                                    >Father's / Husband's First Name</label
-                                  >
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="fatherFirstName"
-                                    placeholder="Enter First Name"
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- Father's / Husband's Middle Name -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="fatherMiddleName"
-                                    >Father's / Husband's Middle Name</label
-                                  >
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="fatherMiddleName"
-                                    placeholder="Enter Middle Name"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <!-- Father's / Husband's Last Name -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="fatherLastName"
-                                    >Father's / Husband's Last Name</label
-                                  >
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="fatherLastName"
-                                    placeholder="Enter Last Name"
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- Mother's First Name -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="motherFirstName"
-                                    >Mother's First Name</label
-                                  >
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="motherFirstName"
-                                    placeholder="Enter First Name"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <!-- Mother's Middle Name -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="motherMiddleName"
-                                    >Mother's Middle Name</label
-                                  >
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="motherMiddleName"
-                                    placeholder="Enter Middle Name"
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- Mother's Last Name -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="motherLastName"
-                                    >Mother's Last Name</label
-                                  >
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="motherLastName"
-                                    placeholder="Enter Last Name"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <!-- 
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label>File upload</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="file"
-                              name="img[]"
-                              class="file-upload-default"
-                            />
-                            <div class="input-group col-xs-12">
-                              <input
-                                type="text"
-                                class="form-control file-upload-info"
-                                disabled
-                                placeholder="Upload Image"
-                              />
-                              <span class="input-group-append">
-                                <button
-                                  class="file-upload-browse btn btn-gradient-primary py-3"
-                                  type="button"
-                                >
-                                  Upload
-                                </button>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="exampleInputCity1">City</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="exampleInputCity1"
-                              placeholder="Location"
-                            />
-                          </div>
-                        </div>
-                      </div> -->
-
-                            <!-- Buttons -->
-                            <div
-                              class="text-end"
-                              style="display: none"
-                              id="qInfoBtn"
-                            >
-                              <button
-                                id="saveqInfoBtn"
-                                class="btn btn-gradient-primary me-2"
-                              >
-                                Save
-                              </button>
-                              <button
-                                id="cancelqInfoBtn"
-                                class="btn btn-gradient-light"
-                              >
-                                Cancel
-                              </button>
-                            </div>
-                          </form>
-                        </div>
+                        <div class="row" >
+                <div class="col-lg-12 grid-margin stretch-card">
+                  <div class="card" style="margin-top: -15px; overflow-x: auto; width: 100%;">
+                    <div class="card-body">
+                      <div class="page-header">
+                        <h5>Personal Information</h5>
+                      </div>
+                      <table class="table">
+                       
+                        <tbody>
+                         <tr>
+									
+					<td>
+						<label>Nationality:</label>
+					</td>
+									
+					<td>
+						<label>Indian</label>
+					</td>
+					<td>
+						<label>Marital Status :</label>
+					</td>	
+					<td>
+						<label>Single</label>
+					</td>	
+						
+				</tr>
+                          <tr>
+					
+					<td>
+						<label>Gender: </label>
+					</td>
+					
+				
+					
+					<td>
+						<label>Male</label>
+					</td>
+					<td>
+						<label>Mother's Name:</label>
+					</td>	
+					<td>
+						<label>Asha Yadav</label>
+					</td>
+										
+				</tr>
+                          <tr>
+					
+					<td>
+						<label>Father's Name</label>
+					</td>
+					
+								
+					<td>
+						<label>Dadaso Yadav</label>
+					</td>
+					<td>
+						<label>PAN Number:</label>
+					</td>
+					<td>
+						<label>APP12TY72</label>
+					</td>	
+									
+				</tr>
+                <tr>
+					
+					<td>
+						<label>Aadhar Number:</label>
+					</td>
+					
+							
+					<td>
+						<label>2356 8965 4785</label>
+					</td>
+					<td>
+						<label>Candidate:</label>
+					</td>	
+				     <td>
+						<label>GEN</label>
+					</td>	
+						
+				</tr>
+        <tr>
+					
+					<td>
+						<label>Selection Category::</label>
+					</td>
+					
+							
+					<td>
+						<label>GEN</label>
+					</td>
+					<td>
+						<label>PwD:</label>
+					</td>	
+				     <td>
+						<label>Yes</label>
+					</td>	
+						
+				</tr>
+         <tr>
+					
+					<td>
+						<label>Pwd Category::</label>
+					</td>
+					
+							
+					<td>
+						<label>Deaf-Mute</label>
+					</td>
+					<td>
+						<label>PwD Percent:</label>
+					</td>	
+				     <td>
+						<label>40</label>
+					</td>	
+						
+				</tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <hr style="border:1px solid #000; margin: 0 0 15px 0;">
+                 <div class="col-lg-12 grid-margin stretch-card">
+                  <div class="card" style="margin-top: -15px; overflow-x: auto; width: 100%;">
+                    <div class="card-body">
+                      <div class="page-header">
+                        <h5>Employment Information</h5>
+                      </div>
+                      <table class="table">
+                       
+                        <tbody>
+                         <tr>
+									
+					<td>
+						<label>Country:</label>
+					</td>
+									
+					<td>
+						<label>India</label>
+					</td>
+					<td>
+						<label>State :</label>
+					</td>	
+					<td>
+						<label>Maharashtra</label>
+					</td>	
+						
+				</tr>
+                          <tr>
+					
+					<td>
+						<label>City: </label>
+					</td>
+					
+				
+					
+					<td>
+						<label>Pune</label>
+					</td>
+					<td>
+						<label>Level:</label>
+					</td>	
+					<td>
+						<label>L4</label>
+					</td>
+										
+				</tr>
+                          <tr>
+					
+					<td>
+						<label>CTC:</label>
+					</td>
+					
+								
+					<td>
+						<label>-</label>
+					</td>
+					<td>
+						<label>Type of  Employment:</label>
+					</td>
+					<td>
+						<label>Permanent</label>
+					</td>	
+									
+				</tr>
+                <tr>
+					
+					<td>
+						<label>Notice Period (Month):</label>
+					</td>
+					
+							
+					<td>
+						<label>1 Month</label>
+					</td>
+						
+						
+				</tr>
+       
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                 <hr style="border:1px solid #000; margin: 0 0 15px 0;">
+                 <div class="col-lg-12 grid-margin stretch-card">
+                  <div class="card" style="margin-top: -15px; overflow-x: auto; width: 100%;">
+                    <div class="card-body">
+                      <div class="page-header">
+                        <h5>Qualification</h5>
+                      </div>
+                      <table class="table">
+                       
+                        <tbody>
+                         <tr>
+									
+					<td>
+						<label>Education Level:</label>
+					</td>
+									
+					<td>
+						<label>Graduation</label>
+					</td>
+					<td>
+						<label>Qualification :</label>
+					</td>	
+					<td>
+						<label>BE</label>
+					</td>	
+						
+				</tr>
+                          <tr>
+					
+					<td>
+						<label>University: </label>
+					</td>
+					
+				
+					
+					<td>
+						<label>SSPU University</label>
+					</td>
+					<td>
+						<label>Percentage / CGPA / Grade:</label>
+					</td>	
+					<td>
+						<label>8.5</label>
+					</td>
+										
+				</tr>
+                          <tr>
+					
+					<td>
+						<label>Specialization</label>
+					</td>
+					
+								
+					<td>
+						<label>Computer Science</label>
+					</td>
+					<td>
+						<label>Qualification status:</label>
+					</td>
+					<td>
+						<label>Passed</label>
+					</td>	
+									
+				</tr>
+                <tr>
+					
+					<td>
+						<label>Start month-year:</label>
+					</td>
+					
+							
+					<td>
+						<label>Aug-2012</label>
+					</td>
+					<td>
+						<label>End month-year:</label>
+					</td>	
+				     <td>
+						<label>June-2016</label>
+					</td>	
+						
+				</tr>
+        <tr>
+					
+					<td>
+						<label>Selection Category::</label>
+					</td>
+					
+							
+					<td>
+						<label>GEN</label>
+					</td>
+					<td>
+						<label>PwD:</label>
+					</td>	
+				     <td>
+						<label>Yes</label>
+					</td>	
+						
+				</tr>
+         <tr>
+					
+					<td>
+						<label>Pwd Category::</label>
+					</td>
+					
+							
+					<td>
+						<label>Deaf-Mute</label>
+					</td>
+					<td>
+						<label>PwD Percent:</label>
+					</td>	
+				     <td>
+						<label>40</label>
+					</td>	
+						
+				</tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                 <hr style="border:1px solid #000; margin: 0 0 15px 0;">
+                  <div class="col-lg-12 grid-margin stretch-card">
+                  <div class="card" style="margin-top: -15px; overflow-x: auto; width: 100%;">
+                    <div class="card-body">
+                      <div class="page-header">
+                        <h5>Work Experience</h5>
+                      </div>
+                      <table class="table">
+                       
+                        <tbody>
+                         <tr>
+									
+					<td>
+						<label>Organization/Institution /Agency :</label>
+					</td>
+									
+					<td>
+						<label>Infosys</label>
+					</td>
+					<td>
+						<label>Previous Employee ID:</label>
+					</td>	
+					<td>
+						<label>ID4001
+</label>
+					</td>	
+						
+				</tr>
+                          <tr>
+					
+					<td>
+						<label>Joining date: </label>
+					</td>
+					
+				
+					
+					<td>
+						<label>24-Jan-21</label>
+					</td>
+					<td>
+						<label>Leaving date:</label>
+					</td>	
+					<td>
+						<label>23-Sep-23</label>
+					</td>
+										
+				</tr>
+                          <tr>
+					
+					<td>
+						<label>Joined as designation:</label>
+					</td>
+					
+								
+					<td>
+						<label>Developer</label>
+					</td>
+					<td>
+						<label>Last Designation:</label>
+					</td>
+					<td>
+						<label>Developer</label>
+					</td>	
+									
+				</tr>
+                <tr>
+					
+					<td>
+						<label>Last Drawn CTC (Monthly):</label>
+					</td>
+					
+							
+					<td>
+						<label>2,50,000/-</label>
+					</td>
+					<td>
+						<label>Reason for Leaving:</label>
+					</td>	
+				     <td>
+						<label>No salary increment</label>
+					</td>	
+						
+				</tr>
+        <tr> 
+          <td><strong> Supervisor Details</strong></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+					
+					<td>
+						<label>Supervisor Name::</label>
+					</td>
+					
+							
+					<td>
+						<label>Mr. Darshan Patil</label>
+					</td>
+					<td>
+						<label>Mobile No.:</label>
+					</td>	
+				     <td>
+						<label>9436543210</label>
+					</td>	
+						
+				</tr>
+         <tr>
+					
+					<td>
+						<label>Landline No.:</label>
+					</td>
+					
+							
+					<td>
+						<label>020-25634525
+</label>
+					</td>
+					<td>
+						<label>	
+Email ID :</label>
+					</td>	
+				     <td>
+						<label>darshan.p@gmail.com</label>
+					</td>	
+						
+				</tr>
+         <tr> 
+          <td><strong> Professional References</strong></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+         <tr>
+					
+					<td>
+						<label>Name:</label>
+					</td>
+					
+							
+					<td>
+						<label>Mr. Kunal Jagtap</label>
+					</td>
+					<td>
+						<label>	
+Organization Name :</label>
+					</td>	
+				     <td>
+						<label>Infosys</label>
+					</td>	
+						
+				</tr>
+         <tr>
+					
+					<td>
+						<label>Relationship :</label>
+					</td>
+					
+							
+					<td>
+						<label>-
+</label>
+					</td>
+					<td>
+						<label>	
+Designation :</label>
+					</td>	
+				     <td>
+						<label>Managing Director</label>
+					</td>	
+          </tr>
+          <tr>
+            <td>
+						<label>	
+Contact Number  :</label>
+					</td>	
+          
+				     <td>
+						<label>8965659643</label>
+					</td>	
+          <td>
+						<label>	
+Email ID  :</label>
+					</td>	
+				     <td>
+						<label>kunalJ@gmail.com</label>
+					</td>	
+          </tr>
+						
+				
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
                       </div>
                     </div>
                   </div>
@@ -2033,7 +2256,7 @@
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                        Personal Information
+                        Leave
                       </button>
                     </h2>
                     <div
@@ -2043,1085 +2266,135 @@
                       data-bs-parent="#accordionExample"
                     >
                       <div class="accordion-body">
-                        <div class="row">
-                          <form class="forms-sample">
-                            <div class="d-flex justify-content-end mb-2">
-                              <button
-                                type="button"
-                                id="editpInfoBtn"
-                                class="btn btn-primary"
-                              >
-                                Edit
-                              </button>
-                            </div>
-                            <div class="row">
-                              <!-- Employee ID -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="employeeId">Employee ID</label>
-                                  <!-- <span class="text-danger">*</span> -->
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="employeeId"
-                                    placeholder="Enter Employee ID"
-                                    disabled
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- uploadPhoto -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="uploadPhoto">Upload Photo</label>
-                                  <!-- <span class="text-danger">*</span> -->
-                                  <input
-                                    type="file"
-                                    class="form-control"
-                                    id="uploadPhoto"
-                                    placeholder="Upload Photo"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <!-- Title -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="title">Nationality</label>
-                                  <span class="text-danger">*</span>
-                                  <select
-                                    class="form-select"
-                                    id="nationality"
-                                    name="nationality"
-                                    required
-                                  >
-                                    <option value="">Select</option>
-                                    <option value="Afghan">Afghan</option>
-                                    <option value="Albanian">Albanian</option>
-                                    <option value="Algerian">Algerian</option>
-                                    <option value="American">American</option>
-                                    <option value="Andorran">Andorran</option>
-                                    <option value="Angolan">Angolan</option>
-                                    <option value="Argentinian">
-                                      Argentinian
-                                    </option>
-                                    <option value="Armenian">Armenian</option>
-                                    <option value="Australian">
-                                      Australian
-                                    </option>
-                                    <option value="Austrian">Austrian</option>
-                                    <option value="Bangladeshi">
-                                      Bangladeshi
-                                    </option>
-                                    <option value="Belgian">Belgian</option>
-                                    <option value="Brazilian">Brazilian</option>
-                                    <option value="British">British</option>
-                                    <option value="Bulgarian">Bulgarian</option>
-                                    <option value="Cambodian">Cambodian</option>
-                                    <option value="Cameroonian">
-                                      Cameroonian
-                                    </option>
-                                    <option value="Canadian">Canadian</option>
-                                    <option value="Chilean">Chilean</option>
-                                    <option value="Chinese">Chinese</option>
-                                    <option value="Colombian">Colombian</option>
-                                    <option value="Croatian">Croatian</option>
-                                    <option value="Cuban">Cuban</option>
-                                    <option value="Czech">Czech</option>
-                                    <option value="Danish">Danish</option>
-                                    <option value="Dutch">Dutch</option>
-                                    <option value="Egyptian">Egyptian</option>
-                                    <option value="Emirati">Emirati</option>
-                                    <option value="English">English</option>
-                                    <option value="Ethiopian">Ethiopian</option>
-                                    <option value="Filipino">Filipino</option>
-                                    <option value="Finnish">Finnish</option>
-                                    <option value="French">French</option>
-                                    <option value="Georgian">Georgian</option>
-                                    <option value="German">German</option>
-                                    <option value="Greek">Greek</option>
-                                    <option value="Hungarian">Hungarian</option>
-                                    <option value="Icelandic">Icelandic</option>
-                                    <option value="Indian">Indian</option>
-                                    <option value="Indonesian">
-                                      Indonesian
-                                    </option>
-                                    <option value="Iranian">Iranian</option>
-                                    <option value="Iraqi">Iraqi</option>
-                                    <option value="Irish">Irish</option>
-                                    <option value="Israeli">Israeli</option>
-                                    <option value="Italian">Italian</option>
-                                    <option value="Japanese">Japanese</option>
-                                    <option value="Jordanian">Jordanian</option>
-                                    <option value="Kenyan">Kenyan</option>
-                                    <option value="Kuwaiti">Kuwaiti</option>
-                                    <option value="Lebanese">Lebanese</option>
-                                    <option value="Libyan">Libyan</option>
-                                    <option value="Malaysian">Malaysian</option>
-                                    <option value="Mexican">Mexican</option>
-                                    <option value="Moroccan">Moroccan</option>
-                                    <option value="Nepalese">Nepalese</option>
-                                    <option value="New Zealander">
-                                      New Zealander
-                                    </option>
-                                    <option value="Nigerian">Nigerian</option>
-                                    <option value="Norwegian">Norwegian</option>
-                                    <option value="Pakistani">Pakistani</option>
-                                    <option value="Palestinian">
-                                      Palestinian
-                                    </option>
-                                    <option value="Peruvian">Peruvian</option>
-                                    <option value="Polish">Polish</option>
-                                    <option value="Portuguese">
-                                      Portuguese
-                                    </option>
-                                    <option value="Qatari">Qatari</option>
-                                    <option value="Romanian">Romanian</option>
-                                    <option value="Russian">Russian</option>
-                                    <option value="Saudi">Saudi</option>
-                                    <option value="Scottish">Scottish</option>
-                                    <option value="Serbian">Serbian</option>
-                                    <option value="Singaporean">
-                                      Singaporean
-                                    </option>
-                                    <option value="South African">
-                                      South African
-                                    </option>
-                                    <option value="South Korean">
-                                      South Korean
-                                    </option>
-                                    <option value="Spanish">Spanish</option>
-                                    <option value="Sri Lankan">
-                                      Sri Lankan
-                                    </option>
-                                    <option value="Sudanese">Sudanese</option>
-                                    <option value="Swedish">Swedish</option>
-                                    <option value="Swiss">Swiss</option>
-                                    <option value="Syrian">Syrian</option>
-                                    <option value="Taiwanese">Taiwanese</option>
-                                    <option value="Tanzanian">Tanzanian</option>
-                                    <option value="Thai">Thai</option>
-                                    <option value="Tunisian">Tunisian</option>
-                                    <option value="Turkish">Turkish</option>
-                                    <option value="Ugandan">Ugandan</option>
-                                    <option value="Ukrainian">Ukrainian</option>
-                                    <option value="Uruguayan">Uruguayan</option>
-                                    <option value="Venezuelan">
-                                      Venezuelan
-                                    </option>
-                                    <option value="Vietnamese">
-                                      Vietnamese
-                                    </option>
-                                    <option value="Welsh">Welsh</option>
-                                    <option value="Yemeni">Yemeni</option>
-                                    <option value="Zambian">Zambian</option>
-                                    <option value="Zimbabwean">
-                                      Zimbabwean
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-
-                              <!-- Maritial Status -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="maritialStatus"
-                                    >Maritial Status</label
-                                  >
-                                  <span class="text-danger">*</span>
-                                  <select
-                                    class="form-select"
-                                    id="maritialStatus"
-                                    required
-                                  >
-                                    <option value="">Select</option>
-                                    <option value="Married">Married</option>
-                                    <option value="Single">Single</option>
-                                    <option value="Divorcee">Divorcee</option>
-                                    <option value="Separate">Separate</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <!-- Middle Name -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="Gender"
-                                    >Gender
-                                    <span class="text-danger">*</span></label
-                                  >
-                                  <div
-                                    style="
-                                      display: flex;
-                                      align-items: center;
-                                      gap: 20px;
-                                      margin-top: 8px;
-                                    "
-                                  >
-                                    <label
-                                      style="
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 5px;
-                                      "
-                                    >
-                                      <input
-                                        type="radio"
-                                        name="Gender"
-                                        id="Male"
-                                        value="Male"
-                                        required
-                                      />
-                                      Male
-                                    </label>
-                                    <label
-                                      style="
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 5px;
-                                      "
-                                    >
-                                      <input
-                                        type="radio"
-                                        name="Gender"
-                                        id="Female"
-                                        value="Female"
-                                      />
-                                      Female
-                                    </label>
-                                    <label
-                                      style="
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 5px;
-                                      "
-                                    >
-                                      <input
-                                        type="radio"
-                                        name="Gender"
-                                        id="Other"
-                                        value="Other"
-                                      />
-                                      Other
-                                    </label>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <!-- Last Name -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="mobileNumber"
-                                    >Mobile Number</label
-                                  >
-                                  <span class="text-danger">*</span>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="mobileNumber"
-                                    placeholder="Enter Mobile Number"
-                                    required
-                                  />
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <!-- Date of Birth -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="landlineNumber"
-                                    >Landline Number</label
-                                  >
-                                  <span class="text-danger">*</span>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="landlineNumber"
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- Identification Document Number -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="email">Email</label>
-                                  <span class="text-danger">*</span>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="email"
-                                    placeholder="Enter Email"
-                                    required
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <!-- <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="exampleSelectGender">Gender</label>
-                            <span class="text-danger">*</span>
-                            <select
-                              class="form-select"
-                              id="exampleSelectGender"
-                            >
-                              <option>Male</option>
-                              <option>Female</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="department"
-                              >Department
-                              <span class="text-danger">*</span></label
-                            >
-                            <select
-                              class="form-select"
-                              id="department"
-                              required
-                            >
-                              <option value="">Select Department</option>
-                              <option value="hr">Human Resources</option>
-                              <option value="it">IT</option>
-                              <option value="sales">Sales</option>
-                              <option value="marketing">Marketing</option>
-                              <option value="finance">Finance</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div> -->
-                            <div class="row">
-                              <!-- PwD  -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="pwd"
-                                    >PwD
-                                    <span class="text-danger">*</span></label
-                                  >
-                                  <div
-                                    style="
-                                      display: flex;
-                                      align-items: center;
-                                      gap: 20px;
-                                      margin-top: 8px;
-                                    "
-                                  >
-                                    <label
-                                      style="
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 5px;
-                                      "
-                                    >
-                                      <input
-                                        type="radio"
-                                        name="pwd"
-                                        id="pwdYes"
-                                        value="yes"
-                                        required
-                                      />
-                                      Yes
-                                    </label>
-                                    <label
-                                      style="
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 5px;
-                                      "
-                                    >
-                                      <input
-                                        type="radio"
-                                        name="pwd"
-                                        id="pwdNo"
-                                        value="no"
-                                      />
-                                      No
-                                    </label>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <!-- Father's / Husband's Middle Name -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="pwdCategory">PwD Category</label>
-                                  <select
-                                    class="form-select"
-                                    id="pwdCategory"
-                                    required
-                                  >
-                                    <option value="None">None</option>
-                                    <option value="Other">Other</option>
-                                    <option value="Deaf-Mute">Deaf-Mute</option>
-                                    <option value="Blind">Blind</option>
-                                    <option value="Orthopedically Impaired">
-                                      Orthopedically Impaired
-                                    </option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <!-- PwD Percentage -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="pwdPercentage"
-                                    >PwD Percentage</label
-                                  >
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="pwdPercentage"
-                                    placeholder="Enter PwD Percentage"
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- Mother's First Name -->
-                              <div class="col-md-6"></div>
-                            </div>
-
-                            <!-- Buttons -->
-                            <div
-                              class="text-end"
-                              style="display: none"
-                              id="pInfoBtn"
-                            >
-                              <button
-                                id="savepInfoBtn"
-                                class="btn btn-gradient-primary me-2"
-                              >
-                                Save
-                              </button>
-                              <button
-                                id="cancelpInfoBtn"
-                                class="btn btn-gradient-light"
-                              >
-                                Cancel
-                              </button>
-                            </div>
-                          </form>
-                        </div>
+                       <div class="col-lg-12 grid-margin stretch-card">
+                  <div class="card" style="margin-top: -15px; overflow-x: auto; width: 100%;">
+                    <div class="card-body">
+                     
+                      <table class="table">
+                         <thead>
+                        <tr>
+					
+					<th>
+						<label>Leave Type</label>
+					</th>
+									
+					<th>
+						<label>Opening Balance</label>
+					</th>	
+					<th>
+						<label>Accural</label>
+					</th>
+	                 <th>
+						<label>Taken</label>
+					</th>					
+					<th>
+						<label>Adjustment</label>
+					</th>		
+          <th>
+						<label>Balance</label>
+					</th>				
+				</tr>
+                        </thead>
+                       
+                        <tbody>
+                         <tr>
+									
+					<td>
+						<label>Casual Leave</label>
+					</td>
+									
+					<td>
+						<label>20
+</label>
+					</td>
+					<td>
+						<label>	
+10</label>
+					</td>	
+					<td>
+						<label>	
+5</label>
+					</td>	
+           <td>
+						<label>	
+0</label>
+					</td>	
+         <td>
+						<label>	
+25</label>
+					</td>	
+						
+				</tr>
+         <tr>
+									
+					<td>
+						<label>Privilege Leave</label>
+					</td>
+									
+					<td>
+						<label>5
+</label>
+					</td>
+					<td>
+						<label>	
+10</label>
+					</td>	
+					<td>
+						<label>	
+0</label>
+					</td>	
+           <td>
+						<label>	
+0</label>
+					</td>	
+         <td>
+						<label>	
+15</label>
+					</td>	
+						
+				</tr>
+         <tr>
+									
+					<td>
+						<label>Medical  Leave</label>
+					</td>
+									
+					<td>
+						<label>10
+</label>
+					</td>
+					<td>
+						<label>	
+10</label>
+					</td>	
+					<td>
+						<label>	
+8</label>
+					</td>	
+           <td>
+						<label>	
+0</label>
+					</td>	
+         <td>
+						<label>	
+2</label>
+					</td>	
+						
+				</tr>
+                         
+                         
+               
+       
+        
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                      >
-                        Employment Information
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingThree"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="row">
-                          <form class="forms-sample">
-                            <div class="d-flex justify-content-end mb-2">
-                              <button
-                                type="button"
-                                id="editeInfoBtn"
-                                class="btn btn-primary"
-                              >
-                                Edit
-                              </button>
-                            </div>
-                            <div class="row">
-                              <!-- Employee ID -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="employeeId">Employee ID</label>
-                                  <!-- <span class="text-danger">*</span> -->
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="employeeId"
-                                    placeholder="Enter Employee ID"
-                                    disabled
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- uploadPhoto -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="companyEmail"
-                                    >Company Email</label
-                                  >
-                                  <!-- <span class="text-danger">*</span> -->
-                                  <input
-                                    type="email"
-                                    class="form-control"
-                                    id="companyEmail"
-                                    placeholder="Enter Company Email"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <!-- Group -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="group">Group</label>
-                                  <span class="text-danger">*</span>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="group"
-                                    placeholder="Enter Group"
-                                    disabled
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- Company -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="company">Company</label>
-                                  <span class="text-danger">*</span>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="company"
-                                    placeholder="Enter Company"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <!-- BU -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="BU"
-                                    >BU
-                                    <span class="text-danger">*</span></label
-                                  >
-                                  <select class="form-select" id="BU" required>
-                                    <option value="">Select</option>
-                                    <option value="Manufacturing">
-                                      Manufacturing
-                                    </option>
-                                    <option value="Health Service">
-                                      Health Service
-                                    </option>
-                                    <option value="Infrastructure">
-                                      Infrastructure
-                                    </option>
-                                    <option value="Insurance">Insurance</option>
-                                  </select>
-                                </div>
-                              </div>
-
-                              <!-- department -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="department"
-                                    >Department
-                                    <span class="text-danger">*</span></label
-                                  >
-                                  <select
-                                    class="form-select"
-                                    id="department"
-                                    required
-                                  >
-                                    <option value="">Select Department</option>
-                                    <option value="hr">Human Resources</option>
-                                    <option value="it">IT</option>
-                                    <option value="sales">Sales</option>
-                                    <option value="marketing">Marketing</option>
-                                    <option value="finance">Finance</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <!-- Designation -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="Designation"
-                                    >Designation
-                                    <span class="text-danger">*</span></label
-                                  >
-                                  <select
-                                    class="form-select"
-                                    id="Designation"
-                                    required
-                                  >
-                                    <option value="">Select</option>
-                                    <option value="hr">HR</option>
-                                    <option value="manager">Manager</option>
-                                    <option value="developer">Developer</option>
-                                  </select>
-                                </div>
-                              </div>
-
-                              <!-- Identification Document Number -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="level">Level</label>
-
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="level"
-                                    placeholder="L4"
-                                    disabled
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <!-- Location -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="location">Location</label>
-                                  <span class="text-danger">*</span>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="location"
-                                    placeholder="Enter Location"
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- City -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="city">City</label>
-                                  <span class="text-danger">*</span>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="city"
-                                    placeholder="Enter City"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <!-- State -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="state">State</label>
-                                  <span class="text-danger">*</span>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="state"
-                                    placeholder="Enter State"
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- Country -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="country">Country</label>
-                                  <span class="text-danger">*</span>
-                                  <select
-                                    id="country"
-                                    class="form-select"
-                                    name="country"
-                                    required
-                                  >
-                                    <option value="">Select</option>
-                                    <option value="Afghanistan">
-                                      Afghanistan
-                                    </option>
-                                    <option value="Albania">Albania</option>
-                                    <option value="Algeria">Algeria</option>
-                                    <option value="Andorra">Andorra</option>
-                                    <option value="Angola">Angola</option>
-                                    <option value="Argentina">Argentina</option>
-                                    <option value="Armenia">Armenia</option>
-                                    <option value="Australia">Australia</option>
-                                    <option value="Austria">Austria</option>
-                                    <option value="Azerbaijan">
-                                      Azerbaijan
-                                    </option>
-                                    <option value="Bahamas">Bahamas</option>
-                                    <option value="Bahrain">Bahrain</option>
-                                    <option value="Bangladesh">
-                                      Bangladesh
-                                    </option>
-                                    <option value="Barbados">Barbados</option>
-                                    <option value="Belarus">Belarus</option>
-                                    <option value="Belgium">Belgium</option>
-                                    <option value="Belize">Belize</option>
-                                    <option value="Benin">Benin</option>
-                                    <option value="Bhutan">Bhutan</option>
-                                    <option value="Bolivia">Bolivia</option>
-                                    <option value="Bosnia and Herzegovina">
-                                      Bosnia and Herzegovina
-                                    </option>
-                                    <option value="Botswana">Botswana</option>
-                                    <option value="Brazil">Brazil</option>
-                                    <option value="Brunei">Brunei</option>
-                                    <option value="Bulgaria">Bulgaria</option>
-                                    <option value="Burkina Faso">
-                                      Burkina Faso
-                                    </option>
-                                    <option value="Burundi">Burundi</option>
-                                    <option value="Cambodia">Cambodia</option>
-                                    <option value="Cameroon">Cameroon</option>
-                                    <option value="Canada">Canada</option>
-                                    <option value="Cape Verde">
-                                      Cape Verde
-                                    </option>
-                                    <option value="Chad">Chad</option>
-                                    <option value="Chile">Chile</option>
-                                    <option value="China">China</option>
-                                    <option value="Colombia">Colombia</option>
-                                    <option value="Comoros">Comoros</option>
-                                    <option value="Congo">Congo</option>
-                                    <option value="Costa Rica">
-                                      Costa Rica
-                                    </option>
-                                    <option value="Croatia">Croatia</option>
-                                    <option value="Cuba">Cuba</option>
-                                    <option value="Cyprus">Cyprus</option>
-                                    <option value="Czech Republic">
-                                      Czech Republic
-                                    </option>
-                                    <option value="Denmark">Denmark</option>
-                                    <option value="Djibouti">Djibouti</option>
-                                    <option value="Dominican Republic">
-                                      Dominican Republic
-                                    </option>
-                                    <option value="Ecuador">Ecuador</option>
-                                    <option value="Egypt">Egypt</option>
-                                    <option value="El Salvador">
-                                      El Salvador
-                                    </option>
-                                    <option value="Estonia">Estonia</option>
-                                    <option value="Ethiopia">Ethiopia</option>
-                                    <option value="Fiji">Fiji</option>
-                                    <option value="Finland">Finland</option>
-                                    <option value="France">France</option>
-                                    <option value="Gabon">Gabon</option>
-                                    <option value="Gambia">Gambia</option>
-                                    <option value="Georgia">Georgia</option>
-                                    <option value="Germany">Germany</option>
-                                    <option value="Ghana">Ghana</option>
-                                    <option value="Greece">Greece</option>
-                                    <option value="Greenland">Greenland</option>
-                                    <option value="Guatemala">Guatemala</option>
-                                    <option value="Guinea">Guinea</option>
-                                    <option value="Haiti">Haiti</option>
-                                    <option value="Honduras">Honduras</option>
-                                    <option value="Hungary">Hungary</option>
-                                    <option value="Iceland">Iceland</option>
-                                    <option value="India">India</option>
-                                    <option value="Indonesia">Indonesia</option>
-                                    <option value="Iran">Iran</option>
-                                    <option value="Iraq">Iraq</option>
-                                    <option value="Ireland">Ireland</option>
-                                    <option value="Israel">Israel</option>
-                                    <option value="Italy">Italy</option>
-                                    <option value="Jamaica">Jamaica</option>
-                                    <option value="Japan">Japan</option>
-                                    <option value="Jordan">Jordan</option>
-                                    <option value="Kazakhstan">
-                                      Kazakhstan
-                                    </option>
-                                    <option value="Kenya">Kenya</option>
-                                    <option value="Kuwait">Kuwait</option>
-                                    <option value="Laos">Laos</option>
-                                    <option value="Latvia">Latvia</option>
-                                    <option value="Lebanon">Lebanon</option>
-                                    <option value="Liberia">Liberia</option>
-                                    <option value="Libya">Libya</option>
-                                    <option value="Lithuania">Lithuania</option>
-                                    <option value="Luxembourg">
-                                      Luxembourg
-                                    </option>
-                                    <option value="Madagascar">
-                                      Madagascar
-                                    </option>
-                                    <option value="Malawi">Malawi</option>
-                                    <option value="Malaysia">Malaysia</option>
-                                    <option value="Maldives">Maldives</option>
-                                    <option value="Mali">Mali</option>
-                                    <option value="Malta">Malta</option>
-                                    <option value="Mauritania">
-                                      Mauritania
-                                    </option>
-                                    <option value="Mauritius">Mauritius</option>
-                                    <option value="Mexico">Mexico</option>
-                                    <option value="Moldova">Moldova</option>
-                                    <option value="Monaco">Monaco</option>
-                                    <option value="Mongolia">Mongolia</option>
-                                    <option value="Morocco">Morocco</option>
-                                    <option value="Mozambique">
-                                      Mozambique
-                                    </option>
-                                    <option value="Myanmar">Myanmar</option>
-                                    <option value="Namibia">Namibia</option>
-                                    <option value="Nepal">Nepal</option>
-                                    <option value="Netherlands">
-                                      Netherlands
-                                    </option>
-                                    <option value="New Zealand">
-                                      New Zealand
-                                    </option>
-                                    <option value="Nicaragua">Nicaragua</option>
-                                    <option value="Niger">Niger</option>
-                                    <option value="Nigeria">Nigeria</option>
-                                    <option value="North Korea">
-                                      North Korea
-                                    </option>
-                                    <option value="Norway">Norway</option>
-                                    <option value="Oman">Oman</option>
-                                    <option value="Pakistan">Pakistan</option>
-                                    <option value="Palestine">Palestine</option>
-                                    <option value="Panama">Panama</option>
-                                    <option value="Papua New Guinea">
-                                      Papua New Guinea
-                                    </option>
-                                    <option value="Paraguay">Paraguay</option>
-                                    <option value="Peru">Peru</option>
-                                    <option value="Philippines">
-                                      Philippines
-                                    </option>
-                                    <option value="Poland">Poland</option>
-                                    <option value="Portugal">Portugal</option>
-                                    <option value="Qatar">Qatar</option>
-                                    <option value="Romania">Romania</option>
-                                    <option value="Russia">Russia</option>
-                                    <option value="Rwanda">Rwanda</option>
-                                    <option value="Saudi Arabia">
-                                      Saudi Arabia
-                                    </option>
-                                    <option value="Senegal">Senegal</option>
-                                    <option value="Serbia">Serbia</option>
-                                    <option value="Singapore">Singapore</option>
-                                    <option value="Slovakia">Slovakia</option>
-                                    <option value="Slovenia">Slovenia</option>
-                                    <option value="Somalia">Somalia</option>
-                                    <option value="South Africa">
-                                      South Africa
-                                    </option>
-                                    <option value="South Korea">
-                                      South Korea
-                                    </option>
-                                    <option value="Spain">Spain</option>
-                                    <option value="Sri Lanka">Sri Lanka</option>
-                                    <option value="Sudan">Sudan</option>
-                                    <option value="Suriname">Suriname</option>
-                                    <option value="Sweden">Sweden</option>
-                                    <option value="Switzerland">
-                                      Switzerland
-                                    </option>
-                                    <option value="Syria">Syria</option>
-                                    <option value="Taiwan">Taiwan</option>
-                                    <option value="Tanzania">Tanzania</option>
-                                    <option value="Thailand">Thailand</option>
-                                    <option value="Togo">Togo</option>
-                                    <option value="Tunisia">Tunisia</option>
-                                    <option value="Turkey">Turkey</option>
-                                    <option value="Uganda">Uganda</option>
-                                    <option value="Ukraine">Ukraine</option>
-                                    <option value="United Arab Emirates">
-                                      United Arab Emirates
-                                    </option>
-                                    <option value="United Kingdom">
-                                      United Kingdom
-                                    </option>
-                                    <option value="United States">
-                                      United States
-                                    </option>
-                                    <option value="Uruguay">Uruguay</option>
-                                    <option value="Uzbekistan">
-                                      Uzbekistan
-                                    </option>
-                                    <option value="Venezuela">Venezuela</option>
-                                    <option value="Vietnam">Vietnam</option>
-                                    <option value="Yemen">Yemen</option>
-                                    <option value="Zambia">Zambia</option>
-                                    <option value="Zimbabwe">Zimbabwe</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <!-- Date of Joining -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="DateOfJoining"
-                                    >Date of Joining</label
-                                  >
-                                  <span class="text-danger">*</span>
-                                  <input
-                                    type="date"
-                                    class="form-control"
-                                    id="DateOfJoining"
-                                    placeholder="Enter Date of Joining"
-                                  />
-                                </div>
-                              </div>
-
-                              <!-- CTC -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="ctc">CTC</label>
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    id="ctc"
-                                    placeholder="Enter CTC "
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                            <!-- <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="exampleSelectGender">Gender</label>
-                            <span class="text-danger">*</span>
-                            <select
-                              class="form-select"
-                              id="exampleSelectGender"
-                            >
-                              <option>Male</option>
-                              <option>Female</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="department"
-                              >Department
-                              <span class="text-danger">*</span></label
-                            >
-                            <select
-                              class="form-select"
-                              id="department"
-                              required
-                            >
-                              <option value="">Select Department</option>
-                              <option value="hr">Human Resources</option>
-                              <option value="it">IT</option>
-                              <option value="sales">Sales</option>
-                              <option value="marketing">Marketing</option>
-                              <option value="finance">Finance</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div> -->
-                            <div class="row">
-                              <!-- Type of Employment  -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="TypeOfEmployment"
-                                    >Type of Employment
-                                    <span class="text-danger">*</span></label
-                                  >
-                                  <div
-                                    style="
-                                      display: flex;
-                                      align-items: center;
-                                      gap: 20px;
-                                      margin-top: 8px;
-                                    "
-                                  >
-                                    <label
-                                      style="
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 5px;
-                                      "
-                                    >
-                                      <input
-                                        type="radio"
-                                        name="TypeOfEmployment"
-                                        id="Permanent"
-                                        value="Permanent"
-                                        required
-                                      />
-                                      Permanent
-                                    </label>
-                                    <label
-                                      style="
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 5px;
-                                      "
-                                    >
-                                      <input
-                                        type="radio"
-                                        name="TypeOfEmployment"
-                                        id="Contract"
-                                        value="Contract"
-                                      />
-                                      Contract
-                                    </label>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <!-- Notice Period (Month) -->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="noticePeriod"
-                                    >Notice Period (Month)</label
-                                  >
-                                  <select
-                                    class="form-select"
-                                    id="noticePeriod"
-                                    required
-                                  >
-                                    <option value="1">1 Month</option>
-                                    <option value="2">2 Month</option>
-                                    <option value="3">3 Month</option>
-                                  </select>
-                                </div>
-                              </div>
-                            </div>
-
-                            <!-- Buttons -->
-                            <div
-                              class="text-end"
-                              style="display: none"
-                              id="eInfoBtn"
-                            >
-                              <button
-                                id="saveeInfoBtn"
-                                class="btn btn-gradient-primary me-2"
-                              >
-                                Save
-                              </button>
-                              <button
-                                id="canceleInfoBtn"
-                                class="btn btn-gradient-light"
-                              >
-                                Cancel
-                              </button>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
