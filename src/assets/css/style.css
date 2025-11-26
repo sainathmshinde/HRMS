@@ -30152,3 +30152,23 @@ body.salary-template-page .formBlock .form-edit {
 .sidebar .nav > .nav-item:not(.nav-category):not(.nav-profile) > .nav-link {
   border-radius: 6px;
 }
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.action-buttons button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer !important;
+}
+
+.date-filter input.form-control {
+    width: 100% !important;
+}
+.small-stats-table td {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+}
