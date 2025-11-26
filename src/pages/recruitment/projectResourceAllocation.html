@@ -85,15 +85,145 @@
           </button>
           <div class="search-field d-none d-md-block">
             <form class="d-flex align-items-center h-100" action="#">
-              <div class="input-group">
-                <div class="input-group-prepend bg-transparent">
-                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
+              <div
+                class="search-field d-none d-md-block position-relative"
+                style="max-width: 420px"
+              >
+                <form
+                  id="searchForm"
+                  class="d-flex align-items-center h-100"
+                  novalidate
+                >
+                  <div class="input-group w-100">
+                    <span
+                      class="input-group-text bg-transparent border-0"
+                      id="searchIcon"
+                      aria-hidden="true"
+                    >
+                      <i class="mdi mdi-magnify"></i>
+                    </span>
+
+                    <input
+                      type="text"
+                      id="searchInput"
+                      class="form-control bg-transparent border-0"
+                      placeholder="Search..."
+                      autocomplete="off"
+                      aria-label="Search"
+                      aria-haspopup="true"
+                      aria-controls="searchResultCard"
+                    />
+                  </div>
+                </form>
+
+                <!-- Result Card (hidden by default) -->
+
+                <div
+                  id="searchResultCard"
+                  class="card shadow position-absolute d-none"
+                  role="dialog"
+                  aria-modal="false"
+                  aria-labelledby="resultName"
+                  style="
+                    z-index: 2000;
+                    top: 48px;
+                    left: 30px;
+                    width: 300px;
+                    border-radius: 14px;
+                    background: #ffffff;
+                    border: 1px solid rgba(0, 0, 0, 0.06);
+                    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
+                    padding: 6px 0;
+                    transition: all 0.25s ease;
+                  "
+                >
+                  <div
+                    class="card-body d-flex gap-3 align-items-start"
+                    style="padding: 18px 20px"
+                  >
+                    <img
+                      src="/src/assets/images/HarshalYadav.jpeg"
+                      class="rounded-circle"
+                      width="105"
+                      height="105"
+                      style="
+                        border: 3px solid rgba(37, 99, 235, 0.12);
+                        transition: transform 0.25s ease;
+                      "
+                      onmouseover="this.style.transform='scale(1.06)'"
+                      onmouseout="this.style.transform='scale(1)'"
+                    />
+
+                    <div style="flex: 1">
+                      <h5
+                        id="resultName"
+                        class="mb-3"
+                        style="
+                          font-size: 18px;
+                          font-weight: 500;
+                          color: #0f172a;
+                          margin-bottom: 10px;
+                        "
+                      >
+                        Harshad Yadav
+                      </h5>
+
+                      <a
+                        href="/src/pages/employee/employmentInfo.html"
+                        class="d-block small"
+                        style="
+                          padding: 8px 8px;
+                          font-size: 14px;
+                          border-radius: 6px;
+                          transition: all 0.2s ease;
+                          text-decoration: none;
+                          color: #9333ea;
+                          font-weight: 700;
+                        "
+                        onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+                        onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                      >
+                        View Profile
+                      </a>
+
+                      <a
+                        href="/src/pages/employee/employeeSummary.html"
+                        class="d-block small"
+                        style="
+                          padding: 8px 8px;
+                          font-size: 14px;
+                          border-radius: 6px;
+                          transition: all 0.2s ease;
+                          text-decoration: none;
+                          color: #9333ea;
+                          font-weight: 700;
+                        "
+                        onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+                        onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                      >
+                        Summary
+                      </a>
+
+                      <a
+                        href="/src/pages/leaves/approvedLeave.html"
+                        class="d-block small"
+                        style="
+                          padding: 8px 8px;
+                          font-size: 14px;
+                          border-radius: 6px;
+                          transition: all 0.2s ease;
+                          text-decoration: none;
+                          color: #9333ea;
+                          font-weight: 700;
+                        "
+                        onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+                        onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                      >
+                        Approve Leave
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <input
-                  type="text"
-                  class="form-control bg-transparent border-0"
-                  placeholder="Search..."
-                />
               </div>
             </form>
           </div>
@@ -304,8 +434,8 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
-         <nav class="sidebar sidebar-offcanvas" id="sidebar">
-         <ul class="nav">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -386,7 +516,7 @@
                       Probation
                     </a>
                   </li>
-                  
+
                   <li class="nav-item">
                     <a
                       class="nav-link"
@@ -1583,19 +1713,21 @@
               </div>
             </li>
           </ul>
-            </nav>
+        </nav>
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              
               <h3 class="page-title fixed-title">
-                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-diagram-project"></i></span>
-                 Project Resource Allocation
+                <span
+                  class="page-title-icon bg-gradient-primary text-white me-2"
+                  ><i class="fa-solid fa-diagram-project"></i
+                ></span>
+                Project Resource Allocation
               </h3>
             </div>
 
-            <form class="forms-sample" style="margin-top: 50px;">
+            <form class="forms-sample" style="margin-top: 50px">
               <div class="row">
                 <!-- Financial Year -->
                 <div class="col-md-3">
@@ -1637,8 +1769,11 @@
               </nav>
             </div>
 
-            <div class="col-lg-12 grid-margin stretch-card" style="margin-top: -20px;">
-              <div class="card" style="overflow-x: auto; width: 100%;">
+            <div
+              class="col-lg-12 grid-margin stretch-card"
+              style="margin-top: -20px"
+            >
+              <div class="card" style="overflow-x: auto; width: 100%">
                 <div class="card-body">
                   <table class="table" id="addResource">
                     <thead>
@@ -1656,7 +1791,10 @@
                       <tr>
                         <td>
                           <label
-                            ><input type="text" class="form-control" placeholder="Enter Name"
+                            ><input
+                              type="text"
+                              class="form-control"
+                              placeholder="Enter Name"
                           /></label>
                         </td>
 
@@ -1718,7 +1856,7 @@
           </footer>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
-         
+
           <!-- partial -->
         </div>
         <!-- main-panel ends -->
@@ -1744,6 +1882,105 @@
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
+    <script>
+      (function () {
+        // Configuration
+        const TARGET_NAME = "harshad"; // canonical full name, lowercase
+        const MIN_CHARS_TO_SHOW = 4; // show after >= 4 chars typed
+
+        // Elements
+        const form = document.getElementById("searchForm");
+        const input = document.getElementById("searchInput");
+        const card = document.getElementById("searchResultCard");
+
+        // Utility: show/hide functions
+        function showCard() {
+          if (card.classList.contains("d-none")) {
+            card.classList.remove("d-none");
+            input.setAttribute("aria-expanded", "true");
+            // optionally move focus to the card if you want keyboard navigation
+          }
+        }
+        function hideCard() {
+          if (!card.classList.contains("d-none")) {
+            card.classList.add("d-none");
+            input.setAttribute("aria-expanded", "false");
+          }
+        }
+
+        // 1) Show card when user types >= MIN_CHARS_TO_SHOW
+        input.addEventListener("input", function () {
+          const v = (this.value || "").trim();
+          if (v.length >= MIN_CHARS_TO_SHOW) {
+            showCard();
+          } else {
+            hideCard();
+          }
+        });
+
+        // 2) Handle Enter: prevent form submit and open card when full name OR length >= MIN_CHARS_TO_SHOW
+        input.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {
+            // prevent actual form submission / page reload
+            e.preventDefault();
+
+            const v = (this.value || "").trim().toLowerCase();
+
+            // If typed EXACT full name -> show card
+            if (v === TARGET_NAME) {
+              showCard();
+              // Optional: you could also navigate automatically:
+              // window.location.href = "profile.html";
+              return;
+            }
+
+            // If user typed >= MIN_CHARS_TO_SHOW -> also show
+            if (v.length >= MIN_CHARS_TO_SHOW) {
+              showCard();
+              return;
+            }
+
+            // otherwise ignore enter (do nothing)
+          }
+        });
+
+        // 3) Click outside to close
+        document.addEventListener("click", function (evt) {
+          const target = evt.target;
+          if (!card.contains(target) && target !== input) {
+            hideCard();
+          }
+        });
+
+        // 4) Optional: if user clicks a result link, let normal navigation happen but hide the card
+        card.addEventListener("click", function (evt) {
+          // If they click a link, the browser will navigate — we don't need to do anything
+          // But hide the card to keep UI tidy in case of SPA navigation.
+          hideCard();
+        });
+
+        // 5) Safety: ensure script doesn't break when elements are missing
+        if (!input || !card || !form) {
+          console.warn(
+            "[search] required elements missing: searchInput / searchResultCard / searchForm"
+          );
+        }
+      })();
+    </script>
+    <style>
+      #searchResultCard {
+        border-radius: 10px;
+        min-width: 260px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      }
+      #searchResultCard .card-body {
+        padding: 12px;
+      }
+      #searchInput:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    </style>
     <script>
       document.getElementById("addRes").addEventListener("click", function () {
         const tableBody = document
