@@ -1771,7 +1771,7 @@
                               type="text"
                               class="form-control"
                               id="approverName"
-                              placeholder="Mr. Brian Anderson"
+                              placeholder="Siddharth Pande"
                               disabled
                             />
                           </div>
@@ -1794,121 +1794,100 @@
                         
                         <!-- Action Radio -->
 
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="openingBalance"
-                              >Action
-                              <span class="text-danger">*</span></label
-                            >
-                            <div
-                              style="
-                                display: flex;
-                                align-items: center;
-                                gap: 20px;
-                                margin-top: 8px;
-                              "
-                            >
-                              <label
-                                style="
-                                  display: flex;
-                                  align-items: center;
-                                  gap: 5px;
-                                "
-                              >
-                                <input
-                                  type="radio"
-                                  name="action"
-                                  id="approve"
-                                  value="no"
-                                />
-                                Approve
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="openingBalance">
+                                Action <span class="text-danger">*</span>
                               </label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="firstName">2Up Approver</label>
-                            <select class="form-select" id="title" required>
-                              <option value="Select">Select</option>
-                              <option value="">Mr. George Martin</option>
-                              <option value="">Ms. Susan Carter</option>
-                              <option value="">Mr. David Cutler</option>
-                            </select>
-                          </div>
-                        </div>
-                          <!-- Action Forword Radio -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            
-                            <div
-                              style="
-                                display: flex;
-                                align-items: center;
-                                gap: 20px;
-                                margin-top: 8px;
-                              "
-                            >
-                              <label
-                                style="
-                                  display: flex;
-                                  align-items: center;
-                                  gap: 5px;
-                                "
-                              >
-                                <input
-                                  type="radio"
-                                  name="action"
-                                  id="approve"
-                                  value="no"
-                                />
-                                Forword
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="firstName">Forword To</label>
-                            <select class="form-select" id="title" required>
-                              <option value="Select">Select</option>
-                              <option value="">Mr. George Martin</option>
-                              <option value="">Ms. Susan Carter</option>
-                              <option value="">Mr. David Cutler</option>
-                            </select>
-                          </div>
-                        </div>
-                          <!-- Action Decline Radio -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            
-                            <div
-                              style="
-                                display: flex;
-                                align-items: center;
-                                gap: 20px;
-                                margin-top: 8px;
-                              "
-                            >
-                              <label
-                                style="
-                                  display: flex;
-                                  align-items: center;
-                                  gap: 5px;
-                                "
-                              >
-                                <input
-                                  type="radio"
-                                  name="action"
-                                  id="approve"
-                                  value="no"
-                                />
-                                Decline
-                              </label>
-                            </div>
-                          </div>
-                        </div>
 
+                              <div
+                                style="
+                                  display: flex;
+                                  flex-direction: column;
+                                  gap: 40px;
+                                  margin-top: 8px;
+                                "
+                              >
+                                <!-- Approve -->
+                                <label
+                                  style="
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                  "
+                                >
+                                  <input
+                                    type="radio"
+                                    name="action"
+                                    id="approve"
+                                    value="approve"
+                                  />
+                                  Approve
+                                </label>
+
+                                <!-- Forward -->
+                                <label
+                                  style="
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                  "
+                                >
+                                  <input
+                                    type="radio"
+                                    name="action"
+                                    id="forward"
+                                    value="forward"
+                                  />
+                                  Forward
+                                </label>
+
+                                <!-- Decline -->
+                                <label
+                                  style="
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                  "
+                                >
+                                  <input
+                                    type="radio"
+                                    name="action"
+                                    id="decline"
+                                    value="decline"
+                                  />
+                                  Decline
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- RIGHT SIDE : Dropdowns as it is -->
+                          <div class="col-md-6">
+                            <!-- 2Up Approver -->
+                            <div class="form-group">
+                              <label for="twoUpApprover">2Up Approver</label>
+                              <select class="form-select" id="twoUpApprover" required>
+                                <option value="Select">Select</option>
+                                <option value="">Rohan Patankar</option>
+                                <option value="">Harshad Yadav</option>
+                                <option value="">Vedant Shah</option>
+                              </select>
+                            </div>
+
+                            <!-- Forward To -->
+                            <div class="form-group" style="margin-top: 16px;">
+                              <label for="forwardTo">Forward To</label>
+                              <select class="form-select" id="forwardTo" required>
+                                <option value="Select">Select</option>
+                                <option value="">Aditi Kulkarni</option>
+                                <option value="">Parth Salunke</option>
+                                <option value="">Hrishikesh Patil</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
                         <!-- Father's / Husband's Middle Name -->
                         <div class="col-md-12">
                           <div class="form-group">
