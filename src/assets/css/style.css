@@ -13458,6 +13458,19 @@ fieldset:disabled .ajax-upload-dragdrop .ajax-file-upload,
   border-top: 0;
 }
 
+.dashboard-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: flex-start;
+  height: 100%;
+  /* padding-left: 20px;     */
+   flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);  
+    color: var(--bs-card-color);
+ 
+}
+
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
@@ -18563,7 +18576,6 @@ fieldset:disabled .ajax-upload-dragdrop .ajax-file-upload,
   border-bottom-left-radius: var(--bs-border-radius-pill) !important;
   border-top-left-radius: var(--bs-border-radius-pill) !important;
 }
-
 
 .visible {
   visibility: visible !important;
@@ -24413,11 +24425,7 @@ code {
   border: 0;
   background: #fff;
 }
-.card .card-body {
-  padding: 1rem 2.5rem;
-  margin-top: 10px;
-  
-}
+
 .card .card-body + .card-body {
   padding-top: 1rem;
 }
@@ -29619,12 +29627,10 @@ dl li {
 }
 /*# sourceMappingURL=maps/style.css.map */
 
-
-
 /* ===== Sidebar Darker Text + Scroll ===== */
 
 .sidebar {
-  overflow-y: auto !important;   /* sidebar scrollable */
+  overflow-y: auto !important; /* sidebar scrollable */
   /* max-height: calc(100vh - 70px);  */
   max-height: 100vh;
 }
@@ -29642,7 +29648,7 @@ dl li {
 .sidebar .nav .nav-link,
 .sidebar .menu-title,
 .sidebar .sub-menu .nav-link {
-  color: #2d2d2d !important;      /* ← darker color */
+  color: #2d2d2d !important; /* ← darker color */
   font-weight: 500;
 }
 
@@ -29658,21 +29664,20 @@ dl li {
   color: #000 !important;
 }
 .nav-item .nav-link:hover {
-    background: linear-gradient(135deg, #ff9aeb, #7b5bfa);
-    color: #fff !important;
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
+  background: linear-gradient(135deg, #ff9aeb, #7b5bfa);
+  color: #fff !important;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
 /* --- Sidebar hover override: add this at the END of your final stylesheet --- */
 
 .sidebar .nav .nav-item > a.nav-link {
-  display: flex !important;               /* icon + text same line */
-  align-items: center !important;         /* vertical center */
+  display: flex !important; /* icon + text same line */
+  align-items: center !important; /* vertical center */
   justify-content: space-between !important; /* icon always at right end (तुला हवंय तेच) */
   padding: 0.75rem 1.1rem;
   border-radius: 10px;
 }
-
 
 /* Strong, specific hover rule - loaded last so it overrides existing scss rules */
 .sidebar .nav .nav-item > a.nav-link:hover,
@@ -29685,12 +29690,12 @@ dl li {
 .sticky-header {
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  top: 20px;                
-  z-index: 30;              
-  background: #f6eef3;      
+  top: 20px;
+  z-index: 30;
+  background: #f6eef3;
   padding: 14px 20px;
   border-radius: 8px;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.02); 
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
 }
 .sticky-header h4 {
   margin: 0;
@@ -29699,7 +29704,9 @@ dl li {
   font-weight: 600;
 }
 /* ensure ancestors don't clip sticky */
-.main-panel, .content-wrapper, .page-body-wrapper {
+.main-panel,
+.content-wrapper,
+.page-body-wrapper {
   overflow: visible;
 }
 
@@ -29707,12 +29714,12 @@ dl li {
 .page-header.sticky-header {
   position: -webkit-sticky;
   position: sticky;
-  top: 80px;      
+  top: 80px;
   z-index: 999;
   background: #f6eef3;
   padding: 14px 20px;
   border-radius: 8px;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
 }
 /* ---------- Restore page scrolling; keep card scrolling ---------- */
 
@@ -29743,7 +29750,7 @@ body {
   top: auto;
   z-index: 999;
 }
-            /* ---------- Restore page scrolling; keep card scrolling ---------- */
+/* ---------- Restore page scrolling; keep card scrolling ---------- */
 
 /* Allow page to scroll normally */
 .content-wrapper,
@@ -29763,7 +29770,9 @@ body {
   display: flex;
   flex-direction: column;
   /* use max-height instead of forcing full height */
-  max-height: calc(100vh - 220px); /* adjust 220px for top navbar + header + margins */
+  max-height: calc(
+    100vh - 220px
+  ); /* adjust 220px for top navbar + header + margins */
   margin: 0;
 }
 .scrollable-card .card-body {
@@ -29817,11 +29826,192 @@ body {
 
 /*HolidayList Allignment Fix*/
 body.holiday-list-page .text-end.mb-4 {
-    margin-bottom: -20px !important;
+  margin-bottom: -20px !important;
 }
 
 body.holiday-list-page .card-body {
-    padding-top: -30px !important;
+  padding-top: -30px !important;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(to right, #da8cff, #9a55ff) !important;
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(to right, #e7ebf0, #868e96) !important;
+}
+
+.bg-gradient-sb-blue {
+  background: linear-gradient(to right, #cffafe, #cffafe) !important;
+}
+.bg-gradient-sb-voilet {
+  background: linear-gradient(to right, #D6B7F8, #D6B7F8) !important;
+}
+.bg-gradient-sb-pink {
+  background: linear-gradient(to right, #FFB6E0, #FFB6E0) !important;
+}
+.bg-gradient-sb-yellow {
+  background: linear-gradient(to right, #FFEDD5, #FFEDD5) !important;
+}
+ 
+
+.bg-gradient-success,
+
+.datepicker-custom
+  .datepicker.datepicker-inline
+  .datepicker-days
+  .table-condensed
+  tbody
+  tr
+  td.day.today:before {
+  background: linear-gradient(to right, #84d9d2, #07cdae) !important;
+}
+
+.bg-gradient-info {
+  background: linear-gradient(to right, #90caf9, #047edf 99%) !important;
+}
+/* Payroll Dashboard 1st card text */
+.custom-text h4 {
+  color: #0891B2;   
+}
+.custom-text h5 {
+  color: #0891B2;   
+}
+.custom-text h6 {
+  color: #0891B2;   
+}
+.custom-text p {
+  color: #0891B2;  
+}
+.custom-text ul li {
+  color: #0891B2;    
+}
+/* Payroll Dashboard 1st card text */
+.custom-text1 h4 {
+  color: #9333EA;   
+}
+.custom-text1 h5 {
+  color: #9333EA;   
+}
+.custom-text1 h6 {
+  color: #9333EA;   
+}
+.custom-text1 p {
+  color: #9333EA; 
+}
+
+.custom-text1 ul li {
+  color: #9333EA;    
+}
+
+
+.custom-text2 h4 {
+  color: #DB2777;   
+}
+.custom-text2 h5 {
+  color: #DB2777;   
+}
+.custom-text2 h6 {
+  color: #DB2777;   
+}
+.custom-text2 p {
+  color: #DB2777;  
+}
+
+.custom-text3 h4 {
+  color: #F97316;   
+}
+.custom-text3 h5 {
+  color: #F97316;   
+}
+.custom-text3 h6 {
+  color: #F97316;   
+}
+.custom-text3 p {
+  color: #F97316;  
+}
+
+
+.custom-text:hover {
+  background: #0891B2 !important; /* new hover background */
+  color: #ffffff !important; /* text color on hover */
+}
+.custom-text1:hover {
+  background: #9333EA !important; /* new hover background */
+  color: #EAD6FF !important; /* text color on hover */
+}
+
+.custom-text2:hover {
+  background: #DB2777!important; /* new hover background */
+  color: #EAD6FF !important; /* text color on hover */
+}
+
+.custom-text3:hover {
+  background: #F97316!important; /* new hover background */
+  color: #EAD6FF !important; /* text color on hover */
+}
+
+.custom-text:hover h1,
+.custom-text1:hover ul li,
+.custom-text:hover ul li,
+.custom-text:hover h2,
+.custom-text:hover h3,
+.custom-text:hover h4,
+.custom-text:hover h5,
+.custom-text:hover h6,
+.custom-text:hover p {
+  color: #ffffff !important;
+}
+.custom-text1:hover h1,
+.custom-text1:hover h2,
+.custom-text1:hover h3,
+.custom-text1:hover h4,
+.custom-text1:hover h5,
+.custom-text1:hover h6,
+.custom-text1:hover p {
+  color: #EAD6FF !important;
+}
+.custom-text2:hover h1,
+.custom-text2:hover h2,
+.custom-text2:hover h3,
+.custom-text2:hover h4,
+.custom-text2:hover h5,
+.custom-text2:hover h6,
+.custom-text2:hover p {
+  color: #FCE7F3 !important;
+}
+.custom-text3:hover h1,
+.custom-text3:hover h2,
+.custom-text3:hover h3,
+.custom-text3:hover h4,
+.custom-text3:hover h5,
+.custom-text3:hover h6,
+.custom-text3:hover p {
+  color: #FFEDD5 !important;
+}
+
+
+.bg-gradient-warning,
+.datepicker-custom
+  .datepicker.datepicker-inline
+  .datepicker-days
+  .table-condensed
+  tbody
+  tr
+  td.day.active:before {
+  background: linear-gradient(to right, #f6e384, #ffd500) !important;
+}
+
+.bg-gradient-danger {
+  background: linear-gradient(to right, #ffbf96, #fe7096) !important;
+}
+
+.bg-gradient-light {
+  background: linear-gradient(to bottom, #f4f4f4, #e4e4e9) !important;
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(89deg, #5e7188, #3e4b5b) !important;
 }
 
 /*Salary Template Page Fix*/
@@ -29840,21 +30030,19 @@ body.salary-template-page .formBlock {
   margin-top: 0 !important;
 }
 .bg-gradient-sb-blue {
-  background: linear-gradient(to right, #8FF5FF, #8FF5FF) !important;
+  background: linear-gradient(to right, #8ff5ff, #8ff5ff) !important;
 }
 .bg-gradient-sb-voilet {
-  background: linear-gradient(to right, #D6B7F8, #D6B7F8) !important;
+  background: linear-gradient(to right, #d6b7f8, #d6b7f8) !important;
 }
 .bg-gradient-sb-pink {
-  background: linear-gradient(to right, #FFB6E0, #FFB6E0) !important;
+  background: linear-gradient(to right, #ffb6e0, #ffb6e0) !important;
 }
 .bg-gradient-sb-yellow {
-  background: linear-gradient(to right, #E8DE70, #E8DE70) !important;
+  background: linear-gradient(to right, #e8de70, #e8de70) !important;
 }
- 
 
 .bg-gradient-success,
-
 .datepicker-custom
   .datepicker.datepicker-inline
   .datepicker-days
@@ -29871,7 +30059,6 @@ body.salary-template-page .formBlock .form-edit {
   padding: 0 !important;
 }
 
-
 /* Attendance Register*/
 
 .excel-container {
@@ -29887,52 +30074,48 @@ body.salary-template-page .formBlock .form-edit {
 
 .excel-container table th,
 .excel-container table td {
-  border: 1px solid #6a008a;   
+  border: 1px solid #6a008a;
   padding: 4px 6px;
   text-align: center;
   white-space: nowrap;
 }
 
-
 .excel-container table thead tr th {
-  background-color: #e91e63;    
+  background-color: #e91e63;
   color: #ffffff;
   font-weight: 300 !important;
 }
 
-
 .excel-container table tbody tr td:first-child {
-  background-color: #f2a654;    /* orange dark */
-  color: #000000 !important;    /* black font */
+  background-color: #f2a654; /* orange dark */
+  color: #000000 !important; /* black font */
   font-weight: 300 !important;
 }
 
-
 .excel-container table tbody tr td:nth-child(2) {
-  background-color: #f6e84e;     /* yellow dark */
+  background-color: #f6e84e; /* yellow dark */
   color: #000000 !important;
   font-weight: normal !important;
   text-align: left;
 }
 
-
 .excel-container table tbody tr td:nth-child(3),
 .excel-container table tbody tr td:nth-child(4) {
-  background-color: #58d8a3;   
+  background-color: #58d8a3;
   color: #000000 !important;
   font-weight: normal !important;
 }
 
 .excel-container table tbody tr:nth-child(odd) td {
-  background-color: #dbe8ff;   
+  background-color: #dbe8ff;
 }
 
 .excel-container table tbody tr:nth-child(even) td {
-  background-color: #f3e6ff;    
+  background-color: #f3e6ff;
 }
 
 .d-flex.justify-content-end.mb-0 {
-    margin-bottom: -20px !important;
+  margin-bottom: -20px !important;
 }
 
 .attendance-filters {
@@ -29943,10 +30126,10 @@ body.salary-template-page .formBlock .form-edit {
 
 .form-control,
 .form-select {
-  height: 36px;              
-  padding: 4px 10px;          
-  border: 1px solid #ced4da;  
-  border-radius: 4px;        
+  height: 36px;
+  padding: 4px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
   font-size: 14px;
   background-color: #ffffff;
   box-shadow: none;
@@ -29954,7 +30137,7 @@ body.salary-template-page .formBlock .form-edit {
 
 .form-control:focus,
 .form-select:focus {
-  border-color: #8a42ff;  
+  border-color: #8a42ff;
   outline: 0;
   box-shadow: 0 0 0 0.15rem rgba(138, 66, 255, 0.25);
 }
@@ -29962,8 +30145,8 @@ body.salary-template-page .formBlock .form-edit {
 /* ===== sidebar nav item spacing override (gap between items) ===== */
 
 .sidebar .nav > .nav-item:not(.nav-category):not(.nav-profile) {
-  margin-bottom: 2px;        
-  border-radius: 6px;        
+  margin-bottom: 2px;
+  border-radius: 6px;
 }
 
 .sidebar .nav > .nav-item:not(.nav-category):not(.nav-profile) > .nav-link {
