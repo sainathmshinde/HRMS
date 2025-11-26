@@ -74,7 +74,7 @@
           >
             <span class="mdi mdi-menu"></span>
           </button>
-          <div class="search-field d-none d-md-block">
+          <!-- <div class="search-field d-none d-md-block">
             <form class="d-flex align-items-center h-100" action="#">
               <div class="input-group">
                 <div class="input-group-prepend bg-transparent">
@@ -83,11 +83,56 @@
                 <input
                   type="text"
                   class="form-control bg-transparent border-0"
-                  placeholder="Search employee"
+                  placeholder="Search..."
                 />
+               
               </div>
             </form>
-          </div>
+          </div> -->
+          <!-- Search container (Bootstrap) -->
+<div class="search-field d-none d-md-block position-relative" style="max-width:420px;">
+  <form id="searchForm" class="d-flex align-items-center h-100" novalidate>
+    <div class="input-group w-100">
+      <span class="input-group-text bg-transparent border-0" id="searchIcon" aria-hidden="true">
+        <i class="mdi mdi-magnify"></i>
+      </span>
+
+      <input
+        type="text"
+        id="searchInput"
+        class="form-control bg-transparent border-0"
+        placeholder="Search..."
+        autocomplete="off"
+        aria-label="Search"
+        aria-haspopup="true"
+        aria-controls="searchResultCard"
+      />
+    </div>
+  </form>
+
+  <!-- Result Card (hidden by default) -->
+  <div id="searchResultCard"
+       class="card shadow position-absolute w-100 d-none"
+       role="dialog"
+       aria-modal="false"
+       aria-labelledby="resultName"
+       style="z-index:2000; top:48px;">
+    <div class="card-body d-flex align-items-center gap-3">
+      <img src="/src/assets/images/user.avif"  class="rounded-circle" width="70" height="70" />
+      <div>
+        <h6 id="resultName" class="mb-1">Harshad Yadav</h6>
+        <a href="profile.html" class="d-block small text-primary">View Profile</a>
+        <a href="summary.html" class="d-block small text-primary">Summary</a>
+        <a href="leaveApproval.html" class="d-block small text-primary">Approve Leave</a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+          
+
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item nav-profile dropdown">
               <a
@@ -108,6 +153,7 @@
               <div
                 class="dropdown-menu navbar-dropdown"
                 aria-labelledby="profileDropdown"
+                style="z-index: 3000;"
               >
                 <a class="dropdown-item" href="#">
                   <i class="mdi mdi-cached me-2 text-success"></i> Activity Log
@@ -1872,6 +1918,169 @@
     <script src="/src/assets/vendors/chart.js/chart.umd.js"></script>
     <script src="/src/assets/vendors/js/vendor.bundle.base.js"></script>
     <script src="/src/assets/js/dashboard-dark.js"></script>
+    <script>
+    $(document).ready(function(){
+     $('#gallery-container').sGallery({
+        fullScreenEnabled: true
+      });
+    });
+  </script>
+  
+<script type="text/javascript">
+function setBodyWidthHeight()
+{
+	var y = $(window).height();
+	var x = $(window).width();
+
+}
+$(function()
+{
+	setBodyWidthHeight();
+	$( window ).resize(function() {
+		setBodyWidthHeight();
+	});
+	/*
+	$("#searchbox").focus(function()
+	{
+		$("#arrowdown").slideDown();
+		$(".submenu").slideDown();
+	});
+	*/
+	$("#wrapper").click(function()
+	{
+		$("#arrowdown").hide();
+		$(".submenu").hide();
+	});
+	
+	$("#searchbox").keyup(function()
+	{
+		var str = $(this).val();
+		var result=str.toLowerCase();
+		if(result == "peter")
+		{   $("#arrowdown").slideDown();
+		    $(".submenu").slideDown();
+			$(".searchedResult").show();
+		}
+		else
+		{
+			$(".searchedResult").hide();
+			$(".submenu").hide();
+		}
+	});	
+});
+</script>
+<script type="text/javascript">
+		$(function(){
+           $(".profileView").click(function(){
+		      $(".submenu").hide();
+			  $(".searchedResult").hide();
+		   });
+		});
+		function selectOption(item)
+		{
+			var location = $(item).val();
+			$(".wrapperContent").load(location); 
+		}
+		
+		function dashboardLoad()
+		{
+		   $(".wrapperContent").load("dashboardV2.html");
+		}
+
+	</script>
+  <script>
+(function () {
+  // Configuration
+  const TARGET_NAME = "harshad";         // canonical full name, lowercase
+  const MIN_CHARS_TO_SHOW = 4;           // show after >= 4 chars typed
+
+  // Elements
+  const form = document.getElementById("searchForm");
+  const input = document.getElementById("searchInput");
+  const card = document.getElementById("searchResultCard");
+
+  // Utility: show/hide functions
+  function showCard() {
+    if (card.classList.contains("d-none")) {
+      card.classList.remove("d-none");
+      input.setAttribute("aria-expanded", "true");
+      // optionally move focus to the card if you want keyboard navigation
+    }
+  }
+  function hideCard() {
+    if (!card.classList.contains("d-none")) {
+      card.classList.add("d-none");
+      input.setAttribute("aria-expanded", "false");
+    }
+  }
+
+  // 1) Show card when user types >= MIN_CHARS_TO_SHOW
+  input.addEventListener("input", function () {
+    const v = (this.value || "").trim();
+    if (v.length >= MIN_CHARS_TO_SHOW) {
+      showCard();
+    } else {
+      hideCard();
+    }
+  });
+
+  // 2) Handle Enter: prevent form submit and open card when full name OR length >= MIN_CHARS_TO_SHOW
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      // prevent actual form submission / page reload
+      e.preventDefault();
+
+      const v = (this.value || "").trim().toLowerCase();
+
+      // If typed EXACT full name -> show card
+      if (v === TARGET_NAME) {
+        showCard();
+        // Optional: you could also navigate automatically:
+        // window.location.href = "profile.html";
+        return;
+      }
+
+      // If user typed >= MIN_CHARS_TO_SHOW -> also show
+      if (v.length >= MIN_CHARS_TO_SHOW) {
+        showCard();
+        return;
+      }
+
+      // otherwise ignore enter (do nothing)
+    }
+  });
+
+  // 3) Click outside to close
+  document.addEventListener("click", function (evt) {
+    const target = evt.target;
+    if (!card.contains(target) && target !== input) {
+      hideCard();
+    }
+  });
+
+  // 4) Optional: if user clicks a result link, let normal navigation happen but hide the card
+  card.addEventListener("click", function (evt) {
+    // If they click a link, the browser will navigate — we don't need to do anything
+    // But hide the card to keep UI tidy in case of SPA navigation.
+    hideCard();
+  });
+
+  // 5) Safety: ensure script doesn't break when elements are missing
+  if (!input || !card || !form) {
+    console.warn("[search] required elements missing: searchInput / searchResultCard / searchForm");
+  }
+})();
+</script>
+<style>
+    #searchResultCard {
+      border-radius: 10px;
+      min-width: 260px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    #searchResultCard .card-body { padding: 12px; }
+    #searchInput:focus { outline: none; box-shadow: none; }
+  </style>
+
     
     <!-- End custom js for this page -->
   </body>

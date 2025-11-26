@@ -29783,10 +29783,24 @@ body {
 .sidebar .nav .nav-item > a.nav-link.active,
 .sidebar .nav .nav-item > a.nav-link.active:focus,
 .sidebar .nav .nav-item > a.nav-link.active:hover {
-  background: linear-gradient(135deg, #ff9aeb, #7b5bfa) !important;
-  color: #ffffff !important;
+  background: linear-gradient(135deg, #ff9aebc7, #7b5bfa66) !important;
+  color: #000000 !important;
   text-decoration: none;
 }
+
+/* .sidebar .nav .nav-item > a.nav-link,  */
+/* .sidebar .nav .nav-item > a.nav-link:focus, */
+.sidebar .nav .nav-item > a.nav-link:hover {
+  background: linear-gradient(135deg, #ff9aeb54, #7b5bfa3d) !important;
+  color: #000000 !important;
+  text-decoration: none;
+}
+
+
+
+
+
+
 
 /* fixed page title */
 
@@ -29795,7 +29809,7 @@ body {
   top: calc(60px + 8px);     /* Top navbar height */
   left: calc(260px + 1px);   /* Sidebar width */
   right: 1px;                
-  z-index: 2000;
+  z-index: 1000;
   background:#f2edf3;
   padding: 10px 16px;
   /* box-shadow: 0 6px 18px rgba(0,0,0,0.06); */
@@ -29849,7 +29863,6 @@ body.salary-template-page .formBlock {
   tr
   td.day.today:before {
   background: linear-gradient(to right, #84d9d2, #07cdae) !important;
->>>>>>> 004d53db09131873db771ac5c8f822664adc74dc
 }
 
 body.salary-template-page .formBlock .form-edit {
