@@ -1750,7 +1750,7 @@
                     >
                       <div class="accordion-body">
                         <div class="row">
-                          <form class="forms-sample">
+                          <form class="forms-sample" id="form1">
                             <div class="d-flex justify-content-end mb-2">
                               <button
                                 type="button"
@@ -1766,7 +1766,6 @@
                               <div class="col-md-6">
                                 <div class="form-group">
                                   <label for="employeeId">Employee ID</label>
-                                  <!-- <span class="text-danger">*</span> -->
                                   <input
                                     type="text"
                                     class="form-control"
@@ -1782,7 +1781,6 @@
                               <div class="col-md-6">
                                 <div class="form-group">
                                   <label for="reportingId">Reporting ID</label>
-                                  <!-- <span class="text-danger">*</span> -->
                                   <input
                                     type="text"
                                     class="form-control"
@@ -1897,41 +1895,7 @@
                                 </div>
                               </div>
                             </div>
-                            <!-- <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="exampleSelectGender">Gender</label>
-                            <span class="text-danger">*</span>
-                            <select
-                              class="form-select"
-                              id="exampleSelectGender"
-                            >
-                              <option>Male</option>
-                              <option>Female</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="department"
-                              >Department
-                              <span class="text-danger">*</span></label
-                            >
-                            <select
-                              class="form-select"
-                              id="department"
-                              required
-                            >
-                              <option value="">Select Department</option>
-                              <option value="hr">Human Resources</option>
-                              <option value="it">IT</option>
-                              <option value="sales">Sales</option>
-                              <option value="marketing">Marketing</option>
-                              <option value="finance">Finance</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div> -->
+                            
                             <div class="row">
                               <!-- Father's / Husband's First Name -->
                               <div class="col-md-6">
@@ -2033,49 +1997,7 @@
                                 </div>
                               </div>
                             </div>
-                            <!-- 
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label>File upload</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="file"
-                              name="img[]"
-                              class="file-upload-default"
-                            />
-                            <div class="input-group col-xs-12">
-                              <input
-                                type="text"
-                                class="form-control file-upload-info"
-                                disabled
-                                placeholder="Upload Image"
-                              />
-                              <span class="input-group-append">
-                                <button
-                                  class="file-upload-browse btn btn-gradient-primary py-3"
-                                  type="button"
-                                >
-                                  Upload
-                                </button>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="exampleInputCity1">City</label>
-                            <span class="text-danger">*</span>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="exampleInputCity1"
-                              placeholder="Location"
-                            />
-                          </div>
-                        </div>
-                      </div> -->
+                            
 
                             <!-- Buttons -->
                             <div
@@ -2122,7 +2044,7 @@
                     >
                       <div class="accordion-body">
                         <div class="row">
-                          <form class="forms-sample">
+                          <form class="forms-sample" id="personalInfoForm" >
                             <div class="d-flex justify-content-end mb-2">
                               <button
                                 type="button"
@@ -2621,7 +2543,7 @@
                     >
                       <div class="accordion-body">
                         <div class="row">
-                          <form class="forms-sample">
+                          <form class="forms-sample" id="employmentInfoForm">
                             <div class="d-flex justify-content-end mb-2">
                               <button
                                 type="button"
@@ -3273,7 +3195,7 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
-    <script>
+    <!-- <script>
       const editBtn = document.getElementById("editqInfoBtn");
       const actionButtons = document.getElementById("qInfoBtn");
       const saveBtn = document.getElementById("saveqInfoBtn");
@@ -3384,7 +3306,7 @@
         actioneInfoButtons.style.display = "none";
         editeInfoBtn.style.display = "block";
       });
-    </script>
+    </script> -->
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
@@ -3511,5 +3433,59 @@
         onScroll();
       })();
     </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const permanentDisabled = ["employeeId", "reportingId"];
+
+  // ✅ Disable all fields initially on page load
+  document.querySelectorAll("#collapseOne form input, #collapseOne form select")
+    .forEach(el => el.disabled = true);
+
+  // ✅ Edit Button
+  document.getElementById("editqInfoBtn").addEventListener("click", function () {
+
+    document.querySelectorAll("#collapseOne form input, #collapseOne form select")
+      .forEach(el => {
+        if (!permanentDisabled.includes(el.id)) {
+          el.disabled = false;
+        }
+      });
+
+    document.getElementById("qInfoBtn").style.display = "block";
+    this.style.display = "none";
+  });
+
+  // ✅ Cancel Button
+  document.getElementById("cancelqInfoBtn").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelectorAll("#collapseOne form input, #collapseOne form select")
+      .forEach(el => el.disabled = true);
+
+    document.getElementById("qInfoBtn").style.display = "none";
+    document.getElementById("editqInfoBtn").style.display = "block";
+  });
+
+  // ✅ Save Button
+  document.getElementById("saveqInfoBtn").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelectorAll("#collapseOne form input, #collapseOne form select")
+      .forEach(el => el.disabled = true);
+
+    document.getElementById("qInfoBtn").style.display = "none";
+    document.getElementById("editqInfoBtn").style.display = "block";
+
+    // ✅ add AJAX / API call later if needed
+  });
+
+});
+</script>
+
+
+
+
+
   </body>
 </html>

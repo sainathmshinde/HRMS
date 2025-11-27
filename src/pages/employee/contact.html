@@ -1713,776 +1713,259 @@
               
             </div>
              <form class="forms-sample">
-              
-            <div class="card" style="margin-top: 50px">
-              <div class="card-body">
-                <div class="d-flex justify-content-end mb-2" style="margin-top: -10px;">
-                              <button
-                                type="button"
-                                id="editContBtn"
-                               class="btn btn-primary"
-                              >
-                                Edit
-                              </button>
-                            </div>
+  <div class="card" style="margin-top: 50px">
+    <div class="card-body">
+      <div class="d-flex justify-content-end mb-2" style="margin-top: -10px;">
+        <button type="button" id="editContBtn" class="btn btn-primary">Edit</button>
+      </div>
 
-                <div class="page-header" style="margin-top: -10px;">
-                  <h5>Permanent Address</h5>
-                </div>
+      <div class="page-header" style="margin-top: -10px;">
+        <h5>Permanent Address</h5>
+      </div>
 
-                <div class="row">
-                  <!-- Address line 1 -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="addressLine1">Address Line 1</label>
-                      <span class="text-danger">*</span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="addressLine1"
-                        placeholder="Enter Address Line 1"
-                        
-                      />
-                    </div>
-                  </div>
-
-                  <!-- Address line 2 -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="addressLine2">Address Line 2</label>
-                      <span class="text-danger">*</span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="addressLine2"
-                        placeholder="Enter Address Line 2"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <!-- City -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="city">City</label>
-                      <span class="text-danger">*</span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="city"
-                        placeholder="Enter City"
-                        
-                      />
-                    </div>
-                  </div>
-
-                  <!-- State -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="state">State</label>
-                      <span class="text-danger">*</span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="state"
-                        placeholder="Enter State"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <!-- Zip/Postal Code -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="zip">Zip/Postal Code</label>
-                      <span class="text-danger">*</span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="zip"
-                        placeholder="Enter Zip/Postal Code"
-                        
-                      />
-                    </div>
-                  </div>
-
-                  <!-- Country -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="country">Country</label>
-                      <span class="text-danger">*</span>
-                      <select
-                        id="country"
-                        class="form-select"
-                        name="country"
-                        required
-                      >
-                        <option value="">Select</option>
-                        <option value="Afghanistan">Afghanistan</option>
-                        <option value="Albania">Albania</option>
-                        <option value="Algeria">Algeria</option>
-                        <option value="Andorra">Andorra</option>
-                        <option value="Angola">Angola</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Armenia">Armenia</option>
-                        <option value="Australia">Australia</option>
-                        <option value="Austria">Austria</option>
-                        <option value="Azerbaijan">Azerbaijan</option>
-                        <option value="Bahamas">Bahamas</option>
-                        <option value="Bahrain">Bahrain</option>
-                        <option value="Bangladesh">Bangladesh</option>
-                        <option value="Barbados">Barbados</option>
-                        <option value="Belarus">Belarus</option>
-                        <option value="Belgium">Belgium</option>
-                        <option value="Belize">Belize</option>
-                        <option value="Benin">Benin</option>
-                        <option value="Bhutan">Bhutan</option>
-                        <option value="Bolivia">Bolivia</option>
-                        <option value="Bosnia and Herzegovina">
-                          Bosnia and Herzegovina
-                        </option>
-                        <option value="Botswana">Botswana</option>
-                        <option value="Brazil">Brazil</option>
-                        <option value="Brunei">Brunei</option>
-                        <option value="Bulgaria">Bulgaria</option>
-                        <option value="Burkina Faso">Burkina Faso</option>
-                        <option value="Burundi">Burundi</option>
-                        <option value="Cambodia">Cambodia</option>
-                        <option value="Cameroon">Cameroon</option>
-                        <option value="Canada">Canada</option>
-                        <option value="Cape Verde">Cape Verde</option>
-                        <option value="Chad">Chad</option>
-                        <option value="Chile">Chile</option>
-                        <option value="China">China</option>
-                        <option value="Colombia">Colombia</option>
-                        <option value="Comoros">Comoros</option>
-                        <option value="Congo">Congo</option>
-                        <option value="Costa Rica">Costa Rica</option>
-                        <option value="Croatia">Croatia</option>
-                        <option value="Cuba">Cuba</option>
-                        <option value="Cyprus">Cyprus</option>
-                        <option value="Czech Republic">Czech Republic</option>
-                        <option value="Denmark">Denmark</option>
-                        <option value="Djibouti">Djibouti</option>
-                        <option value="Dominican Republic">
-                          Dominican Republic
-                        </option>
-                        <option value="Ecuador">Ecuador</option>
-                        <option value="Egypt">Egypt</option>
-                        <option value="El Salvador">El Salvador</option>
-                        <option value="Estonia">Estonia</option>
-                        <option value="Ethiopia">Ethiopia</option>
-                        <option value="Fiji">Fiji</option>
-                        <option value="Finland">Finland</option>
-                        <option value="France">France</option>
-                        <option value="Gabon">Gabon</option>
-                        <option value="Gambia">Gambia</option>
-                        <option value="Georgia">Georgia</option>
-                        <option value="Germany">Germany</option>
-                        <option value="Ghana">Ghana</option>
-                        <option value="Greece">Greece</option>
-                        <option value="Greenland">Greenland</option>
-                        <option value="Guatemala">Guatemala</option>
-                        <option value="Guinea">Guinea</option>
-                        <option value="Haiti">Haiti</option>
-                        <option value="Honduras">Honduras</option>
-                        <option value="Hungary">Hungary</option>
-                        <option value="Iceland">Iceland</option>
-                        <option value="India">India</option>
-                        <option value="Indonesia">Indonesia</option>
-                        <option value="Iran">Iran</option>
-                        <option value="Iraq">Iraq</option>
-                        <option value="Ireland">Ireland</option>
-                        <option value="Israel">Israel</option>
-                        <option value="Italy">Italy</option>
-                        <option value="Jamaica">Jamaica</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Jordan">Jordan</option>
-                        <option value="Kazakhstan">Kazakhstan</option>
-                        <option value="Kenya">Kenya</option>
-                        <option value="Kuwait">Kuwait</option>
-                        <option value="Laos">Laos</option>
-                        <option value="Latvia">Latvia</option>
-                        <option value="Lebanon">Lebanon</option>
-                        <option value="Liberia">Liberia</option>
-                        <option value="Libya">Libya</option>
-                        <option value="Lithuania">Lithuania</option>
-                        <option value="Luxembourg">Luxembourg</option>
-                        <option value="Madagascar">Madagascar</option>
-                        <option value="Malawi">Malawi</option>
-                        <option value="Malaysia">Malaysia</option>
-                        <option value="Maldives">Maldives</option>
-                        <option value="Mali">Mali</option>
-                        <option value="Malta">Malta</option>
-                        <option value="Mauritania">Mauritania</option>
-                        <option value="Mauritius">Mauritius</option>
-                        <option value="Mexico">Mexico</option>
-                        <option value="Moldova">Moldova</option>
-                        <option value="Monaco">Monaco</option>
-                        <option value="Mongolia">Mongolia</option>
-                        <option value="Morocco">Morocco</option>
-                        <option value="Mozambique">Mozambique</option>
-                        <option value="Myanmar">Myanmar</option>
-                        <option value="Namibia">Namibia</option>
-                        <option value="Nepal">Nepal</option>
-                        <option value="Netherlands">Netherlands</option>
-                        <option value="New Zealand">New Zealand</option>
-                        <option value="Nicaragua">Nicaragua</option>
-                        <option value="Niger">Niger</option>
-                        <option value="Nigeria">Nigeria</option>
-                        <option value="North Korea">North Korea</option>
-                        <option value="Norway">Norway</option>
-                        <option value="Oman">Oman</option>
-                        <option value="Pakistan">Pakistan</option>
-                        <option value="Palestine">Palestine</option>
-                        <option value="Panama">Panama</option>
-                        <option value="Papua New Guinea">
-                          Papua New Guinea
-                        </option>
-                        <option value="Paraguay">Paraguay</option>
-                        <option value="Peru">Peru</option>
-                        <option value="Philippines">Philippines</option>
-                        <option value="Poland">Poland</option>
-                        <option value="Portugal">Portugal</option>
-                        <option value="Qatar">Qatar</option>
-                        <option value="Romania">Romania</option>
-                        <option value="Russia">Russia</option>
-                        <option value="Rwanda">Rwanda</option>
-                        <option value="Saudi Arabia">Saudi Arabia</option>
-                        <option value="Senegal">Senegal</option>
-                        <option value="Serbia">Serbia</option>
-                        <option value="Singapore">Singapore</option>
-                        <option value="Slovakia">Slovakia</option>
-                        <option value="Slovenia">Slovenia</option>
-                        <option value="Somalia">Somalia</option>
-                        <option value="South Africa">South Africa</option>
-                        <option value="South Korea">South Korea</option>
-                        <option value="Spain">Spain</option>
-                        <option value="Sri Lanka">Sri Lanka</option>
-                        <option value="Sudan">Sudan</option>
-                        <option value="Suriname">Suriname</option>
-                        <option value="Sweden">Sweden</option>
-                        <option value="Switzerland">Switzerland</option>
-                        <option value="Syria">Syria</option>
-                        <option value="Taiwan">Taiwan</option>
-                        <option value="Tanzania">Tanzania</option>
-                        <option value="Thailand">Thailand</option>
-                        <option value="Togo">Togo</option>
-                        <option value="Tunisia">Tunisia</option>
-                        <option value="Turkey">Turkey</option>
-                        <option value="Uganda">Uganda</option>
-                        <option value="Ukraine">Ukraine</option>
-                        <option value="United Arab Emirates">
-                          United Arab Emirates
-                        </option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="United States">United States</option>
-                        <option value="Uruguay">Uruguay</option>
-                        <option value="Uzbekistan">Uzbekistan</option>
-                        <option value="Venezuela">Venezuela</option>
-                        <option value="Vietnam">Vietnam</option>
-                        <option value="Yemen">Yemen</option>
-                        <option value="Zambia">Zambia</option>
-                        <option value="Zimbabwe">Zimbabwe</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <!-- Mobile Number -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="mobileNumber">Mobile Number</label>
-                      <span class="text-danger">*</span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="mobileNumber"
-                        placeholder="Enter Mobile Number"
-                        
-                      />
-                    </div>
-                  </div>
-
-                  <!-- Landline Number -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="landlineNumber">Landline Number</label>
-                      <span class="text-danger">*</span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="landlineNumber"
-                        placeholder="Enter Landline Number"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <!-- Email -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <span class="text-danger">*</span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="email"
-                        placeholder="Enter Email"
-                        
-                      />
-                    </div>
-                  </div>
-
-                  <!-- Company Email -->
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="companyEmail">Company Email</label>
-                      <span class="text-danger">*</span>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="companyEmail"
-                        placeholder="Enter Company Email"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card" style="margin-top: 20px;">
-                  <div class="card-body">
-                    <div class="page-header" style="margin-top: -10px;">
-                  <h5>Present Address</h5>
-                </div>
-              
-              <div class="row">
-                <!-- Same As permanent address -->
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="SameAsPermanent">Same As Permanent</label>
-                    <span class="text-danger">*</span>
-                    <input
-                      type="checkbox"
-                      class="form-check-input"
-                      id="SameAsPermanent"
-                    />
-                  </div>
-                </div>
-
-                <!-- Company Email -->
-                <div class="col-md-6">
-                  <div class="form-group"></div>
-                </div>
-              </div>
-              <div class="row">
-                <!-- Address line 1 -->
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="addressLine1">Address Line 1</label>
-                    <span class="text-danger">*</span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="addressLine1"
-                      placeholder="Enter Address Line 1"
-                      
-                    />
-                  </div>
-                </div>
-
-                <!-- Address line 2 -->
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="addressLine2">Address Line 2</label>
-                    <span class="text-danger">*</span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="addressLine2"
-                      placeholder="Enter Address Line 2"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <!-- City -->
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="city">City</label>
-                    <span class="text-danger">*</span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="city"
-                      placeholder="Enter City"
-                  
-                    />
-                  </div>
-                </div>
-
-                <!-- State -->
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="state">State</label>
-                    <span class="text-danger">*</span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="state"
-                      placeholder="Enter State"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <!-- Zip/Postal Code -->
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="zip">Zip/Postal Code</label>
-                    <span class="text-danger">*</span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="zip"
-                      placeholder="Enter Zip/Postal Code"
-                    
-                    />
-                  </div>
-                </div>
-
-                <!-- Country -->
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="country">Country</label>
-                    <span class="text-danger">*</span>
-                    <select
-                      id="country"
-                      class="form-select"
-                      name="country"
-                      required
-                    >
-                      <option value="">Select</option>
-                      <option value="Afghanistan">Afghanistan</option>
-                      <option value="Albania">Albania</option>
-                      <option value="Algeria">Algeria</option>
-                      <option value="Andorra">Andorra</option>
-                      <option value="Angola">Angola</option>
-                      <option value="Argentina">Argentina</option>
-                      <option value="Armenia">Armenia</option>
-                      <option value="Australia">Australia</option>
-                      <option value="Austria">Austria</option>
-                      <option value="Azerbaijan">Azerbaijan</option>
-                      <option value="Bahamas">Bahamas</option>
-                      <option value="Bahrain">Bahrain</option>
-                      <option value="Bangladesh">Bangladesh</option>
-                      <option value="Barbados">Barbados</option>
-                      <option value="Belarus">Belarus</option>
-                      <option value="Belgium">Belgium</option>
-                      <option value="Belize">Belize</option>
-                      <option value="Benin">Benin</option>
-                      <option value="Bhutan">Bhutan</option>
-                      <option value="Bolivia">Bolivia</option>
-                      <option value="Bosnia and Herzegovina">
-                        Bosnia and Herzegovina
-                      </option>
-                      <option value="Botswana">Botswana</option>
-                      <option value="Brazil">Brazil</option>
-                      <option value="Brunei">Brunei</option>
-                      <option value="Bulgaria">Bulgaria</option>
-                      <option value="Burkina Faso">Burkina Faso</option>
-                      <option value="Burundi">Burundi</option>
-                      <option value="Cambodia">Cambodia</option>
-                      <option value="Cameroon">Cameroon</option>
-                      <option value="Canada">Canada</option>
-                      <option value="Cape Verde">Cape Verde</option>
-                      <option value="Chad">Chad</option>
-                      <option value="Chile">Chile</option>
-                      <option value="China">China</option>
-                      <option value="Colombia">Colombia</option>
-                      <option value="Comoros">Comoros</option>
-                      <option value="Congo">Congo</option>
-                      <option value="Costa Rica">Costa Rica</option>
-                      <option value="Croatia">Croatia</option>
-                      <option value="Cuba">Cuba</option>
-                      <option value="Cyprus">Cyprus</option>
-                      <option value="Czech Republic">Czech Republic</option>
-                      <option value="Denmark">Denmark</option>
-                      <option value="Djibouti">Djibouti</option>
-                      <option value="Dominican Republic">
-                        Dominican Republic
-                      </option>
-                      <option value="Ecuador">Ecuador</option>
-                      <option value="Egypt">Egypt</option>
-                      <option value="El Salvador">El Salvador</option>
-                      <option value="Estonia">Estonia</option>
-                      <option value="Ethiopia">Ethiopia</option>
-                      <option value="Fiji">Fiji</option>
-                      <option value="Finland">Finland</option>
-                      <option value="France">France</option>
-                      <option value="Gabon">Gabon</option>
-                      <option value="Gambia">Gambia</option>
-                      <option value="Georgia">Georgia</option>
-                      <option value="Germany">Germany</option>
-                      <option value="Ghana">Ghana</option>
-                      <option value="Greece">Greece</option>
-                      <option value="Greenland">Greenland</option>
-                      <option value="Guatemala">Guatemala</option>
-                      <option value="Guinea">Guinea</option>
-                      <option value="Haiti">Haiti</option>
-                      <option value="Honduras">Honduras</option>
-                      <option value="Hungary">Hungary</option>
-                      <option value="Iceland">Iceland</option>
-                      <option value="India">India</option>
-                      <option value="Indonesia">Indonesia</option>
-                      <option value="Iran">Iran</option>
-                      <option value="Iraq">Iraq</option>
-                      <option value="Ireland">Ireland</option>
-                      <option value="Israel">Israel</option>
-                      <option value="Italy">Italy</option>
-                      <option value="Jamaica">Jamaica</option>
-                      <option value="Japan">Japan</option>
-                      <option value="Jordan">Jordan</option>
-                      <option value="Kazakhstan">Kazakhstan</option>
-                      <option value="Kenya">Kenya</option>
-                      <option value="Kuwait">Kuwait</option>
-                      <option value="Laos">Laos</option>
-                      <option value="Latvia">Latvia</option>
-                      <option value="Lebanon">Lebanon</option>
-                      <option value="Liberia">Liberia</option>
-                      <option value="Libya">Libya</option>
-                      <option value="Lithuania">Lithuania</option>
-                      <option value="Luxembourg">Luxembourg</option>
-                      <option value="Madagascar">Madagascar</option>
-                      <option value="Malawi">Malawi</option>
-                      <option value="Malaysia">Malaysia</option>
-                      <option value="Maldives">Maldives</option>
-                      <option value="Mali">Mali</option>
-                      <option value="Malta">Malta</option>
-                      <option value="Mauritania">Mauritania</option>
-                      <option value="Mauritius">Mauritius</option>
-                      <option value="Mexico">Mexico</option>
-                      <option value="Moldova">Moldova</option>
-                      <option value="Monaco">Monaco</option>
-                      <option value="Mongolia">Mongolia</option>
-                      <option value="Morocco">Morocco</option>
-                      <option value="Mozambique">Mozambique</option>
-                      <option value="Myanmar">Myanmar</option>
-                      <option value="Namibia">Namibia</option>
-                      <option value="Nepal">Nepal</option>
-                      <option value="Netherlands">Netherlands</option>
-                      <option value="New Zealand">New Zealand</option>
-                      <option value="Nicaragua">Nicaragua</option>
-                      <option value="Niger">Niger</option>
-                      <option value="Nigeria">Nigeria</option>
-                      <option value="North Korea">North Korea</option>
-                      <option value="Norway">Norway</option>
-                      <option value="Oman">Oman</option>
-                      <option value="Pakistan">Pakistan</option>
-                      <option value="Palestine">Palestine</option>
-                      <option value="Panama">Panama</option>
-                      <option value="Papua New Guinea">Papua New Guinea</option>
-                      <option value="Paraguay">Paraguay</option>
-                      <option value="Peru">Peru</option>
-                      <option value="Philippines">Philippines</option>
-                      <option value="Poland">Poland</option>
-                      <option value="Portugal">Portugal</option>
-                      <option value="Qatar">Qatar</option>
-                      <option value="Romania">Romania</option>
-                      <option value="Russia">Russia</option>
-                      <option value="Rwanda">Rwanda</option>
-                      <option value="Saudi Arabia">Saudi Arabia</option>
-                      <option value="Senegal">Senegal</option>
-                      <option value="Serbia">Serbia</option>
-                      <option value="Singapore">Singapore</option>
-                      <option value="Slovakia">Slovakia</option>
-                      <option value="Slovenia">Slovenia</option>
-                      <option value="Somalia">Somalia</option>
-                      <option value="South Africa">South Africa</option>
-                      <option value="South Korea">South Korea</option>
-                      <option value="Spain">Spain</option>
-                      <option value="Sri Lanka">Sri Lanka</option>
-                      <option value="Sudan">Sudan</option>
-                      <option value="Suriname">Suriname</option>
-                      <option value="Sweden">Sweden</option>
-                      <option value="Switzerland">Switzerland</option>
-                      <option value="Syria">Syria</option>
-                      <option value="Taiwan">Taiwan</option>
-                      <option value="Tanzania">Tanzania</option>
-                      <option value="Thailand">Thailand</option>
-                      <option value="Togo">Togo</option>
-                      <option value="Tunisia">Tunisia</option>
-                      <option value="Turkey">Turkey</option>
-                      <option value="Uganda">Uganda</option>
-                      <option value="Ukraine">Ukraine</option>
-                      <option value="United Arab Emirates">
-                        United Arab Emirates
-                      </option>
-                      <option value="United Kingdom">United Kingdom</option>
-                      <option value="United States">United States</option>
-                      <option value="Uruguay">Uruguay</option>
-                      <option value="Uzbekistan">Uzbekistan</option>
-                      <option value="Venezuela">Venezuela</option>
-                      <option value="Vietnam">Vietnam</option>
-                      <option value="Yemen">Yemen</option>
-                      <option value="Zambia">Zambia</option>
-                      <option value="Zimbabwe">Zimbabwe</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <!-- Mobile Number -->
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="mobileNumber">Mobile Number</label>
-                    <span class="text-danger">*</span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="mobileNumber"
-                      placeholder="Enter Mobile Number"
-                      
-                    />
-                  </div>
-                </div>
-
-                <!-- Landline Number -->
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="landlineNumber">Landline Number</label>
-                    <span class="text-danger">*</span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="landlineNumber"
-                      placeholder="Enter Landline Number"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="card" style="margin-top: 20px; overflow-x: auto; width: 100%;">
-              <div class="card-body">
-                 <div class="page-header" style="margin-top: -10px;">
-                  <h5>Emergency Contact </h5>
-                </div>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Contact Person</th>
-                  <th>Relationship</th>
-                  <th>Mobile number</th>
-                  <th>Landline number</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="contactPerson1"
-                      placeholder="Enter Contact Person"
-                    />
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="relationship1"
-                      placeholder="Enter Relationship"
-                    />
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="mobileNumber1"
-                      placeholder="Enter Mobile number"
-                    />
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="landlineNumber1"
-                      placeholder="Enter Landline Number"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="contactPerson2"
-                      placeholder="Enter Contact Person"
-                    />
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="relationship2"
-                      placeholder="Enter Relationship"
-                    />
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="mobileNumber2"
-                      placeholder="Enter Mobile number"
-                    />
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="landlineNumber2"
-                      placeholder="Enter Landline Number"
-                    />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            
-            </div>
+      <div class="row">
+        <!-- Address line 1 -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="addressLine1">Address Line 1</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="addressLine1" placeholder="Enter Address Line 1"/>
           </div>
-            
-          <!-- Buttons -->
-                            <div
-                              class="text-end mt-3"
-                              style="display: none"
-                              id="ContBtn"
-                            >
-                              <button
-                                id="saveContBtn"
-                                class="btn btn-gradient-primary me-2"
-                              >
-                                Save
-                              </button>
-                              <button
-                                id="cancelContBtn"
-                                class="btn btn-gradient-light"
-                              >
-                                Cancel
-                              </button>
-                            </div>
-          
-            </form>
-          <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
-        
-          <!-- partial -->
+        </div>
+
+        <!-- Address line 2 -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="addressLine2">Address Line 2</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="addressLine2" placeholder="Enter Address Line 2"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- City -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="city">City</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="city" placeholder="Enter City"/>
+          </div>
+        </div>
+
+        <!-- State -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="state">State</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="state" placeholder="Enter State"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Zip/Postal Code -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="zip">Zip/Postal Code</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="zip" placeholder="Enter Zip/Postal Code"/>
+          </div>
+        </div>
+
+        <!-- Country -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="country">Country</label>
+            <span class="text-danger">*</span>
+            <select id="country" class="form-select editable-field" name="country" required>
+              <option value="">Select</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Albania">Albania</option>
+              <option value="Algeria">Algeria</option>
+              <!-- rest of countries remain unchanged -->
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Mobile Number -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="mobileNumber">Mobile Number</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="mobileNumber" placeholder="Enter Mobile Number"/>
+          </div>
+        </div>
+
+        <!-- Landline Number -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="landlineNumber">Landline Number</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="landlineNumber" placeholder="Enter Landline Number"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Email -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="email" placeholder="Enter Email"/>
+          </div>
+        </div>
+
+        <!-- Company Email -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="companyEmail">Company Email</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="companyEmail" placeholder="Enter Company Email"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Present Address Card -->
+  <div class="card" style="margin-top: 20px;">
+    <div class="card-body">
+      <div class="page-header" style="margin-top: -10px;">
+        <h5>Present Address</h5>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="SameAsPermanent">Same As Permanent</label>
+            <span class="text-danger">*</span>
+            <input type="checkbox" class="form-check-input editable-field" id="SameAsPermanent"/>
+          </div>
+        </div>
+        <div class="col-md-6"><div class="form-group"></div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="addressLine1">Address Line 1</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="addressLine1" placeholder="Enter Address Line 1"/>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="addressLine2">Address Line 2</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="addressLine2" placeholder="Enter Address Line 2"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- City/State/Zip/Country/Mobile/Landline repeated with .editable-field class -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="city">City</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="city" placeholder="Enter City"/>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="state">State</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="state" placeholder="Enter State"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="zip">Zip/Postal Code</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="zip" placeholder="Enter Zip/Postal Code"/>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="country">Country</label>
+            <span class="text-danger">*</span>
+            <select id="country" class="form-select editable-field" name="country" required>
+              <option value="">Select</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Albania">Albania</option>
+              <option value="Algeria">Algeria</option>
+              <!-- rest of countries unchanged -->
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="mobileNumber">Mobile Number</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="mobileNumber" placeholder="Enter Mobile Number"/>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="landlineNumber">Landline Number</label>
+            <span class="text-danger">*</span>
+            <input type="text" class="form-control editable-field" id="landlineNumber" placeholder="Enter Landline Number"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Emergency Contact Card -->
+  <div class="card" style="margin-top: 20px; overflow-x: auto; width: 100%;">
+    <div class="card-body">
+      <div class="page-header" style="margin-top: -10px;">
+        <h5>Emergency Contact </h5>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Contact Person</th>
+            <th>Relationship</th>
+            <th>Mobile number</th>
+            <th>Landline number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" class="form-control editable-field" id="contactPerson1" placeholder="Enter Contact Person"/></td>
+            <td><input type="text" class="form-control editable-field" id="relationship1" placeholder="Enter Relationship"/></td>
+            <td><input type="text" class="form-control editable-field" id="mobileNumber1" placeholder="Enter Mobile number"/></td>
+            <td><input type="text" class="form-control editable-field" id="landlineNumber1" placeholder="Enter Landline Number"/></td>
+          </tr>
+          <tr>
+            <td><input type="text" class="form-control editable-field" id="contactPerson2" placeholder="Enter Contact Person"/></td>
+            <td><input type="text" class="form-control editable-field" id="relationship2" placeholder="Enter Relationship"/></td>
+            <td><input type="text" class="form-control editable-field" id="mobileNumber2" placeholder="Enter Mobile number"/></td>
+            <td><input type="text" class="form-control editable-field" id="landlineNumber2" placeholder="Enter Landline Number"/></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Save/Cancel Buttons -->
+  <div class="text-end mt-3" style="display: none" id="ContBtn">
+    <button id="saveContBtn" class="btn btn-gradient-primary me-2">Save</button>
+    <button id="cancelContBtn" class="btn btn-gradient-light">Cancel</button>
+  </div>
+</form>
+         
         </div>
          <footer class="footer">
 <div
@@ -2509,7 +1992,7 @@
     <script src="../../assets/vendors/select2/select2.min.js"></script>
     <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
     <!-- End plugin js for this page -->
-<script>
+<!-- <script>
       const editContBtn = document.getElementById("editContBtn");
       const actionContButtons = document.getElementById("ContBtn");
       const saveContBtn = document.getElementById("saveContBtn");
@@ -2545,7 +2028,7 @@
         actionContButtons.style.display = "none";
         editContBtn.style.display = "block";
       });
-    </script>
+    </script> -->
 
     <!-- inject:js -->
     <script src="../../assets/js/off-canvas.js"></script>
@@ -2650,6 +2133,41 @@
     #searchResultCard .card-body { padding: 12px; }
     #searchInput:focus { outline: none; box-shadow: none; }
   </style>
-    <!-- End custom js for this page -->
-  </body>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('.forms-sample');
+  const editBtn = form.querySelector('#editContBtn');
+  const saveCancelDiv = form.querySelector('#ContBtn');
+  const saveBtn = form.querySelector('#saveContBtn');
+  const cancelBtn = form.querySelector('#cancelContBtn');
+  const fields = form.querySelectorAll('.editable-field');
+
+  // Disable all fields by default
+  fields.forEach(f => f.disabled = true);
+  saveCancelDiv.style.display = 'none';
+
+  // Edit button click
+  editBtn.addEventListener('click', () => {
+    fields.forEach(f => f.disabled = false);
+    editBtn.style.display = 'none';
+    saveCancelDiv.style.display = 'block';
+  });
+
+  // Save button click
+  saveBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    fields.forEach(f => f.disabled = true);
+    editBtn.style.display = 'inline-block';
+    saveCancelDiv.style.display = 'none';
+  });
+
+  // Cancel button click
+  cancelBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    fields.forEach(f => f.disabled = true);
+    editBtn.style.display = 'inline-block';
+    saveCancelDiv.style.display = 'none';
+  });
+});
+</script>  </body>
 </html>
