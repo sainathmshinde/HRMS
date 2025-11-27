@@ -42,6 +42,11 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
   </head>
   <body class="sidebar-fixed">
     <div class="container-scroller">
@@ -1700,110 +1705,103 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title">Monthly Salary Calculation</h3>
-              <nav aria-label="breadcrumb">
-                <a
-                  href="monthlySalary.html"
-                  class="btn btn-gradient-primary me-2"
-                  >Generate Salary Slip</a
-                >
-              </nav>
+              <h3 class="page-title fixed-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                  <i class="fa-solid fa-clipboard-list"></i>
+                </span>
+                Monthly Salary salaryCalculation
+              </h3>
             </div>
-
-            <div class="col-lg-12 grid-margin stretch-card">
+            <div class="d-flex justify-content-end mt-5 mb-0">
+              <a
+                id="btnGenerateSlip"
+                href="#"
+                class="btn btn-gradient-primary"
+              >
+                Generate Salary Slip
+              </a>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card" style="margin-bottom:-20px;">
               <div class="card">
                 <div class="card-body">
                   <form class="forms-sample">
+                    <!-- Row 1: Employee + Month -->
                     <div class="row">
-                      <div class="row">
-                        <!-- Description -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="employeeSearch">Employee Search</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="employeeSearch"
-                              value="Mangesh M"
-                              required
-                            />
-                          </div>
-                        </div>
-                        <!-- Designation -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="designation">Month</label>
-                            <span class="text-danger">*</span>
-                            <select
-                              class="form-select"
-                              id="designation"
-                              required
-                            >
-                              <option value="1">January</option>
-                              <option value="2">February</option>
-                              <option value="3">March</option>
-                              <option value="4">April</option>
-                              <option value="5">May</option>
-                              <option value="6">June</option>
-                              <option value="7">July</option>
-                              <option value="8">August</option>
-                              <option value="9">September</option>
-                              <option value="10">October</option>
-                              <option value="11">November</option>
-                              <option value="12">December</option>
-                            </select>
-                          </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="employeeSearch">Employee Search</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="employeeSearch"
+                            value="Mangesh M"
+                            required
+                          />
                         </div>
                       </div>
 
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="financialYear">Financial Year</label>
-                            <span class="text-danger">*</span>
-                            <select
-                              class="form-select"
-                              id="financialYear"
-                              required
-                            >
-                              <option value="1">Select</option>
-
-                              <option value="2">2021-2022</option>
-                              <option value="4">2022-2023</option>
-                              <option value="1">2023-2024</option>
-
-                              <option value="5">2024-2025</option>
-                            </select>
-                          </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="designation">Month <span class="text-danger">*</span></label>
+                          <select class="form-select" id="designation" required>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                          </select>
                         </div>
-                        <!-- Template Name -->
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="templateName">Calender Days</label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="templateName"
-                              value="31"
-                              readonly
-                            />
-                          </div>
+                      </div>
+                    </div>
+
+                    <!-- Row 2: Financial Year + Calendar Days -->
+                    <div class="row mt-3">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="financialYear">Financial Year <span class="text-danger">*</span></label>
+                          <select class="form-select" id="financialYear" required>
+                            <option value="">Select</option>
+                            <option value="2">2021-2022</option>
+                            <option value="4">2022-2023</option>
+                            <option value="1">2023-2024</option>
+                            <option value="5">2024-2025</option>
+                          </select>
                         </div>
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="templateName"
-                                >Number Of Payable Days</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="templateName"
-                                value="31"
-                                readonly
-                              />
-                            </div>
-                          </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="calendarDays">Calendar Days</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="calendarDays"
+                            value="31"
+                            readonly
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Row 3: Number of Payable Days -->
+                    <div class="row mt-3">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="payableDays">Number Of Payable Days</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="payableDays"
+                            value="31"
+                            readonly
+                          />
                         </div>
                       </div>
                     </div>
@@ -1985,15 +1983,10 @@
               <span
                 class="text-muted text-center text-sm-left d-block d-sm-inline-block"
                 >Copyright © 2023
-                <a href="https://www.bootstrapdash.com/" target="_blank"
-                  >BootstrapDash</a
+                <a href="https://www.syborgtech.com/" target="_blank"
+                  >SyborgTech</a
                 >. All rights reserved.</span
               >
-              <span
-                class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
-                >Hand-crafted & made with
-                <i class="mdi mdi-heart text-danger"></i
-              ></span>
             </div>
           </footer>
           <!-- partial -->
@@ -2002,42 +1995,30 @@
       </div>
       <!-- page-body-wrapper ends -->
     </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
     <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
     <script src="../../assets/vendors/select2/select2.min.js"></script>
     <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
     <script src="../../assets/js/off-canvas.js"></script>
     <script src="../../assets/js/misc.js"></script>
     <script src="../../assets/js/settings.js"></script>
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
      <script>
 (function () {
-  // Configuration
-  const TARGET_NAME = "harshad";         // canonical full name, lowercase
-  const MIN_CHARS_TO_SHOW = 4;           // show after >= 4 chars typed
+  const TARGET_NAME = "harshad";         
+  const MIN_CHARS_TO_SHOW = 4;           
 
   // Elements
   const form = document.getElementById("searchForm");
   const input = document.getElementById("searchInput");
   const card = document.getElementById("searchResultCard");
-
-  // Utility: show/hide functions
   function showCard() {
     if (card.classList.contains("d-none")) {
       card.classList.remove("d-none");
       input.setAttribute("aria-expanded", "true");
-      // optionally move focus to the card if you want keyboard navigation
     }
   }
   function hideCard() {
@@ -2046,8 +2027,6 @@
       input.setAttribute("aria-expanded", "false");
     }
   }
-
-  // 1) Show card when user types >= MIN_CHARS_TO_SHOW
   input.addEventListener("input", function () {
     const v = (this.value || "").trim();
     if (v.length >= MIN_CHARS_TO_SHOW) {
@@ -2056,53 +2035,43 @@
       hideCard();
     }
   });
-
-  // 2) Handle Enter: prevent form submit and open card when full name OR length >= MIN_CHARS_TO_SHOW
   input.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
-      // prevent actual form submission / page reload
       e.preventDefault();
-
       const v = (this.value || "").trim().toLowerCase();
-
-      // If typed EXACT full name -> show card
       if (v === TARGET_NAME) {
         showCard();
-        // Optional: you could also navigate automatically:
-        // window.location.href = "profile.html";
         return;
       }
-
-      // If user typed >= MIN_CHARS_TO_SHOW -> also show
       if (v.length >= MIN_CHARS_TO_SHOW) {
         showCard();
         return;
       }
-
-      // otherwise ignore enter (do nothing)
     }
   });
-
-  // 3) Click outside to close
   document.addEventListener("click", function (evt) {
     const target = evt.target;
     if (!card.contains(target) && target !== input) {
       hideCard();
     }
   });
-
-  // 4) Optional: if user clicks a result link, let normal navigation happen but hide the card
   card.addEventListener("click", function (evt) {
-    // If they click a link, the browser will navigate — we don't need to do anything
-    // But hide the card to keep UI tidy in case of SPA navigation.
     hideCard();
   });
-
-  // 5) Safety: ensure script doesn't break when elements are missing
   if (!input || !card || !form) {
     console.warn("[search] required elements missing: searchInput / searchResultCard / searchForm");
   }
 })();
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var generateBtn = document.getElementById("btnGenerateSlip");
+    if (!generateBtn) return;
+    generateBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.open("../../assets/files/SalarySlip_MangeshM_Jan2025.pdf", "_blank");
+    });
+  });
 </script>
 <style>
     #searchResultCard {
