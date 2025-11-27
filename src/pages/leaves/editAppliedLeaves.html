@@ -42,10 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
-     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
   </head>
   <body class="sidebar-fixed">
     <div class="container-scroller">
@@ -84,7 +84,7 @@
           </button>
           <div class="search-field d-none d-md-block">
             <form class="d-flex align-items-center h-100" action="#">
-              <div class="search-field d-none d-md-block position-relative" style="max-width:420px;">
+             <div class="search-field d-none d-md-block position-relative" style="max-width:420px;">
   <form id="searchForm" class="d-flex align-items-center h-100" novalidate>
     <div class="input-group w-100">
       <span class="input-group-text bg-transparent border-0" id="searchIcon" aria-hidden="true">
@@ -129,7 +129,7 @@
    
        style="padding:18px 20px;">
 
-    <img src="/src/assets/images/HarshadYadav.jpeg"
+    <img src="/src/assets/images/HarshalYadav.jpeg"
          class="rounded-circle"
          width="105"
          height="105"
@@ -240,7 +240,7 @@
                   <i class="mdi mdi-cached me-2 text-success"></i> Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/src/signIn.html">
+                <a class="dropdown-item" href="#">
                   <i class="mdi mdi-logout me-2 text-primary"></i> Signout
                 </a>
               </div>
@@ -422,7 +422,7 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
-    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
          <ul class="nav">
             <li class="nav-item">
               <a
@@ -1127,7 +1127,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/src/pages/performance/assessmentReports.html"
+                      href="/src/pages/performance/assessmentReport.html"
                     >
                       Assessment Report
                     </a>
@@ -1223,7 +1223,6 @@
                 </ul>
               </div>
             </li>
-
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -1703,738 +1702,284 @@
           </ul>
             </nav>
         <!-- partial -->
-           <div class="main-panel">
+        <div class="main-panel">
           <div class="content-wrapper">
-             <div class="page-header mt-2">
-               <h3 class="page-title fixed-title">
-                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-clipboard-list"></i></span>
-              Employees On Leave
+            <div class="page-header">
+              <h3 class="page-title fixed-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-user"></i></span>
+                Applied Leaves
               </h3>
-            </div>
-        <div class="row mt-5">
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="fromDate">From Date</label>
-              <input
-                type="date"
-                class="form-control"
-                id="fromDate"
-                value="2025-10-01"
-                required
-              />
+              </div>
+            <div class="row">
+              <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <form class="forms-sample">
+                      <div class="row">
+                        <!-- Employee ID -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="employeeId">Employee ID</label>
+                            <!-- <span class="text-danger">*</span> -->
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="employeeId"
+                              value="ID204"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Reporting ID -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="reportingId">Employee Name</label>
+                            <span class="text-danger">*</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="reportingId"
+                              value="Harshad Yadav"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <!-- Title -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="leaveType">Leave Type</label>
+                            <span class="text-danger">*</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="leaveType"
+                              value="Medical Leave"
+                              required
+                            />
+                          </div>
+                        </div>
+
+                        <!-- First Name -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="Balance of Selected Leave Type">Balance of Selected Leave Type</label>
+                            <span class="text-danger">*</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="balanceOfLeaveType"
+                              value="6"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <!-- Middle Name -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="openingBalance"
+                              >Leave
+                              <span class="text-danger">*</span></label
+                            >
+                            <div
+                              style="
+                                display: flex;
+                                align-items: center;
+                                gap: 20px;
+                                margin-top: 8px;
+                              "
+                            >
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="Leave"
+                                  id="FullDay"
+                                  value="yes"
+                                  checked
+                                  required
+                                />
+                                Full Day
+                              </label>
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceNo"
+                                  value="no"
+                                  required
+                                />
+                                First Half
+                              </label>
+                              <label
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 5px;
+                                "
+                              >
+                                <input
+                                  type="radio"
+                                  name="openingBalance"
+                                  id="openingBalanceNo"
+                                  value="no"
+                                  required
+                                />
+                                Second Half
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <!-- Date of Birth -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="dob">From Date</label>
+                            <span class="text-danger">*</span>
+                            <input 
+                                type="date"
+                                class="form-control"
+                                id="fromDate"
+                                name="fromDate"
+                                value="2025-05-08"
+                                required
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="dob">To Date</label>
+                            <span class="text-danger">*</span>
+                            <input 
+                                type="date"
+                                class="form-control"
+                                id="toDate"
+                                name="toDate"
+                                value="2025-05-09"
+                                required
+                            />
+                          </div>
+                        </div>
+                        <!-- Leave Reason -->
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="Reason For Leave">Reason For Leave</label>
+                            <span class="text-danger">*</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="ReasonForLeave"
+                              value="Stomach Ache"
+                              rows="4"
+                              required
+                            ></input>
+                          </div>
+                        </div>
+
+                        <!-- Identification Document Number -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="employeeId">Leave Status</label>
+                  <select class="form-select" id="title" required>
+                    <option value="Select">Select</option>
+                    <option value="Pending" selected>Pending Approval</option>
+                    <option value="PendingFor2UpApproval">Pending For 2Up Approval</option>
+                    <option value="PendingForTopLevelApproval">Pending For Top Level Approval</option>
+                    <option value="Approved">Approved</option>
+                    <option value="Cancel">Cancel</option>
+                    <option value="Decline">Decline</option>
+                  </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="lastName">Authorize By</label>
+                            <span class="text-danger">*</span>
+                            <select class="form-select" id="title" required>
+                              <option value="">Select</option>
+                              <option value="mr">Darshan Gaikwad</option>
+                              <option value="mr" selected>Sainath Shinde</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <!-- Father's / Husband's First Name -->
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="Reason For Leave">Reason For Approval/Forward/Decline</label>
+                            <span class="text-danger">*</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="ReasonForLeave"
+                              value=""
+                              rows="4"
+                              required
+                            ></input>
+                          </div>
+                        </div>
+
+                        <!-- Father's / Husband's Middle Name -->
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="Reason For Leave">Remarks</label>
+                            <span class="text-danger">*</span>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="Remarks"
+                              value=""
+                              rows="4"
+                              required
+                            ></input>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Buttons -->
+                        <div class="text-end">
+                        <a href="./appliedLeaves.html" class="btn btn-gradient-primary me-2">
+                            Update
+                        </a>
+                        <a href="./appliedLeaves.html" class="btn btn-gradient-light">
+                            Cancel
+                        </a>
+                    </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="toDate">To Date</label>
-              <input
-                type="date"
-                class="form-control"
-                id="toDate"
-                value="2025-10-31"
-                required
-              />
-            </div>
-          </div>
-        </div>
-     
-
-<div class="mb-4" style="margin-top: -25px;">
-        <div class="d-flex justify-content-between align-items-center mb-2 p-2 border bg-light">
-        <div>
-            <strong>On Leave:</strong> 14 |
-            <strong>Location:</strong> Pune
-           
-        </div>
-
-        <div class="action-buttons">
-          <button id="btnGo" class="btn btn-gradient-primary btn-sm">Go</button>
-
-          <a href="/src/assets/excel/NoLeaveReport.xlsx" download
-            id="btnExportExcel"
-            class="btn btn-sm btn-primary">
-            <i class="fa-solid fa-download"></i>
-          </a>
-          <a href="/src/assets/files/NoLeaveReport_full.pdf" target="_blank"
-            id="btnPrintPdf"
-            class="btn btn-sm btn-primary">
-            <i class="fa-solid fa-print"></i>
-          </a>
-        </div>
-
-    </div>
-</div>
-<div class="mb-4" style="margin-top: -50px;">
-   <div class="row">
-  <div class="gridView">
-    <div class="col-lg-12 grid-margin stretch-card" >
-    <div class="card">
-      <div class="card-body">
-        <div class="table-responsive"> <!-- Makes table scrollable if wide -->
-          <table class="table align-middle">
-           <tr id="filterHead">
-						 <tr>
-                          <th>ID</th>
-                          <th>Employee Name</th>
-                          <th style="padding:0; width:150px;">
-                            <div class="dropdown">
-
-                                <!-- Header Button -->
-                                <button class="btn btn-sm dropdown-toggle w-100 text-start"
-                                        type="button"
-                                        data-bs-toggle="dropdown">
-                                Designation
-                                </button>
-
-                                <!-- Dropdown Menu -->
-                                <div class="dropdown-menu"
-                                    style="width: 240px; max-height: 250px; overflow-y: auto; overflow-x: hidden; padding-left: 40px;">
-
-                                <!-- Select All -->
-                                <div class="form-check mb-1">
-                                    <input class="form-check-input" type="checkbox" id="designationAll" checked>
-                                    <label class="form-check-label" for="designationAll">Select All</label>
-                                </div>
-
-                                <hr class="my-1">
-
-                                <!-- Checkbox List -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="des1" checked>
-                                    <label class="form-check-label" for="des1">Developer</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="des2" checked>
-                                    <label class="form-check-label" for="des2">Designer</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="des3" checked>
-                                    <label class="form-check-label" for="des3">Accounts Officer</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="des4" checked>
-                                    <label class="form-check-label" for="des4">Project Manager</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="des5" checked>
-                                    <label class="form-check-label" for="des5">Admin / Account Assistant</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="des6" checked>
-                                    <label class="form-check-label" for="des6">HR</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="des7" checked>
-                                    <label class="form-check-label" for="des7">Blank</label>
-                                </div>
-
-                                </div>
-
-                            </div>
-                            </th>
-
-                          <th style="width: 10%; padding: 0;">
-                            <div class="dropdown">
-                                <!-- Header / Button -->
-                                <button class="btn  btn-sm dropdown-toggle w-100 text-start" 
-                                        type="button" 
-                                        id="departmentDropdown" 
-                                        data-bs-toggle="dropdown" 
-                                        aria-expanded="false">
-                                Department
-                                </button>
-
-                                <!-- Dropdown Menu -->
-                                           <div class="dropdown-menu"
-                                    style="width: 240px; max-height: 250px; overflow-y: auto; overflow-x: hidden; padding-left: 40px;">
-                                
-                                <!-- Select All -->
-                                <div class="form-check mb-2">
-                                    <input class="form-check-input" type="checkbox" id="selectAll" checked>
-                                    <label class="form-check-label" for="selectAll" style="margin-left:2px;">
-                                    Select All
-                                    </label>
-                                </div>
-
-                                <div class="dropdown-divider"></div>
-
-                                <!-- Individual Checkboxes -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="deptSales" checked>
-                                    <label class="form-check-label" for="deptSales">Sales</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="deptIT" checked>
-                                    <label class="form-check-label" for="deptIT">IT</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="deptAccounts" checked>
-                                    <label class="form-check-label" for="deptAccounts">Accounts</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="deptHR" checked>
-                                    <label class="form-check-label" for="deptHR">HR</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="deptProduction" checked>
-                                    <label class="form-check-label" for="deptProduction">Production</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="deptRnD" checked>
-                                    <label class="form-check-label" for="deptRnD">Research and Development</label>
-                                </div>
-
-                                </div>
-                            </div>
-                            </th>
-
-                          <th style="padding-left:0; padding-right:0;">
-                            <div class="dropdown">
-                                <!-- Header / Button -->
-                                <button class="btn btn-sm dropdown-toggle w-100 text-start" 
-                                        type="button" 
-                                        id="buDropdown" 
-                                        data-bs-toggle="dropdown" 
-                                        aria-expanded="false">
-                                BU
-                                </button>
-
-                                <!-- Dropdown Menu -->
-                                           <div class="dropdown-menu"
-                                    style="width: 240px; max-height: 250px; overflow-y: auto; overflow-x: hidden; padding-left: 40px;">
-                                
-                                <!-- Select All -->
-                                <div class="form-check mb-2">
-                                    <input class="form-check-input" type="checkbox" id="selectAllBU" checked>
-                                    <label class="form-check-label" for="selectAllBU">Select All</label>
-                                </div>
-
-                                <div class="dropdown-divider"></div>
-
-                                <!-- Individual Checkboxes -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="buManufacturing" checked>
-                                    <label class="form-check-label" for="buManufacturing">Manufacturing</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="buHealth" checked>
-                                    <label class="form-check-label" for="buHealth">Health Services</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="buInfrastructure" checked>
-                                    <label class="form-check-label" for="buInfrastructure">Infrastructure</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="buInsurance" checked>
-                                    <label class="form-check-label" for="buInsurance">Insurance</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="buTelecom" checked>
-                                    <label class="form-check-label" for="buTelecom">Tele-Communication</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="buBI" checked>
-                                    <label class="form-check-label" for="buBI">Business Intelligence</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="buOracle" checked>
-                                    <label class="form-check-label" for="buOracle">Oracle Services</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="buConsulting" checked>
-                                    <label class="form-check-label" for="buConsulting">Consulting</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="buBlank" checked>
-                                    <label class="form-check-label" for="buBlank">Blank</label>
-                                </div>
-
-                                </div>
-                            </div>
-                            </th>
-
-                          <th style="padding-left:0; padding-right:0;">
-                            <div class="dropdown">
-                                <!-- Header / Button -->
-                                <button class="btn btn-sm dropdown-toggle w-100 text-start" 
-                                        type="button" 
-                                        id="locationDropdown" 
-                                        data-bs-toggle="dropdown" 
-                                        aria-expanded="false">
-                                Location
-                                </button>
-
-                                <!-- Dropdown Menu -->
-                                        <div class="dropdown-menu"
-                                    style="width: 240px; max-height: 250px; overflow-y: auto; overflow-x: hidden; padding-left: 40px;">
-                                
-                                <!-- Select All -->
-                                <div class="form-check mb-2">
-                                    <input class="form-check-input" type="checkbox" id="selectAllLocation">
-                                    <label class="form-check-label" for="selectAllLocation">Select All</label>
-                                </div>
-
-                                <div class="dropdown-divider"></div>
-
-                                <!-- Individual Checkboxes -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="locPune" checked>
-                                    <label class="form-check-label" for="locPune">Pune</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="locMumbai">
-                                    <label class="form-check-label" for="locMumbai">Mumbai</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="locBanglore">
-                                    <label class="form-check-label" for="locBanglore">Banglore</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="locNagpur">
-                                    <label class="form-check-label" for="locNagpur">Nagpur</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="locDelhi">
-                                    <label class="form-check-label" for="locDelhi">Delhi</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="locGujrat">
-                                    <label class="form-check-label" for="locGujrat">Gujrat</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="locKerala">
-                                    <label class="form-check-label" for="locKerala">Kerala</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="locAndhra">
-                                    <label class="form-check-label" for="locAndhra">Andhra Pradesh</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="locBlank">
-                                    <label class="form-check-label" for="locBlank">Blank</label>
-                                </div>
-
-                                </div>
-                            </div>
-                            </th>
-                        
-                            <th style="padding-left:0; padding-right:0;">
-                            <div class="dropdown">
-                                <!-- Header / Button -->
-                                <button class="btn btn-sm dropdown-toggle w-100 text-start" 
-                                        type="button" 
-                                        id="eligibilityDropdown" 
-                                        data-bs-toggle="dropdown" 
-                                        aria-expanded="false">
-                                Leave Type
-                                </button>
-
-                                <!-- Dropdown Menu -->
-                                           <div class="dropdown-menu"
-                                    style="width: 240px; max-height: 250px; overflow-y: auto; overflow-x: hidden; padding-left: 40px;">
-                                
-                                <!-- Select All -->
-                                <div class="form-check mb-2">
-                                    <input class="form-check-input" type="checkbox" id="selectAllEligibility">
-                                    <label class="form-check-label" for="selectAllEligibility">Select All</label>
-                                </div>
-
-                                <div class="dropdown-divider"></div>
-
-                                <!-- Individual Checkboxes -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityYes" checked>
-                                    <label class="form-check-label" for="eligibilityYes">Casual leave</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityNo">
-                                    <label class="form-check-label" for="eligibilityNo">Privilege leave</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityBlank">
-                                    <label class="form-check-label" for="eligibilityBlank">Medical Leave</label>
-                                </div>
-
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityBlank">
-                                    <label class="form-check-label" for="eligibilityBlank">Maternity leave</label>
-                                </div>
-
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityBlank">
-                                    <label class="form-check-label" for="eligibilityBlank">Paternity leave</label>
-                                </div>
-
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityBlank">
-                                    <label class="form-check-label" for="eligibilityBlank">Sabbatical leave</label>
-                                </div>
-
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityBlank">
-                                    <label class="form-check-label" for="eligibilityBlank">Blank</label>
-                                </div>
-
-                                </div>
-                            </div>
-                            </th>
-
-                            <th>From Date</th>
-                            <th>To Date</th>
-                            <th>Availed Days</th>
-
-                            <th style="padding-left:0; padding-right:0;">
-                            <div class="dropdown">
-                                <!-- Header / Button -->
-                                <button class="btn btn-sm dropdown-toggle w-100 text-start" 
-                                        type="button" 
-                                        id="eligibilityDropdown" 
-                                        data-bs-toggle="dropdown" 
-                                        aria-expanded="false">
-                               Leave Status
-                                </button>
-
-                                <!-- Dropdown Menu -->
-                                           <div class="dropdown-menu"
-                                    style="width: 240px; max-height: 250px; overflow-y: auto; overflow-x: hidden; padding-left: 40px;">
-                                
-                                <!-- Select All -->
-                                <div class="form-check mb-2">
-                                    <input class="form-check-input" type="checkbox" id="selectAllEligibility">
-                                    <label class="form-check-label" for="selectAllEligibility">Select All</label>
-                                </div>
-
-                                <div class="dropdown-divider"></div>
-
-                                <!-- Individual Checkboxes -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityYes" checked>
-                                    <label class="form-check-label" for="eligibilityYes">Approved</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityNo">
-                                    <label class="form-check-label" for="eligibilityNo">Declined</label>
-                                </div>
-
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityNo">
-                                    <label class="form-check-label" for="eligibilityNo">Pending</label>
-                                </div>
-
-                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityNo">
-                                    <label class="form-check-label" for="eligibilityNo">Cancelled</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityBlank">
-                                    <label class="form-check-label" for="eligibilityBlank">Blank</label>
-                                </div>
-
-                                </div>
-                            </div>
-                            </th>
-
-                            <th style="padding-left:0; padding-right:0;">
-                            <div class="dropdown">
-                                <!-- Header / Button -->
-                                <button class="btn btn-sm dropdown-toggle w-100 text-start" 
-                                        type="button" 
-                                        id="eligibilityDropdown" 
-                                        data-bs-toggle="dropdown" 
-                                        aria-expanded="false">
-                                Planned
-                                </button>
-
-                                <!-- Dropdown Menu -->
-                                           <div class="dropdown-menu"
-                                    style="width: 240px; max-height: 250px; overflow-y: auto; overflow-x: hidden; padding-left: 40px;">
-                                
-                                <!-- Select All -->
-                                <div class="form-check mb-2">
-                                    <input class="form-check-input" type="checkbox" id="selectAllEligibility">
-                                    <label class="form-check-label" for="selectAllEligibility">Select All</label>
-                                </div>
-
-                                <div class="dropdown-divider"></div>
-
-                                <!-- Individual Checkboxes -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityYes" checked>
-                                    <label class="form-check-label" for="eligibilityYes">Yes</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityNo">
-                                    <label class="form-check-label" for="eligibilityNo">No</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="eligibilityBlank">
-                                    <label class="form-check-label" for="eligibilityBlank">Blank</label>
-                                </div>
-
-                                </div>
-                            </div>
-                            </th>
-
-                          <th>Action</th>
-                        </tr>
-					</tr>
-					<tr class="odd">
-						<td>
-            <label>ID 121</label>
-          </td>
-          <td>
-            <label>Aditi Kulkarni</label>
-          </td>
-					
-						<td>Admin / Account Assistant</td>
-						<td>Accounts</td>
-						<td>Manufacturing</td>
-						<td>Pune</td>
-						<td>Privilage</td>
-						
-						<td>03-Oct-2025</td>
-						<td>03-Oct-2025</td>
-						<td>1</td>
-						<td>Approved</td>
-						<td>Yes</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="even">
-					 <td>
-            <label>ID 144</label>
-          </td>
-          <td>
-            <label>Rohan Patankar</label>
-          </td>
-						<td>Project Manager</td>
-						<td>Sales</td>
-						<td>Manufacturing</td>
-						<td>Pune</td>
-						<td>Casual</td>
-						
-						<td>08-Oct-2025</td>
-						<td>08-Mar-2025</td>
-						<td>1</td>
-						<td>Approved</td>
-						<td>Yes</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="odd">
-					  <td>
-            <label>ID 150</label>
-          </td>
-          <td>
-            <label>Vedant Shah</label>
-          </td>
-						<td>Admin / Account Assistant</td>
-						<td>HR</td>
-						
-						<td>Health Sevices</td>
-						<td>Pune</td>
-						<td>Casual</td>
-						
-						<td>11-Oct-2025</td>
-						<td>11-Oct-2025</td>
-						<td>1</td>
-						<td>Approved</td>
-						<td>Yes</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="even">
-						<td>
-            <label>ID 183</label>
-          </td>
-          <td>
-            <label>Ishita Mehra</label>
-          </td>
-						<td>Project Manager</td>
-						<td>IT</td>
-						
-						<td>Infrastructure</td>
-						<td>Pune</td>
-						<td>Medical</td>
-						
-						<td>18-Oct-2025</td>
-						<td>18-Oct-2025</td>
-						<td>1</td>
-						<td>Pending</td>
-						<td>No</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					
-					<tr class="odd">
-						 <td>
-            <label>ID 204</label>
-          </td>
-          <td>
-            <label>Harshad Yadav</label>
-          </td>
-						<td>Accounts Officer</td>
-						<td>Accounts</td>
-						<td>Health Sevices</td>
-						<td>Pune</td>
-						<td>Privilage</td>
-						
-						<td>18-Oct-2025</td>
-						<td>19-Mar-2025</td>
-						<td>2</td>
-						<td>Approved</td>
-						<td>Yes</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="even">
-							<td>
-            <label>ID 364</label>
-          </td>
-          <td>
-            <label>Shreya Deshpande</label>
-          </td>
-						<td>HR</td>
-						<td>Accounts</td>
-						<td>Insurance</td>
-						<td>Pune</td>
-						<td>Medical</td>
-						
-						<td>20-Oct-2025</td>
-						<td>20-Oct-2025</td>
-						<td>1</td>
-						<td>Approved</td>
-						<td>Yes</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>	
-					
-					
-					
-					<tr class="odd">
-							<td>
-            <label>ID 529</label>
-          </td>
-          <td>
-            <label>Kunal Jagtap</label>
-          </td>
-						<td>Admin / Account Assistant</td>
-						<td>Sales</td>
-						<td>Insurance</td>
-						<td>Pune</td>
-						<td>Privilage</td>
-						
-						<td>23-Oct-2025</td>
-						<td>26-Oct-2025</td>
-						<td>4</td>
-						<td>Approved</td>
-						<td>Yes</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="even">
-						<td>
-            <label>ID 577</label>
-          </td>
-          <td>
-            <label>Mihika Soni</label>
-          </td>
-						<td>Project Manager</td>
-						<td>Sales</td>
-						<td>Health Services</td>
-						<td>Pune</td>
-						<td>Casual</td>
-						
-						<td>23-Oct-2025</td>
-						<td>25-Oct-2025</td>
-						<td>3</td>
-						<td>Approved</td>
-						<td>Yes</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="odd">
-						  <td>
-            <label>ID 643</label>
-          </td>
-          <td>
-            <label>Parth Salunke</label>
-          </td>
-						<td>Admin / Account Assistant</td>
-						<td>HR</td>
-						<td>Manufacturing</td>
-						<td>Pune</td>
-						<td>Casual</td>
-						<td>29-Oct-2025</td>
-						<td>29-Oct-2025</td>
-						<td>1</td>
-						<td>Approved</td>
-						<td>Yes</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					
-				    
-
-        </table>
-    </div>
-</div>
-</div>
-</div>
-</div>
- </div>
- </div> 
-  <div class="d-flex justify-content-end" style="margin-top: -40px;">
-           <nav>
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-
-    <li class="page-item active">
-      <a class="page-link" href="#">1</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#">2</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-
-
-         </div> 
-          </div>
-           <footer class="footer">
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
             <div
               class="d-sm-flex justify-content-center justify-content-sm-between"
             >
@@ -2446,8 +1991,9 @@
                 >. All rights reserved.</span
               >
             </div>
-          </footer> 
-          </div>
+          </footer>
+          <!-- partial -->
+        </div>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
@@ -2564,115 +2110,25 @@
     #searchInput:focus { outline: none; box-shadow: none; }
   </style>
     <!-- End custom js for this page -->
- <script type="text/javascript">
-      $(function () {
-        $(".assignSchedule").click(function () {
-          $(".grid").hide();
-          $("#pendingForm").show();
-          $(".mounting-events-inner1").show();
-          $(".edit-img").hide();
-          $("form").find("input[type='text']").val(" ");
-          $(".edit-img").hide();
+     <script>
+(function(){
+  const title = document.querySelector('.page-header .page-title');
+  if(!title) return;
 
-          $("form").find("input").removeAttr("disabled");
-          $("form").find("select").removeAttr("disabled");
-          $("form").find(".carryForward").attr("disabled", "disabled");
-          $("form").find(".negativeCaption").attr("disabled", "disabled");
-          $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
-          $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
-          $("form").find("#accrual_dropdown").attr("disabled", "disabled");
-        });
+  const topNav = document.querySelector('.navbar') || { offsetHeight: 60 };
+  const threshold = title.getBoundingClientRect().top + window.scrollY;
 
-        $(".assignSchedule1").click(function () {
-          $("form")[0].reset();
-          $(".grid").hide();
-          $("#pendingForm").show();
-          $(".edit-img").show();
-
-          $("form").find("input[type='text']").prop("disabled", "disabled");
-          $("form").find("select").prop("disabled", "disabled");
-        });
-
-        $(".enabledForm").click(function () {
-          $("form").find("input").removeAttr("disabled");
-          $("form").find("select").removeAttr("disabled");
-          $("form").find(".carryForward").attr("disabled", "disabled");
-          $("form").find(".negativeCaption").attr("disabled", "disabled");
-          $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
-          $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
-          $("form").find("#accrual_dropdown").attr("disabled", "disabled");
-        });
-
-        $("#Carryforword_yes").click(function () {
-          $("form").find(".carryForward").removeAttr("disabled");
-        });
-
-        $("#Carryforword_no").click(function () {
-          $("form").find(".carryForward").attr("disabled", "disabled");
-        });
-
-        $(".grid").show();
-        $("#pendingForm").hide();
-
-        $("#Negative_yes").click(function () {
-          $("form").find(".negativeCaption").removeAttr("disabled");
-        });
-
-        $("#Negative_no").click(function () {
-          $("form").find(".negativeCaption").attr("disabled", "disabled");
-          $("form").find(".negativeCaption").prop("selectedIndex", 0);
-        });
-
-        $("#accrual_yes").click(function () {
-          $("form").find("#accrual_dropdown").removeAttr("disabled");
-        });
-        $("#accrual_no").click(function () {
-          $("form").find("#accrual_dropdown").attr("disabled", "disabled");
-          $("form").find("#accrual_dropdown").prop("selectedIndex", 0);
-        });
-
-        $("#Approval_yes").click(function () {
-          $("form").find("#ApprovalTop_yes").removeAttr("disabled");
-          $("form").find("#ApprovalTop_no").removeAttr("disabled");
-        });
-        $("#Approval_no").click(function () {
-          $("form").find("#ApprovalTop_no").attr("disabled", "disabled");
-          $("form").find("#ApprovalTop_yes").attr("disabled", "disabled");
-        });
-      }); /*
-			$(".formView").click(function()
-			{
-				$(".grid").hide();
-				$("#pendingForm").show();
-				$("form").find("input").attr("disabled","disabled");
-				$("form").find("select").attr("disabled","disabled");
-			});*/
-      $(".disabledForm").click(function () {
-        $(".grid").show();
-        $("#pendingForm").hide();
-      });
-
-      $(".radio").click(function () {
-        if ($("#approved").is(":checked")) {
-          $("#forwardemployee").attr("disabled", "disabled");
-          $("#remark").attr("disabled", "disabled");
-        }
-        if ($("#declined").is(":checked")) {
-          $("#forwardemployee").attr("disabled", "disabled");
-          $("#remark").removeAttr("disabled");
-        }
-        if ($("#forwarded").is(":checked")) {
-          $("#forwardemployee").removeAttr("disabled");
-          $("#remark").attr("disabled", "disabled");
-        }
-      });
-    </script>
-    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-    <script
-      src="js/multiDropdown.js"
-      type="text/javascript"
-      charset="utf-8"
-    ></script>
-    <!-- End custom js for this page -->
+  function onScroll(){
+    if(window.scrollY > threshold - topNav.offsetHeight - 8) {
+      title.classList.add('fixed-title');
+    } else {
+      title.classList.remove('fixed-title');
+    }
+  }
+  window.addEventListener('scroll', onScroll);
+  // initial call
+  onScroll();
+})();
+</script>
   </body>
 </html>
