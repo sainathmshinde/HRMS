@@ -252,7 +252,7 @@
                   <i class="mdi mdi-cached me-2 text-success"></i> Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="/src/signIn.html">
                   <i class="mdi mdi-logout me-2 text-primary"></i> Signout
                 </a>
               </div>
@@ -1895,7 +1895,7 @@
                                 </div>
                               </div>
                             </div>
-                            
+
                             <div class="row">
                               <!-- Father's / Husband's First Name -->
                               <div class="col-md-6">
@@ -1997,7 +1997,6 @@
                                 </div>
                               </div>
                             </div>
-                            
 
                             <!-- Buttons -->
                             <div
@@ -2044,7 +2043,7 @@
                     >
                       <div class="accordion-body">
                         <div class="row">
-                          <form class="forms-sample" id="personalInfoForm" >
+                          <form class="forms-sample" id="personalInfoForm">
                             <div class="d-flex justify-content-end mb-2">
                               <button
                                 type="button"
@@ -3434,58 +3433,66 @@
       })();
     </script>
     <script>
-document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function () {
+        const permanentDisabled = ["employeeId", "reportingId"];
 
-  const permanentDisabled = ["employeeId", "reportingId"];
+        // ✅ Disable all fields initially on page load
+        document
+          .querySelectorAll("#collapseOne form input, #collapseOne form select")
+          .forEach((el) => (el.disabled = true));
 
-  // ✅ Disable all fields initially on page load
-  document.querySelectorAll("#collapseOne form input, #collapseOne form select")
-    .forEach(el => el.disabled = true);
+        // ✅ Edit Button
+        document
+          .getElementById("editqInfoBtn")
+          .addEventListener("click", function () {
+            document
+              .querySelectorAll(
+                "#collapseOne form input, #collapseOne form select"
+              )
+              .forEach((el) => {
+                if (!permanentDisabled.includes(el.id)) {
+                  el.disabled = false;
+                }
+              });
 
-  // ✅ Edit Button
-  document.getElementById("editqInfoBtn").addEventListener("click", function () {
+            document.getElementById("qInfoBtn").style.display = "block";
+            this.style.display = "none";
+          });
 
-    document.querySelectorAll("#collapseOne form input, #collapseOne form select")
-      .forEach(el => {
-        if (!permanentDisabled.includes(el.id)) {
-          el.disabled = false;
-        }
+        // ✅ Cancel Button
+        document
+          .getElementById("cancelqInfoBtn")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document
+              .querySelectorAll(
+                "#collapseOne form input, #collapseOne form select"
+              )
+              .forEach((el) => (el.disabled = true));
+
+            document.getElementById("qInfoBtn").style.display = "none";
+            document.getElementById("editqInfoBtn").style.display = "block";
+          });
+
+        // ✅ Save Button
+        document
+          .getElementById("saveqInfoBtn")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document
+              .querySelectorAll(
+                "#collapseOne form input, #collapseOne form select"
+              )
+              .forEach((el) => (el.disabled = true));
+
+            document.getElementById("qInfoBtn").style.display = "none";
+            document.getElementById("editqInfoBtn").style.display = "block";
+
+            // ✅ add AJAX / API call later if needed
+          });
       });
-
-    document.getElementById("qInfoBtn").style.display = "block";
-    this.style.display = "none";
-  });
-
-  // ✅ Cancel Button
-  document.getElementById("cancelqInfoBtn").addEventListener("click", function (e) {
-    e.preventDefault();
-
-    document.querySelectorAll("#collapseOne form input, #collapseOne form select")
-      .forEach(el => el.disabled = true);
-
-    document.getElementById("qInfoBtn").style.display = "none";
-    document.getElementById("editqInfoBtn").style.display = "block";
-  });
-
-  // ✅ Save Button
-  document.getElementById("saveqInfoBtn").addEventListener("click", function (e) {
-    e.preventDefault();
-
-    document.querySelectorAll("#collapseOne form input, #collapseOne form select")
-      .forEach(el => el.disabled = true);
-
-    document.getElementById("qInfoBtn").style.display = "none";
-    document.getElementById("editqInfoBtn").style.display = "block";
-
-    // ✅ add AJAX / API call later if needed
-  });
-
-});
-</script>
-
-
-
-
-
+    </script>
   </body>
 </html>
