@@ -1722,9 +1722,9 @@
                 <span
                   class="page-title-icon bg-gradient-primary text-white me-2"
                 >
-                  <i class="fa-solid fa-person-running"></i>
+                  <i class="fa-solid fa-clipboard-list"></i>
                 </span>
-                Employee Exit Report
+                Employee Exit 
               </h3>
             </div>
             <div class="row g-2 formViewTable" style="margin-top: 30px">
@@ -1763,13 +1763,20 @@
                 <strong> Location:</strong> Pune
               </div>
 
-              <div>
-                <button class="btn btn-gradient-primary btn-sm ms-3">Go</button>
-                <button class="btn btn-outline-secondary btn-sm me-2">
-                  CSV
-                </button>
-                <button class="btn btn-outline-secondary btn-sm">Print</button>
-              </div>
+              <div class="action-buttons">
+          <button id="btnGo" class="btn btn-gradient-primary btn-sm">Go</button>
+ 
+          <a href="/src/assets/excel/NoLeaveReport.xlsx" download
+            id="btnExportExcel"
+            class="btn btn-sm btn-primary">
+            <i class="fa-solid fa-download"></i>
+          </a>
+          <a href="/src/assets/files/NoLeaveReport_full.pdf" target="_blank"
+            id="btnPrintPdf"
+            class="btn btn-sm btn-primary">
+            <i class="fa-solid fa-print"></i>
+          </a>
+        </div>
             </div>
             <div
               class="col-lg-12 grid-margin stretch-card"
