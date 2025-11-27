@@ -1703,77 +1703,93 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title fixed-title">
-                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-gears"></i></span>
-                Monthly Salary
-              </h3>
-            </div>
+  <!-- Page Header -->
+  <div class="page-header">
+    <h3 class="page-title fixed-title">
+      <span class="page-title-icon bg-gradient-primary text-white me-2">
+        <i class="fa-regular fa-id-card"></i>
+      </span>
+      Monthly Salary
+    </h3>
+  </div>
 
-            <form class="forms-sample">
-              <div class="row" style="margin-top: 50px;">
-                <!-- Financial Year -->
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label for="month">Month</label>
-                    <span class="text-danger">*</span>
-                    <select class="form-select" id="month" required>
-                      <option value="1">January</option>
-                      <option value="2">February</option>
-                      <option value="3">March</option>
-                      <option value="4">April</option>
-                      <option value="5">May</option>
-                      <option value="6">June</option>
-                      <option value="7">July</option>
-                      <option value="8">August</option>
-                      <option value="9">September</option>
-                      <option value="10">October</option>
-                      <option value="11">November</option>
-                      <option value="12">December</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label for="financialYear">Financial Year</label>
-                    <span class="text-danger">*</span>
-                    <select class="form-select" id="financialYear" required>
-                      <option value="2">2024-2025</option>
-                      <option value="1">2023-2024</option>
-                      <option value="1">2021-2022</option>
-                      <option value="1">2022-2023</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </form>
+  <!-- Filters Row (Date + Designation) -->
+  <div class="row mt-1 attendance-filters" style="margin-bottom: -65px;">
+    <div class="col-md-3">
+      <div class="form-group">
+        <label for="salaryMonth">Month</label>
+        <select class="form-select" id="salaryMonth">
+          <option value="">Select</option>
+          <option value="January"selected>January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <label for="financialYear">Financial Year</label>
+        <select class="form-select" id="financialYear">
+          <option value="">Select</option>
+          <option value="2022-2023">2022-2023</option>
+          <option value="2023-2024">2023-2024</option>
+          <option value="2024-2025" selected>2024-2025</option>
+        </select>
+      </div>
+    </div>
+  </div>
 
-            <div class="page-header">
-              <h3 class="page-title"></h3>
-              <nav aria-label="breadcrumb">
-                <a
-                  href="javascript:void(0);"
-                  class="formView btn btn-gradient-primary me-2"
-                  >Authorize Salary</a
-                >
-              </nav>
-            </div>
-            <div class="attendancetable">
-              <a href="salaryCalculation.html">
-                <div class="salaryCalculationImage">
-                  <img
-                    style="width: 100%"
-                    src="../../assets/images/WagesReport.png"
-                    alt="img"
-                  />
-                </div>
-              </a>
-            </div>
-            <div class="scroll" style="margin-top: 20px">
-              You can use the overflow property when you want to have better
-              control of the layout. The default value is visible.
-            </div>
-          </div>
+  <!-- Top-right Buttons -->
+  <div class="d-flex justify-content-end mb-0">
+    <button id="btnExportExcel" class="btn btn-sm btn-primary me-2">
+      <i class="fa-solid fa-download"></i>
+    </button>
+  </div>
+
+  <!-- Table Card -->
+  <div class="row">
+    <div class="col-lg-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+
+          <style>
+            .excel-container {
+              overflow-x: auto;
+            }
+            .excel-container table {
+              border-collapse: collapse;
+              font-size: 12px;
+              width: 100%;
+            }
+            .excel-container table td,
+            .excel-container table th {
+              border: 1px solid #ccc;
+              padding: 2px 4px;
+              text-align: center;
+              white-space: nowrap;
+            }
+          </style>
+
+          <div class="table-responsive excel-container" style="margin-top:-5px;">
+  <div id="excelTableWrapper"></div>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
@@ -1897,6 +1913,81 @@
   }
 })();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    // तुझ्या updated Excel चा path
+    const excelUrl = "../../assets/excel/WagesReport.xlsx";
+
+    loadExcelToTable(excelUrl);
+
+    // Download same excel file
+    const exportBtn = document.getElementById("btnExportExcel");
+    if (exportBtn) {
+      exportBtn.addEventListener("click", function () {
+        window.location.href = excelUrl;
+      });
+    }
+
+    // Print – नंतर PDF तयार केल्यावर नाव बदलू शकतोस
+    const printBtn = document.getElementById("btnPrintPdf");
+    if (printBtn) {
+      printBtn.addEventListener("click", function () {
+        window.open("MonthlySalary.pdf", "_blank");
+      });
+    }
+  });
+
+  function loadExcelToTable(url) {
+    fetch(url)
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Excel not loaded: " + response.statusText);
+        }
+        return response.arrayBuffer();
+      })
+      .then(function (data) {
+        const workbook = XLSX.read(data, { type: "array" });
+        const sheetName = workbook.SheetNames[0]; // तुझ्या file मध्ये पहिली sheet
+        const worksheet = workbook.Sheets[sheetName];
+
+        // sheet → HTML table
+        const html = XLSX.utils.sheet_to_html(worksheet);
+
+        const wrapper = document.getElementById("excelTableWrapper");
+        wrapper.innerHTML = html;
+
+        const table = wrapper.querySelector("table");
+        if (table) {
+          table.classList.add("table", "table-bordered");
+        }
+      })
+      .catch(function (err) {
+        console.error(err);
+        document.getElementById("excelTableWrapper").innerText =
+          "Error during Excel file load.";
+      });
+  }
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const tableWrapper = document.getElementById("excelTableWrapper");
+
+    // table load झाल्यावर थोडा delay देऊन click event लागू करतो
+    setTimeout(() => {
+      const table = tableWrapper.querySelector("table");
+
+      if (table) {
+        table.style.cursor = "pointer"; // pointer icon
+        table.addEventListener("click", function () {
+          window.location.href = "salaryCalculation.html";
+        });
+      }
+    }, 500); // Excel render होण्याची खात्री
+  });
+</script>
+
 <style>
     #searchResultCard {
       border-radius: 10px;
