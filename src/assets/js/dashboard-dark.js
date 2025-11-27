@@ -355,7 +355,7 @@
     new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['Sep-16','Oct-16', 'Nov-16', 'Dec-16', 'Jan-16', 'Feb-16'],
+        labels: ['Sep-25','Oct-25', 'Nov-25', 'Dec-25', 'Jan-25', 'Feb-25'],
         datasets: [{
           label: "Number Of Trainings",
           borderColor: gradientStrokeViolet,
@@ -452,7 +452,7 @@
     new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['Sep-16','Oct-16', 'Nov-16', 'Dec-16', 'Jan-16', 'Feb-16'],
+        labels: ['Sep-25','Oct-25', 'Nov-25', 'Dec-25', 'Jan-25', 'Feb-25'],
         datasets: [{
           label: "Soft Skills",
           borderColor: gradientStrokeViolet,
@@ -565,7 +565,7 @@
     new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['2024','2025', '2026'],
+        labels: ['2023','2024', '2025'],
         datasets: [{
           label: "A",
           borderColor: gradientStrokeViolet,
@@ -1405,7 +1405,7 @@ if ($("#visit-sale-chart6").length) {
     new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['Sep-15','Oct-15', 'Nov-15', 'Dec-15', 'Jan-15', 'Feb-15'],
+        labels: ['Sep-25','Oct-25', 'Nov-25', 'Dec-25', 'Jan-25', 'Feb-25'],
         datasets: [{
           label: "Present Trends",
           borderColor: gradientStrokeRed,
@@ -1598,7 +1598,7 @@ if ($("#visit-sale-chart6").length) {
     new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['Sep-15','Oct-15', 'Nov-15', 'Dec-15', 'Jan-15', 'Feb-15'],
+        labels: ['Sep-25','Oct-25', 'Nov-25', 'Dec-25', 'Jan-25', 'Feb-25'],
         datasets: [{
           label: "Village Halt",
           borderColor: gradientStrokeRed,
@@ -1728,7 +1728,7 @@ if ($("#visit-sale-chart6").length) {
     new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['Sep-15','Oct-15', 'Nov-15', 'Dec-15', 'Jan-15', 'Feb-15'],
+        labels: ['Sep-25','Oct-25', 'Nov-25', 'Dec-25', 'Jan-25', 'Feb-25'],
         datasets: [{
           label: "Monthly Total Expense",
           borderColor: gradientStrokeViolet,
