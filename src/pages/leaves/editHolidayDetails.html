@@ -42,9 +42,9 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
-     <link
+    <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
   <body class="sidebar-fixed">
@@ -83,136 +83,150 @@
           >
             <span class="mdi mdi-menu"></span>
           </button>
-          <div class="search-field d-none d-md-block position-relative" style="max-width:420px;">
-  <form id="searchForm" class="d-flex align-items-center h-100" novalidate>
-    <div class="input-group w-100">
-      <span class="input-group-text bg-transparent border-0" id="searchIcon" aria-hidden="true">
-        <i class="mdi mdi-magnify"></i>
-      </span>
+          <div class="search-field d-none d-md-block">
+            <form class="d-flex align-items-center h-100" action="#">
+              <div
+                class="search-field d-none d-md-block position-relative"
+                style="max-width: 420px"
+              >
+                <form
+                  id="searchForm"
+                  class="d-flex align-items-center h-100"
+                  novalidate
+                >
+                  <div class="input-group w-100">
+                    <span
+                      class="input-group-text bg-transparent border-0"
+                      id="searchIcon"
+                      aria-hidden="true"
+                    >
+                      <i class="mdi mdi-magnify"></i>
+                    </span>
 
-      <input
-        type="text"
-        id="searchInput"
-        class="form-control bg-transparent border-0"
-        placeholder="Search..."
-        autocomplete="off"
-        aria-label="Search"
-        aria-haspopup="true"
-        aria-controls="searchResultCard"
-      />
-    </div>
-  </form>
+                    <input
+                      type="text"
+                      id="searchInput"
+                      class="form-control bg-transparent border-0"
+                      placeholder="Search..."
+                      autocomplete="off"
+                      aria-label="Search"
+                      aria-haspopup="true"
+                      aria-controls="searchResultCard"
+                    />
+                  </div>
+                </form>
 
-  <!-- Result Card (hidden by default) -->
- 
-   
-<div id="searchResultCard"
-     class="card shadow position-absolute d-none"
-     role="dialog"
-     aria-modal="false"
-     aria-labelledby="resultName"
-     style="
-        z-index:2000;
-        top:48px;
-        left:30px;
-        width:300px;
-        border-radius:14px;
-        background:#ffffff;
-        border:1px solid rgba(0,0,0,0.06);
-        box-shadow:0 8px 26px rgba(0,0,0,0.12);
-        padding:6px 0;
-        transition:all .25s ease;
-     "
->
-  <div class="card-body d-flex gap-3 align-items-start"
-   
-       style="padding:18px 20px;">
+                <!-- Result Card (hidden by default) -->
 
-    <img src="/src/assets/images/HarshadYadav.jpeg"
-         class="rounded-circle"
-         width="105"
-         height="105"
-         style="
-            border:3px solid rgba(37,99,235,0.12);
-            transition: transform .25s ease;
-         "
-         onmouseover="this.style.transform='scale(1.06)'"
-         onmouseout="this.style.transform='scale(1)'"
-    />
+                <div
+                  id="searchResultCard"
+                  class="card shadow position-absolute d-none"
+                  role="dialog"
+                  aria-modal="false"
+                  aria-labelledby="resultName"
+                  style="
+                    z-index: 2000;
+                    top: 48px;
+                    left: 30px;
+                    width: 300px;
+                    border-radius: 14px;
+                    background: #ffffff;
+                    border: 1px solid rgba(0, 0, 0, 0.06);
+                    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
+                    padding: 6px 0;
+                    transition: all 0.25s ease;
+                  "
+                >
+                  <div
+                    class="card-body d-flex gap-3 align-items-start"
+                    style="padding: 18px 20px"
+                  >
+                    <img
+                      src="/src/assets/images/HarshalYadav.jpeg"
+                      class="rounded-circle"
+                      width="105"
+                      height="105"
+                      style="
+                        border: 3px solid rgba(37, 99, 235, 0.12);
+                        transition: transform 0.25s ease;
+                      "
+                      onmouseover="this.style.transform='scale(1.06)'"
+                      onmouseout="this.style.transform='scale(1)'"
+                    />
 
-    <div style="flex:1;">
-      <h5 id="resultName"
-          class="mb-3"
-          style="
-            font-size:18px;
-            font-weight:500;
-            color:#0f172a;
-            margin-bottom:10px;
-          ">
-        Harshad Yadav
-      </h5>
+                    <div style="flex: 1">
+                      <h5
+                        id="resultName"
+                        class="mb-3"
+                        style="
+                          font-size: 18px;
+                          font-weight: 500;
+                          color: #0f172a;
+                          margin-bottom: 10px;
+                        "
+                      >
+                        Harshad Yadav
+                      </h5>
 
-      <a href="/src/pages/employee/employmentInfo.html"
-         class="d-block small"
-         style="
-            padding:8px 8px;
-            font-size:14px;
-            border-radius:6px;
-            transition:all .2s ease;
-            text-decoration:none;
-            color:#9333EA;
-            font-weight: 700;
-         "
-         onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
-         onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
-      >
-        View Profile
-      </a>
+                      <a
+                        href="/src/pages/employee/employmentInfo.html"
+                        class="d-block small"
+                        style="
+                          padding: 8px 8px;
+                          font-size: 14px;
+                          border-radius: 6px;
+                          transition: all 0.2s ease;
+                          text-decoration: none;
+                          color: #9333ea;
+                          font-weight: 700;
+                        "
+                        onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+                        onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                      >
+                        View Profile
+                      </a>
 
-      <a href="/src/pages/employee/employeeSummary.html"
-         class="d-block small"
-         style="
-            padding:8px 8px;
-            font-size:14px;
-            border-radius:6px;
-            transition:all .2s ease;
-            text-decoration:none;
-            color:#9333EA;
-            font-weight: 700;
-         "
-         onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
-         onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
-      >
-        Summary
-      </a>
+                      <a
+                        href="/src/pages/employee/employeeSummary.html"
+                        class="d-block small"
+                        style="
+                          padding: 8px 8px;
+                          font-size: 14px;
+                          border-radius: 6px;
+                          transition: all 0.2s ease;
+                          text-decoration: none;
+                          color: #9333ea;
+                          font-weight: 700;
+                        "
+                        onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+                        onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                      >
+                        Summary
+                      </a>
 
-      <a href="/src/pages/leaves/approvedLeave.html"
-         class="d-block small "
-         style="
-            padding:8px 8px;
-            font-size:14px;
-            border-radius:6px;
-            transition:all .2s ease;
-            text-decoration:none;
-            color:#9333EA;
-            font-weight: 700;
-         "
-         onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
-         onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
-      >
-        Approve Leave
-      </a>
-      
-
-    </div>
-  </div>
-              
-
-</div>
-
-
-
-</div>
+                      <a
+                        href="/src/pages/leaves/approvedLeave.html"
+                        class="d-block small"
+                        style="
+                          padding: 8px 8px;
+                          font-size: 14px;
+                          border-radius: 6px;
+                          transition: all 0.2s ease;
+                          text-decoration: none;
+                          color: #9333ea;
+                          font-weight: 700;
+                        "
+                        onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
+                        onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                      >
+                        Approve Leave
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item nav-profile dropdown">
               <a
@@ -238,7 +252,7 @@
                   <i class="mdi mdi-cached me-2 text-success"></i> Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/src/signIn.html">
+                <a class="dropdown-item" href="#">
                   <i class="mdi mdi-logout me-2 text-primary"></i> Signout
                 </a>
               </div>
@@ -420,8 +434,8 @@
       <!-- partial -->
       <div class="container-fluid page-body-wrapper">
         <!-- partial:../../partials/_sidebar.html -->
-       <nav class="sidebar sidebar-offcanvas" id="sidebar">
-         <ul class="nav">
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -502,7 +516,7 @@
                       Probation
                     </a>
                   </li>
-                  
+
                   <li class="nav-item">
                     <a
                       class="nav-link"
@@ -1699,154 +1713,74 @@
               </div>
             </li>
           </ul>
-            </nav>
+        </nav>
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
               <h3 class="page-title fixed-title">
-                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-book-bible"></i></span>
-                Tour Diary - Add Expenses
+                <span
+                  class="page-title-icon bg-gradient-primary text-white me-2"
+                  ><i class="fa-solid fa-clipboard-list"></i
+                ></span>
+                Holiday Details
               </h3>
-
             </div>
-            <div class="row" style="margin-top: 20px;">
-              <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body" >
-                    <class="forms-sample">
-                      <!-- Row 1: Employee Type & Leave Type -->
-                            <!-- Row 2: Year Type & Opening Balance -->
-                            <div class="row">
-                                <div class="col-lg-12 grid-margin stretch-card">
-                                    <div class="card">
-                                        <!-- <div class="card-body"> -->
-                                            <table class="table">
-                                              <thead>
-                                                <tr>
-                                                  <th colspan="100%" class="text-center fw-bold fs-5">
-                                                    Expenses Details
-                                                  </th>
-                                                </tr>
-                                              </thead>
-                                              <thead>
-                                                <tr>
-                                                  <th rowspan="3">Designation</th>
-                                                  <th colspan="4" class="text-center">Allowance</th>
-                                                  <th colspan="2" class="text-center">Head quater</th>
-                                                  <th rowspan="3">Travel Allowance</th>
-                                                </tr>
-                                                <tr>
-                                                  <th colspan="2" class="text-center">Metro City</th>
-                                                  <th colspan="2" class="text-center">Other City</th>
-                                                  <th rowspan="2" class="text-center">HeadQuater Place</th>
-                                                  <th rowspan="2" class="text-center">Amount</th>
-                                                </tr>
-                                                <tr>
-                                                  <th class="text-center">Lodging Allowance</th>
-                                                  <th class="text-center">Food</th>
-                                                  <th class="text-center">Lodging Allowance</th>
-                                                  <th class="text-center">Food</th>
-                                                </tr>
-                                              </thead>
-                                              <tbody>
-                                                <tr>
-                                                  <td>Manger</td>
-                                                  <td>10,000 /-</td>
-                                                  <td>1,500 /-</td>
-                                                  <td>7,500 /-</td>
-                                                  <td>1000 /-</td>
-                                                  <td>-</td>
-                                                  <td>-</td>
-                                                  <td>-</td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
-                                            
-                                        <!-- </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                              <div class="col-lg-12 grid-margin stretch-card">
-                                <div class="card">
-                                  <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th colspan="100%" class="text-center fw-bold fs-5">
-                                          Add Expenses
-                                        </th>
-                                      </tr>
-                                      <!-- Checkbox Row -->
-                                      <tr>
-                                        <th colspan="100%">
-                                          <div class="d-flex gap-4 justify-content-center py-2">
-                                            <div class="form-check d-flex align-items-center" style="gap:4px; margin:0;">
-                                              <input type="checkbox" style="width:18px; height:18px; accent-color:#0d21d3; border:2px solid #000 !important; margin:0 5px 0 0;">
-                                              <label class="form-check-label m-0" for="travelExpenses">Travel Expenses</label>
-                                            </div>
-                                          <div class="form-check d-flex align-items-center" style="gap:4px; margin:0;">
-                                            <input type="checkbox" style="width:18px; height:18px; accent-color:#0d21d3; border:2px solid #000 !important; margin:0 5px 0 0;">
-                                            <label class="form-check-label m-0" for="boardingExpenses">Boarding Expenses</label>
-                                          </div>
-                                          <div class="form-check d-flex align-items-center" style="gap:4px; margin:0;">
-                                            <input type="checkbox" style="width:18px; height:18px; accent-color:#0d21d3; border:2px solid #000 !important; margin:0 5px 0 0;">
-                                            <label class="form-check-label m-0" for="lodgingExpenses">Lodging Expenses</label>
-                                          </div>
-                                          <div class="form-check d-flex align-items-center" style="gap:4px; margin:0;">
-                                            <input type="checkbox" style="width:18px; height:18px; accent-color:#0d21d3; border:2px solid #000 !important; margin:0 5px 0 0;">
-                                            <label class="form-check-label m-0" for="lodgingExpenses">Miscellenies Expenses</label>
-                                          </div>
-                                        </div>
-                                      </th>
-                                    </tr>
-                                  </thead>
-                                </table>
-                              </div>
-                            </div>
+            <div class="row" style="margin-top: 10px">
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card" style="overflow-x: auto; width: 100%">
+                  <div class="card-body">
+                    <form class="forms-sample">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <span class="text-danger">*</span>
+                            <label for="lastName">Name</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="holidayDetails"
+                              value="Republic Day"
+                              required
+                              
+                            />
                           </div>
-                          <div class="row">
-                              <div class="col-lg-12 grid-margin stretch-card">
-                                <div class="card">
-                                  <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th colspan="100%" class="text-center fw-bold fs-5">
-                                          Attached Bills
-                                        </th>
-                                      </tr>
-                                  </thead>
-                                </table>
-                                <p></p>
-                                <div >
-                                  <div class="form-group"> 
-                                    <label for="fileUpload" >Attached Bills<span class="text-danger">*</span></label>
-                                    <input
-                                      type="file"
-                                      class="form-control"
-                                      id="fileUpload"
-                                      placeholder="Upload File"
-                                    />
-                                    <p></p>
-                                    <label for="note">Note :- Please add self declaration as attachment if bill receipt is not there.</label>
-                                    <div class="text-end" style="margin-bottom: -60px;">
-                        <a href="./addDiary.html" class="btn btn-gradient-primary me-2">
-                            Save
-                        </a>
-                        <a href="./addDiary.html" class="btn btn-gradient-light">
-                            Back To Diary
-                        </a>
-                    </div>
-                                  </div> 
-                                </div>
-                              </div>
-                            </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <span class="text-danger">*</span>
+                            <label for="lastName">Date</label>
+                            <input 
+                                type="date"
+                                class="form-control"
+                                id="fromDate"
+                                name="fromDate"
+                                value="2025-01-26"
+                                required
+                            />
                           </div>
-                        </form>
+                        </div>
                       </div>
-                    </div>
+                      <div class="text-end">
+                        <a
+                          href="./holidaysList.html"
+                          class="btn btn-gradient-primary me-2"
+                        >
+                          Save
+                        </a>
+                        <a
+                          href="./holidaysList.html"
+                          class="btn btn-gradient-light"
+                        >
+                          Cancel
+                        </a>
+                      </div>
+                    </form>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
@@ -1856,8 +1790,7 @@
               <span
                 class="text-muted text-center text-sm-left d-block d-sm-inline-block"
                 >Copyright © 2023
-                <a href="https://www.syborgtech.com/" target="_blank"
-                  >SyborgTech</a
+                <a href="https://syborgtech.com/" target="_blank">SyborgTech</a
                 >. All rights reserved.</span
               >
             </div>
@@ -1887,98 +1820,105 @@
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
-     <script>
-(function () {
-  // Configuration
-  const TARGET_NAME = "harshad";         // canonical full name, lowercase
-  const MIN_CHARS_TO_SHOW = 4;           // show after >= 4 chars typed
+    <script>
+      (function () {
+        // Configuration
+        const TARGET_NAME = "harshad"; // canonical full name, lowercase
+        const MIN_CHARS_TO_SHOW = 4; // show after >= 4 chars typed
 
-  // Elements
-  const form = document.getElementById("searchForm");
-  const input = document.getElementById("searchInput");
-  const card = document.getElementById("searchResultCard");
+        // Elements
+        const form = document.getElementById("searchForm");
+        const input = document.getElementById("searchInput");
+        const card = document.getElementById("searchResultCard");
 
-  // Utility: show/hide functions
-  function showCard() {
-    if (card.classList.contains("d-none")) {
-      card.classList.remove("d-none");
-      input.setAttribute("aria-expanded", "true");
-      // optionally move focus to the card if you want keyboard navigation
-    }
-  }
-  function hideCard() {
-    if (!card.classList.contains("d-none")) {
-      card.classList.add("d-none");
-      input.setAttribute("aria-expanded", "false");
-    }
-  }
+        // Utility: show/hide functions
+        function showCard() {
+          if (card.classList.contains("d-none")) {
+            card.classList.remove("d-none");
+            input.setAttribute("aria-expanded", "true");
+            // optionally move focus to the card if you want keyboard navigation
+          }
+        }
+        function hideCard() {
+          if (!card.classList.contains("d-none")) {
+            card.classList.add("d-none");
+            input.setAttribute("aria-expanded", "false");
+          }
+        }
 
-  // 1) Show card when user types >= MIN_CHARS_TO_SHOW
-  input.addEventListener("input", function () {
-    const v = (this.value || "").trim();
-    if (v.length >= MIN_CHARS_TO_SHOW) {
-      showCard();
-    } else {
-      hideCard();
-    }
-  });
+        // 1) Show card when user types >= MIN_CHARS_TO_SHOW
+        input.addEventListener("input", function () {
+          const v = (this.value || "").trim();
+          if (v.length >= MIN_CHARS_TO_SHOW) {
+            showCard();
+          } else {
+            hideCard();
+          }
+        });
 
-  // 2) Handle Enter: prevent form submit and open card when full name OR length >= MIN_CHARS_TO_SHOW
-  input.addEventListener("keydown", function (e) {
-    if (e.key === "Enter") {
-      // prevent actual form submission / page reload
-      e.preventDefault();
+        // 2) Handle Enter: prevent form submit and open card when full name OR length >= MIN_CHARS_TO_SHOW
+        input.addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {
+            // prevent actual form submission / page reload
+            e.preventDefault();
 
-      const v = (this.value || "").trim().toLowerCase();
+            const v = (this.value || "").trim().toLowerCase();
 
-      // If typed EXACT full name -> show card
-      if (v === TARGET_NAME) {
-        showCard();
-        // Optional: you could also navigate automatically:
-        // window.location.href = "profile.html";
-        return;
+            // If typed EXACT full name -> show card
+            if (v === TARGET_NAME) {
+              showCard();
+              // Optional: you could also navigate automatically:
+              // window.location.href = "profile.html";
+              return;
+            }
+
+            // If user typed >= MIN_CHARS_TO_SHOW -> also show
+            if (v.length >= MIN_CHARS_TO_SHOW) {
+              showCard();
+              return;
+            }
+
+            // otherwise ignore enter (do nothing)
+          }
+        });
+
+        // 3) Click outside to close
+        document.addEventListener("click", function (evt) {
+          const target = evt.target;
+          if (!card.contains(target) && target !== input) {
+            hideCard();
+          }
+        });
+
+        // 4) Optional: if user clicks a result link, let normal navigation happen but hide the card
+        card.addEventListener("click", function (evt) {
+          // If they click a link, the browser will navigate — we don't need to do anything
+          // But hide the card to keep UI tidy in case of SPA navigation.
+          hideCard();
+        });
+
+        // 5) Safety: ensure script doesn't break when elements are missing
+        if (!input || !card || !form) {
+          console.warn(
+            "[search] required elements missing: searchInput / searchResultCard / searchForm"
+          );
+        }
+      })();
+    </script>
+    <style>
+      #searchResultCard {
+        border-radius: 10px;
+        min-width: 260px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
       }
-
-      // If user typed >= MIN_CHARS_TO_SHOW -> also show
-      if (v.length >= MIN_CHARS_TO_SHOW) {
-        showCard();
-        return;
+      #searchResultCard .card-body {
+        padding: 12px;
       }
-
-      // otherwise ignore enter (do nothing)
-    }
-  });
-
-  // 3) Click outside to close
-  document.addEventListener("click", function (evt) {
-    const target = evt.target;
-    if (!card.contains(target) && target !== input) {
-      hideCard();
-    }
-  });
-
-  // 4) Optional: if user clicks a result link, let normal navigation happen but hide the card
-  card.addEventListener("click", function (evt) {
-    // If they click a link, the browser will navigate — we don't need to do anything
-    // But hide the card to keep UI tidy in case of SPA navigation.
-    hideCard();
-  });
-
-  // 5) Safety: ensure script doesn't break when elements are missing
-  if (!input || !card || !form) {
-    console.warn("[search] required elements missing: searchInput / searchResultCard / searchForm");
-  }
-})();
-</script>
-<style>
-    #searchResultCard {
-      border-radius: 10px;
-      min-width: 260px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    }
-    #searchResultCard .card-body { padding: 12px; }
-    #searchInput:focus { outline: none; box-shadow: none; }
-  </style>
+      #searchInput:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    </style>
     <!-- End custom js for this page -->
   </body>
 </html>

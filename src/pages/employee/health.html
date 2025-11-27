@@ -129,7 +129,7 @@
    
        style="padding:18px 20px;">
 
-    <img src="/src/assets/images/HarshalYadav.jpeg"
+    <img src="/src/assets/images/HarshadYadav.jpeg"
          class="rounded-circle"
          width="105"
          height="105"
@@ -240,7 +240,7 @@
                   <i class="mdi mdi-cached me-2 text-success"></i> Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="/src/signIn.html">
                   <i class="mdi mdi-logout me-2 text-primary"></i> Signout
                 </a>
               </div>
@@ -2029,7 +2029,7 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
-     <script>
+     <!-- <script>
       const editHealthBtn = document.getElementById("editHealthBtn");
       const actionHealthButtons = document.getElementById("HealthBtn");
       const saveHealthBtn = document.getElementById("saveHealthBtn");
@@ -2065,12 +2065,12 @@
         actionHealthButtons.style.display = "none";
         editHealthBtn.style.display = "block";
       });
-</script>
+</script> -->
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
-    <script>
+    <!-- <script>
 (function () {
   // Configuration
   const TARGET_NAME = "harshad";         // canonical full name, lowercase
@@ -2152,7 +2152,7 @@
     console.warn("[search] required elements missing: searchInput / searchResultCard / searchForm");
   }
 })();
-</script>
+</script> -->
 <style>
     #searchResultCard {
       border-radius: 10px;
@@ -2162,6 +2162,52 @@
     #searchResultCard .card-body { padding: 12px; }
     #searchInput:focus { outline: none; box-shadow: none; }
   </style>
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const formCard = document.querySelector('#editHealthBtn').closest('.card-body');
+
+  const editBtn = document.getElementById("editHealthBtn");
+  const saveCancelDiv = document.getElementById("HealthBtn");
+  const saveBtn = document.getElementById("saveHealthBtn");
+  const cancelBtn = document.getElementById("cancelHealthBtn");
+
+  // Get all inputs in this card only
+  const fields = formCard.querySelectorAll("input, select, textarea");
+
+  // Disable all fields initially
+  fields.forEach(f => f.disabled = true);
+  saveCancelDiv.style.display = "none";
+
+  // Edit button
+  editBtn.addEventListener("click", function () {
+    fields.forEach(f => f.disabled = false);
+
+    editBtn.style.display = "none";
+    saveCancelDiv.style.display = "block";
+  });
+
+  // Save button
+  saveBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    fields.forEach(f => f.disabled = true);
+
+    saveCancelDiv.style.display = "none";
+    editBtn.style.display = "inline-block";
+  });
+
+  // Cancel button
+  cancelBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    fields.forEach(f => f.disabled = true);
+
+    saveCancelDiv.style.display = "none";
+    editBtn.style.display = "inline-block";
+  });
+});
+</script>
+
+
+
     <!-- End custom js for this page -->
   </body>
 </html>

@@ -142,7 +142,7 @@
                     style="padding: 18px 20px"
                   >
                     <img
-                      src="/src/assets/images/HarshalYadav.jpeg"
+                      src="/src/assets/images/HarshadYadav.jpeg"
                       class="rounded-circle"
                       width="105"
                       height="105"
@@ -252,7 +252,7 @@
                   <i class="mdi mdi-cached me-2 text-success"></i> Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="/src/signIn.html">
                   <i class="mdi mdi-logout me-2 text-primary"></i> Signout
                 </a>
               </div>
@@ -1717,72 +1717,183 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-             <div class="page-header mt-2">
-               <h3 class="page-title fixed-title">
-                <span class="page-title-icon bg-gradient-primary text-white me-2"><i class="fa-solid fa-clipboard-list"></i></span>
-               Leave Consumption Trend
+            <div class="page-header mt-2">
+              <h3 class="page-title fixed-title">
+                <span
+                  class="page-title-icon bg-gradient-primary text-white me-2"
+                  ><i class="fa-solid fa-clipboard-list"></i
+                ></span>
+                Leave Consumption Trend
               </h3>
             </div>
-<div class="row mt-5">
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="fromDate">From Date</label>
-              <input
-                type="date"
-                class="form-control"
-                id="fromDate"
-                value="2025-01-01"
-                required
-              />
+            <div class="row mt-5">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="fromDate">From Date</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="fromDate"
+                    value="2025-01-01"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="toDate">To Date</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="toDate"
+                    value="2025-12-31"
+                    required
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="toDate">To Date</label>
-              <input
-                type="date"
-                class="form-control"
-                id="toDate"
-                value="2025-12-31"
-                required
-              />
+
+            <div class="mb-4" style="margin-top: -12px">
+              <div id="commanTable" class="table-responsive">
+                <table
+                  class="table table-bordered align-middle text-center small-stats-table"
+                >
+                  <tr>
+                    <td class="text-start">Count</td>
+                    <td class="text-start">11</td>
+                    <td class="text-end align-middle"></td>
+                    <td class="text-start">Total Leaves Consumed</td>
+                    <td class="text-start">1233</td>
+                    <td class="text-end align-middle">
+                      <div
+                        class="action-buttons d-flex justify-content-end align-items-center"
+                      >
+                        <button
+                          id="btnGo"
+                          class="btn btn-gradient-primary btn-sm"
+                        >
+                          Go
+                        </button>
+
+                        <button
+                          id="btnExportExcel"
+                          class="btn btn-sm btn-primary"
+                        >
+                          <i class="fa-solid fa-download"></i>
+                        </button>
+
+                        <button id="btnPrintPdf" class="btn btn-sm btn-primary">
+                          <i class="fa-solid fa-print"></i>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
-          </div>
-        </div>
 
-<div class="mb-4" style="margin-top: -12px;">
-    <div id="commanTable" class="table-responsive">
-        <table class="table table-bordered align-middle text-center small-stats-table">
-            <tr>
-                <td class="text-start">Count</td>
-                <td class="text-start">11</td>
-                <td class="text-end align-middle">
-                  <td class="text-start">Total Leaves Consumed</td>
-                <td class="text-start">1233</td>
-                <td class="text-end align-middle">
-                  <div class="action-buttons d-flex justify-content-end align-items-center">
-                    <button id="btnGo" class="btn btn-gradient-primary btn-sm">
-                      Go
-                    </button>
-
-                    <button id="btnExportExcel" class="btn btn-sm btn-primary">
-                      <i class="fa-solid fa-download"></i>
-                    </button>
-
-                    <button id="btnPrintPdf" class="btn btn-sm btn-primary">
-                      <i class="fa-solid fa-print"></i>
-                    </button>
-                  </div>
-                </td>
+            <tr class="odd">
+              <td>Jul-2025</td>
+              <td>3287</td>
+              <td>3123</td>
+              <td>
+                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+              </td>
             </tr>
-        </table>
-    </div>
-</div>
+            <tr class="even">
+              <td>Aug-2025</td>
+              <td>3287</td>
+              <td>1988</td>
+              <td>
+                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+              </td>
+            </tr>
+
+            <div class="mb-4" style="margin-top: -50px">
+              <div class="row">
+                <div class="gridView">
+                  <div class="col-lg-12 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="table-responsive">
+                          <!-- Makes table scrollable if wide -->
+                          <table class="table align-middle">
+                            <tr></tr>
+                            <tr>
+                              <th style="padding-right: 0px">
+                                Month<span class="downArrowHead">&#x25bc;</span>
+                              </th>
+                              <th>Accrued</th>
+                              <th>Consumption / Availed</th>
+                              <th>Action</th>
+                            </tr>
+
+                            <tr class="odd">
+                              <td>Jan-2025</td>
+                              <td>71</td>
+                              <td>62</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+                            <tr class="even">
+                              <td>Feb-2025</td>
+                              <td>71</td>
+                              <td>198</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+                            <tr class="odd">
+                              <td>Mar-2025</td>
+                              <td>71</td>
+                              <td>87</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+                            <tr class="even">
+                              <td>Apr-2025</td>
+                              <td>71</td>
+                              <td>73</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+                            <tr class="odd">
+                              <td>May-2025</td>
+                              <td>71</td>
+                              <td>87</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+
+                            <tr class="even">
+                              <td>Jun-2025</td>
+                              <td>71</td>
+                              <td>116</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
 
                             <tr class="odd">
                               <td>Jul-2025</td>
-                              <td>3287</td>
-                              <td>3123</td>
+                              <td>71</td>
+                              <td>112</td>
                               <td>
                                 <a href=""
                                   ><i class="fa-solid fa-pen-to-square"></i
@@ -1791,8 +1902,8 @@
                             </tr>
                             <tr class="even">
                               <td>Aug-2025</td>
-                              <td>3287</td>
-                              <td>1988</td>
+                              <td>71</td>
+                              <td>85</td>
                               <td>
                                 <a href=""
                                   ><i class="fa-solid fa-pen-to-square"></i
@@ -1800,104 +1911,52 @@
                               </td>
                             </tr>
 
-<div class="mb-4" style="margin-top: -50px;">
-   <div class="row">
-  <div class="gridView">
-    <div class="col-lg-12 grid-margin stretch-card" >
-    <div class="card">
-      <div class="card-body">
-        <div class="table-responsive"> <!-- Makes table scrollable if wide -->
-          <table class="table align-middle">
-          <tr>
-						<tr>
-						<th style="padding-right:0px;">Month<span class="downArrowHead">&#x25bc;</span></th>
-						<th>Accrued</th>
-						<th>Consumption / Availed</th>
-					    <th>Action</th>
-					</tr>
-					
-					<tr class="odd">
-						<td>Jan-2025</td>
-						<td>71</td>
-						<td>62</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="even">
-						<td>Feb-2025</td>
-						<td>71</td>
-						<td>198</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="odd">
-						<td>Mar-2025</td>
-						<td>71</td>
-						<td>87</td>
-                        <td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="even">
-						<td>Apr-2025</td>
-						<td>71</td>
-						<td>73</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>	
-					<tr class="odd">
-						<td>May-2025</td>
-						<td>71</td>
-						<td>87</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					
-					<tr class="even">
-						<td>Jun-2025</td>
-						<td>71</td>
-						<td>116</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					
-					<tr class="odd">
-						<td>Jul-2025</td>
-						<td>71</td>
-						<td>112</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					<tr class="even">
-						<td>Aug-2025</td>
-						<td>71</td>
-						<td>85</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-					
-					<tr class="odd">
-						<td>Sep-2025</td>
-						<td>71</td>
-						<td>94</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-          <tr class="odd">
-						<td>Oct-2025</td>
-						<td>71</td>
-						<td>246</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-          <tr class="odd">
-						<td>Nov-2025</td>
-						<td>71</td>
-						<td>73</td>
-						<td><a  href=""><i class="fa-solid fa-pen-to-square" ></i></a></td>
-					</tr>
-        </table>
-    </div>
-</div>
-</div>
-</div>
-<div class="d-flex justify-content-end" style="margin-top: -20px;">
-           <nav>
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
+                            <tr class="odd">
+                              <td>Sep-2025</td>
+                              <td>71</td>
+                              <td>94</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+                            <tr class="odd">
+                              <td>Oct-2025</td>
+                              <td>71</td>
+                              <td>246</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+                            <tr class="odd">
+                              <td>Nov-2025</td>
+                              <td>71</td>
+                              <td>73</td>
+                              <td>
+                                <a href=""
+                                  ><i class="fa-solid fa-pen-to-square"></i
+                                ></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-end"
+                    style="margin-top: -20px"
+                  >
+                    <nav>
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
 
                         <li class="page-item active">
                           <a class="page-link" href="#">1</a>

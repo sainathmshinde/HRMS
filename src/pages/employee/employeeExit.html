@@ -129,7 +129,7 @@
    
        style="padding:18px 20px;">
 
-    <img src="/src/assets/images/HarshalYadav.jpeg"
+    <img src="/src/assets/images/HarshadYadav.jpeg"
          class="rounded-circle"
          width="105"
          height="105"
@@ -240,7 +240,7 @@
                   <i class="mdi mdi-cached me-2 text-success"></i> Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="/src/signIn.html">
                   <i class="mdi mdi-logout me-2 text-primary"></i> Signout
                 </a>
               </div>
@@ -1766,6 +1766,7 @@
                               type="date"
                               class="form-control"
                               id="lastWorkingDate"
+                              value="2025-03-30"
                               required
                             />
                           </div>
@@ -1780,6 +1781,7 @@
                               type="date"
                               class="form-control"
                               id="resignationDate"
+                              value="2025-01-22"
                               required
                             />
                           </div>
@@ -1807,10 +1809,10 @@
                       <a href="#" class="btn btn-gradient-primary me-2" id="saveEmpExitBtn">
                         Submit
                       </a>
-                      <a href="#" class="btn btn-gradient-secondary me-2" id="cancelEmpExitBtn">
+                      <a href="#" class="btn btn-gradient-light me-2" id="cancelEmpExitBtn">
                         Cancel
                       </a>
-                      <a href="#" class="btn btn-gradient-secondary me-2" id="initiateClearanceBtn">
+                      <a href="#" class="btn btn-gradient-light me-2" id="initiateClearanceBtn">
                         Initiate Clearance
                       </a>
                     </div>
@@ -1859,7 +1861,7 @@
     <script src="../../assets/js/todolist.js"></script>
     <script src="../../assets/js/jquery.cookie.js"></script>
     <!-- endinject -->
-     <script>
+     <!-- <script>
       const editEmpExitBtn = document.getElementById("editEmpExitBtn");
       const actionEmpExitButtons = document.getElementById("EmpExitBtn");
       const saveEmpExitBtn = document.getElementById("saveEmpExitBtn");
@@ -1902,7 +1904,7 @@
         actionEmpExitButtons.style.display = "none";
         editEmpExitBtn.style.display = "block";
       });
-</script>
+</script> -->
     <!-- Custom js for this page -->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
@@ -1999,6 +2001,63 @@
     #searchResultCard .card-body { padding: 12px; }
     #searchInput:focus { outline: none; box-shadow: none; }
   </style>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Find this specific card area
+  const formCard = document.querySelector('#editEmpExitBtn').closest('.card-body');
+
+  const editBtn = document.getElementById("editEmpExitBtn");
+  const saveCancelDiv = document.getElementById("EmpExitBtn");
+  const saveBtn = document.getElementById("saveEmpExitBtn");
+  const cancelBtn = document.getElementById("cancelEmpExitBtn");
+  const initiateBtn = document.getElementById("initiateClearanceBtn");
+
+  // Get all inputs & selects inside this card only
+  const fields = formCard.querySelectorAll("input, select, textarea");
+
+  // Disable all fields initially
+  fields.forEach(f => f.disabled = true);
+  saveCancelDiv.style.display = "none";
+
+  // Edit Button
+  editBtn.addEventListener("click", function () {
+    fields.forEach(f => f.disabled = false);
+
+    editBtn.style.display = "none";
+    saveCancelDiv.style.display = "block";
+  });
+
+  // Submit Button
+  saveBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    fields.forEach(f => f.disabled = true);
+
+    saveCancelDiv.style.display = "none";
+    editBtn.style.display = "inline-block";
+  });
+
+  // Cancel Button
+  cancelBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    fields.forEach(f => f.disabled = true);
+
+    saveCancelDiv.style.display = "none";
+    editBtn.style.display = "inline-block";
+  });
+
+  // Initiate Clearance
+  initiateBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    fields.forEach(f => f.disabled = true);
+
+    saveCancelDiv.style.display = "none";
+    editBtn.style.display = "inline-block";
+  });
+
+});
+</script>
+
     <!-- End custom js for this page -->
   </body>
 </html>
