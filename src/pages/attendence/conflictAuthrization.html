@@ -129,7 +129,7 @@
    
        style="padding:18px 20px;">
 
-    <img src="/src/assets/images/HarshalYadav.jpeg"
+    <img src="/src/assets/images/HarshadYadav.jpeg"
          class="rounded-circle"
          width="105"
          height="105"
@@ -1721,39 +1721,25 @@
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="typeOfConflict"
-                              >Type Of Conflict *</label
+                              >Type Of Conflict</label
                             >
                             <input
                               type="text"
                               class="form-control"
                               id="typeOfConflict"
-                              placeholder="Enter Type Of Conflict"
-                              required
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label for="outPunchMissing"
-                              >Out Punch Missing *</label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="outPunchMissing"
                               placeholder="Out Punch Missing"
                               required
+                              disabled
                             />
                           </div>
                         </div>
-                      </div>
+                      
 
                       <!-- Row 2: Date & In Time -->
-                      <div class="row">
+                      
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="date">Date *</label>
+                            <label for="date">Date</label>
                             <input
                               type="date"
                               class="form-control"
@@ -1762,10 +1748,12 @@
                             />
                           </div>
                         </div>
+                        </div>
 
+                        <div class="row">
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="inTime">In Time *</label>
+                            <label for="inTime">In Time</label>
                             <input
                               type="time"
                               class="form-control"
@@ -1774,13 +1762,11 @@
                             />
                           </div>
                         </div>
-                      </div>
 
                       <!-- Row 3: Out Time & Working Hours -->
-                      <div class="row">
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="outTime">Out Time *</label>
+                            <label for="outTime">Out Time</label>
                             <input
                               type="time"
                               class="form-control"
@@ -1789,11 +1775,13 @@
                             />
                           </div>
                         </div>
+                        </div>
 
+                        <div class="row">
                         <div class="col-md-6">
                           <div class="form-group">
                             <label for="workingHours"
-                              >No. of Working Hours *</label
+                              >No. of Working Hours</label
                             >
                             <input
                               type="text"
@@ -1804,27 +1792,27 @@
                             />
                           </div>
                         </div>
-                      </div>
-
-                      <!-- Row 4: Mark As & Remarks -->
-                      <div class="row">
+                     
                         <div class="col-md-6">
                           <div class="form-group">
-                            <label for="markAs">Mark As *</label>
+                            <label for="markAs">Mark As</label>
+                             <span class="text-danger">*</span>
                             <input
                               type="text"
                               class="form-control"
                               id="workingHours"
-                              placeholder="08:50:00"
+                              placeholder=""
                               required
                               disabled
                             />
                           </div>
                         </div>
+                        </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                           <div class="form-group">
-                            <label for="remarks">Remarks *</label>
+                            <label for="remarks">Remarks</label>
+                             <span class="text-danger">*</span>
                             <textarea
                               class="form-control"
                               id="remarks"
@@ -1838,7 +1826,7 @@
 
                       <!-- Buttons -->
                     </form>
-                     <div class="text-end" >
+                     <div class="text-end mb-4" >
                       <a href="./authorization.html" class="btn btn-gradient-primary me-2"text="center">Save</a>
                                 </a>
                 
@@ -1851,10 +1839,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
-           <footer class="footer">
+             <footer class="footer">
             <div
               class="d-sm-flex justify-content-center justify-content-sm-between"
             >
@@ -1867,6 +1852,10 @@
               >
             </div>
           </footer>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          
           <!-- partial -->
         </div>
         <!-- main-panel ends -->

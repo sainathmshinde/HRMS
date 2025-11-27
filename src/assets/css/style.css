@@ -29920,16 +29920,16 @@ body.holiday-list-page .card-body {
 }
 
 .custom-text3 h4 {
-  color: #F97316;   
+  color: #B27901;   
 }
 .custom-text3 h5 {
-  color: #F97316;   
+  color: #B27901;   
 }
 .custom-text3 h6 {
-  color: #F97316;   
+  color: #B27901;   
 }
 .custom-text3 p {
-  color: #F97316;  
+  color: #B27901;  
 }
 
 
@@ -29948,7 +29948,7 @@ body.holiday-list-page .card-body {
 }
 
 .custom-text3:hover {
-  background: #F97316!important; /* new hover background */
+  background: #B27901!important; /* new hover background */
   color: #EAD6FF !important; /* text color on hover */
 }
 
@@ -30040,7 +30040,7 @@ body.salary-template-page .formBlock {
   background: linear-gradient(to right, #ffb6e0, #ffb6e0) !important;
 }
 .bg-gradient-sb-yellow {
-  background: linear-gradient(to right, #e8de70, #e8de70) !important;
+  background: linear-gradient(to right, #FFF79C, #FFF79C) !important;
 }
 
 .bg-gradient-success,
