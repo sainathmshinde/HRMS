@@ -42,6 +42,10 @@
     <link rel="stylesheet" href="../../assets/css/style.css" />
     <!-- End layout styles -->
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body class="sidebar-fixed">
     <div class="container-scroller">
@@ -1713,10 +1717,14 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title">Probation Information</h3>
+           <div class="page-header">
+              <h3 class="page-title fixed-title">
+<span class="page-title-icon bg-gradient-primary text-white me-2">
+<i class="fa-solid fa-address-book"></i>
+</span>	Probation Information</h3>
+              
             </div>
-            <div class="card">
+            <div class="card" style="margin-top: 50px;">
               <div class="card-body">
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item">
@@ -1729,7 +1737,7 @@
                         aria-expanded="true"
                         aria-controls="collapseOne"
                       >
-                        Work Experience
+                        Contract and Probation
                       </button>
                     </h2>
                     <div
@@ -1739,403 +1747,446 @@
                       data-bs-parent="#accordionExample"
                     >
                       <div class="accordion-body">
-                        <div class="row">
-                          <div class="row">
-                            <!-- attachDocument -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="attachDocument"
-                                  >Attach Document</label
-                                >
-                                <input
-                                  type="file"
-                                  class="form-control"
-                                  id="attachDocument"
-                                  placeholder="Enter Attach Document"
-                                />
+                        <div class="row" id="contractInfoSection">
+                          <div class="row" id="cInfo" style="display: none">
+                            <div class="row">
+                              <!-- attachDocument -->
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="DesignationOnJoining"
+                                    >Contract Type</label
+                                  >
+                                  <span class="text-danger">*</span>
+                                  <select
+                                    id="Contract Type"
+                                    class="form-select"
+                                  >
+                                    <option value="Select">Select</option>
+                                    <option value="1">Renawal Contract</option>
+                                    <option value="2">New Contract</option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <!-- blank Name -->
+                              <div class="col-md-6">
+                                <div class="form-group"></div>
                               </div>
                             </div>
 
-                            <!-- blank Name -->
-                            <div class="col-md-6">
-                              <div class="form-group"></div>
+                            <div class="row">
+                              <!-- Contract Start Date -->
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="ContractStartDate"
+                                    >Contract Start Date</label
+                                  >
+                                  <span class="text-danger">*</span>
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    id="ContractStartDate"
+                                    required
+                                  />
+                                </div>
+                              </div>
+
+                              <!-- Contract End Date -->
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="ContractEndDate"
+                                    >Contract End Date</label
+                                  >
+                                  <span class="text-danger">*</span>
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    id="ContractEndDate"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <!-- Organization / Institution / Agency -->
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <label for="Remark">Remark</label>
+                                  <span class="text-danger">*</span>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="Remark"
+                                    placeholder="Enter Remark"
+                                    value=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <!-- attachDocument -->
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="attachDocument"
+                                    >Attach Document</label
+                                  >
+                                  <span class="text-danger">*</span>
+                                  <input
+                                    type="file"
+                                    class="form-control"
+                                    id="attachDocument"
+                                    placeholder="Enter Attach Document"
+                                    value="Agreement.pdf"
+                                  />
+                                </div>
+                              </div>
+
+                              <!--blank -->
+                              <div class="col-md-6"></div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="text-end">
+                              <button
+                                id="savecInfoBtn"
+                                class="btn btn-gradient-primary me-2"
+                              >
+                                Save
+                              </button>
+                              <button
+                                id="cancelcInfoBtn"
+                                class="btn btn-gradient-light"
+                              >
+                                Cancel
+                              </button>
                             </div>
                           </div>
-
-                          <div class="row">
-                            <!-- Organization / Institution / Agency -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="organization"
-                                  >Organization / Institution / Agency</label
-                                >
-                                <span class="text-danger">*</span>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="organization"
-                                  placeholder="Enter Organization / Institution / Agency"
-                                  value="New Design Group Inc."
-                                />
-                              </div>
+                          <div
+                            class="row"
+                            id="cInfoTable"
+                            style="display: block"
+                          >
+                            <h6>Contract Details</h6>
+                            <div class="text-end mb-2">
+                              <button id="editcInfoBtn" class="btn btn-primary">
+                                Add New Contract
+                              </button>
                             </div>
-
-                            <!-- Previous Employee Id -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="previousEmployeeId"
-                                  >Previous Employee Id</label
-                                >
-                                <span class="text-danger">*</span>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="previousEmployeeId"
-                                  placeholder="Enter Previous Employee Id"
-                                  value=""
-                                />
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <!-- Joining Date -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="JoiningDate">Joining Date</label>
-                                <span class="text-danger">*</span>
-                                <input
-                                  type="date"
-                                  class="form-control"
-                                  id="JoiningDate"
-                                  required
-                                />
-                              </div>
-                            </div>
-
-                            <!-- Leaving Date -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="LeavingDate">Leaving Date</label>
-                                <span class="text-danger">*</span>
-                                <input
-                                  type="date"
-                                  class="form-control"
-                                  id="LeavingDate"
-                                  required
-                                />
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <!-- Designation on Joining -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="DesignationOnJoining"
-                                  >Designation on Joining</label
-                                >
-                                <span class="text-danger">*</span>
-                                <select
-                                  id="EmployeeCompany_joinedAs"
-                                  class="form-select"
-                                >
-                                  <option value="Select">Select</option>
-                                  <option value="1">CEO</option>
-                                  <option value="2">CIO</option>
-                                  <option value="3">COO</option>
-                                  <option value="4">VP Marketing</option>
-                                  <option value="5">VP HR</option>
-                                  <option value="6">VP Promotion</option>
-                                  <option value="7">Marketing Manager</option>
-                                  <option value="8" selected>HR Manager</option>
-                                  <option value="9">Promotion Manager</option>
-                                  <option value="10">Production Manager</option>
-                                  <option value="11">HR Analyst</option>
-                                  <option value="12">Senior HR Analyst</option>
-                                  <option value="13">
-                                    Business Development Manager
-                                  </option>
-                                  <option value="14">Project Manager</option>
-                                  <option value="15">Team Lead</option>
-                                  <option value="16">Programmer</option>
-                                  <option value="17">Other</option>
-                                </select>
-                              </div>
-                            </div>
-
-                            <!-- Designation on Exit -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="DesignationOnExit"
-                                  >Designation on Exit</label
-                                >
-                                <span class="text-danger">*</span>
-                                <select
-                                  id="EmployeeCompany_exitedAs"
-                                  class="form-select"
-                                >
-                                  <option value="Select">Select</option>
-                                  <option value="1">CEO</option>
-                                  <option value="2">CIO</option>
-                                  <option value="3">COO</option>
-                                  <option value="4">VP Marketing</option>
-                                  <option value="5">VP HR</option>
-                                  <option value="6">VP Promotion</option>
-                                  <option value="7">Marketing Manager</option>
-                                  <option value="8" selected>HR Manager</option>
-                                  <option value="9">Promotion Manager</option>
-                                  <option value="10">Production Manager</option>
-                                  <option value="11">HR Analyst</option>
-                                  <option value="12">Senior HR Analyst</option>
-                                  <option value="13">
-                                    Business Development Manager
-                                  </option>
-                                  <option value="14">Project Manager</option>
-                                  <option value="15">Team Lead</option>
-                                  <option value="16">Programmer</option>
-                                  <option value="17">Other</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <!-- Last drawn CTC (Monthly)* -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="LastDrawnCTC"
-                                  >Last drawn CTC (Monthly)</label
-                                >
-                                <span class="text-danger">*</span>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="LastDrawnCTC"
-                                  placeholder="Enter Last drawn CTC"
-                                  value="1235000"
-                                />
-                              </div>
-                            </div>
-
-                            <!-- Role -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="Role">Role</label>
-                                <span class="text-danger">*</span>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="Role"
-                                  placeholder="Enter Role"
-                                  value="HR"
-                                />
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <!-- Reason for leaving -->
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <label for="reasonForLeaving"
-                                  >Reason for leaving</label
-                                >
-                                <span class="text-danger">*</span>
-                                <input
-                                  type="textarea"
-                                  class="form-control"
-                                  id="reasonForLeaving"
-                                  placeholder="Enter Reason for leaving"
-                                />
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <!-- Company address -->
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <label for="companyAddress"
-                                  >Company address</label
-                                >
-                                <span class="text-danger">*</span>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="companyAddress"
-                                  placeholder="Enter Company address"
-                                />
-                              </div>
-                            </div>
-                          </div>
-
-                          <h3>Supervisor Details</h3>
-
-                          <div class="row">
-                            <!-- Supervisor name -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="Supervisor name"
-                                  >Supervisor name</label
-                                >
-                                <span class="text-danger">*</span>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="SupervisorName"
-                                  placeholder="Enter Supervisor Name"
-                                />
-                              </div>
-                            </div>
-
-                            <!-- MobileNumber -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="MobileNumber">Mobile Number</label>
-                                <span class="text-danger">*</span>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="MobileNumber"
-                                  placeholder="Enter Mobile Number"
-                                />
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row">
-                            <!-- Landline Number -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="LandlineNumber"
-                                  >Landline Number</label
-                                >
-                                <span class="text-danger">*</span>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="LandlineNumber"
-                                  placeholder="Enter Landline Number"
-                                />
-                              </div>
-                            </div>
-
-                            <!-- Email Id -->
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label for="EmailId">Email Id</label>
-                                <span class="text-danger">*</span>
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="EmailId"
-                                  placeholder="Enter Email Id"
-                                />
-                              </div>
-                            </div>
-                          </div>
-
-                          <!-- Buttons -->
-                          <div class="text-end">
-                            <a
-                              href="manageKra.html"
-                              class="btn btn-gradient-primary me-2"
-                            >
-                              Save
-                            </a>
-                            <a
-                              href="manageKra.html"
-                              class="btn btn-gradient-light"
-                            >
-                              Cancel
-                            </a>
+                            <table class="table mb-3">
+                              <tbody>
+                                <tr>
+                                  <th>
+                                    <label>Select</label>
+                                  </th>
+                                  <th>
+                                    <label>Start Date</label>
+                                  </th>
+                                  <th>
+                                    <label>EndDate Date</label>
+                                  </th>
+                                  <th>
+                                    <label>Document</label>
+                                  </th>
+                                  <th>
+                                    <label>Action</label>
+                                  </th>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <input
+                                      type="radio"
+                                      name="contractType"
+                                      checked
+                                    />&nbsp;&nbsp;
+                                  </td>
+                                  <td>
+                                    <label>20-Jul-2024</label>
+                                  </td>
+                                  <td>
+                                    <label>19-Jul-2026</label>
+                                  </td>
+                                  <td>
+                                    <label><a href="#">Document</a></label>
+                                  </td>
+                                  <td>
+                                    <a>
+                                      <i
+                                        href="javascript:void(0);"
+                                        class="fa-solid fa-eye viewcInfoBtn projectEdit QprojectEdit actionLinks view-img"
+                                        style="
+                                          color: #080808;
+                                          margin-right: 10px;
+                                        "
+                                      ></i>
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <input
+                                      type="radio"
+                                      name="contractType"
+                                    />&nbsp;&nbsp;
+                                  </td>
+                                  <td>
+                                    <label>25-Jan-2023</label>
+                                  </td>
+                                  <td>
+                                    <label>24-Jan-2026</label>
+                                  </td>
+                                  <td>
+                                    <label><a href="#">Document</a></label>
+                                  </td>
+                                  <td>
+                                    <a>
+                                      <i
+                                        href="javascript:void(0);"
+                                        class="fa-solid fa-eye viewcInfoBtn projectEdit QprojectEdit actionLinks view-img"
+                                        style="
+                                          color: #080808;
+                                          margin-right: 10px;
+                                        "
+                                      ></i>
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </div>
                         </div>
-                        <div class="row">
-                          <table class="table">
-                            <tbody>
-                              <tr>
-                                <th>
-                                  <label
-                                    >Organization / Institution / Agency</label
+
+                        <div class="row" id="pDetails">
+                          <div
+                            class="row"
+                            id="pDetailForm"
+                            style="display: none"
+                          >
+                            <div class="row">
+                              <!-- Contract Start Date -->
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="ProbationStartDate"
+                                    >Probation Start Date</label
                                   >
-                                </th>
-                                <th>
-                                  <label>Last Designation</label>
-                                </th>
-                                <th>
-                                  <label>Joining Date</label>
-                                </th>
-                                <th>
-                                  <label>Leaving Date</label>
-                                </th>
-                                <th>
-                                  <label>Total Experience (In years)</label>
-                                </th>
-                                <th>
-                                  <label>Action</label>
-                                </th>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <label>New Design Group Inc.</label>
-                                </td>
-                                <td>
-                                  <label>HR manager</label>
-                                </td>
-                                <td>
-                                  <label>20-Jul-2013</label>
-                                </td>
-                                <td>
-                                  <label></label>
-                                </td>
-                                <td>
-                                  <label></label>
-                                </td>
-                                <td>
-                                  <a
-                                    class="projectEdit QprojectEdit actionLinks view-img"
-                                    href="javascript:void(0);"
-                                    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
-                                  >&nbsp;&nbsp;&nbsp;<a
-                                    href="javascript:void(0);"
-                                    class="deleteLink actionLinks delete-img"
-                                    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+                                  <span class="text-danger">*</span>
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    id="ProbationStartDate"
+                                    required
+                                  />
+                                </div>
+                              </div>
+
+                              <!-- Contract End Date -->
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="ProbationEndDate"
+                                    >Probation End Date</label
                                   >
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <label>Procomm</label>
-                                </td>
-                                <td>
-                                  <label>HR Associates</label>
-                                </td>
-                                <td>
-                                  <label>02-Jun-2012</label>
-                                </td>
-                                <td>
-                                  <label>15-Jul-2013</label>
-                                </td>
-                                <td>
-                                  <label>4</label>
-                                </td>
-                                <td>
-                                  <a
-                                    class="projectEdit QprojectEdit actionLinks view-img"
-                                    href="javascript:void(0);"
-                                    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
-                                  >&nbsp;&nbsp;&nbsp;
-                                  <a
-                                    href="javascript:void(0);"
-                                    class="deleteLink actionLinks delete-img"
-                                    >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+                                  <span class="text-danger">*</span>
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    id="ProbationEndDate"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <!-- attachDocument -->
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="DesignationOnJoining"
+                                    >Contract Type</label
                                   >
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                                  <span class="text-danger">*</span>
+                                  <select
+                                    id="Contract Type"
+                                    class="form-select"
+                                  >
+                                    <option value="Select">Select</option>
+                                    <option value="1" selected>
+                                      Probation
+                                    </option>
+                                    <option value="2">Extended</option>
+                                    <option value="3">Confirmed</option>
+                                    <option value="4">Terminated</option>
+                                  </select>
+                                </div>
+                              </div>
+
+                              <!-- blank Name -->
+                              <div class="col-md-6">
+                                <div class="form-group"></div>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <!-- Organization / Institution / Agency -->
+                              <div class="col-md-12">
+                                <div class="form-group">
+                                  <label for="Remark">Remark</label>
+                                  <span class="text-danger">*</span>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="Remark"
+                                    placeholder="Enter Remark"
+                                    value=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Buttons -->
+                            <div class="text-end">
+                              <button
+                                id="savepDetailFormBtn"
+                                class="btn btn-gradient-primary me-2"
+                              >
+                                Save
+                              </button>
+                              <button
+                                id="cancelpDetailFormBtn"
+                                class="btn btn-gradient-light"
+                              >
+                                Cancel
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            id="div1"
+                            style="display: block; margin-top: 20px"
+                          >
+                            <h6>Probation Details</h6>
+                            <div class="text-end mb-2">
+                              <button id="editdiv1Btn" class="btn btn-primary">
+                                Add Probation
+                              </button>
+                            </div>
+                            <table class="table">
+                              <tbody>
+                                <tr>
+                                  <th>
+                                    <label>Start Date</label>
+                                  </th>
+                                  <th>
+                                    <label>EndDate Date</label>
+                                  </th>
+                                  <th>
+                                    <label>Status</label>
+                                  </th>
+                                  <th>
+                                    <label>Action</label>
+                                  </th>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <label>16-Jul-2024</label>
+                                  </td>
+                                  <td>
+                                    <label>15-Jul-2026</label>
+                                  </td>
+                                  <td>
+                                    <label>Extended</label>
+                                  </td>
+                                  <td>
+                                    <a>
+                                      <i
+                                        href="javascript:void(0);"
+                                        class="fa-solid fa-eye viewdiv1Btn projectEdit QprojectEdit actionLinks view-img"
+                                        style="
+                                          color: #080808;
+                                          margin-right: 10px;
+                                        "
+                                      ></i>
+                                    </a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <label>15-Apr-2023</label>
+                                  </td>
+                                  <td>
+                                    <label>15-Jul-2026</label>
+                                  </td>
+                                  <td>
+                                    <label>Confirmed</label>
+                                  </td>
+                                  <td>
+                                    <a>
+                                      <i
+                                        href="javascript:void(0);"
+                                        class="fa-solid fa-eye viewdiv1Btn projectEdit QprojectEdit actionLinks view-img"
+                                        style="
+                                          color: #080808;
+                                          margin-right: 10px;
+                                        "
+                                      ></i>
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div
+                            id="div2"
+                            style="display: none; margin-top: 20px"
+                          >
+                            <h6>Probation Details</h6>
+                            <div class="text-end mb-2">
+                              <button id="editdiv2Btn" class="btn btn-primary">
+                                Add Probation
+                              </button>
+                            </div>
+                            <table class="table">
+                              <tbody>
+                                <tr>
+                                  <th>
+                                    <label>Start Date</label>
+                                  </th>
+                                  <th>
+                                    <label>EndDate Date</label>
+                                  </th>
+                                  <th>
+                                    <label>Status</label>
+                                  </th>
+                                  <th>
+                                    <label>Action</label>
+                                  </th>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <label>24-Feb-2024</label>
+                                  </td>
+                                  <td>
+                                    <label>23-May-2025</label>
+                                  </td>
+                                  <td>
+                                    <label>Extended</label>
+                                  </td>
+                                  <td>
+                                    <a>
+                                      <i
+                                        href="javascript:void(0);"
+                                        class="fa-solid fa-eye viewdiv2Btn projectEdit QprojectEdit actionLinks view-img"
+                                        style="
+                                          color: #080808;
+                                          margin-right: 10px;
+                                        "
+                                      ></i>
+                                    </a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -2160,8 +2211,8 @@
                       data-bs-parent="#accordionExample"
                     >
                       <div class="accordion-body">
-                        <div class="row">
-                          <h3>Contact Details</h3>
+                        <div class="row" id="pReview" style="display: none">
+                          <h6>Contact Details</h6>
 
                           <div class="row">
                             <!-- Contact Name -->
@@ -2249,7 +2300,7 @@
                             </div>
                           </div>
 
-                          <h3>Probation Details</h3>
+                          <h6>Probation Details</h6>
                           <div class="row">
                             <!--Probation Start Date -->
                             <div class="col-md-6">
@@ -2284,10 +2335,10 @@
                             </div>
                           </div>
 
-                          <h3>Other Reviews</h3>
+                          <h6>Other Reviews</h6>
                           <div class="row">
                             <!-- Other Reviews -->
-                            <div class="col-md-12">
+                            <div class="col-md-12 mb-3">
                               <table class="table">
                                 <tr>
                                   <th>Review By</th>
@@ -2304,14 +2355,11 @@
                               </table>
                             </div>
                           </div>
-
+                          <h6>Your review remark</h6>
                           <div class="row">
                             <!-- Your review remark -->
                             <div class="col-md-12">
                               <div class="form-group">
-                                <label for="YourReviewRemark"
-                                  >Your review remark</label
-                                >
                                 <!-- <span class="text-danger">*</span> -->
                                 <input
                                   type="text"
@@ -2322,149 +2370,206 @@
                               </div>
                             </div>
                           </div>
-
+                          <h6>Action</h6>
                           <div class="row">
-                            <!-- Other Reviews -->
-                            <div class="form-check">
-                              <div class="col-md-3">
-                                <label for="YourReviewRemark">Action</label>
-                                <span class="text-danger">*</span>
+                            <div
+                              class="col-md-12 mb-3 d-flex justify-content-center"
+                            >
+                              <div class="form-check form-check-inline mx-3">
+                                <input
+                                  class="form-check-input"
+                                  type="radio"
+                                  name="Action"
+                                  id="extendProb"
+                                  value="1"
+                                />
+                                <label class="form-check-label" for="extendProb"
+                                  >Extend Probation</label
+                                >
                               </div>
 
-                              <div class="col-md-3">
+                              <div class="form-check form-check-inline mx-3">
                                 <input
                                   class="form-check-input"
                                   type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault1"
+                                  name="Action"
+                                  id="confirmEmp"
+                                  value="2"
                                 />
-                                <label
-                                  class="form-check-label"
-                                  for="flexRadioDefault1"
+                                <label class="form-check-label" for="confirmEmp"
+                                  >Confirm Employee</label
                                 >
-                                  Confirmed
-                                </label>
                               </div>
-                              <div class="col-md-3">
+
+                              <div class="form-check form-check-inline mx-3">
                                 <input
                                   class="form-check-input"
                                   type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault2"
+                                  name="Action"
+                                  id="terminateEmp"
+                                  value="3"
                                 />
                                 <label
                                   class="form-check-label"
-                                  for="flexRadioDefault2"
+                                  for="terminateEmp"
+                                  >Terminate Employee</label
                                 >
-                                  Extend
-                                </label>
                               </div>
-                              <div class="col-md-3">
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault3"
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="flexRadioDefault3"
-                                >
-                                  Terminate
-                                </label>
+                            </div>
+                          </div>
+
+                          <div
+                            id="extendDiv"
+                            style="display: none; margin-top: 20px"
+                          >
+                            <div class="row">
+                              <!-- Contract Start Date -->
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="ProbationStartDate"
+                                    >Probation Start Date</label
+                                  >
+                                  <span class="text-danger">*</span>
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    id="ProbationStartDate"
+                                    required
+                                  />
+                                </div>
                               </div>
+
+                              <!-- Contract End Date -->
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                  <label for="ProbationEndDate"
+                                    >Probation End Date</label
+                                  >
+                                  <span class="text-danger">*</span>
+                                  <input
+                                    type="date"
+                                    class="form-control"
+                                    id="ProbationEndDate"
+                                    required
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Buttons -->
+                          <div class="row">
+                            <div class="text-end">
+                              <button
+                                id="savepReviewBtn"
+                                class="btn btn-gradient-primary me-2"
+                              >
+                                Save
+                              </button>
+                              <button
+                                id="cancelpReviewBtn"
+                                class="btn btn-gradient-light"
+                              >
+                                Cancel
+                              </button>
                             </div>
                           </div>
                         </div>
 
-                        <!-- Buttons -->
-                        <div class="text-end">
-                          <a
-                            href="manageKra.html"
-                            class="btn btn-gradient-primary me-2"
-                          >
-                            Save
-                          </a>
-                          <a
-                            href="manageKra.html"
-                            class="btn btn-gradient-light"
-                          >
-                            Cancel
-                          </a>
+                        <div
+                          class="row"
+                          id="pReviewTable"
+                          style="display: block"
+                        >
+                          <div class="text-end mb-2">
+                            <!-- <button id="editpReviewBtn" class="btn btn-primary">
+                              Add More Qualification
+                            </button> -->
+                          </div>
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <th>
+                                  <label>Name</label>
+                                </th>
+                                <th>
+                                  <label>Organization name</label>
+                                </th>
+                                <th>
+                                  <label>Relationship</label>
+                                </th>
+                                <th>
+                                  <label>Email id</label>
+                                </th>
+                                <th>
+                                  <label>Action</label>
+                                </th>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <label>Abhijit Hole </label>
+                                </td>
+                                <td>
+                                  <label>New Design Group Inc.</label>
+                                </td>
+                                <td>
+                                  <label>Previous Company Manager</label>
+                                </td>
+                                <td>
+                                  <label>abhijit@newdesign.com</label>
+                                </td>
+                                <td>
+                                  <a>
+                                    <i
+                                      href="javascript:void(0);"
+                                      id="editpReviewBtn"
+                                      class="fa-solid fa-eye viewpReviewBtn projectEdit QprojectEdit actionLinks view-img"
+                                      style="color: #080808; margin-right: 10px"
+                                    ></i>
+                                  </a>
+                                  <!-- <a>
+                                    <i
+                                      href="javascript:void(0);"
+                                      class="fa-solid fa-trash deleteLink actionLinks delete-img"
+                                      style="color: red"
+                                    ></i>
+                                  </a> -->
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <label>Ankit Bansal</label>
+                                </td>
+                                <td>
+                                  <label>Rockwire Cloud Services</label>
+                                </td>
+                                <td>
+                                  <label>Previous Company HR Manager</label>
+                                </td>
+                                <td>
+                                  <label>ankit@rockwire.com</label>
+                                </td>
+                                <td>
+                                  <a>
+                                    <i
+                                      href="javascript:void(0);"
+                                      id="editpReviewBtn"
+                                      class="fa-solid fa-eye viewpReviewBtn projectEdit QprojectEdit actionLinks view-img"
+                                      style="color: #080808; margin-right: 10px"
+                                    ></i>
+                                  </a>
+                                  <!-- <a>
+                                    <i
+                                      href="javascript:void(0);"
+                                      class="fa-solid fa-trash deleteLink actionLinks delete-img"
+                                      style="color: red"
+                                    ></i>
+                                  </a> -->
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
-                      </div>
-                      <div class="row">
-                        <table class="table">
-                          <tbody>
-                            <tr>
-                              <th>
-                                <label>Name</label>
-                              </th>
-                              <th>
-                                <label>Organization name</label>
-                              </th>
-                              <th>
-                                <label>Relationship</label>
-                              </th>
-                              <th>
-                                <label>Email id</label>
-                              </th>
-                              <th>
-                                <label>Action</label>
-                              </th>
-                            </tr>
-                            <tr>
-                              <td>
-                                <label>Benjamin Martinez</label>
-                              </td>
-                              <td>
-                                <label>New Design Group Inc.</label>
-                              </td>
-                              <td>
-                                <label>Previous Company Manager</label>
-                              </td>
-                              <td>
-                                <label>benjamin@newdesign.com</label>
-                              </td>
-                              <td>
-                                <a
-                                  class="projectEdit QprojectEdit actionLinks view-img"
-                                  href="javascript:void(0);"
-                                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
-                                >&nbsp;&nbsp;&nbsp;<a
-                                  href="javascript:void(0);"
-                                  class="deleteLink actionLinks delete-img"
-                                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
-                                >
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <label>Gabriel Hernandez</label>
-                              </td>
-                              <td>
-                                <label>Rockwire Cloud Services</label>
-                              </td>
-                              <td>
-                                <label>Previous Company HR Manager</label>
-                              </td>
-                              <td>
-                                <label>gabrielh@rockwire.com</label>
-                              </td>
-                              <td>
-                                <a
-                                  class="projectEdit QprojectEdit actionLinks view-img"
-                                  href="javascript:void(0);"
-                                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
-                                >&nbsp;&nbsp;&nbsp;<a
-                                  href="javascript:void(0);"
-                                  class="deleteLink actionLinks delete-img"
-                                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
-                                >
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </div>
                   </div>
@@ -2501,6 +2606,201 @@
     <script src="../../assets/vendors/select2/select2.min.js"></script>
     <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
     <!-- End plugin js for this page -->
+
+     <script>
+      // Get all radio buttons with name "contractType"
+      const radios = document.querySelectorAll('input[name="contractType"]');
+
+      radios.forEach((radio, index) => {
+        radio.addEventListener("change", () => {
+          if (index === 0 && radio.checked) {
+            document.getElementById("div1").style.display = "block";
+            document.getElementById("div2").style.display = "none";
+          } else if (index === 1 && radio.checked) {
+            document.getElementById("div1").style.display = "none";
+            document.getElementById("div2").style.display = "block";
+          }
+        });
+      });
+    </script>
+
+    <script>
+      // Get all radio buttons
+      const radios1 = document.querySelectorAll('input[name="Action"]');
+      const extendDiv = document.getElementById("extendDiv");
+
+      radios1.forEach((radio) => {
+        radio.addEventListener("change", () => {
+          if (document.getElementById("extendProb").checked) {
+            extendDiv.style.display = "block";
+          } else {
+            extendDiv.style.display = "none";
+          }
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const Form = document.getElementById("pDetailForm");
+        const Table = document.getElementById("div1");
+        const cInfo = document.getElementById("contractInfoSection");
+        const Tab = document.getElementById("div2");
+
+        const editdiv1Btn = document.getElementById("editdiv1Btn");
+        const savediv1Btn = document.getElementById("savepDetailFormBtn");
+        const canceldiv1Btn = document.getElementById("cancelpDetailFormBtn");
+        const viewdiv1Btns = document.querySelectorAll(".viewdiv1Btn");
+
+        editdiv1Btn.addEventListener("click", function () {
+          Table.style.display = "none";
+          Form.style.display = "block";
+          cInfo.style.display = "none";
+        });
+
+        savediv1Btn.addEventListener("click", function () {
+          Form.style.display = "none";
+          Tab.style.display = "none";
+          Table.style.display = "block";
+          cInfo.style.display = "block";
+        });
+
+        canceldiv1Btn.addEventListener("click", function () {
+          Form.style.display = "none";
+          Tab.style.display = "none";
+          Table.style.display = "block";
+          cInfo.style.display = "block";
+        });
+
+        // Apply event to all view icons
+        viewdiv1Btns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            Table.style.display = "none";
+            Form.style.display = "block";
+            cInfo.style.display = "none";
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const Form = document.getElementById("pDetailForm");
+        const Table = document.getElementById("div2");
+        const cInfo = document.getElementById("contractInfoSection");
+        const Tab = document.getElementById("div1");
+        const editdiv2Btn = document.getElementById("editdiv2Btn");
+        const savediv2Btn = document.getElementById("savepDetailFormBtn");
+        const canceldiv2Btn = document.getElementById("cancelpDetailFormBtn");
+        const viewdiv2Btns = document.querySelectorAll(".viewdiv2Btn");
+
+        editdiv2Btn.addEventListener("click", function () {
+          Table.style.display = "none";
+          Form.style.display = "block";
+          cInfo.style.display = "none";
+        });
+
+        savediv2Btn.addEventListener("click", function () {
+          Form.style.display = "none";
+          Tab.style.display = "none";
+          Table.style.display = "block";
+          cInfo.style.display = "block";
+        });
+
+        canceldiv2Btn.addEventListener("click", function () {
+          Form.style.display = "none";
+          Tab.style.display = "none";
+          Table.style.display = "block";
+          cInfo.style.display = "block";
+        });
+
+        // Apply event to all view icons
+        viewdiv2Btns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            Table.style.display = "none";
+            Form.style.display = "block";
+            cInfo.style.display = "none";
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cInfoForm = document.getElementById("cInfo");
+        const cInfoTable = document.getElementById("cInfoTable");
+        const pDetails = document.getElementById("pDetails");
+
+        const editcInfoBtn = document.getElementById("editcInfoBtn");
+        const savecInfoBtn = document.getElementById("savecInfoBtn");
+        const cancelcInfoBtn = document.getElementById("cancelcInfoBtn");
+
+        const viewcInfoBtns = document.querySelectorAll(".viewcInfoBtn");
+
+        editcInfoBtn.addEventListener("click", function () {
+          cInfoTable.style.display = "none";
+          cInfoForm.style.display = "block";
+          pDetails.style.display = "none";
+        });
+
+        savecInfoBtn.addEventListener("click", function () {
+          cInfoForm.style.display = "none";
+          cInfoTable.style.display = "block";
+          pDetails.style.display = "block";
+        });
+
+        cancelcInfoBtn.addEventListener("click", function () {
+          cInfoForm.style.display = "none";
+          cInfoTable.style.display = "block";
+          pDetails.style.display = "block";
+        });
+
+        // Apply event to all view icons
+        viewcInfoBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            cInfoTable.style.display = "none";
+            cInfoForm.style.display = "block";
+            pDetails.style.display = "none";
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const pReviewForm = document.getElementById("pReview");
+        const pReviewTable = document.getElementById("pReviewTable");
+
+        const editpReviewBtn = document.getElementById("editpReviewBtn");
+        const savepReviewBtn = document.getElementById("savepReviewBtn");
+        const cancelpReviewBtn = document.getElementById("cancelpReviewBtn");
+
+        const viewpReviewBtns = document.querySelectorAll(".viewpReviewBtn");
+
+        editpReviewBtn.addEventListener("click", function () {
+          pReviewTable.style.display = "none";
+          pReviewForm.style.display = "block";
+        });
+
+        savepReviewBtn.addEventListener("click", function () {
+          pReviewForm.style.display = "none";
+          pReviewTable.style.display = "block";
+        });
+
+        cancelpReviewBtn.addEventListener("click", function () {
+          pReviewForm.style.display = "none";
+          pReviewTable.style.display = "block";
+        });
+
+        // Apply event to all view icons
+        viewpReviewBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            pReviewTable.style.display = "none";
+            pReviewForm.style.display = "block";
+          });
+        });
+      });
+    </script>
     <!-- inject:js -->
     <script src="../../assets/js/off-canvas.js"></script>
     <script src="../../assets/js/misc.js"></script>

@@ -200,23 +200,26 @@
         }
       },
       plugins: [{
-        afterDatasetUpdate: function (chart, args, options) {
-          const chartId = chart.canvas.id;
-          var i;
-          const legendId = `${chartId}-legend`;
-          const ul = document.createElement('ul');
-          for (i = 0; i < chart.data.datasets.length; i++) {
-            ul.innerHTML += `
-              <li>
-                <span style="background-color: ${chart.data.datasets[i].fillColor}"></span>
-                ${chart.data.datasets[i].label}
-              </li>
-            `;
-          }
-          // alert(chart.data.datasets[0].backgroundColor);
-          return document.getElementById(legendId).appendChild(ul);
-        }
-      }]
+  afterDatasetUpdate: function (chart, args, options) {
+    const chartId = chart.canvas.id;
+    const legendId = `${chartId}-legend`;
+    const legendElement = document.getElementById(legendId);
+
+    legendElement.innerHTML = ""; // <-- prevent duplicates
+
+    const ul = document.createElement('ul');
+    for (let i = 0; i < chart.data.datasets.length; i++) {
+      ul.innerHTML += `
+        <li>
+          <span style="background-color: ${chart.data.datasets[i].fillColor}"></span>
+          ${chart.data.datasets[i].label}
+        </li>
+      `;
+    }
+    return legendElement.appendChild(ul);
+  }
+}]
+
     });
   }
   
@@ -308,23 +311,26 @@
         }
       },
       plugins: [{
-        afterDatasetUpdate: function (chart, args, options) {
-          const chartId = chart.canvas.id;
-          var i;
-          const legendId = `${chartId}-legend`;
-          const ul = document.createElement('ul');
-          for (i = 0; i < chart.data.datasets.length; i++) {
-            ul.innerHTML += `
-              <li>
-                <span style="background-color: ${chart.data.datasets[i].fillColor}"></span>
-                ${chart.data.datasets[i].label}
-              </li>
-            `;
-          }
-          // alert(chart.data.datasets[0].backgroundColor);
-          return document.getElementById(legendId).appendChild(ul);
-        }
-      }]
+  afterDatasetUpdate: function (chart, args, options) {
+    const chartId = chart.canvas.id;
+    const legendId = `${chartId}-legend`;
+    const legendElement = document.getElementById(legendId);
+
+    legendElement.innerHTML = ""; // <-- prevent duplicates
+
+    const ul = document.createElement('ul');
+    for (let i = 0; i < chart.data.datasets.length; i++) {
+      ul.innerHTML += `
+        <li>
+          <span style="background-color: ${chart.data.datasets[i].fillColor}"></span>
+          ${chart.data.datasets[i].label}
+        </li>
+      `;
+    }
+    return legendElement.appendChild(ul);
+  }
+}]
+
     });
   }
 
@@ -404,23 +410,26 @@
         }
       },
       plugins: [{
-        afterDatasetUpdate: function (chart, args, options) {
-          const chartId = chart.canvas.id;
-          var i;
-          const legendId = `${chartId}-legend`;
-          const ul = document.createElement('ul');
-          for (i = 0; i < chart.data.datasets.length; i++) {
-            ul.innerHTML += `
-              <li>
-                <span style="background-color: ${chart.data.datasets[i].fillColor}"></span>
-                ${chart.data.datasets[i].label}
-              </li>
-            `;
-          }
-          // alert(chart.data.datasets[0].backgroundColor);
-          return document.getElementById(legendId).appendChild(ul);
-        }
-      }]
+  afterDatasetUpdate: function (chart, args, options) {
+    const chartId = chart.canvas.id;
+    const legendId = `${chartId}-legend`;
+    const legendElement = document.getElementById(legendId);
+
+    legendElement.innerHTML = ""; // <-- prevent duplicates
+
+    const ul = document.createElement('ul');
+    for (let i = 0; i < chart.data.datasets.length; i++) {
+      ul.innerHTML += `
+        <li>
+          <span style="background-color: ${chart.data.datasets[i].fillColor}"></span>
+          ${chart.data.datasets[i].label}
+        </li>
+      `;
+    }
+    return legendElement.appendChild(ul);
+  }
+}]
+
     });
   }
 
@@ -514,23 +523,26 @@
         }
       },
       plugins: [{
-        afterDatasetUpdate: function (chart, args, options) {
-          const chartId = chart.canvas.id;
-          var i;
-          const legendId = `${chartId}-legend`;
-          const ul = document.createElement('ul');
-          for (i = 0; i < chart.data.datasets.length; i++) {
-            ul.innerHTML += `
-              <li>
-                <span style="background-color: ${chart.data.datasets[i].fillColor}"></span>
-                ${chart.data.datasets[i].label}
-              </li>
-            `;
-          }
-          // alert(chart.data.datasets[0].backgroundColor);
-          return document.getElementById(legendId).appendChild(ul);
-        }
-      }]
+  afterDatasetUpdate: function (chart, args, options) {
+    const chartId = chart.canvas.id;
+    const legendId = `${chartId}-legend`;
+    const legendElement = document.getElementById(legendId);
+
+    legendElement.innerHTML = ""; // <-- prevent duplicates
+
+    const ul = document.createElement('ul');
+    for (let i = 0; i < chart.data.datasets.length; i++) {
+      ul.innerHTML += `
+        <li>
+          <span style="background-color: ${chart.data.datasets[i].fillColor}"></span>
+          ${chart.data.datasets[i].label}
+        </li>
+      `;
+    }
+    return legendElement.appendChild(ul);
+  }
+}]
+
     });
   }
 
