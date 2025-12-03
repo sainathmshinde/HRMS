@@ -1,205 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>HRMS</title>
+<head>
+  <meta charset="UTF-8" />
+  <title>Login / Sign Up</title>
 
-    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css" />
-    <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css" />
-    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
-    <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="shortcut icon" href="assets/images/favicon.png" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <style>
-      body.custom-bg {
-        /* background-color: #f2edf3; */
-        background-color: white;
-      }
+  <!-- Boxicons -->
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card" id="authCard">
+      <!-- ================ LOGIN FORM ================ -->
+      <div class="form-column sign-in-column">
+        <h2 class="form-title">Login</h2>
 
-      /* Center the login card */
-      .full-center-wrapper {
-        min-height: 100vh;
-        min-width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* logo left */
-        /* padding-top: 30px; */
-        /* padding-left: 30px; */
-      }
+        <div class="social-row">
+          <button class="social-btn"><i class="bx bxl-google"></i></button>
+          <button class="social-btn"><i class="bx bxl-facebook"></i></button>
+          <button class="social-btn"><i class="bx bxl-twitter"></i></button>
+          <button class="social-btn"><i class="bx bxl-linkedin"></i></button>
+        </div>
 
-      .form-center-area {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-      }
-      .login-wrapper {
-  margin: 60px auto;
-  padding: 0;
-}
+        <p class="sub-text">or use your email to Login</p>
 
-/* Logo card */
-.logo-card {
-  border-radius: 12px 12px 0 0;
-  border: 1px solid #ddd;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
-}
-
-/* Main form card */
-.form-card {
-  margin-top: -5px;
-  border-radius: 0 0 12px 12px;
-  border: 1px solid #ddd;
-  border-top: none;
-  padding-top: 10px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
-}
-
-/* Input enhancement */
-.modern-input {
-  height: 45px;
-  border-radius: 8px !important;
-  transition: 0.2s ease;
-}
-
-.modern-input:focus {
-  border-color: #9b59b6 !important;
-  box-shadow: 0 0 0 0.15rem rgba(156, 39, 176, 0.2);
-}
-
-/* Full-width login button */
-.login-btn {
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 8px;
-}
-.logo-card .card-body {
-  padding: 30px !important;   /* Increase or decrease as you like */
-}
-
-
-    </style>
-  </head>
-
-  <body class="custom-bg">
-    <!-- LOGO (Top-Left) -->
-    <div class="full-center-wrapper">
-
-     
-
-      <!-- FORM CENTERED -->
-      <div class="form-center-area">
-        <!-- <div class="card col-md-4 ">
-            <div class="card">
-                <div class="card-body">
-                    <img src="/src/assets/images/HUMANOVA (1).svg"
-           alt="logo"
-           style="width: 200px; height: auto;  " />
-                </div>
-            </div>
-          <div class="card" style="margin-top: -5px;">
-            <div class="card-body" >
-                 
-
-
-              <form class="forms-sample">
-
-                <div class="form-group">
-                  <label for="exampleInputUsername1">Username</label>
-                  <span class="text-danger">*</span>
-                  <input type="text" class="form-control" id="exampleInputUsername1" value="Sainath Shinde">
-                </div>
-
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <span class="text-danger">*</span>
-                  <input type="password" class="form-control" id="exampleInputPassword1" value="********">
-                </div>
-
-              
-
-               <button 
-            type="submit" 
-            class="btn btn-gradient-primary w-100 py-2"
-            style="font-size: 16px; font-weight: 600;"
-          >
-            Login
-          </button>
-              </form>
-
-            </div>
+        <form action="./index.html" method="GET" class="auth-form">
+          <div class="field">
+            <i class="bx bxs-envelope"></i>
+            <input type="text" required placeholder="Email" />
           </div>
-        </div> -->
-      <div class="card col-md-4 login-wrapper">
 
-  <!-- Logo Card -->
-  <div class="card logo-card">
-    <div class="card-body text-center">
-      <img 
-        src="/src/assets/images/HUMANOVA (1).svg"
-        alt="logo"
-        style="width: 180px; height: auto;"
-      />
+          <div class="field">
+            <i class="bx bxs-lock-alt"></i>
+            <input type="password" required placeholder="Password" />
+          </div>
+
+          <div class="form-footer">
+            <a href="#" class="link-small">Forgot your password?</a>
+          </div>
+
+          <button type="submit" class="primary-btn">LOGIN</button>
+        </form>
+      </div>
+
+      <!-- ================ SIGN UP FORM ================ -->
+      <div class="form-column sign-up-column">
+        <h2 class="form-title">Create Account</h2>
+
+        <div class="social-row">
+          <button class="social-btn"><i class="bx bxl-google"></i></button>
+          <button class="social-btn"><i class="bx bxl-facebook"></i></button>
+          <button class="social-btn"><i class="bx bxl-twitter"></i></button>
+          <button class="social-btn"><i class="bx bxl-linkedin"></i></button>
+        </div>
+
+        <p class="sub-text">or use your email for registration</p>
+
+        <form action="#" class="auth-form">
+          <div class="field">
+            <i class="bx bxs-user"></i>
+            <input type="text" required placeholder="Name" />
+          </div>
+
+          <div class="field">
+            <i class="bx bxs-envelope"></i>
+            <input type="text" required placeholder="Email" />
+          </div>
+
+          <div class="field">
+            <i class="bx bxs-lock-alt"></i>
+            <input type="password" required placeholder="Password" />
+          </div>
+
+          <button type="submit" class="primary-btn">Sign Up</button>
+        </form>
+      </div>
+
+      <!-- ================ PURPLE PANEL ================ -->
+      <div class="purple-panel">
+        <!-- Sign In side content -->
+         <a class="navbar-brand brand-logo" href=".././../index.html">
+            <img 
+              src="/src/assets/images/HUMANOVA (1).svg"
+              alt="logo"
+              class="brand-logo-right"
+            />
+          </a>
+        <div class="panel-content panel-for-signin">
+          <h2>Hello, Friend!</h2>
+          <p>Register with your personal details to use all of HRMS features.</p>
+          <button class="outline-btn" id="showSignUp">Sign Up</button>
+        </div>
+
+        <!-- Sign Up side content -->
+         
+        <div class="panel-content panel-for-signup">
+          <h2>Welcome Back!</h2>
+          <p>Enter your personal details and continue with your work life.</p>
+          <button class="outline-btn" id="showSignIn">Login</button>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Form Card -->
-  <div class="card form-card">
-    <div class="card-body">
-
-      <form class="forms-sample">
-
-        <div class="form-group mb-3">
-          <label for="exampleInputUsername1">Username <span class="text-danger">*</span></label>
-          <input type="text" class="form-control modern-input" value="Sainath Shinde">
-        </div>
-
-        <div class="form-group mb-4">
-          <label for="exampleInputPassword1">Password <span class="text-danger">*</span></label>
-          <input type="password" class="form-control modern-input" value="********">
-        </div>
-
-      
-         <a
-                  class="btn btn-gradient-primary w-100 me-2"
-                  href="index.html"
-                  >Login</a
-                >
-
-      </form>
-
-    </div>
-  </div>
-
-</div>
-
-    
-    </div>
-
-    </div>
-
-    <!-- ALL YOUR ORIGINAL SCRIPTS BELOW (unchanged) -->
-    <script src="assets/js/dashboard.js"></script>
-    <script src="/src/assets/js/dashboard.js"></script>
-    <script src="/src/assets/vendors/chart.js/chart.umd.js"></script>
-    <script src="/src/assets/vendors/js/vendor.bundle.base.js"></script>
-    <script src="/src/assets/js/dashboard-dark.js"></script>
-
-    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
-    <script src="assets/vendors/chart.js/chart.umd.js"></script>
-    <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-    <script src="assets/js/off-canvas.js"></script>
-    <script src="assets/js/misc.js"></script>
-    <script src="assets/js/settings.js"></script>
-    <script src="assets/js/todolist.js"></script>
-    <script src="assets/js/jquery.cookie.js"></script>
-    <script src="assets/js/dashboard.js"></script>
-    <script src="/src/assets/js/common.js"></script>
-    <script src="/src/assets/js/multiDropdown.js"></script>
-
-  </body>
+  <!-- JS -->
+  <script src="./assets/js/app.js"></script>
+</body>
 </html>
