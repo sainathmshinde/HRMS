@@ -1742,12 +1742,7 @@
  
                   
                       <h5 >Notification </h5>
-                       
-                        <ul>
-                        <li>Upcoming Training</li>
-                         <li>Appraisal</li>
-                        </ul>
-                      
+                      <p > 1. Upcoming Training birthday<br> 2. Appraisal</p>
                     </div>
                   </div>
                 </div>
@@ -1779,6 +1774,10 @@
               <div class="row gy-4 gx-3">
                
                 <div class="col-12 col-md-3">
+                  <a
+                  href="/src/pages/employee/totalHeadcount.html"
+                  style="text-decoration: none; color: inherit;"
+                >
                   <div
                     class="card bg-gradient-sb-blue card-img-holder custom-text h-100"
                   >
@@ -1801,10 +1800,15 @@
                       </div>
                     </div>
                   </div>
+                  </a>
                 </div>
  
                 
                 <div class="col-12 col-md-3">
+                  <a
+                  style="text-decoration: none; color: inherit;"
+                  href="/src/pages/attendence/dailyAttendanceReports.html"
+                >
                   <div
                     class="card bg-gradient-sb-voilet card-img-holder custom-text1 h-100"
                   >
@@ -1819,20 +1823,25 @@
  
                       <div class="d-flex flex-wrap">
                         <div class="me-3 ">
-                          <h4 class="fw-bold ">1614</h4>
-                           <h6>Present</h6>
-                           <p >As on today</p>
+                          <h4 class="fw-bold">358</h4>
+                          <h6> Absent</h6>
+                          <p >As on today</p>
                         </div>
                         <div>
-                          <h4 class="fw-bold ">358</h4>
-                          <h6> Absent</h6>
-                          
+                          <h4 class="fw-bold ">1614</h4>
+                          <h6>Present</h6>
+                        
                           </div>
                       </div>
                     </div>
                   </div>
+                  </a>
                 </div>
                 <div class="col-12 col-md-3">
+                  <a
+                  style="text-decoration: none; color: inherit;"
+                  href="/src/pages/employee/contractRenewal.html"
+                >
                   <div
                     class="card bg-gradient-sb-pink card-img-holder custom-text2 h-100 "
                   >
@@ -1855,6 +1864,7 @@
                       </div>
                     </div>
                   </div>
+                  </a>
                 </div>
                 <div class="col-12 col-md-3">
                   <div
@@ -2171,5 +2181,101 @@ $(function()
     <script src="/src/assets/js/common.js" type="text/javascript" charset="utf-8"></script>
 <script src="/src/assets/js/multiDropdown.js" type="text/javascript" charset="utf-8"></script>
     <!-- End custom js for this page -->
+    <script>
+      // Handle sidebar menu arrow rotation - rotate 180 degrees on each click
+      (function() {
+        // Store rotation angle for each arrow (persists across page loads)
+        window.arrowRotations = window.arrowRotations || new Map();
+        
+        function rotateArrow(arrow) {
+          if (!arrow) return;
+          
+          // Get current rotation angle (default 0)
+          let currentRotation = window.arrowRotations.get(arrow) || 0;
+          
+          // Add 180 degrees
+          currentRotation += 180;
+          
+          // Store the new rotation
+          window.arrowRotations.set(arrow, currentRotation);
+          
+          // Apply the rotation
+          arrow.style.transform = `rotate(${currentRotation}deg)`;
+          arrow.style.setProperty('transform', `rotate(${currentRotation}deg)`, 'important');
+        }
+        
+        function initArrowRotation() {
+          const sidebar = document.getElementById('sidebar');
+          if (!sidebar) {
+            setTimeout(initArrowRotation, 100);
+            return;
+          }
+          
+          // Listen to ALL clicks on document to catch them early
+          document.addEventListener('click', function(e) {
+            // Only handle clicks inside sidebar
+            if (!e.target.closest('#sidebar')) return;
+            
+            // Find the nav-link that was clicked
+            const link = e.target.closest('a.nav-link');
+            if (!link) return;
+            
+            // Check if this link has a menu-arrow
+            const arrow = link.querySelector('i.menu-arrow');
+            if (!arrow) return;
+            
+            // Check if it's a collapse link (has href starting with #)
+            const href = link.getAttribute('href');
+            if (!href || !href.startsWith('#')) return;
+            
+            // Rotate immediately
+            rotateArrow(arrow);
+          }, true); // Capture phase - runs first
+        
+          // Also listen to Bootstrap collapse events as backup
+          document.addEventListener('show.bs.collapse', function(e) {
+            if (!e.target.closest('#sidebar')) return;
+            const collapseId = e.target.id;
+            if (!collapseId) return;
+            const link = sidebar.querySelector(`a.nav-link[href="#${collapseId}"]`);
+            if (link) {
+              const arrow = link.querySelector('i.menu-arrow');
+              if (arrow) rotateArrow(arrow);
+            }
+          });
+          
+          document.addEventListener('hide.bs.collapse', function(e) {
+            if (!e.target.closest('#sidebar')) return;
+            const collapseId = e.target.id;
+            if (!collapseId) return;
+            const link = sidebar.querySelector(`a.nav-link[href="#${collapseId}"]`);
+            if (link) {
+              const arrow = link.querySelector('i.menu-arrow');
+              if (arrow) rotateArrow(arrow);
+            }
+          });
+          
+          // Initialize all arrows to 0 degrees
+          setTimeout(function() {
+            sidebar.querySelectorAll('a.nav-link i.menu-arrow').forEach(arrow => {
+              if (!window.arrowRotations.has(arrow)) {
+                window.arrowRotations.set(arrow, 0);
+                arrow.style.transform = 'rotate(0deg)';
+                arrow.style.setProperty('transform', 'rotate(0deg)', 'important');
+              }
+            });
+          }, 800);
+        }
+        
+        // Start initialization
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(initArrowRotation, 800);
+          });
+        } else {
+          setTimeout(initArrowRotation, 800);
+        }
+      })();
+    </script>
   </body>
 </html>
