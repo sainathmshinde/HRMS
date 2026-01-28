@@ -1,12 +1,41 @@
 document.addEventListener("DOMContentLoaded", function () {
   const sidebar = document.getElementById("sidebar");
   if (!sidebar) return;
+  
+  // Store rotation angle for each arrow
+  window.arrowRotations = window.arrowRotations || new Map();
+  
+  // Function to rotate arrow 180 degrees
+  function rotateArrow(arrow) {
+    if (!arrow) return;
+    let currentRotation = window.arrowRotations.get(arrow) || 0;
+    currentRotation += 180;
+    window.arrowRotations.set(arrow, currentRotation);
+    arrow.style.setProperty('transform', `rotate(${currentRotation}deg)`, 'important');
+  }
+  
   sidebar.querySelectorAll('.nav > .nav-item > a.nav-link[data-bs-toggle="collapse"]').forEach(link => {
     link.removeAttribute("data-bs-toggle");
+    
+    // Find the arrow for this link
+    const arrow = link.querySelector('i.menu-arrow');
+    if (arrow) {
+      // Initialize rotation to 0
+      window.arrowRotations.set(arrow, 0);
+      arrow.style.setProperty('transform', 'rotate(0deg)', 'important');
+    }
+    
     link.addEventListener("click", function (e) {
       e.preventDefault();
       const targetSelector = this.getAttribute("href");
       if (!targetSelector || !targetSelector.startsWith("#")) return;
+      
+      // Get the arrow for this specific link (in case it wasn't found earlier)
+      const linkArrow = this.querySelector('i.menu-arrow');
+      if (linkArrow) {
+        rotateArrow(linkArrow);
+      }
+      
       const target = document.querySelector(targetSelector);
       if (!target) return;
       let bsCollapse = bootstrap.Collapse.getInstance(target);
