@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -148,8 +148,8 @@
                     border: 3px solid rgba(37, 99, 235, 0.12);
                     transition: transform 0.25s ease;
                   "
-                  onmouseover="this.style.transform='scale(1.06)'"
-                  onmouseout="this.style.transform='scale(1)'"
+                  onmouseover="this.style.transform = 'scale(1.06)'"
+                  onmouseout="this.style.transform = 'scale(1)'"
                 />
 
                 <div style="flex: 1">
@@ -178,8 +178,14 @@
                       color: #9333ea;
                       font-weight: 700;
                     "
-                    onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
-                    onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                    onmouseover="
+                      this.style.background = 'rgba(37,99,235,0.08)';
+                      this.style.transform = 'translateX(6px)';
+                    "
+                    onmouseout="
+                      this.style.background = 'transparent';
+                      this.style.transform = 'translateX(0)';
+                    "
                   >
                     View Profile
                   </a>
@@ -196,8 +202,14 @@
                       color: #9333ea;
                       font-weight: 700;
                     "
-                    onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
-                    onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                    onmouseover="
+                      this.style.background = 'rgba(37,99,235,0.08)';
+                      this.style.transform = 'translateX(6px)';
+                    "
+                    onmouseout="
+                      this.style.background = 'transparent';
+                      this.style.transform = 'translateX(0)';
+                    "
                   >
                     Summary
                   </a>
@@ -214,8 +226,14 @@
                       color: #9333ea;
                       font-weight: 700;
                     "
-                    onmouseover="this.style.background='rgba(37,99,235,0.08)'; this.style.transform='translateX(6px)'"
-                    onmouseout="this.style.background='transparent'; this.style.transform='translateX(0)'"
+                    onmouseover="
+                      this.style.background = 'rgba(37,99,235,0.08)';
+                      this.style.transform = 'translateX(6px)';
+                    "
+                    onmouseout="
+                      this.style.background = 'transparent';
+                      this.style.transform = 'translateX(0)';
+                    "
                   >
                     Approve Leave
                   </a>
@@ -1715,13 +1733,11 @@
           <div class="content-wrapper">
             <div class="page-header mt-2">
               <h3 class="page-title fixed-title">
-               
                 <span
                   class="page-title-icon bg-gradient-primary text-white me-2"
                   ><i class="fa-solid fa-clipboard-list"></i
                 ></span>
-                Tour Planned 
-                
+                Tour Planned
               </h3>
             </div>
             <div class="row g-2 formViewTable" style="margin-top: 30px">
@@ -1751,27 +1767,39 @@
                 </div>
               </div>
             </div>
-            <div
-              class="d-flex justify-content-between align-items-center mb-2 p-2 border bg-light"
-              style="margin-top: -20px"
-            >
-              <div>
-                <strong>Tours:</strong> 900 | <strong>Location:</strong> Pune
-              </div>
 
-              <div>
-                <button class="btn btn-gradient-primary btn-sm ms-3">Go</button>
-                <button class="btn btn-sm btn-primary me-2">
-                  <i class="fa-solid fa-download"></i>
-                </button>
-                <button class="btn btn-sm btn-primary">
-                  <i class="fa-solid fa-print"></i>
-                </button>
+            <div class="card" style="margin-top: -20px">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered align-middle text-center">
+                    <tr>
+                      <td class="text-start">Tours : 900</td>
+
+                      <td class="text-start">Location : Pune</td>
+                      <td class="text-center" style="width: 6%">
+                        <button class="btn btn-gradient-primary btn-sm ms-3">
+                          Go
+                        </button>
+                      </td>
+                      <td class="text-center" style="width: 6%">
+                        <button class="btn btn-sm btn-primary">
+                          <i class="fa-solid fa-download"></i>
+                        </button>
+                      </td>
+
+                      <td class="text-center" style="width: 6%">
+                        <button class="btn btn-sm btn-primary">
+                          <i class="fa-solid fa-print"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
               </div>
             </div>
             <div
               class="col-lg-12 grid-margin stretch-card"
-              style="margin-top: -30px"
+              style="margin-top: -20px"
             >
               <div class="card" style="overflow-x: auto; width: 100%">
                 <div class="card-body">
@@ -2518,7 +2546,7 @@
         // 5) Safety: ensure script doesn't break when elements are missing
         if (!input || !card || !form) {
           console.warn(
-            "[search] required elements missing: searchInput / searchResultCard / searchForm"
+            "[search] required elements missing: searchInput / searchResultCard / searchForm",
           );
         }
       })();
