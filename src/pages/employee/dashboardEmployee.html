@@ -1766,7 +1766,7 @@
                       />
  
                         <h5 >Gender Wise Headcount</h5>
-                      <a href="employmentType.html" style="text-decoration:none; color:inherit;">
+                      <a href="gender.html" style="text-decoration:none; color:inherit;">
                       <div class="d-flex flex-wrap">
                         <div class="me-3 ">
                           <h4 class="fw-bold ">1614</h4>
@@ -1794,18 +1794,18 @@
                         alt="circle-image"
                       />
  
-                      <h5 >Headcount Change</h5>
- 
+                     <h5 >Headcount Change</h5>
                       <div class="d-flex flex-wrap">
                         <div class="me-3 ">
                           <h4 class="fw-bold ">12</h4>
                            <h6>Exit</h6>
                            <p >In Last 30 Days</p>
                         </div>
-                       <div>
-                        <h4 class="fw-bold ">14</h4>
-                           <h6>Joining</h6>
-                       </div>
+                        <div>
+                          <h4 class="fw-bold ">14</h4>
+                          <h6>Joining</h6>
+                          
+                          </div>
                       </div>
                     </div>
                   </div>
@@ -1842,15 +1842,16 @@
               </div> -->
 
                <h5 >Contract Renewed</h5>
- 
-                       <div class="d-flex flex-wrap">
+                      <a href="contractRenewal.html" style="text-decoration:none; color:inherit;">
+                      <div class="d-flex flex-wrap">
                         <div class="me-3 ">
                           <h4 class="fw-bold ">45</h4>
                            <h6>New</h6>
                            <p >In Next 30 Days</p>
                         </div>
-                       
+                        
                       </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1861,8 +1862,12 @@
 
            
             <div class="row gy-4 gx-3 mt-1" >
-            
-               <div class="col-md-6 grid-margin stretch-card">
+               <div class="col-md-6 grid-margin stretch-card position-relative">
+                  <a
+                    href="profileCompleted.html"
+                    class="stretched-link"
+                    aria-label="Profile Completion Status"
+                  ></a>
                   <div class="card">
                     <div class="card-body">
                       <div class="clearfix">
@@ -1876,25 +1881,47 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="clearfix">
-                        <h5 class="float-start">
-                          Gender count by business unit
-                        </h5>
-                        <div
-                          id="visit-sale-chart2-legend"
-                          class="rounded-legend legend-horizontal legend-top-right float-end"
-                        ></div>
+
+                <div class="col-md-6 grid-margin stretch-card position-relative">
+                    <a
+                      href="gender.html"
+                      class="stretched-link"
+                      aria-label="Gender count by business unit"
+                    ></a>
+
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="clearfix">
+                          <h5 class="float-start">
+                            Gender count by business unit
+                          </h5>
+                          <div
+                            id="visit-sale-chart2-legend"
+                            class="rounded-legend legend-horizontal legend-top-right float-end"
+                          ></div>
+                        </div>
+
+                        <canvas id="visit-sale-chart2" class="mt-4"></canvas>
                       </div>
-                      <canvas id="visit-sale-chart2" class="mt-4"></canvas>
                     </div>
+
                   </div>
-                </div>
+
                  </div>
          
-          
+          <footer class="footer">
+            <div
+              class="d-sm-flex justify-content-center justify-content-sm-between"
+            >
+              <span
+                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
+                >Copyright © 2023
+                <a href="https://www.Syborgtech.com/" target="_blank"
+                  >Syborgtech</a
+                >. All rights reserved.</span
+              >
+            </div>
+          </footer>
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
 
@@ -1902,19 +1929,6 @@
         </div>
       <!-- page-body-wrapper ends -->
     </div>
-    <footer class="footer">
-            <div
-              class="d-sm-flex justify-content-center justify-content-sm-between"
-            >
-              <span
-                class="text-muted text-center text-sm-left d-block d-sm-inline-block"
-                >Copyright © 2023
-                <a href="https://www.syborgtech.com/" target="_blank"
-                  >SyborgTech</a
-                >. All rights reserved.</span
-              >
-            </div>
-          </footer>
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
