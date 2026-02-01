@@ -647,7 +647,7 @@
                     <a
                       class="nav-link"
                       href="/src/pages/leaves/approvedLeave.html"
-                      >Approved Leaves</a
+                      >Approve Leaves</a
                     >
                   </li>
                   <li class="nav-item">
@@ -1753,44 +1753,36 @@
               </div>
             </div>
 
-            <div class="mb-4" style="margin-top: -12px">
-              <div id="commanTable" class="table-responsive">
-                <table
-                  class="table table-bordered align-middle text-center small-stats-table"
-                >
-                  <tr>
-                    <td class="text-start">Count</td>
-                    <td class="text-start">11</td>
-                    <td class="text-end align-middle"></td>
-                    <td class="text-start">Total Leaves Consumed</td>
-                    <td class="text-start">1233</td>
-                    <td class="text-end align-middle">
-                      <div
-                        class="action-buttons d-flex justify-content-end align-items-center"
-                      >
-                        <button
-                          id="btnGo"
-                          class="btn btn-gradient-primary btn-sm"
-                        >
-                          Go
-                        </button>
+            <div class="mb-4" style="margin-top: -40px">
+  <div class="card p-2 shadow-sm">
 
-                        <button
-                          id="btnExportExcel"
-                          class="btn btn-sm btn-primary"
-                        >
-                          <i class="fa-solid fa-download"></i>
-                        </button>
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
 
-                        <button id="btnPrintPdf" class="btn btn-sm btn-primary">
-                          <i class="fa-solid fa-print"></i>
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </div>
+      <!-- Left Stats -->
+      <div class="d-flex flex-wrap align-items-center gap-3 small fw-semibold">
+        <span>Count: <strong>11</strong></span>
+        <span>|</span>
+        <span>Total Leaves Consumed: <strong>1233</strong></span>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons d-flex justify-content-end align-items-center gap-2">
+        <button id="btnGo" class="btn btn-gradient-primary btn-sm">Go</button>
+
+        <button id="btnExportExcel" class="btn btn-sm btn-primary">
+          <i class="fa-solid fa-download"></i>
+        </button>
+
+        <button id="btnPrintPdf" class="btn btn-sm btn-primary">
+          <i class="fa-solid fa-print"></i>
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
 
             <tr class="odd">
               <td>Jul-2025</td>

@@ -30597,3 +30597,38 @@ body.salary-template-page .formBlock .form-edit {
   margin-top: 20px;
   margin-bottom: 280px;
 }
+
+.form-control,
+.form-select {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+input[type="month"],
+input[type="date"] {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* FORCE full button box clickable */
+button.btn {
+  position: relative;
+  display: inline-flex;          /* full box layout */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* Icon should not steal mouse events */
+button.btn > i {
+  pointer-events: none;
+}
+
+/* In case any pseudo/overlay blocks click */
+button.btn::before,
+button.btn::after {
+  pointer-events: none;
+}
+

@@ -634,7 +634,7 @@
                     <a
                       class="nav-link"
                       href="/src/pages/leaves/approvedLeave.html"
-                      >Approved Leaves</a
+                      >Approve Leaves</a
                     >
                   </li>
                   <li class="nav-item">
@@ -1731,13 +1731,13 @@
            <div class="col-md-4">
             <div class="form-group">
               <label for="toDate">From Date</label>
-              <input type="text" class="form-control" id="toDate" placeholder="6-Dec-2025" required/>
+              <input type="date" class="form-control" id="toDate" value="2025-12-06" required/>
             </div>
           </div>
           <div class="col-md-4">
             <div class="form-group">
               <label for="toDate">To Date</label>
-              <input type="text" class="form-control" id="toDate" placeholder="12-Dec-2025" required/>
+              <input type="date" class="form-control" id="toDate" value="2025-12-12" required/>
             </div>
           </div>
         </div>
@@ -1748,33 +1748,47 @@
     </div>
   </div>
 </div>
-<div class="col-lg-12 grid-margin stretch-card"style="margin-top: -60px;" >
-    <div class="card">
-      <div class="card-body">
-         <div class="table-responsive">
-         <table class="table table-bordered align-middle border text-center">
-        <tr>
-            <td class="text-start">Selection Criteria :</td>
-            <td class="text-start">Employee ID - ID 1558 ;  From: 6-Dec-2025 To: 12-Dec-2025 ;</td>
-        </tr>
-    <tr>
-      <td class="text-start">Count</td>
-      <td class="text-start">7</td>
-      <td class="text-start">Employee Headcount :</td>
-      <td class="text-start">1972</td>
-      <td class="text-center" style="width:5%;">
-        <button class="btn btn-sm btn-primary"><i class="fa-solid fa-download"></i></button>
-      </td>
-      <td class="text-center" style="width:5%;">
-        <button class="btn btn-sm btn-primary"><i class="fa-solid fa-print"></i></button>
-      </td>
-    </tr>
-    
-  </table>
+<div class="mb-5" style="margin-top: -30px">
+  <div class="card p-2 shadow-sm">
+
+    <!-- TOP: Selection Criteria -->
+    <div class="small fw-semibold mb-1">
+      <span>Selection Criteria:</span>
+      <span class="ms-1">
+        <strong>Employee ID</strong> – ID 1558 |
+        <strong>From Date:</strong> 6-Dec-2025 |
+        <strong>To Date:</strong> 12-Dec-2025
+      </span>
+    </div>
+
+    <hr class="my-2" />
+
+    <!-- BOTTOM: Stats + Buttons -->
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
+
+      <!-- Left Stats -->
+      <div class="d-flex flex-wrap align-items-center gap-3 small fw-semibold">
+        <span>Count: <strong>7</strong></span>
+        <span>|</span>
+        <span>Employee Headcount: <strong>1972</strong></span>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons d-flex justify-content-end align-items-center gap-2">
+        <button class="btn btn-sm btn-primary">
+          <i class="fa-solid fa-download"></i>
+        </button>
+
+        <button class="btn btn-sm btn-primary">
+          <i class="fa-solid fa-print"></i>
+        </button>
+      </div>
+
+    </div>
+
   </div>
 </div>
-</div>
-</div>
+
 
                              
 <div class="row" style="margin-top: -60px;">

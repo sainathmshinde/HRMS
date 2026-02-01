@@ -634,7 +634,7 @@
                     <a
                       class="nav-link"
                       href="/src/pages/leaves/approvedLeave.html"
-                      >Approved Leaves</a
+                      >Approve Leaves</a
                     >
                   </li>
                   <li class="nav-item">
@@ -1762,47 +1762,66 @@
   </div>
 </div>
 
-<div class="mb-4" style="margin-top: -30px;">
-    <div class="table-responsive">
-        <table class="table table-bordered align-middle text-center">
-            <tr>
-                <td class="text-start">Count</td>
-                <td class="text-start">8</td>
+<div class="mb-4" style="margin-top: -30px">
+  <div class="card p-2 shadow-sm">
 
-                <td class="text-start">Employee Headcount :</td>
-                <td class="text-start">1972</td>
-                <td class="text-center" style="width:6%;">
-                    <button class="btn btn-sm btn-primary"><i class="fa-solid fa-download"></i></button>
-                </td>
+    <!-- TOP: Stats + Buttons -->
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
 
-                <!-- PRINT -->
-                <td class="text-center" style="width:6%;">
-                    <button class="btn btn-sm btn-primary"><i class="fa-solid fa-print"></i></button>
-                </td>
-            </tr>
+      <!-- Left Stats -->
+      <div class="d-flex flex-wrap align-items-center gap-3 small fw-semibold">
+        <span>Count: <strong>8</strong></span>
+        <span>|</span>
+        <span>Employee Headcount: <strong>1972</strong></span>
+      </div>
 
-            <!-- ROW 2 : COLOR LEGENDS -->
-            <tr>
-                <td colspan="8" class="text-center">
+      <!-- Action Buttons -->
+      <div class="action-buttons d-flex justify-content-end align-items-center gap-2">
+        <button class="btn btn-sm btn-primary">
+          <i class="fa-solid fa-download"></i>
+        </button>
 
-                    <div class="col d-flex flex-wrap gap-2 align-items-center">
+        <button class="btn btn-sm btn-primary">
+          <i class="fa-solid fa-print"></i>
+        </button>
+      </div>
 
-                    <span class="badge" style="background-color:#77CCF2;">&nbsp;&nbsp;</span> Present
-                    <!-- <span class="badge" style="background-color:#AE91EC;">&nbsp;&nbsp;</span>On Duty -->
-                    <span class="badge" style="background-color:#FD817D;">&nbsp;&nbsp;</span>Absent
-                    <span class="badge" style="background-color:#D84755;">&nbsp;&nbsp;</span>Loss of Pay
-                    <span class="badge" style="background-color:#FEBC3B;">&nbsp;&nbsp;</span>Leave
-                    <span class="badge" style="background-color:#ABCC00;">&nbsp;&nbsp;</span>Holiday
-                    <span class="badge" style="background-color:#FCDC02;">&nbsp;&nbsp;</span>Weekend
-
-                </div>
-
-                </td>
-            </tr>
-
-        </table>
     </div>
+
+    <hr class="my-2" />
+
+    <!-- BOTTOM: Color Legends -->
+    <div class="d-flex flex-wrap align-items-center gap-3 small">
+
+      <span class="d-flex align-items-center gap-1">
+        <span class="badge" style="background-color:#77CCF2;">&nbsp;</span> Present
+      </span>
+
+      <span class="d-flex align-items-center gap-1">
+        <span class="badge" style="background-color:#FD817D;">&nbsp;</span> Absent
+      </span>
+
+      <span class="d-flex align-items-center gap-1">
+        <span class="badge" style="background-color:#D84755;">&nbsp;</span> Loss of Pay
+      </span>
+
+      <span class="d-flex align-items-center gap-1">
+        <span class="badge" style="background-color:#FEBC3B;">&nbsp;</span> Leave
+      </span>
+
+      <span class="d-flex align-items-center gap-1">
+        <span class="badge" style="background-color:#ABCC00;">&nbsp;</span> Holiday
+      </span>
+
+      <span class="d-flex align-items-center gap-1">
+        <span class="badge" style="background-color:#FCDC02;">&nbsp;</span> Weekend
+      </span>
+
+    </div>
+
+  </div>
 </div>
+
 
 
 <div class="mb-4" style="margin-top: -45px;">

@@ -635,7 +635,7 @@
                     <a
                       class="nav-link"
                       href="/src/pages/leaves/approvedLeave.html"
-                      >Approved Leaves</a
+                      >Approve Leaves</a
                     >
                   </li>
                   <li class="nav-item">
@@ -1713,26 +1713,44 @@
             </div>
             <div class="row mt-1 attendance-filters" style="margin-bottom: -65px;">
               <div class="col-md-3">
-                <div class="form-group">
-                  <label for="month">Date</label>
-                  <input
-                    type="month"
-                    class="form-control"
-                    id="month"
-                    value="2025-09"   
-                  />
-                </div>
+              <div class="form-group">
+                <label
+                  for="month"
+                  style="display:block; position:static; margin-bottom:4px;"
+                >
+                  Date
+                </label>
+                <input
+                  type="month"
+                  class="form-control w-100"
+                  id="month"
+                  value="2025-09"
+                  style="cursor:pointer;"
+                />
               </div>
+            </div>
+
               <div class="col-md-3">
                 <div class="form-group">
-                  <label for="title">Designation</label>
-                  <select class="form-select" id="title" required>
-                    <option value="mr">Select</option>
-                    <option value="mr" selected>Team Lead</option>
-                    <option value="mr">HR</option>
-                    <option value="mr">Developer</option>
-                    <option value="mr">IT</option>
+                  <label
+                    for="title"
+                    style="display:block; position:static; margin-bottom:4px;"
+                  >
+                    Designation
+                  </label>
+                  <select
+                    class="form-select w-100"
+                    id="title"
+                    required
+                    style="cursor:pointer;"
+                  >
+                    <option value="">Select</option>
+                    <option value="Team Lead" selected>Team Lead</option>
+                    <option value="HR">HR</option>
+                    <option value="Developer">Developer</option>
+                    <option value="IT">IT</option>
                   </select>
+
                 </div>
               </div>
             </div>
@@ -2157,5 +2175,16 @@
     #searchResultCard .card-body { padding: 12px; }
     #searchInput:focus { outline: none; box-shadow: none; }
   </style>
+  <script>
+  const monthInput = document.getElementById("month");
+
+  if (monthInput) {
+    monthInput.addEventListener("mousedown", function (e) {
+      e.preventDefault();   
+      this.showPicker?.();       
+    });
+  }
+</script>
+
                   </body>
                 </html>

@@ -633,7 +633,7 @@
                     <a
                       class="nav-link"
                       href="/src/pages/leaves/approvedLeave.html"
-                      >Approved Leaves</a
+                      >Approve Leaves</a
                     >
                   </li>
                   <li class="nav-item">
@@ -1727,16 +1727,15 @@
                       />
  
                        <h5 >Present Employees</h5>
- 
+                      <a href="presentEmployeesReports.html" style="text-decoration:none; color:inherit;">
                       <div class="d-flex flex-wrap">
                         <div class="me-3 ">
                           <h4 class="fw-bold ">1354</h4>
                            <h6>Employees</h6>
                            <p >As on today</p>
                         </div>
-                       
-                      
                       </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1754,15 +1753,15 @@
                       />
  
                         <h5 >Absent Employees</h5>
- 
+                        <a href="absentEmployeesReports.html" style="text-decoration:none; color:inherit;">
                       <div class="d-flex flex-wrap">
                         <div class="me-3 ">
                           <h4 class="fw-bold ">618</h4>
                            <h6>Employees</h6>
                            <p >As on today</p>
                         </div>
-                        
                       </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1778,15 +1777,15 @@
                       />
  
                       <h5 >Late Coming</h5>
- 
+                        <a href="lateComingReports.html" style="text-decoration:none; color:inherit;">
                       <div class="d-flex flex-wrap">
                         <div class="me-3 ">
                           <h4 class="fw-bold ">152</h4>
                            <h6>Employees</h6>
                            <p >As on today</p>
                         </div>
-                      
                       </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1800,18 +1799,16 @@
                         class="card-img-absolute"
                         alt="circle-image"
                       />
- 
-
                <h5 >Early Going</h5>
- 
+                      <a href="earlyGoingReports.html" style="text-decoration:none; color:inherit;">
                        <div class="d-flex flex-wrap">
                         <div class="me-3 ">
                           <h4 class="fw-bold ">190</h4>
                            <h6>Employees</h6>
                            <p >In last 7 Days</p>
                         </div>
-                       
                       </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1819,39 +1816,70 @@
 
            
             <div class="row gy-4 gx-3 mt-1">
-                
-                <div class="col-md-6 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="clearfix">
-                        <h5 class="float-start">Present Trend Of Last 6 Months</h5>
-                        <div
-                          id="visit-sale-chart11-legend"
-                          class="rounded-legend legend-horizontal legend-top-right float-end"
-                        ></div>
-                      </div>
-                      <canvas id="visit-sale-chart11" class="mt-4"></canvas>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="clearfix">
-                        <h5 class="float-start">
-                          Daily Attendence
-                        </h5>
-                        <div
-                          id="visit-sale-chart12-legend"
-                          class="rounded-legend legend-horizontal legend-top-right float-end"
-                        ></div>
-                      </div>
-                      <canvas id="visit-sale-chart12" class="mt-4" style="height: 20px; width: 300px;"></canvas>
-                      
-                    </div>
-                  </div>
-                </div>
-                </div>
+
+  <div class="col-md-6 grid-margin stretch-card position-relative">
+
+    <!-- CLICKABLE LINK -->
+    <a
+      href="monthlyStatusReports.html"
+      class="stretched-link"
+      aria-label="Present Trend Of Last 6 Months"
+    ></a>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="clearfix">
+          <h5 class="float-start">
+            Present Trend Of Last 6 Months
+          </h5>
+
+          <div
+            id="visit-sale-chart11-legend"
+            class="rounded-legend legend-horizontal legend-top-right float-end"
+          ></div>
+        </div>
+
+        <canvas id="visit-sale-chart11" class="mt-4"></canvas>
+      </div>
+    </div>
+
+  </div>
+                  <div class="col-md-6 grid-margin stretch-card position-relative">
+
+    <!-- CLICKABLE LINK -->
+    <a
+      href="dailyAttendanceReports.html"
+      class="stretched-link"
+      aria-label="Daily Attendence"
+    ></a>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="clearfix">
+          <h5 class="float-start">
+            Daily Attendence
+          </h5>
+
+          <div
+            id="visit-sale-chart12-legend"
+            class="rounded-legend legend-horizontal legend-top-right float-end"
+          ></div>
+        </div>
+
+        <!-- canvas SAME AS BEFORE -->
+        <canvas
+          id="visit-sale-chart12"
+          class="mt-4"
+          style="height: 20px; width: 300px;"
+        ></canvas>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
           
           
           <!-- content-wrapper ends -->
