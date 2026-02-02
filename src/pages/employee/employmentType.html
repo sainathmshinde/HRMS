@@ -1717,7 +1717,7 @@
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="page-header mt-2">
+            <div class="page-header mt-3">
               <h3 class="page-title fixed-title">
                 <span
                   class="page-title-icon bg-gradient-primary text-white me-2"
@@ -1728,39 +1728,50 @@
               <h3 class="page-title"></h3>
             </div>
 
-            <div
-              class="d-flex justify-content-between align-items-center mb-2 p-2 border bg-light"
-              style="margin-top: 40px"
-            >
-              <div>
-                <strong> Permanent:</strong> 1326 | <strong> Contract:</strong> 546 |
-                <strong>Count:</strong> 1972 |
-                <strong> Location:</strong> Pune | Mumbai | Nagpur
-              </div>
+            <div class="mb-2" style="margin-top: 10px">
+  <div class="card p-2 shadow-sm">
 
-              <div class="action-buttons">
-                <button id="btnGo" class="btn btn-gradient-primary btn-sm">
-                  Go
-                </button>
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
 
-                <a
-                  href="/src/assets/excel/NoLeaveReport.xlsx"
-                  download
-                  id="btnExportExcel"
-                  class="btn btn-sm btn-primary"
-                >
-                  <i class="fa-solid fa-download"></i>
-                </a>
-                <a
-                  href="/src/assets/files/NoLeaveReport_full.pdf"
-                  target="_blank"
-                  id="btnPrintPdf"
-                  class="btn btn-sm btn-primary"
-                >
-                  <i class="fa-solid fa-print"></i>
-                </a>
-              </div>
-            </div>
+      <!-- Left Stats -->
+      <div class="d-flex flex-wrap align-items-center gap-3 small fw-semibold">
+        <span>Permanent: <strong>1326</strong></span>
+        <span>|</span>
+        <span>Contract: <strong>546</strong></span>
+        <span>|</span>
+        <span>Count: <strong>1972</strong></span>
+        <span>|</span>
+        <span>Location: <strong>Pune</strong> | <strong>Mumbai</strong> | <strong>Nagpur</strong></span>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons d-flex justify-content-end align-items-center gap-2">
+        <button id="btnGo" class="btn btn-gradient-primary btn-sm">Go</button>
+
+        <a
+          href="/src/assets/excel/NoLeaveReport.xlsx"
+          download
+          id="btnExportExcel"
+          class="btn btn-sm btn-primary"
+        >
+          <i class="fa-solid fa-download"></i>
+        </a>
+
+        <a
+          href="/src/assets/files/NoLeaveReport_full.pdf"
+          target="_blank"
+          id="btnPrintPdf"
+          class="btn btn-sm btn-primary"
+        >
+          <i class="fa-solid fa-print"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
             <div
               class="col-lg-12 grid-margin stretch-card"
               style="margin-top: -20px"
